@@ -2,7 +2,7 @@
 async function loadPlants(){
   const local = localStorage.getItem('gardenkeyPlants');
   if(local){ try { return JSON.parse(local); } catch(e){} }
-  const res = await fetch('data/plants.json', {cache:'no-store'});
+  const res = await fetch('plants.json', {cache:'no-store'});
   if(!res.ok) throw new Error('Could not load plants.json');
   return res.json();
 }
