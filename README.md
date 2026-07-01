@@ -36,3 +36,12 @@ Write URLs like this to tags:
 `https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001`
 
 Do not write `lavender.html` going forward. Keep the ID stable and the tag can keep working through future design updates.
+
+
+## V6 admin fix
+
+- New Plant now opens a blank form.
+- New Plant cannot overwrite an existing GardenKey ID.
+- Editing an existing plant warns before changing the GardenKey ID.
+- Downloading plants.json no longer silently saves over the selected plant.
+- Use Reset to live GitHub data to clear broken local browser previews.
