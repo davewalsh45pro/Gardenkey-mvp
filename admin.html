@@ -4,7 +4,253 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GardenKey Dashboard v9</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+:root {
+  --bg: #f4f0e7;
+  --card: #fffaf0;
+  --ink: #173324;
+  --muted: #647267;
+  --green: #2f6b45;
+  --green-dark: #173d2a;
+  --sage: #dfe9d5;
+  --gold: #d9a441;
+  --line: rgba(23, 51, 36, .12);
+  --shadow: 0 18px 45px rgba(31, 55, 41, .12);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #fff8e9 0, var(--bg) 42%, #e5edda 100%);
+  color: var(--ink);
+}
+
+.app-shell {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 14px 14px 28px;
+}
+
+.hero {
+  min-height: 430px;
+  border-radius: 30px;
+  padding: 18px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.topbar, .button-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo-chip, .id-chip, .pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .02em;
+}
+.logo-chip { background: rgba(255,255,255,.92); color: var(--green-dark); }
+.id-chip { background: rgba(23,51,36,.48); backdrop-filter: blur(10px); }
+
+.hero-copy h1 {
+  font-size: clamp(3.2rem, 16vw, 5.9rem);
+  margin: 4px 0 8px;
+  line-height: .9;
+  letter-spacing: -.07em;
+}
+.hero-copy p { max-width: 580px; font-size: 1.08rem; margin: 0; line-height: 1.45; }
+.hero-copy .latin { font-style: italic; opacity: .92; }
+
+.tag-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 16px 2px 12px;
+}
+.pill { background: white; color: var(--green-dark); border: 1px solid var(--line); white-space: nowrap; }
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.care-card, .card, .brand-card, .footer-card, .error-card, .loading-card {
+  background: rgba(255, 250, 240, .92);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+.care-card {
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.care-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--sage);
+  font-size: 1.18rem;
+}
+.care-card small, .card-label, label {
+  display: block;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 4px;
+}
+.care-card strong { display: block; line-height: 1.28; }
+
+.card, .brand-card, .footer-card, .error-card, .loading-card {
+  padding: 18px;
+  margin: 12px 0;
+}
+.note-card p { font-size: 1.04rem; line-height: 1.55; margin: 8px 0 0; }
+.section-toggle {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font: inherit;
+  font-weight: 850;
+  font-size: 1.2rem;
+}
+.detail-list { list-style: none; padding: 0; margin: 14px 0 0; }
+.detail-list li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  line-height: 1.45;
+}
+.detail-list li strong { display: block; margin-bottom: 3px; color: var(--green-dark); }
+.closed .section-content { display: none; }
+.footer-card { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); }
+.footer-card strong { color: var(--green-dark); }
+
+.brand-card {
+  background: linear-gradient(135deg, #173d2a, #2f6b45);
+  color: white;
+  padding: 26px;
+}
+.brand-card.compact { padding: 20px; }
+.brand-mark {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: #fffaf0;
+  color: var(--green-dark);
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  margin-bottom: 18px;
+}
+.eyebrow { color: #dfe9d5; text-transform: uppercase; font-size: .78rem; font-weight: 850; letter-spacing: .12em; margin: 0 0 8px; }
+.brand-card h1 { font-size: 2.1rem; line-height: 1.02; margin: 0 0 12px; letter-spacing: -.04em; }
+.lede { margin: 0 0 18px; line-height: 1.55; color: rgba(255,255,255,.82); }
+.button {
+  border: 0;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 12px 16px;
+  font-weight: 850;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+}
+.button.primary { background: var(--gold); color: #241a05; }
+.button.secondary { background: rgba(255,255,255,.18); color: inherit; border: 1px solid rgba(255,255,255,.28); }
+.card .button.secondary { color: var(--green-dark); border-color: var(--line); background: white; }
+.full { width: 100%; }
+
+.plant-list { display: grid; gap: 10px; }
+.plant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid var(--line);
+}
+.plant-row small { display:block; color: var(--muted); margin-top: 3px; }
+.row-arrow { font-size: 1.4rem; }
+
+.admin-shell input, .admin-shell textarea, .admin-shell select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  font: inherit;
+  background: white;
+  color: var(--ink);
+}
+.admin-shell textarea { min-height: 90px; resize: vertical; }
+.form-card { display: grid; gap: 14px; }
+.warning-card { background: #fff3cd; }
+.error-card, .loading-card { text-align: center; padding: 36px 18px; }
+
+@media (max-width: 420px) {
+  .app-shell { padding: 10px; }
+  .hero { min-height: 400px; border-radius: 26px; }
+  .quick-grid { grid-template-columns: 1fr; }
+  .hero-copy h1 { font-size: 4.2rem; }
+  .footer-card { flex-direction: column; }
+}
+
+/* GardenKey Admin v4 additions */
+.admin-panel { position: sticky; top: 10px; z-index: 5; }
+.admin-buttons { margin-top: 10px; }
+.button.danger { background: #f3ded8; color: #762819; border: 1px solid rgba(118,40,25,.18); }
+.admin-hint { color: var(--muted); margin: 12px 0 0; line-height: 1.45; }
+.form-card details { border-top: 1px solid var(--line); padding: 12px 0; }
+.form-card details:first-child { border-top: 0; }
+.form-card summary { cursor: pointer; font-weight: 900; font-size: 1.08rem; color: var(--green-dark); margin-bottom: 12px; }
+.form-card input, .form-card textarea, .form-card select { margin-top: 6px; margin-bottom: 12px; background: white; }
+.preview-card { overflow: hidden; }
+.mini-plant { background: linear-gradient(135deg, #fdf7ea, #e9f1df); border: 1px solid var(--line); border-radius: 22px; padding: 16px; }
+.mini-plant h2 { margin: 18px 0 6px; font-size: 2.2rem; letter-spacing: -.06em; }
+.mini-plant p { line-height: 1.45; margin: 0; }
+.logo-chip.mini, .id-chip.mini { padding: 7px 10px; margin-right: 8px; font-size: .72rem; }
+.id-chip.mini { color: white; background: rgba(23,51,36,.62); }
+.compact-tags { padding: 14px 0 6px; flex-wrap: wrap; overflow: visible; }
+.mini-care { list-style: none; padding: 0; margin: 12px 0 0; }
+.mini-care li { padding: 8px 0; border-top: 1px solid var(--line); }
+@media (max-width: 560px) {
+  .quick-grid { grid-template-columns: 1fr; }
+  .admin-panel { position: static; }
+}
+
+/* GardenKey Dashboard V7 */
+.dashboard-shell{max-width:1200px;margin:0 auto;padding:22px;}
+.dash-hero{display:flex;gap:18px;justify-content:space-between;align-items:flex-end;background:linear-gradient(135deg,#f7fbf4,#e9f3e4);border:1px solid rgba(40,80,45,.12);border-radius:28px;padding:24px;margin-bottom:18px;box-shadow:0 14px 40px rgba(31,59,39,.08)}
+.dash-hero h1{margin:.2rem 0;font-size:clamp(2rem,6vw,4rem);line-height:.95;color:#203a26}.dash-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.stat-card{background:#fff;border:1px solid rgba(40,80,45,.12);border-radius:20px;padding:18px;box-shadow:0 10px 25px rgba(31,59,39,.06)}.stat-card span{display:block;font-size:1.7rem;font-weight:800;color:#24492c}.stat-card small{color:#61705e}.dashboard-grid{display:grid;grid-template-columns:330px 1fr;gap:18px;align-items:start}.library-panel{position:sticky;top:14px}.library-header,.editor-topbar{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.library-header h2,.editor-topbar h2{margin:.2rem 0}.button.small{padding:.62rem .8rem;font-size:.9rem}.search-input{width:100%;box-sizing:border-box;border:1px solid rgba(40,80,45,.22);border-radius:14px;padding:.9rem 1rem;margin:12px 0 14px;background:#fbfdf8}.plant-list{display:flex;flex-direction:column;gap:10px;max-height:62vh;overflow:auto;padding-right:4px}.plant-card{border:1px solid rgba(40,80,45,.12);border-radius:16px;background:#fbfdf8;text-align:left;padding:13px;display:flex;flex-direction:column;gap:3px;cursor:pointer}.plant-card.active{background:#e7f2df;border-color:#769f5e}.plant-card-name{font-weight:800;color:#203a26}.plant-card-id{font-size:.78rem;color:#6c795f}.plant-card-tags{font-size:.8rem;color:#52664d}.dashboard-form{display:flex;flex-direction:column;gap:12px}.form-section{border:1px solid rgba(40,80,45,.12);border-radius:18px;overflow:hidden;background:#fff}.section-toggle{width:100%;border:0;background:#f3f8ee;padding:14px 16px;text-align:left;font-weight:800;color:#203a26;font-size:1rem}.section-body{display:none;padding:16px}.form-section.open .section-body{display:grid}.two-col{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.full{grid-column:1/-1}.dashboard-form label{display:flex;flex-direction:column;gap:6px;font-weight:700;color:#304832}.dashboard-form input,.dashboard-form textarea{width:100%;box-sizing:border-box;border:1px solid rgba(40,80,45,.22);border-radius:12px;padding:.8rem;background:#fbfdf8;font:inherit}.editor-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-top:16px}.sticky-save{position:sticky;bottom:0;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);padding:12px 0}.dashboard-preview{margin-top:18px}.mini-plant-card{border:1px solid rgba(40,80,45,.12);border-radius:22px;padding:16px;background:#fbfdf8;max-width:460px}.mini-hero{height:130px;border-radius:18px;background:linear-gradient(135deg,#dfead8,#a9bf9a);display:grid;place-items:center;color:#fff;font-weight:800;margin-bottom:12px;overflow:hidden}.mini-hero img{width:100%;height:100%;object-fit:cover}.mini-plant-card h3{font-size:1.6rem;margin:.2rem 0}.mini-care{display:flex;justify-content:space-between;border-top:1px solid rgba(40,80,45,.12);padding:.55rem 0}.tag-row{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.tag{background:#e9f3e4;border:1px solid rgba(40,80,45,.12);border-radius:999px;padding:.35rem .6rem;font-size:.8rem;color:#24492c}
+@media (max-width:850px){.dashboard-shell{padding:14px}.dash-hero{display:block}.dash-actions{justify-content:flex-start;margin-top:14px}.stats-grid{grid-template-columns:1fr 1fr 1fr}.dashboard-grid{grid-template-columns:1fr}.library-panel{position:static}.plant-list{max-height:none}.two-col{grid-template-columns:1fr}.editor-topbar{display:block}.button-row{margin-top:8px}.sticky-save{justify-content:stretch}.sticky-save .button{flex:1 1 45%}}
+
+</style>
 </head>
 <body>
   <main class="dashboard-shell">
