@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Plant</title><link rel="stylesheet" href="assets/styles.css"></head><body><main class="wrap" id="app"><section class="notice">Loading GardenKey plant profile...</section></main><script>
+async function loadPlants(){
+  const local = localStorage.getItem('gardenkeyPlants');
+  if(local){ try { return JSON.parse(local); } catch(e){} }
+  const res = await fetch('data/plants.json', {cache:'no-store'});
+  if(!res.ok) throw new Error('Could not load plants.json');
+  return res.json();
+}
+function esc(v){return String(v ?? '').replace(/[&<>"]/g, s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]));}
+function renderPlant(p){
+ document.title=`GardenKey: ${p.name}`;
+ const tags=(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+ const care=Object.entries(p.quickCare||{}).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+ const seasons=Object.entries(p.seasonalActions||{}).map(([k,v])=>`<div><strong>${esc(k)}:</strong> ${esc(v)}</div>`).join('');
+ const problems=(p.problems||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+ document.getElementById('app').innerHTML=`<section class="hero"><div class="brand">GardenKey</div><div class="id">GardenKey ID: ${esc(p.id)}</div><h1>${esc(p.name)}</h1><p class="latin"><em>${esc(p.latinName)}</em> — ${esc(p.subtitle)}</p><div class="tags">${tags}</div></section><section class="card"><h2>Quick Care</h2><dl>${care}</dl></section><section class="card"><h2>Notes</h2><p>${esc(p.notes)}</p></section><section class="card"><h2>Seasonal Actions</h2><div class="season">${seasons}</div></section><section class="card"><h2>Common Problems</h2><ul>${problems}</ul></section><section class="card"><h2>Prototype Admin</h2><p class="small">Last updated: ${esc(p.lastUpdated || 'Not set')}</p><div class="nav"><a class="btn secondary" href="index.html">Home</a><a class="btn" href="admin.html?id=${encodeURIComponent(p.id)}">Edit this plant</a></div></section>`;
+}
+(async()=>{
+ const params=new URLSearchParams(location.search);
+ const id=params.get('id') || 'GK-LAV-001';
+ try{
+   const plants=await loadPlants();
+   const p=plants[id];
+   if(!p){document.getElementById('app').innerHTML=`<section class="notice error"><strong>Plant not found:</strong> ${esc(id)}<br><br>Check the NFC URL or add this ID in <code>data/plants.json</code>.</section><p><a class="btn" href="index.html">Back home</a></p>`;return;}
+   renderPlant(p);
+ }catch(e){document.getElementById('app').innerHTML=`<section class="notice error">Could not load plant data. ${esc(e.message)}</section>`;}
+})();
+</script></body></html>
