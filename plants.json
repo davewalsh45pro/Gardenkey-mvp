@@ -6,7 +6,12 @@
     "latinName": "Lavandula angustifolia",
     "subtitle": "Scented, sun-loving, pollinator friendly.",
     "photo": "",
-    "tags": ["Full sun", "Low water", "Free-draining soil", "Bee friendly"],
+    "tags": [
+      "Full sun",
+      "Low water",
+      "Free-draining soil",
+      "Bee friendly"
+    ],
     "quickCare": {
       "Water": "Lightly once soil is dry",
       "Feeding": "Minimal feeding needed",
@@ -20,9 +25,21 @@
       "Autumn": "Reduce watering and keep the crown dry.",
       "Winter": "Protect from sitting in wet, cold compost."
     },
-    "problems": ["Yellowing leaves can mean overwatering.", "Leggy growth usually means not enough sun.", "Woody stems build up if it is not pruned lightly."],
-    "companions": ["Rosemary", "Thyme", "Sage", "Echinacea"],
-    "propagation": ["Take semi-ripe cuttings in late summer.", "Use free-draining compost with added grit or perlite."]
+    "problems": [
+      "Yellowing leaves can mean overwatering.",
+      "Leggy growth usually means not enough sun.",
+      "Woody stems build up if it is not pruned lightly."
+    ],
+    "companions": [
+      "Rosemary",
+      "Thyme",
+      "Sage",
+      "Echinacea"
+    ],
+    "propagation": [
+      "Take semi-ripe cuttings in late summer.",
+      "Use free-draining compost with added grit or perlite."
+    ]
   },
   "GK-TOM-001": {
     "id": "GK-TOM-001",
@@ -31,7 +48,12 @@
     "latinName": "Solanum lycopersicum",
     "subtitle": "Hungry, productive and perfect for summer growing.",
     "photo": "",
-    "tags": ["Sun", "Regular water", "Heavy feeder", "Edible"],
+    "tags": [
+      "Sun",
+      "Regular water",
+      "Heavy feeder",
+      "Edible"
+    ],
     "quickCare": {
       "Water": "Keep evenly moist",
       "Feeding": "Feed weekly once flowering",
@@ -45,9 +67,21 @@
       "Autumn": "Ripen remaining fruit indoors if needed.",
       "Winter": "Clean pots and plan next season's variety."
     },
-    "problems": ["Blossom end rot is linked to inconsistent water uptake.", "Blight risk increases in damp conditions.", "Whitefly and aphids can build up under cover."],
-    "companions": ["Basil", "Marigold", "Chives", "Parsley"],
-    "propagation": ["Sow seed indoors in spring.", "Keep seedlings warm and bright."]
+    "problems": [
+      "Blossom end rot is linked to inconsistent water uptake.",
+      "Blight risk increases in damp conditions.",
+      "Whitefly and aphids can build up under cover."
+    ],
+    "companions": [
+      "Basil",
+      "Marigold",
+      "Chives",
+      "Parsley"
+    ],
+    "propagation": [
+      "Sow seed indoors in spring.",
+      "Keep seedlings warm and bright."
+    ]
   },
   "GK-FRN-001": {
     "id": "GK-FRN-001",
@@ -56,7 +90,12 @@
     "latinName": "Polypodiopsida",
     "subtitle": "Shade-loving foliage for calm, green corners.",
     "photo": "",
-    "tags": ["Shade", "Moist soil", "Foliage", "Low light"],
+    "tags": [
+      "Shade",
+      "Moist soil",
+      "Foliage",
+      "Low light"
+    ],
     "quickCare": {
       "Water": "Keep lightly moist",
       "Feeding": "Weak feed in growing season",
@@ -70,8 +109,63 @@
       "Autumn": "Reduce feeding as growth slows.",
       "Winter": "Avoid cold draughts and waterlogging."
     },
-    "problems": ["Crispy leaf edges can indicate dry air or underwatering.", "Pale fronds may mean too much light.", "Root rot can happen if left sitting in water."],
-    "companions": ["Hosta", "Heuchera", "Ivy", "Moss"],
-    "propagation": ["Divide mature plants in spring.", "Keep divisions shaded and moist while they settle."]
+    "problems": [
+      "Crispy leaf edges can indicate dry air or underwatering.",
+      "Pale fronds may mean too much light.",
+      "Root rot can happen if left sitting in water."
+    ],
+    "companions": [
+      "Hosta",
+      "Heuchera",
+      "Ivy",
+      "Moss"
+    ],
+    "propagation": [
+      "Divide mature plants in spring.",
+      "Keep divisions shaded and moist while they settle."
+    ]
+  },
+  "GK-ROS-001": {
+    "id": "GK-ROS-001",
+    "slug": "rose",
+    "name": "Rose",
+    "latinName": "Rosa",
+    "subtitle": "Beautiful flowering shrub for colour, scent and pollinators.",
+    "photo": "",
+    "tags": [
+      "Full sun",
+      "Flowering shrub",
+      "Regular feeding",
+      "Pollinator friendly"
+    ],
+    "quickCare": {
+      "Water": "Water deeply when the top compost feels dry",
+      "Feeding": "Rose feed in spring and again in early summer",
+      "Aspect": "Full sun with good airflow",
+      "Pruning": "Prune in late winter or early spring"
+    },
+    "notes": "Deadhead regularly to encourage more flowers. Avoid watering the leaves where possible and keep airflow around the plant to reduce disease risk.",
+    "seasonalActions": {
+      "Spring": "Feed, mulch and check for fresh growth.",
+      "Summer": "Deadhead flowers and water during dry spells.",
+      "Autumn": "Clear fallen leaves and reduce feeding.",
+      "Winter": "Prune when dormant and remove weak or crossing stems."
+    },
+    "problems": [
+      "Black spot",
+      "Aphids",
+      "Powdery mildew",
+      "Poor flowering in shade"
+    ],
+    "companions": [
+      "Lavender",
+      "Salvia",
+      "Catmint",
+      "Allium"
+    ],
+    "propagation": [
+      "Hardwood cuttings can be taken in dormant season.",
+      "Some named roses are grafted, so cuttings may not exactly match nursery performance."
+    ]
   }
 }

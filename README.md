@@ -26,3 +26,10 @@ This version introduces a cleaner GardenKey Dashboard admin experience.
 ## Important NFC rule
 
 Keep the GardenKey ID stable. If the ID stays the same, the NFC tag URL can stay the same while the website design and plant information change.
+
+
+## V8 Admin blank form fix
+- Add Plant now opens a fully blank form.
+- Local new-plant drafts no longer repopulate the form with old plant data.
+- Added Clear local draft button.
+- Restored Rose sample record GK-ROS-001 in plants.json.

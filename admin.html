@@ -152,7 +152,7 @@
 
     function blankPlant() {
       return {
-        id: nextId(), slug: '', name: '', latinName: '', subtitle: '', photo: '', tags: [],
+        id: '', slug: '', name: '', latinName: '', subtitle: '', photo: '', tags: [],
         quickCare: { Water: '', Feeding: '', Aspect: '', Pruning: '' },
         notes: '', seasonalActions: { Spring: '', Summer: '', Autumn: '', Winter: '' },
         problems: [], companions: [], propagation: []
@@ -264,11 +264,14 @@
     }
 
     function addPlant() {
+      // Start from a completely clean form. Do not reuse the selected plant or any restored draft.
       mode = 'new';
       currentEditingId = null;
+      localStorage.removeItem('gardenkey-dashboard-draft');
+      form.reset();
       plantToForm(blankPlant());
       renderLibrary();
-      setStatus('Blank new plant ready.');
+      setStatus('Blank new plant ready. Enter a new GardenKey ID, for example GK-ROS-001.');
       byName('name').focus();
     }
 
@@ -336,7 +339,7 @@
             currentEditingId = saved.currentEditingId || Object.keys(plants)[0] || null;
             mode = saved.mode || 'edit';
             renderLibrary();
-            if (saved.form && mode === 'new') plantToForm(saved.form); else if (currentEditingId) plantToForm(plants[currentEditingId]); else addPlant();
+            if (mode === 'new') { currentEditingId = null; plantToForm(blankPlant()); } else if (currentEditingId) plantToForm(plants[currentEditingId]); else addPlant();
             setTimeout(() => window.scrollTo(0, saved.scrollY || 0), 50);
             setStatus('Restored your local working session.');
             return;
@@ -360,6 +363,11 @@
     document.getElementById('downloadJsonTop').addEventListener('click', downloadJson);
     document.getElementById('resetLive').addEventListener('click', () => {
       if (confirm('This will discard local working changes and reload the live GitHub plants.json. Continue?')) loadLive(true);
+    });
+    document.getElementById('clearSession').addEventListener('click', () => {
+      localStorage.removeItem('gardenkey-dashboard-draft');
+      addPlant();
+      setStatus('Local draft cleared. New plant form is blank.');
     });
     document.getElementById('copyUrl').addEventListener('click', async () => {
       const url = new URL(openPlant.getAttribute('href'), window.location.href).href;
