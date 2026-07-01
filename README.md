@@ -1,47 +1,28 @@
-# GardenKey MVP v4
+# GardenKey MVP v7 - Dashboard
 
-This version keeps the same NFC URL format:
+This version introduces a cleaner GardenKey Dashboard admin experience.
 
-`plant.html?id=GK-LAV-001`
+## What's new
 
-That means the NFC tag does **not** need to be rewritten when you improve the design or update plant information, as long as the GardenKey ID stays the same.
+- Plant library cards instead of a basic selector
+- Search by plant name, ID, Latin name or tag
+- Blank Add Plant workflow
+- Auto-generated simple IDs such as GK-0001 for new records
+- Live preview panel
+- Copy NFC URL button
+- Sticky save/download controls
+- Safer save behaviour to avoid overwriting records
+- Local session restore so switching tabs/apps should bring you back closer to where you were
 
-## Files
+## Publishing workflow
 
-- `index.html` — homepage / plant list
-- `plant.html` — single reusable plant profile page
-- `plants.json` — central plant database
-- `admin.html` — improved admin workflow
-- `styles.css` — polished mobile-first styling
+1. Open `admin.html`.
+2. Click **+ Add Plant** or select an existing plant.
+3. Click **Save to working library**.
+4. Click **Download plants.json**.
+5. Upload the downloaded `plants.json` to GitHub, replacing the existing one.
+6. Test the plant page using `plant.html?id=GK-...`.
 
-## Admin workflow
+## Important NFC rule
 
-1. Open `admin.html` on the live GitHub Pages site.
-2. Choose an existing plant or click New.
-3. Edit identity, care cards, seasonal actions and list sections.
-4. Click **Save preview**.
-5. Click **Download plants.json**.
-6. Upload the downloaded `plants.json` to the GitHub repository, replacing the previous one.
-7. Wait for GitHub Pages to redeploy.
-8. Test the same plant URL again.
-
-## Important
-
-GitHub Pages is free static hosting. A static admin page cannot write directly back to GitHub unless we later add login/API/database functionality. For now, the admin page safely edits in the browser and exports an updated JSON file.
-
-## Permanent NFC approach
-
-Write URLs like this to tags:
-
-`https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001`
-
-Do not write `lavender.html` going forward. Keep the ID stable and the tag can keep working through future design updates.
-
-
-## V6 admin fix
-
-- New Plant now opens a blank form.
-- New Plant cannot overwrite an existing GardenKey ID.
-- Editing an existing plant warns before changing the GardenKey ID.
-- Downloading plants.json no longer silently saves over the selected plant.
-- Use Reset to live GitHub data to clear broken local browser previews.
+Keep the GardenKey ID stable. If the ID stays the same, the NFC tag URL can stay the same while the website design and plant information change.

@@ -3,142 +3,170 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GardenKey Admin</title>
+  <title>GardenKey Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="app-shell admin-shell">
-    <section class="brand-card compact">
-      <div class="brand-mark">GK</div>
-      <p class="eyebrow">GardenKey Admin</p>
-      <h1>Manage plant profiles without editing code.</h1>
-      <p class="lede">Choose a plant, edit the fields, preview the result, then download an updated <strong>plants.json</strong> for GitHub.</p>
-      <div class="button-row">
+  <main class="dashboard-shell">
+    <section class="dash-hero">
+      <div>
+        <p class="eyebrow">GardenKey Dashboard</p>
+        <h1>Manage your plant library.</h1>
+        <p class="lede">Add, edit, preview and publish GardenKey plant profiles without touching code.</p>
+      </div>
+      <div class="dash-actions">
         <a class="button secondary" href="index.html">Home</a>
-        <a class="button secondary" id="openPlant" href="plant.html?id=GK-LAV-001">Open profile</a>
+        <button class="button secondary" id="resetLive" type="button">Reset to live GitHub data</button>
+        <button class="button primary" id="downloadJsonTop" type="button">Download plants.json</button>
       </div>
     </section>
 
-    <section class="card admin-panel sticky-actions">
-      <label for="plantSelect">Choose plant profile</label>
-      <select id="plantSelect"></select>
-      <div class="button-row admin-buttons">
-        <button class="button secondary" id="newPlant" type="button">New</button>
-        <button class="button secondary" id="duplicatePlant" type="button">Duplicate</button>
-        <button class="button danger" id="deletePlant" type="button">Delete</button>
-      </div>
-      <div class="button-row admin-buttons">
-        <button class="button primary" id="saveBrowser" type="button">Save preview</button>
-        <button class="button primary" id="downloadJson" type="button">Download plants.json</button>
-      </div>
-      <p class="admin-hint" id="statusText">Loaded plant profiles.</p>
+    <section class="stats-grid" aria-label="GardenKey stats">
+      <article class="stat-card"><span id="totalPlants">0</span><small>Total plants</small></article>
+      <article class="stat-card"><span id="tagCount">0</span><small>Care tags</small></article>
+      <article class="stat-card"><span id="lastEdited">Ready</span><small>Status</small></article>
     </section>
 
-    <form class="card form-card" id="plantForm">
-      <details open>
-        <summary>1. Identity</summary>
-        <label>GardenKey ID <input name="id" required placeholder="GK-LAV-001" /></label>
-        <label>Slug <input name="slug" placeholder="lavender" /></label>
-        <label>Name <input name="name" required placeholder="Lavender" /></label>
-        <label>Latin name <input name="latinName" placeholder="Lavandula angustifolia" /></label>
-        <label>Subtitle <textarea name="subtitle" placeholder="Scented, sun-loving, pollinator friendly."></textarea></label>
-        <label>Photo URL <input name="photo" placeholder="Optional image URL" /></label>
-        <label>Tags, comma separated <input name="tags" placeholder="Full sun, Low water, Bee friendly" /></label>
-      </details>
+    <section class="dashboard-grid">
+      <aside class="library-panel card">
+        <div class="library-header">
+          <div>
+            <p class="card-label">Plant library</p>
+            <h2>Your profiles</h2>
+          </div>
+          <button class="button primary small" id="addPlant" type="button">+ Add Plant</button>
+        </div>
+        <input class="search-input" id="searchPlants" placeholder="Search plants, IDs or tags" />
+        <div class="plant-list" id="plantList"></div>
+      </aside>
 
-      <details open>
-        <summary>2. Quick care cards</summary>
-        <label>Water <input name="water" /></label>
-        <label>Light / Aspect <input name="aspect" /></label>
-        <label>Feeding <input name="feeding" /></label>
-        <label>Pruning <input name="pruning" /></label>
-      </details>
+      <section class="editor-panel card">
+        <div class="editor-topbar">
+          <div>
+            <p class="card-label" id="modeLabel">Editing</p>
+            <h2 id="editorTitle">Select a plant</h2>
+          </div>
+          <div class="button-row">
+            <a class="button secondary small" id="openPlant" href="plant.html?id=GK-LAV-001" target="_blank" rel="noopener">Open profile</a>
+            <button class="button secondary small" id="copyUrl" type="button">Copy NFC URL</button>
+          </div>
+        </div>
 
-      <details>
-        <summary>3. Grower notes</summary>
-        <label>Notes <textarea name="notes" rows="5"></textarea></label>
-      </details>
+        <form id="plantForm" class="dashboard-form">
+          <section class="form-section open">
+            <button class="section-toggle" type="button">1. Identity</button>
+            <div class="section-body two-col">
+              <label>GardenKey ID <input name="id" required placeholder="GK-0001" /></label>
+              <label>Slug <input name="slug" placeholder="lavender" /></label>
+              <label>Plant name <input name="name" required placeholder="Lavender" /></label>
+              <label>Latin name <input name="latinName" placeholder="Lavandula angustifolia" /></label>
+              <label class="full">Short description <textarea name="subtitle" placeholder="Scented, sun-loving, pollinator friendly."></textarea></label>
+              <label class="full">Photo URL <input name="photo" placeholder="Optional image URL" /></label>
+              <label class="full">Tags <input name="tags" placeholder="Full sun, Low water, Bee friendly" /></label>
+            </div>
+          </section>
 
-      <details>
-        <summary>4. Seasonal actions</summary>
-        <label>Spring <textarea name="spring"></textarea></label>
-        <label>Summer <textarea name="summer"></textarea></label>
-        <label>Autumn <textarea name="autumn"></textarea></label>
-        <label>Winter <textarea name="winter"></textarea></label>
-      </details>
+          <section class="form-section open">
+            <button class="section-toggle" type="button">2. Quick care</button>
+            <div class="section-body two-col">
+              <label>Water <input name="water" placeholder="Lightly once soil is dry" /></label>
+              <label>Light / Aspect <input name="aspect" placeholder="Full sun, sheltered spot" /></label>
+              <label>Feeding <input name="feeding" placeholder="Minimal feeding needed" /></label>
+              <label>Pruning <input name="pruning" placeholder="Trim after flowering" /></label>
+            </div>
+          </section>
 
-      <details>
-        <summary>5. Lists</summary>
-        <label>Common problems — one per line <textarea name="problems" rows="5"></textarea></label>
-        <label>Companion planting — one per line <textarea name="companions" rows="5"></textarea></label>
-        <label>Propagation notes — one per line <textarea name="propagation" rows="5"></textarea></label>
-      </details>
-    </form>
+          <section class="form-section">
+            <button class="section-toggle" type="button">3. Grower notes</button>
+            <div class="section-body">
+              <label>Notes <textarea name="notes" rows="5" placeholder="Practical care notes for the gardener."></textarea></label>
+            </div>
+          </section>
 
-    <section class="card preview-card">
+          <section class="form-section">
+            <button class="section-toggle" type="button">4. Seasonal actions</button>
+            <div class="section-body two-col">
+              <label>Spring <textarea name="spring" placeholder="Check drainage and remove dead growth."></textarea></label>
+              <label>Summer <textarea name="summer" placeholder="Trim lightly after flowering."></textarea></label>
+              <label>Autumn <textarea name="autumn" placeholder="Reduce watering."></textarea></label>
+              <label>Winter <textarea name="winter" placeholder="Protect from cold, wet compost."></textarea></label>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <button class="section-toggle" type="button">5. Lists</button>
+            <div class="section-body two-col">
+              <label>Problems — one per line <textarea name="problems" rows="5" placeholder="Root rot\nAphids"></textarea></label>
+              <label>Companions — one per line <textarea name="companions" rows="5" placeholder="Rosemary\nThyme"></textarea></label>
+              <label class="full">Propagation — one per line <textarea name="propagation" rows="5" placeholder="Take semi-ripe cuttings in late summer."></textarea></label>
+            </div>
+          </section>
+        </form>
+
+        <div class="editor-actions sticky-save">
+          <button class="button danger" id="deletePlant" type="button">Delete</button>
+          <button class="button secondary" id="duplicatePlant" type="button">Duplicate</button>
+          <button class="button primary" id="savePlant" type="button">Save to working library</button>
+          <button class="button primary" id="downloadJson" type="button">Download plants.json</button>
+        </div>
+        <p class="admin-hint" id="statusText">Loaded plant profiles.</p>
+      </section>
+    </section>
+
+    <section class="card preview-card dashboard-preview">
       <div class="card-label">Live preview</div>
       <div id="miniPreview"></div>
     </section>
 
     <section class="card warning-card">
-      <strong>Publishing workflow:</strong> save your preview, download <strong>plants.json</strong>, then upload that file to your GitHub repo replacing the existing one. Your NFC URLs can stay the same as long as each GardenKey ID stays the same.
+      <strong>Publishing workflow:</strong> Save to working library → Download <strong>plants.json</strong> → upload it to GitHub replacing the old file. NFC URLs stay the same when the GardenKey ID stays the same.
     </section>
   </main>
 
   <script>
     let plants = {};
     let currentEditingId = null;
-    let adminMode = 'edit'; // edit or new
+    let mode = 'edit';
+    let searchTerm = '';
 
-    const select = document.getElementById('plantSelect');
     const form = document.getElementById('plantForm');
+    const plantList = document.getElementById('plantList');
     const statusText = document.getElementById('statusText');
     const openPlant = document.getElementById('openPlant');
+    const modeLabel = document.getElementById('modeLabel');
+    const editorTitle = document.getElementById('editorTitle');
     const fields = ['id','slug','name','latinName','subtitle','photo','tags','water','aspect','feeding','pruning','notes','spring','summer','autumn','winter','problems','companions','propagation'];
 
-    function byName(name) { return form.elements[name]; }
-    function linesToArray(value) { return (value || '').split('\n').map(v => v.trim()).filter(Boolean); }
-    function arrayToLines(value) { return Array.isArray(value) ? value.join('\n') : ''; }
-    function tagsToArray(value) { return (value || '').split(',').map(v => v.trim()).filter(Boolean); }
-    function setStatus(text) { statusText.textContent = text; }
-    function safeId(value) { return (value || '').trim().toUpperCase().replace(/\s+/g, '-'); }
-    function clearDraftOnly() { localStorage.removeItem('gardenkey-admin-draft'); }
+    const byName = name => form.elements[name];
+    const linesToArray = value => (value || '').split('\n').map(v => v.trim()).filter(Boolean);
+    const arrayToLines = value => Array.isArray(value) ? value.join('\n') : '';
+    const tagsToArray = value => (value || '').split(',').map(v => v.trim()).filter(Boolean);
+    const safeId = value => (value || '').trim().toUpperCase().replace(/[^A-Z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const setStatus = text => { statusText.textContent = text; document.getElementById('lastEdited').textContent = text.split('.')[0].slice(0, 18); };
 
-    function fillSelect() {
-      const current = select.value;
-      const list = Object.values(plants).sort((a,b) => (a.name || '').localeCompare(b.name || ''));
-      select.innerHTML = '<option value="">+ New plant</option>' + list.map(p => `<option value="${p.id}">${p.name || 'Unnamed'} — ${p.id}</option>`).join('');
-      if (plants[current]) select.value = current;
-      updateOpenLink();
+    function nextId() {
+      const nums = Object.keys(plants).map(id => Number((id.match(/GK-(\d+)/) || [])[1])).filter(Boolean);
+      const next = String((nums.length ? Math.max(...nums) : 0) + 1).padStart(4, '0');
+      return `GK-${next}`;
     }
 
-    function updateOpenLink() {
-      const id = byName('id').value || select.value || 'GK-NEW-001';
-      openPlant.href = `plant.html?id=${encodeURIComponent(id)}`;
+    function blankPlant() {
+      return {
+        id: nextId(), slug: '', name: '', latinName: '', subtitle: '', photo: '', tags: [],
+        quickCare: { Water: '', Feeding: '', Aspect: '', Pruning: '' },
+        notes: '', seasonalActions: { Spring: '', Summer: '', Autumn: '', Winter: '' },
+        problems: [], companions: [], propagation: []
+      };
     }
 
-    function clearForm() {
-      fields.forEach(f => byName(f).value = '');
-      currentEditingId = null;
-      adminMode = 'new';
-      select.value = '';
-      updateOpenLink();
-      renderPreview(false);
-    }
-
-    function loadToForm(id) {
-      const p = plants[id];
-      if (!p) return;
-      adminMode = 'edit';
-      currentEditingId = p.id;
-      select.value = p.id;
+    function plantToForm(p) {
       byName('id').value = p.id || '';
       byName('slug').value = p.slug || '';
       byName('name').value = p.name || '';
       byName('latinName').value = p.latinName || '';
       byName('subtitle').value = p.subtitle || '';
       byName('photo').value = p.photo || '';
-      byName('tags').value = (p.tags || []).join(', ');
+      byName('tags').value = Array.isArray(p.tags) ? p.tags.join(', ') : '';
       byName('water').value = p.quickCare?.Water || '';
       byName('aspect').value = p.quickCare?.Aspect || '';
       byName('feeding').value = p.quickCare?.Feeding || '';
@@ -151,17 +179,16 @@
       byName('problems').value = arrayToLines(p.problems);
       byName('companions').value = arrayToLines(p.companions);
       byName('propagation').value = arrayToLines(p.propagation);
-      clearDraftOnly();
-      updateOpenLink();
-      renderPreview(false);
-      saveUiState();
+      updateChrome();
+      renderPreview();
+      saveDraft();
     }
 
-    function plantFromForm() {
+    function formToPlant() {
       const id = safeId(byName('id').value);
       return {
         id,
-        slug: byName('slug').value.trim().toLowerCase().replace(/\s+/g, '-'),
+        slug: byName('slug').value.trim(),
         name: byName('name').value.trim(),
         latinName: byName('latinName').value.trim(),
         subtitle: byName('subtitle').value.trim(),
@@ -186,201 +213,165 @@
       };
     }
 
-    function validatePlantForSave(plant) {
-      if (!plant.id || !plant.name) {
-        setStatus('Add at least a GardenKey ID and plant name.');
-        return false;
-      }
-      if (adminMode === 'new' && plants[plant.id]) {
-        setStatus(`Cannot add new plant: ${plant.id} already exists. Choose a different ID or select that plant to edit it.`);
-        return false;
-      }
-      if (adminMode === 'edit' && currentEditingId && plant.id !== currentEditingId && plants[plant.id]) {
-        setStatus(`Cannot rename to ${plant.id}: that ID already exists.`);
-        return false;
-      }
-      return true;
+    function renderLibrary() {
+      const all = Object.values(plants).sort((a,b) => (a.name || '').localeCompare(b.name || ''));
+      const filtered = all.filter(p => [p.name, p.latinName, p.id, ...(p.tags || [])].join(' ').toLowerCase().includes(searchTerm.toLowerCase()));
+      plantList.innerHTML = filtered.map(p => `
+        <button class="plant-card ${p.id === currentEditingId ? 'active' : ''}" type="button" data-id="${p.id}">
+          <span class="plant-card-name">${p.name || 'Unnamed plant'}</span>
+          <span class="plant-card-id">${p.id}</span>
+          <span class="plant-card-tags">${(p.tags || []).slice(0,3).join(' · ')}</span>
+        </button>`).join('') || '<p class="admin-hint">No matching plants.</p>';
+      document.getElementById('totalPlants').textContent = all.length;
+      document.getElementById('tagCount').textContent = new Set(all.flatMap(p => p.tags || [])).size;
+      document.querySelectorAll('.plant-card').forEach(btn => btn.addEventListener('click', () => selectPlant(btn.dataset.id)));
     }
 
-    function saveFromForm(silent = false) {
-      const plant = plantFromForm();
-      if (!validatePlantForSave(plant)) return false;
+    function updateChrome() {
+      const p = formToPlant();
+      const id = p.id || 'GK-NEW';
+      openPlant.href = `plant.html?id=${encodeURIComponent(id)}`;
+      modeLabel.textContent = mode === 'new' ? 'New plant' : 'Editing';
+      editorTitle.textContent = p.name || (mode === 'new' ? 'New blank plant' : 'Plant profile');
+    }
 
-      if (adminMode === 'edit' && currentEditingId && currentEditingId !== plant.id) {
-        const oldPlantName = plants[currentEditingId]?.name || currentEditingId;
-        if (!confirm(`You changed the GardenKey ID for ${oldPlantName}. This will rename the saved record and the old NFC URL will stop working unless you keep the old ID. Continue?`)) {
-          return false;
-        }
+    function renderPreview() {
+      const p = formToPlant();
+      const tags = (p.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+      document.getElementById('miniPreview').innerHTML = `
+        <div class="mini-plant-card">
+          <div class="mini-hero">${p.photo ? `<img src="${p.photo}" alt="${p.name}">` : '<span>GardenKey</span>'}</div>
+          <h3>${p.name || 'New plant'}</h3>
+          <p><em>${p.latinName || 'Latin name'}</em></p>
+          <p>${p.subtitle || 'Short care description will appear here.'}</p>
+          <div class="tag-row">${tags}</div>
+          <div class="mini-care"><strong>Water</strong><span>${p.quickCare.Water || '—'}</span></div>
+          <div class="mini-care"><strong>Aspect</strong><span>${p.quickCare.Aspect || '—'}</span></div>
+        </div>`;
+    }
+
+    function saveDraft() {
+      localStorage.setItem('gardenkey-dashboard-draft', JSON.stringify({ plants, currentEditingId, mode, form: formToPlant(), scrollY: window.scrollY }));
+    }
+
+    function selectPlant(id) {
+      if (!plants[id]) return;
+      currentEditingId = id;
+      mode = 'edit';
+      plantToForm(plants[id]);
+      renderLibrary();
+      setStatus(`Editing ${plants[id].name || id}.`);
+    }
+
+    function addPlant() {
+      mode = 'new';
+      currentEditingId = null;
+      plantToForm(blankPlant());
+      renderLibrary();
+      setStatus('Blank new plant ready.');
+      byName('name').focus();
+    }
+
+    function savePlant() {
+      if (!form.reportValidity()) return;
+      const p = formToPlant();
+      if (!p.id) { alert('GardenKey ID is required.'); return; }
+      if (mode === 'new' && plants[p.id]) { alert(`A plant with ID ${p.id} already exists. Choose a different ID.`); return; }
+      if (mode === 'edit' && currentEditingId && currentEditingId !== p.id) {
+        if (plants[p.id] && p.id !== currentEditingId) { alert(`A plant with ID ${p.id} already exists.`); return; }
+        if (!confirm(`Change ID from ${currentEditingId} to ${p.id}? Existing NFC tags using the old ID will not open this plant.`)) return;
         delete plants[currentEditingId];
       }
-
-      plants[plant.id] = plant;
-      currentEditingId = plant.id;
-      adminMode = 'edit';
-      localStorage.setItem('gardenkey-plants', JSON.stringify(plants));
-      clearDraftOnly();
-      fillSelect();
-      select.value = plant.id;
-      updateOpenLink();
-      renderPreview(false);
-      saveUiState();
-      if (!silent) setStatus(`Saved ${plant.name} in browser preview. Download plants.json to publish.`);
-      return true;
-    }
-
-    function renderPreview(allowDraft = true) {
-      const p = plantFromForm();
-      document.getElementById('miniPreview').innerHTML = `
-        <div class="mini-plant">
-          <div><span class="logo-chip mini">GardenKey</span><span class="id-chip mini">${p.id || 'No ID yet'}</span></div>
-          <h2>${p.name || 'New Plant'}</h2>
-          <p><em>${p.latinName || ''}</em>${p.latinName ? ' — ' : ''}${p.subtitle || 'Plant profile preview'}</p>
-          <div class="tag-strip compact-tags">${p.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
-          <ul class="mini-care">
-            <li><strong>Water:</strong> ${p.quickCare.Water || 'Not set yet'}</li>
-            <li><strong>Light:</strong> ${p.quickCare.Aspect || 'Not set yet'}</li>
-            <li><strong>Feeding:</strong> ${p.quickCare.Feeding || 'Not set yet'}</li>
-            <li><strong>Pruning:</strong> ${p.quickCare.Pruning || 'Not set yet'}</li>
-          </ul>
-        </div>`;
-      updateOpenLink();
-      if (allowDraft) saveDraft();
-    }
-
-    function makeNewPlant() {
-      clearForm();
-      setStatus('Blank new plant form. Enter a new unique ID, then save. Existing plants will not be replaced.');
-      saveUiState();
-      setTimeout(() => byName('id').focus(), 50);
+      plants[p.id] = p;
+      currentEditingId = p.id;
+      mode = 'edit';
+      renderLibrary();
+      updateChrome();
+      saveDraft();
+      setStatus(`${p.name || p.id} saved to working library.`);
     }
 
     function duplicatePlant() {
-      const source = plants[select.value];
-      if (!source) { setStatus('Select a plant to duplicate first.'); return; }
-      const copy = JSON.parse(JSON.stringify(source));
-      loadToForm(source.id);
-      adminMode = 'new';
+      const p = formToPlant();
+      const copy = JSON.parse(JSON.stringify(p));
+      copy.id = nextId();
+      copy.name = p.name ? `${p.name} copy` : '';
+      copy.slug = p.slug ? `${p.slug}-copy` : '';
+      mode = 'new';
       currentEditingId = null;
-      select.value = '';
-      byName('id').value = source.id + '-COPY';
-      byName('name').value = source.name + ' Copy';
-      byName('slug').value = (source.slug || source.name || 'plant') + '-copy';
-      setStatus('Duplicated plant into a new unsaved form. Change the ID before saving.');
-      renderPreview();
-      saveUiState();
+      plantToForm(copy);
+      setStatus('Duplicated into a new unsaved plant.');
     }
 
     function deletePlant() {
-      const id = select.value || currentEditingId;
-      if (!id || !plants[id]) return;
-      if (!confirm(`Delete ${plants[id].name} from browser preview?`)) return;
-      delete plants[id];
-      currentEditingId = null;
-      adminMode = 'new';
-      localStorage.setItem('gardenkey-plants', JSON.stringify(plants));
-      fillSelect();
-      const first = Object.keys(plants)[0];
-      if (first) { loadToForm(first); } else { clearForm(); }
-      setStatus('Deleted from browser preview. Download plants.json to publish this change.');
+      if (!currentEditingId || !plants[currentEditingId]) return alert('Select a saved plant first.');
+      if (!confirm(`Delete ${plants[currentEditingId].name || currentEditingId} from the working library?`)) return;
+      delete plants[currentEditingId];
+      const next = Object.keys(plants)[0];
+      if (next) selectPlant(next); else addPlant();
+      renderLibrary();
+      setStatus('Plant deleted from working library.');
     }
 
     function downloadJson() {
-      const activePlant = plantFromForm();
-      const hasUnsavedContent = activePlant.id || activePlant.name || activePlant.latinName || activePlant.subtitle;
-      if (hasUnsavedContent && !plants[activePlant.id]) {
-        const proceed = confirm('This form has not been saved yet. Save it before downloading plants.json?');
-        if (proceed) {
-          if (!saveFromForm(true)) return;
-        }
-      }
+      savePlant();
       const blob = new Blob([JSON.stringify(plants, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = 'plants.json';
-      document.body.appendChild(a);
       a.click();
-      a.remove();
       URL.revokeObjectURL(url);
-      setStatus('Downloaded plants.json. Upload it to GitHub to publish.');
+      setStatus('Downloaded plants.json.');
     }
 
-    function saveDraft() {
-      const draft = plantFromForm();
-      localStorage.setItem('gardenkey-admin-draft', JSON.stringify({ adminMode, currentEditingId, selectedId: select.value, draft }));
-    }
-
-    function saveUiState() {
-      localStorage.setItem('gardenkey-admin-ui', JSON.stringify({ scrollY: window.scrollY, selectedId: select.value, currentEditingId, adminMode }));
-    }
-
-    function restoreUiState() {
-      try {
-        const ui = JSON.parse(localStorage.getItem('gardenkey-admin-ui') || '{}');
-        if (ui.selectedId && plants[ui.selectedId]) {
-          loadToForm(ui.selectedId);
+    async function loadLive(reset = false) {
+      if (reset) localStorage.removeItem('gardenkey-dashboard-draft');
+      if (!reset) {
+        const draft = localStorage.getItem('gardenkey-dashboard-draft');
+        if (draft) {
+          try {
+            const saved = JSON.parse(draft);
+            plants = saved.plants || {};
+            currentEditingId = saved.currentEditingId || Object.keys(plants)[0] || null;
+            mode = saved.mode || 'edit';
+            renderLibrary();
+            if (saved.form && mode === 'new') plantToForm(saved.form); else if (currentEditingId) plantToForm(plants[currentEditingId]); else addPlant();
+            setTimeout(() => window.scrollTo(0, saved.scrollY || 0), 50);
+            setStatus('Restored your local working session.');
+            return;
+          } catch (e) {}
         }
-        setTimeout(() => window.scrollTo(0, ui.scrollY || 0), 80);
-      } catch (_) {}
-    }
-
-    async function resetToLiveJson() {
-      if (!confirm('Reset the browser preview to the live GitHub plants.json? This discards unsaved admin edits stored on this device.')) return;
-      localStorage.removeItem('gardenkey-plants');
-      localStorage.removeItem('gardenkey-admin-draft');
-      localStorage.removeItem('gardenkey-admin-ui');
-      const response = await fetch('plants.json?cachebust=' + Date.now());
-      plants = await response.json();
-      currentEditingId = null;
-      adminMode = 'edit';
-      fillSelect();
-      const first = Object.keys(plants)[0];
-      if (first) loadToForm(first); else clearForm();
-      setStatus('Reset complete. Reloaded live plants.json from GitHub.');
-    }
-
-    async function init() {
-      try {
-        const local = localStorage.getItem('gardenkey-plants');
-        if (local) {
-          plants = JSON.parse(local);
-          setStatus('Loaded saved browser preview. Use Reset to live if you want to discard local edits.');
-        } else {
-          const response = await fetch('plants.json?cachebust=' + Date.now());
-          plants = await response.json();
-          setStatus('Loaded live plants.json.');
-        }
-        fillSelect();
-        const first = Object.keys(plants)[0];
-        if (first) loadToForm(select.value || first); else clearForm();
-        restoreUiState();
-      } catch (error) {
-        setStatus('Could not load plants.json. Check the file is uploaded.');
       }
+      const res = await fetch('plants.json?cache=' + Date.now());
+      plants = await res.json();
+      currentEditingId = Object.keys(plants)[0] || null;
+      mode = 'edit';
+      renderLibrary();
+      if (currentEditingId) selectPlant(currentEditingId); else addPlant();
+      setStatus(reset ? 'Reset to live GitHub data.' : 'Loaded live GitHub data.');
     }
 
-    select.addEventListener('change', () => {
-      if (!select.value) { makeNewPlant(); return; }
-      loadToForm(select.value);
-    });
-    form.addEventListener('input', () => renderPreview(true));
-    window.addEventListener('scroll', () => saveUiState(), { passive: true });
-    document.addEventListener('visibilitychange', () => { if (document.hidden) saveUiState(); });
-    window.addEventListener('pageshow', restoreUiState);
-    document.getElementById('saveBrowser').addEventListener('click', () => saveFromForm(false));
-    document.getElementById('newPlant').addEventListener('click', makeNewPlant);
+    document.getElementById('addPlant').addEventListener('click', addPlant);
+    document.getElementById('savePlant').addEventListener('click', savePlant);
     document.getElementById('duplicatePlant').addEventListener('click', duplicatePlant);
     document.getElementById('deletePlant').addEventListener('click', deletePlant);
     document.getElementById('downloadJson').addEventListener('click', downloadJson);
+    document.getElementById('downloadJsonTop').addEventListener('click', downloadJson);
+    document.getElementById('resetLive').addEventListener('click', () => {
+      if (confirm('This will discard local working changes and reload the live GitHub plants.json. Continue?')) loadLive(true);
+    });
+    document.getElementById('copyUrl').addEventListener('click', async () => {
+      const url = new URL(openPlant.getAttribute('href'), window.location.href).href;
+      await navigator.clipboard.writeText(url);
+      setStatus('NFC URL copied.');
+    });
+    document.getElementById('searchPlants').addEventListener('input', e => { searchTerm = e.target.value; renderLibrary(); });
+    form.addEventListener('input', () => { updateChrome(); renderPreview(); saveDraft(); });
+    window.addEventListener('scroll', () => saveDraft(), { passive: true });
+    document.querySelectorAll('.section-toggle').forEach(btn => btn.addEventListener('click', () => btn.closest('.form-section').classList.toggle('open')));
 
-    const resetButton = document.createElement('button');
-    resetButton.className = 'button secondary';
-    resetButton.type = 'button';
-    resetButton.textContent = 'Reset to live GitHub data';
-    resetButton.addEventListener('click', resetToLiveJson);
-    document.querySelector('.sticky-actions .admin-buttons:last-of-type').appendChild(resetButton);
-
-    init();
+    loadLive();
   </script>
 </body>
 </html>
