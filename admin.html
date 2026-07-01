@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GardenKey Dashboard</title>
+  <title>GardenKey Dashboard v9</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,6 +17,7 @@
       <div class="dash-actions">
         <a class="button secondary" href="index.html">Home</a>
         <button class="button secondary" id="resetLive" type="button">Reset to live GitHub data</button>
+        <button class="button secondary" id="clearSession" type="button">Clear local draft</button>
         <button class="button primary" id="downloadJsonTop" type="button">Download plants.json</button>
       </div>
     </section>
@@ -56,23 +57,23 @@
           <section class="form-section open">
             <button class="section-toggle" type="button">1. Identity</button>
             <div class="section-body two-col">
-              <label>GardenKey ID <input name="id" required placeholder="GK-0001" /></label>
-              <label>Slug <input name="slug" placeholder="lavender" /></label>
-              <label>Plant name <input name="name" required placeholder="Lavender" /></label>
-              <label>Latin name <input name="latinName" placeholder="Lavandula angustifolia" /></label>
-              <label class="full">Short description <textarea name="subtitle" placeholder="Scented, sun-loving, pollinator friendly."></textarea></label>
+              <label>GardenKey ID <input name="id" required placeholder="e.g. GK-ROS-001" /></label>
+              <label>Slug <input name="slug" placeholder="e.g. rose" /></label>
+              <label>Plant name <input name="name" required placeholder="e.g. Rose" /></label>
+              <label>Latin name <input name="latinName" placeholder="e.g. Rosa" /></label>
+              <label class="full">Short description <textarea name="subtitle" placeholder="e.g. Beautiful flowering shrub."></textarea></label>
               <label class="full">Photo URL <input name="photo" placeholder="Optional image URL" /></label>
-              <label class="full">Tags <input name="tags" placeholder="Full sun, Low water, Bee friendly" /></label>
+              <label class="full">Tags <input name="tags" placeholder="e.g. Full sun, Pollinator friendly" /></label>
             </div>
           </section>
 
           <section class="form-section open">
             <button class="section-toggle" type="button">2. Quick care</button>
             <div class="section-body two-col">
-              <label>Water <input name="water" placeholder="Lightly once soil is dry" /></label>
-              <label>Light / Aspect <input name="aspect" placeholder="Full sun, sheltered spot" /></label>
-              <label>Feeding <input name="feeding" placeholder="Minimal feeding needed" /></label>
-              <label>Pruning <input name="pruning" placeholder="Trim after flowering" /></label>
+              <label>Water <input name="water" placeholder="e.g. Water deeply when the top compost feels dry" /></label>
+              <label>Light / Aspect <input name="aspect" placeholder="e.g. Full sun with good airflow" /></label>
+              <label>Feeding <input name="feeding" placeholder="e.g. Feed in spring and early summer" /></label>
+              <label>Pruning <input name="pruning" placeholder="e.g. Prune in late winter" /></label>
             </div>
           </section>
 
@@ -86,19 +87,19 @@
           <section class="form-section">
             <button class="section-toggle" type="button">4. Seasonal actions</button>
             <div class="section-body two-col">
-              <label>Spring <textarea name="spring" placeholder="Check drainage and remove dead growth."></textarea></label>
-              <label>Summer <textarea name="summer" placeholder="Trim lightly after flowering."></textarea></label>
-              <label>Autumn <textarea name="autumn" placeholder="Reduce watering."></textarea></label>
-              <label>Winter <textarea name="winter" placeholder="Protect from cold, wet compost."></textarea></label>
+              <label>Spring <textarea name="spring" placeholder="e.g. Feed and mulch."></textarea></label>
+              <label>Summer <textarea name="summer" placeholder="e.g. Deadhead and water during dry spells."></textarea></label>
+              <label>Autumn <textarea name="autumn" placeholder="e.g. Clear fallen leaves."></textarea></label>
+              <label>Winter <textarea name="winter" placeholder="e.g. Prune while dormant."></textarea></label>
             </div>
           </section>
 
           <section class="form-section">
             <button class="section-toggle" type="button">5. Lists</button>
             <div class="section-body two-col">
-              <label>Problems — one per line <textarea name="problems" rows="5" placeholder="Root rot\nAphids"></textarea></label>
-              <label>Companions — one per line <textarea name="companions" rows="5" placeholder="Rosemary\nThyme"></textarea></label>
-              <label class="full">Propagation — one per line <textarea name="propagation" rows="5" placeholder="Take semi-ripe cuttings in late summer."></textarea></label>
+              <label>Problems — one per line <textarea name="problems" rows="5" placeholder="e.g. Aphids\nBlack spot"></textarea></label>
+              <label>Companions — one per line <textarea name="companions" rows="5" placeholder="e.g. Lavender\nSalvia"></textarea></label>
+              <label class="full">Propagation — one per line <textarea name="propagation" rows="5" placeholder="e.g. Take cuttings in late summer."></textarea></label>
             </div>
           </section>
         </form>
@@ -251,7 +252,7 @@
     }
 
     function saveDraft() {
-      localStorage.setItem('gardenkey-dashboard-draft', JSON.stringify({ plants, currentEditingId, mode, form: formToPlant(), scrollY: window.scrollY }));
+      localStorage.setItem('gardenkey-dashboard-draft-v9', JSON.stringify({ plants, currentEditingId, mode, form: formToPlant(), scrollY: window.scrollY }));
     }
 
     function selectPlant(id) {
@@ -267,7 +268,7 @@
       // Start from a completely clean form. Do not reuse the selected plant or any restored draft.
       mode = 'new';
       currentEditingId = null;
-      localStorage.removeItem('gardenkey-dashboard-draft');
+      localStorage.removeItem('gardenkey-dashboard-draft-v9');
       form.reset();
       plantToForm(blankPlant());
       renderLibrary();
@@ -317,7 +318,11 @@
     }
 
     function downloadJson() {
-      savePlant();
+      // Only save the visible form first when it has a valid ID and name.
+      const visible = formToPlant();
+      if (visible.id && visible.name) {
+        savePlant();
+      }
       const blob = new Blob([JSON.stringify(plants, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -329,9 +334,9 @@
     }
 
     async function loadLive(reset = false) {
-      if (reset) localStorage.removeItem('gardenkey-dashboard-draft');
+      if (reset) localStorage.removeItem('gardenkey-dashboard-draft-v9');
       if (!reset) {
-        const draft = localStorage.getItem('gardenkey-dashboard-draft');
+        const draft = localStorage.getItem('gardenkey-dashboard-draft-v9');
         if (draft) {
           try {
             const saved = JSON.parse(draft);
@@ -365,7 +370,7 @@
       if (confirm('This will discard local working changes and reload the live GitHub plants.json. Continue?')) loadLive(true);
     });
     document.getElementById('clearSession').addEventListener('click', () => {
-      localStorage.removeItem('gardenkey-dashboard-draft');
+      localStorage.removeItem('gardenkey-dashboard-draft-v9');
       addPlant();
       setStatus('Local draft cleared. New plant form is blank.');
     });
@@ -379,6 +384,7 @@
     window.addEventListener('scroll', () => saveDraft(), { passive: true });
     document.querySelectorAll('.section-toggle').forEach(btn => btn.addEventListener('click', () => btn.closest('.form-section').classList.toggle('open')));
 
+    localStorage.removeItem('gardenkey-dashboard-draft');
     loadLive();
   </script>
 </body>

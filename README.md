@@ -1,35 +1,11 @@
-# GardenKey MVP v7 - Dashboard
+# GardenKey MVP v9 Dashboard Fix
 
-This version introduces a cleaner GardenKey Dashboard admin experience.
+Fixes:
+- Dashboard JavaScript error caused by missing Clear local draft button.
+- Add Plant form now uses genuinely blank values.
+- Placeholder text is generic so it no longer looks like Lavender has been pre-filled.
+- Uses a new local draft key and clears older local drafts from previous versions.
+- Includes Lavender, Tomato, Fern and Rose in plants.json.
 
-## What's new
-
-- Plant library cards instead of a basic selector
-- Search by plant name, ID, Latin name or tag
-- Blank Add Plant workflow
-- Auto-generated simple IDs such as GK-0001 for new records
-- Live preview panel
-- Copy NFC URL button
-- Sticky save/download controls
-- Safer save behaviour to avoid overwriting records
-- Local session restore so switching tabs/apps should bring you back closer to where you were
-
-## Publishing workflow
-
-1. Open `admin.html`.
-2. Click **+ Add Plant** or select an existing plant.
-3. Click **Save to working library**.
-4. Click **Download plants.json**.
-5. Upload the downloaded `plants.json` to GitHub, replacing the existing one.
-6. Test the plant page using `plant.html?id=GK-...`.
-
-## Important NFC rule
-
-Keep the GardenKey ID stable. If the ID stays the same, the NFC tag URL can stay the same while the website design and plant information change.
-
-
-## V8 Admin blank form fix
-- Add Plant now opens a fully blank form.
-- Local new-plant drafts no longer repopulate the form with old plant data.
-- Added Clear local draft button.
-- Restored Rose sample record GK-ROS-001 in plants.json.
+Upload all files to the existing GitHub repo and replace the old versions.
+After upload, open /admin.html and press Clear local draft once.
