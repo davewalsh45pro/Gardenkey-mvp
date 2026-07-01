@@ -11,36 +11,77 @@
     <section class="brand-card compact">
       <div class="brand-mark">GK</div>
       <p class="eyebrow">GardenKey Admin</p>
-      <h1>Edit plant data without editing HTML.</h1>
-      <p class="lede">Update fields below, then download your new <strong>plants.json</strong> and upload it to GitHub.</p>
-    </section>
-
-    <section class="card">
-      <label for="plantSelect">Choose plant</label>
-      <select id="plantSelect"></select>
+      <h1>Manage plant profiles without editing code.</h1>
+      <p class="lede">Choose a plant, edit the fields, preview the result, then download an updated <strong>plants.json</strong> for GitHub.</p>
       <div class="button-row">
-        <button class="button secondary" id="newPlant" type="button">New plant</button>
-        <button class="button primary" id="downloadJson" type="button">Download plants.json</button>
+        <a class="button secondary" href="index.html">Home</a>
+        <a class="button secondary" id="openPlant" href="plant.html?id=GK-LAV-001">Open profile</a>
       </div>
     </section>
 
+    <section class="card admin-panel sticky-actions">
+      <label for="plantSelect">Choose plant profile</label>
+      <select id="plantSelect"></select>
+      <div class="button-row admin-buttons">
+        <button class="button secondary" id="newPlant" type="button">New</button>
+        <button class="button secondary" id="duplicatePlant" type="button">Duplicate</button>
+        <button class="button danger" id="deletePlant" type="button">Delete</button>
+      </div>
+      <div class="button-row admin-buttons">
+        <button class="button primary" id="saveBrowser" type="button">Save preview</button>
+        <button class="button primary" id="downloadJson" type="button">Download plants.json</button>
+      </div>
+      <p class="admin-hint" id="statusText">Loaded plant profiles.</p>
+    </section>
+
     <form class="card form-card" id="plantForm">
-      <label>ID <input name="id" required /></label>
-      <label>Slug <input name="slug" /></label>
-      <label>Name <input name="name" required /></label>
-      <label>Latin name <input name="latinName" /></label>
-      <label>Subtitle <textarea name="subtitle"></textarea></label>
-      <label>Tags, comma separated <input name="tags" /></label>
-      <label>Water <input name="water" /></label>
-      <label>Aspect / Light <input name="aspect" /></label>
-      <label>Feeding <input name="feeding" /></label>
-      <label>Pruning <input name="pruning" /></label>
-      <label>Notes <textarea name="notes"></textarea></label>
-      <button class="button primary full" type="submit">Save in browser preview</button>
+      <details open>
+        <summary>1. Identity</summary>
+        <label>GardenKey ID <input name="id" required placeholder="GK-LAV-001" /></label>
+        <label>Slug <input name="slug" placeholder="lavender" /></label>
+        <label>Name <input name="name" required placeholder="Lavender" /></label>
+        <label>Latin name <input name="latinName" placeholder="Lavandula angustifolia" /></label>
+        <label>Subtitle <textarea name="subtitle" placeholder="Scented, sun-loving, pollinator friendly."></textarea></label>
+        <label>Photo URL <input name="photo" placeholder="Optional image URL" /></label>
+        <label>Tags, comma separated <input name="tags" placeholder="Full sun, Low water, Bee friendly" /></label>
+      </details>
+
+      <details open>
+        <summary>2. Quick care cards</summary>
+        <label>Water <input name="water" /></label>
+        <label>Light / Aspect <input name="aspect" /></label>
+        <label>Feeding <input name="feeding" /></label>
+        <label>Pruning <input name="pruning" /></label>
+      </details>
+
+      <details>
+        <summary>3. Grower notes</summary>
+        <label>Notes <textarea name="notes" rows="5"></textarea></label>
+      </details>
+
+      <details>
+        <summary>4. Seasonal actions</summary>
+        <label>Spring <textarea name="spring"></textarea></label>
+        <label>Summer <textarea name="summer"></textarea></label>
+        <label>Autumn <textarea name="autumn"></textarea></label>
+        <label>Winter <textarea name="winter"></textarea></label>
+      </details>
+
+      <details>
+        <summary>5. Lists</summary>
+        <label>Common problems — one per line <textarea name="problems" rows="5"></textarea></label>
+        <label>Companion planting — one per line <textarea name="companions" rows="5"></textarea></label>
+        <label>Propagation notes — one per line <textarea name="propagation" rows="5"></textarea></label>
+      </details>
     </form>
 
+    <section class="card preview-card">
+      <div class="card-label">Live preview</div>
+      <div id="miniPreview"></div>
+    </section>
+
     <section class="card warning-card">
-      <strong>Important:</strong> this static admin page saves in your browser only. To publish changes, download <strong>plants.json</strong> and upload it to GitHub, replacing the old file.
+      <strong>Publishing workflow:</strong> save your preview, download <strong>plants.json</strong>, then upload that file to your GitHub repo replacing the existing one. Your NFC URLs can stay the same as long as each GardenKey ID stays the same.
     </section>
   </main>
 
@@ -48,86 +89,192 @@
     let plants = {};
     const select = document.getElementById('plantSelect');
     const form = document.getElementById('plantForm');
+    const statusText = document.getElementById('statusText');
+    const openPlant = document.getElementById('openPlant');
+
+    const fields = ['id','slug','name','latinName','subtitle','photo','tags','water','aspect','feeding','pruning','notes','spring','summer','autumn','winter','problems','companions','propagation'];
+
+    function byName(name) { return form.elements[name]; }
+    function linesToArray(value) { return value.split('\n').map(v => v.trim()).filter(Boolean); }
+    function arrayToLines(value) { return Array.isArray(value) ? value.join('\n') : ''; }
+    function tagsToArray(value) { return value.split(',').map(v => v.trim()).filter(Boolean); }
+    function setStatus(text) { statusText.textContent = text; }
+    function safeId(value) { return value.trim().toUpperCase().replace(/\s+/g, '-'); }
 
     function fillSelect() {
-      select.innerHTML = Object.values(plants).map(p => `<option value="${p.id}">${p.name} — ${p.id}</option>`).join('');
+      const current = select.value;
+      const list = Object.values(plants).sort((a,b) => (a.name || '').localeCompare(b.name || ''));
+      select.innerHTML = list.map(p => `<option value="${p.id}">${p.name || 'Unnamed'} — ${p.id}</option>`).join('');
+      if (plants[current]) select.value = current;
+      updateOpenLink();
+    }
+
+    function updateOpenLink() {
+      const id = byName('id').value || select.value || 'GK-LAV-001';
+      openPlant.href = `plant.html?id=${encodeURIComponent(id)}`;
     }
 
     function loadToForm(id) {
       const p = plants[id];
       if (!p) return;
-      form.id.value = p.id || '';
-      form.slug.value = p.slug || '';
-      form.name.value = p.name || '';
-      form.latinName.value = p.latinName || '';
-      form.subtitle.value = p.subtitle || '';
-      form.tags.value = (p.tags || []).join(', ');
-      form.water.value = p.quickCare?.Water || '';
-      form.aspect.value = p.quickCare?.Aspect || '';
-      form.feeding.value = p.quickCare?.Feeding || '';
-      form.pruning.value = p.quickCare?.Pruning || '';
-      form.notes.value = p.notes || '';
+      byName('id').value = p.id || '';
+      byName('slug').value = p.slug || '';
+      byName('name').value = p.name || '';
+      byName('latinName').value = p.latinName || '';
+      byName('subtitle').value = p.subtitle || '';
+      byName('photo').value = p.photo || '';
+      byName('tags').value = (p.tags || []).join(', ');
+      byName('water').value = p.quickCare?.Water || '';
+      byName('aspect').value = p.quickCare?.Aspect || '';
+      byName('feeding').value = p.quickCare?.Feeding || '';
+      byName('pruning').value = p.quickCare?.Pruning || '';
+      byName('notes').value = p.notes || '';
+      byName('spring').value = p.seasonalActions?.Spring || '';
+      byName('summer').value = p.seasonalActions?.Summer || '';
+      byName('autumn').value = p.seasonalActions?.Autumn || '';
+      byName('winter').value = p.seasonalActions?.Winter || '';
+      byName('problems').value = arrayToLines(p.problems);
+      byName('companions').value = arrayToLines(p.companions);
+      byName('propagation').value = arrayToLines(p.propagation);
+      updateOpenLink();
+      renderPreview();
     }
 
-    function saveFromForm() {
-      const oldId = select.value;
-      const id = form.id.value.trim();
-      if (!id) return;
-      if (oldId && oldId !== id) delete plants[oldId];
-      plants[id] = {
-        ...(plants[id] || {}),
+    function plantFromForm() {
+      const id = safeId(byName('id').value);
+      return {
         id,
-        slug: form.slug.value.trim(),
-        name: form.name.value.trim(),
-        latinName: form.latinName.value.trim(),
-        subtitle: form.subtitle.value.trim(),
-        photo: plants[id]?.photo || '',
-        tags: form.tags.value.split(',').map(t => t.trim()).filter(Boolean),
+        slug: byName('slug').value.trim().toLowerCase().replace(/\s+/g, '-'),
+        name: byName('name').value.trim(),
+        latinName: byName('latinName').value.trim(),
+        subtitle: byName('subtitle').value.trim(),
+        photo: byName('photo').value.trim(),
+        tags: tagsToArray(byName('tags').value),
         quickCare: {
-          Water: form.water.value.trim(),
-          Feeding: form.feeding.value.trim(),
-          Aspect: form.aspect.value.trim(),
-          Pruning: form.pruning.value.trim()
+          Water: byName('water').value.trim(),
+          Feeding: byName('feeding').value.trim(),
+          Aspect: byName('aspect').value.trim(),
+          Pruning: byName('pruning').value.trim()
         },
-        notes: form.notes.value.trim(),
-        seasonalActions: plants[id]?.seasonalActions || {},
-        problems: plants[id]?.problems || [],
-        companions: plants[id]?.companions || [],
-        propagation: plants[id]?.propagation || []
+        notes: byName('notes').value.trim(),
+        seasonalActions: {
+          Spring: byName('spring').value.trim(),
+          Summer: byName('summer').value.trim(),
+          Autumn: byName('autumn').value.trim(),
+          Winter: byName('winter').value.trim()
+        },
+        problems: linesToArray(byName('problems').value),
+        companions: linesToArray(byName('companions').value),
+        propagation: linesToArray(byName('propagation').value)
       };
+    }
+
+    function saveFromForm(silent = false) {
+      const oldId = select.value;
+      const plant = plantFromForm();
+      if (!plant.id || !plant.name) {
+        setStatus('Add at least an ID and plant name.');
+        return false;
+      }
+      if (oldId && oldId !== plant.id) delete plants[oldId];
+      plants[plant.id] = plant;
       localStorage.setItem('gardenkey-plants', JSON.stringify(plants));
       fillSelect();
-      select.value = id;
-      alert('Saved in browser preview. Download plants.json when ready to publish.');
+      select.value = plant.id;
+      updateOpenLink();
+      renderPreview();
+      if (!silent) setStatus(`Saved ${plant.name} in browser preview. Download plants.json to publish.`);
+      return true;
     }
 
-    async function init() {
-      const local = localStorage.getItem('gardenkey-plants');
-      if (local) plants = JSON.parse(local);
-      else {
-        const response = await fetch('plants.json');
-        plants = await response.json();
-      }
+    function renderPreview() {
+      const p = plantFromForm();
+      document.getElementById('miniPreview').innerHTML = `
+        <div class="mini-plant">
+          <div><span class="logo-chip mini">GardenKey</span><span class="id-chip mini">${p.id || 'GK-NEW-001'}</span></div>
+          <h2>${p.name || 'New Plant'}</h2>
+          <p><em>${p.latinName || ''}</em>${p.latinName ? ' — ' : ''}${p.subtitle || 'Plant profile preview'}</p>
+          <div class="tag-strip compact-tags">${p.tags.map(t => `<span class="pill">${t}</span>`).join('')}</div>
+          <ul class="mini-care">
+            <li><strong>Water:</strong> ${p.quickCare.Water || 'Not set yet'}</li>
+            <li><strong>Light:</strong> ${p.quickCare.Aspect || 'Not set yet'}</li>
+            <li><strong>Feeding:</strong> ${p.quickCare.Feeding || 'Not set yet'}</li>
+            <li><strong>Pruning:</strong> ${p.quickCare.Pruning || 'Not set yet'}</li>
+          </ul>
+        </div>`;
+      updateOpenLink();
+    }
+
+    function makeNewPlant() {
+      const count = Object.keys(plants).length + 1;
+      fields.forEach(f => byName(f).value = '');
+      byName('id').value = `GK-NEW-${String(count).padStart(3, '0')}`;
+      byName('slug').value = 'new-plant';
+      byName('name').value = 'New Plant';
+      setStatus('New plant started. Edit the fields, then Save preview.');
+      renderPreview();
+    }
+
+    function duplicatePlant() {
+      const source = plants[select.value];
+      if (!source) return;
+      loadToForm(source.id);
+      byName('id').value = source.id + '-COPY';
+      byName('name').value = source.name + ' Copy';
+      setStatus('Duplicated plant. Change the ID before saving.');
+      renderPreview();
+    }
+
+    function deletePlant() {
+      const id = select.value;
+      if (!id || !plants[id]) return;
+      if (!confirm(`Delete ${plants[id].name} from browser preview?`)) return;
+      delete plants[id];
+      localStorage.setItem('gardenkey-plants', JSON.stringify(plants));
       fillSelect();
       loadToForm(select.value);
+      setStatus('Deleted from browser preview. Download plants.json to publish this change.');
     }
 
-    select.addEventListener('change', () => loadToForm(select.value));
-    form.addEventListener('submit', event => { event.preventDefault(); saveFromForm(); });
-    document.getElementById('newPlant').addEventListener('click', () => {
-      form.reset();
-      form.id.value = 'GK-NEW-001';
-      form.name.value = 'New Plant';
-    });
-    document.getElementById('downloadJson').addEventListener('click', () => {
+    function downloadJson() {
+      saveFromForm(true);
       const blob = new Blob([JSON.stringify(plants, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = 'plants.json';
+      document.body.appendChild(a);
       a.click();
+      a.remove();
       URL.revokeObjectURL(url);
-    });
+      setStatus('Downloaded plants.json. Upload it to GitHub to publish.');
+    }
+
+    async function init() {
+      try {
+        const local = localStorage.getItem('gardenkey-plants');
+        if (local) {
+          plants = JSON.parse(local);
+          setStatus('Loaded saved browser preview.');
+        } else {
+          const response = await fetch('plants.json');
+          plants = await response.json();
+          setStatus('Loaded live plants.json.');
+        }
+        fillSelect();
+        loadToForm(select.value);
+      } catch (error) {
+        setStatus('Could not load plants.json. Check the file is uploaded.');
+      }
+    }
+
+    select.addEventListener('change', () => loadToForm(select.value));
+    form.addEventListener('input', renderPreview);
+    document.getElementById('saveBrowser').addEventListener('click', () => saveFromForm(false));
+    document.getElementById('newPlant').addEventListener('click', makeNewPlant);
+    document.getElementById('duplicatePlant').addEventListener('click', duplicatePlant);
+    document.getElementById('deletePlant').addEventListener('click', deletePlant);
+    document.getElementById('downloadJson').addEventListener('click', downloadJson);
     init();
   </script>
 </body>

@@ -213,3 +213,26 @@ body {
   .hero-copy h1 { font-size: 4.2rem; }
   .footer-card { flex-direction: column; }
 }
+
+/* GardenKey Admin v4 additions */
+.admin-panel { position: sticky; top: 10px; z-index: 5; }
+.admin-buttons { margin-top: 10px; }
+.button.danger { background: #f3ded8; color: #762819; border: 1px solid rgba(118,40,25,.18); }
+.admin-hint { color: var(--muted); margin: 12px 0 0; line-height: 1.45; }
+.form-card details { border-top: 1px solid var(--line); padding: 12px 0; }
+.form-card details:first-child { border-top: 0; }
+.form-card summary { cursor: pointer; font-weight: 900; font-size: 1.08rem; color: var(--green-dark); margin-bottom: 12px; }
+.form-card input, .form-card textarea, .form-card select { margin-top: 6px; margin-bottom: 12px; background: white; }
+.preview-card { overflow: hidden; }
+.mini-plant { background: linear-gradient(135deg, #fdf7ea, #e9f1df); border: 1px solid var(--line); border-radius: 22px; padding: 16px; }
+.mini-plant h2 { margin: 18px 0 6px; font-size: 2.2rem; letter-spacing: -.06em; }
+.mini-plant p { line-height: 1.45; margin: 0; }
+.logo-chip.mini, .id-chip.mini { padding: 7px 10px; margin-right: 8px; font-size: .72rem; }
+.id-chip.mini { color: white; background: rgba(23,51,36,.62); }
+.compact-tags { padding: 14px 0 6px; flex-wrap: wrap; overflow: visible; }
+.mini-care { list-style: none; padding: 0; margin: 12px 0 0; }
+.mini-care li { padding: 8px 0; border-top: 1px solid var(--line); }
+@media (max-width: 560px) {
+  .quick-grid { grid-template-columns: 1fr; }
+  .admin-panel { position: static; }
+}
