@@ -6,12 +6,7 @@
     "latinName": "Lavandula angustifolia",
     "subtitle": "Scented, sun-loving, pollinator friendly.",
     "photo": "",
-    "tags": [
-      "Full sun",
-      "Low water",
-      "Free-draining soil",
-      "Bee friendly"
-    ],
+    "tags": ["Full sun", "Low water", "Free-draining soil", "Bee friendly"],
     "quickCare": {
       "Water": "Lightly once soil is dry",
       "Feeding": "Minimal feeding needed",
@@ -25,74 +20,58 @@
       "Autumn": "Reduce watering and keep the crown dry.",
       "Winter": "Protect from sitting in wet, cold compost."
     },
-    "problems": [
-      "Yellowing leaves can indicate overwatering.",
-      "Leggy growth usually means not enough sun or too much feed."
-    ],
-    "lastUpdated": "2026-06-28"
+    "problems": ["Yellowing leaves can mean overwatering.", "Leggy growth usually means not enough sun.", "Woody stems build up if it is not pruned lightly."],
+    "companions": ["Rosemary", "Thyme", "Sage", "Echinacea"],
+    "propagation": ["Take semi-ripe cuttings in late summer.", "Use free-draining compost with added grit or perlite."]
   },
   "GK-TOM-001": {
     "id": "GK-TOM-001",
     "slug": "tomato",
     "name": "Tomato",
     "latinName": "Solanum lycopersicum",
-    "subtitle": "Warm-season edible crop for sunny balconies, patios and greenhouses.",
+    "subtitle": "Hungry, productive and perfect for summer growing.",
     "photo": "",
-    "tags": [
-      "Full sun",
-      "Regular water",
-      "Feed weekly",
-      "Edible"
-    ],
+    "tags": ["Sun", "Regular water", "Heavy feeder", "Edible"],
     "quickCare": {
-      "Water": "Keep evenly moist, avoid drying out",
-      "Feeding": "High-potash tomato feed when flowering",
-      "Aspect": "Warm, sunny, sheltered spot",
+      "Water": "Keep evenly moist",
+      "Feeding": "Feed weekly once flowering",
+      "Aspect": "Full sun and warmth",
       "Pruning": "Remove side shoots on cordon types"
     },
-    "notes": "Tomatoes are hungry plants. Keep watering consistent to reduce splitting and blossom end rot. Stake or support as the plant grows.",
+    "notes": "Avoid irregular watering, which can contribute to fruit splitting or blossom end rot. Support stems before they become heavy.",
     "seasonalActions": {
-      "Spring": "Sow indoors or buy young plants after frost risk.",
-      "Summer": "Feed weekly, water regularly and tie in growth.",
-      "Autumn": "Ripen remaining fruit indoors if weather cools.",
-      "Winter": "Clean pots and dispose of old plant material."
+      "Spring": "Pot on seedlings and harden off gradually.",
+      "Summer": "Feed, tie in stems and monitor watering.",
+      "Autumn": "Ripen remaining fruit indoors if needed.",
+      "Winter": "Clean pots and plan next season's variety."
     },
-    "problems": [
-      "Blossom end rot is often linked to irregular watering.",
-      "Whitefly and aphids can build up under cover."
-    ],
-    "lastUpdated": "2026-06-28"
+    "problems": ["Blossom end rot is linked to inconsistent water uptake.", "Blight risk increases in damp conditions.", "Whitefly and aphids can build up under cover."],
+    "companions": ["Basil", "Marigold", "Chives", "Parsley"],
+    "propagation": ["Sow seed indoors in spring.", "Keep seedlings warm and bright."]
   },
   "GK-FRN-001": {
     "id": "GK-FRN-001",
     "slug": "fern",
     "name": "Fern",
     "latinName": "Polypodiopsida",
-    "subtitle": "Shade-loving foliage plant that prefers steady moisture.",
+    "subtitle": "Shade-loving foliage for calm, green corners.",
     "photo": "",
-    "tags": [
-      "Part shade",
-      "Moist compost",
-      "Humidity",
-      "Foliage"
-    ],
+    "tags": ["Shade", "Moist soil", "Foliage", "Low light"],
     "quickCare": {
-      "Water": "Keep lightly moist, not waterlogged",
-      "Feeding": "Weak feed during active growth",
-      "Aspect": "Bright shade or indirect light",
-      "Pruning": "Remove brown or damaged fronds"
+      "Water": "Keep lightly moist",
+      "Feeding": "Weak feed in growing season",
+      "Aspect": "Shade to indirect light",
+      "Pruning": "Remove dead fronds"
     },
-    "notes": "Ferns generally prefer humidity and protection from harsh midday sun. Avoid letting the compost completely dry out.",
+    "notes": "Most ferns prefer consistent moisture and dislike drying out fully. Avoid harsh direct sun, especially through glass.",
     "seasonalActions": {
-      "Spring": "Remove old fronds and refresh top layer of compost.",
-      "Summer": "Watch moisture closely during warm weather.",
+      "Spring": "Refresh compost top layer and remove old fronds.",
+      "Summer": "Keep moisture consistent in warm weather.",
       "Autumn": "Reduce feeding as growth slows.",
-      "Winter": "Keep away from cold draughts and avoid overwatering."
+      "Winter": "Avoid cold draughts and waterlogging."
     },
-    "problems": [
-      "Crispy tips often indicate low humidity or underwatering.",
-      "Yellow fronds may indicate overwatering or poor drainage."
-    ],
-    "lastUpdated": "2026-06-28"
+    "problems": ["Crispy leaf edges can indicate dry air or underwatering.", "Pale fronds may mean too much light.", "Root rot can happen if left sitting in water."],
+    "companions": ["Hosta", "Heuchera", "Ivy", "Moss"],
+    "propagation": ["Divide mature plants in spring.", "Keep divisions shaded and moist while they settle."]
   }
 }

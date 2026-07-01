@@ -1,35 +1,21 @@
-# GardenKey MVP v2
+# GardenKey MVP v3
 
-This version uses a single reusable plant profile page plus a JSON data file.
+Polished mobile-first GardenKey prototype using GitHub Pages.
 
 ## Files
-
-- `index.html` — homepage and sample links
-- `plant.html` — one reusable plant profile page
-- `admin.html` — simple browser-based plant editor
-- `data/plants.json` — all plant information
-- `assets/styles.css` — design styles
+- `index.html` — homepage and plant list
+- `plant.html` — reusable single plant profile page
+- `plants.json` — plant data
+- `admin.html` — browser-based editor and JSON downloader
+- `styles.css` — polished GardenKey interface
 
 ## NFC URL format
+Use this structure on NFC tags:
 
-Use this format on NFC tags:
+`https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001`
 
-```text
-https://YOURUSERNAME.github.io/YOUR-REPO/plant.html?id=GK-LAV-001
-```
-
-For your current repo this will likely be:
-
-```text
-https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001
-```
-
-## How to publish
-
-Upload all files and folders to your existing GitHub repository. Keep `data/plants.json` inside the `data` folder.
-
-## Admin limitation
-
-Because GitHub Pages is static and free, the admin page cannot save directly to GitHub by itself. It saves changes in your browser for preview, then lets you download an updated `plants.json` file. You then upload that JSON file to GitHub.
-
-A later v3 could use Firebase, Supabase, Airtable, or GitHub API login to save changes online.
+## Updating data
+1. Open `admin.html` on the live site.
+2. Edit plant details.
+3. Download `plants.json`.
+4. Upload the new `plants.json` to GitHub, replacing the existing one.

@@ -1,28 +1,130 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Plant</title><link rel="stylesheet" href="assets/styles.css"></head><body><main class="wrap" id="app"><section class="notice">Loading GardenKey plant profile...</section></main><script>
-async function loadPlants(){
-  const local = localStorage.getItem('gardenkeyPlants');
-  if(local){ try { return JSON.parse(local); } catch(e){} }
-  const res = await fetch('plants.json', {cache:'no-store'});
-  if(!res.ok) throw new Error('Could not load plants.json');
-  return res.json();
-}
-function esc(v){return String(v ?? '').replace(/[&<>"]/g, s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]));}
-function renderPlant(p){
- document.title=`GardenKey: ${p.name}`;
- const tags=(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
- const care=Object.entries(p.quickCare||{}).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
- const seasons=Object.entries(p.seasonalActions||{}).map(([k,v])=>`<div><strong>${esc(k)}:</strong> ${esc(v)}</div>`).join('');
- const problems=(p.problems||[]).map(x=>`<li>${esc(x)}</li>`).join('');
- document.getElementById('app').innerHTML=`<section class="hero"><div class="brand">GardenKey</div><div class="id">GardenKey ID: ${esc(p.id)}</div><h1>${esc(p.name)}</h1><p class="latin"><em>${esc(p.latinName)}</em> — ${esc(p.subtitle)}</p><div class="tags">${tags}</div></section><section class="card"><h2>Quick Care</h2><dl>${care}</dl></section><section class="card"><h2>Notes</h2><p>${esc(p.notes)}</p></section><section class="card"><h2>Seasonal Actions</h2><div class="season">${seasons}</div></section><section class="card"><h2>Common Problems</h2><ul>${problems}</ul></section><section class="card"><h2>Prototype Admin</h2><p class="small">Last updated: ${esc(p.lastUpdated || 'Not set')}</p><div class="nav"><a class="btn secondary" href="index.html">Home</a><a class="btn" href="admin.html?id=${encodeURIComponent(p.id)}">Edit this plant</a></div></section>`;
-}
-(async()=>{
- const params=new URLSearchParams(location.search);
- const id=params.get('id') || 'GK-LAV-001';
- try{
-   const plants=await loadPlants();
-   const p=plants[id];
-   if(!p){document.getElementById('app').innerHTML=`<section class="notice error"><strong>Plant not found:</strong> ${esc(id)}<br><br>Check the NFC URL or add this ID in <code>data/plants.json</code>.</section><p><a class="btn" href="index.html">Back home</a></p>`;return;}
-   renderPlant(p);
- }catch(e){document.getElementById('app').innerHTML=`<section class="notice error">Could not load plant data. ${esc(e.message)}</section>`;}
-})();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GardenKey Plant Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell" id="app">
+    <section class="loading-card">Loading GardenKey profile…</section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || 'GK-LAV-001';
+
+    const fallbackImages = {
+      lavender: 'linear-gradient(135deg, #7753a8 0%, #b89bd9 45%, #eef4df 100%)',
+      tomato: 'linear-gradient(135deg, #b4432f 0%, #f3a14b 45%, #eff7df 100%)',
+      fern: 'linear-gradient(135deg, #174d35 0%, #5d9b69 45%, #e3f0df 100%)'
+    };
+
+    function clean(value, fallback = 'Not set yet') {
+      return value && String(value).trim() ? value : fallback;
+    }
+
+    function tagList(tags = []) {
+      return tags.map(tag => `<span class="pill">${tag}</span>`).join('');
+    }
+
+    function sectionList(title, data) {
+      if (!data) return '';
+      const entries = Array.isArray(data)
+        ? data.map(item => `<li>${item}</li>`).join('')
+        : Object.entries(data).map(([key, value]) => `<li><strong>${key}</strong><span>${value}</span></li>`).join('');
+
+      return `
+        <section class="card collapsible">
+          <button class="section-toggle" type="button" aria-expanded="true">
+            <span>${title}</span><span>⌄</span>
+          </button>
+          <div class="section-content"><ul class="detail-list">${entries}</ul></div>
+        </section>
+      `;
+    }
+
+    function careCard(label, value, icon) {
+      return `
+        <article class="care-card">
+          <div class="care-icon">${icon}</div>
+          <div><small>${label}</small><strong>${clean(value)}</strong></div>
+        </article>
+      `;
+    }
+
+    function renderPlant(plant) {
+      const slug = plant.slug || 'lavender';
+      const heroStyle = plant.photo
+        ? `background-image: linear-gradient(180deg, rgba(12, 44, 30, .18), rgba(12, 44, 30, .72)), url('${plant.photo}')`
+        : `background: ${fallbackImages[slug] || fallbackImages.lavender}`;
+
+      document.title = `${plant.name} | GardenKey`;
+      document.getElementById('app').innerHTML = `
+        <section class="hero" style="${heroStyle}">
+          <div class="topbar">
+            <span class="logo-chip">GardenKey</span>
+            <span class="id-chip">${plant.id}</span>
+          </div>
+          <div class="hero-copy">
+            <p class="latin">${clean(plant.latinName, '')}</p>
+            <h1>${plant.name}</h1>
+            <p>${clean(plant.subtitle, 'Plant care profile')}</p>
+          </div>
+        </section>
+
+        <section class="tag-strip">${tagList(plant.tags || [])}</section>
+
+        <section class="quick-grid">
+          ${careCard('Water', plant.quickCare?.Water, '💧')}
+          ${careCard('Light', plant.quickCare?.Aspect, '☀️')}
+          ${careCard('Feeding', plant.quickCare?.Feeding, '🌱')}
+          ${careCard('Pruning', plant.quickCare?.Pruning, '✂️')}
+        </section>
+
+        <section class="card note-card">
+          <div class="card-label">Grower notes</div>
+          <p>${clean(plant.notes)}</p>
+        </section>
+
+        ${sectionList('Seasonal actions', plant.seasonalActions)}
+        ${sectionList('Common problems', plant.problems)}
+        ${sectionList('Companion planting', plant.companions)}
+        ${sectionList('Propagation notes', plant.propagation)}
+
+        <section class="footer-card">
+          <strong>GardenKey prototype</strong>
+          <span>Tap, learn, care, grow.</span>
+        </section>
+      `;
+
+      document.querySelectorAll('.section-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const card = button.closest('.collapsible');
+          const open = card.classList.toggle('closed') === false;
+          button.setAttribute('aria-expanded', String(open));
+        });
+      });
+    }
+
+    async function init() {
+      try {
+        const response = await fetch('plants.json');
+        if (!response.ok) throw new Error('Could not load plants.json');
+        const plants = await response.json();
+        const plant = plants[id];
+        if (!plant) {
+          document.getElementById('app').innerHTML = `<section class="error-card"><h1>Plant not found</h1><p>No plant profile exists for <strong>${id}</strong>.</p><a class="button primary" href="index.html">Back to GardenKey</a></section>`;
+          return;
+        }
+        renderPlant(plant);
+      } catch (error) {
+        document.getElementById('app').innerHTML = `<section class="error-card"><h1>Could not load plant data</h1><p>${error.message}</p></section>`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

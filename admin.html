@@ -1,14 +1,134 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Admin</title><link rel="stylesheet" href="assets/styles.css"></head><body><main class="wrap"><section class="hero"><div class="brand">GardenKey Admin</div><h1>Plant editor</h1><p class="latin">Static GitHub Pages cannot save directly to your website. This editor lets you edit plant data, preview it locally, then download an updated <code>plants.json</code> file to upload to GitHub.</p></section><section class="notice"><strong>Workflow:</strong> Load plant → edit fields → save to browser preview → download JSON → upload it to <code>data/plants.json</code> in GitHub.</section><section class="card"><h2>Select plant</h2><div class="form-grid"><label>Plant ID<select id="plantSelect"></select></label><label>New ID<input id="newId" placeholder="GK-ROSE-001"></label></div><div class="nav"><button onclick="loadSelected()">Load selected</button><button class="secondary" onclick="createNew()">Create new plant</button></div></section><section class="card"><h2>Edit profile</h2><div class="form-grid"><label>ID<input id="id"></label><label>Name<input id="name"></label><label>Latin name<input id="latinName"></label><label>Subtitle<input id="subtitle"></label><label>Tags, comma separated<input id="tags"></label><label>Last updated<input id="lastUpdated" type="date"></label></div><h3>Quick Care</h3><div class="form-grid"><label>Water<input id="careWater"></label><label>Feeding<input id="careFeeding"></label><label>Aspect<input id="careAspect"></label><label>Pruning<input id="carePruning"></label></div><label>Notes<textarea id="notes"></textarea></label><h3>Seasonal Actions</h3><div class="form-grid"><label>Spring<textarea id="spring"></textarea></label><label>Summer<textarea id="summer"></textarea></label><label>Autumn<textarea id="autumn"></textarea></label><label>Winter<textarea id="winter"></textarea></label></div><label>Problems, one per line<textarea id="problems"></textarea></label><div class="nav"><button onclick="saveCurrent()">Save to browser preview</button><button class="secondary" onclick="downloadJson()">Download plants.json</button><a class="btn secondary" id="previewLink" href="plant.html?id=GK-LAV-001">Preview plant</a></div></section><section class="card"><h2>Upload back to GitHub</h2><ol><li>Download <code>plants.json</code>.</li><li>In GitHub, open your repo.</li><li>Open the <code>data</code> folder.</li><li>Open <code>plants.json</code>.</li><li>Tap the pencil/edit button.</li><li>Replace all existing text with the downloaded JSON contents.</li><li>Commit changes.</li></ol></section></main><script>
-let plants={};
-async function init(){const local=localStorage.getItem('gardenkeyPlants');if(local){plants=JSON.parse(local)}else{plants=await (await fetch('data/plants.json',{cache:'no-store'})).json()}populateSelect();const q=new URLSearchParams(location.search).get('id');if(q&&plants[q]){document.getElementById('plantSelect').value=q;}loadSelected();}
-function populateSelect(){const s=document.getElementById('plantSelect');s.innerHTML=Object.keys(plants).map(id=>`<option value="${id}">${id} — ${plants[id].name}</option>`).join('')}
-function setVal(id,v){document.getElementById(id).value=v??''}function getVal(id){return document.getElementById(id).value.trim()}
-function loadSelected(){const id=getVal('plantSelect');const p=plants[id];if(!p)return;setVal('id',p.id);setVal('name',p.name);setVal('latinName',p.latinName);setVal('subtitle',p.subtitle);setVal('tags',(p.tags||[]).join(', '));setVal('lastUpdated',p.lastUpdated);setVal('careWater',p.quickCare?.Water);setVal('careFeeding',p.quickCare?.Feeding);setVal('careAspect',p.quickCare?.Aspect);setVal('carePruning',p.quickCare?.Pruning);setVal('notes',p.notes);setVal('spring',p.seasonalActions?.Spring);setVal('summer',p.seasonalActions?.Summer);setVal('autumn',p.seasonalActions?.Autumn);setVal('winter',p.seasonalActions?.Winter);setVal('problems',(p.problems||[]).join('
-'));document.getElementById('previewLink').href=`plant.html?id=${encodeURIComponent(p.id)}`}
-function plantFromForm(){const id=getVal('id');return {id,slug:id.toLowerCase(),name:getVal('name'),latinName:getVal('latinName'),subtitle:getVal('subtitle'),photo:'',tags:getVal('tags').split(',').map(x=>x.trim()).filter(Boolean),quickCare:{Water:getVal('careWater'),Feeding:getVal('careFeeding'),Aspect:getVal('careAspect'),Pruning:getVal('carePruning')},notes:getVal('notes'),seasonalActions:{Spring:getVal('spring'),Summer:getVal('summer'),Autumn:getVal('autumn'),Winter:getVal('winter')},problems:getVal('problems').split('
-').map(x=>x.trim()).filter(Boolean),lastUpdated:getVal('lastUpdated')}}
-function saveCurrent(){const p=plantFromForm();if(!p.id){alert('Plant ID is required');return}plants[p.id]=p;localStorage.setItem('gardenkeyPlants',JSON.stringify(plants,null,2));populateSelect();document.getElementById('plantSelect').value=p.id;document.getElementById('previewLink').href=`plant.html?id=${encodeURIComponent(p.id)}`;alert('Saved in browser preview. Download plants.json when ready to publish.')}
-function createNew(){const id=getVal('newId')||`GK-NEW-${String(Object.keys(plants).length+1).padStart(3,'0')}`;plants[id]={id,slug:id.toLowerCase(),name:'New Plant',latinName:'',subtitle:'',photo:'',tags:[],quickCare:{Water:'',Feeding:'',Aspect:'',Pruning:''},notes:'',seasonalActions:{Spring:'',Summer:'',Autumn:'',Winter:''},problems:[],lastUpdated:new Date().toISOString().slice(0,10)};populateSelect();document.getElementById('plantSelect').value=id;loadSelected()}
-function downloadJson(){saveCurrent();const blob=new Blob([JSON.stringify(plants,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='plants.json';a.click();URL.revokeObjectURL(a.href)}
-init();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GardenKey Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell admin-shell">
+    <section class="brand-card compact">
+      <div class="brand-mark">GK</div>
+      <p class="eyebrow">GardenKey Admin</p>
+      <h1>Edit plant data without editing HTML.</h1>
+      <p class="lede">Update fields below, then download your new <strong>plants.json</strong> and upload it to GitHub.</p>
+    </section>
+
+    <section class="card">
+      <label for="plantSelect">Choose plant</label>
+      <select id="plantSelect"></select>
+      <div class="button-row">
+        <button class="button secondary" id="newPlant" type="button">New plant</button>
+        <button class="button primary" id="downloadJson" type="button">Download plants.json</button>
+      </div>
+    </section>
+
+    <form class="card form-card" id="plantForm">
+      <label>ID <input name="id" required /></label>
+      <label>Slug <input name="slug" /></label>
+      <label>Name <input name="name" required /></label>
+      <label>Latin name <input name="latinName" /></label>
+      <label>Subtitle <textarea name="subtitle"></textarea></label>
+      <label>Tags, comma separated <input name="tags" /></label>
+      <label>Water <input name="water" /></label>
+      <label>Aspect / Light <input name="aspect" /></label>
+      <label>Feeding <input name="feeding" /></label>
+      <label>Pruning <input name="pruning" /></label>
+      <label>Notes <textarea name="notes"></textarea></label>
+      <button class="button primary full" type="submit">Save in browser preview</button>
+    </form>
+
+    <section class="card warning-card">
+      <strong>Important:</strong> this static admin page saves in your browser only. To publish changes, download <strong>plants.json</strong> and upload it to GitHub, replacing the old file.
+    </section>
+  </main>
+
+  <script>
+    let plants = {};
+    const select = document.getElementById('plantSelect');
+    const form = document.getElementById('plantForm');
+
+    function fillSelect() {
+      select.innerHTML = Object.values(plants).map(p => `<option value="${p.id}">${p.name} — ${p.id}</option>`).join('');
+    }
+
+    function loadToForm(id) {
+      const p = plants[id];
+      if (!p) return;
+      form.id.value = p.id || '';
+      form.slug.value = p.slug || '';
+      form.name.value = p.name || '';
+      form.latinName.value = p.latinName || '';
+      form.subtitle.value = p.subtitle || '';
+      form.tags.value = (p.tags || []).join(', ');
+      form.water.value = p.quickCare?.Water || '';
+      form.aspect.value = p.quickCare?.Aspect || '';
+      form.feeding.value = p.quickCare?.Feeding || '';
+      form.pruning.value = p.quickCare?.Pruning || '';
+      form.notes.value = p.notes || '';
+    }
+
+    function saveFromForm() {
+      const oldId = select.value;
+      const id = form.id.value.trim();
+      if (!id) return;
+      if (oldId && oldId !== id) delete plants[oldId];
+      plants[id] = {
+        ...(plants[id] || {}),
+        id,
+        slug: form.slug.value.trim(),
+        name: form.name.value.trim(),
+        latinName: form.latinName.value.trim(),
+        subtitle: form.subtitle.value.trim(),
+        photo: plants[id]?.photo || '',
+        tags: form.tags.value.split(',').map(t => t.trim()).filter(Boolean),
+        quickCare: {
+          Water: form.water.value.trim(),
+          Feeding: form.feeding.value.trim(),
+          Aspect: form.aspect.value.trim(),
+          Pruning: form.pruning.value.trim()
+        },
+        notes: form.notes.value.trim(),
+        seasonalActions: plants[id]?.seasonalActions || {},
+        problems: plants[id]?.problems || [],
+        companions: plants[id]?.companions || [],
+        propagation: plants[id]?.propagation || []
+      };
+      localStorage.setItem('gardenkey-plants', JSON.stringify(plants));
+      fillSelect();
+      select.value = id;
+      alert('Saved in browser preview. Download plants.json when ready to publish.');
+    }
+
+    async function init() {
+      const local = localStorage.getItem('gardenkey-plants');
+      if (local) plants = JSON.parse(local);
+      else {
+        const response = await fetch('plants.json');
+        plants = await response.json();
+      }
+      fillSelect();
+      loadToForm(select.value);
+    }
+
+    select.addEventListener('change', () => loadToForm(select.value));
+    form.addEventListener('submit', event => { event.preventDefault(); saveFromForm(); });
+    document.getElementById('newPlant').addEventListener('click', () => {
+      form.reset();
+      form.id.value = 'GK-NEW-001';
+      form.name.value = 'New Plant';
+    });
+    document.getElementById('downloadJson').addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify(plants, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'plants.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+    init();
+  </script>
+</body>
+</html>

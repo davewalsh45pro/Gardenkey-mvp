@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey MVP v2</title><link rel="stylesheet" href="assets/styles.css"></head><body><main class="wrap"><section class="hero"><div class="brand">GardenKey MVP v2</div><h1>Plant identity, one tap away.</h1><p class="latin">This version uses one reusable plant page and a JSON data file. NFC tags can point to URLs like <code>plant.html?id=GK-LAV-001</code>.</p><div class="nav"><a class="btn" href="plant.html?id=GK-LAV-001">Open Lavender</a><a class="btn secondary" href="plant.html?id=GK-TOM-001">Open Tomato</a><a class="btn secondary" href="plant.html?id=GK-FRN-001">Open Fern</a><a class="btn secondary" href="admin.html">Admin editor</a></div></section><section class="card"><h2>NFC test URLs</h2><p>Once uploaded to GitHub Pages, write one of these to a tag:</p><ul><li><code>https://YOURUSERNAME.github.io/YOUR-REPO/plant.html?id=GK-LAV-001</code></li><li><code>https://YOURUSERNAME.github.io/YOUR-REPO/plant.html?id=GK-TOM-001</code></li><li><code>https://YOURUSERNAME.github.io/YOUR-REPO/plant.html?id=GK-FRN-001</code></li></ul></section><footer>GardenKey prototype — static GitHub Pages version.</footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GardenKey MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell home-shell">
+    <section class="brand-card">
+      <div class="brand-mark">GK</div>
+      <p class="eyebrow">GardenKey MVP</p>
+      <h1>Tap a tag. Open a living plant profile.</h1>
+      <p class="lede">A simple mobile-first test site for NFC plant tags, care guidance, seasonal actions and plant notes.</p>
+      <div class="button-row">
+        <a class="button primary" href="plant.html?id=GK-LAV-001">Open Lavender</a>
+        <a class="button secondary" href="admin.html">Open Admin</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Sample plants</h2>
+      <div class="plant-list" id="plantList">Loading plants…</div>
+    </section>
+  </main>
+
+  <script>
+    async function loadPlants() {
+      const list = document.getElementById('plantList');
+      try {
+        const response = await fetch('plants.json');
+        const plants = await response.json();
+        list.innerHTML = Object.values(plants).map(plant => `
+          <a class="plant-row" href="plant.html?id=${encodeURIComponent(plant.id)}">
+            <span><strong>${plant.name}</strong><small>${plant.latinName || plant.id}</small></span>
+            <span class="row-arrow">→</span>
+          </a>
+        `).join('');
+      } catch (error) {
+        list.textContent = 'Could not load plant list.';
+      }
+    }
+    loadPlants();
+  </script>
+</body>
+</html>
