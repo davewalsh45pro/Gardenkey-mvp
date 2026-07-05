@@ -1,24 +1,23 @@
-# GardenKey MVP v12 — Pilot Content Expansion
+# GardenKey MVP v13 — Tester Expansion
 
-Upload all files to the existing GitHub repository, replacing the current files.
+Upload these files to your existing GitHub repository, replacing the current files.
 
-## What's new
-- Mode 1: `index.html` welcome/start page for unprogrammed tester tags.
-- Mode 2: `plant.html?id=GK-...` direct plant profile for programmed tags.
-- 10 plant starter library including Dahlia and Canna.
-- Expanded plant data model: photos, variety, soil, growing medium, propagation, common problems/fixes, companions, pollinator score, seasonal actions, timing and weekly facts.
-- CSS animated NFC programming guide on the start page.
-- Admin dashboard updated to edit the expanded fields.
+## Files
+- `index.html` — public welcome page, plant library, category search, NFC guide.
+- `plant.html` — plant profile page with expanded care sections.
+- `admin.html` — owner/admin plant library builder for David.
+- `create.html` — public tester draft page. Testers can create a plant draft and email it to David.
+- `plants.json` — shared GardenKey plant library.
 
-## Pilot URL examples
-- Start page: `https://davewalsh45pro.github.io/Gardenkey-mvp/`
-- Dahlia: `https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-DAH-001`
-- Canna: `https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-CAN-001`
+## Stable NFC paths
+- Blank/tester starter tag: `https://davewalsh45pro.github.io/Gardenkey-mvp/`
+- Direct plant tag: `https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001`
 
-## Publishing updated plant data
-1. Open `admin.html`.
-2. Edit or add plants.
-3. Click `Save to working library`.
-4. Click `Download plants.json`.
-5. Upload the downloaded `plants.json` to GitHub, replacing the previous one.
-6. Commit changes and wait for GitHub Pages to redeploy.
+## Important pilot note
+GitHub Pages is static. It cannot safely allow public users to edit the shared plant library directly without exposing write permissions. For the pilot:
+1. Testers create drafts on `create.html`.
+2. Drafts are emailed to David.
+3. David decides which entries to add to `plants.json` using `admin.html`.
+4. David uploads the updated `plants.json` to GitHub.
+
+A future production version should use a database such as Firebase or Supabase, with user accounts and per-customer plant records.

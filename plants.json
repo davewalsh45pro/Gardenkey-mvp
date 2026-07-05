@@ -1,238 +1,17 @@
 {
-  "GK-LAV-001": {
-    "id": "GK-LAV-001",
-    "slug": "lavender",
-    "name": "Lavender",
-    "latinName": "Lavandula angustifolia",
-    "variety": "English lavender",
-    "subtitle": "Scented, sun-loving, pollinator friendly.",
-    "theme": "#8f6ccf",
+  "GK-CAN-001": {
+    "id": "GK-CAN-001",
+    "slug": "canna",
+    "name": "Canna",
+    "latinName": "Canna indica hybrid",
+    "variety": "Canna lily",
+    "subtitle": "Tropical foliage and flower impact for warm sheltered spots.",
+    "theme": "#e76f3c",
     "tags": [
-      "Full sun",
-      "Low water",
-      "Free-draining soil",
-      "Bee friendly"
-    ],
-    "quickCare": {
-      "Water": "Lightly once soil is dry",
-      "Light": "Full sun, sheltered spot",
-      "Feeding": "Minimal feeding needed",
-      "Pruning": "Trim after flowering"
-    },
-    "notes": "Do not overwater. Lavender dislikes sitting in wet compost. Add grit or perlite if the potting mix is too rich or heavy.",
-    "soil": "Free-draining, gritty, slightly alkaline to neutral soil. Avoid heavy wet compost.",
-    "medium": "Use peat-free compost mixed with horticultural grit or perlite. For pots, aim for sharp drainage and raise the pot slightly in winter.",
-    "seasonalActions": {
-      "Spring": "Check drainage, remove dead growth and lightly refresh top dressing.",
-      "Summer": "Trim lightly after flowering and avoid heavy feeding.",
-      "Autumn": "Reduce watering and keep the crown dry.",
-      "Winter": "Protect from prolonged wet, cold compost."
-    },
-    "problems": [
-      {
-        "name": "Root rot",
-        "fix": "Usually caused by wet compost. Improve drainage, reduce watering and consider repotting into a gritty mix."
-      },
-      {
-        "name": "Poor flowering",
-        "fix": "Move to stronger sun and avoid rich feeding."
-      },
-      {
-        "name": "Aphids",
-        "fix": "Squash by hand or wash off with water; encourage hoverflies and ladybirds."
-      }
-    ],
-    "companions": [
-      "Rose",
-      "Rosemary",
-      "Thyme",
-      "Salvia"
-    ],
-    "propagation": {
-      "season": "Late summer for semi-ripe cuttings; spring for seed.",
-      "methods": "Semi-ripe cuttings root well in a gritty, free-draining medium.",
-      "tips": "Avoid overly humid sealed conditions; gentle ventilation helps reduce rot."
-    },
-    "pollinator": {
-      "score": 5,
-      "value": "Excellent nectar source for bees, butterflies and hoverflies. Flowering lavender can support pollinators while ornamentals nearby provide colour and structure."
-    },
-    "timeline": {
-      "Seeding": "Mar-Apr",
-      "Flowering": "Jun-Aug",
-      "Harvest": "Jul-Aug",
-      "Pruning": "Aug-Sep"
-    },
-    "photoPlan": {
-      "hero": "Whole plant in flower, ideally with bees visible.",
-      "gallery": [
-        "Close-up of flower spikes",
-        "Grey-green foliage",
-        "Winter structure after pruning",
-        "Seed heads / spent flower stems"
-      ]
-    },
-    "weeklyFact": "Lavender oil has been used historically for scenting linen and household spaces."
-  },
-  "GK-ROS-001": {
-    "id": "GK-ROS-001",
-    "slug": "rose",
-    "name": "Rose",
-    "latinName": "Rosa",
-    "variety": "Shrub rose",
-    "subtitle": "Classic flowering shrub with high ornamental value.",
-    "theme": "#d85b7a",
-    "tags": [
-      "Full sun",
-      "Flowers",
-      "Feed in spring",
-      "Pollinator value varies"
-    ],
-    "quickCare": {
-      "Water": "Deeply in dry spells",
-      "Light": "Full sun preferred",
-      "Feeding": "Feed in spring and early summer",
-      "Pruning": "Prune in late winter"
-    },
-    "notes": "Deadhead regularly to encourage flowering. Keep air moving around the plant to reduce fungal disease.",
-    "soil": "Fertile, moisture-retentive but free-draining soil. Avoid waterlogging.",
-    "medium": "For pots, use a loam-based peat-free compost with added organic matter and good drainage.",
-    "seasonalActions": {
-      "Spring": "Feed and mulch; check new shoots for aphids.",
-      "Summer": "Deadhead, water deeply in dry periods and watch for blackspot.",
-      "Autumn": "Clear fallen diseased leaves.",
-      "Winter": "Prune while dormant and remove weak growth."
-    },
-    "problems": [
-      {
-        "name": "Blackspot",
-        "fix": "Remove affected leaves, avoid overhead watering and improve airflow."
-      },
-      {
-        "name": "Aphids",
-        "fix": "Wipe off early colonies or spray with water; avoid broad insecticides where possible."
-      },
-      {
-        "name": "Powdery mildew",
-        "fix": "Water consistently, improve airflow and avoid drought stress."
-      }
-    ],
-    "companions": [
-      "Lavender",
-      "Salvia",
-      "Nepeta",
-      "Allium"
-    ],
-    "propagation": {
-      "season": "Hardwood cuttings in autumn or winter.",
-      "methods": "Take pencil-thick cuttings from healthy stems and insert into gritty compost.",
-      "tips": "Label varieties carefully; many roses look similar when dormant."
-    },
-    "pollinator": {
-      "score": 3,
-      "value": "Single and semi-double roses are usually better for pollinators than very double flowers."
-    },
-    "timeline": {
-      "Seeding": "Usually bought as plant",
-      "Flowering": "Jun-Oct",
-      "Harvest": "Rose hips in autumn",
-      "Pruning": "Feb-Mar"
-    },
-    "photoPlan": {
-      "hero": "Open flower and whole shrub context.",
-      "gallery": [
-        "Flower close-up",
-        "Foliage and thorns",
-        "Winter pruned framework",
-        "Rose hips where present"
-      ]
-    },
-    "weeklyFact": "Open-centred roses can provide pollen access for bees, unlike many very double varieties."
-  },
-  "GK-FRN-001": {
-    "id": "GK-FRN-001",
-    "slug": "fern",
-    "name": "Fern",
-    "latinName": "Polypodiopsida",
-    "variety": "Mixed garden fern",
-    "subtitle": "Shade-loving foliage for calm, green corners.",
-    "theme": "#2f8b57",
-    "tags": [
-      "Shade",
-      "Moist soil",
-      "Foliage",
-      "Low light"
-    ],
-    "quickCare": {
-      "Water": "Keep lightly moist",
-      "Light": "Shade to indirect light",
-      "Feeding": "Light feed in spring",
-      "Pruning": "Remove dead fronds"
-    },
-    "notes": "Ferns prefer consistent moisture and shelter from drying winds. Avoid strong afternoon sun.",
-    "soil": "Humus-rich, moisture-retentive soil with good structure.",
-    "medium": "Use peat-free multipurpose compost mixed with leaf mould or fine bark for moisture retention.",
-    "seasonalActions": {
-      "Spring": "Remove old fronds as new growth appears.",
-      "Summer": "Water during dry spells.",
-      "Autumn": "Top dress with leaf mould.",
-      "Winter": "Protect pots from drying winds."
-    },
-    "problems": [
-      {
-        "name": "Crispy fronds",
-        "fix": "Increase humidity/moisture and move from direct sun."
-      },
-      {
-        "name": "Slug damage",
-        "fix": "Check under rims and use barriers/traps rather than harsh chemicals."
-      }
-    ],
-    "companions": [
-      "Hosta",
-      "Hydrangea",
-      "Heuchera",
-      "Japanese Maple"
-    ],
-    "propagation": {
-      "season": "Spring division.",
-      "methods": "Divide established clumps or grow from spores for advanced propagation.",
-      "tips": "Keep divisions moist until re-established."
-    },
-    "pollinator": {
-      "score": 1,
-      "value": "Mainly habitat and shelter value rather than nectar value."
-    },
-    "timeline": {
-      "Seeding": "Spores advanced",
-      "Flowering": "No flowers",
-      "Harvest": "N/A",
-      "Pruning": "Mar-Apr"
-    },
-    "photoPlan": {
-      "hero": "Fresh fronds with shaded pot/garden context.",
-      "gallery": [
-        "Frond close-up",
-        "Crown/new unfurling fronds",
-        "Winter dormant/frond dieback",
-        "Spores under fronds if visible"
-      ]
-    },
-    "weeklyFact": "Ferns reproduce by spores, not flowers or seeds."
-  },
-  "GK-TOM-001": {
-    "id": "GK-TOM-001",
-    "slug": "tomato",
-    "name": "Tomato",
-    "latinName": "Solanum lycopersicum",
-    "variety": "Cherry tomato",
-    "subtitle": "Productive edible crop needing sun, food and steady water.",
-    "theme": "#d84b36",
-    "tags": [
-      "Edible",
-      "Full sun",
-      "Regular water",
-      "Feed weekly"
+      "Tropical look",
+      "Sun",
+      "Moist fertile soil",
+      "Tender"
     ],
     "quickCare": {
       "Water": "Keep consistent; avoid extremes",
@@ -240,7 +19,7 @@
       "Feeding": "Feed during active growth",
       "Pruning": "Prune at the right seasonal stage"
     },
-    "notes": "Pilot notes for Tomato. Adjust care based on your site, pot size, weather and plant maturity.",
+    "notes": "Pilot notes for Canna. Adjust care based on your site, pot size, weather and plant maturity.",
     "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
     "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
     "seasonalActions": {
@@ -264,28 +43,29 @@
       }
     ],
     "companions": [
-      "Lavender",
-      "Salvia",
-      "Hosta",
-      "Rose"
+      "Dahlia",
+      "Crocosmia",
+      "Banana",
+      "Verbena"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
       "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
       "score": 2,
-      "value": "Tomato flowers are mainly self-pollinating but buzz pollinators can help."
+      "value": "Mainly ornamental; some varieties attract insects but value varies."
     },
     "timeline": {
-      "Seeding": "Feb-Apr",
-      "Flowering": "May-Aug",
-      "Harvest": "Jul-Oct",
-      "Pruning": "Pinch side shoots for cordon types"
+      "Seeding": "Feb-Mar indoors",
+      "Flowering": "Jul-Oct",
+      "Harvest": "N/A",
+      "Pruning": "Cut down after frost; overwinter rhizomes"
     },
     "photoPlan": {
-      "hero": "Clear whole-plant photo of Tomato.",
+      "hero": "Clear whole-plant photo of Canna.",
       "gallery": [
         "Close-up of flower",
         "Foliage detail",
@@ -293,7 +73,158 @@
         "Seed pod, fruit, tuber or spent flower if applicable"
       ]
     },
-    "weeklyFact": "Tomato is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Canna is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Tender perennial",
+    "pollinatorFact": "Canna flowers are bold and tropical-looking; value depends on variety and whether insects can access the flower parts.",
+    "companionLinks": {
+      "Dahlia": "GK-DAH-001"
+    }
+  },
+  "GK-CAR-001": {
+    "id": "GK-CAR-001",
+    "slug": "carrot",
+    "name": "Carrot",
+    "latinName": "Daucus carota subsp. sativus",
+    "variety": "Nantes type",
+    "subtitle": "Sweet roots for deep pots and fine soil.",
+    "theme": "#e8892f",
+    "category": "Vegetable",
+    "tags": [
+      "Edible",
+      "Root crop",
+      "Fine soil",
+      "Containers"
+    ],
+    "quickCare": {
+      "Water": "Keep steady, not soggy",
+      "Light": "Full sun",
+      "Feeding": "Avoid rich nitrogen feed",
+      "Pruning": "Thin seedlings carefully"
+    },
+    "notes": "Carrots are a good test for soil and medium notes because the root tells you exactly how good the growing conditions were.",
+    "soil": "Stone-free, light soil. Heavy or stony soil can fork the roots.",
+    "medium": "Use fine compost mixed with sand or grit for containers. Avoid fresh manure.",
+    "seasonalActions": {
+      "Spring": "Sow thinly once soil warms.",
+      "Summer": "Water in dry spells and thin carefully.",
+      "Autumn": "Harvest as needed.",
+      "Winter": "Store lifted roots or protect late crops."
+    },
+    "problems": [
+      {
+        "name": "Forked roots",
+        "fix": "Usually caused by stones, compacted soil or rich fresh manure. Use a finer medium next time."
+      },
+      {
+        "name": "Carrot fly",
+        "fix": "Cover with fine mesh and avoid bruising foliage when thinning."
+      }
+    ],
+    "propagation": {
+      "season": "Spring to early summer for most home sowings.",
+      "methods": "Sow seed directly where it is to grow.",
+      "tips": "Do not transplant carrots unless using special short-root types. They hate root disturbance.",
+      "tracker": "Track sowing date, thinning date and first harvest."
+    },
+    "pollinator": {
+      "score": 2,
+      "value": "Carrot flowers are useful to insects if allowed to flower in the second year, but most crops are harvested before then."
+    },
+    "pollinatorFact": "Umbellifer flowers like carrot relatives can be brilliant landing pads for hoverflies and other beneficial insects.",
+    "companions": [
+      "Lettuce",
+      "Chives",
+      "Onion"
+    ],
+    "timeline": {
+      "Seeding": "Mar-Jun",
+      "Flowering": "Second year if left",
+      "Harvest": "Jun-Oct",
+      "Pruning": "Thin seedlings"
+    },
+    "weeklyFact": "Carrot seed is tiny, which is why many gardeners accidentally sow enough carrots for a small village.",
+    "photoPlan": {
+      "hero": "Whole plant in natural light",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter appearance",
+        "Seed pod / fruit if relevant"
+      ]
+    }
+  },
+  "GK-COU-001": {
+    "id": "GK-COU-001",
+    "slug": "courgette",
+    "name": "Courgette",
+    "latinName": "Cucurbita pepo",
+    "variety": "Green bush type",
+    "subtitle": "Big leaves, big flowers and regular summer picking.",
+    "theme": "#4c8d3f",
+    "category": "Vegetable",
+    "tags": [
+      "Edible",
+      "Summer crop",
+      "Heavy feeder",
+      "Pollinator"
+    ],
+    "quickCare": {
+      "Water": "Water deeply and often",
+      "Light": "Full sun",
+      "Feeding": "Feed when flowering",
+      "Pruning": "Remove damaged leaves"
+    },
+    "notes": "Courgettes are great for testing harvest tracking because fruit can go from perfect to comedy size very quickly.",
+    "soil": "Rich, moisture-retentive but free-draining soil.",
+    "medium": "Peat-free compost with garden compost or manure-based improver in a large container.",
+    "seasonalActions": {
+      "Spring": "Sow indoors in pots.",
+      "Summer": "Water, feed and harvest small fruit regularly.",
+      "Autumn": "Remove tired plants after cropping.",
+      "Winter": "Plan next year and compost healthy remains."
+    },
+    "problems": [
+      {
+        "name": "Powdery mildew",
+        "fix": "Common later in the season. Water the soil not the leaves, improve airflow and remove badly affected leaves."
+      },
+      {
+        "name": "Poor fruit set",
+        "fix": "Often pollination or weather related. Encourage pollinators and try hand pollination if needed."
+      }
+    ],
+    "propagation": {
+      "season": "Sow in spring, plant out after frost risk.",
+      "methods": "Seed in pots; plant out carefully without disturbing roots.",
+      "tips": "Start with one or two plants unless you are emotionally prepared for courgette season.",
+      "tracker": "Track sowing, first flower, first harvest and weekly harvest count."
+    },
+    "pollinator": {
+      "score": 4,
+      "value": "Large yellow flowers attract pollinators, and good pollination improves fruit set."
+    },
+    "pollinatorFact": "Courgettes have male and female flowers, and bees do a lot of the matchmaking.",
+    "companions": [
+      "Nasturtium",
+      "Borage",
+      "Calendula"
+    ],
+    "timeline": {
+      "Seeding": "Apr-May indoors",
+      "Flowering": "Jun-Sep",
+      "Harvest": "Jul-Oct",
+      "Pruning": "Remove damaged leaves"
+    },
+    "weeklyFact": "A courgette can hide under one leaf and become a marrow while you are making a cup of tea.",
+    "photoPlan": {
+      "hero": "Whole plant in natural light",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter appearance",
+        "Seed pod / fruit if relevant"
+      ]
+    }
   },
   "GK-DAH-001": {
     "id": "GK-DAH-001",
@@ -339,15 +270,16 @@
       }
     ],
     "companions": [
-      "Lavender",
+      "Canna",
       "Salvia",
-      "Hosta",
-      "Rose"
+      "Cosmos",
+      "Verbena"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
       "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
       "score": 3,
@@ -368,157 +300,86 @@
         "Seed pod, fruit, tuber or spent flower if applicable"
       ]
     },
-    "weeklyFact": "Dahlia is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Dahlia is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Perennial",
+    "pollinatorFact": "Open-centred dahlias are much better for bees than tight decorative doubles, which can hide the pollen and nectar.",
+    "companionLinks": {
+      "Canna": "GK-CAN-001"
+    }
   },
-  "GK-CAN-001": {
-    "id": "GK-CAN-001",
-    "slug": "canna",
-    "name": "Canna",
-    "latinName": "Canna indica hybrid",
-    "variety": "Canna lily",
-    "subtitle": "Tropical foliage and flower impact for warm sheltered spots.",
-    "theme": "#e76f3c",
+  "GK-FRN-001": {
+    "id": "GK-FRN-001",
+    "slug": "fern",
+    "name": "Fern",
+    "latinName": "Polypodiopsida",
+    "variety": "Mixed garden fern",
+    "subtitle": "Shade-loving foliage for calm, green corners.",
+    "theme": "#2f8b57",
     "tags": [
-      "Tropical look",
-      "Sun",
-      "Moist fertile soil",
-      "Tender"
-    ],
-    "quickCare": {
-      "Water": "Keep consistent; avoid extremes",
-      "Light": "Match plant needs; avoid stress",
-      "Feeding": "Feed during active growth",
-      "Pruning": "Prune at the right seasonal stage"
-    },
-    "notes": "Pilot notes for Canna. Adjust care based on your site, pot size, weather and plant maturity.",
-    "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
-    "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
-    "seasonalActions": {
-      "Spring": "Check new growth, feed if needed and refresh surface compost.",
-      "Summer": "Monitor watering and pests during active growth.",
-      "Autumn": "Reduce feeding and prepare for dormancy or protection if needed.",
-      "Winter": "Protect vulnerable pots and review notes for next season."
-    },
-    "problems": [
-      {
-        "name": "Water stress",
-        "fix": "Check moisture at root level; adjust watering rather than watering by habit."
-      },
-      {
-        "name": "Pests",
-        "fix": "Identify first, then use the lowest-impact control such as hand removal, water spray or barriers."
-      },
-      {
-        "name": "Poor growth",
-        "fix": "Check light, drainage, root space and feeding before assuming disease."
-      }
-    ],
-    "companions": [
-      "Lavender",
-      "Salvia",
-      "Hosta",
-      "Rose"
-    ],
-    "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
-      "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
-    },
-    "pollinator": {
-      "score": 2,
-      "value": "Mainly ornamental; some varieties attract insects but value varies."
-    },
-    "timeline": {
-      "Seeding": "Feb-Mar indoors",
-      "Flowering": "Jul-Oct",
-      "Harvest": "N/A",
-      "Pruning": "Cut down after frost; overwinter rhizomes"
-    },
-    "photoPlan": {
-      "hero": "Clear whole-plant photo of Canna.",
-      "gallery": [
-        "Close-up of flower",
-        "Foliage detail",
-        "Winter/dormant appearance",
-        "Seed pod, fruit, tuber or spent flower if applicable"
-      ]
-    },
-    "weeklyFact": "Canna is included in the GardenKey pilot set to test different plant habits and care needs."
-  },
-  "GK-HYD-001": {
-    "id": "GK-HYD-001",
-    "slug": "hydrangea",
-    "name": "Hydrangea",
-    "latinName": "Hydrangea macrophylla",
-    "variety": "Mophead hydrangea",
-    "subtitle": "Hydrangea profile for GardenKey testing.",
-    "theme": "#6f8edc",
-    "tags": [
-      "Part shade",
+      "Shade",
       "Moist soil",
-      "Summer flowers",
-      "Acid/alkaline colour"
+      "Foliage",
+      "Low light"
     ],
     "quickCare": {
-      "Water": "Keep consistent; avoid extremes",
-      "Light": "Match plant needs; avoid stress",
-      "Feeding": "Feed during active growth",
-      "Pruning": "Prune at the right seasonal stage"
+      "Water": "Keep lightly moist",
+      "Light": "Shade to indirect light",
+      "Feeding": "Light feed in spring",
+      "Pruning": "Remove dead fronds"
     },
-    "notes": "Pilot notes for Hydrangea. Adjust care based on your site, pot size, weather and plant maturity.",
-    "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
-    "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
+    "notes": "Ferns prefer consistent moisture and shelter from drying winds. Avoid strong afternoon sun.",
+    "soil": "Humus-rich, moisture-retentive soil with good structure.",
+    "medium": "Use peat-free multipurpose compost mixed with leaf mould or fine bark for moisture retention.",
     "seasonalActions": {
-      "Spring": "Check new growth, feed if needed and refresh surface compost.",
-      "Summer": "Monitor watering and pests during active growth.",
-      "Autumn": "Reduce feeding and prepare for dormancy or protection if needed.",
-      "Winter": "Protect vulnerable pots and review notes for next season."
+      "Spring": "Remove old fronds as new growth appears.",
+      "Summer": "Water during dry spells.",
+      "Autumn": "Top dress with leaf mould.",
+      "Winter": "Tidy dead fronds when the plant is dormant or growth has slowed, usually November to March. Leaving some cover can help protect the crown."
     },
     "problems": [
       {
-        "name": "Water stress",
-        "fix": "Check moisture at root level; adjust watering rather than watering by habit."
+        "name": "Crispy fronds",
+        "fix": "Increase humidity/moisture and move from direct sun."
       },
       {
-        "name": "Pests",
-        "fix": "Identify first, then use the lowest-impact control such as hand removal, water spray or barriers."
-      },
-      {
-        "name": "Poor growth",
-        "fix": "Check light, drainage, root space and feeding before assuming disease."
+        "name": "Slug damage",
+        "fix": "Check under rims and use barriers/traps rather than harsh chemicals."
       }
     ],
     "companions": [
-      "Lavender",
-      "Salvia",
       "Hosta",
-      "Rose"
+      "Hydrangea",
+      "Heuchera",
+      "Japanese Maple"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
-      "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "season": "Spring division.",
+      "methods": "Divide established clumps or grow from spores for advanced propagation.",
+      "tips": "Keep divisions moist until re-established.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
-      "score": 3,
-      "value": "Pollinator value depends on flower form, nectar access and flowering season."
+      "score": 1,
+      "value": "Mainly habitat and shelter value rather than nectar value."
     },
     "timeline": {
-      "Seeding": "Varies",
-      "Flowering": "Varies",
-      "Harvest": "If applicable",
-      "Pruning": "Seasonal"
+      "Seeding": "Spores advanced",
+      "Flowering": "No flowers",
+      "Harvest": "N/A",
+      "Pruning": "Mar-Apr"
     },
     "photoPlan": {
-      "hero": "Clear whole-plant photo of Hydrangea.",
+      "hero": "Fresh fronds with shaded pot/garden context.",
       "gallery": [
-        "Close-up of flower",
-        "Foliage detail",
-        "Winter/dormant appearance",
-        "Seed pod, fruit, tuber or spent flower if applicable"
+        "Frond close-up",
+        "Crown/new unfurling fronds",
+        "Winter dormant/frond dieback",
+        "Spores under fronds if visible"
       ]
     },
-    "weeklyFact": "Hydrangea is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Ferns are ancient plants that reproduce by spores rather than flowers \u2014 very calm, very green, very Jurassic.",
+    "category": "Fern",
+    "pollinatorFact": "Ferns do not provide flowers for pollinators, but they do create shelter and humidity for small garden life."
   },
   "GK-HOS-001": {
     "id": "GK-HOS-001",
@@ -570,9 +431,10 @@
       "Rose"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
       "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
       "score": 3,
@@ -593,21 +455,23 @@
         "Seed pod, fruit, tuber or spent flower if applicable"
       ]
     },
-    "weeklyFact": "Hosta is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Hosta is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Perennial",
+    "pollinatorFact": "When hosta is in flower, watch which insects visit. GardenKey can use these notes later to build a pollinator value record for your garden."
   },
-  "GK-SAL-001": {
-    "id": "GK-SAL-001",
-    "slug": "salvia",
-    "name": "Salvia",
-    "latinName": "Salvia nemorosa",
-    "variety": "Hardy salvia",
-    "subtitle": "Salvia profile for GardenKey testing.",
-    "theme": "#5b4bb7",
+  "GK-HYD-001": {
+    "id": "GK-HYD-001",
+    "slug": "hydrangea",
+    "name": "Hydrangea",
+    "latinName": "Hydrangea macrophylla",
+    "variety": "Mophead hydrangea",
+    "subtitle": "Hydrangea profile for GardenKey testing.",
+    "theme": "#6f8edc",
     "tags": [
-      "Pollinator",
-      "Full sun",
-      "Free-draining soil",
-      "Cut back"
+      "Part shade",
+      "Moist soil",
+      "Summer flowers",
+      "Acid/alkaline colour"
     ],
     "quickCare": {
       "Water": "Keep consistent; avoid extremes",
@@ -615,7 +479,7 @@
       "Feeding": "Feed during active growth",
       "Pruning": "Prune at the right seasonal stage"
     },
-    "notes": "Pilot notes for Salvia. Adjust care based on your site, pot size, weather and plant maturity.",
+    "notes": "Pilot notes for Hydrangea. Adjust care based on your site, pot size, weather and plant maturity.",
     "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
     "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
     "seasonalActions": {
@@ -645,9 +509,10 @@
       "Rose"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
       "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
       "score": 3,
@@ -660,7 +525,7 @@
       "Pruning": "Seasonal"
     },
     "photoPlan": {
-      "hero": "Clear whole-plant photo of Salvia.",
+      "hero": "Clear whole-plant photo of Hydrangea.",
       "gallery": [
         "Close-up of flower",
         "Foliage detail",
@@ -668,7 +533,9 @@
         "Seed pod, fruit, tuber or spent flower if applicable"
       ]
     },
-    "weeklyFact": "Salvia is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Hydrangea is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Perennial",
+    "pollinatorFact": "When hydrangea is in flower, watch which insects visit. GardenKey can use these notes later to build a pollinator value record for your garden."
   },
   "GK-ACE-001": {
     "id": "GK-ACE-001",
@@ -720,9 +587,10 @@
       "Rose"
     ],
     "propagation": {
-      "season": "Varies by plant; check seasonal timing.",
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
       "methods": "Cuttings, division, seed or tubers depending on plant type.",
-      "tips": "Label every propagation attempt and record success rates."
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
     },
     "pollinator": {
       "score": 3,
@@ -743,6 +611,472 @@
         "Seed pod, fruit, tuber or spent flower if applicable"
       ]
     },
-    "weeklyFact": "Japanese Maple is included in the GardenKey pilot set to test different plant habits and care needs."
+    "weeklyFact": "Japanese Maple is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Tree",
+    "pollinatorFact": "When japanese maple is in flower, watch which insects visit. GardenKey can use these notes later to build a pollinator value record for your garden."
+  },
+  "GK-LAV-001": {
+    "id": "GK-LAV-001",
+    "slug": "lavender",
+    "name": "Lavender",
+    "latinName": "Lavandula angustifolia",
+    "variety": "English lavender",
+    "subtitle": "Scented, sun-loving, pollinator friendly.",
+    "theme": "#8f6ccf",
+    "tags": [
+      "Full sun",
+      "Low water",
+      "Free-draining soil",
+      "Bee friendly"
+    ],
+    "quickCare": {
+      "Water": "Lightly once soil is dry",
+      "Light": "Full sun, sheltered spot",
+      "Feeding": "Minimal feeding needed",
+      "Pruning": "Trim after flowering"
+    },
+    "notes": "Do not overwater. Lavender dislikes sitting in wet compost. Add grit or perlite if the potting mix is too rich or heavy.",
+    "soil": "Free-draining, gritty, slightly alkaline to neutral soil. Avoid heavy wet compost.",
+    "medium": "Use peat-free compost mixed with horticultural grit or perlite. For pots, aim for sharp drainage and raise the pot slightly in winter.",
+    "seasonalActions": {
+      "Spring": "Check drainage, remove dead growth and lightly refresh top dressing.",
+      "Summer": "Trim lightly after flowering and avoid heavy feeding.",
+      "Autumn": "Reduce watering and keep the crown dry.",
+      "Winter": "Keep it on the dry side and avoid waterlogged compost. If pruning is needed, wait until the plant is dormant or growth is quiet \u2014 usually November to March \u2014 but avoid cutting hard into old woody stems."
+    },
+    "problems": [
+      {
+        "name": "Root rot",
+        "fix": "Usually caused by wet compost. Improve drainage, reduce watering and consider repotting into a gritty mix."
+      },
+      {
+        "name": "Poor flowering",
+        "fix": "Move to stronger sun and avoid rich feeding."
+      },
+      {
+        "name": "Aphids",
+        "fix": "Squash by hand or wash off with water; encourage hoverflies and ladybirds."
+      }
+    ],
+    "companions": [
+      "Rose",
+      "Rosemary",
+      "Thyme",
+      "Salvia"
+    ],
+    "propagation": {
+      "season": "Late summer for semi-ripe cuttings; spring for seed.",
+      "methods": "Semi-ripe cuttings root well in a gritty, free-draining medium.",
+      "tips": "Avoid overly humid sealed conditions; gentle ventilation helps reduce rot.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+    },
+    "pollinator": {
+      "score": 5,
+      "value": "Excellent nectar source for bees, butterflies and hoverflies. Flowering lavender can support pollinators while ornamentals nearby provide colour and structure."
+    },
+    "timeline": {
+      "Seeding": "Mar-Apr",
+      "Flowering": "Jun-Aug",
+      "Harvest": "Jul-Aug",
+      "Pruning": "Aug-Sep"
+    },
+    "photoPlan": {
+      "hero": "Whole plant in flower, ideally with bees visible.",
+      "gallery": [
+        "Close-up of flower spikes",
+        "Grey-green foliage",
+        "Winter structure after pruning",
+        "Seed heads / spent flower stems"
+      ]
+    },
+    "weeklyFact": "Lavender has been used for centuries in gardens, medicine cupboards and linen drawers \u2014 basically the original plant-based air freshener.",
+    "category": "Perennial",
+    "pollinatorFact": "Open lavender flowers are brilliant for bees because the nectar is easy to access and the plant flowers over a useful summer window.",
+    "companionLinks": {
+      "Rose": "GK-ROS-001"
+    }
+  },
+  "GK-LET-001": {
+    "id": "GK-LET-001",
+    "slug": "lettuce",
+    "name": "Lettuce",
+    "latinName": "Lactuca sativa",
+    "variety": "Loose-leaf mix",
+    "subtitle": "Fast, useful salad leaves for pots and beds.",
+    "theme": "#69a85e",
+    "category": "Vegetable",
+    "tags": [
+      "Edible",
+      "Cool season",
+      "Containers",
+      "Quick crop"
+    ],
+    "quickCare": {
+      "Water": "Keep evenly moist",
+      "Light": "Sun to light shade",
+      "Feeding": "Light feed if growth slows",
+      "Pruning": "Pick outer leaves regularly"
+    },
+    "notes": "Lettuce is a good tester plant because it changes quickly. It shows whether GardenKey is useful for repeat jobs like watering, harvesting and sowing follow-up batches.",
+    "soil": "Moist, fertile, free-draining soil. Avoid letting containers dry out completely.",
+    "medium": "Peat-free multipurpose compost with a little fine compost or worm cast for moisture holding.",
+    "seasonalActions": {
+      "Spring": "Sow small batches every 2\u20133 weeks.",
+      "Summer": "Give light shade in hot spells and harvest regularly.",
+      "Autumn": "Sow hardy varieties under cover.",
+      "Winter": "Growth slows; protect from harsh weather and wet compost."
+    },
+    "problems": [
+      {
+        "name": "Bolting",
+        "fix": "Heat or stress can make lettuce run to seed. Sow little and often, keep evenly moist and use shade in hot weather."
+      },
+      {
+        "name": "Slugs",
+        "fix": "Use barriers, night checks and tidy hiding places. Avoid pellets where pets/wildlife may be affected."
+      }
+    ],
+    "propagation": {
+      "season": "Spring to autumn, depending on variety.",
+      "methods": "Sow seed thinly in trays, modules or directly in containers.",
+      "tips": "Label each sowing date. Small batches are better than one huge glut.",
+      "tracker": "Easy future tracker: sowing date, first pick date, flavour and whether it bolted."
+    },
+    "pollinator": {
+      "score": 1,
+      "value": "Lettuce is mainly grown for leaves, not pollinators, but leaving one plant to flower can feed small insects."
+    },
+    "pollinatorFact": "If one lettuce bolts, leave it briefly and watch how many tiny insects visit the flowers.",
+    "companions": [
+      "Chives",
+      "Radish",
+      "Carrot"
+    ],
+    "timeline": {
+      "Seeding": "Feb-Sep depending on cover",
+      "Flowering": "Only if left to bolt",
+      "Harvest": "4-8 weeks from sowing",
+      "Pruning": "Pick outer leaves as needed"
+    },
+    "weeklyFact": "Lettuce is one of the best plants for testing a garden app because you can see results in weeks, not years.",
+    "photoPlan": {
+      "hero": "Whole plant in natural light",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter appearance",
+        "Seed pod / fruit if relevant"
+      ]
+    }
+  },
+  "GK-POT-001": {
+    "id": "GK-POT-001",
+    "slug": "potato",
+    "name": "Potato",
+    "latinName": "Solanum tuberosum",
+    "variety": "First early",
+    "subtitle": "A satisfying crop for bags, tubs and beds.",
+    "theme": "#b58a56",
+    "category": "Vegetable",
+    "tags": [
+      "Edible",
+      "Tuber",
+      "Containers",
+      "Easy win"
+    ],
+    "quickCare": {
+      "Water": "Water well once growing",
+      "Light": "Full sun",
+      "Feeding": "Feed lightly in containers",
+      "Pruning": "Earth up stems"
+    },
+    "notes": "Potatoes are good for beginners because the harvest feels like treasure hunting.",
+    "soil": "Fertile, free-draining soil. Avoid waterlogging.",
+    "medium": "Peat-free compost mixed with garden compost in a deep bag or large tub.",
+    "seasonalActions": {
+      "Spring": "Plant chitted seed potatoes.",
+      "Summer": "Water well, earth up and harvest earlies.",
+      "Autumn": "Lift maincrop before prolonged wet.",
+      "Winter": "Store in a cool dark place."
+    },
+    "problems": [
+      {
+        "name": "Blight",
+        "fix": "Remove affected foliage and avoid wet leaves. Choose resistant varieties where blight is common."
+      },
+      {
+        "name": "Scab",
+        "fix": "Often worse in dry or alkaline conditions. Keep moisture steady while tubers form."
+      }
+    ],
+    "propagation": {
+      "season": "Plant in spring.",
+      "methods": "Seed potatoes planted in bags, tubs or beds.",
+      "tips": "Do not use supermarket potatoes for trials if you want clean, predictable results.",
+      "tracker": "Track planting date, earthing-up dates and harvest weight."
+    },
+    "pollinator": {
+      "score": 2,
+      "value": "Potato flowers can attract insects, but most value is food production rather than ornamental pollinator support."
+    },
+    "pollinatorFact": "Potato flowers are not the main reason to grow them for wildlife, but they can still bring insect visitors.",
+    "companions": [
+      "Beans",
+      "Cabbage",
+      "Calendula"
+    ],
+    "timeline": {
+      "Seeding": "Plant tubers Mar-Apr",
+      "Flowering": "Summer",
+      "Harvest": "Jun-Sep depending type",
+      "Pruning": "Earth up; remove blighted foliage"
+    },
+    "weeklyFact": "Potatoes are related to tomatoes, which explains why potato flowers can look strangely familiar.",
+    "photoPlan": {
+      "hero": "Whole plant in natural light",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter appearance",
+        "Seed pod / fruit if relevant"
+      ]
+    }
+  },
+  "GK-ROS-001": {
+    "id": "GK-ROS-001",
+    "slug": "rose",
+    "name": "Rose",
+    "latinName": "Rosa",
+    "variety": "Shrub rose",
+    "subtitle": "Classic flowering shrub with high ornamental value.",
+    "theme": "#d85b7a",
+    "tags": [
+      "Full sun",
+      "Flowers",
+      "Feed in spring",
+      "Pollinator value varies"
+    ],
+    "quickCare": {
+      "Water": "Deeply in dry spells",
+      "Light": "Full sun preferred",
+      "Feeding": "Feed in spring and early summer",
+      "Pruning": "Prune in late winter"
+    },
+    "notes": "Deadhead regularly to encourage flowering. Keep air moving around the plant to reduce fungal disease.",
+    "soil": "Fertile, moisture-retentive but free-draining soil. Avoid waterlogging.",
+    "medium": "For pots, use a loam-based peat-free compost with added organic matter and good drainage.",
+    "seasonalActions": {
+      "Spring": "Feed and mulch; check new shoots for aphids.",
+      "Summer": "Deadhead, water deeply in dry periods and watch for blackspot.",
+      "Autumn": "Clear fallen diseased leaves.",
+      "Winter": "Prune when dormant, usually November to March. Aim for an open shape, remove dead or crossing stems, and use clean secateurs."
+    },
+    "problems": [
+      {
+        "name": "Blackspot",
+        "fix": "Remove affected leaves, avoid overhead watering and improve airflow."
+      },
+      {
+        "name": "Aphids",
+        "fix": "Wipe off early colonies or spray with water; avoid broad insecticides where possible."
+      },
+      {
+        "name": "Powdery mildew",
+        "fix": "Water consistently, improve airflow and avoid drought stress."
+      }
+    ],
+    "companions": [
+      "Lavender",
+      "Salvia",
+      "Nepeta",
+      "Geranium"
+    ],
+    "propagation": {
+      "season": "Hardwood cuttings in autumn or winter.",
+      "methods": "Take pencil-thick cuttings from healthy stems and insert into gritty compost.",
+      "tips": "Label varieties carefully; many roses look similar when dormant.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "Single and semi-double roses are usually better for pollinators than very double flowers."
+    },
+    "timeline": {
+      "Seeding": "Usually bought as plant",
+      "Flowering": "Jun-Oct",
+      "Harvest": "Rose hips in autumn",
+      "Pruning": "Feb-Mar"
+    },
+    "photoPlan": {
+      "hero": "Open flower and whole shrub context.",
+      "gallery": [
+        "Flower close-up",
+        "Foliage and thorns",
+        "Winter pruned framework",
+        "Rose hips where present"
+      ]
+    },
+    "weeklyFact": "Open-centred roses can provide pollen access for bees, unlike many very double varieties.",
+    "category": "Perennial",
+    "pollinatorFact": "Single and semi-double roses are usually more useful to pollinators than very full double roses, because insects can actually reach the centre.",
+    "companionLinks": {
+      "Lavender": "GK-LAV-001"
+    }
+  },
+  "GK-SAL-001": {
+    "id": "GK-SAL-001",
+    "slug": "salvia",
+    "name": "Salvia",
+    "latinName": "Salvia nemorosa",
+    "variety": "Hardy salvia",
+    "subtitle": "Salvia profile for GardenKey testing.",
+    "theme": "#5b4bb7",
+    "tags": [
+      "Pollinator",
+      "Full sun",
+      "Free-draining soil",
+      "Cut back"
+    ],
+    "quickCare": {
+      "Water": "Keep consistent; avoid extremes",
+      "Light": "Match plant needs; avoid stress",
+      "Feeding": "Feed during active growth",
+      "Pruning": "Prune at the right seasonal stage"
+    },
+    "notes": "Pilot notes for Salvia. Adjust care based on your site, pot size, weather and plant maturity.",
+    "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
+    "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
+    "seasonalActions": {
+      "Spring": "Check new growth, feed if needed and refresh surface compost.",
+      "Summer": "Monitor watering and pests during active growth.",
+      "Autumn": "Reduce feeding and prepare for dormancy or protection if needed.",
+      "Winter": "Protect vulnerable pots and review notes for next season."
+    },
+    "problems": [
+      {
+        "name": "Water stress",
+        "fix": "Check moisture at root level; adjust watering rather than watering by habit."
+      },
+      {
+        "name": "Pests",
+        "fix": "Identify first, then use the lowest-impact control such as hand removal, water spray or barriers."
+      },
+      {
+        "name": "Poor growth",
+        "fix": "Check light, drainage, root space and feeding before assuming disease."
+      }
+    ],
+    "companions": [
+      "Lavender",
+      "Salvia",
+      "Hosta",
+      "Rose"
+    ],
+    "propagation": {
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
+      "methods": "Cuttings, division, seed or tubers depending on plant type.",
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "Pollinator value depends on flower form, nectar access and flowering season."
+    },
+    "timeline": {
+      "Seeding": "Varies",
+      "Flowering": "Varies",
+      "Harvest": "If applicable",
+      "Pruning": "Seasonal"
+    },
+    "photoPlan": {
+      "hero": "Clear whole-plant photo of Salvia.",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter/dormant appearance",
+        "Seed pod, fruit, tuber or spent flower if applicable"
+      ]
+    },
+    "weeklyFact": "Salvia is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Perennial",
+    "pollinatorFact": "When salvia is in flower, watch which insects visit. GardenKey can use these notes later to build a pollinator value record for your garden."
+  },
+  "GK-TOM-001": {
+    "id": "GK-TOM-001",
+    "slug": "tomato",
+    "name": "Tomato",
+    "latinName": "Solanum lycopersicum",
+    "variety": "Cherry tomato",
+    "subtitle": "Productive edible crop needing sun, food and steady water.",
+    "theme": "#d84b36",
+    "tags": [
+      "Edible",
+      "Full sun",
+      "Regular water",
+      "Feed weekly"
+    ],
+    "quickCare": {
+      "Water": "Keep consistent; avoid extremes",
+      "Light": "Match plant needs; avoid stress",
+      "Feeding": "Feed during active growth",
+      "Pruning": "Prune at the right seasonal stage"
+    },
+    "notes": "Pilot notes for Tomato. Adjust care based on your site, pot size, weather and plant maturity.",
+    "soil": "Good structure and drainage; adjust moisture retention to the plant type.",
+    "medium": "Use a peat-free base compost, then add grit, bark, leaf mould or organic matter depending on drainage and moisture needs.",
+    "seasonalActions": {
+      "Spring": "Check new growth, feed if needed and refresh surface compost.",
+      "Summer": "Monitor watering and pests during active growth.",
+      "Autumn": "Reduce feeding and prepare for dormancy or protection if needed.",
+      "Winter": "Protect vulnerable pots and review notes for next season."
+    },
+    "problems": [
+      {
+        "name": "Water stress",
+        "fix": "Check moisture at root level; adjust watering rather than watering by habit."
+      },
+      {
+        "name": "Pests",
+        "fix": "Identify first, then use the lowest-impact control such as hand removal, water spray or barriers."
+      },
+      {
+        "name": "Poor growth",
+        "fix": "Check light, drainage, root space and feeding before assuming disease."
+      }
+    ],
+    "companions": [
+      "Lavender",
+      "Salvia",
+      "Hosta",
+      "Rose"
+    ],
+    "propagation": {
+      "season": "Best checked by plant type \u2014 use the notes below as your starting point rather than a hard rule.",
+      "methods": "Cuttings, division, seed or tubers depending on plant type.",
+      "tips": "Label every propagation attempt and record success rates.",
+      "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+    },
+    "pollinator": {
+      "score": 2,
+      "value": "Tomato flowers are mainly self-pollinating but buzz pollinators can help."
+    },
+    "timeline": {
+      "Seeding": "Feb-Apr",
+      "Flowering": "May-Aug",
+      "Harvest": "Jul-Oct",
+      "Pruning": "Pinch side shoots for cordon types"
+    },
+    "photoPlan": {
+      "hero": "Clear whole-plant photo of Tomato.",
+      "gallery": [
+        "Close-up of flower",
+        "Foliage detail",
+        "Winter/dormant appearance",
+        "Seed pod, fruit, tuber or spent flower if applicable"
+      ]
+    },
+    "weeklyFact": "Tomato is included in the GardenKey pilot set to test different plant habits and care needs.",
+    "category": "Vegetable",
+    "pollinatorFact": "When tomato is in flower, watch which insects visit. GardenKey can use these notes later to build a pollinator value record for your garden."
   }
 }
