@@ -1,23 +1,64 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey V14</title><style>
-:root{--green:#123c2d;--cream:#f7f2e7;--card:#fffaf1;--gold:#d9a63a;--muted:#66746a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(#fbf7ea,#efe8d8);color:var(--green)}.wrap{max-width:760px;margin:auto;padding:18px}.hero{border-radius:34px;padding:30px;background:radial-gradient(circle at 80% 10%,#d8f0cf,transparent 34%),linear-gradient(135deg,#e4f5db,#f8edcf);box-shadow:0 8px 28px #0001;margin-bottom:20px}.pill{display:inline-block;background:white;border:1px solid #0001;border-radius:999px;padding:10px 18px;font-weight:800;margin:4px}.hero h1{font-size:52px;line-height:.95;margin:42px 0 10px}.hero p{font-size:22px;color:#3d5b48}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid #e3dac7;border-radius:26px;padding:18px;box-shadow:0 4px 18px #0000000d}.card h2{margin:0 0 8px;font-size:25px}.btn{display:inline-block;background:var(--gold);color:#1e251d;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:800;margin:6px 4px 0 0}.btn.secondary{background:white;border:1px solid #d8d0c0}.search{width:100%;font-size:18px;padding:15px;border-radius:18px;border:1px solid #cfc7b9;margin:10px 0}.filters{display:flex;gap:8px;overflow-x:auto;padding:8px 0}.filter{white-space:nowrap;background:#fff;border:1px solid #ddd2bd;border-radius:999px;padding:8px 12px;font-weight:800}.plant{display:flex;gap:12px;align-items:center;margin:10px 0;padding:12px;border-radius:20px;background:#fff;border:1px solid #eadfca}.thumb{width:60px;height:60px;border-radius:18px;background:linear-gradient(135deg,var(--accent,#8dbb87),#fff);flex:none}.muted{color:var(--muted)}.section{margin:20px 0}.steps{display:grid;gap:10px}.step{background:#fff;border:1px solid #e5dccd;border-radius:18px;padding:14px}.tiny{font-size:13px;color:var(--muted)}@media(max-width:600px){.hero h1{font-size:42px}.grid{grid-template-columns:1fr}.wrap{padding:14px}}
-</style></head><body><div class="wrap"><section class="hero"><span class="pill">GardenKey</span><span class="pill">PILOT V0.14</span><h1>Welcome to your connected garden.</h1><p>Scan a tag, find a plant, track a pot, or create a tester profile.</p><a class="btn" href="create.html">Create tester plant</a><a class="btn secondary" href="admin.html">Admin builder</a></section>
-<div class="grid"><a class="card" href="#plants" style="text-decoration:none;color:inherit"><h2>🌿 Plant library</h2><p class="muted">Browse the starter GardenKey knowledge base.</p></a><a class="card" href="pot.html?id=GK-POT-SUC-001" style="text-decoration:none;color:inherit"><h2>🪴 Pot / border profile</h2><p class="muted">Track mixed containers, bulbs, hidden plants and seasonal changes.</p></a><a class="card" href="seedling.html" style="text-decoration:none;color:inherit"><h2>🌱 Seedling mode</h2><p class="muted">A lightweight nursery workflow for trays, seedlings and propagation batches.</p></a><a class="card" href="#guide" style="text-decoration:none;color:inherit"><h2>📲 Quick guide</h2><p class="muted">How to programme a GardenKey tag with NFC Tools.</p></a></div>
-<section id="plants" class="section"><h2>Browse plants</h2><input class="search" id="search" placeholder="Search plants, category, tags…"><div class="filters" id="filters"></div><div id="list"></div></section>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey V15</title><style>
+:root{--green:#123c2d;--cream:#f7f2e7;--card:#fffaf1;--gold:#d9a63a;--muted:#66746a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(#fbf7ea,#efe8d8);color:var(--green)}.wrap{max-width:760px;margin:auto;padding:18px}.hero{border-radius:34px;padding:30px;background:radial-gradient(circle at 80% 10%,#d8f0cf,transparent 34%),linear-gradient(135deg,#e4f5db,#f8edcf);box-shadow:0 8px 28px #0001;margin-bottom:20px}.pill{display:inline-block;background:white;border:1px solid #0001;border-radius:999px;padding:10px 18px;font-weight:800;margin:4px}.hero h1{font-size:52px;line-height:.95;margin:42px 0 10px}.hero p{font-size:22px;color:#3d5b48}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid #e3dac7;border-radius:26px;padding:18px;box-shadow:0 4px 18px #0000000d}.card h2{margin:0 0 8px;font-size:25px}.btn{display:inline-block;background:var(--gold);color:#1e251d;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:800;margin:6px 4px 0 0}.btn.secondary{background:white;border:1px solid #d8d0c0}.search{width:100%;font-size:18px;padding:15px;border-radius:18px;border:1px solid #cfc7b9;margin:10px 0}.filters{display:flex;gap:8px;overflow-x:auto;padding:8px 0}.filter{white-space:nowrap;background:#fff;border:1px solid #ddd2bd;border-radius:999px;padding:8px 12px;font-weight:800;cursor:pointer}.filter.active{background:var(--green);color:#fff;border-color:var(--green)}.plant{display:flex;gap:12px;align-items:center;margin:10px 0;padding:12px;border-radius:20px;background:#fff;border:1px solid #eadfca;text-decoration:none;color:inherit}.thumb{width:60px;height:60px;border-radius:18px;background-size:cover;background-position:center;background-color:var(--accent,#8dbb87);flex:none}.muted{color:var(--muted)}.section{margin:20px 0}.steps{display:grid;gap:10px}.step{background:#fff;border:1px solid #e5dccd;border-radius:18px;padding:14px}.tiny{font-size:13px;color:var(--muted)}.state{padding:14px;text-align:center;color:var(--muted)}@media(max-width:600px){.hero h1{font-size:42px}.grid{grid-template-columns:1fr}.wrap{padding:14px}}
+</style></head><body><div class="wrap">
+
+<section class="hero"><span class="pill">GardenKey</span><span class="pill">PILOT V0.15</span><h1>Welcome to your connected garden.</h1><p>Scan a tag, find a plant, track a pot, or create a tester profile.</p><a class="btn" href="create.html">Create tester plant</a><a class="btn secondary" href="admin.html">Admin builder</a></section>
+
+<div class="grid"><a class="card" href="#plants"><h2>🌿 Plant library</h2><p class="muted">Browse the GardenKey knowledge base.</p></a><a class="card" href="pot.html?id=GK-POT-SUC-001"><h2>🪴 Pot / border profile</h2><p class="muted">Track mixed containers, bulbs, hidden plants and seasonal changes.</p></a><a class="card" href="seedling.html"><h2>🌱 Seedling mode</h2><p class="muted">A lightweight nursery workflow for trays, seedlings and propagation batches.</p></a><a class="card" href="#guide"><h2>📲 Quick guide</h2><p class="muted">How to programme a GardenKey tag with NFC Tools.</p></a></div>
+
+<section id="plants" class="section"><h2>Browse plants</h2><input class="search" id="search" placeholder="Search plants, category, tags…"><div class="filters" id="filters"></div><div id="list"><p class="state">Loading plant library…</p></div></section>
+
 <section id="guide" class="section card"><h2>Quick setup guide</h2><div class="steps"><div class="step"><b>1: Open NFC Tools</b><p class="muted">Tap Write → Add record → URL / URI.</p></div><div class="step"><b>2: Paste the GardenKey URL</b><p class="muted">Use a starter page, plant profile, pot page or tester create page.</p></div><div class="step"><b>3: Write to tag</b><p class="muted">Tap Write, approach the tag, and wait for Write Complete.</p></div><div class="step"><b>4: Test the tag</b><p class="muted">Close the app and scan the tag normally. It should open GardenKey.</p></div></div></section>
-<section class="card"><h2>Weekly GardenKey fact</h2><p>Some bulbs can vanish completely above ground for months and still be very much alive. That is exactly why pot and border profiles matter.</p></section><p class="tiny">Feedback: <a href="mailto:davewalsh45pro@gmail.com?subject=GardenKey%20V14%20feedback">davewalsh45pro@gmail.com</a></p></div><script>
-const plants=[
-{id:'GK-LAV-001',name:'Lavender',latin:'Lavandula angustifolia',cat:'Herb / Perennial',tags:['Full sun','Low water','Pollinator'],accent:'#9b7bd5'},
-{id:'GK-ROS-001',name:'Rose',latin:'Rosa',cat:'Shrub',tags:['Full sun','Flowers'],accent:'#d85b83'},
-{id:'GK-FRN-001',name:'Fern',latin:'Polypodiopsida',cat:'Fern',tags:['Shade','Moist soil'],accent:'#4f9b69'},
-{id:'GK-TOM-001',name:'Tomato',latin:'Solanum lycopersicum',cat:'Vegetable',tags:['Edible','Full sun'],accent:'#d94f3d'},
-{id:'GK-DAH-001',name:'Dahlia',latin:'Dahlia',cat:'Tuber / Perennial',tags:['Flowers','Tubers','Cut flowers'],accent:'#b84e7a'},
-{id:'GK-CAN-001',name:'Canna',latin:'Canna indica',cat:'Rhizome / Tender perennial',tags:['Tropical','Containers'],accent:'#cc6d30'},
-{id:'GK-GLA-001',name:'Gladiolus',latin:'Gladiolus',cat:'Corm',tags:['Corm','Cut flowers','Summer'],accent:'#e07a56'},
-{id:'GK-HOS-001',name:'Hosta',latin:'Hosta',cat:'Herbaceous perennial',tags:['Shade','Foliage'],accent:'#6f9f61'},
-{id:'GK-ACE-001',name:'Japanese Maple',latin:'Acer palmatum',cat:'Tree / Shrub',tags:['Autumn colour','Part shade'],accent:'#b95342'},
-{id:'GK-SED-001',name:'Sedum',latin:'Hylotelephium / Sedum',cat:'Succulent / Perennial',tags:['Dry','Pollinator','Succulent'],accent:'#7fa36d'},
-{id:'GK-BEG-001',name:'Begonia',latin:'Begonia',cat:'Corm / Annual',tags:['Containers','Shade'],accent:'#e17d8b'},
-{id:'GK-ALY-001',name:'Alyssum',latin:'Lobularia maritima',cat:'Annual',tags:['Edging','Pollinator'],accent:'#dad4f7'}
-];
-const cats=[...new Set(plants.map(p=>p.cat.split('/')[0].trim()))];let active='All';filters.innerHTML=['All',...cats,'Vegetable','Succulent','Bulb/Corm','Pollinator'].map(c=>`<button class="filter" onclick="active='${c}';render()">${c}</button>`).join('');search.oninput=render;function render(){const q=search.value.toLowerCase();let rows=plants.filter(p=>{const txt=(p.name+' '+p.latin+' '+p.cat+' '+p.tags.join(' ')).toLowerCase();const catOk=active==='All'||txt.includes(active.toLowerCase())||(active==='Bulb/Corm'&&(txt.includes('bulb')||txt.includes('corm')||txt.includes('tuber')));return catOk&&txt.includes(q)});list.innerHTML=rows.map(p=>`<a class="plant" href="plant.html?id=${p.id}" style="text-decoration:none;color:inherit"><div class="thumb" style="--accent:${p.accent}"></div><div><b>${p.name}</b><div class="muted">${p.latin} · ${p.cat}</div><div class="tiny">${p.tags.join(' · ')}</div></div></a>`).join('')||'<p>No plants found.</p>'}render();
+
+<section class="card"><h2>Weekly GardenKey fact</h2><p>Some bulbs can vanish completely above ground for months and still be very much alive. That is exactly why pot and border profiles matter.</p></section>
+<p class="tiny">Feedback: <a href="mailto:davewalsh45pro@gmail.com?subject=GardenKey%20V15%20feedback">davewalsh45pro@gmail.com</a></p>
+</div><script>
+let plants = {};
+let active = 'All';
+
+async function loadPlants(){
+  try{
+    const res = await fetch('plants.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    plants = await res.json();
+    buildFilters();
+    render();
+  }catch(err){
+    list.innerHTML = '<p class="state">Could not load the plant library (plants.json). If you are opening this file directly from disk, run it through a local server or GitHub Pages instead — fetch() needs http(s), not file://.</p>';
+    console.error('GardenKey: failed to load plants.json', err);
+  }
+}
+
+function buildFilters(){
+  const cats = [...new Set(Object.values(plants).map(p => p.category).filter(Boolean))].sort();
+  filters.innerHTML = ['All', ...cats].map(c =>
+    `<button class="filter${c===active?' active':''}" data-cat="${c}">${c}</button>`
+  ).join('');
+  filters.querySelectorAll('.filter').forEach(btn=>{
+    btn.onclick = () => { active = btn.dataset.cat; buildFilters(); render(); };
+  });
+}
+
+search.oninput = render;
+
+function render(){
+  const q = search.value.toLowerCase();
+  const rows = Object.values(plants).filter(p=>{
+    const txt = [p.name, p.latinName, p.category, ...(p.tags||[])].join(' ').toLowerCase();
+    const catOk = active==='All' || p.category===active;
+    return catOk && txt.includes(q);
+  });
+  list.innerHTML = rows.map(p => {
+    const thumbStyle = p.heroImage
+      ? `background-image:url('${p.heroImage}')`
+      : `--accent:${p.theme||'#8dbb87'}`;
+    return `<a class="plant" href="plant.html?id=${p.id}">
+      <div class="thumb" style="${thumbStyle}"></div>
+      <div><b>${p.name}</b><div class="muted">${p.latinName||''}${p.category?' · '+p.category:''}</div>
+      <div class="tiny">${(p.tags||[]).join(' · ')}</div></div>
+    </a>`;
+  }).join('') || '<p class="state">No plants found.</p>';
+}
+
+loadPlants();
 </script></body></html>

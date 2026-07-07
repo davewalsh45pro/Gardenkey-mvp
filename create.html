@@ -1,3 +1,42 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create GardenKey Tester Plant</title><style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:760px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e6f3dd,#f8e5bc)}h1{font-size:46px;line-height:1;margin:10px 0}.field{margin:12px 0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;padding:13px;border-radius:16px;border:1px solid #d8cfbe;background:white}textarea{min-height:96px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px;cursor:pointer}.muted{color:#65746a}.small{font-size:13px;color:#65746a}</style></head><body><div class="wrap"><a href="index.html">← GardenKey home</a><section class="hero"><h1>Create a tester plant</h1><p>This does not edit the shared GardenKey library. It creates a draft email so Dave can review it and add approved entries.</p></section><section class="card"><div class="field"><label>GardenKey ID</label><input id="id" readonly></div><div class="field"><label>What plant is it?</label><input id="name" placeholder="e.g. Gladiolus, Hosta, Dahlia"></div><div class="field"><label>Plant group</label><select id="cat"><option>Herbaceous perennial</option><option>Annual</option><option>Bulb</option><option>Corm</option><option>Tuber</option><option>Vegetable</option><option>Herb</option><option>Shrub</option><option>Tree</option><option>Fern</option><option>Succulent</option><option>Houseplant</option><option>Mixed pot / border</option></select></div><div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Bishop of Llandaff' or unknown"></div><div class="field"><label>Location / pot</label><input id="location" placeholder="e.g. Balcony pot, front border, seed tray"></div><div class="field"><label>Light</label><input id="light" placeholder="e.g. full sun, part shade, shade"></div><div class="field"><label>Watering note</label><input id="water" placeholder="e.g. likes to dry slightly between watering"></div><div class="field"><label>Soil / medium</label><input id="soil" placeholder="e.g. compost and perlite, gritty mix, humus-rich soil"></div><div class="field"><label>Personal notes</label><textarea id="notes" placeholder="e.g. bought in May, planted near violas, not sure if it will overwinter"></textarea></div><button class="btn" onclick="sendDraft()">Email draft to Dave</button><button class="btn" onclick="copyDraft()">Copy draft</button><p class="small">Future version: this becomes a proper account-based save workflow. For now, this keeps tester edits away from the shared live plant library.</p></section></div><script>
-function makeId(){const n=Date.now().toString().slice(-6);return 'GK-DRAFT-'+n}id.value=makeId();function payload(){return {id:id.value,name:name.value,category:cat.value,variety:variety.value,location:location.value,light:light.value,water:water.value,soil:soil.value,notes:notes.value}}function text(){return JSON.stringify(payload(),null,2)}function sendDraft(){location.href='mailto:davewalsh45pro@gmail.com?subject=GardenKey tester plant draft - '+encodeURIComponent(name.value||id.value)+'&body='+encodeURIComponent(text())}async function copyDraft(){await navigator.clipboard.writeText(text());alert('Draft copied')}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create GardenKey Tester Plant</title><style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:760px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e6f3dd,#f8e5bc)}h1{font-size:46px;line-height:1;margin:10px 0}.field{margin:12px 0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;padding:13px;border-radius:16px;border:1px solid #d8cfbe;background:white}textarea{min-height:80px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px;cursor:pointer}.muted{color:#65746a}.small{font-size:13px;color:#65746a}</style></head><body><div class="wrap"><a href="index.html">← GardenKey home</a><section class="hero"><h1>Create a tester plant</h1><p>This does not edit the shared GardenKey library. It creates a draft so Dave can review it in the admin builder and add it as an approved entry.</p></section><section class="card">
+
+<div class="field"><label>GardenKey ID (draft)</label><input id="id" readonly></div>
+<div class="field"><label>What plant is it?</label><input id="name" placeholder="e.g. Gladiolus, Hosta, Dahlia"></div>
+<div class="field"><label>Plant group</label><select id="cat"><option>Herbaceous perennial</option><option>Annual</option><option>Bulb</option><option>Corm</option><option>Tuber</option><option>Vegetable</option><option>Herb</option><option>Shrub</option><option>Tree</option><option>Fern</option><option>Succulent</option><option>Houseplant</option><option>Mixed pot / border</option></select></div>
+<div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Bishop of Llandaff' or unknown"></div>
+<div class="field"><label>Where it's growing</label><input id="location" placeholder="e.g. Balcony pot, front border, seed tray"></div>
+<div class="field"><label>Light</label><input id="light" placeholder="e.g. full sun, part shade, shade"></div>
+<div class="field"><label>Watering note</label><input id="water" placeholder="e.g. likes to dry slightly between watering"></div>
+<div class="field"><label>Feeding note (optional)</label><input id="feeding" placeholder="e.g. monthly liquid feed in summer"></div>
+<div class="field"><label>Soil / medium</label><input id="soil" placeholder="e.g. compost and perlite, gritty mix, humus-rich soil"></div>
+<div class="field"><label>Personal notes</label><textarea id="notes" placeholder="e.g. bought in May, planted near violas, not sure if it will overwinter"></textarea></div>
+
+<button class="btn" onclick="sendDraft()">Email draft to Dave</button>
+<button class="btn" onclick="copyDraft()">Copy draft</button>
+<p class="small">This draft uses the same field names as the GardenKey plant database (<code>quickCare.Water</code>, <code>quickCare.Light</code> etc.), so it can be pasted straight into the admin builder's "prefill from draft" box instead of being retyped from scratch.</p>
+</section></div><script>
+
+function makeId(){const n=Date.now().toString().slice(-6);return 'GK-DRAFT-'+n}
+id.value=makeId();
+
+function payload(){
+  return {
+    id: id.value,
+    name: name.value,
+    category: cat.value,
+    variety: variety.value,
+    location: location.value,
+    soil: soil.value,
+    notes: notes.value,
+    quickCare: {
+      Water: water.value,
+      Light: light.value,
+      Feeding: feeding.value
+    }
+  };
+}
+function text(){return JSON.stringify(payload(),null,2)}
+function sendDraft(){location.href='mailto:davewalsh45pro@gmail.com?subject=GardenKey tester plant draft - '+encodeURIComponent(name.value||id.value)+'&body='+encodeURIComponent(text())}
+async function copyDraft(){await navigator.clipboard.writeText(text());alert('Draft copied — paste it into the admin builder to prefill the form.')}
+
 </script></body></html>
