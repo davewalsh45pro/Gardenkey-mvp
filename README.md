@@ -1,23 +1,27 @@
-# GardenKey MVP v13 — Tester Expansion
+# GardenKey MVP V14
 
-Upload these files to your existing GitHub repository, replacing the current files.
+Pilot expansion release.
 
-## Files
-- `index.html` — public welcome page, plant library, category search, NFC guide.
-- `plant.html` — plant profile page with expanded care sections.
-- `admin.html` — owner/admin plant library builder for David.
-- `create.html` — public tester draft page. Testers can create a plant draft and email it to David.
-- `plants.json` — shared GardenKey plant library.
+Includes:
+- Welcome page with starter modes
+- Direct plant profile pages
+- Pot / border profile page
+- Seedling / nursery mode
+- Public tester draft page
+- Safer admin area
+- Category search
+- Gladiolus restored
+- Companion links
+- Photo capture placeholders and completion tracker
+- Pollinator, soil, medium, propagation, seasonal and problem/fix sections
 
-## Stable NFC paths
-- Blank/tester starter tag: `https://davewalsh45pro.github.io/Gardenkey-mvp/`
-- Direct plant tag: `https://davewalsh45pro.github.io/Gardenkey-mvp/plant.html?id=GK-LAV-001`
+Important pilot note:
+Public testers should use `create.html` so their draft comes back to Dave for review. They should not be given admin editing rights.
 
-## Important pilot note
-GitHub Pages is static. It cannot safely allow public users to edit the shared plant library directly without exposing write permissions. For the pilot:
-1. Testers create drafts on `create.html`.
-2. Drafts are emailed to David.
-3. David decides which entries to add to `plants.json` using `admin.html`.
-4. David uploads the updated `plants.json` to GitHub.
-
-A future production version should use a database such as Firebase or Supabase, with user accounts and per-customer plant records.
+Suggested test links:
+- `/index.html`
+- `/create.html`
+- `/admin.html`
+- `/plant.html?id=GK-GLA-001`
+- `/pot.html?id=GK-POT-SUC-001`
+- `/seedling.html`
