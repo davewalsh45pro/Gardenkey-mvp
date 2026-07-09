@@ -54,9 +54,13 @@ function render(p, allPlants){
     return `<span class="plain"><div class="thumb" style="--c:#8dbb87">${gkIconSvg('Perennial')}</div><b>${name}</b><div class="small">Not yet in library</div></span>`;
   }).join('');
 
-  const problemsHtml = (p.problems||[]).map(x =>
-    `<div class="problem"><b>${x.name}:</b> ${x.fix}</div>`
-  ).join('') || '<p class="muted">No common problems logged yet.</p>';
+  const problemsHtml = (p.problems||[]).map(x => {
+    if(typeof x === 'string') return `<div class="problem">${x}</div>`;
+    const label = x.name || x.issue || x.problem || x.title;
+    const fix = x.fix || x.solution || x.remedy || x.advice;
+    if(!label && !fix) return '';
+    return `<div class="problem"><b>${label || 'Issue'}:</b> ${fix || '—'}</div>`;
+  }).filter(Boolean).join('') || '<p class="muted">No common problems logged yet.</p>';
 
   const photoPlan = p.photoPlan || {};
   const gallerySlots = [photoPlan.hero, ...(photoPlan.gallery||[])].filter(Boolean);

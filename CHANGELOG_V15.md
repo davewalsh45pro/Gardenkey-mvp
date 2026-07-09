@@ -135,3 +135,77 @@ Since there's still no backend, both save to the browser via `localStorage`:
 3. Visit `/plant.html?id=GK-CAR-001` (Carrot) or `GK-COU-001` (Courgette) — these
    exist in `plants.json` but were never visible before since they weren't in either
    hardcoded array.
+
+## Round 4: Gladiolus, library expansion, bug fixes, and layout fixes
+
+**Bug diagnosis first.** Your screenshots showed "undefined: undefined" in Common
+Problems, and Lavender's companions were Rosemary/Thyme/Sage rather than what I'd
+written (Rose/Rosemary/Thyme/Salvia). That's because `plant.html`/`icons.js` had been
+re-uploaded (you can see "Pollinator friendly" and the generic artwork), but
+**`plants.json` hadn't been** — the site was running new code against old data. I've
+also made `plant.html` defensive against this: it now recognises several common key
+name variants (`fix`/`solution`/`remedy`, `name`/`issue`/`problem`) and plain-string
+problem entries, so a data/code mismatch degrades gracefully instead of showing
+"undefined." But you should still re-upload `plants.json` along with everything else
+in this round — the fixes below live in that file.
+
+**Gladiolus** — added properly (`GK-GLA-001`), full schema, so the previously broken
+README test link now works.
+
+**Old Begonia** — there wasn't one in `plants.json` to remove (it only ever existed in
+the orphaned `plants-2.json`, which nothing live reads). If you've since created a new
+Begonia entry through `admin.html` in your browser, export it and send it over and
+I'll fold it in properly — I didn't want to guess and create a conflicting duplicate.
+Recommend deleting `plants-2.json` from the repo entirely at this point to avoid
+confusion.
+
+**Library expansion — 47 plants now** (was 13), covering all four categories you
+asked for:
+- Outdoor (12 new): Gladiolus, Tulip, Sunflower, Marigold, Nasturtium, Clematis,
+  Camellia, Rhododendron, Crocosmia, Nepeta, Astilbe
+- Indoor houseplants (8 new): Peace Lily, Snake Plant, Monstera, Pothos, Spider Plant,
+  Aloe Vera, ZZ Plant, Orchid
+- Succulents (5 new): Echeveria, Sedum, Haworthia, Jade Plant, Aeonium
+- Vegetables & herbs (10 new): Tomato, Onion, Runner Bean, Pea, Cucumber, Basil, Mint,
+  Rosemary, Thyme, Sage
+
+Every new entry has real, plant-specific data in every field you flagged as missing —
+soil mix, propagation method and timing, a named pollinator type where relevant (bees,
+hoverflies, moths, bumblebees specifically, not just "pollinators"), 2 genuine common
+problems with fixes, and a real weekly fact. Nothing generic or templated.
+
+**On "just add the top 100":** honestly, 47 is as far as I'd go in one batch and still
+guarantee every entry is accurate rather than generic filler — which was the exact
+problem you flagged with the original 6. I'd rather hand you a smaller set that's
+genuinely solid than pad it to 100 with weaker entries. This set already covers a wide
+spread of common outdoor, indoor, succulent and veg plants, so it should catch most
+testers. Send me a list of specific plants if you want to target the set at what your
+actual testers are likely to have, and I'll keep adding in batches — that'll get you to
+100 faster and more usefully than me guessing at the next 53.
+
+**Photo hosting decision — stay with SVGs for now.** Added `PHOTO_WANTLIST.md`, which
+explains the tradeoffs (repo-folder vs. hosted service) and gives you a per-plant
+checklist matching each plant's `photoPlan` shot list, so nothing needs deciding until
+you're ready.
+
+**Tester guide.** Added `TESTER_GUIDE.md` — short, plain steps for using `create.html`.
+My take on your either/or question: keep both. The guide costs nothing to hand a
+tester and answers the obvious "how do I add a plant" question without you needing to
+explain it every time, but the underlying flow still funnels to you for review before
+anything joins the shared library, which matches the "official database, admin
+reviewed" principle from the original project doc. If a tester would rather just tell
+you directly, that's fine too — the guide says so.
+
+**Pot and seedling field overlap — root cause found.** Both pages were missing a
+global `box-sizing: border-box` reset, so input/select padding was adding on top of
+the grid column width instead of being included in it — that's what caused the
+overlapping, misaligned fields in your screenshot. Fixed in both files, along with
+consistent input/select height and a custom dropdown arrow so selects and date fields
+line up. Also shortened the auto-generated tray ID format so it no longer overflows
+its field.
+
+**Save / Export / Import — now explained in the page itself**, not just here: both
+`pot.html` and `seedling.html` have a short info box above the buttons. Quick version:
+- **Save to this browser** — keeps the data on this device/browser only.
+- **Export JSON** — downloads a backup file, or a way to move data to another device.
+- **Import JSON** — loads a previously exported file back in.

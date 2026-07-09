@@ -1,240 +1,3489 @@
 {
-"GK-CAN-001": {
-"id": "GK-CAN-001","slug": "canna","name": "Canna","latinName": "Canna indica hybrid","variety": "Canna lily",
-"subtitle": "Tropical foliage and flower impact for warm sheltered spots.","theme": "#e76f3c",
-"tags": ["Tropical look","Sun","Moist fertile soil","Tender"],
-"quickCare": {"Water": "Water freely in growth; keep moist but not waterlogged","Light": "Full sun, sheltered from wind","Feeding": "Fortnightly high-potash feed once flowering","Pruning": "Cut stems to 15cm after first frost blackens foliage"},
-"notes": "Not hardy below roughly -2C. Lift and store rhizomes over winter in cold gardens, or grow in a pot and move under cover.",
-"soil": "Rich, moisture-retentive soil with good structure.",
-"medium": "Peat-free compost enriched with well-rotted manure or garden compost.",
-"seasonalActions": {"Spring": "Start rhizomes into growth under cover from March; plant out after last frost.","Summer": "Feed fortnightly and deadhead spent flowers.","Autumn": "Cut back after blackened by frost; lift tender types.","Winter": "Store rhizomes frost-free and just barely moist, or protect in-ground with a thick mulch in mild areas."},
-"problems": [{"name": "Slugs and snails","fix": "Shred young shoots; use barriers or torchlight removal early in the season."},{"name": "Canna virus (streaking/mottling)","fix": "No cure; discard and buy certified virus-free stock rather than treating."},{"name": "Poor flowering","fix": "Usually not enough sun or feed; move to a brighter spot and start a potash feed."}],
-"companions": ["Dahlia","Crocosmia","Banana","Verbena"],
-"propagation": {"season": "Divide dormant rhizomes in early spring before new growth starts.","methods": "Divide rhizomes so each piece has at least one growing eye.","tips": "Let cut surfaces callus for a day before potting to reduce rot risk.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 2,"value": "Mainly ornamental; some varieties attract insects but value varies."},
-"timeline": {"Seeding": "Feb-Mar indoors","Flowering": "Jul-Oct","Harvest": "N/A","Pruning": "Cut down after frost; overwinter rhizomes"},
-"photoPlan": {"hero": "Clear whole-plant photo of Canna.","gallery": ["Close-up of flower","Foliage detail","Winter/dormant appearance","Seed pod, fruit, tuber or spent flower if applicable"]},
-"weeklyFact": "Canna is included in the GardenKey pilot set to test different plant habits and care needs.",
-"category": "Tender perennial","pollinatorFact": "Canna flowers are bold and tropical-looking; value depends on variety and whether insects can access the flower parts.",
-"companionLinks": {"Dahlia": "GK-DAH-001"}
-},
-"GK-CAR-001": {
-"id": "GK-CAR-001","slug": "carrot","name": "Carrot","latinName": "Daucus carota subsp. sativus","variety": "Nantes type",
-"subtitle": "Sweet roots for deep pots and fine soil.","theme": "#e8892f","category": "Vegetable",
-"tags": ["Edible","Root crop","Fine soil","Containers"],
-"quickCare": {"Water": "Keep steady, not soggy","Light": "Full sun","Feeding": "Avoid rich nitrogen feed","Pruning": "Thin seedlings carefully"},
-"notes": "Carrots are a good test for soil and medium notes because the root tells you exactly how good the growing conditions were.",
-"soil": "Stone-free, light soil. Heavy or stony soil can fork the roots.",
-"medium": "Fine compost mixed with sand or grit for containers. Avoid fresh manure.",
-"seasonalActions": {"Spring": "Sow thinly once soil warms.","Summer": "Water in dry spells and thin carefully.","Autumn": "Harvest as needed.","Winter": "Store lifted roots or protect late crops."},
-"problems": [{"name": "Forked roots","fix": "Usually caused by stones, compacted soil or rich fresh manure. Use a finer medium next time."},{"name": "Carrot fly","fix": "Cover with fine mesh and avoid bruising foliage when thinning."}],
-"propagation": {"season": "Spring to early summer for most home sowings.","methods": "Sow seed directly where it is to grow.","tips": "Do not transplant carrots unless using special short-root types. They hate root disturbance.","tracker": "Track sowing date, thinning date and first harvest."},
-"pollinator": {"score": 2,"value": "Carrot flowers are useful to insects if allowed to flower in the second year, but most crops are harvested before then."},
-"pollinatorFact": "Umbellifer flowers like carrot relatives can be brilliant landing pads for hoverflies and other beneficial insects.",
-"companions": ["Lettuce","Chives","Onion"],
-"timeline": {"Seeding": "Mar-Jun","Flowering": "Second year if left","Harvest": "Jun-Oct","Pruning": "Thin seedlings"},
-"weeklyFact": "Carrot seed is tiny, which is why many gardeners accidentally sow enough carrots for a small village.",
-"photoPlan": {"hero": "Whole plant in natural light","gallery": ["Close-up of flower","Foliage detail","Winter appearance","Seed pod / fruit if relevant"]}
-},
-"GK-COU-001": {
-"id": "GK-COU-001","slug": "courgette","name": "Courgette","latinName": "Cucurbita pepo","variety": "Green bush type",
-"subtitle": "Big leaves, big flowers and regular summer picking.","theme": "#4c8d3f","category": "Vegetable",
-"tags": ["Edible","Summer crop","Heavy feeder","Pollinator"],
-"quickCare": {"Water": "Water deeply and often","Light": "Full sun","Feeding": "Feed when flowering","Pruning": "Remove damaged leaves"},
-"notes": "Courgettes are great for testing harvest tracking because fruit can go from perfect to comedy size very quickly.",
-"soil": "Rich, moisture-retentive but free-draining soil.",
-"medium": "Peat-free compost with garden compost or manure-based improver in a large container.",
-"seasonalActions": {"Spring": "Sow indoors in pots.","Summer": "Water, feed and harvest small fruit regularly.","Autumn": "Remove tired plants after cropping.","Winter": "Plan next year and compost healthy remains."},
-"problems": [{"name": "Powdery mildew","fix": "Common later in the season. Water the soil not the leaves, improve airflow and remove badly affected leaves."},{"name": "Poor fruit set","fix": "Often pollination or weather related. Encourage pollinators and try hand pollination if needed."}],
-"propagation": {"season": "Sow in spring, plant out after frost risk.","methods": "Seed in pots; plant out carefully without disturbing roots.","tips": "Start with one or two plants unless you are emotionally prepared for courgette season.","tracker": "Track sowing, first flower, first harvest and weekly harvest count."},
-"pollinator": {"score": 4,"value": "Large yellow flowers attract pollinators, and good pollination improves fruit set."},
-"pollinatorFact": "Courgettes have male and female flowers, and bees do a lot of the matchmaking.",
-"companions": ["Nasturtium","Borage","Calendula"],
-"timeline": {"Seeding": "Apr-May indoors","Flowering": "Jun-Sep","Harvest": "Jul-Oct","Pruning": "Remove damaged leaves"},
-"weeklyFact": "A courgette can hide under one leaf and become a marrow while you are making a cup of tea.",
-"photoPlan": {"hero": "Whole plant in natural light","gallery": ["Close-up of flower","Foliage detail","Winter appearance","Seed pod / fruit if relevant"]}
-},
-"GK-DAH-001": {
-"id": "GK-DAH-001","slug": "dahlia","name": "Dahlia","latinName": "Dahlia","variety": "Decorative dahlia",
-"subtitle": "Bold late-summer colour from tubers.","theme": "#c23b72",
-"tags": ["Flowers","Full sun","Lift tubers","Cut flowers"],
-"quickCare": {"Water": "Water well in dry spells once established","Light": "Full sun, at least 6 hours a day","Feeding": "Weekly high-potash feed once buds form","Pruning": "Deadhead constantly; pinch young plants to bush out"},
-"notes": "Stake early — dahlias put on height fast and snap in wind once top-heavy with flower.",
-"soil": "Fertile, well-drained soil enriched with organic matter.",
-"medium": "Peat-free compost with added grit for containers; needs regular feeding as it's hungry.",
-"seasonalActions": {"Spring": "Pot up tubers under cover from March; plant out after last frost.","Summer": "Deadhead weekly, feed and stake as growth continues.","Autumn": "Lift tubers after the first frost blackens foliage, or mulch heavily to overwinter in mild, free-draining gardens.","Winter": "Store lifted tubers somewhere frost-free, dark and just barely moist."},
-"problems": [{"name": "Earwigs","fix": "Chew petal edges at night. Trap in upturned straw-filled pots on canes, empty in the morning."},{"name": "Powdery mildew","fix": "Worse late season; improve airflow and water at the base, not the leaves."},{"name": "Slugs on young shoots","fix": "Protect new spring growth with barriers or torchlight removal."}],
-"companions": ["Canna","Salvia","Cosmos","Verbena"],
-"propagation": {"season": "Divide dormant tubers in spring, just as eyes start to show.","methods": "Divide tuber clumps so each division has a piece of the old stem base with at least one eye.","tips": "Basal cuttings taken from sprouted tubers in early spring multiply stock fastest.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 3,"value": "Open-centred dahlias are better for pollinators than very double forms."},
-"timeline": {"Seeding": "Feb-Apr","Flowering": "Jul-Oct","Harvest": "Cut flowers Jul-Oct","Pruning": "Deadhead summer; lift tubers after frost"},
-"photoPlan": {"hero": "Clear whole-plant photo of Dahlia.","gallery": ["Close-up of flower","Foliage detail","Winter/dormant appearance","Seed pod, fruit, tuber or spent flower if applicable"]},
-"weeklyFact": "Dahlia is included in the GardenKey pilot set to test different plant habits and care needs.",
-"category": "Perennial","pollinatorFact": "Open-centred dahlias are much better for bees than tight decorative doubles, which can hide the pollen and nectar.",
-"companionLinks": {"Canna": "GK-CAN-001"}
-},
-"GK-FRN-001": {
-"id": "GK-FRN-001","slug": "fern","name": "Fern","latinName": "Polypodiopsida","variety": "Mixed garden fern",
-"subtitle": "Shade-loving foliage for calm, green corners.","theme": "#2f8b57",
-"tags": ["Shade","Moist soil","Foliage","Low light"],
-"quickCare": {"Water": "Keep lightly moist","Light": "Shade to indirect light","Feeding": "Light feed in spring","Pruning": "Remove dead fronds"},
-"notes": "Ferns prefer consistent moisture and shelter from drying winds. Avoid strong afternoon sun.",
-"soil": "Humus-rich, moisture-retentive soil with good structure.",
-"medium": "Peat-free multipurpose compost mixed with leaf mould or fine bark for moisture retention.",
-"seasonalActions": {"Spring": "Remove old fronds as new growth appears.","Summer": "Water during dry spells.","Autumn": "Top dress with leaf mould.","Winter": "Tidy dead fronds when the plant is dormant or growth has slowed, usually November to March. Leaving some cover can help protect the crown."},
-"problems": [{"name": "Crispy fronds","fix": "Increase humidity/moisture and move from direct sun."},{"name": "Slug damage","fix": "Check under rims and use barriers/traps rather than harsh chemicals."}],
-"companions": ["Hosta","Hydrangea","Heuchera","Japanese Maple"],
-"propagation": {"season": "Spring division.","methods": "Divide established clumps or grow from spores for advanced propagation.","tips": "Keep divisions moist until re-established.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 1,"value": "Mainly habitat and shelter value rather than nectar value."},
-"timeline": {"Seeding": "Spores advanced","Flowering": "No flowers","Harvest": "N/A","Pruning": "Mar-Apr"},
-"photoPlan": {"hero": "Fresh fronds with shaded pot/garden context.","gallery": ["Frond close-up","Crown/new unfurling fronds","Winter dormant/frond dieback","Spores under fronds if visible"]},
-"weeklyFact": "Ferns are ancient plants that reproduce by spores rather than flowers — very calm, very green, very Jurassic.",
-"category": "Fern","pollinatorFact": "Ferns do not provide flowers for pollinators, but they do create shelter and humidity for small garden life."
-},
-"GK-HOS-001": {
-"id": "GK-HOS-001","slug": "hosta","name": "Hosta","latinName": "Hosta","variety": "Plantain lily",
-"subtitle": "Bold shade foliage that slugs love just as much as you do.","theme": "#6aa84f",
-"tags": ["Shade","Foliage","Moist soil","Slug watch"],
-"quickCare": {"Water": "Keep consistently moist, never let dry out fully","Light": "Part to full shade; morning sun is fine, avoid midday sun","Feeding": "Balanced liquid feed monthly through spring and summer","Pruning": "Cut all foliage to the ground once it dies back in autumn"},
-"notes": "The biggest threat to hostas is slugs and snails, not disease — protect emerging shoots in spring above anything else.",
-"soil": "Moist, humus-rich, well-drained soil.",
-"medium": "Peat-free compost with added leaf mould or well-rotted organic matter for moisture retention.",
-"seasonalActions": {"Spring": "Protect emerging shoots from slugs immediately — this is the most vulnerable stage.","Summer": "Water in dry spells and keep feeding monthly.","Autumn": "Cut back foliage once it yellows and collapses after first frosts.","Winter": "Dormant and fully hardy; no protection needed outdoors."},
-"problems": [{"name": "Slugs and snails","fix": "The main hosta problem. Use copper tape, grit barriers, beer traps or torchlight removal at night, especially on new spring shoots."},{"name": "Sun scorch","fix": "Pale, crispy leaf edges mean too much direct sun — move to deeper shade."},{"name": "Virus (mottled/streaked leaves)","fix": "No cure; remove and destroy affected plants rather than propagating from them."}],
-"companions": ["Lavender","Salvia","Fern","Rose"],
-"propagation": {"season": "Divide dormant clumps in early spring or autumn.","methods": "Lift the whole clump and divide with a spade or knife, keeping several growth points per division.","tips": "Water divisions in well and keep moist until re-established.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 3,"value": "Tubular summer flowers are visited by bees and occasionally hummingbird-mimicking hawkmoths at dusk."},
-"timeline": {"Seeding": "Rarely grown from seed","Flowering": "Jun-Aug","Harvest": "N/A","Pruning": "Cut back Oct-Nov after die-back"},
-"photoPlan": {"hero": "Clear whole-plant photo of Hosta.","gallery": ["Close-up of flower spike","Leaf variegation/foliage detail","Winter/dormant appearance","Slug damage if present, for reference"]},
-"weeklyFact": "Some hosta leaves can grow large enough to hold a full cup of rainwater after a summer shower.",
-"category": "Perennial","pollinatorFact": "Hosta's tubular flowers are shaped for bees and long-tongued pollinators, and are sometimes visited by moths at dusk."
-},
-"GK-HYD-001": {
-"id": "GK-HYD-001","slug": "hydrangea","name": "Hydrangea","latinName": "Hydrangea macrophylla","variety": "Mophead hydrangea",
-"subtitle": "Big summer flowerheads that shift colour with soil pH.","theme": "#6f8edc",
-"tags": ["Part shade","Moist soil","Summer flowers","Acid/alkaline colour"],
-"quickCare": {"Water": "Water generously, especially in pots — wilts fast when dry","Light": "Morning sun, afternoon shade ideal","Feeding": "Spring feed with an ericaceous formula if you want blue flowers","Pruning": "Cut spent flowerheads to the first strong bud pair in spring, not autumn"},
-"notes": "For blue flowers the soil needs to be acidic with available aluminium; for pink, more alkaline. White varieties don't change colour regardless of soil.",
-"soil": "Moist, fertile, humus-rich soil. Acidic soil produces blue flowers on macrophylla types; alkaline produces pink.",
-"medium": "Ericaceous peat-free compost for pots if aiming for blue flowers; standard peat-free compost for pink or white.",
-"seasonalActions": {"Spring": "Prune out old flowerheads to the first healthy bud pair once new growth is visible.","Summer": "Water generously, especially in containers, and deadhead as flowers fade.","Autumn": "Leave old flowerheads on over winter — they protect next year's buds from frost.","Winter": "Leave faded flowerheads in place for frost protection; do not prune now."},
-"problems": [{"name": "Wilting in pots","fix": "Hydrangeas in containers dry out fast in summer heat; water daily in hot spells or move to part shade."},{"name": "No flowers","fix": "Usually pruned at the wrong time (cutting off next year's buds) or frost damage to buds — check pruning timing."},{"name": "Leaf scorch","fix": "Too much direct afternoon sun; move to a spot with afternoon shade."}],
-"companions": ["Fern","Hosta","Japanese Maple","Astilbe"],
-"propagation": {"season": "Softwood cuttings in early summer.","methods": "Take non-flowering shoot tips, remove lower leaves, root in a free-draining cutting mix.","tips": "Keep cuttings humid (a clear bag works) until rooted, then pot on individually.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 2,"value": "Mophead varieties are mostly sterile ornamental flowers; lacecap types offer more accessible pollen for insects."},
-"timeline": {"Seeding": "Rarely grown from seed","Flowering": "Jun-Sep","Harvest": "N/A","Pruning": "Mar-Apr, to first bud pair"},
-"photoPlan": {"hero": "Clear whole-plant photo of Hydrangea in flower.","gallery": ["Flowerhead close-up","Foliage detail","Winter structure with old flowerheads","Colour comparison if soil pH varies across the garden"]},
-"weeklyFact": "A hydrangea's flower colour is a live pH test for your soil — blue means acidic, pink means alkaline.",
-"category": "Perennial","pollinatorFact": "Lacecap hydrangeas have small fertile flowers around the rim that are far more useful to pollinators than the showy sterile mophead types."
-},
-"GK-ACE-001": {
-"id": "GK-ACE-001","slug": "japanese-maple","name": "Japanese Maple","latinName": "Acer palmatum","variety": "Japanese maple",
-"subtitle": "Elegant, slow-growing tree prized for foliage and autumn colour.","theme": "#b84d3c",
-"tags": ["Part shade","Shelter","Autumn colour","Acid-neutral soil"],
-"quickCare": {"Water": "Keep evenly moist, especially in pots — never let it dry out or waterlog","Light": "Dappled or part shade, sheltered from strong wind and hot midday sun","Feeding": "Light, slow-release feed in spring only — avoid high nitrogen","Pruning": "Minimal — remove dead or crossing branches in late autumn/winter while dormant"},
-"notes": "Leaf edges scorch easily in strong wind, hot sun or drought — shelter is as important as soil.",
-"soil": "Humus-rich, well-drained, slightly acidic to neutral soil.",
-"medium": "Peat-free ericaceous or acid-friendly compost for pots, with excellent drainage.",
-"seasonalActions": {"Spring": "Watch for late frost damage on new leaves; feed lightly once.","Summer": "Water consistently and shelter from scorching sun and wind.","Autumn": "Enjoy the colour change; keep roots moist as leaves turn.","Winter": "Prune dead or crossing wood only while fully dormant; protect pots from freezing solid."},
-"problems": [{"name": "Leaf scorch","fix": "Brown, crispy leaf edges from wind, sun or drought — move to a more sheltered spot and water consistently."},{"name": "Verticillium wilt","fix": "Sudden branch dieback; remove affected wood promptly and avoid replanting maples in the same spot."},{"name": "Aphids on new growth","fix": "Wash off with water or encourage ladybirds; rarely serious."}],
-"companions": ["Fern","Hosta","Hydrangea","Heuchera"],
-"propagation": {"season": "Softwood cuttings in early summer, or grafting for named cultivars.","methods": "Named varieties are usually grafted; species types can be grown from seed sown fresh in autumn.","tips": "Seed-grown maples won't come true to a named cultivar — expect variation.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 2,"value": "Small spring flowers offer modest early-season nectar and pollen for insects before the canopy is fully out."},
-"timeline": {"Seeding": "Sow fresh seed in autumn if species type","Flowering": "Apr-May, inconspicuous","Harvest": "N/A","Pruning": "Nov-Jan while dormant"},
-"photoPlan": {"hero": "Clear whole-plant photo of Japanese Maple, ideally showing canopy shape.","gallery": ["Leaf close-up","Autumn colour change","Winter branch structure","Spring flowers if visible"]},
-"weeklyFact": "Japanese maples can live for well over a century and are often trained as bonsai for exactly that reason.",
-"category": "Tree","pollinatorFact": "The small red-green spring flowers are easy to miss but provide early nectar before many other plants are in bloom."
-},
-"GK-LAV-001": {
-"id": "GK-LAV-001","slug": "lavender","name": "Lavender","latinName": "Lavandula angustifolia","variety": "English lavender",
-"subtitle": "Scented, sun-loving, pollinator friendly.","theme": "#8f6ccf",
-"tags": ["Full sun","Low water","Free-draining soil","Bee friendly"],
-"quickCare": {"Water": "Lightly once soil is dry","Light": "Full sun, sheltered spot","Feeding": "Minimal feeding needed","Pruning": "Trim after flowering"},
-"notes": "Do not overwater. Lavender dislikes sitting in wet compost. Add grit or perlite if the potting mix is too rich or heavy.",
-"soil": "Free-draining, gritty, slightly alkaline to neutral soil. Avoid heavy wet compost.",
-"medium": "Peat-free compost mixed with horticultural grit or perlite. For pots, aim for sharp drainage and raise the pot slightly in winter.",
-"seasonalActions": {"Spring": "Check drainage, remove dead growth and lightly refresh top dressing.","Summer": "Trim lightly after flowering and avoid heavy feeding.","Autumn": "Reduce watering and keep the crown dry.","Winter": "Keep it on the dry side and avoid waterlogged compost. If pruning is needed, wait until the plant is dormant or growth is quiet — usually November to March — but avoid cutting hard into old woody stems."},
-"problems": [{"name": "Root rot","fix": "Usually caused by wet compost. Improve drainage, reduce watering and consider repotting into a gritty mix."},{"name": "Poor flowering","fix": "Move to stronger sun and avoid rich feeding."},{"name": "Aphids","fix": "Squash by hand or wash off with water; encourage hoverflies and ladybirds."}],
-"companions": ["Rose","Rosemary","Thyme","Salvia"],
-"propagation": {"season": "Late summer for semi-ripe cuttings; spring for seed.","methods": "Semi-ripe cuttings root well in a gritty, free-draining medium.","tips": "Avoid overly humid sealed conditions; gentle ventilation helps reduce rot.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 5,"value": "Excellent nectar source for bees, butterflies and hoverflies. Flowering lavender can support pollinators while ornamentals nearby provide colour and structure."},
-"timeline": {"Seeding": "Mar-Apr","Flowering": "Jun-Aug","Harvest": "Jul-Aug","Pruning": "Aug-Sep"},
-"photoPlan": {"hero": "Whole plant in flower, ideally with bees visible.","gallery": ["Close-up of flower spikes","Grey-green foliage","Winter structure after pruning","Seed heads / spent flower stems"]},
-"weeklyFact": "Lavender has been used for centuries in gardens, medicine cupboards and linen drawers — basically the original plant-based air freshener.",
-"category": "Perennial","pollinatorFact": "Open lavender flowers are brilliant for bees because the nectar is easy to access and the plant flowers over a useful summer window.",
-"companionLinks": {"Rose": "GK-ROS-001"}
-},
-"GK-LET-001": {
-"id": "GK-LET-001","slug": "lettuce","name": "Lettuce","latinName": "Lactuca sativa","variety": "Loose-leaf mix",
-"subtitle": "Fast, useful salad leaves for pots and beds.","theme": "#69a85e","category": "Vegetable",
-"tags": ["Edible","Cool season","Containers","Quick crop"],
-"quickCare": {"Water": "Keep evenly moist","Light": "Sun to light shade","Feeding": "Light feed if growth slows","Pruning": "Pick outer leaves regularly"},
-"notes": "Lettuce is a good tester plant because it changes quickly. It shows whether GardenKey is useful for repeat jobs like watering, harvesting and sowing follow-up batches.",
-"soil": "Moist, fertile, free-draining soil. Avoid letting containers dry out completely.",
-"medium": "Peat-free multipurpose compost with a little fine compost or worm cast for moisture holding.",
-"seasonalActions": {"Spring": "Sow small batches every 2–3 weeks.","Summer": "Give light shade in hot spells and harvest regularly.","Autumn": "Sow hardy varieties under cover.","Winter": "Growth slows; protect from harsh weather and wet compost."},
-"problems": [{"name": "Bolting","fix": "Heat or stress can make lettuce run to seed. Sow little and often, keep evenly moist and use shade in hot weather."},{"name": "Slugs","fix": "Use barriers, night checks and tidy hiding places. Avoid pellets where pets/wildlife may be affected."}],
-"propagation": {"season": "Spring to autumn, depending on variety.","methods": "Sow seed thinly in trays, modules or directly in containers.","tips": "Label each sowing date. Small batches are better than one huge glut.","tracker": "Easy future tracker: sowing date, first pick date, flavour and whether it bolted."},
-"pollinator": {"score": 1,"value": "Lettuce is mainly grown for leaves, not pollinators, but leaving one plant to flower can feed small insects."},
-"pollinatorFact": "If one lettuce bolts, leave it briefly and watch how many tiny insects visit the flowers.",
-"companions": ["Chives","Radish","Carrot"],
-"timeline": {"Seeding": "Feb-Sep depending on cover","Flowering": "Only if left to bolt","Harvest": "4-8 weeks from sowing","Pruning": "Pick outer leaves as needed"},
-"weeklyFact": "Lettuce is one of the best plants for testing a garden app because you can see results in weeks, not years.",
-"photoPlan": {"hero": "Whole plant in natural light","gallery": ["Close-up of flower","Foliage detail","Winter appearance","Seed pod / fruit if relevant"]}
-},
-"GK-POT-001": {
-"id": "GK-POT-001","slug": "potato","name": "Potato","latinName": "Solanum tuberosum","variety": "First early",
-"subtitle": "A satisfying crop for bags, tubs and beds.","theme": "#b58a56","category": "Vegetable",
-"tags": ["Edible","Tuber","Containers","Easy win"],
-"quickCare": {"Water": "Water well once growing","Light": "Full sun","Feeding": "Feed lightly in containers","Pruning": "Earth up stems"},
-"notes": "Potatoes are good for beginners because the harvest feels like treasure hunting.",
-"soil": "Fertile, free-draining soil. Avoid waterlogging.",
-"medium": "Peat-free compost mixed with garden compost in a deep bag or large tub.",
-"seasonalActions": {"Spring": "Plant chitted seed potatoes.","Summer": "Water well, earth up and harvest earlies.","Autumn": "Lift maincrop before prolonged wet.","Winter": "Store in a cool dark place."},
-"problems": [{"name": "Blight","fix": "Remove affected foliage and avoid wet leaves. Choose resistant varieties where blight is common."},{"name": "Scab","fix": "Often worse in dry or alkaline conditions. Keep moisture steady while tubers form."}],
-"propagation": {"season": "Plant in spring.","methods": "Seed potatoes planted in bags, tubs or beds.","tips": "Do not use supermarket potatoes for trials if you want clean, predictable results.","tracker": "Track planting date, earthing-up dates and harvest weight."},
-"pollinator": {"score": 2,"value": "Potato flowers can attract insects, but most value is food production rather than ornamental pollinator support."},
-"pollinatorFact": "Potato flowers are not the main reason to grow them for wildlife, but they can still bring insect visitors.",
-"companions": ["Beans","Cabbage","Calendula"],
-"timeline": {"Seeding": "Plant tubers Mar-Apr","Flowering": "Summer","Harvest": "Jun-Sep depending type","Pruning": "Earth up; remove blighted foliage"},
-"weeklyFact": "Potatoes are related to tomatoes, which explains why potato flowers can look strangely familiar.",
-"photoPlan": {"hero": "Whole plant in natural light","gallery": ["Close-up of flower","Foliage detail","Winter appearance","Seed pod / fruit if relevant"]}
-},
-"GK-ROS-001": {
-"id": "GK-ROS-001","slug": "rose","name": "Rose","latinName": "Rosa","variety": "Shrub rose",
-"subtitle": "Classic flowering shrub with high ornamental value.","theme": "#d85b7a",
-"tags": ["Full sun","Flowers","Feed in spring","Pollinator value varies"],
-"quickCare": {"Water": "Deeply in dry spells","Light": "Full sun preferred","Feeding": "Feed in spring and early summer","Pruning": "Prune in late winter"},
-"notes": "Deadhead regularly to encourage flowering. Keep air moving around the plant to reduce fungal disease.",
-"soil": "Fertile, moisture-retentive but free-draining soil. Avoid waterlogging.",
-"medium": "For pots, use a loam-based peat-free compost with added organic matter and good drainage.",
-"seasonalActions": {"Spring": "Feed and mulch; check new shoots for aphids.","Summer": "Deadhead, water deeply in dry periods and watch for blackspot.","Autumn": "Clear fallen diseased leaves.","Winter": "Prune when dormant, usually November to March. Aim for an open shape, remove dead or crossing stems, and use clean secateurs."},
-"problems": [{"name": "Blackspot","fix": "Remove affected leaves, avoid overhead watering and improve airflow."},{"name": "Aphids","fix": "Wipe off early colonies or spray with water; avoid broad insecticides where possible."},{"name": "Powdery mildew","fix": "Water consistently, improve airflow and avoid drought stress."}],
-"companions": ["Lavender","Salvia","Nepeta","Geranium"],
-"propagation": {"season": "Hardwood cuttings in autumn or winter.","methods": "Take pencil-thick cuttings from healthy stems and insert into gritty compost.","tips": "Label varieties carefully; many roses look similar when dormant.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 3,"value": "Single and semi-double roses are usually better for pollinators than very double flowers."},
-"timeline": {"Seeding": "Usually bought as plant","Flowering": "Jun-Oct","Harvest": "Rose hips in autumn","Pruning": "Feb-Mar"},
-"photoPlan": {"hero": "Open flower and whole shrub context.","gallery": ["Flower close-up","Foliage and thorns","Winter pruned framework","Rose hips where present"]},
-"weeklyFact": "Open-centred roses can provide pollen access for bees, unlike many very double varieties.",
-"category": "Perennial","pollinatorFact": "Single and semi-double roses are usually more useful to pollinators than very full double roses, because insects can actually reach the centre.",
-"companionLinks": {"Lavender": "GK-LAV-001"}
-},
-"GK-SAL-001": {
-"id": "GK-SAL-001","slug": "salvia","name": "Salvia","latinName": "Salvia nemorosa","variety": "Hardy salvia",
-"subtitle": "Spiky, long-flowering perennial that bees can't get enough of.","theme": "#5b4bb7",
-"tags": ["Pollinator","Full sun","Free-draining soil","Cut back"],
-"quickCare": {"Water": "Drought-tolerant once established; water in prolonged dry spells only","Light": "Full sun","Feeding": "Light spring feed — too rich a diet causes floppy growth","Pruning": "Cut spent flower spikes to encourage a second flush; cut back hard in spring"},
-"notes": "Deadheading spent spikes is the single biggest thing you can do to keep salvia flowering all summer.",
-"soil": "Free-draining soil; tolerates poor soil better than rich, wet ground.",
-"medium": "Peat-free compost with added grit for sharp drainage, especially in containers.",
-"seasonalActions": {"Spring": "Cut old growth right back to fresh shoots at the base.","Summer": "Deadhead spent spikes regularly to prolong flowering into autumn.","Autumn": "Leave the last flush of growth in place over winter for frost protection.","Winter": "Leave old stems standing — cutting back now exposes the crown to frost damage."},
-"problems": [{"name": "Floppy growth","fix": "Usually too much shade or too rich a feed; move to full sun and ease off feeding."},{"name": "Powdery mildew","fix": "Improve airflow and avoid overhead watering in humid weather."},{"name": "Winter losses in wet soil","fix": "Poor drainage is the main killer, not cold. Improve drainage or grow in pots in heavy clay gardens."}],
-"companions": ["Lavender","Rose","Nepeta","Echinacea"],
-"propagation": {"season": "Softwood cuttings in late spring, or division in spring.","methods": "Take non-flowering shoot tips for cuttings, or divide established clumps.","tips": "Cuttings root quickly in a free-draining mix on a warm windowsill.","tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."},
-"pollinator": {"score": 5,"value": "One of the best border plants for bees — long tubular flowers over a very long season."},
-"timeline": {"Seeding": "Feb-Apr indoors","Flowering": "Jun-Oct with deadheading","Harvest": "N/A","Pruning": "Deadhead through summer; cut back hard in spring"},
-"photoPlan": {"hero": "Clear whole-plant photo of Salvia in flower.","gallery": ["Close-up of flower spike","Foliage detail","Winter structure before spring cut-back","Bees or pollinators visiting if captured"]},
-"weeklyFact": "Salvia's tubular flowers are shaped almost exactly for a bumblebee's tongue length.",
-"category": "Perennial","pollinatorFact": "Salvia is consistently one of the top-rated plants in pollinator surveys thanks to its long flowering season and easy nectar access."
-}
+ "GK-CAN-001": {
+  "id": "GK-CAN-001",
+  "slug": "canna",
+  "name": "Canna",
+  "latinName": "Canna indica hybrid",
+  "variety": "Canna lily",
+  "subtitle": "Tropical foliage and flower impact for warm sheltered spots.",
+  "theme": "#e76f3c",
+  "tags": [
+   "Tropical look",
+   "Sun",
+   "Moist fertile soil",
+   "Tender"
+  ],
+  "quickCare": {
+   "Water": "Water freely in growth; keep moist but not waterlogged",
+   "Light": "Full sun, sheltered from wind",
+   "Feeding": "Fortnightly high-potash feed once flowering",
+   "Pruning": "Cut stems to 15cm after first frost blackens foliage"
+  },
+  "notes": "Not hardy below roughly -2C. Lift and store rhizomes over winter in cold gardens, or grow in a pot and move under cover.",
+  "soil": "Rich, moisture-retentive soil with good structure.",
+  "medium": "Peat-free compost enriched with well-rotted manure or garden compost.",
+  "seasonalActions": {
+   "Spring": "Start rhizomes into growth under cover from March; plant out after last frost.",
+   "Summer": "Feed fortnightly and deadhead spent flowers.",
+   "Autumn": "Cut back after blackened by frost; lift tender types.",
+   "Winter": "Store rhizomes frost-free and just barely moist, or protect in-ground with a thick mulch in mild areas."
+  },
+  "problems": [
+   {
+    "name": "Slugs and snails",
+    "fix": "Shred young shoots; use barriers or torchlight removal early in the season."
+   },
+   {
+    "name": "Canna virus (streaking/mottling)",
+    "fix": "No cure; discard and buy certified virus-free stock rather than treating."
+   },
+   {
+    "name": "Poor flowering",
+    "fix": "Usually not enough sun or feed; move to a brighter spot and start a potash feed."
+   }
+  ],
+  "companions": [
+   "Dahlia",
+   "Crocosmia",
+   "Banana",
+   "Verbena"
+  ],
+  "propagation": {
+   "season": "Divide dormant rhizomes in early spring before new growth starts.",
+   "methods": "Divide rhizomes so each piece has at least one growing eye.",
+   "tips": "Let cut surfaces callus for a day before potting to reduce rot risk.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Mainly ornamental; some varieties attract insects but value varies."
+  },
+  "timeline": {
+   "Seeding": "Feb-Mar indoors",
+   "Flowering": "Jul-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Cut down after frost; overwinter rhizomes"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Canna.",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter/dormant appearance",
+    "Seed pod, fruit, tuber or spent flower if applicable"
+   ]
+  },
+  "weeklyFact": "Canna is included in the GardenKey pilot set to test different plant habits and care needs.",
+  "category": "Tender perennial",
+  "pollinatorFact": "Canna flowers are bold and tropical-looking; value depends on variety and whether insects can access the flower parts.",
+  "companionLinks": {
+   "Dahlia": "GK-DAH-001"
+  }
+ },
+ "GK-CAR-001": {
+  "id": "GK-CAR-001",
+  "slug": "carrot",
+  "name": "Carrot",
+  "latinName": "Daucus carota subsp. sativus",
+  "variety": "Nantes type",
+  "subtitle": "Sweet roots for deep pots and fine soil.",
+  "theme": "#e8892f",
+  "category": "Vegetable",
+  "tags": [
+   "Edible",
+   "Root crop",
+   "Fine soil",
+   "Containers"
+  ],
+  "quickCare": {
+   "Water": "Keep steady, not soggy",
+   "Light": "Full sun",
+   "Feeding": "Avoid rich nitrogen feed",
+   "Pruning": "Thin seedlings carefully"
+  },
+  "notes": "Carrots are a good test for soil and medium notes because the root tells you exactly how good the growing conditions were.",
+  "soil": "Stone-free, light soil. Heavy or stony soil can fork the roots.",
+  "medium": "Fine compost mixed with sand or grit for containers. Avoid fresh manure.",
+  "seasonalActions": {
+   "Spring": "Sow thinly once soil warms.",
+   "Summer": "Water in dry spells and thin carefully.",
+   "Autumn": "Harvest as needed.",
+   "Winter": "Store lifted roots or protect late crops."
+  },
+  "problems": [
+   {
+    "name": "Forked roots",
+    "fix": "Usually caused by stones, compacted soil or rich fresh manure. Use a finer medium next time."
+   },
+   {
+    "name": "Carrot fly",
+    "fix": "Cover with fine mesh and avoid bruising foliage when thinning."
+   }
+  ],
+  "propagation": {
+   "season": "Spring to early summer for most home sowings.",
+   "methods": "Sow seed directly where it is to grow.",
+   "tips": "Do not transplant carrots unless using special short-root types. They hate root disturbance.",
+   "tracker": "Track sowing date, thinning date and first harvest."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Carrot flowers are useful to insects if allowed to flower in the second year, but most crops are harvested before then."
+  },
+  "pollinatorFact": "Umbellifer flowers like carrot relatives can be brilliant landing pads for hoverflies and other beneficial insects.",
+  "companions": [
+   "Lettuce",
+   "Chives",
+   "Onion"
+  ],
+  "timeline": {
+   "Seeding": "Mar-Jun",
+   "Flowering": "Second year if left",
+   "Harvest": "Jun-Oct",
+   "Pruning": "Thin seedlings"
+  },
+  "weeklyFact": "Carrot seed is tiny, which is why many gardeners accidentally sow enough carrots for a small village.",
+  "photoPlan": {
+   "hero": "Whole plant in natural light",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter appearance",
+    "Seed pod / fruit if relevant"
+   ]
+  }
+ },
+ "GK-COU-001": {
+  "id": "GK-COU-001",
+  "slug": "courgette",
+  "name": "Courgette",
+  "latinName": "Cucurbita pepo",
+  "variety": "Green bush type",
+  "subtitle": "Big leaves, big flowers and regular summer picking.",
+  "theme": "#4c8d3f",
+  "category": "Vegetable",
+  "tags": [
+   "Edible",
+   "Summer crop",
+   "Heavy feeder",
+   "Pollinator"
+  ],
+  "quickCare": {
+   "Water": "Water deeply and often",
+   "Light": "Full sun",
+   "Feeding": "Feed when flowering",
+   "Pruning": "Remove damaged leaves"
+  },
+  "notes": "Courgettes are great for testing harvest tracking because fruit can go from perfect to comedy size very quickly.",
+  "soil": "Rich, moisture-retentive but free-draining soil.",
+  "medium": "Peat-free compost with garden compost or manure-based improver in a large container.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in pots.",
+   "Summer": "Water, feed and harvest small fruit regularly.",
+   "Autumn": "Remove tired plants after cropping.",
+   "Winter": "Plan next year and compost healthy remains."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew",
+    "fix": "Common later in the season. Water the soil not the leaves, improve airflow and remove badly affected leaves."
+   },
+   {
+    "name": "Poor fruit set",
+    "fix": "Often pollination or weather related. Encourage pollinators and try hand pollination if needed."
+   }
+  ],
+  "propagation": {
+   "season": "Sow in spring, plant out after frost risk.",
+   "methods": "Seed in pots; plant out carefully without disturbing roots.",
+   "tips": "Start with one or two plants unless you are emotionally prepared for courgette season.",
+   "tracker": "Track sowing, first flower, first harvest and weekly harvest count."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Large yellow flowers attract pollinators, and good pollination improves fruit set."
+  },
+  "pollinatorFact": "Courgettes have male and female flowers, and bees do a lot of the matchmaking.",
+  "companions": [
+   "Nasturtium",
+   "Borage",
+   "Calendula"
+  ],
+  "timeline": {
+   "Seeding": "Apr-May indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Jul-Oct",
+   "Pruning": "Remove damaged leaves"
+  },
+  "weeklyFact": "A courgette can hide under one leaf and become a marrow while you are making a cup of tea.",
+  "photoPlan": {
+   "hero": "Whole plant in natural light",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter appearance",
+    "Seed pod / fruit if relevant"
+   ]
+  }
+ },
+ "GK-DAH-001": {
+  "id": "GK-DAH-001",
+  "slug": "dahlia",
+  "name": "Dahlia",
+  "latinName": "Dahlia",
+  "variety": "Decorative dahlia",
+  "subtitle": "Bold late-summer colour from tubers.",
+  "theme": "#c23b72",
+  "tags": [
+   "Flowers",
+   "Full sun",
+   "Lift tubers",
+   "Cut flowers"
+  ],
+  "quickCare": {
+   "Water": "Water well in dry spells once established",
+   "Light": "Full sun, at least 6 hours a day",
+   "Feeding": "Weekly high-potash feed once buds form",
+   "Pruning": "Deadhead constantly; pinch young plants to bush out"
+  },
+  "notes": "Stake early \u2014 dahlias put on height fast and snap in wind once top-heavy with flower.",
+  "soil": "Fertile, well-drained soil enriched with organic matter.",
+  "medium": "Peat-free compost with added grit for containers; needs regular feeding as it's hungry.",
+  "seasonalActions": {
+   "Spring": "Pot up tubers under cover from March; plant out after last frost.",
+   "Summer": "Deadhead weekly, feed and stake as growth continues.",
+   "Autumn": "Lift tubers after the first frost blackens foliage, or mulch heavily to overwinter in mild, free-draining gardens.",
+   "Winter": "Store lifted tubers somewhere frost-free, dark and just barely moist."
+  },
+  "problems": [
+   {
+    "name": "Earwigs",
+    "fix": "Chew petal edges at night. Trap in upturned straw-filled pots on canes, empty in the morning."
+   },
+   {
+    "name": "Powdery mildew",
+    "fix": "Worse late season; improve airflow and water at the base, not the leaves."
+   },
+   {
+    "name": "Slugs on young shoots",
+    "fix": "Protect new spring growth with barriers or torchlight removal."
+   }
+  ],
+  "companions": [
+   "Canna",
+   "Salvia",
+   "Cosmos",
+   "Verbena"
+  ],
+  "propagation": {
+   "season": "Divide dormant tubers in spring, just as eyes start to show.",
+   "methods": "Divide tuber clumps so each division has a piece of the old stem base with at least one eye.",
+   "tips": "Basal cuttings taken from sprouted tubers in early spring multiply stock fastest.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Open-centred dahlias are better for pollinators than very double forms."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr",
+   "Flowering": "Jul-Oct",
+   "Harvest": "Cut flowers Jul-Oct",
+   "Pruning": "Deadhead summer; lift tubers after frost"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Dahlia.",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter/dormant appearance",
+    "Seed pod, fruit, tuber or spent flower if applicable"
+   ]
+  },
+  "weeklyFact": "Dahlia is included in the GardenKey pilot set to test different plant habits and care needs.",
+  "category": "Perennial",
+  "pollinatorFact": "Open-centred dahlias are much better for bees than tight decorative doubles, which can hide the pollen and nectar.",
+  "companionLinks": {
+   "Canna": "GK-CAN-001"
+  }
+ },
+ "GK-FRN-001": {
+  "id": "GK-FRN-001",
+  "slug": "fern",
+  "name": "Fern",
+  "latinName": "Polypodiopsida",
+  "variety": "Mixed garden fern",
+  "subtitle": "Shade-loving foliage for calm, green corners.",
+  "theme": "#2f8b57",
+  "tags": [
+   "Shade",
+   "Moist soil",
+   "Foliage",
+   "Low light"
+  ],
+  "quickCare": {
+   "Water": "Keep lightly moist",
+   "Light": "Shade to indirect light",
+   "Feeding": "Light feed in spring",
+   "Pruning": "Remove dead fronds"
+  },
+  "notes": "Ferns prefer consistent moisture and shelter from drying winds. Avoid strong afternoon sun.",
+  "soil": "Humus-rich, moisture-retentive soil with good structure.",
+  "medium": "Peat-free multipurpose compost mixed with leaf mould or fine bark for moisture retention.",
+  "seasonalActions": {
+   "Spring": "Remove old fronds as new growth appears.",
+   "Summer": "Water during dry spells.",
+   "Autumn": "Top dress with leaf mould.",
+   "Winter": "Tidy dead fronds when the plant is dormant or growth has slowed, usually November to March. Leaving some cover can help protect the crown."
+  },
+  "problems": [
+   {
+    "name": "Crispy fronds",
+    "fix": "Increase humidity/moisture and move from direct sun."
+   },
+   {
+    "name": "Slug damage",
+    "fix": "Check under rims and use barriers/traps rather than harsh chemicals."
+   }
+  ],
+  "companions": [
+   "Hosta",
+   "Hydrangea",
+   "Heuchera",
+   "Japanese Maple"
+  ],
+  "propagation": {
+   "season": "Spring division.",
+   "methods": "Divide established clumps or grow from spores for advanced propagation.",
+   "tips": "Keep divisions moist until re-established.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Mainly habitat and shelter value rather than nectar value."
+  },
+  "timeline": {
+   "Seeding": "Spores advanced",
+   "Flowering": "No flowers",
+   "Harvest": "N/A",
+   "Pruning": "Mar-Apr"
+  },
+  "photoPlan": {
+   "hero": "Fresh fronds with shaded pot/garden context.",
+   "gallery": [
+    "Frond close-up",
+    "Crown/new unfurling fronds",
+    "Winter dormant/frond dieback",
+    "Spores under fronds if visible"
+   ]
+  },
+  "weeklyFact": "Ferns are ancient plants that reproduce by spores rather than flowers \u2014 very calm, very green, very Jurassic.",
+  "category": "Fern",
+  "pollinatorFact": "Ferns do not provide flowers for pollinators, but they do create shelter and humidity for small garden life."
+ },
+ "GK-HOS-001": {
+  "id": "GK-HOS-001",
+  "slug": "hosta",
+  "name": "Hosta",
+  "latinName": "Hosta",
+  "variety": "Plantain lily",
+  "subtitle": "Bold shade foliage that slugs love just as much as you do.",
+  "theme": "#6aa84f",
+  "tags": [
+   "Shade",
+   "Foliage",
+   "Moist soil",
+   "Slug watch"
+  ],
+  "quickCare": {
+   "Water": "Keep consistently moist, never let dry out fully",
+   "Light": "Part to full shade; morning sun is fine, avoid midday sun",
+   "Feeding": "Balanced liquid feed monthly through spring and summer",
+   "Pruning": "Cut all foliage to the ground once it dies back in autumn"
+  },
+  "notes": "The biggest threat to hostas is slugs and snails, not disease \u2014 protect emerging shoots in spring above anything else.",
+  "soil": "Moist, humus-rich, well-drained soil.",
+  "medium": "Peat-free compost with added leaf mould or well-rotted organic matter for moisture retention.",
+  "seasonalActions": {
+   "Spring": "Protect emerging shoots from slugs immediately \u2014 this is the most vulnerable stage.",
+   "Summer": "Water in dry spells and keep feeding monthly.",
+   "Autumn": "Cut back foliage once it yellows and collapses after first frosts.",
+   "Winter": "Dormant and fully hardy; no protection needed outdoors."
+  },
+  "problems": [
+   {
+    "name": "Slugs and snails",
+    "fix": "The main hosta problem. Use copper tape, grit barriers, beer traps or torchlight removal at night, especially on new spring shoots."
+   },
+   {
+    "name": "Sun scorch",
+    "fix": "Pale, crispy leaf edges mean too much direct sun \u2014 move to deeper shade."
+   },
+   {
+    "name": "Virus (mottled/streaked leaves)",
+    "fix": "No cure; remove and destroy affected plants rather than propagating from them."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Salvia",
+   "Fern",
+   "Rose"
+  ],
+  "propagation": {
+   "season": "Divide dormant clumps in early spring or autumn.",
+   "methods": "Lift the whole clump and divide with a spade or knife, keeping several growth points per division.",
+   "tips": "Water divisions in well and keep moist until re-established.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Tubular summer flowers are visited by bees and occasionally hummingbird-mimicking hawkmoths at dusk."
+  },
+  "timeline": {
+   "Seeding": "Rarely grown from seed",
+   "Flowering": "Jun-Aug",
+   "Harvest": "N/A",
+   "Pruning": "Cut back Oct-Nov after die-back"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Hosta.",
+   "gallery": [
+    "Close-up of flower spike",
+    "Leaf variegation/foliage detail",
+    "Winter/dormant appearance",
+    "Slug damage if present, for reference"
+   ]
+  },
+  "weeklyFact": "Some hosta leaves can grow large enough to hold a full cup of rainwater after a summer shower.",
+  "category": "Perennial",
+  "pollinatorFact": "Hosta's tubular flowers are shaped for bees and long-tongued pollinators, and are sometimes visited by moths at dusk."
+ },
+ "GK-HYD-001": {
+  "id": "GK-HYD-001",
+  "slug": "hydrangea",
+  "name": "Hydrangea",
+  "latinName": "Hydrangea macrophylla",
+  "variety": "Mophead hydrangea",
+  "subtitle": "Big summer flowerheads that shift colour with soil pH.",
+  "theme": "#6f8edc",
+  "tags": [
+   "Part shade",
+   "Moist soil",
+   "Summer flowers",
+   "Acid/alkaline colour"
+  ],
+  "quickCare": {
+   "Water": "Water generously, especially in pots \u2014 wilts fast when dry",
+   "Light": "Morning sun, afternoon shade ideal",
+   "Feeding": "Spring feed with an ericaceous formula if you want blue flowers",
+   "Pruning": "Cut spent flowerheads to the first strong bud pair in spring, not autumn"
+  },
+  "notes": "For blue flowers the soil needs to be acidic with available aluminium; for pink, more alkaline. White varieties don't change colour regardless of soil.",
+  "soil": "Moist, fertile, humus-rich soil. Acidic soil produces blue flowers on macrophylla types; alkaline produces pink.",
+  "medium": "Ericaceous peat-free compost for pots if aiming for blue flowers; standard peat-free compost for pink or white.",
+  "seasonalActions": {
+   "Spring": "Prune out old flowerheads to the first healthy bud pair once new growth is visible.",
+   "Summer": "Water generously, especially in containers, and deadhead as flowers fade.",
+   "Autumn": "Leave old flowerheads on over winter \u2014 they protect next year's buds from frost.",
+   "Winter": "Leave faded flowerheads in place for frost protection; do not prune now."
+  },
+  "problems": [
+   {
+    "name": "Wilting in pots",
+    "fix": "Hydrangeas in containers dry out fast in summer heat; water daily in hot spells or move to part shade."
+   },
+   {
+    "name": "No flowers",
+    "fix": "Usually pruned at the wrong time (cutting off next year's buds) or frost damage to buds \u2014 check pruning timing."
+   },
+   {
+    "name": "Leaf scorch",
+    "fix": "Too much direct afternoon sun; move to a spot with afternoon shade."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Hosta",
+   "Japanese Maple",
+   "Astilbe"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in early summer.",
+   "methods": "Take non-flowering shoot tips, remove lower leaves, root in a free-draining cutting mix.",
+   "tips": "Keep cuttings humid (a clear bag works) until rooted, then pot on individually.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Mophead varieties are mostly sterile ornamental flowers; lacecap types offer more accessible pollen for insects."
+  },
+  "timeline": {
+   "Seeding": "Rarely grown from seed",
+   "Flowering": "Jun-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Mar-Apr, to first bud pair"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Hydrangea in flower.",
+   "gallery": [
+    "Flowerhead close-up",
+    "Foliage detail",
+    "Winter structure with old flowerheads",
+    "Colour comparison if soil pH varies across the garden"
+   ]
+  },
+  "weeklyFact": "A hydrangea's flower colour is a live pH test for your soil \u2014 blue means acidic, pink means alkaline.",
+  "category": "Perennial",
+  "pollinatorFact": "Lacecap hydrangeas have small fertile flowers around the rim that are far more useful to pollinators than the showy sterile mophead types."
+ },
+ "GK-ACE-001": {
+  "id": "GK-ACE-001",
+  "slug": "japanese-maple",
+  "name": "Japanese Maple",
+  "latinName": "Acer palmatum",
+  "variety": "Japanese maple",
+  "subtitle": "Elegant, slow-growing tree prized for foliage and autumn colour.",
+  "theme": "#b84d3c",
+  "tags": [
+   "Part shade",
+   "Shelter",
+   "Autumn colour",
+   "Acid-neutral soil"
+  ],
+  "quickCare": {
+   "Water": "Keep evenly moist, especially in pots \u2014 never let it dry out or waterlog",
+   "Light": "Dappled or part shade, sheltered from strong wind and hot midday sun",
+   "Feeding": "Light, slow-release feed in spring only \u2014 avoid high nitrogen",
+   "Pruning": "Minimal \u2014 remove dead or crossing branches in late autumn/winter while dormant"
+  },
+  "notes": "Leaf edges scorch easily in strong wind, hot sun or drought \u2014 shelter is as important as soil.",
+  "soil": "Humus-rich, well-drained, slightly acidic to neutral soil.",
+  "medium": "Peat-free ericaceous or acid-friendly compost for pots, with excellent drainage.",
+  "seasonalActions": {
+   "Spring": "Watch for late frost damage on new leaves; feed lightly once.",
+   "Summer": "Water consistently and shelter from scorching sun and wind.",
+   "Autumn": "Enjoy the colour change; keep roots moist as leaves turn.",
+   "Winter": "Prune dead or crossing wood only while fully dormant; protect pots from freezing solid."
+  },
+  "problems": [
+   {
+    "name": "Leaf scorch",
+    "fix": "Brown, crispy leaf edges from wind, sun or drought \u2014 move to a more sheltered spot and water consistently."
+   },
+   {
+    "name": "Verticillium wilt",
+    "fix": "Sudden branch dieback; remove affected wood promptly and avoid replanting maples in the same spot."
+   },
+   {
+    "name": "Aphids on new growth",
+    "fix": "Wash off with water or encourage ladybirds; rarely serious."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Hosta",
+   "Hydrangea",
+   "Heuchera"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in early summer, or grafting for named cultivars.",
+   "methods": "Named varieties are usually grafted; species types can be grown from seed sown fresh in autumn.",
+   "tips": "Seed-grown maples won't come true to a named cultivar \u2014 expect variation.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Small spring flowers offer modest early-season nectar and pollen for insects before the canopy is fully out."
+  },
+  "timeline": {
+   "Seeding": "Sow fresh seed in autumn if species type",
+   "Flowering": "Apr-May, inconspicuous",
+   "Harvest": "N/A",
+   "Pruning": "Nov-Jan while dormant"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Japanese Maple, ideally showing canopy shape.",
+   "gallery": [
+    "Leaf close-up",
+    "Autumn colour change",
+    "Winter branch structure",
+    "Spring flowers if visible"
+   ]
+  },
+  "weeklyFact": "Japanese maples can live for well over a century and are often trained as bonsai for exactly that reason.",
+  "category": "Tree",
+  "pollinatorFact": "The small red-green spring flowers are easy to miss but provide early nectar before many other plants are in bloom."
+ },
+ "GK-LAV-001": {
+  "id": "GK-LAV-001",
+  "slug": "lavender",
+  "name": "Lavender",
+  "latinName": "Lavandula angustifolia",
+  "variety": "English lavender",
+  "subtitle": "Scented, sun-loving, pollinator friendly.",
+  "theme": "#8f6ccf",
+  "tags": [
+   "Full sun",
+   "Low water",
+   "Free-draining soil",
+   "Bee friendly"
+  ],
+  "quickCare": {
+   "Water": "Lightly once soil is dry",
+   "Light": "Full sun, sheltered spot",
+   "Feeding": "Minimal feeding needed",
+   "Pruning": "Trim after flowering"
+  },
+  "notes": "Do not overwater. Lavender dislikes sitting in wet compost. Add grit or perlite if the potting mix is too rich or heavy.",
+  "soil": "Free-draining, gritty, slightly alkaline to neutral soil. Avoid heavy wet compost.",
+  "medium": "Peat-free compost mixed with horticultural grit or perlite. For pots, aim for sharp drainage and raise the pot slightly in winter.",
+  "seasonalActions": {
+   "Spring": "Check drainage, remove dead growth and lightly refresh top dressing.",
+   "Summer": "Trim lightly after flowering and avoid heavy feeding.",
+   "Autumn": "Reduce watering and keep the crown dry.",
+   "Winter": "Keep it on the dry side and avoid waterlogged compost. If pruning is needed, wait until the plant is dormant or growth is quiet \u2014 usually November to March \u2014 but avoid cutting hard into old woody stems."
+  },
+  "problems": [
+   {
+    "name": "Root rot",
+    "fix": "Usually caused by wet compost. Improve drainage, reduce watering and consider repotting into a gritty mix."
+   },
+   {
+    "name": "Poor flowering",
+    "fix": "Move to stronger sun and avoid rich feeding."
+   },
+   {
+    "name": "Aphids",
+    "fix": "Squash by hand or wash off with water; encourage hoverflies and ladybirds."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Rosemary",
+   "Thyme",
+   "Salvia"
+  ],
+  "propagation": {
+   "season": "Late summer for semi-ripe cuttings; spring for seed.",
+   "methods": "Semi-ripe cuttings root well in a gritty, free-draining medium.",
+   "tips": "Avoid overly humid sealed conditions; gentle ventilation helps reduce rot.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Excellent nectar source for bees, butterflies and hoverflies. Flowering lavender can support pollinators while ornamentals nearby provide colour and structure."
+  },
+  "timeline": {
+   "Seeding": "Mar-Apr",
+   "Flowering": "Jun-Aug",
+   "Harvest": "Jul-Aug",
+   "Pruning": "Aug-Sep"
+  },
+  "photoPlan": {
+   "hero": "Whole plant in flower, ideally with bees visible.",
+   "gallery": [
+    "Close-up of flower spikes",
+    "Grey-green foliage",
+    "Winter structure after pruning",
+    "Seed heads / spent flower stems"
+   ]
+  },
+  "weeklyFact": "Lavender has been used for centuries in gardens, medicine cupboards and linen drawers \u2014 basically the original plant-based air freshener.",
+  "category": "Perennial",
+  "pollinatorFact": "Open lavender flowers are brilliant for bees because the nectar is easy to access and the plant flowers over a useful summer window.",
+  "companionLinks": {
+   "Rose": "GK-ROS-001"
+  }
+ },
+ "GK-LET-001": {
+  "id": "GK-LET-001",
+  "slug": "lettuce",
+  "name": "Lettuce",
+  "latinName": "Lactuca sativa",
+  "variety": "Loose-leaf mix",
+  "subtitle": "Fast, useful salad leaves for pots and beds.",
+  "theme": "#69a85e",
+  "category": "Vegetable",
+  "tags": [
+   "Edible",
+   "Cool season",
+   "Containers",
+   "Quick crop"
+  ],
+  "quickCare": {
+   "Water": "Keep evenly moist",
+   "Light": "Sun to light shade",
+   "Feeding": "Light feed if growth slows",
+   "Pruning": "Pick outer leaves regularly"
+  },
+  "notes": "Lettuce is a good tester plant because it changes quickly. It shows whether GardenKey is useful for repeat jobs like watering, harvesting and sowing follow-up batches.",
+  "soil": "Moist, fertile, free-draining soil. Avoid letting containers dry out completely.",
+  "medium": "Peat-free multipurpose compost with a little fine compost or worm cast for moisture holding.",
+  "seasonalActions": {
+   "Spring": "Sow small batches every 2\u20133 weeks.",
+   "Summer": "Give light shade in hot spells and harvest regularly.",
+   "Autumn": "Sow hardy varieties under cover.",
+   "Winter": "Growth slows; protect from harsh weather and wet compost."
+  },
+  "problems": [
+   {
+    "name": "Bolting",
+    "fix": "Heat or stress can make lettuce run to seed. Sow little and often, keep evenly moist and use shade in hot weather."
+   },
+   {
+    "name": "Slugs",
+    "fix": "Use barriers, night checks and tidy hiding places. Avoid pellets where pets/wildlife may be affected."
+   }
+  ],
+  "propagation": {
+   "season": "Spring to autumn, depending on variety.",
+   "methods": "Sow seed thinly in trays, modules or directly in containers.",
+   "tips": "Label each sowing date. Small batches are better than one huge glut.",
+   "tracker": "Easy future tracker: sowing date, first pick date, flavour and whether it bolted."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Lettuce is mainly grown for leaves, not pollinators, but leaving one plant to flower can feed small insects."
+  },
+  "pollinatorFact": "If one lettuce bolts, leave it briefly and watch how many tiny insects visit the flowers.",
+  "companions": [
+   "Chives",
+   "Radish",
+   "Carrot"
+  ],
+  "timeline": {
+   "Seeding": "Feb-Sep depending on cover",
+   "Flowering": "Only if left to bolt",
+   "Harvest": "4-8 weeks from sowing",
+   "Pruning": "Pick outer leaves as needed"
+  },
+  "weeklyFact": "Lettuce is one of the best plants for testing a garden app because you can see results in weeks, not years.",
+  "photoPlan": {
+   "hero": "Whole plant in natural light",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter appearance",
+    "Seed pod / fruit if relevant"
+   ]
+  }
+ },
+ "GK-POT-001": {
+  "id": "GK-POT-001",
+  "slug": "potato",
+  "name": "Potato",
+  "latinName": "Solanum tuberosum",
+  "variety": "First early",
+  "subtitle": "A satisfying crop for bags, tubs and beds.",
+  "theme": "#b58a56",
+  "category": "Vegetable",
+  "tags": [
+   "Edible",
+   "Tuber",
+   "Containers",
+   "Easy win"
+  ],
+  "quickCare": {
+   "Water": "Water well once growing",
+   "Light": "Full sun",
+   "Feeding": "Feed lightly in containers",
+   "Pruning": "Earth up stems"
+  },
+  "notes": "Potatoes are good for beginners because the harvest feels like treasure hunting.",
+  "soil": "Fertile, free-draining soil. Avoid waterlogging.",
+  "medium": "Peat-free compost mixed with garden compost in a deep bag or large tub.",
+  "seasonalActions": {
+   "Spring": "Plant chitted seed potatoes.",
+   "Summer": "Water well, earth up and harvest earlies.",
+   "Autumn": "Lift maincrop before prolonged wet.",
+   "Winter": "Store in a cool dark place."
+  },
+  "problems": [
+   {
+    "name": "Blight",
+    "fix": "Remove affected foliage and avoid wet leaves. Choose resistant varieties where blight is common."
+   },
+   {
+    "name": "Scab",
+    "fix": "Often worse in dry or alkaline conditions. Keep moisture steady while tubers form."
+   }
+  ],
+  "propagation": {
+   "season": "Plant in spring.",
+   "methods": "Seed potatoes planted in bags, tubs or beds.",
+   "tips": "Do not use supermarket potatoes for trials if you want clean, predictable results.",
+   "tracker": "Track planting date, earthing-up dates and harvest weight."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Potato flowers can attract insects, but most value is food production rather than ornamental pollinator support."
+  },
+  "pollinatorFact": "Potato flowers are not the main reason to grow them for wildlife, but they can still bring insect visitors.",
+  "companions": [
+   "Beans",
+   "Cabbage",
+   "Calendula"
+  ],
+  "timeline": {
+   "Seeding": "Plant tubers Mar-Apr",
+   "Flowering": "Summer",
+   "Harvest": "Jun-Sep depending type",
+   "Pruning": "Earth up; remove blighted foliage"
+  },
+  "weeklyFact": "Potatoes are related to tomatoes, which explains why potato flowers can look strangely familiar.",
+  "photoPlan": {
+   "hero": "Whole plant in natural light",
+   "gallery": [
+    "Close-up of flower",
+    "Foliage detail",
+    "Winter appearance",
+    "Seed pod / fruit if relevant"
+   ]
+  }
+ },
+ "GK-ROS-001": {
+  "id": "GK-ROS-001",
+  "slug": "rose",
+  "name": "Rose",
+  "latinName": "Rosa",
+  "variety": "Shrub rose",
+  "subtitle": "Classic flowering shrub with high ornamental value.",
+  "theme": "#d85b7a",
+  "tags": [
+   "Full sun",
+   "Flowers",
+   "Feed in spring",
+   "Pollinator value varies"
+  ],
+  "quickCare": {
+   "Water": "Deeply in dry spells",
+   "Light": "Full sun preferred",
+   "Feeding": "Feed in spring and early summer",
+   "Pruning": "Prune in late winter"
+  },
+  "notes": "Deadhead regularly to encourage flowering. Keep air moving around the plant to reduce fungal disease.",
+  "soil": "Fertile, moisture-retentive but free-draining soil. Avoid waterlogging.",
+  "medium": "For pots, use a loam-based peat-free compost with added organic matter and good drainage.",
+  "seasonalActions": {
+   "Spring": "Feed and mulch; check new shoots for aphids.",
+   "Summer": "Deadhead, water deeply in dry periods and watch for blackspot.",
+   "Autumn": "Clear fallen diseased leaves.",
+   "Winter": "Prune when dormant, usually November to March. Aim for an open shape, remove dead or crossing stems, and use clean secateurs."
+  },
+  "problems": [
+   {
+    "name": "Blackspot",
+    "fix": "Remove affected leaves, avoid overhead watering and improve airflow."
+   },
+   {
+    "name": "Aphids",
+    "fix": "Wipe off early colonies or spray with water; avoid broad insecticides where possible."
+   },
+   {
+    "name": "Powdery mildew",
+    "fix": "Water consistently, improve airflow and avoid drought stress."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Salvia",
+   "Nepeta",
+   "Geranium"
+  ],
+  "propagation": {
+   "season": "Hardwood cuttings in autumn or winter.",
+   "methods": "Take pencil-thick cuttings from healthy stems and insert into gritty compost.",
+   "tips": "Label varieties carefully; many roses look similar when dormant.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Single and semi-double roses are usually better for pollinators than very double flowers."
+  },
+  "timeline": {
+   "Seeding": "Usually bought as plant",
+   "Flowering": "Jun-Oct",
+   "Harvest": "Rose hips in autumn",
+   "Pruning": "Feb-Mar"
+  },
+  "photoPlan": {
+   "hero": "Open flower and whole shrub context.",
+   "gallery": [
+    "Flower close-up",
+    "Foliage and thorns",
+    "Winter pruned framework",
+    "Rose hips where present"
+   ]
+  },
+  "weeklyFact": "Open-centred roses can provide pollen access for bees, unlike many very double varieties.",
+  "category": "Perennial",
+  "pollinatorFact": "Single and semi-double roses are usually more useful to pollinators than very full double roses, because insects can actually reach the centre.",
+  "companionLinks": {
+   "Lavender": "GK-LAV-001"
+  }
+ },
+ "GK-SAL-001": {
+  "id": "GK-SAL-001",
+  "slug": "salvia",
+  "name": "Salvia",
+  "latinName": "Salvia nemorosa",
+  "variety": "Hardy salvia",
+  "subtitle": "Spiky, long-flowering perennial that bees can't get enough of.",
+  "theme": "#5b4bb7",
+  "tags": [
+   "Pollinator",
+   "Full sun",
+   "Free-draining soil",
+   "Cut back"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water in prolonged dry spells only",
+   "Light": "Full sun",
+   "Feeding": "Light spring feed \u2014 too rich a diet causes floppy growth",
+   "Pruning": "Cut spent flower spikes to encourage a second flush; cut back hard in spring"
+  },
+  "notes": "Deadheading spent spikes is the single biggest thing you can do to keep salvia flowering all summer.",
+  "soil": "Free-draining soil; tolerates poor soil better than rich, wet ground.",
+  "medium": "Peat-free compost with added grit for sharp drainage, especially in containers.",
+  "seasonalActions": {
+   "Spring": "Cut old growth right back to fresh shoots at the base.",
+   "Summer": "Deadhead spent spikes regularly to prolong flowering into autumn.",
+   "Autumn": "Leave the last flush of growth in place over winter for frost protection.",
+   "Winter": "Leave old stems standing \u2014 cutting back now exposes the crown to frost damage."
+  },
+  "problems": [
+   {
+    "name": "Floppy growth",
+    "fix": "Usually too much shade or too rich a feed; move to full sun and ease off feeding."
+   },
+   {
+    "name": "Powdery mildew",
+    "fix": "Improve airflow and avoid overhead watering in humid weather."
+   },
+   {
+    "name": "Winter losses in wet soil",
+    "fix": "Poor drainage is the main killer, not cold. Improve drainage or grow in pots in heavy clay gardens."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Rose",
+   "Nepeta",
+   "Echinacea"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in late spring, or division in spring.",
+   "methods": "Take non-flowering shoot tips for cuttings, or divide established clumps.",
+   "tips": "Cuttings root quickly in a free-draining mix on a warm windowsill.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "One of the best border plants for bees \u2014 long tubular flowers over a very long season."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr indoors",
+   "Flowering": "Jun-Oct with deadheading",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead through summer; cut back hard in spring"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Salvia in flower.",
+   "gallery": [
+    "Close-up of flower spike",
+    "Foliage detail",
+    "Winter structure before spring cut-back",
+    "Bees or pollinators visiting if captured"
+   ]
+  },
+  "weeklyFact": "Salvia's tubular flowers are shaped almost exactly for a bumblebee's tongue length.",
+  "category": "Perennial",
+  "pollinatorFact": "Salvia is consistently one of the top-rated plants in pollinator surveys thanks to its long flowering season and easy nectar access."
+ },
+ "GK-GLA-001": {
+  "id": "GK-GLA-001",
+  "slug": "gladiolus",
+  "name": "Gladiolus",
+  "latinName": "Gladiolus",
+  "variety": "Sword lily",
+  "subtitle": "Tall, dramatic flower spikes for late summer borders and cutting.",
+  "theme": "#c9457a",
+  "tags": [
+   "Flowers",
+   "Full sun",
+   "Cut flowers",
+   "Lift corms"
+  ],
+  "quickCare": {
+   "Water": "Water well during the growing season, especially as spikes form",
+   "Light": "Full sun, sheltered from strong wind",
+   "Feeding": "Balanced feed at planting, then high-potash as buds form",
+   "Pruning": "Cut spent flower spikes; cut foliage down after it yellows in autumn"
+  },
+  "notes": "Stake tall varieties \u2014 the flower spikes are heavy and catch wind easily.",
+  "soil": "Fertile, free-draining soil.",
+  "medium": "Peat-free compost improved with garden compost; good drainage is essential in containers.",
+  "seasonalActions": {
+   "Spring": "Plant corms from mid-spring once frost risk has passed.",
+   "Summer": "Water regularly and stake as spikes develop.",
+   "Autumn": "Cut flowers for the house as they open; lift corms after foliage yellows in cold gardens.",
+   "Winter": "Store lifted corms somewhere cool, dry and frost-free."
+  },
+  "problems": [
+   {
+    "name": "Thrips",
+    "fix": "Fine silvery streaking on leaves and flowers \u2014 remove affected foliage and encourage natural predators like lacewings."
+   },
+   {
+    "name": "Corm rot in storage",
+    "fix": "Usually from storing damp corms; dry thoroughly before storing and discard any soft ones."
+   }
+  ],
+  "companions": [
+   "Dahlia",
+   "Canna",
+   "Verbena"
+  ],
+  "propagation": {
+   "season": "Divide cormlets from the base of lifted corms in spring.",
+   "methods": "Small cormlets can be grown on for a couple of seasons before they flower.",
+   "tips": "Label varieties carefully \u2014 corms look near-identical when lifted.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Mostly grown for cut-flower impact rather than pollinator value; the tightly packed spikes offer limited access for insects."
+  },
+  "timeline": {
+   "Seeding": "Apr-May, planted as corms",
+   "Flowering": "Jul-Sep",
+   "Harvest": "Cut flowers Jul-Sep",
+   "Pruning": "Cut back after foliage yellows"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Gladiolus.",
+   "gallery": [
+    "Close-up of flower spike",
+    "Whole spike in a border setting",
+    "Corms before planting",
+    "Winter storage"
+   ]
+  },
+  "weeklyFact": "Gladiolus corms are technically called corms, not bulbs \u2014 they're solid stem tissue rather than layered scales.",
+  "category": "Bulb",
+  "pollinatorFact": "Gladiolus spikes are showy but the tightly packed florets make nectar and pollen harder for insects to reach than more open flower shapes."
+ },
+ "GK-TUL-001": {
+  "id": "GK-TUL-001",
+  "slug": "tulip",
+  "name": "Tulip",
+  "latinName": "Tulipa",
+  "variety": "Mixed border tulip",
+  "subtitle": "Classic spring bulb for bold, reliable colour.",
+  "theme": "#d94f6b",
+  "tags": [
+   "Spring flowers",
+   "Full sun",
+   "Bulb",
+   "Containers"
+  ],
+  "quickCare": {
+   "Water": "Water at planting, then rely on rainfall \u2014 avoid summer watering while dormant",
+   "Light": "Full sun",
+   "Feeding": "Feed lightly with high-potash as leaves emerge in spring",
+   "Pruning": "Deadhead after flowering; leave foliage to die back naturally"
+  },
+  "notes": "Deadhead but don't cut foliage early \u2014 the leaves are recharging the bulb for next year.",
+  "soil": "Free-draining soil; tulips dislike sitting wet over summer.",
+  "medium": "Peat-free compost with added grit for containers.",
+  "seasonalActions": {
+   "Spring": "Foliage emerges and flowers open; deadhead as blooms fade.",
+   "Summer": "Foliage dies back naturally \u2014 leave it, don't tidy early.",
+   "Autumn": "Plant new bulbs from October into cold, free-draining soil.",
+   "Winter": "Bulbs are dormant underground; no care needed."
+  },
+  "problems": [
+   {
+    "name": "Tulip fire (botrytis)",
+    "fix": "Distorted, scorched-looking shoots \u2014 remove and destroy affected bulbs, don't replant tulips in the same spot for a few years."
+   },
+   {
+    "name": "Squirrels digging up bulbs",
+    "fix": "Cover freshly planted areas with mesh until shoots appear."
+   }
+  ],
+  "companions": [
+   "Daffodil",
+   "Forget-me-not",
+   "Wallflower"
+  ],
+  "propagation": {
+   "season": "Grown from bulbs, not typically propagated at home.",
+   "methods": "Bulbs naturally produce small offset bulbs over years.",
+   "tips": "Lift and store if you want guaranteed colour-matched displays next year, as many modern tulips don't reliably repeat.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Open, cup-shaped flowers give bees reasonable access, especially on warmer days when flowers open fully."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Oct-Nov",
+   "Flowering": "Mar-May",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Tulip.",
+   "gallery": [
+    "Flower close-up",
+    "Bed or container in full bloom",
+    "Emerging shoots",
+    "Bulbs before planting"
+   ]
+  },
+  "weeklyFact": "Tulip bulbs were once so valuable in 17th-century Holland that a single rare bulb could cost more than a house.",
+  "category": "Bulb",
+  "pollinatorFact": "Tulips open wide on sunny days, giving early-season bees good access to pollen when few other flowers are out yet."
+ },
+ "GK-SUN-001": {
+  "id": "GK-SUN-001",
+  "slug": "sunflower",
+  "name": "Sunflower",
+  "latinName": "Helianthus annuus",
+  "variety": "Tall single-stem",
+  "subtitle": "Fast, cheerful annual that tracks the sun and feeds the birds.",
+  "theme": "#e8b23a",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Pollinator",
+   "Easy from seed"
+  ],
+  "quickCare": {
+   "Water": "Water generously, especially once flower heads form",
+   "Light": "Full sun, at least 6 hours a day",
+   "Feeding": "Occasional balanced feed for tall varieties",
+   "Pruning": "Deadhead side shoots if growing for a single big bloom; none needed otherwise"
+  },
+  "notes": "Very fast from seed \u2014 a satisfying one for testers who want quick visible results.",
+  "soil": "Fertile, well-drained soil.",
+  "medium": "Peat-free multipurpose compost; tall varieties benefit from a deep pot if grown in containers.",
+  "seasonalActions": {
+   "Spring": "Sow directly once frost risk has passed.",
+   "Summer": "Water well and stake tall varieties against wind.",
+   "Autumn": "Leave seed heads for birds once flowering finishes.",
+   "Winter": "Nothing to do \u2014 it's an annual and will have finished its cycle."
+  },
+  "problems": [
+   {
+    "name": "Slugs on seedlings",
+    "fix": "Protect young plants with barriers until they're established."
+   },
+   {
+    "name": "Snapped stems in wind",
+    "fix": "Stake tall single-stem varieties early, before they're top-heavy."
+   }
+  ],
+  "companions": [
+   "Nasturtium",
+   "Marigold",
+   "Courgette"
+  ],
+  "propagation": {
+   "season": "Sow direct in late spring, or start indoors 3-4 weeks earlier for a head start.",
+   "methods": "Large seeds are easy to handle and germinate quickly.",
+   "tips": "Great first-sowing plant for new gardeners or testers.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "One of the best plants for bees and hoverflies \u2014 a single large head can host dozens of visits an hour at peak flowering."
+  },
+  "timeline": {
+   "Seeding": "May-Jun",
+   "Flowering": "Jul-Sep",
+   "Harvest": "Seed heads for birds Sep-Oct",
+   "Pruning": "None \u2014 annual"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Sunflower.",
+   "gallery": [
+    "Full flower head close-up",
+    "Whole plant showing height",
+    "Seedling stage",
+    "Seed head with birds if captured"
+   ]
+  },
+  "weeklyFact": "A sunflower head is actually made of thousands of tiny individual flowers arranged in a spiral pattern.",
+  "category": "Annual",
+  "pollinatorFact": "Sunflowers are a magnet for bees and hoverflies, and the spent seed heads are a genuinely important food source for garden birds into autumn."
+ },
+ "GK-MAR-001": {
+  "id": "GK-MAR-001",
+  "slug": "marigold",
+  "name": "Marigold",
+  "latinName": "Tagetes",
+  "variety": "French marigold",
+  "subtitle": "Bright, reliable bedding annual, often used to companion-plant vegetables.",
+  "theme": "#e88f2e",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Companion plant",
+   "Easy from seed"
+  ],
+  "quickCare": {
+   "Water": "Water regularly, don't let it dry out completely",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding needed \u2014 too rich a feed reduces flowering",
+   "Pruning": "Deadhead spent flowers to keep it blooming"
+  },
+  "notes": "Popular around vegetable beds for its reputed pest-deterrent scent, though evidence for this varies by pest.",
+  "soil": "Any reasonable free-draining soil.",
+  "medium": "Peat-free multipurpose compost.",
+  "seasonalActions": {
+   "Spring": "Sow after frost risk has passed, or plant out young plants.",
+   "Summer": "Deadhead regularly for continuous flowering.",
+   "Autumn": "Pull once frosted and blackened.",
+   "Winter": "N/A \u2014 annual."
+  },
+  "problems": [
+   {
+    "name": "Slugs on young plants",
+    "fix": "Protect seedlings with barriers until established."
+   },
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Improve airflow and avoid overhead watering in humid weather."
+   }
+  ],
+  "companions": [
+   "Courgette",
+   "Tomato",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Easy from seed sown indoors in spring or direct after frost.",
+   "methods": "Save seed from spent flower heads for next year.",
+   "tips": "Very forgiving for first-time propagators.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Open-faced varieties are visited readily by hoverflies and bees; very double forms offer less access."
+  },
+  "timeline": {
+   "Seeding": "Mar-May",
+   "Flowering": "Jun-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead through summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Marigold.",
+   "gallery": [
+    "Flower close-up",
+    "Bed or border planting",
+    "Seedling stage",
+    "Seed head for saving seed"
+   ]
+  },
+  "weeklyFact": "Marigolds are one of the most common companion plants in vegetable gardens, often grown for their scent as much as their colour.",
+  "category": "Annual",
+  "pollinatorFact": "Single and semi-double marigolds are useful for hoverflies and small bees; the very frilly double types are mostly for looks."
+ },
+ "GK-NAS-001": {
+  "id": "GK-NAS-001",
+  "slug": "nasturtium",
+  "name": "Nasturtium",
+  "latinName": "Tropaeolum majus",
+  "variety": "Trailing nasturtium",
+  "subtitle": "Fast, edible, brilliantly easy \u2014 flowers, leaves and seed pods are all edible.",
+  "theme": "#e2622f",
+  "tags": [
+   "Annual",
+   "Edible flowers",
+   "Poor soil ok",
+   "Easy from seed"
+  ],
+  "quickCare": {
+   "Water": "Water moderately \u2014 too much encourages leaves over flowers",
+   "Light": "Full sun to light shade",
+   "Feeding": "No feeding needed \u2014 rich soil gives lots of leaf, few flowers",
+   "Pruning": "No pruning needed; pinch trailing tips to bush out"
+  },
+  "notes": "Deliberately grow it in poor soil for the best flower display \u2014 this is one plant that punishes pampering.",
+  "soil": "Poor to average soil \u2014 avoid rich, fertile ground.",
+  "medium": "Peat-free compost is fine even without extra feeding.",
+  "seasonalActions": {
+   "Spring": "Sow direct after frost risk has passed.",
+   "Summer": "Water lightly and harvest leaves and flowers for salads.",
+   "Autumn": "Collect ripe seed pods to resow next year.",
+   "Winter": "N/A \u2014 annual, finished by first frost."
+  },
+  "problems": [
+   {
+    "name": "Blackfly",
+    "fix": "Very attractive to blackfly, which is sometimes used deliberately as a 'trap crop' to protect other plants nearby."
+   },
+   {
+    "name": "Cabbage white caterpillars",
+    "fix": "Nasturtium is a preferred host \u2014 leaves get shredded, which again can protect other brassicas nearby."
+   }
+  ],
+  "companions": [
+   "Courgette",
+   "Cabbage",
+   "Sunflower"
+  ],
+  "propagation": {
+   "season": "Large seeds sow directly with no fuss \u2014 one of the easiest plants to grow from seed.",
+   "methods": "Self-seeds readily; you may get volunteers next year.",
+   "tips": "Great for children or absolute beginner testers.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Simple, open flowers are easily accessed by bees, and the plant is also a valuable 'sacrificial' host for blackfly and caterpillars."
+  },
+  "timeline": {
+   "Seeding": "Apr-May direct sow",
+   "Flowering": "Jun-Oct",
+   "Harvest": "Edible leaves/flowers all summer",
+   "Pruning": "None \u2014 annual"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Nasturtium.",
+   "gallery": [
+    "Flower close-up",
+    "Trailing habit in a pot or border",
+    "Seed pods",
+    "Leaves showing typical shield shape"
+   ]
+  },
+  "weeklyFact": "Every part of a nasturtium above ground is edible \u2014 the peppery leaves and flowers are a genuine salad ingredient, not just a garnish.",
+  "category": "Annual",
+  "pollinatorFact": "Nasturtium flowers are simple and open, making nectar easy to reach for bees, and the plant is often used as a deliberate decoy to draw blackfly away from other crops."
+ },
+ "GK-CLE-001": {
+  "id": "GK-CLE-001",
+  "slug": "clematis",
+  "name": "Clematis",
+  "latinName": "Clematis",
+  "variety": "Large-flowered climber",
+  "subtitle": "Climbing perennial for walls, fences and obelisks.",
+  "theme": "#7a5ec2",
+  "tags": [
+   "Climber",
+   "Full sun to part shade",
+   "Cool roots",
+   "Support needed"
+  ],
+  "quickCare": {
+   "Water": "Water deeply and regularly, especially in the first two years",
+   "Light": "Flowers in sun, but roots and base like to stay cool and shaded",
+   "Feeding": "Spring feed with a balanced or potash-rich fertiliser",
+   "Pruning": "Pruning group depends on variety \u2014 check before cutting back hard"
+  },
+  "notes": "Clematis famously like 'head in the sun, feet in the shade' \u2014 shade the root area with other planting or a flat stone.",
+  "soil": "Fertile, moisture-retentive, free-draining soil.",
+  "medium": "Peat-free compost with added organic matter for container growing; needs a large, deep pot.",
+  "seasonalActions": {
+   "Spring": "Growth accelerates fast \u2014 tie in new shoots regularly.",
+   "Summer": "Water deeply in dry spells, especially newly planted specimens.",
+   "Autumn": "Tidy dead growth once flowering finishes, depending on pruning group.",
+   "Winter": "Prune group 3 varieties hard in late winter, if applicable."
+  },
+  "problems": [
+   {
+    "name": "Clematis wilt",
+    "fix": "Sudden collapse of stems \u2014 cut back to healthy growth below the damage, most recover the following season."
+   },
+   {
+    "name": "Powdery mildew",
+    "fix": "Improve airflow and avoid letting the compost dry out and rewet erratically."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Wisteria",
+   "Honeysuckle"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in early summer using a leaf-bud method.",
+   "methods": "Layering a low stem into the soil is a reliable, low-effort method.",
+   "tips": "Confirm the pruning group before buying \u2014 it changes how and when you cut back.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Many varieties are good for bees, particularly single-flowered types with visible stamens."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Varies by variety, often May-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Depends on pruning group \u2014 check before cutting"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Clematis.",
+   "gallery": [
+    "Flower close-up",
+    "Whole climbing habit on support",
+    "New shoots being tied in",
+    "Seed heads if a variety that produces them"
+   ]
+  },
+  "weeklyFact": "Clematis seed heads can be as decorative as the flowers \u2014 some varieties are grown almost as much for their fluffy autumn seed heads.",
+  "category": "Perennial",
+  "pollinatorFact": "Single, open-flowered clematis varieties give bees good access to pollen; very double forms are more for show."
+ },
+ "GK-CAM-001": {
+  "id": "GK-CAM-001",
+  "slug": "camellia",
+  "name": "Camellia",
+  "latinName": "Camellia japonica",
+  "variety": "Evergreen camellia",
+  "subtitle": "Glossy evergreen shrub with striking late-winter to spring flowers.",
+  "theme": "#c14b6a",
+  "tags": [
+   "Shrub",
+   "Acid soil",
+   "Part shade",
+   "Evergreen"
+  ],
+  "quickCare": {
+   "Water": "Water well, especially in pots \u2014 never let it dry out during bud formation in late summer",
+   "Light": "Bright, part shade; avoid early morning sun after frost, which can damage buds",
+   "Feeding": "Ericaceous feed in spring and after flowering",
+   "Pruning": "Prune lightly after flowering to shape; avoid cutting into old wood"
+  },
+  "notes": "Needs acidic soil \u2014 grow in a pot with ericaceous compost if your garden soil is alkaline.",
+  "soil": "Acidic, humus-rich, moisture-retentive soil.",
+  "medium": "Ericaceous peat-free compost, essential for pot-grown camellias.",
+  "seasonalActions": {
+   "Spring": "Flowering finishes; feed and deadhead.",
+   "Summer": "Buds form for next year \u2014 keep watering consistent, this is the critical stage.",
+   "Autumn": "Continue steady watering as next year's buds develop.",
+   "Winter": "Flowers may open depending on variety; protect from hard frost and morning sun on buds."
+  },
+  "problems": [
+   {
+    "name": "Bud drop",
+    "fix": "Usually from irregular watering or a sudden cold snap; keep watering consistent through summer bud formation."
+   },
+   {
+    "name": "Yellowing leaves (chlorosis)",
+    "fix": "Sign of alkaline soil or water; feed with ericaceous fertiliser and use rainwater if possible."
+   }
+  ],
+  "companions": [
+   "Rhododendron",
+   "Japanese Maple",
+   "Fern"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer, though camellias can be slow and tricky to root at home.",
+   "methods": "Layering a low branch is a more reliable amateur method.",
+   "tips": "Patience is genuinely required \u2014 camellias are not a fast propagation project.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Many camellia flowers, especially very double forms, offer little accessible pollen; single varieties are somewhat better."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Late winter to spring depending on variety",
+   "Harvest": "N/A",
+   "Pruning": "Lightly, just after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Camellia.",
+   "gallery": [
+    "Flower close-up",
+    "Whole shrub in bloom",
+    "Glossy foliage detail",
+    "Buds forming in late summer"
+   ]
+  },
+  "weeklyFact": "Camellia flowers can survive a light frost, but a sudden hard freeze after a mild spell can turn open blooms brown overnight.",
+  "category": "Shrub",
+  "pollinatorFact": "Double camellia flowers are showy but often nearly sterile for pollinators; single-flowered varieties give better access to what pollen is available."
+ },
+ "GK-RHO-001": {
+  "id": "GK-RHO-001",
+  "slug": "rhododendron",
+  "name": "Rhododendron",
+  "latinName": "Rhododendron",
+  "variety": "Hardy hybrid",
+  "subtitle": "Bold spring shrub for acidic, woodland-style planting.",
+  "theme": "#a4478f",
+  "tags": [
+   "Shrub",
+   "Acid soil",
+   "Part shade",
+   "Spring flowers"
+  ],
+  "quickCare": {
+   "Water": "Water well, especially newly planted specimens and those in pots",
+   "Light": "Dappled or part shade; avoid deep shade (poor flowering) or hot midday sun (scorch)",
+   "Feeding": "Ericaceous feed in spring",
+   "Pruning": "Deadhead spent trusses; avoid heavy pruning except to renovate old plants"
+  },
+  "notes": "Shallow-rooted \u2014 mulch generously rather than digging near the base, and never let it dry out in the first two summers.",
+  "soil": "Acidic, humus-rich, moisture-retentive but free-draining soil.",
+  "medium": "Ericaceous peat-free compost for pots.",
+  "seasonalActions": {
+   "Spring": "Deadhead spent flower trusses carefully to avoid damaging next year's buds just behind them.",
+   "Summer": "Water deeply in dry spells, especially shallow-rooted young plants.",
+   "Autumn": "Mulch with ericaceous compost or leaf mould.",
+   "Winter": "Buds are largely set and dormant; protect from harsh drying wind."
+  },
+  "problems": [
+   {
+    "name": "Bud blast",
+    "fix": "Buds turn brown and fail to open, sometimes linked to leafhopper damage; remove affected buds."
+   },
+   {
+    "name": "Vine weevil",
+    "fix": "Notched leaf edges (adults) or collapsed plants in pots (grubs eating roots); check compost and consider nematode treatment."
+   }
+  ],
+  "companions": [
+   "Camellia",
+   "Japanese Maple",
+   "Fern"
+  ],
+  "propagation": {
+   "season": "Layering a low branch into acidic compost is the most reliable amateur method.",
+   "methods": "Semi-ripe cuttings in summer are possible but can be slow to root.",
+   "tips": "Species types can be grown from seed, but named hybrids won't come true.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Tubular, nectar-rich flowers attract bees, particularly bumblebees able to access the deeper flower shape."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Apr-Jun depending on variety",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead after flowering only"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Rhododendron.",
+   "gallery": [
+    "Flower truss close-up",
+    "Whole shrub in bloom",
+    "Glossy evergreen foliage",
+    "New growth flush in late spring"
+   ]
+  },
+  "weeklyFact": "Some rhododendron species contain toxic compounds in their nectar, which is where the old term 'mad honey' comes from historically.",
+  "category": "Shrub",
+  "pollinatorFact": "Bumblebees are particularly well suited to rhododendron's tubular flower shape and are among its most frequent visitors."
+ },
+ "GK-CRO-001": {
+  "id": "GK-CRO-001",
+  "slug": "crocosmia",
+  "name": "Crocosmia",
+  "latinName": "Crocosmia",
+  "variety": "Montbretia",
+  "subtitle": "Fiery, arching summer flowers from a spreading corm.",
+  "theme": "#e0552e",
+  "tags": [
+   "Perennial",
+   "Full sun",
+   "Cormous",
+   "Bird friendly"
+  ],
+  "quickCare": {
+   "Water": "Water in dry spells; otherwise fairly drought-tolerant once established",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light spring feed; too rich and it flops",
+   "Pruning": "Cut old foliage down in late autumn once it has died back"
+  },
+  "notes": "Spreads readily once established \u2014 divide every few years if it starts to congest.",
+  "soil": "Any reasonable, free-draining soil.",
+  "medium": "Peat-free compost is fine; not a fussy plant once settled.",
+  "seasonalActions": {
+   "Spring": "New shoots emerge fast \u2014 divide congested clumps now if needed.",
+   "Summer": "Water in prolonged dry spells; deadhead if tidiness matters to you.",
+   "Autumn": "Cut back foliage once it has died down after flowering.",
+   "Winter": "Corms are dormant; a mulch helps in colder gardens."
+  },
+  "problems": [
+   {
+    "name": "Spider mite in hot, dry summers",
+    "fix": "Increase humidity around the plant and hose foliage down in very dry spells."
+   },
+   {
+    "name": "Frost damage in cold gardens",
+    "fix": "Mulch the base in autumn in areas prone to hard frost."
+   }
+  ],
+  "companions": [
+   "Dahlia",
+   "Canna",
+   "Salvia"
+  ],
+  "propagation": {
+   "season": "Divide congested corm clumps in spring.",
+   "methods": "Each division should include a few healthy corms.",
+   "tips": "Very forgiving \u2014 hard to get this one wrong.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Arching, tubular flowers are popular with bees, and the seed heads are useful for birds in autumn."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from corms",
+   "Flowering": "Jul-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Cut back in late autumn"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Crocosmia.",
+   "gallery": [
+    "Flower spray close-up",
+    "Whole clump in a border",
+    "Sword-like foliage detail",
+    "Seed heads in autumn"
+   ]
+  },
+  "weeklyFact": "Crocosmia was originally bred from South African species and has since naturalised so successfully in parts of the UK and Ireland that some varieties are considered near-wild.",
+  "category": "Corm",
+  "pollinatorFact": "Crocosmia's tubular orange-red flowers are a strong draw for bees able to access the shape, and the seed heads that follow feed birds into autumn."
+ },
+ "GK-NEP-001": {
+  "id": "GK-NEP-001",
+  "slug": "nepeta",
+  "name": "Nepeta",
+  "latinName": "Nepeta faassenii",
+  "variety": "Catmint",
+  "subtitle": "Soft, silvery, long-flowering border edging that pollinators love.",
+  "theme": "#8b7fc7",
+  "tags": [
+   "Perennial",
+   "Full sun",
+   "Drought tolerant",
+   "Pollinator"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water only in prolonged dry spells",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding \u2014 too rich a soil causes floppy growth",
+   "Pruning": "Cut back hard after first flush to encourage a strong second flowering"
+  },
+  "notes": "Also genuinely attracts cats, who may roll on it enthusiastically \u2014 worth knowing before planting near a vegetable bed.",
+  "soil": "Free-draining soil; tolerates poor, dry conditions well.",
+  "medium": "Peat-free compost with added grit if growing in containers.",
+  "seasonalActions": {
+   "Spring": "Cut old growth back hard to fresh shoots at the base.",
+   "Summer": "Trim after the first flush of flowers for a strong repeat bloom.",
+   "Autumn": "Leave some growth in place for winter structure and wildlife.",
+   "Winter": "Leave standing over winter; cut back in spring instead."
+  },
+  "problems": [
+   {
+    "name": "Floppy, sprawling growth",
+    "fix": "Usually too rich a soil or too much shade; move to leaner, sunnier conditions."
+   },
+   {
+    "name": "Powdery mildew in humid summers",
+    "fix": "Improve airflow and avoid overhead watering."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Salvia",
+   "Lavender"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in late spring, or division of established clumps in spring or autumn.",
+   "methods": "Very easy to root from cuttings on a windowsill.",
+   "tips": "One of the most forgiving perennials to propagate at home.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An outstanding bee plant \u2014 long flowering season and easily accessible tubular flowers make it one of the best border plants for pollinators."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "May-Sep with cutting back",
+   "Harvest": "N/A",
+   "Pruning": "Hard cut-back in spring, trim after first flush"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Nepeta.",
+   "gallery": [
+    "Flower spike close-up",
+    "Whole clump edging a border",
+    "Foliage detail",
+    "Bees or pollinators visiting if captured"
+   ]
+  },
+  "weeklyFact": "Nepeta is in the same plant family as true mint, which is part of why bees find it just as irresistible.",
+  "category": "Perennial",
+  "pollinatorFact": "Nepeta is consistently rated among the best garden plants for bees \u2014 a long flowering season combined with easily accessible nectar makes it a reliable pollinator magnet."
+ },
+ "GK-AST-001": {
+  "id": "GK-AST-001",
+  "slug": "astilbe",
+  "name": "Astilbe",
+  "latinName": "Astilbe",
+  "variety": "Feathery plume astilbe",
+  "subtitle": "Feathery flower plumes for damp, shaded borders.",
+  "theme": "#c26b9e",
+  "tags": [
+   "Perennial",
+   "Shade",
+   "Moist soil",
+   "Feathery flowers"
+  ],
+  "quickCare": {
+   "Water": "Keep consistently moist \u2014 this plant does not tolerate drying out, even briefly",
+   "Light": "Part to full shade",
+   "Feeding": "Balanced feed in spring",
+   "Pruning": "Cut flower plumes down once faded, or leave for winter structure"
+  },
+  "notes": "The single biggest astilbe mistake is letting it dry out \u2014 it will scorch and collapse quickly in dry soil.",
+  "soil": "Moist, humus-rich soil that never fully dries out.",
+  "medium": "Peat-free compost with added leaf mould or organic matter for moisture retention.",
+  "seasonalActions": {
+   "Spring": "New growth emerges \u2014 keep consistently watered from the start.",
+   "Summer": "Water is critical; check daily in containers during warm spells.",
+   "Autumn": "Cut back once flower plumes fade, or leave standing for texture.",
+   "Winter": "Dormant; fully hardy and needs no protection."
+  },
+  "problems": [
+   {
+    "name": "Leaf scorch",
+    "fix": "Brown, crispy leaf edges mean the soil has dried out \u2014 water more consistently and mulch to retain moisture."
+   },
+   {
+    "name": "Slugs on new spring growth",
+    "fix": "Protect emerging shoots with barriers or torchlight removal."
+   }
+  ],
+  "companions": [
+   "Hosta",
+   "Fern",
+   "Hydrangea"
+  ],
+  "propagation": {
+   "season": "Divide established clumps in spring or autumn.",
+   "methods": "Each division needs a healthy piece of crown with roots attached.",
+   "tips": "Water divisions in well and keep consistently moist until re-established.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Flowers offer some nectar for smaller pollinators, though the tight plume structure limits access compared to more open flower shapes."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Jun-Aug",
+   "Harvest": "N/A",
+   "Pruning": "Cut back after flowering or leave for winter interest"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Astilbe.",
+   "gallery": [
+    "Flower plume close-up",
+    "Whole clump in a shaded border",
+    "Fern-like foliage detail",
+    "Winter seed heads if left standing"
+   ]
+  },
+  "weeklyFact": "Astilbe plumes are made up of hundreds of tiny individual flowers, which is why they read as feathery from a distance but detailed up close.",
+  "category": "Perennial",
+  "pollinatorFact": "Astilbe's dense flower plumes offer modest nectar for smaller pollinators, though the tightly packed structure makes access harder than more open flower shapes."
+ },
+ "GK-PLI-001": {
+  "id": "GK-PLI-001",
+  "slug": "peace-lily",
+  "name": "Peace Lily",
+  "latinName": "Spathiphyllum",
+  "variety": "Peace lily",
+  "subtitle": "Elegant, shade-tolerant houseplant that tells you clearly when it's thirsty.",
+  "theme": "#3f7a4f",
+  "tags": [
+   "Houseplant",
+   "Low light",
+   "Air-purifying",
+   "Easy care"
+  ],
+  "quickCare": {
+   "Water": "Water when the top of the compost feels dry; the leaves droop dramatically when thirsty and recover fast once watered",
+   "Light": "Bright, indirect light; tolerates low light but flowers less",
+   "Feeding": "Light monthly feed spring to summer",
+   "Pruning": "Remove yellowing leaves and spent flower spikes at the base"
+  },
+  "notes": "One of the most forgiving houseplants \u2014 the dramatic drooping when thirsty is actually a useful, hard-to-miss watering signal.",
+  "soil": "N/A \u2014 grown in potting compost, not garden soil.",
+  "medium": "Peat-free houseplant compost with good drainage; avoid waterlogging.",
+  "seasonalActions": {
+   "Spring": "Resume regular feeding as growth picks up.",
+   "Summer": "Water more often in warmer, drier indoor conditions.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water less; let the compost dry out further between waterings."
+  },
+  "problems": [
+   {
+    "name": "Drooping leaves",
+    "fix": "Almost always underwatering \u2014 water thoroughly and it typically recovers within hours."
+   },
+   {
+    "name": "Brown leaf tips",
+    "fix": "Usually low humidity or a build-up of minerals from tap water; mist occasionally or use rainwater."
+   }
+  ],
+  "companions": [
+   "Snake Plant",
+   "Pothos",
+   "ZZ Plant"
+  ],
+  "propagation": {
+   "season": "Divide the whole plant at repotting time, splitting the root ball into sections with leaves attached.",
+   "methods": "Each division should have a healthy cluster of roots and leaves.",
+   "tips": "Spring is the best time to divide, alongside repotting.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental and air quality."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Can flower year-round indoors, often more in brighter light",
+   "Harvest": "N/A",
+   "Pruning": "Remove spent flower spikes and yellow leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Peace Lily.",
+   "gallery": [
+    "Whole plant in its pot",
+    "Flower spike close-up",
+    "Leaf detail",
+    "Any new growth/pups"
+   ]
+  },
+  "weeklyFact": "A drooping peace lily looks alarming but is one of the clearest 'water me now' signals in the houseplant world \u2014 it usually stands back up within a few hours of watering.",
+  "category": "Houseplant",
+  "pollinatorFact": "Peace lilies are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality."
+ },
+ "GK-SNK-001": {
+  "id": "GK-SNK-001",
+  "slug": "snake-plant",
+  "name": "Snake Plant",
+  "latinName": "Dracaena trifasciata",
+  "variety": "Snake plant",
+  "subtitle": "Architectural, near-indestructible houseplant for low-light corners.",
+  "theme": "#2f5c4a",
+  "tags": [
+   "Houseplant",
+   "Low light",
+   "Drought tolerant",
+   "Very easy"
+  ],
+  "quickCare": {
+   "Water": "Water sparingly \u2014 allow compost to dry out fully between waterings; overwatering is the main way to kill this plant",
+   "Light": "Tolerates low light well; grows faster in bright indirect light",
+   "Feeding": "Light feed in summer only, and only if you want faster growth",
+   "Pruning": "No pruning needed; remove any damaged leaves at the base"
+  },
+  "notes": "The single most common way to kill a snake plant is overwatering \u2014 when in doubt, wait longer.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent-style compost; avoid moisture-retentive mixes.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding if faster growth is wanted.",
+   "Summer": "Water slightly more often in warm conditions, still allowing full drying between waterings.",
+   "Autumn": "Reduce watering further as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less is often enough."
+  },
+  "problems": [
+   {
+    "name": "Root rot",
+    "fix": "By far the most common issue, caused by overwatering or poor drainage; repot into a free-draining mix and water much less."
+   },
+   {
+    "name": "Soft, mushy leaf base",
+    "fix": "Sign of rot from overwatering \u2014 remove affected leaves and let the compost dry out fully."
+   }
+  ],
+  "companions": [
+   "ZZ Plant",
+   "Pothos",
+   "Aloe Vera"
+  ],
+  "propagation": {
+   "season": "Divide the rhizome at the base when repotting, ensuring each division has roots attached.",
+   "methods": "Leaf cuttings will also root, though variegated types often revert to plain green.",
+   "tips": "Very slow-growing, so propagation takes patience.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental and air quality."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Occasionally flowers indoors, though rare",
+   "Harvest": "N/A",
+   "Pruning": "Remove damaged leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Snake Plant.",
+   "gallery": [
+    "Whole plant in its pot",
+    "Leaf pattern close-up",
+    "New shoot/pup emerging",
+    "Any flowers if they appear"
+   ]
+  },
+  "weeklyFact": "Snake plants are sometimes called 'mother-in-law's tongue' for their sharp, pointed leaves \u2014 and they're famously hard to kill through neglect.",
+  "category": "Houseplant",
+  "pollinatorFact": "Snake plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality."
+ },
+ "GK-MON-001": {
+  "id": "GK-MON-001",
+  "slug": "monstera",
+  "name": "Monstera",
+  "latinName": "Monstera deliciosa",
+  "variety": "Swiss cheese plant",
+  "subtitle": "Bold, iconic split-leaf houseplant that gets genuinely large.",
+  "theme": "#2e6b3f",
+  "tags": [
+   "Houseplant",
+   "Bright indirect light",
+   "Climbing",
+   "Statement plant"
+  ],
+  "quickCare": {
+   "Water": "Water when the top few centimetres of compost are dry; likes consistent moisture but hates sitting wet",
+   "Light": "Bright, indirect light; leaf splitting improves with more light",
+   "Feeding": "Monthly feed spring to summer",
+   "Pruning": "Remove yellowing or damaged leaves; provide a moss pole for climbing support"
+  },
+  "notes": "Leaf splitting (fenestration) increases with better light and plant maturity \u2014 a plant kept in low light stays solid-leaved much longer.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with added bark or perlite for airy, well-draining roots.",
+  "seasonalActions": {
+   "Spring": "Resume regular feeding as growth accelerates.",
+   "Summer": "Water more often; this is peak growing season.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water sparingly; let compost dry out more between waterings."
+  },
+  "problems": [
+   {
+    "name": "Yellowing lower leaves",
+    "fix": "Often overwatering \u2014 check drainage and reduce watering frequency."
+   },
+   {
+    "name": "Brown crispy leaf edges",
+    "fix": "Usually low humidity or a draught; mist occasionally or move away from radiators."
+   }
+  ],
+  "companions": [
+   "Pothos",
+   "Peace Lily",
+   "Philodendron"
+  ],
+  "propagation": {
+   "season": "Stem cuttings with at least one node and aerial root will root readily in water or moist compost.",
+   "methods": "Air layering on a mature stem is an option for larger specimens.",
+   "tips": "New leaves take several weeks to unfurl fully after a cutting roots.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Rarely flowers indoors",
+   "Harvest": "N/A",
+   "Pruning": "Prune to control size and remove damaged leaves"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Monstera.",
+   "gallery": [
+    "Whole plant showing leaf shape",
+    "Close-up of a split leaf",
+    "New unfurling leaf",
+    "Aerial roots/climbing support"
+   ]
+  },
+  "weeklyFact": "In the wild, Monstera deliciosa is a climbing vine that can reach many metres up a tree trunk, using aerial roots the whole way.",
+  "category": "Houseplant",
+  "pollinatorFact": "Monstera is grown indoors and has no access to outdoor pollinators; its value is purely ornamental as a foliage statement plant."
+ },
+ "GK-POH-001": {
+  "id": "GK-POH-001",
+  "slug": "pothos",
+  "name": "Pothos",
+  "latinName": "Epipremnum aureum",
+  "variety": "Golden pothos",
+  "subtitle": "Trailing, near-unkillable houseplant, great for beginners and shelves.",
+  "theme": "#4a8f3f",
+  "tags": [
+   "Houseplant",
+   "Low light tolerant",
+   "Trailing",
+   "Beginner friendly"
+  ],
+  "quickCare": {
+   "Water": "Water when the top of the compost is dry; tolerates occasional missed waterings well",
+   "Light": "Tolerates low light but variegation is stronger in bright indirect light",
+   "Feeding": "Light monthly feed in the growing season",
+   "Pruning": "Trim trailing stems to control length; pinch tips to encourage bushiness"
+  },
+  "notes": "One of the most forgiving houseplants going \u2014 a good first plant for a tester who says they 'kill everything'.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Resume feeding as growth picks up.",
+   "Summer": "Water slightly more often; trim trailing stems as needed.",
+   "Autumn": "Reduce feeding.",
+   "Winter": "Water sparingly; growth slows noticeably indoors over winter."
+  },
+  "problems": [
+   {
+    "name": "Leggy growth with few leaves",
+    "fix": "Usually too little light; move closer to a bright window and trim to encourage bushier regrowth."
+   },
+   {
+    "name": "Yellow leaves",
+    "fix": "Most often overwatering; let the compost dry out more between waterings."
+   }
+  ],
+  "companions": [
+   "Monstera",
+   "Peace Lily",
+   "Snake Plant"
+  ],
+  "propagation": {
+   "season": "Stem cuttings with a node root very easily in a glass of water within a few weeks.",
+   "methods": "Once rooted, pot up several cuttings together for a fuller-looking plant.",
+   "tips": "One of the easiest houseplants to propagate and share.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Rarely flowers indoors",
+   "Harvest": "N/A",
+   "Pruning": "Trim trailing stems as needed to control shape"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Pothos.",
+   "gallery": [
+    "Whole trailing plant",
+    "Leaf variegation close-up",
+    "Cutting rooting in water",
+    "Newly potted cutting"
+   ]
+  },
+  "weeklyFact": "Pothos is sometimes nicknamed 'devil's ivy' because it stays green even in low light and is famously difficult to kill.",
+  "category": "Houseplant",
+  "pollinatorFact": "Pothos is grown indoors and has no access to outdoor pollinators; its value is purely ornamental and it's a popular beginner plant."
+ },
+ "GK-SPI-001": {
+  "id": "GK-SPI-001",
+  "slug": "spider-plant",
+  "name": "Spider Plant",
+  "latinName": "Chlorophytum comosum",
+  "variety": "Spider plant",
+  "subtitle": "Fast-growing, forgiving houseplant that produces its own baby plantlets.",
+  "theme": "#5a8f3f",
+  "tags": [
+   "Houseplant",
+   "Low light tolerant",
+   "Easy propagation",
+   "Pet consideration"
+  ],
+  "quickCare": {
+   "Water": "Water when the top of the compost is dry; sensitive to fluoride/chlorine in tap water, which can cause brown tips",
+   "Light": "Bright indirect light; tolerates lower light but grows slower",
+   "Feeding": "Light monthly feed spring to summer",
+   "Pruning": "Trim any brown leaf tips; remove plantlets once they've rooted if not wanted"
+  },
+  "notes": "If leaf tips keep browning, try switching to rainwater or filtered water \u2014 often a mineral sensitivity, not a care mistake.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Resume feeding; watch for new plantlets forming on flower stems.",
+   "Summer": "Water more often; plantlets can be potted up once they show roots.",
+   "Autumn": "Reduce feeding.",
+   "Winter": "Water sparingly; growth slows indoors over winter."
+  },
+  "problems": [
+   {
+    "name": "Brown leaf tips",
+    "fix": "Usually tap water minerals or fluoride; switch to rainwater or let tap water stand overnight before using."
+   },
+   {
+    "name": "Pale, washed-out leaves",
+    "fix": "Too much direct sun; move to bright but indirect light."
+   }
+  ],
+  "companions": [
+   "Pothos",
+   "Peace Lily",
+   "ZZ Plant"
+  ],
+  "propagation": {
+   "season": "Plantlets that form on long flower stems can be potted directly, or rooted in water first.",
+   "methods": "Extremely easy and fast \u2014 often rooting within 1-2 weeks.",
+   "tips": "A great propagation project for testers, since success is almost guaranteed.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Small white flowers on trailing stems, followed by plantlets",
+   "Harvest": "N/A",
+   "Pruning": "Trim brown tips as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Spider Plant.",
+   "gallery": [
+    "Whole plant showing arching leaves",
+    "Plantlet on a stem",
+    "Rooted plantlet in water",
+    "Newly potted plantlet"
+   ]
+  },
+  "weeklyFact": "Those dangling 'baby' plantlets are genetically identical clones of the parent plant, each capable of rooting into a full new spider plant.",
+  "category": "Houseplant",
+  "pollinatorFact": "Spider plants are grown indoors and have no access to outdoor pollinators; their small flowers are rarely seen and mostly a curiosity indoors."
+ },
+ "GK-ALO-001": {
+  "id": "GK-ALO-001",
+  "slug": "aloe-vera",
+  "name": "Aloe Vera",
+  "latinName": "Aloe vera",
+  "variety": "Aloe vera",
+  "subtitle": "Sun-loving succulent with genuinely useful sap, if you can avoid overwatering it.",
+  "theme": "#5a9463",
+  "tags": [
+   "Succulent",
+   "Full sun",
+   "Drought tolerant",
+   "Useful sap"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out completely \u2014 this is the single most common care mistake with aloe",
+   "Light": "Bright light, ideally some direct sun by a window",
+   "Feeding": "Light feed once or twice in summer only",
+   "Pruning": "Remove any damaged or collapsed outer leaves at the base"
+  },
+  "notes": "Overwatering is by far the most common cause of aloe problems \u2014 when unsure, wait longer before the next watering.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost, ideally with extra grit or perlite.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding if wanted.",
+   "Summer": "Water more often but still allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less is often plenty."
+  },
+  "problems": [
+   {
+    "name": "Root rot",
+    "fix": "Almost always from overwatering or poor drainage; repot into a free-draining mix and reduce watering significantly."
+   },
+   {
+    "name": "Thin, stretched leaves (etiolation)",
+    "fix": "Sign of too little light; move to a brighter spot, ideally with some direct sun."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Jade Plant",
+   "Haworthia"
+  ],
+  "propagation": {
+   "season": "Remove and pot up offset 'pups' that form at the base once they have their own small roots.",
+   "methods": "Let any cut surface callus over for a day before potting.",
+   "tips": "Offsets are the easiest and most reliable propagation method.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators; occasionally flowers outdoors in warm climates, attracting sunbirds and bees where hardy."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional tall flower spike if grown in very bright conditions",
+   "Harvest": "N/A",
+   "Pruning": "Remove damaged outer leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Aloe Vera.",
+   "gallery": [
+    "Whole plant in its pot",
+    "Leaf detail showing gel",
+    "Offset pups at the base",
+    "Flower spike if it appears"
+   ]
+  },
+  "weeklyFact": "The clear gel inside an aloe leaf has been used for skin care for thousands of years \u2014 just be sure to avoid the yellow sap layer just under the skin, which can irritate.",
+  "category": "Succulent",
+  "pollinatorFact": "Indoors, aloe rarely flowers and has no pollinator access; in warm outdoor climates its tall flower spikes attract bees and, in some regions, sunbirds."
+ },
+ "GK-ZZP-001": {
+  "id": "GK-ZZP-001",
+  "slug": "zz-plant",
+  "name": "ZZ Plant",
+  "latinName": "Zamioculcas zamiifolia",
+  "variety": "ZZ plant",
+  "subtitle": "Glossy, extremely low-maintenance houseplant for low light and forgetful waterers.",
+  "theme": "#2c5c3a",
+  "tags": [
+   "Houseplant",
+   "Low light",
+   "Drought tolerant",
+   "Very easy"
+  ],
+  "quickCare": {
+   "Water": "Water sparingly, letting compost dry out fully between waterings \u2014 grows from a water-storing rhizome so tolerates neglect well",
+   "Light": "Tolerates low light; grows faster with brighter indirect light",
+   "Feeding": "Light feed once or twice in summer only",
+   "Pruning": "No pruning needed; remove any yellowing stems at the base"
+  },
+  "notes": "Genuinely one of the most drought-tolerant common houseplants \u2014 better to underwater than overwater this one.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining houseplant or cactus-style compost.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding if faster growth is wanted.",
+   "Summer": "Water slightly more often, still allowing full drying between waterings.",
+   "Autumn": "Reduce watering further.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Yellowing stems",
+    "fix": "Almost always overwatering; the plant stores water in its rhizome and doesn't need frequent watering."
+   },
+   {
+    "name": "Slow growth",
+    "fix": "Normal \u2014 ZZ plants are naturally slow-growing, especially in lower light; this isn't usually a problem to fix."
+   }
+  ],
+  "companions": [
+   "Snake Plant",
+   "Pothos",
+   "Peace Lily"
+  ],
+  "propagation": {
+   "season": "Individual leaflets can be rooted in water or compost, though it's slow \u2014 often months before a new rhizome forms.",
+   "methods": "Dividing an established rhizome clump at repotting is faster and more reliable.",
+   "tips": "Patience is essential with this one.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Rarely flowers indoors",
+   "Harvest": "N/A",
+   "Pruning": "Remove any yellowing stems at the base"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of ZZ Plant.",
+   "gallery": [
+    "Whole plant showing glossy leaves",
+    "Close-up of leaflet structure",
+    "Rhizome at repotting time",
+    "New shoot emerging"
+   ]
+  },
+  "weeklyFact": "ZZ plants grow from a thick underground rhizome that stores water, which is exactly why they shrug off missed waterings so well.",
+  "category": "Houseplant",
+  "pollinatorFact": "ZZ plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental."
+ },
+ "GK-ORC-001": {
+  "id": "GK-ORC-001",
+  "slug": "orchid",
+  "name": "Orchid",
+  "latinName": "Phalaenopsis",
+  "variety": "Moth orchid",
+  "subtitle": "Elegant flowering houseplant, grown in bark rather than soil.",
+  "theme": "#c4569e",
+  "tags": [
+   "Houseplant",
+   "Bright indirect light",
+   "Special compost",
+   "Reblooms"
+  ],
+  "quickCare": {
+   "Water": "Water by soaking roots for a few minutes weekly, then drain fully \u2014 never leave sitting in water",
+   "Light": "Bright, indirect light; avoid direct midday sun which scorches leaves",
+   "Feeding": "Dilute orchid-specific feed every other watering during growth",
+   "Pruning": "Cut the flower spike back to a node after flowering to encourage reblooming, or to the base if it yellows"
+  },
+  "notes": "Grown in bark, not compost \u2014 this is the single biggest thing testers new to orchids get wrong by potting into ordinary soil.",
+  "soil": "N/A \u2014 epiphytic, not grown in soil.",
+  "medium": "Specialist orchid bark mix; never use ordinary potting compost.",
+  "seasonalActions": {
+   "Spring": "Watch for a new flower spike emerging from between the leaves.",
+   "Summer": "Water and feed regularly during active growth.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water less often; many orchids flower in winter, so watch for a spike."
+  },
+  "problems": [
+   {
+    "name": "Root rot",
+    "fix": "From sitting in water or overly frequent watering; healthy roots should be silvery-green, not brown and mushy."
+   },
+   {
+    "name": "No flowers returning",
+    "fix": "Often insufficient light or a spike cut at the wrong point; ensure bright indirect light and leave a node when cutting back."
+   }
+  ],
+  "companions": [
+   "Peace Lily",
+   "Fern",
+   "Peperomia"
+  ],
+  "propagation": {
+   "season": "Backbud (keiki) plantlets sometimes form on the flower spike and can be potted once they have roots.",
+   "methods": "Division of very large multi-crown specimens is possible but not common at home.",
+   "tips": "Most home growers simply keep the original plant going for years rather than propagating.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors, so not accessible to outdoor pollinators; in the wild these orchids are pollinated by specific moths, hence the common name."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Can flower for months at a time, often winter to spring",
+   "Harvest": "N/A",
+   "Pruning": "Cut spike to a node after flowering to encourage reblooming"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Orchid.",
+   "gallery": [
+    "Whole plant in flower",
+    "Close-up of a single flower",
+    "Root system through a clear pot",
+    "Bark medium detail"
+   ]
+  },
+  "weeklyFact": "'Moth orchid' comes from the flower's resemblance to a moth in flight \u2014 and in the wild, these orchids are pollinated by night-flying moths.",
+  "category": "Houseplant",
+  "pollinatorFact": "Indoors, orchids have no pollinator access; in their native habitat, moth orchids rely on specific night-flying moths for pollination."
+ },
+ "GK-ECV-001": {
+  "id": "GK-ECV-001",
+  "slug": "echeveria",
+  "name": "Echeveria",
+  "latinName": "Echeveria",
+  "variety": "Rosette echeveria",
+  "subtitle": "Classic rosette-shaped succulent, ideal for sunny windowsills and mixed planters.",
+  "theme": "#7fa876",
+  "tags": [
+   "Succulent",
+   "Full sun",
+   "Drought tolerant",
+   "Rosette shape"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out completely; water at the base to avoid rot in the rosette centre",
+   "Light": "Bright light, ideally some direct sun for compact, colourful growth",
+   "Feeding": "Very light feed once in summer, if at all",
+   "Pruning": "Remove any dead lower leaves; snip and repot 'stretched' rosettes to restart"
+  },
+  "notes": "Water at the base, not over the top \u2014 water sitting in the rosette centre is a common cause of rot.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light watering as light levels increase.",
+   "Summer": "Water more often but always let compost dry out fully between waterings.",
+   "Autumn": "Reduce watering as light drops.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Stretched, leggy rosette (etiolation)",
+    "fix": "Sign of too little light; move to a brighter spot \u2014 the plant can be cut and restarted to fix the shape."
+   },
+   {
+    "name": "Mushy leaves",
+    "fix": "Overwatering or water sitting in the rosette centre; reduce watering and always water at the base."
+   }
+  ],
+  "companions": [
+   "Sedum",
+   "Jade Plant",
+   "Aeonium"
+  ],
+  "propagation": {
+   "season": "Individual leaves can be gently twisted off, dried for a day, and laid on gritty compost to root.",
+   "methods": "Offsets that form around the base can be removed and potted separately.",
+   "tips": "A satisfying, low-risk propagation project \u2014 most healthy leaves will root.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown mainly as an ornamental foliage succulent; outdoor flowering stems can attract some pollinators in warm climates."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional tall flower spike with small bell-shaped flowers",
+   "Harvest": "N/A",
+   "Pruning": "Remove dead lower leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Echeveria.",
+   "gallery": [
+    "Whole rosette from above",
+    "Side view showing leaf colour",
+    "Leaf propagation in progress",
+    "Offsets around the base"
+   ]
+  },
+  "weeklyFact": "Echeveria rosettes are a textbook example of a Fibonacci spiral in nature \u2014 the leaves are arranged in a precise mathematical pattern.",
+  "category": "Succulent",
+  "pollinatorFact": "When echeveria does flower, the small bell-shaped blooms on tall stems can attract bees and hummingbirds in warm outdoor climates; indoors it's grown mainly for its rosette shape."
+ },
+ "GK-SED-001": {
+  "id": "GK-SED-001",
+  "slug": "sedum",
+  "name": "Sedum",
+  "latinName": "Sedum",
+  "variety": "Stonecrop",
+  "subtitle": "Tough, trailing or upright succulent, useful for pots, borders and green roofs.",
+  "theme": "#7d9e5a",
+  "tags": [
+   "Succulent",
+   "Full sun",
+   "Very drought tolerant",
+   "Ground cover or trailing"
+  ],
+  "quickCare": {
+   "Water": "Very drought-tolerant once established; water sparingly, especially outdoors where rainfall is often enough",
+   "Light": "Full sun for the most compact, colourful growth",
+   "Feeding": "Little to no feeding needed",
+   "Pruning": "Trim to shape; remove dead growth in spring"
+  },
+  "notes": "One of the toughest, most forgiving plants in this library \u2014 a good choice for a tester who wants low-effort success.",
+  "soil": "Free-draining soil or compost; tolerates poor soil well.",
+  "medium": "Cactus/succulent compost with added grit if potted.",
+  "seasonalActions": {
+   "Spring": "New growth resumes; trim to shape if needed.",
+   "Summer": "Very drought-tolerant; water only in prolonged dry spells.",
+   "Autumn": "Some varieties flower into autumn \u2014 deadhead if wanted.",
+   "Winter": "Many outdoor sedums are fully hardy and need no protection."
+  },
+  "problems": [
+   {
+    "name": "Root rot in poorly drained soil",
+    "fix": "Improve drainage or move to a gritty mix; this is the main way to lose a sedum."
+   },
+   {
+    "name": "Aphids on flower buds",
+    "fix": "Wash off with water or encourage ladybirds; rarely serious."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Aeonium",
+   "Lavender"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root very easily \u2014 just let the cut end callus for a day and place on gritty compost.",
+   "methods": "Division of established clumps works well for spreading types.",
+   "tips": "One of the easiest plants in the library to propagate.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Outdoor flowering sedums, especially larger border types, are excellent late-season nectar sources for bees and butterflies."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Late summer to autumn for many outdoor varieties",
+   "Harvest": "N/A",
+   "Pruning": "Trim to shape in spring"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Sedum.",
+   "gallery": [
+    "Whole plant showing habit",
+    "Flower close-up if flowering",
+    "Leaf/rosette detail",
+    "Cutting propagation in progress"
+   ]
+  },
+  "weeklyFact": "Some larger border sedums are among the last strong nectar sources of the year, often still buzzing with bees and butterflies into October.",
+  "category": "Succulent",
+  "pollinatorFact": "Larger outdoor sedum varieties are genuinely valuable late-season plants for bees and butterflies, flowering when many other nectar sources have finished."
+ },
+ "GK-HAW-001": {
+  "id": "GK-HAW-001",
+  "slug": "haworthia",
+  "name": "Haworthia",
+  "latinName": "Haworthia",
+  "variety": "Zebra haworthia",
+  "subtitle": "Small, patterned succulent that tolerates lower light better than most.",
+  "theme": "#5f8f6a",
+  "tags": [
+   "Succulent",
+   "Bright indirect light",
+   "Compact",
+   "Low light tolerant for a succulent"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully; slightly more forgiving of lower light than most succulents, but still needs a well-drained mix",
+   "Light": "Bright indirect light; avoid harsh direct sun which can scorch leaves",
+   "Feeding": "Very light feed once in summer, if at all",
+   "Pruning": "Remove any dead outer leaves at the base"
+  },
+  "notes": "A good succulent choice for a bright windowsill that doesn't get direct sun \u2014 more shade-tolerant than most succulents.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light watering as light levels increase.",
+   "Summer": "Water more often but always let compost dry out between waterings.",
+   "Autumn": "Reduce watering as light drops.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Sunburn (brown patches)",
+    "fix": "From sudden direct sun exposure; move to bright but indirect light."
+   },
+   {
+    "name": "Mushy base",
+    "fix": "Overwatering; reduce frequency and ensure the pot has good drainage."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Aloe Vera",
+   "Jade Plant"
+  ],
+  "propagation": {
+   "season": "Offsets ('pups') form readily around the base and can be gently separated and potted once rooted.",
+   "methods": "Let any cut surface callus for a day before potting.",
+   "tips": "One of the easier succulents to propagate reliably.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown mainly as an ornamental foliage succulent indoors, with limited pollinator relevance."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional small white flower spike",
+   "Harvest": "N/A",
+   "Pruning": "Remove dead outer leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Haworthia.",
+   "gallery": [
+    "Whole plant from above",
+    "Leaf pattern close-up",
+    "Offsets around the base",
+    "Flower spike if it appears"
+   ]
+  },
+  "weeklyFact": "Haworthia's translucent leaf tips are sometimes called 'windows' \u2014 in the wild they let light into the leaf while most of the plant stays buried in sand.",
+  "category": "Succulent",
+  "pollinatorFact": "Haworthia is grown mainly indoors for its patterned foliage; its small flower spikes have limited pollinator relevance in a typical indoor setting."
+ },
+ "GK-JAD-001": {
+  "id": "GK-JAD-001",
+  "slug": "jade-plant",
+  "name": "Jade Plant",
+  "latinName": "Crassula ovata",
+  "variety": "Jade plant",
+  "subtitle": "Chunky, tree-like succulent that can live for decades with minimal fuss.",
+  "theme": "#4f8f5a",
+  "tags": [
+   "Succulent",
+   "Full sun",
+   "Drought tolerant",
+   "Long-lived"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully between waterings",
+   "Light": "Bright light, ideally some direct sun for compact, sturdy growth",
+   "Feeding": "Light feed once or twice in summer",
+   "Pruning": "Prune to shape \u2014 jade plants respond well to shaping like a small tree"
+  },
+  "notes": "Genuinely long-lived \u2014 with steady care a jade plant can outlast the rest of the trial plants in this library by decades.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit; a heavier pot helps balance top growth.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding and watering as growth resumes.",
+   "Summer": "Water more often but always allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Leaf drop",
+    "fix": "Usually a sudden change in light, temperature or watering; keep conditions as stable as possible."
+   },
+   {
+    "name": "Root rot",
+    "fix": "From overwatering or poor drainage; repot into a grittier mix and water less often."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Sedum",
+   "Haworthia"
+  ],
+  "propagation": {
+   "season": "Individual leaves or stem cuttings root easily after the cut end has callused for a day or two.",
+   "methods": "Larger stem cuttings establish faster than single leaves.",
+   "tips": "A popular gift plant to propagate and share, since cuttings root so reliably.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Occasionally flowers indoors or outdoors in mild climates with small star-shaped blooms that attract bees where accessible."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional winter flowering in mature, well-lit specimens",
+   "Harvest": "N/A",
+   "Pruning": "Prune to shape as needed, any time of year"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Jade Plant.",
+   "gallery": [
+    "Whole plant showing tree-like form",
+    "Leaf close-up",
+    "Cutting propagation in progress",
+    "Flowers if they appear"
+   ]
+  },
+  "weeklyFact": "Jade plants are sometimes called 'money plants' and are commonly given as gifts believed to bring good luck and prosperity.",
+  "category": "Succulent",
+  "pollinatorFact": "Jade plant flowers are uncommon indoors but when they do appear, their small star-shaped blooms can attract bees in mild outdoor climates."
+ },
+ "GK-AEO-001": {
+  "id": "GK-AEO-001",
+  "slug": "aeonium",
+  "name": "Aeonium",
+  "latinName": "Aeonium",
+  "variety": "Rosette aeonium",
+  "subtitle": "Striking architectural succulent with rosettes held on visible stems.",
+  "theme": "#5a6b4f",
+  "tags": [
+   "Succulent",
+   "Full sun",
+   "Unusual growth cycle",
+   "Architectural"
+  ],
+  "quickCare": {
+   "Water": "Water moderately in winter growth period; reduce sharply in its summer semi-dormancy",
+   "Light": "Full sun for the best colour and compact rosettes",
+   "Feeding": "Light feed during active winter growth only",
+   "Pruning": "Remove dead lower leaves; trim leggy stems to encourage branching"
+  },
+  "notes": "Unusual among succulents \u2014 aeonium actively grows in cooler months and rests in high summer heat, the opposite of many other succulents.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Growth is slowing as temperatures rise \u2014 ease off watering.",
+   "Summer": "Semi-dormant in hot weather; water sparingly.",
+   "Autumn": "Growth resumes as temperatures cool \u2014 increase watering gradually.",
+   "Winter": "Main active growing season; water moderately and feed lightly."
+  },
+  "problems": [
+   {
+    "name": "Leaf drop in high summer heat",
+    "fix": "Often normal semi-dormancy; reduce watering rather than increasing it."
+   },
+   {
+    "name": "Leggy stems reaching for light",
+    "fix": "Move to a brighter spot; leggy stems can be cut and re-rooted to restart the rosette."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Sedum",
+   "Jade Plant"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root well \u2014 let the cut end callus for a couple of days before placing on gritty compost.",
+   "methods": "Offsets at the base of some varieties can be removed and potted.",
+   "tips": "Best propagated during its active winter growth period.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown mainly as an ornamental architectural succulent, with limited typical indoor pollinator relevance."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional yellow flower cluster from mature rosettes",
+   "Harvest": "N/A",
+   "Pruning": "Trim leggy stems to encourage branching, any time of year"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Aeonium.",
+   "gallery": [
+    "Whole plant showing rosette on stem",
+    "Rosette close-up from above",
+    "Stem cutting propagation",
+    "Flower cluster if it appears"
+   ]
+  },
+  "weeklyFact": "Aeonium runs on an unusual seasonal clock compared to most succulents \u2014 actively growing in cool winter months and resting through summer heat.",
+  "category": "Succulent",
+  "pollinatorFact": "Aeonium's occasional yellow flower clusters can attract bees where grown outdoors in mild climates; indoors it's grown mainly for its architectural rosette form."
+ },
+ "GK-TOM-001": {
+  "id": "GK-TOM-001",
+  "slug": "tomato",
+  "name": "Tomato",
+  "latinName": "Solanum lycopersicum",
+  "variety": "Cordon tomato",
+  "subtitle": "Classic summer crop, best grown up a support with regular feeding.",
+  "theme": "#c0392b",
+  "tags": [
+   "Edible",
+   "Full sun",
+   "Heavy feeder",
+   "Containers or beds"
+  ],
+  "quickCare": {
+   "Water": "Water consistently \u2014 irregular watering causes split fruit and blossom end rot",
+   "Light": "Full sun, as much as possible",
+   "Feeding": "Weekly high-potash tomato feed once first fruit trusses form",
+   "Pruning": "Remove side shoots on cordon varieties weekly; remove lower leaves as the plant grows"
+  },
+  "notes": "Consistency is everything with tomatoes \u2014 irregular watering is the single biggest cause of split or poor-quality fruit.",
+  "soil": "Fertile, well-drained soil.",
+  "medium": "Peat-free compost enriched with garden compost or manure-based improver for containers.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in warmth; pot on as seedlings grow.",
+   "Summer": "Plant out after frost, tie in to supports, remove side shoots weekly and feed.",
+   "Autumn": "Harvest remaining fruit; ripen green tomatoes indoors before first frost.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Blossom end rot",
+    "fix": "Dark, sunken patch on the fruit base from inconsistent watering, not usually a calcium deficiency in the soil itself \u2014 water more consistently."
+   },
+   {
+    "name": "Blight",
+    "fix": "Dark blotches on leaves and stems in wet, humid weather; remove affected foliage promptly and avoid overhead watering."
+   }
+  ],
+  "companions": [
+   "Basil",
+   "Marigold",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Sow seed indoors in early spring on a warm windowsill or heated propagator.",
+   "methods": "Side shoots removed from cordon varieties will root in water and grow into new plants.",
+   "tips": "Harden off young plants gradually before planting outside.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Tomato flowers are 'buzz pollinated' \u2014 bumblebees vibrate the flower to release pollen, which is far more effective than wind alone."
+  },
+  "timeline": {
+   "Seeding": "Feb-Mar indoors",
+   "Flowering": "Jun-Aug",
+   "Harvest": "Jul-Oct",
+   "Pruning": "Remove side shoots weekly through summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Tomato.",
+   "gallery": [
+    "Whole plant on its support",
+    "Flower truss close-up",
+    "Ripening fruit",
+    "Side shoot being removed"
+   ]
+  },
+  "weeklyFact": "Tomato flowers need to be vibrated to release their pollen \u2014 bumblebees do this naturally, which is why greenhouse growers sometimes use a small vibrating 'wand' instead.",
+  "category": "Vegetable",
+  "pollinatorFact": "Tomato flowers rely on 'buzz pollination' from bumblebees, which vibrate the flower at a specific frequency to release pollen that simply falls out otherwise."
+ },
+ "GK-ONI-001": {
+  "id": "GK-ONI-001",
+  "slug": "onion",
+  "name": "Onion",
+  "latinName": "Allium cepa",
+  "variety": "Onion sets",
+  "subtitle": "Reliable, low-fuss crop grown from small bulb sets rather than seed.",
+  "theme": "#a87c3f",
+  "tags": [
+   "Edible",
+   "Full sun",
+   "Low maintenance",
+   "Grown from sets"
+  ],
+  "quickCare": {
+   "Water": "Water in dry spells while bulbs are swelling; stop watering as foliage yellows to help bulbs cure",
+   "Light": "Full sun",
+   "Feeding": "Balanced feed at planting; avoid high-nitrogen feed later, which delays bulbing",
+   "Pruning": "No pruning; remove any flower stems that form, as this diverts energy from the bulb"
+  },
+  "notes": "Stop watering once the foliage starts to yellow and flop \u2014 this signals the bulbs are ready to cure and dry.",
+  "soil": "Free-draining, fertile soil.",
+  "medium": "Peat-free compost improved with garden compost for containers, though onions do best in open ground.",
+  "seasonalActions": {
+   "Spring": "Plant sets once soil is workable.",
+   "Summer": "Water in dry spells and weed regularly \u2014 onions dislike competition.",
+   "Autumn": "Lift and cure bulbs once foliage yellows and flops over.",
+   "Winter": "Ground is generally empty; plan next year's rotation."
+  },
+  "problems": [
+   {
+    "name": "Onion fly",
+    "fix": "Wilting, yellowing foliage with maggots at the base; rotate crops yearly and use fine mesh covers if it's a recurring problem."
+   },
+   {
+    "name": "Bolting (flowering early)",
+    "fix": "Often triggered by a cold snap after planting; choose bolt-resistant varieties if this is a repeat issue."
+   }
+  ],
+  "companions": [
+   "Carrot",
+   "Lettuce",
+   "Beetroot"
+  ],
+  "propagation": {
+   "season": "Grown from small bulb 'sets' rather than seed for the easiest, most reliable results.",
+   "methods": "Seed-grown onions are possible but need an earlier, longer indoor start.",
+   "tips": "Sets are the better choice for testers wanting a simple first crop.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Onion flowers, if allowed to bolt, are visited by bees and hoverflies, though most crops are lifted before flowering."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from sets",
+   "Flowering": "Only if bolting (undesirable)",
+   "Harvest": "Jul-Aug",
+   "Pruning": "Remove any flower stems that form"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Onion.",
+   "gallery": [
+    "Whole row or bed",
+    "Bulb close-up at harvest",
+    "Foliage before lifting",
+    "Curing bulbs after harvest"
+   ]
+  },
+  "weeklyFact": "Onion sets are just small, partially grown onions \u2014 starting from a set rather than seed gives a big head start on the season.",
+  "category": "Vegetable",
+  "pollinatorFact": "If an onion is allowed to bolt and flower, its round flower head is genuinely popular with bees and hoverflies, though most crops are harvested before this happens."
+ },
+ "GK-BEA-001": {
+  "id": "GK-BEA-001",
+  "slug": "runner-bean",
+  "name": "Runner Bean",
+  "latinName": "Phaseolus coccineus",
+  "variety": "Climbing runner bean",
+  "subtitle": "Vigorous, productive climber with bright flowers and a long harvest window.",
+  "theme": "#c0392b",
+  "tags": [
+   "Edible",
+   "Full sun",
+   "Climber",
+   "Pollinator"
+  ],
+  "quickCare": {
+   "Water": "Water deeply and regularly, especially once flowering \u2014 irregular watering causes flowers to drop before setting pods",
+   "Light": "Full sun, sheltered from strong wind",
+   "Feeding": "Balanced feed at planting; switch to potash-rich feed once flowering starts",
+   "Pruning": "Pinch out growing tips once they reach the top of their support; pick pods regularly to keep production going"
+  },
+  "notes": "Pick pods regularly, even if you don't need them yet \u2014 letting pods mature and toughen on the plant slows down new flower production.",
+  "soil": "Fertile, moisture-retentive soil, improved with organic matter before planting.",
+  "medium": "Peat-free compost with added garden compost for large containers.",
+  "seasonalActions": {
+   "Spring": "Sow after frost risk passes, or start indoors for an early head start.",
+   "Summer": "Water deeply, feed regularly and harvest pods every few days.",
+   "Autumn": "Clear spent plants once cropping finishes.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Flowers dropping without setting pods",
+    "fix": "Usually dry soil or hot, dry air at flowering time; water deeply and regularly through this stage."
+   },
+   {
+    "name": "Blackfly",
+    "fix": "Colonies cluster on growing tips; squash by hand or wash off with water early before numbers build."
+   }
+  ],
+  "companions": [
+   "Sunflower",
+   "Sweetcorn",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Sow direct after frost, or start indoors 3-4 weeks earlier in pots for a head start.",
+   "methods": "Large seeds are easy to handle and germinate reliably.",
+   "tips": "Soak seed overnight before sowing to speed germination.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Bright red flowers are a strong draw for bees, and good pollination directly increases pod yield."
+  },
+  "timeline": {
+   "Seeding": "May-Jun",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Jul-Oct",
+   "Pruning": "Pinch growing tips once at full height; pick pods every few days"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Runner Bean.",
+   "gallery": [
+    "Whole climbing plant on support",
+    "Flower close-up",
+    "Pods forming",
+    "Harvest basket"
+   ]
+  },
+  "weeklyFact": "Runner beans were originally grown in Britain as an ornamental climbing flower before anyone thought to eat the pods.",
+  "category": "Vegetable",
+  "pollinatorFact": "Runner bean's bright red flowers are highly attractive to bees, and better pollination directly translates into a bigger pod harvest."
+ },
+ "GK-PEA-001": {
+  "id": "GK-PEA-001",
+  "slug": "pea",
+  "name": "Pea",
+  "latinName": "Pisum sativum",
+  "variety": "Climbing pea",
+  "subtitle": "Sweet, early-season crop that's hard to beat picked straight from the plant.",
+  "theme": "#6fa03f",
+  "tags": [
+   "Edible",
+   "Cool season",
+   "Climber",
+   "Kid-friendly"
+  ],
+  "quickCare": {
+   "Water": "Keep soil moist, especially once flowering and pods are forming",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light feed at planting; avoid high-nitrogen feed, which favours leaves over pods",
+   "Pruning": "Provide support/netting for climbing types to scramble up; no other pruning needed"
+  },
+  "notes": "Sow a new short row every couple of weeks in spring for a longer harvest window instead of one big glut.",
+  "soil": "Fertile, moisture-retentive, free-draining soil.",
+  "medium": "Peat-free compost with added garden compost for containers.",
+  "seasonalActions": {
+   "Spring": "Sow direct as soon as soil is workable; provide support early.",
+   "Summer": "Water consistently as pods form; harvest regularly.",
+   "Autumn": "Clear spent plants; they fix nitrogen, so leave roots in the soil to break down.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew late in the season",
+    "fix": "Water at the base and improve airflow; less of a problem with early sowings."
+   },
+   {
+    "name": "Pea moth",
+    "fix": "Small maggots inside pods from mid-summer sowings; sowing earlier or later in the season can avoid the main egg-laying window."
+   }
+  ],
+  "companions": [
+   "Carrot",
+   "Lettuce",
+   "Sweetcorn"
+  ],
+  "propagation": {
+   "season": "Sow direct where they are to grow; peas dislike root disturbance from transplanting.",
+   "methods": "Soak seed overnight to speed up germination.",
+   "tips": "A satisfying, fast-germinating first crop for new growers.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Pea flowers are mostly self-pollinating, but bees still visit and can improve pod set in some varieties."
+  },
+  "timeline": {
+   "Seeding": "Feb-Jun depending on variety",
+   "Flowering": "Apr-Jul",
+   "Harvest": "May-Aug",
+   "Pruning": "Provide support as soon as tendrils appear"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Pea.",
+   "gallery": [
+    "Whole row on support netting",
+    "Flower close-up",
+    "Pods forming",
+    "Harvest in a bowl"
+   ]
+  },
+  "weeklyFact": "Garden peas are largely self-pollinating before the flower even opens, which is part of why they were one of Gregor Mendel's key plants for founding modern genetics.",
+  "category": "Vegetable",
+  "pollinatorFact": "Peas are mostly self-pollinating, but bees do visit the flowers and can improve pod set and yield in some varieties."
+ },
+ "GK-CUC-001": {
+  "id": "GK-CUC-001",
+  "slug": "cucumber",
+  "name": "Cucumber",
+  "latinName": "Cucumis sativus",
+  "variety": "Outdoor ridge cucumber",
+  "subtitle": "Fast, vining summer crop for a sunny spot with room to sprawl or climb.",
+  "theme": "#4c8d3f",
+  "tags": [
+   "Edible",
+   "Full sun",
+   "Vining",
+   "Heavy feeder"
+  ],
+  "quickCare": {
+   "Water": "Water deeply and consistently \u2014 irregular watering causes bitter-tasting fruit",
+   "Light": "Full sun, sheltered from strong wind",
+   "Feeding": "Weekly feed once fruiting starts",
+   "Pruning": "Train onto supports if climbing types; pinch growing tips to encourage side shoots on sprawling types"
+  },
+  "notes": "Consistent watering is the fix for bitter cucumbers \u2014 irregular dry spells are the most common cause.",
+  "soil": "Rich, moisture-retentive, free-draining soil.",
+  "medium": "Peat-free compost enriched with garden compost or manure-based improver.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in warmth; harden off before planting out.",
+   "Summer": "Water deeply, feed weekly and harvest regularly to keep production going.",
+   "Autumn": "Clear spent plants after final harvest.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew",
+    "fix": "Very common late in the season; water at the base, improve airflow and remove badly affected leaves."
+   },
+   {
+    "name": "Bitter fruit",
+    "fix": "Usually from inconsistent watering or stress; water more evenly through the growing season."
+   }
+  ],
+  "companions": [
+   "Sweetcorn",
+   "Runner Bean",
+   "Marigold"
+  ],
+  "propagation": {
+   "season": "Sow indoors in individual pots in warmth for the best germination rates.",
+   "methods": "Cucumbers dislike root disturbance, so avoid unnecessary transplanting once potted.",
+   "tips": "Harden off gradually before planting outdoors.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Yellow flowers attract bees, and for many outdoor varieties good pollination is essential for fruit to form at all."
+  },
+  "timeline": {
+   "Seeding": "Apr-May indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Jul-Sep",
+   "Pruning": "Pinch growing tips on sprawling types once established"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Cucumber.",
+   "gallery": [
+    "Whole vining plant",
+    "Flower close-up",
+    "Fruit forming on the vine",
+    "Harvest basket"
+   ]
+  },
+  "weeklyFact": "Outdoor 'ridge' cucumbers are bred to be tougher and more weather-resistant than the smooth greenhouse types found in supermarkets.",
+  "category": "Vegetable",
+  "pollinatorFact": "Many outdoor cucumber varieties need bee pollination to set fruit at all, making them one of the more pollinator-dependent crops in a typical vegetable plot."
+ },
+ "GK-BAS-001": {
+  "id": "GK-BAS-001",
+  "slug": "basil",
+  "name": "Basil",
+  "latinName": "Ocimum basilicum",
+  "variety": "Sweet basil",
+  "subtitle": "Fragrant kitchen herb that rewards regular picking with bushier growth.",
+  "theme": "#3f7a3f",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Warmth loving",
+   "Pinch regularly"
+  ],
+  "quickCare": {
+   "Water": "Water consistently; avoid letting compost dry out completely or sit waterlogged",
+   "Light": "Bright light, some direct sun; a warm windowsill suits it well",
+   "Feeding": "Light feed occasionally; too rich a feed reduces flavour concentration",
+   "Pruning": "Pinch out flower buds and growing tips regularly to keep it bushy and productive"
+  },
+  "notes": "Pinching out the growing tips regularly is the single best thing you can do \u2014 it keeps the plant bushy and delays it running to flower.",
+  "soil": "Fertile, free-draining soil or compost.",
+  "medium": "Peat-free compost; avoid waterlogging, which basil dislikes intensely.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in warmth; basil resents cold, so don't rush it outdoors.",
+   "Summer": "Pinch regularly, harvest leaves often and keep well watered.",
+   "Autumn": "Bring pots indoors before nights turn cold \u2014 basil is very frost- and cold-sensitive.",
+   "Winter": "Struggles outdoors; best treated as a windowsill herb through winter."
+  },
+  "problems": [
+   {
+    "name": "Leaves turning black/wilting in cold",
+    "fix": "Basil is very cold-sensitive; bring indoors well before the first cold nights, not just frost."
+   },
+   {
+    "name": "Bolting to flower quickly",
+    "fix": "Usually heat or root stress; pinch out flower buds promptly and keep watering consistent."
+   }
+  ],
+  "companions": [
+   "Tomato",
+   "Marigold",
+   "Chives"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root readily in a glass of water within a couple of weeks.",
+   "methods": "Sow fresh seed regularly for a continuous supply, since basil is short-lived.",
+   "tips": "Warmth is essential for good germination \u2014 a windowsill or propagator works well.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Left to flower, basil's small flowers attract bees and hoverflies, though most is harvested well before flowering for the best flavour."
+  },
+  "timeline": {
+   "Seeding": "Mar-Jun indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Pinch tips and flower buds continually through the growing season"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Basil.",
+   "gallery": [
+    "Whole plant in a pot",
+    "Leaf close-up",
+    "Cutting rooting in water",
+    "Flower spike if left to bolt"
+   ]
+  },
+  "weeklyFact": "Basil is famously cold-sensitive \u2014 even a cool draught, let alone frost, can cause leaves to blacken and collapse.",
+  "category": "Herb",
+  "pollinatorFact": "If allowed to flower, basil's small white or purple flower spikes are genuinely attractive to bees and hoverflies, though most is picked before flowering for the best flavour."
+ },
+ "GK-MIN-001": {
+  "id": "GK-MIN-001",
+  "slug": "mint",
+  "name": "Mint",
+  "latinName": "Mentha",
+  "variety": "Garden mint",
+  "subtitle": "Vigorous, fast-spreading herb \u2014 best kept contained in its own pot.",
+  "theme": "#3f8f5f",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Very vigorous",
+   "Best in containers"
+  ],
+  "quickCare": {
+   "Water": "Likes consistently moist soil \u2014 mint is thirstier than most herbs",
+   "Light": "Sun to part shade; tolerates more shade than many herbs",
+   "Feeding": "Light feed occasionally; naturally vigorous without much help",
+   "Pruning": "Cut back hard through the season to keep it productive and bushy"
+  },
+  "notes": "Grow mint in its own pot, even if it's going in the ground nearby \u2014 its spreading roots will take over a bed otherwise.",
+  "soil": "Moisture-retentive soil.",
+  "medium": "Peat-free compost; keep consistently moist, more so than most other herbs.",
+  "seasonalActions": {
+   "Spring": "Fresh growth appears fast; cut back hard to encourage bushy new shoots.",
+   "Summer": "Harvest regularly; cut back hard again if it gets leggy or starts flowering.",
+   "Autumn": "Cut back before winter; it will regrow readily next spring.",
+   "Winter": "Dies back to the roots in cold gardens; fully hardy and returns reliably."
+  },
+  "problems": [
+   {
+    "name": "Rust (orange spots on leaves)",
+    "fix": "Remove and destroy affected leaves; avoid overhead watering and improve airflow."
+   },
+   {
+    "name": "Invasive spreading",
+    "fix": "The main 'problem' with mint \u2014 always grow in a container, even when planted within a border."
+   }
+  ],
+  "companions": [
+   "Tomato",
+   "Cabbage",
+   "Peas"
+  ],
+  "propagation": {
+   "season": "Extremely easy from stem cuttings, which root readily in a glass of water within days.",
+   "methods": "Division of an established clump is just as reliable.",
+   "tips": "One of the fastest, most forgiving herbs to propagate.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "When left to flower, mint is genuinely excellent for bees and hoverflies \u2014 one of the better herb garden pollinator plants."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from cuttings or young plants",
+   "Flowering": "Jul-Sep if left to flower",
+   "Harvest": "N/A",
+   "Pruning": "Cut back hard several times through the growing season"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Mint.",
+   "gallery": [
+    "Whole pot showing growth habit",
+    "Leaf close-up",
+    "Cutting rooting in water",
+    "Flower spike if left to bloom"
+   ]
+  },
+  "weeklyFact": "Mint spreads through underground runners so vigorously that gardening advice for centuries has boiled down to one line: keep it in a pot.",
+  "category": "Herb",
+  "pollinatorFact": "Mint left to flower is a genuinely strong pollinator plant \u2014 its small flower spikes are popular with bees and hoverflies, making it worth leaving a patch unpicked."
+ },
+ "GK-RSM-001": {
+  "id": "GK-RSM-001",
+  "slug": "rosemary",
+  "name": "Rosemary",
+  "latinName": "Salvia rosmarinus",
+  "variety": "Upright rosemary",
+  "subtitle": "Woody, drought-tolerant Mediterranean herb, useful year-round.",
+  "theme": "#5c6b4a",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Full sun",
+   "Drought tolerant",
+   "Evergreen"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water sparingly and let soil dry out between waterings",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding needed \u2014 rosemary prefers leaner soil",
+   "Pruning": "Trim after flowering to keep a good shape; avoid cutting hard into old bare wood, which won't regrow"
+  },
+  "notes": "Avoid cutting back hard into old woody stems \u2014 unlike many herbs, rosemary won't reliably regrow from bare wood.",
+  "soil": "Free-draining, slightly poor soil; avoid rich, moisture-retentive ground.",
+  "medium": "Peat-free compost with added grit for sharp drainage, especially in pots.",
+  "seasonalActions": {
+   "Spring": "Trim lightly to shape after any spring flowering.",
+   "Summer": "Water in prolonged dry spells only; otherwise leave alone.",
+   "Autumn": "Take semi-ripe cuttings; trim lightly if needed.",
+   "Winter": "Evergreen and hardy; protect pots from waterlogging in wet winters."
+  },
+  "problems": [
+   {
+    "name": "Root rot in wet winters",
+    "fix": "Almost always from poor drainage; raise pots off the ground and ensure sharp drainage."
+   },
+   {
+    "name": "No regrowth after hard pruning",
+    "fix": "Rosemary doesn't reliably resprout from old bare wood; always prune into leafy growth, not old stems."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Sage",
+   "Thyme"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in late summer root reliably in a gritty, free-draining mix.",
+   "methods": "Avoid overly humid, sealed propagation conditions, which encourage rot in woody Mediterranean herbs.",
+   "tips": "A slower project than soft herbs like mint or basil, but reliable with patience.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An excellent early-season bee plant \u2014 flowers can appear as early as late winter when little else is in bloom."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from cuttings or young plants",
+   "Flowering": "Late winter to spring, sometimes sporadically year-round",
+   "Harvest": "N/A",
+   "Pruning": "Trim to shape after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Rosemary.",
+   "gallery": [
+    "Whole shrub showing form",
+    "Flower close-up if in bloom",
+    "Foliage detail",
+    "Cutting propagation in progress"
+   ]
+  },
+  "weeklyFact": "Rosemary can flower as early as February in mild spells, making it one of the first useful nectar sources of the year for bees emerging from winter.",
+  "category": "Herb",
+  "pollinatorFact": "Rosemary is a genuinely valuable early-season plant for bees, sometimes flowering as early as late winter when very few other nectar sources are available."
+ },
+ "GK-THY-001": {
+  "id": "GK-THY-001",
+  "slug": "thyme",
+  "name": "Thyme",
+  "latinName": "Thymus vulgaris",
+  "variety": "Common thyme",
+  "subtitle": "Low, drought-tolerant herb that doubles as excellent ground cover for bees.",
+  "theme": "#7a8f5a",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Full sun",
+   "Drought tolerant",
+   "Low growing"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water sparingly, especially in free-draining soil or gravel",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding \u2014 thyme prefers lean, poor soil",
+   "Pruning": "Trim lightly after flowering to keep it compact and prevent it becoming woody"
+  },
+  "notes": "Thyme genuinely prefers poor, lean soil \u2014 resist the urge to feed or improve the ground too much.",
+  "soil": "Free-draining, poor to average soil.",
+  "medium": "Peat-free compost with plenty of added grit; excellent drainage is essential.",
+  "seasonalActions": {
+   "Spring": "Trim lightly to encourage compact new growth.",
+   "Summer": "Let it flower \u2014 this is peak value for bees; trim lightly after flowering finishes.",
+   "Autumn": "Light trim if needed; avoid cutting hard this late in the season.",
+   "Winter": "Evergreen and hardy in most gardens; needs no protection."
+  },
+  "problems": [
+   {
+    "name": "Woody, sparse growth over time",
+    "fix": "Natural with age; trim lightly and regularly from early on to delay this, and be prepared to replace old plants every few years."
+   },
+   {
+    "name": "Root rot in heavy or wet soil",
+    "fix": "Improve drainage significantly or grow in a raised bed, pot or gravel garden instead."
+   }
+  ],
+  "companions": [
+   "Rosemary",
+   "Lavender",
+   "Sage"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings root well in a gritty mix in late spring or early summer.",
+   "methods": "Division of established clumps is also reliable.",
+   "tips": "Avoid high humidity when propagating this Mediterranean herb, to reduce rot risk.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Low, mat-forming thyme in flower is one of the most heavily visited plants for bees in a garden, often audibly buzzing at peak bloom."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from cuttings or young plants",
+   "Flowering": "Jun-Aug",
+   "Harvest": "N/A",
+   "Pruning": "Light trim after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Thyme.",
+   "gallery": [
+    "Whole plant or mat showing habit",
+    "Flower close-up with visiting insects if captured",
+    "Foliage detail",
+    "Newly trimmed compact growth"
+   ]
+  },
+  "weeklyFact": "A single mature clump of flowering thyme can be visited by dozens of different bee species in a single afternoon \u2014 it's one of the best small-space plants for pollinators.",
+  "category": "Herb",
+  "pollinatorFact": "Flowering thyme is a genuine pollinator hotspot \u2014 its low, mat-forming flowers are extremely popular with a wide range of bee species and are worth leaving unpicked at peak bloom."
+ },
+ "GK-SAG-001": {
+  "id": "GK-SAG-001",
+  "slug": "sage",
+  "name": "Sage",
+  "latinName": "Salvia officinalis",
+  "variety": "Culinary sage",
+  "subtitle": "Soft, silvery-leaved herb with strong flavour and good winter structure.",
+  "theme": "#7a8f6a",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Full sun",
+   "Evergreen",
+   "Drought tolerant"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water sparingly and avoid waterlogged soil",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding needed \u2014 lean soil keeps flavour concentrated",
+   "Pruning": "Trim after flowering to keep a good shape; cut back lightly in spring to remove winter-damaged growth"
+  },
+  "notes": "Renew plants every few years \u2014 sage gets woody and less productive with age, and cuttings root easily to replace it.",
+  "soil": "Free-draining soil; avoid heavy, wet ground.",
+  "medium": "Peat-free compost with added grit for sharp drainage.",
+  "seasonalActions": {
+   "Spring": "Cut back lightly to remove any winter-damaged growth.",
+   "Summer": "Let it flower if you have the space \u2014 bees love it; trim after flowering.",
+   "Autumn": "Light trim if needed; avoid heavy pruning this late in the season.",
+   "Winter": "Evergreen in most winters; protect pots from prolonged waterlogging."
+  },
+  "problems": [
+   {
+    "name": "Woody, leggy growth with age",
+    "fix": "Natural over a few years; take cuttings to propagate a younger replacement plant."
+   },
+   {
+    "name": "Root rot in wet soil",
+    "fix": "Improve drainage significantly, or grow in a raised bed or pot instead."
+   }
+  ],
+  "companions": [
+   "Rosemary",
+   "Thyme",
+   "Lavender"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root reliably in a gritty mix.",
+   "methods": "Layering a low stem into the soil is another simple, reliable method.",
+   "tips": "Avoid high humidity when propagating, to reduce rot risk in this Mediterranean herb.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Sage's tubular purple-blue flowers are excellent for bees, particularly bumblebees suited to the flower shape."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from cuttings or young plants",
+   "Flowering": "Jun-Jul if allowed to flower",
+   "Harvest": "N/A",
+   "Pruning": "Trim after flowering; light spring tidy"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Sage.",
+   "gallery": [
+    "Whole plant showing silvery foliage",
+    "Flower spike close-up if in bloom",
+    "Leaf detail",
+    "Cutting propagation in progress"
+   ]
+  },
+  "weeklyFact": "Culinary sage is in the same genus as ornamental salvias \u2014 the tubular purple flowers, when the plant is left to bloom, look strikingly similar.",
+  "category": "Herb",
+  "pollinatorFact": "Sage's tubular flowers, when left to bloom rather than harvested early, are a strong draw for bumblebees particularly well suited to the flower's shape."
+ }
 }
