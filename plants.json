@@ -73,12 +73,16 @@
     "Seed pod, fruit, tuber or spent flower if applicable"
    ]
   },
-  "weeklyFact": "Canna is included in the GardenKey pilot set to test different plant habits and care needs.",
+  "weeklyFact": "Canna's huge paddle-shaped leaves are close relatives of the banana and ginger families, which is part of why the plant looks so tropical.",
   "category": "Tender perennial",
   "pollinatorFact": "Canna flowers are bold and tropical-looking; value depends on variety and whether insects can access the flower parts.",
   "companionLinks": {
    "Dahlia": "GK-DAH-001"
-  }
+  },
+  "weeklyFacts": [
+   "Canna's huge paddle-shaped leaves are close relatives of the banana and ginger families, which is part of why the plant looks so tropical.",
+   "Canna rhizomes were traditionally ground into starch by some Andean cultures long before they became a garden ornamental."
+  ]
  },
  "GK-CAR-001": {
   "id": "GK-CAR-001",
@@ -151,7 +155,11 @@
     "Winter appearance",
     "Seed pod / fruit if relevant"
    ]
-  }
+  },
+  "weeklyFacts": [
+   "Carrot seed is tiny, which is why many gardeners accidentally sow enough carrots for a small village.",
+   "Wild carrot root is naturally pale and stringy \u2014 the plump orange carrot we know today was selectively bred in the Netherlands."
+  ]
  },
  "GK-COU-001": {
   "id": "GK-COU-001",
@@ -224,7 +232,11 @@
     "Winter appearance",
     "Seed pod / fruit if relevant"
    ]
-  }
+  },
+  "weeklyFacts": [
+   "A courgette can hide under one leaf and become a marrow while you are making a cup of tea.",
+   "Courgettes and pumpkins are the same species, Cucurbita pepo, just bred and picked at very different stages."
+  ]
  },
  "GK-DAH-001": {
   "id": "GK-DAH-001",
@@ -300,12 +312,16 @@
     "Seed pod, fruit, tuber or spent flower if applicable"
    ]
   },
-  "weeklyFact": "Dahlia is included in the GardenKey pilot set to test different plant habits and care needs.",
+  "weeklyFact": "Dahlias were originally grown by the Aztecs as a food crop for their edible tubers, long before Europeans bred them into today's flamboyant flowers.",
   "category": "Perennial",
   "pollinatorFact": "Open-centred dahlias are much better for bees than tight decorative doubles, which can hide the pollen and nectar.",
   "companionLinks": {
    "Canna": "GK-CAN-001"
-  }
+  },
+  "weeklyFacts": [
+   "Dahlias were originally grown by the Aztecs as a food crop for their edible tubers, long before Europeans bred them into today's flamboyant flowers.",
+   "There are over 40 recognised dahlia flower forms, from tight little pompons to dinner-plate-sized blooms."
+  ]
  },
  "GK-FRN-001": {
   "id": "GK-FRN-001",
@@ -379,7 +395,11 @@
   },
   "weeklyFact": "Ferns are ancient plants that reproduce by spores rather than flowers \u2014 very calm, very green, very Jurassic.",
   "category": "Fern",
-  "pollinatorFact": "Ferns do not provide flowers for pollinators, but they do create shelter and humidity for small garden life."
+  "pollinatorFact": "Ferns do not provide flowers for pollinators, but they do create shelter and humidity for small garden life.",
+  "weeklyFacts": [
+   "Ferns are ancient plants that reproduce by spores rather than flowers \u2014 very calm, very green, very Jurassic.",
+   "Fern fossils date back over 350 million years, making them older than most trees and even the dinosaurs."
+  ]
  },
  "GK-HOS-001": {
   "id": "GK-HOS-001",
@@ -457,7 +477,11 @@
   },
   "weeklyFact": "Some hosta leaves can grow large enough to hold a full cup of rainwater after a summer shower.",
   "category": "Perennial",
-  "pollinatorFact": "Hosta's tubular flowers are shaped for bees and long-tongued pollinators, and are sometimes visited by moths at dusk."
+  "pollinatorFact": "Hosta's tubular flowers are shaped for bees and long-tongued pollinators, and are sometimes visited by moths at dusk.",
+  "weeklyFacts": [
+   "Some hosta leaves can grow large enough to hold a full cup of rainwater after a summer shower.",
+   "Hostas were originally bred and prized in Japan for centuries before becoming a Western shade-garden staple."
+  ]
  },
  "GK-HYD-001": {
   "id": "GK-HYD-001",
@@ -535,7 +559,11 @@
   },
   "weeklyFact": "A hydrangea's flower colour is a live pH test for your soil \u2014 blue means acidic, pink means alkaline.",
   "category": "Perennial",
-  "pollinatorFact": "Lacecap hydrangeas have small fertile flowers around the rim that are far more useful to pollinators than the showy sterile mophead types."
+  "pollinatorFact": "Lacecap hydrangeas have small fertile flowers around the rim that are far more useful to pollinators than the showy sterile mophead types.",
+  "weeklyFacts": [
+   "A hydrangea's flower colour is a live pH test for your soil \u2014 blue means acidic, pink means alkaline.",
+   "The 'macrophylla' in Hydrangea macrophylla simply means 'large-leaved' in Latin."
+  ]
  },
  "GK-ACE-001": {
   "id": "GK-ACE-001",
@@ -613,7 +641,11 @@
   },
   "weeklyFact": "Japanese maples can live for well over a century and are often trained as bonsai for exactly that reason.",
   "category": "Tree",
-  "pollinatorFact": "The small red-green spring flowers are easy to miss but provide early nectar before many other plants are in bloom."
+  "pollinatorFact": "The small red-green spring flowers are easy to miss but provide early nectar before many other plants are in bloom.",
+  "weeklyFacts": [
+   "Japanese maples can live for well over a century and are often trained as bonsai for exactly that reason.",
+   "The word 'palmatum' in Acer palmatum refers to the leaf shape, which fans out like an open hand."
+  ]
  },
  "GK-LAV-001": {
   "id": "GK-LAV-001",
@@ -694,7 +726,11 @@
   "pollinatorFact": "Open lavender flowers are brilliant for bees because the nectar is easy to access and the plant flowers over a useful summer window.",
   "companionLinks": {
    "Rose": "GK-ROS-001"
-  }
+  },
+  "weeklyFacts": [
+   "Lavender has been used for centuries in gardens, medicine cupboards and linen drawers \u2014 basically the original plant-based air freshener.",
+   "The name lavender comes from the Latin 'lavare,' meaning 'to wash,' since Romans scented their bathwater with it."
+  ]
  },
  "GK-LET-001": {
   "id": "GK-LET-001",
@@ -767,7 +803,11 @@
     "Winter appearance",
     "Seed pod / fruit if relevant"
    ]
-  }
+  },
+  "weeklyFacts": [
+   "Lettuce is one of the best plants for testing a garden app because you can see results in weeks, not years.",
+   "Ancient Egyptians grew lettuce not primarily for salad but for the oil pressed from its seeds."
+  ]
  },
  "GK-POT-001": {
   "id": "GK-POT-001",
@@ -840,7 +880,11 @@
     "Winter appearance",
     "Seed pod / fruit if relevant"
    ]
-  }
+  },
+  "weeklyFacts": [
+   "Potatoes are related to tomatoes, which explains why potato flowers can look strangely familiar.",
+   "Potatoes were the first vegetable ever grown in space, as part of a 1995 NASA and University of Wisconsin experiment."
+  ]
  },
  "GK-ROS-001": {
   "id": "GK-ROS-001",
@@ -921,7 +965,11 @@
   "pollinatorFact": "Single and semi-double roses are usually more useful to pollinators than very full double roses, because insects can actually reach the centre.",
   "companionLinks": {
    "Lavender": "GK-LAV-001"
-  }
+  },
+  "weeklyFacts": [
+   "Open-centred roses can provide pollen access for bees, unlike many very double varieties.",
+   "The rose family also includes apples, cherries, strawberries and almonds \u2014 a surprisingly wide-ranging relative list."
+  ]
  },
  "GK-SAL-001": {
   "id": "GK-SAL-001",
@@ -999,7 +1047,11 @@
   },
   "weeklyFact": "Salvia's tubular flowers are shaped almost exactly for a bumblebee's tongue length.",
   "category": "Perennial",
-  "pollinatorFact": "Salvia is consistently one of the top-rated plants in pollinator surveys thanks to its long flowering season and easy nectar access."
+  "pollinatorFact": "Salvia is consistently one of the top-rated plants in pollinator surveys thanks to its long flowering season and easy nectar access.",
+  "weeklyFacts": [
+   "Salvia's tubular flowers are shaped almost exactly for a bumblebee's tongue length.",
+   "The genus Salvia is the largest in the mint family, with somewhere around 900 recognised species."
+  ]
  },
  "GK-GLA-001": {
   "id": "GK-GLA-001",
@@ -1072,7 +1124,11 @@
   },
   "weeklyFact": "Gladiolus corms are technically called corms, not bulbs \u2014 they're solid stem tissue rather than layered scales.",
   "category": "Bulb",
-  "pollinatorFact": "Gladiolus spikes are showy but the tightly packed florets make nectar and pollen harder for insects to reach than more open flower shapes."
+  "pollinatorFact": "Gladiolus spikes are showy but the tightly packed florets make nectar and pollen harder for insects to reach than more open flower shapes.",
+  "weeklyFacts": [
+   "Gladiolus corms are technically called corms, not bulbs \u2014 they're solid stem tissue rather than layered scales.",
+   "The name Gladiolus comes from the Latin for 'little sword,' describing the shape of the leaves."
+  ]
  },
  "GK-TUL-001": {
   "id": "GK-TUL-001",
@@ -1145,7 +1201,11 @@
   },
   "weeklyFact": "Tulip bulbs were once so valuable in 17th-century Holland that a single rare bulb could cost more than a house.",
   "category": "Bulb",
-  "pollinatorFact": "Tulips open wide on sunny days, giving early-season bees good access to pollen when few other flowers are out yet."
+  "pollinatorFact": "Tulips open wide on sunny days, giving early-season bees good access to pollen when few other flowers are out yet.",
+  "weeklyFacts": [
+   "Tulip bulbs were once so valuable in 17th-century Holland that a single rare bulb could cost more than a house.",
+   "Tulips didn't originate in the Netherlands at all \u2014 they're native to Central Asia and were first cultivated in the Ottoman Empire."
+  ]
  },
  "GK-SUN-001": {
   "id": "GK-SUN-001",
@@ -1218,7 +1278,11 @@
   },
   "weeklyFact": "A sunflower head is actually made of thousands of tiny individual flowers arranged in a spiral pattern.",
   "category": "Annual",
-  "pollinatorFact": "Sunflowers are a magnet for bees and hoverflies, and the spent seed heads are a genuinely important food source for garden birds into autumn."
+  "pollinatorFact": "Sunflowers are a magnet for bees and hoverflies, and the spent seed heads are a genuinely important food source for garden birds into autumn.",
+  "weeklyFacts": [
+   "A sunflower head is actually made of thousands of tiny individual flowers arranged in a spiral pattern.",
+   "The tallest recorded sunflower grew to over 9 metres \u2014 roughly the height of a three-storey building."
+  ]
  },
  "GK-MAR-001": {
   "id": "GK-MAR-001",
@@ -1291,7 +1355,11 @@
   },
   "weeklyFact": "Marigolds are one of the most common companion plants in vegetable gardens, often grown for their scent as much as their colour.",
   "category": "Annual",
-  "pollinatorFact": "Single and semi-double marigolds are useful for hoverflies and small bees; the very frilly double types are mostly for looks."
+  "pollinatorFact": "Single and semi-double marigolds are useful for hoverflies and small bees; the very frilly double types are mostly for looks.",
+  "weeklyFacts": [
+   "Marigolds are one of the most common companion plants in vegetable gardens, often grown for their scent as much as their colour.",
+   "'Marigold' is also used for pot marigold (Calendula), an entirely different plant \u2014 worth checking which one a recipe or companion-planting tip actually means."
+  ]
  },
  "GK-NAS-001": {
   "id": "GK-NAS-001",
@@ -1364,7 +1432,11 @@
   },
   "weeklyFact": "Every part of a nasturtium above ground is edible \u2014 the peppery leaves and flowers are a genuine salad ingredient, not just a garnish.",
   "category": "Annual",
-  "pollinatorFact": "Nasturtium flowers are simple and open, making nectar easy to reach for bees, and the plant is often used as a deliberate decoy to draw blackfly away from other crops."
+  "pollinatorFact": "Nasturtium flowers are simple and open, making nectar easy to reach for bees, and the plant is often used as a deliberate decoy to draw blackfly away from other crops.",
+  "weeklyFacts": [
+   "Every part of a nasturtium above ground is edible \u2014 the peppery leaves and flowers are a genuine salad ingredient, not just a garnish.",
+   "Nasturtium seeds were historically pickled and used as a substitute for capers."
+  ]
  },
  "GK-CLE-001": {
   "id": "GK-CLE-001",
@@ -1437,7 +1509,11 @@
   },
   "weeklyFact": "Clematis seed heads can be as decorative as the flowers \u2014 some varieties are grown almost as much for their fluffy autumn seed heads.",
   "category": "Perennial",
-  "pollinatorFact": "Single, open-flowered clematis varieties give bees good access to pollen; very double forms are more for show."
+  "pollinatorFact": "Single, open-flowered clematis varieties give bees good access to pollen; very double forms are more for show.",
+  "weeklyFacts": [
+   "Clematis seed heads can be as decorative as the flowers \u2014 some varieties are grown almost as much for their fluffy autumn seed heads.",
+   "There are over 300 species of clematis, ranging from tiny alpine types to vigorous climbers that can cover a whole wall."
+  ]
  },
  "GK-CAM-001": {
   "id": "GK-CAM-001",
@@ -1510,7 +1586,11 @@
   },
   "weeklyFact": "Camellia flowers can survive a light frost, but a sudden hard freeze after a mild spell can turn open blooms brown overnight.",
   "category": "Shrub",
-  "pollinatorFact": "Double camellia flowers are showy but often nearly sterile for pollinators; single-flowered varieties give better access to what pollen is available."
+  "pollinatorFact": "Double camellia flowers are showy but often nearly sterile for pollinators; single-flowered varieties give better access to what pollen is available.",
+  "weeklyFacts": [
+   "Camellia flowers can survive a light frost, but a sudden hard freeze after a mild spell can turn open blooms brown overnight.",
+   "Camellia sinensis, a close relative of the ornamental camellia, is the plant that gives us all true tea \u2014 black, green and white."
+  ]
  },
  "GK-RHO-001": {
   "id": "GK-RHO-001",
@@ -1583,7 +1663,11 @@
   },
   "weeklyFact": "Some rhododendron species contain toxic compounds in their nectar, which is where the old term 'mad honey' comes from historically.",
   "category": "Shrub",
-  "pollinatorFact": "Bumblebees are particularly well suited to rhododendron's tubular flower shape and are among its most frequent visitors."
+  "pollinatorFact": "Bumblebees are particularly well suited to rhododendron's tubular flower shape and are among its most frequent visitors.",
+  "weeklyFacts": [
+   "Some rhododendron species contain toxic compounds in their nectar, which is where the old term 'mad honey' comes from historically.",
+   "The word rhododendron comes from Greek for 'rose tree,' even though it's not related to roses at all."
+  ]
  },
  "GK-CRO-001": {
   "id": "GK-CRO-001",
@@ -1656,7 +1740,11 @@
   },
   "weeklyFact": "Crocosmia was originally bred from South African species and has since naturalised so successfully in parts of the UK and Ireland that some varieties are considered near-wild.",
   "category": "Corm",
-  "pollinatorFact": "Crocosmia's tubular orange-red flowers are a strong draw for bees able to access the shape, and the seed heads that follow feed birds into autumn."
+  "pollinatorFact": "Crocosmia's tubular orange-red flowers are a strong draw for bees able to access the shape, and the seed heads that follow feed birds into autumn.",
+  "weeklyFacts": [
+   "Crocosmia was originally bred from South African species and has since naturalised so successfully in parts of the UK and Ireland that some varieties are considered near-wild.",
+   "Crocosmia corms form in a chain, each year's corm growing on top of the last \u2014 lifting one often reveals several seasons' history."
+  ]
  },
  "GK-NEP-001": {
   "id": "GK-NEP-001",
@@ -1729,7 +1817,11 @@
   },
   "weeklyFact": "Nepeta is in the same plant family as true mint, which is part of why bees find it just as irresistible.",
   "category": "Perennial",
-  "pollinatorFact": "Nepeta is consistently rated among the best garden plants for bees \u2014 a long flowering season combined with easily accessible nectar makes it a reliable pollinator magnet."
+  "pollinatorFact": "Nepeta is consistently rated among the best garden plants for bees \u2014 a long flowering season combined with easily accessible nectar makes it a reliable pollinator magnet.",
+  "weeklyFacts": [
+   "Nepeta is in the same plant family as true mint, which is part of why bees find it just as irresistible.",
+   "The compound that makes cats roll around in catmint, nepetalactone, is being studied by scientists as a possible natural insect repellent."
+  ]
  },
  "GK-AST-001": {
   "id": "GK-AST-001",
@@ -1802,7 +1894,11 @@
   },
   "weeklyFact": "Astilbe plumes are made up of hundreds of tiny individual flowers, which is why they read as feathery from a distance but detailed up close.",
   "category": "Perennial",
-  "pollinatorFact": "Astilbe's dense flower plumes offer modest nectar for smaller pollinators, though the tightly packed structure makes access harder than more open flower shapes."
+  "pollinatorFact": "Astilbe's dense flower plumes offer modest nectar for smaller pollinators, though the tightly packed structure makes access harder than more open flower shapes.",
+  "weeklyFacts": [
+   "Astilbe plumes are made up of hundreds of tiny individual flowers, which is why they read as feathery from a distance but detailed up close.",
+   "Astilbe plumes hold their shape well when dried, making them a popular choice for dried flower arrangements."
+  ]
  },
  "GK-PLI-001": {
   "id": "GK-PLI-001",
@@ -1875,7 +1971,11 @@
   },
   "weeklyFact": "A drooping peace lily looks alarming but is one of the clearest 'water me now' signals in the houseplant world \u2014 it usually stands back up within a few hours of watering.",
   "category": "Houseplant",
-  "pollinatorFact": "Peace lilies are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality."
+  "pollinatorFact": "Peace lilies are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality.",
+  "weeklyFacts": [
+   "A drooping peace lily looks alarming but is one of the clearest 'water me now' signals in the houseplant world \u2014 it usually stands back up within a few hours of watering.",
+   "Despite the name, peace lilies aren't true lilies at all \u2014 they're in the arum family, related to calla lilies and philodendrons."
+  ]
  },
  "GK-SNK-001": {
   "id": "GK-SNK-001",
@@ -1948,7 +2048,11 @@
   },
   "weeklyFact": "Snake plants are sometimes called 'mother-in-law's tongue' for their sharp, pointed leaves \u2014 and they're famously hard to kill through neglect.",
   "category": "Houseplant",
-  "pollinatorFact": "Snake plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality."
+  "pollinatorFact": "Snake plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental and for indoor air quality.",
+  "weeklyFacts": [
+   "Snake plants are sometimes called 'mother-in-law's tongue' for their sharp, pointed leaves \u2014 and they're famously hard to kill through neglect.",
+   "Botanists reclassified snake plants from the genus Sansevieria into Dracaena in recent years, though most gardeners still know it by the old name."
+  ]
  },
  "GK-MON-001": {
   "id": "GK-MON-001",
@@ -2021,7 +2125,11 @@
   },
   "weeklyFact": "In the wild, Monstera deliciosa is a climbing vine that can reach many metres up a tree trunk, using aerial roots the whole way.",
   "category": "Houseplant",
-  "pollinatorFact": "Monstera is grown indoors and has no access to outdoor pollinators; its value is purely ornamental as a foliage statement plant."
+  "pollinatorFact": "Monstera is grown indoors and has no access to outdoor pollinators; its value is purely ornamental as a foliage statement plant.",
+  "weeklyFacts": [
+   "In the wild, Monstera deliciosa is a climbing vine that can reach many metres up a tree trunk, using aerial roots the whole way.",
+   "The species name 'deliciosa' refers to the plant's edible fruit, which is a genuine (if rarely grown) tropical treat when fully ripe."
+  ]
  },
  "GK-POH-001": {
   "id": "GK-POH-001",
@@ -2094,7 +2202,11 @@
   },
   "weeklyFact": "Pothos is sometimes nicknamed 'devil's ivy' because it stays green even in low light and is famously difficult to kill.",
   "category": "Houseplant",
-  "pollinatorFact": "Pothos is grown indoors and has no access to outdoor pollinators; its value is purely ornamental and it's a popular beginner plant."
+  "pollinatorFact": "Pothos is grown indoors and has no access to outdoor pollinators; its value is purely ornamental and it's a popular beginner plant.",
+  "weeklyFacts": [
+   "Pothos is sometimes nicknamed 'devil's ivy' because it stays green even in low light and is famously difficult to kill.",
+   "Pothos rarely flowers indoors because it needs the kind of intense tropical light and maturity it would only reach climbing a rainforest tree."
+  ]
  },
  "GK-SPI-001": {
   "id": "GK-SPI-001",
@@ -2167,7 +2279,11 @@
   },
   "weeklyFact": "Those dangling 'baby' plantlets are genetically identical clones of the parent plant, each capable of rooting into a full new spider plant.",
   "category": "Houseplant",
-  "pollinatorFact": "Spider plants are grown indoors and have no access to outdoor pollinators; their small flowers are rarely seen and mostly a curiosity indoors."
+  "pollinatorFact": "Spider plants are grown indoors and have no access to outdoor pollinators; their small flowers are rarely seen and mostly a curiosity indoors.",
+  "weeklyFacts": [
+   "Those dangling 'baby' plantlets are genetically identical clones of the parent plant, each capable of rooting into a full new spider plant.",
+   "Spider plants were one of the species tested in NASA's 1989 Clean Air Study for their ability to filter indoor air pollutants."
+  ]
  },
  "GK-ALO-001": {
   "id": "GK-ALO-001",
@@ -2240,7 +2356,11 @@
   },
   "weeklyFact": "The clear gel inside an aloe leaf has been used for skin care for thousands of years \u2014 just be sure to avoid the yellow sap layer just under the skin, which can irritate.",
   "category": "Succulent",
-  "pollinatorFact": "Indoors, aloe rarely flowers and has no pollinator access; in warm outdoor climates its tall flower spikes attract bees and, in some regions, sunbirds."
+  "pollinatorFact": "Indoors, aloe rarely flowers and has no pollinator access; in warm outdoor climates its tall flower spikes attract bees and, in some regions, sunbirds.",
+  "weeklyFacts": [
+   "The clear gel inside an aloe leaf has been used for skin care for thousands of years \u2014 just be sure to avoid the yellow sap layer just under the skin, which can irritate.",
+   "There are over 500 species of aloe, but Aloe vera is the one most commonly grown for its skin-soothing gel."
+  ]
  },
  "GK-ZZP-001": {
   "id": "GK-ZZP-001",
@@ -2313,7 +2433,11 @@
   },
   "weeklyFact": "ZZ plants grow from a thick underground rhizome that stores water, which is exactly why they shrug off missed waterings so well.",
   "category": "Houseplant",
-  "pollinatorFact": "ZZ plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental."
+  "pollinatorFact": "ZZ plants are grown indoors and have no access to outdoor pollinators; their value is purely ornamental.",
+  "weeklyFacts": [
+   "ZZ plants grow from a thick underground rhizome that stores water, which is exactly why they shrug off missed waterings so well.",
+   "ZZ plant's full botanical name, Zamioculcas zamiifolia, describes its leaves as resembling those of a cycad (Zamia)."
+  ]
  },
  "GK-ORC-001": {
   "id": "GK-ORC-001",
@@ -2386,7 +2510,11 @@
   },
   "weeklyFact": "'Moth orchid' comes from the flower's resemblance to a moth in flight \u2014 and in the wild, these orchids are pollinated by night-flying moths.",
   "category": "Houseplant",
-  "pollinatorFact": "Indoors, orchids have no pollinator access; in their native habitat, moth orchids rely on specific night-flying moths for pollination."
+  "pollinatorFact": "Indoors, orchids have no pollinator access; in their native habitat, moth orchids rely on specific night-flying moths for pollination.",
+  "weeklyFacts": [
+   "'Moth orchid' comes from the flower's resemblance to a moth in flight \u2014 and in the wild, these orchids are pollinated by night-flying moths.",
+   "The orchid family is one of the largest of all flowering plant families, with over 25,000 known species worldwide."
+  ]
  },
  "GK-ECV-001": {
   "id": "GK-ECV-001",
@@ -2459,7 +2587,11 @@
   },
   "weeklyFact": "Echeveria rosettes are a textbook example of a Fibonacci spiral in nature \u2014 the leaves are arranged in a precise mathematical pattern.",
   "category": "Succulent",
-  "pollinatorFact": "When echeveria does flower, the small bell-shaped blooms on tall stems can attract bees and hummingbirds in warm outdoor climates; indoors it's grown mainly for its rosette shape."
+  "pollinatorFact": "When echeveria does flower, the small bell-shaped blooms on tall stems can attract bees and hummingbirds in warm outdoor climates; indoors it's grown mainly for its rosette shape.",
+  "weeklyFacts": [
+   "Echeveria rosettes are a textbook example of a Fibonacci spiral in nature \u2014 the leaves are arranged in a precise mathematical pattern.",
+   "Echeveria is named after Atanasio Echeverr\u00eda y Godoy, an 18th-century Mexican botanical illustrator."
+  ]
  },
  "GK-SED-001": {
   "id": "GK-SED-001",
@@ -2532,7 +2664,11 @@
   },
   "weeklyFact": "Some larger border sedums are among the last strong nectar sources of the year, often still buzzing with bees and butterflies into October.",
   "category": "Succulent",
-  "pollinatorFact": "Larger outdoor sedum varieties are genuinely valuable late-season plants for bees and butterflies, flowering when many other nectar sources have finished."
+  "pollinatorFact": "Larger outdoor sedum varieties are genuinely valuable late-season plants for bees and butterflies, flowering when many other nectar sources have finished.",
+  "weeklyFacts": [
+   "Some larger border sedums are among the last strong nectar sources of the year, often still buzzing with bees and butterflies into October.",
+   "Sedum is sometimes called 'stonecrop' because many species naturally grow in rocky, gritty ground where little else survives."
+  ]
  },
  "GK-HAW-001": {
   "id": "GK-HAW-001",
@@ -2605,7 +2741,11 @@
   },
   "weeklyFact": "Haworthia's translucent leaf tips are sometimes called 'windows' \u2014 in the wild they let light into the leaf while most of the plant stays buried in sand.",
   "category": "Succulent",
-  "pollinatorFact": "Haworthia is grown mainly indoors for its patterned foliage; its small flower spikes have limited pollinator relevance in a typical indoor setting."
+  "pollinatorFact": "Haworthia is grown mainly indoors for its patterned foliage; its small flower spikes have limited pollinator relevance in a typical indoor setting.",
+  "weeklyFacts": [
+   "Haworthia's translucent leaf tips are sometimes called 'windows' \u2014 in the wild they let light into the leaf while most of the plant stays buried in sand.",
+   "Haworthia is named after Adrian Hardy Haworth, an English entomologist and botanist who studied succulents extensively."
+  ]
  },
  "GK-JAD-001": {
   "id": "GK-JAD-001",
@@ -2678,7 +2818,11 @@
   },
   "weeklyFact": "Jade plants are sometimes called 'money plants' and are commonly given as gifts believed to bring good luck and prosperity.",
   "category": "Succulent",
-  "pollinatorFact": "Jade plant flowers are uncommon indoors but when they do appear, their small star-shaped blooms can attract bees in mild outdoor climates."
+  "pollinatorFact": "Jade plant flowers are uncommon indoors but when they do appear, their small star-shaped blooms can attract bees in mild outdoor climates.",
+  "weeklyFacts": [
+   "Jade plants are sometimes called 'money plants' and are commonly given as gifts believed to bring good luck and prosperity.",
+   "In some feng shui traditions, a jade plant is placed near the entrance of a home or business for good fortune."
+  ]
  },
  "GK-AEO-001": {
   "id": "GK-AEO-001",
@@ -2751,7 +2895,11 @@
   },
   "weeklyFact": "Aeonium runs on an unusual seasonal clock compared to most succulents \u2014 actively growing in cool winter months and resting through summer heat.",
   "category": "Succulent",
-  "pollinatorFact": "Aeonium's occasional yellow flower clusters can attract bees where grown outdoors in mild climates; indoors it's grown mainly for its architectural rosette form."
+  "pollinatorFact": "Aeonium's occasional yellow flower clusters can attract bees where grown outdoors in mild climates; indoors it's grown mainly for its architectural rosette form.",
+  "weeklyFacts": [
+   "Aeonium runs on an unusual seasonal clock compared to most succulents \u2014 actively growing in cool winter months and resting through summer heat.",
+   "Aeonium rosettes close up tightly in summer heat and open flat again once cooler weather returns."
+  ]
  },
  "GK-TOM-001": {
   "id": "GK-TOM-001",
@@ -2824,7 +2972,11 @@
   },
   "weeklyFact": "Tomato flowers need to be vibrated to release their pollen \u2014 bumblebees do this naturally, which is why greenhouse growers sometimes use a small vibrating 'wand' instead.",
   "category": "Vegetable",
-  "pollinatorFact": "Tomato flowers rely on 'buzz pollination' from bumblebees, which vibrate the flower at a specific frequency to release pollen that simply falls out otherwise."
+  "pollinatorFact": "Tomato flowers rely on 'buzz pollination' from bumblebees, which vibrate the flower at a specific frequency to release pollen that simply falls out otherwise.",
+  "weeklyFacts": [
+   "Tomato flowers need to be vibrated to release their pollen \u2014 bumblebees do this naturally, which is why greenhouse growers sometimes use a small vibrating 'wand' instead.",
+   "Tomatoes were once widely believed to be poisonous in parts of 18th-century Europe, since they're in the same family as deadly nightshade."
+  ]
  },
  "GK-ONI-001": {
   "id": "GK-ONI-001",
@@ -2897,7 +3049,11 @@
   },
   "weeklyFact": "Onion sets are just small, partially grown onions \u2014 starting from a set rather than seed gives a big head start on the season.",
   "category": "Vegetable",
-  "pollinatorFact": "If an onion is allowed to bolt and flower, its round flower head is genuinely popular with bees and hoverflies, though most crops are harvested before this happens."
+  "pollinatorFact": "If an onion is allowed to bolt and flower, its round flower head is genuinely popular with bees and hoverflies, though most crops are harvested before this happens.",
+  "weeklyFacts": [
+   "Onion sets are just small, partially grown onions \u2014 starting from a set rather than seed gives a big head start on the season.",
+   "Onions belong to the same plant family as garlic, leeks and chives \u2014 the alliums."
+  ]
  },
  "GK-BEA-001": {
   "id": "GK-BEA-001",
@@ -2970,7 +3126,11 @@
   },
   "weeklyFact": "Runner beans were originally grown in Britain as an ornamental climbing flower before anyone thought to eat the pods.",
   "category": "Vegetable",
-  "pollinatorFact": "Runner bean's bright red flowers are highly attractive to bees, and better pollination directly translates into a bigger pod harvest."
+  "pollinatorFact": "Runner bean's bright red flowers are highly attractive to bees, and better pollination directly translates into a bigger pod harvest.",
+  "weeklyFacts": [
+   "Runner beans were originally grown in Britain as an ornamental climbing flower before anyone thought to eat the pods.",
+   "A single well-grown runner bean plant can produce well over a hundred pods across a season if picked regularly."
+  ]
  },
  "GK-PEA-001": {
   "id": "GK-PEA-001",
@@ -3043,7 +3203,11 @@
   },
   "weeklyFact": "Garden peas are largely self-pollinating before the flower even opens, which is part of why they were one of Gregor Mendel's key plants for founding modern genetics.",
   "category": "Vegetable",
-  "pollinatorFact": "Peas are mostly self-pollinating, but bees do visit the flowers and can improve pod set and yield in some varieties."
+  "pollinatorFact": "Peas are mostly self-pollinating, but bees do visit the flowers and can improve pod set and yield in some varieties.",
+  "weeklyFacts": [
+   "Garden peas are largely self-pollinating before the flower even opens, which is part of why they were one of Gregor Mendel's key plants for founding modern genetics.",
+   "Frozen peas are picked and frozen within hours of harvest, which is part of why they're often sweeter than 'fresh' peas that have sat for days."
+  ]
  },
  "GK-CUC-001": {
   "id": "GK-CUC-001",
@@ -3116,7 +3280,11 @@
   },
   "weeklyFact": "Outdoor 'ridge' cucumbers are bred to be tougher and more weather-resistant than the smooth greenhouse types found in supermarkets.",
   "category": "Vegetable",
-  "pollinatorFact": "Many outdoor cucumber varieties need bee pollination to set fruit at all, making them one of the more pollinator-dependent crops in a typical vegetable plot."
+  "pollinatorFact": "Many outdoor cucumber varieties need bee pollination to set fruit at all, making them one of the more pollinator-dependent crops in a typical vegetable plot.",
+  "weeklyFacts": [
+   "Outdoor 'ridge' cucumbers are bred to be tougher and more weather-resistant than the smooth greenhouse types found in supermarkets.",
+   "Cucumbers are technically a fruit, botanically speaking, since they develop from a flower and contain seeds."
+  ]
  },
  "GK-BAS-001": {
   "id": "GK-BAS-001",
@@ -3189,7 +3357,11 @@
   },
   "weeklyFact": "Basil is famously cold-sensitive \u2014 even a cool draught, let alone frost, can cause leaves to blacken and collapse.",
   "category": "Herb",
-  "pollinatorFact": "If allowed to flower, basil's small white or purple flower spikes are genuinely attractive to bees and hoverflies, though most is picked before flowering for the best flavour."
+  "pollinatorFact": "If allowed to flower, basil's small white or purple flower spikes are genuinely attractive to bees and hoverflies, though most is picked before flowering for the best flavour.",
+  "weeklyFacts": [
+   "Basil is famously cold-sensitive \u2014 even a cool draught, let alone frost, can cause leaves to blacken and collapse.",
+   "Ancient Greeks associated basil with hatred, while in India the related holy basil (tulsi) is considered sacred \u2014 quite the reputation split."
+  ]
  },
  "GK-MIN-001": {
   "id": "GK-MIN-001",
@@ -3262,7 +3434,11 @@
   },
   "weeklyFact": "Mint spreads through underground runners so vigorously that gardening advice for centuries has boiled down to one line: keep it in a pot.",
   "category": "Herb",
-  "pollinatorFact": "Mint left to flower is a genuinely strong pollinator plant \u2014 its small flower spikes are popular with bees and hoverflies, making it worth leaving a patch unpicked."
+  "pollinatorFact": "Mint left to flower is a genuinely strong pollinator plant \u2014 its small flower spikes are popular with bees and hoverflies, making it worth leaving a patch unpicked.",
+  "weeklyFacts": [
+   "Mint spreads through underground runners so vigorously that gardening advice for centuries has boiled down to one line: keep it in a pot.",
+   "In Greek mythology, mint takes its name from the nymph Minthe, said to have been transformed into the plant."
+  ]
  },
  "GK-RSM-001": {
   "id": "GK-RSM-001",
@@ -3336,7 +3512,11 @@
   },
   "weeklyFact": "Rosemary can flower as early as February in mild spells, making it one of the first useful nectar sources of the year for bees emerging from winter.",
   "category": "Herb",
-  "pollinatorFact": "Rosemary is a genuinely valuable early-season plant for bees, sometimes flowering as early as late winter when very few other nectar sources are available."
+  "pollinatorFact": "Rosemary is a genuinely valuable early-season plant for bees, sometimes flowering as early as late winter when very few other nectar sources are available.",
+  "weeklyFacts": [
+   "Rosemary can flower as early as February in mild spells, making it one of the first useful nectar sources of the year for bees emerging from winter.",
+   "Rosemary's Latin name, Salvia rosmarinus, literally translates to 'dew of the sea,' from its native habitat along Mediterranean coastlines."
+  ]
  },
  "GK-THY-001": {
   "id": "GK-THY-001",
@@ -3410,7 +3590,11 @@
   },
   "weeklyFact": "A single mature clump of flowering thyme can be visited by dozens of different bee species in a single afternoon \u2014 it's one of the best small-space plants for pollinators.",
   "category": "Herb",
-  "pollinatorFact": "Flowering thyme is a genuine pollinator hotspot \u2014 its low, mat-forming flowers are extremely popular with a wide range of bee species and are worth leaving unpicked at peak bloom."
+  "pollinatorFact": "Flowering thyme is a genuine pollinator hotspot \u2014 its low, mat-forming flowers are extremely popular with a wide range of bee species and are worth leaving unpicked at peak bloom.",
+  "weeklyFacts": [
+   "A single mature clump of flowering thyme can be visited by dozens of different bee species in a single afternoon \u2014 it's one of the best small-space plants for pollinators.",
+   "Ancient Greek soldiers were sometimes said to bathe in thyme-infused water before battle, believing it gave courage."
+  ]
  },
  "GK-SAG-001": {
   "id": "GK-SAG-001",
@@ -3484,6 +3668,784 @@
   },
   "weeklyFact": "Culinary sage is in the same genus as ornamental salvias \u2014 the tubular purple flowers, when the plant is left to bloom, look strikingly similar.",
   "category": "Herb",
-  "pollinatorFact": "Sage's tubular flowers, when left to bloom rather than harvested early, are a strong draw for bumblebees particularly well suited to the flower's shape."
+  "pollinatorFact": "Sage's tubular flowers, when left to bloom rather than harvested early, are a strong draw for bumblebees particularly well suited to the flower's shape.",
+  "weeklyFacts": [
+   "Culinary sage is in the same genus as ornamental salvias \u2014 the tubular purple flowers, when the plant is left to bloom, look strikingly similar.",
+   "Sage's Latin name, Salvia, comes from 'salvere' \u2014 'to be saved' or 'to heal' \u2014 reflecting its long history in traditional medicine."
+  ]
+ },
+ "GK-FOX-001": {
+  "id": "GK-FOX-001",
+  "slug": "foxglove",
+  "name": "Foxglove",
+  "latinName": "Digitalis purpurea",
+  "variety": "Common foxglove",
+  "subtitle": "Tall spires of tubular flowers, brilliant for bees and woodland-edge borders.",
+  "theme": "#8b5a9e",
+  "tags": [
+   "Biennial",
+   "Part shade",
+   "Cottage garden",
+   "Bee friendly",
+   "Toxic if eaten"
+  ],
+  "quickCare": {
+   "Water": "Water in dry spells, especially in the first year while establishing",
+   "Light": "Part shade to dappled sun; tolerates more shade than many flowering plants",
+   "Feeding": "Little feeding needed in reasonable soil",
+   "Pruning": "Cut spent flower spikes to the base; leave some to self-seed if wanted"
+  },
+  "notes": "All parts are toxic if eaten \u2014 worth knowing if pets or young children use the garden, though it's a normal, common cottage garden plant grown safely in countless gardens.",
+  "soil": "Moisture-retentive, humus-rich soil.",
+  "medium": "Peat-free compost with added leaf mould or organic matter.",
+  "seasonalActions": {
+   "Spring": "First-year plants form a leaf rosette; second-year plants send up flower spikes.",
+   "Summer": "Deadhead or leave spikes to set seed for next year's plants.",
+   "Autumn": "Foliage may persist through mild autumns.",
+   "Winter": "First-year rosettes are hardy and need no protection."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew",
+    "fix": "More common in dry, still conditions; improve airflow and water at the base."
+   },
+   {
+    "name": "Leaf spot",
+    "fix": "Usually cosmetic; remove badly affected leaves and improve airflow."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Hosta",
+   "Astilbe"
+  ],
+  "propagation": {
+   "season": "Self-seeds readily \u2014 the easiest method is simply to let a few spikes go to seed.",
+   "methods": "Sow fresh seed in late spring or summer for flowering the following year.",
+   "tips": "Biennial life cycle means no flowers in the first year; that's normal, not a fault.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "One of the best plants for long-tongued bumblebees, whose bodies fit almost perfectly into the tubular flowers."
+  },
+  "timeline": {
+   "Seeding": "Jun-Jul (for flowering the following year)",
+   "Flowering": "May-Jul in year two",
+   "Harvest": "N/A",
+   "Pruning": "Cut spikes to base after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Foxglove.",
+   "gallery": [
+    "Flower spike close-up",
+    "Whole plant showing height in a border",
+    "First-year leaf rosette",
+    "Bees visiting if captured"
+   ]
+  },
+  "weeklyFact": "Foxglove's Latin name Digitalis means 'finger-like,' describing how easily a flower slips over a fingertip.",
+  "weeklyFacts": [
+   "Foxglove's Latin name Digitalis means 'finger-like,' describing how easily a flower slips over a fingertip.",
+   "The heart medication digoxin was originally derived from foxglove, discovered after a folk remedy for 'dropsy' turned out to have real pharmacological effects."
+  ],
+  "category": "Perennial",
+  "pollinatorFact": "Foxglove's tubular flowers are shaped almost perfectly for bumblebees, which climb right inside to reach the nectar and pollen."
+ },
+ "GK-GER-001": {
+  "id": "GK-GER-001",
+  "slug": "hardy-geranium",
+  "name": "Hardy Geranium",
+  "latinName": "Geranium",
+  "variety": "Cranesbill",
+  "subtitle": "Reliable, long-flowering ground cover for borders \u2014 not to be confused with pelargoniums.",
+  "theme": "#a866b0",
+  "tags": [
+   "Perennial",
+   "Sun to part shade",
+   "Ground cover",
+   "Long flowering"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled in most varieties",
+   "Light": "Full sun to part shade depending on variety",
+   "Feeding": "Light spring feed; not a hungry plant",
+   "Pruning": "Cut back hard after first flush ('Chelsea chop' style) to encourage reflowering"
+  },
+  "notes": "Often confused with pelargoniums (also called 'geraniums' in shops) \u2014 true hardy geraniums are the fully frost-hardy border perennial, not the tender bedding plant.",
+  "soil": "Any reasonable, free-draining soil.",
+  "medium": "Peat-free compost, not fussy about richness.",
+  "seasonalActions": {
+   "Spring": "New growth flushes fast; divide congested clumps if needed.",
+   "Summer": "Cut back hard after the first flowering flush for a strong second bloom.",
+   "Autumn": "Tidy fading foliage; some varieties offer good autumn leaf colour.",
+   "Winter": "Mostly dies back to a low mound; fully hardy in most gardens."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Cut back hard after flowering to remove affected growth and encourage fresh, clean foliage."
+   },
+   {
+    "name": "Sprawling, untidy growth",
+    "fix": "Cut back hard mid-season rather than letting it flop \u2014 it responds by regrowing compact and reflowering."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Nepeta",
+   "Salvia"
+  ],
+  "propagation": {
+   "season": "Divide established clumps in spring or autumn \u2014 quick and reliable.",
+   "methods": "Basal cuttings can be taken in spring for varieties that don't divide as easily.",
+   "tips": "One of the easier perennials to propagate and share between borders.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An excellent, long-flowering source of nectar and pollen for bees over a genuinely long summer season."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "May-Sep, especially with a mid-season cut back",
+   "Harvest": "N/A",
+   "Pruning": "Hard cut-back after first flowering flush"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Hardy Geranium.",
+   "gallery": [
+    "Flower close-up",
+    "Whole clump as ground cover",
+    "Autumn foliage colour if applicable",
+    "Newly cut-back regrowth"
+   ]
+  },
+  "weeklyFact": "Hardy geranium seed pods are shaped like a crane's bill, which is exactly where the common name 'cranesbill' comes from.",
+  "weeklyFacts": [
+   "Hardy geranium seed pods are shaped like a crane's bill, which is exactly where the common name 'cranesbill' comes from.",
+   "There are over 400 species of true geranium found naturally across temperate regions worldwide, from alpine meadows to woodland edges."
+  ],
+  "category": "Perennial",
+  "pollinatorFact": "Hardy geraniums flower for an unusually long season and are a dependable, easy source of nectar for bees throughout summer."
+ },
+ "GK-VIB-001": {
+  "id": "GK-VIB-001",
+  "slug": "viburnum",
+  "name": "Viburnum",
+  "latinName": "Viburnum tinus",
+  "variety": "Evergreen viburnum",
+  "subtitle": "Reliable evergreen shrub with winter flowers and berries for birds.",
+  "theme": "#6a7a4a",
+  "tags": [
+   "Shrub",
+   "Evergreen",
+   "Winter flowers",
+   "Bird friendly"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light spring feed if growth is poor; usually undemanding",
+   "Pruning": "Trim after flowering to shape; avoid cutting off developing berries"
+  },
+  "notes": "One of the most reliable low-maintenance evergreen shrubs for year-round structure, flowering right through winter when little else is in bloom.",
+  "soil": "Any reasonable, well-drained soil.",
+  "medium": "Peat-free compost with added organic matter for pots.",
+  "seasonalActions": {
+   "Spring": "Trim to shape once flowering finishes.",
+   "Summer": "Water in dry spells, especially newly planted specimens.",
+   "Autumn": "Flower buds begin forming for the winter display ahead.",
+   "Winter": "Flowers through the coldest months \u2014 a genuinely valuable winter feature."
+  },
+  "problems": [
+   {
+    "name": "Viburnum beetle",
+    "fix": "Larvae skeletonise leaves in spring/summer; pick off by hand on small shrubs or accept minor damage, which rarely threatens the plant."
+   },
+   {
+    "name": "Bacterial leaf spot",
+    "fix": "Remove affected leaves and improve airflow; rarely serious."
+   }
+  ],
+  "companions": [
+   "Camellia",
+   "Rhododendron",
+   "Fern"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root reasonably well in a gritty mix.",
+   "methods": "Layering a low branch into the soil is a slower but reliable method.",
+   "tips": "Patience is needed \u2014 evergreen shrub cuttings are generally slower than soft perennials.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Winter flowers provide a genuinely valuable nectar source for any pollinators active during mild winter spells, and the berries feed birds afterward."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Nov-Mar, flowering through winter",
+   "Harvest": "Berries follow flowers into spring",
+   "Pruning": "Trim after flowering, avoiding developing berries"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Viburnum.",
+   "gallery": [
+    "Whole shrub showing evergreen form",
+    "Winter flower close-up",
+    "Berry cluster if present",
+    "New spring growth"
+   ]
+  },
+  "weeklyFact": "Viburnum tinus is one of the very few shrubs that reliably flowers through the coldest months of the year in a UK or Irish garden.",
+  "weeklyFacts": [
+   "Viburnum tinus is one of the very few shrubs that reliably flowers through the coldest months of the year in a UK or Irish garden.",
+   "The dark blue-black berries that follow the flowers are an important late-winter food source for garden birds when other options are scarce."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Viburnum's winter flowers are a valuable nectar source on any mild days when pollinators are active, and its berries are an important food source for birds afterward."
+ },
+ "GK-BOX-001": {
+  "id": "GK-BOX-001",
+  "slug": "boxwood",
+  "name": "Boxwood",
+  "latinName": "Buxus sempervirens",
+  "variety": "Common box",
+  "subtitle": "Classic clipped evergreen for hedging, edging and topiary.",
+  "theme": "#3f5c3a",
+  "tags": [
+   "Shrub",
+   "Evergreen",
+   "Hedging",
+   "Topiary",
+   "Slow growing"
+  ],
+  "quickCare": {
+   "Water": "Water well while establishing; drought-tolerant once settled, though pots need regular watering",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light spring and midsummer feed for hedging under regular clipping",
+   "Pruning": "Clip 1-2 times a year, typically late spring and late summer; avoid clipping in hot sun which can scorch cut edges"
+  },
+  "notes": "Box blight and box tree caterpillar have made this a higher-risk choice than it once was \u2014 inspect regularly and consider resistant alternatives like Ilex crenata for new plantings if either is present locally.",
+  "soil": "Fertile, well-drained soil.",
+  "medium": "Peat-free compost for pots and topiary specimens, with good drainage.",
+  "seasonalActions": {
+   "Spring": "Clip to shape once new growth has hardened slightly.",
+   "Summer": "Watch closely for box tree caterpillar and box blight, both increasingly common.",
+   "Autumn": "A second, lighter clip if needed to tidy shape before winter.",
+   "Winter": "Evergreen and hardy; protect topiary in pots from waterlogging."
+  },
+  "problems": [
+   {
+    "name": "Box blight",
+    "fix": "Brown, defoliating patches in humid weather; improve airflow, remove affected growth and disinfect tools between plants."
+   },
+   {
+    "name": "Box tree caterpillar",
+    "fix": "Rapidly strips foliage and can kill a plant in one season; inspect regularly and remove caterpillars/webbing by hand or consider resistant alternatives."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Lavender",
+   "Boxwood pairs with almost any formal planting"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root reasonably reliably in a gritty mix.",
+   "methods": "Very slow-growing, so cuttings take a long time to reach usable size.",
+   "tips": "A patience project \u2014 buying larger plants is often more practical for instant structure.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Wind-pollinated with small, inconspicuous flowers offering limited value to typical garden pollinators."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Small inconspicuous flowers in spring",
+   "Harvest": "N/A",
+   "Pruning": "Clip late spring and/or late summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Boxwood.",
+   "gallery": [
+    "Clipped shape from a distance",
+    "Foliage close-up",
+    "New spring growth",
+    "Any pest/disease signs for reference"
+   ]
+  },
+  "weeklyFact": "Traditional box parterres and topiary date back to Roman gardens, and some historic European box hedges are estimated to be centuries old.",
+  "weeklyFacts": [
+   "Traditional box parterres and topiary date back to Roman gardens, and some historic European box hedges are estimated to be centuries old.",
+   "Box tree caterpillar, a relatively recent arrival from East Asia, has become one of the most serious threats to garden box in the UK and Ireland over the past decade."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Box flowers are small and wind-pollinated, offering limited nectar value; its main garden role is structural rather than pollinator support."
+ },
+ "GK-STR-001": {
+  "id": "GK-STR-001",
+  "slug": "strawberry",
+  "name": "Strawberry",
+  "latinName": "Fragaria \u00d7 ananassa",
+  "variety": "Garden strawberry",
+  "subtitle": "Sweet, productive fruit for beds, pots and hanging baskets alike.",
+  "theme": "#c0392b",
+  "tags": [
+   "Edible",
+   "Fruit",
+   "Full sun",
+   "Containers",
+   "Runners"
+  ],
+  "quickCare": {
+   "Water": "Water consistently, especially as fruit swells \u2014 irregular watering causes small or split fruit",
+   "Light": "Full sun for the sweetest fruit",
+   "Feeding": "Balanced feed at planting; switch to potash-rich tomato-style feed once flowering",
+   "Pruning": "No pruning needed; trim off runners unless propagating, and remove old leaves after fruiting"
+  },
+  "notes": "Raise fruit off the soil with straw or matting once it starts to swell \u2014 this is the single best thing you can do to prevent slug damage and grey mould.",
+  "soil": "Fertile, well-drained soil, slightly acidic if possible.",
+  "medium": "Peat-free compost, ideally in a container or growing bag with good drainage for the cleanest fruit.",
+  "seasonalActions": {
+   "Spring": "Remove old winter-damaged leaves; feed as new growth starts.",
+   "Summer": "Water consistently, straw/mat under developing fruit, and net against birds.",
+   "Autumn": "Cut back foliage after fruiting; peg down runners if propagating.",
+   "Winter": "Mostly dormant; straw mulch protects the crown in colder gardens."
+  },
+  "problems": [
+   {
+    "name": "Grey mould (botrytis) on fruit",
+    "fix": "Worse in wet weather or fruit touching damp soil; raise fruit off the ground and improve airflow between plants."
+   },
+   {
+    "name": "Birds and slugs taking ripe fruit",
+    "fix": "Net against birds and use barriers or torchlight removal for slugs, especially once fruit starts to colour."
+   }
+  ],
+  "companions": [
+   "Chives",
+   "Lettuce",
+   "Runner Bean"
+  ],
+  "propagation": {
+   "season": "Runners (long trailing stems with baby plantlets) are the easiest method \u2014 peg a plantlet into a small pot while still attached, then sever once rooted.",
+   "methods": "Discard very old, tired plants after 3-4 years and replace with fresh runners.",
+   "tips": "One of the most beginner-friendly fruits to propagate, since it does most of the work itself.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Open flowers are excellent for bees, and good pollination directly improves fruit size and shape."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from runners or young plants",
+   "Flowering": "Apr-May",
+   "Harvest": "Jun-Jul, sometimes with a smaller autumn crop",
+   "Pruning": "Remove old leaves after fruiting; trim runners"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Strawberry.",
+   "gallery": [
+    "Whole plant showing fruit and foliage",
+    "Flower close-up",
+    "Ripening fruit",
+    "Runner with plantlet"
+   ]
+  },
+  "weeklyFact": "A strawberry's tiny seeds sit on the outside of the fruit, making it the only common fruit to wear its seeds like that.",
+  "weeklyFacts": [
+   "A strawberry's tiny seeds sit on the outside of the fruit, making it the only common fruit to wear its seeds like that.",
+   "Poor pollination is a common cause of oddly lumpy, misshapen strawberries \u2014 each 'seed' on the surface needs individual pollination for the fruit to swell evenly around it."
+  ],
+  "category": "Vegetable",
+  "pollinatorFact": "Strawberry flowers rely heavily on bees for good pollination, and poorly pollinated flowers are the main cause of small or misshapen fruit."
+ },
+ "GK-BEE-001": {
+  "id": "GK-BEE-001",
+  "slug": "beetroot",
+  "name": "Beetroot",
+  "latinName": "Beta vulgaris",
+  "variety": "Round beetroot",
+  "subtitle": "Easy, colourful root crop that also gives you edible leaves.",
+  "theme": "#8e2043",
+  "tags": [
+   "Edible",
+   "Root crop",
+   "Easy from seed",
+   "Cool season"
+  ],
+  "quickCare": {
+   "Water": "Water consistently \u2014 irregular watering causes woody, tough roots",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light feed at sowing; avoid excess nitrogen, which favours leaves over roots",
+   "Pruning": "Thin seedlings early; harvest leaves sparingly without stripping the whole plant"
+  },
+  "notes": "Each beetroot 'seed' is actually a small cluster of several seeds, so thinning is usually needed even from a sparse-looking sowing.",
+  "soil": "Free-draining, fertile soil, ideally not recently manured.",
+  "medium": "Peat-free compost with added grit for containers; avoid overly rich, freshly manured soil.",
+  "seasonalActions": {
+   "Spring": "Sow direct once soil is workable, thin seedlings as they emerge.",
+   "Summer": "Water consistently and harvest young roots as needed.",
+   "Autumn": "Main harvest window; lift before hard frost.",
+   "Winter": "Store lifted roots in a cool, frost-free place if not left in the ground."
+  },
+  "problems": [
+   {
+    "name": "Woody, tough roots",
+    "fix": "Usually from inconsistent watering or leaving roots too long before harvest; water evenly and pick at a reasonable size."
+   },
+   {
+    "name": "Bolting (flowering early)",
+    "fix": "Triggered by cold snaps after sowing or transplant stress; sow slightly later or choose bolt-resistant varieties."
+   }
+  ],
+  "companions": [
+   "Onion",
+   "Lettuce",
+   "Cabbage"
+  ],
+  "propagation": {
+   "season": "Sow direct in small clusters, thinning to the strongest seedling per cluster.",
+   "methods": "Successive sowings every few weeks give a longer harvest window.",
+   "tips": "One of the easiest and most forgiving root crops for a first-time grower.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "If allowed to bolt and flower, beetroot's small greenish flowers attract some pollinators, though most crops are harvested well before this stage."
+  },
+  "timeline": {
+   "Seeding": "Apr-Jul",
+   "Flowering": "Only if bolting (undesirable)",
+   "Harvest": "Jun-Oct",
+   "Pruning": "Thin seedlings early in the season"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Beetroot.",
+   "gallery": [
+    "Whole row or bed",
+    "Root at harvest, cut open to show rings",
+    "Leafy top growth",
+    "Thinned seedlings"
+   ]
+  },
+  "weeklyFact": "Beetroot's deep red colour comes from betalain pigments, the same family of compounds partly responsible for the reddish-purple colour of some pokeweed and bougainvillea species.",
+  "weeklyFacts": [
+   "Beetroot's deep red colour comes from betalain pigments, the same family of compounds partly responsible for the reddish-purple colour of some pokeweed and bougainvillea species.",
+   "Sugar beet, a close relative of garden beetroot, is a major source of table sugar in Europe, alongside sugar cane."
+  ],
+  "category": "Vegetable",
+  "pollinatorFact": "If a beetroot bolts and flowers, its small clustered flowers can attract some pollinators, though most crops are harvested long before flowering occurs."
+ },
+ "GK-KAL-001": {
+  "id": "GK-KAL-001",
+  "slug": "kale",
+  "name": "Kale",
+  "latinName": "Brassica oleracea",
+  "variety": "Curly kale",
+  "subtitle": "Tough, productive winter green that improves after a frost.",
+  "theme": "#3f6b3f",
+  "tags": [
+   "Edible",
+   "Hardy",
+   "Winter crop",
+   "Cut and come again"
+  ],
+  "quickCare": {
+   "Water": "Water consistently while establishing; fairly drought-tolerant once mature",
+   "Light": "Full sun to light shade",
+   "Feeding": "Feed at planting; a midsummer top-up feed helps sustain winter cropping",
+   "Pruning": "No pruning; pick outer leaves regularly to encourage continued production"
+  },
+  "notes": "Flavour genuinely improves after the first frost \u2014 the cold triggers the plant to convert starches to sugars, softening the bitterness.",
+  "soil": "Fertile, firm soil, ideally not freshly dug.",
+  "medium": "Peat-free compost enriched with garden compost for containers.",
+  "seasonalActions": {
+   "Spring": "Sow or transplant young plants; net against pigeons and butterflies from the start.",
+   "Summer": "Keep well watered as plants establish through summer heat.",
+   "Autumn": "Main harvest period begins as leaves mature and cold weather improves flavour.",
+   "Winter": "Harvest through the coldest months \u2014 one of the most reliable winter crops."
+  },
+  "problems": [
+   {
+    "name": "Cabbage white caterpillars",
+    "fix": "Net plants from planting to prevent egg-laying, since kale is a preferred host for both cabbage white species."
+   },
+   {
+    "name": "Pigeon damage",
+    "fix": "Netting is essential in many gardens \u2014 pigeons can strip a kale bed bare in a single visit."
+   }
+  ],
+  "companions": [
+   "Nasturtium",
+   "Onion",
+   "Beetroot"
+  ],
+  "propagation": {
+   "season": "Sow direct or in modules from late spring for a winter crop.",
+   "methods": "Successive sowings extend the harvest window into different stages.",
+   "tips": "Reliable and forgiving from seed, one of the easier brassicas for a first attempt.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "If left to bolt in its second year, kale's yellow flowers attract bees and hoverflies, though it's usually harvested well before this stage."
+  },
+  "timeline": {
+   "Seeding": "May-Jul",
+   "Flowering": "Only if left to bolt in year two",
+   "Harvest": "Sep-Mar, improving after first frost",
+   "Pruning": "Pick outer leaves regularly through the harvest season"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Kale.",
+   "gallery": [
+    "Whole plant showing leaf structure",
+    "Close-up of leaf texture",
+    "Plant after a frost",
+    "Netting in place against pests"
+   ]
+  },
+  "weeklyFact": "Kale is in the same species as cabbage, broccoli and Brussels sprouts \u2014 all bred from the same wild Mediterranean brassica, just selected for very different traits.",
+  "weeklyFacts": [
+   "Kale is in the same species as cabbage, broccoli and Brussels sprouts \u2014 all bred from the same wild Mediterranean brassica, just selected for very different traits.",
+   "A hard frost doesn't damage kale the way it does more tender crops \u2014 it actually improves the flavour by converting stored starches into sugars."
+  ],
+  "category": "Vegetable",
+  "pollinatorFact": "If kale bolts and flowers in its second year, its yellow flowers are visited readily by bees and hoverflies, though most plants are harvested as a leaf crop before this happens."
+ },
+ "GK-CHI-001": {
+  "id": "GK-CHI-001",
+  "slug": "chives",
+  "name": "Chives",
+  "latinName": "Allium schoenoprasum",
+  "variety": "Common chives",
+  "subtitle": "Easy, edible, clump-forming herb with pretty purple pollinator-friendly flowers.",
+  "theme": "#9b5aa0",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Full sun",
+   "Pollinator",
+   "Easy from seed"
+  ],
+  "quickCare": {
+   "Water": "Water regularly; likes consistently moist soil more than most Mediterranean herbs",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light feed in spring",
+   "Pruning": "Cut back hard after flowering to encourage fresh, tender new growth"
+  },
+  "notes": "Let some flowers open before cutting them all back \u2014 the purple pompom flowers are genuinely one of the better herb-garden plants for bees.",
+  "soil": "Moisture-retentive, fertile soil.",
+  "medium": "Peat-free compost; more tolerant of regular watering than rosemary or thyme.",
+  "seasonalActions": {
+   "Spring": "New growth emerges quickly; divide congested clumps if needed.",
+   "Summer": "Let some flowers open for pollinators before cutting back for a fresh flush of leaves.",
+   "Autumn": "Cut back again if growth continues; otherwise leave to die back naturally.",
+   "Winter": "Dies back to the ground in cold gardens; fully hardy and reliable."
+  },
+  "problems": [
+   {
+    "name": "Rust (orange spots on leaves)",
+    "fix": "Remove and destroy affected leaves; avoid overhead watering and improve airflow."
+   },
+   {
+    "name": "Clump becoming congested and flowering less",
+    "fix": "Divide every few years in spring to keep it vigorous."
+   }
+  ],
+  "companions": [
+   "Carrot",
+   "Strawberry",
+   "Tomato"
+  ],
+  "propagation": {
+   "season": "Division of established clumps in spring is the easiest and most reliable method.",
+   "methods": "Sow seed in spring for a slower but simple start from scratch.",
+   "tips": "A very forgiving herb for propagation \u2014 hard to get wrong.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Chives' purple pompom flowers are genuinely excellent for bees and are one of the better pollinator plants in a typical herb garden."
+  },
+  "timeline": {
+   "Seeding": "Mar-May",
+   "Flowering": "May-Jul",
+   "Harvest": "N/A \u2014 harvested as leaves",
+   "Pruning": "Cut back hard after flowering finishes"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Chives.",
+   "gallery": [
+    "Whole clump showing flowers",
+    "Flower close-up",
+    "Leaf detail before flowering",
+    "Newly divided clump"
+   ]
+  },
+  "weeklyFact": "Chives are the smallest species in the onion family that's widely cultivated, and unlike most alliums they're grown as much for the leaves as anything else.",
+  "weeklyFacts": [
+   "Chives are the smallest species in the onion family that's widely cultivated, and unlike most alliums they're grown as much for the leaves as anything else.",
+   "The purple pompom chive flower is actually made up of dozens of tiny individual star-shaped flowers clustered together."
+  ],
+  "category": "Herb",
+  "pollinatorFact": "Chive flowers are a genuinely strong draw for bees, and leaving a few clumps to flower before cutting back is a simple way to support pollinators in a working herb garden."
+ },
+ "GK-CORI-001": {
+  "id": "GK-CORI-001",
+  "slug": "coriander",
+  "name": "Coriander",
+  "latinName": "Coriandrum sativum",
+  "variety": "Cilantro",
+  "subtitle": "Fast-growing, quick-to-bolt herb best sown often in small batches.",
+  "theme": "#4a7a3f",
+  "tags": [
+   "Herb",
+   "Edible",
+   "Bolts quickly",
+   "Sow little and often"
+  ],
+  "quickCare": {
+   "Water": "Water consistently; drying out speeds up bolting",
+   "Light": "Light shade in hot weather; full sun in cooler conditions",
+   "Feeding": "Light feed only; too rich encourages bolting over leaf growth",
+   "Pruning": "No pruning; harvest leaves regularly and pull plants once they bolt"
+  },
+  "notes": "Bolts (runs to flower) very readily in hot or dry conditions \u2014 sow small batches every 2-3 weeks rather than expecting one sowing to last all summer.",
+  "soil": "Free-draining, moderately fertile soil.",
+  "medium": "Peat-free compost; avoid letting it dry out, which triggers bolting.",
+  "seasonalActions": {
+   "Spring": "Sow small batches every couple of weeks as soon as the soil is workable.",
+   "Summer": "Provide light shade in the hottest part of the day to slow bolting.",
+   "Autumn": "Sow again for a fresh late-season crop in cooler weather.",
+   "Winter": "Struggles outdoors in cold; treat as a windowsill herb through winter."
+  },
+  "problems": [
+   {
+    "name": "Bolting (running to flower)",
+    "fix": "The main coriander problem; sow small amounts often, keep watered and provide light shade in hot weather rather than fighting a single sowing."
+   },
+   {
+    "name": "Aphids on new growth",
+    "fix": "Wash off with water or encourage ladybirds; rarely serious."
+   }
+  ],
+  "companions": [
+   "Tomato",
+   "Carrot",
+   "Chilli"
+  ],
+  "propagation": {
+   "season": "Sow direct where it is to grow; coriander dislikes root disturbance from transplanting.",
+   "methods": "Successive small sowings are far more reliable than trying to keep one batch going.",
+   "tips": "Save seed (coriander seed itself, used as a spice) from a few plants left to bolt and set seed.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Left to bolt and flower, coriander's small white-pink flower umbels are popular with hoverflies and small bees."
+  },
+  "timeline": {
+   "Seeding": "Mar-Aug in small successive batches",
+   "Flowering": "If left to bolt (usually undesirable for leaf harvest)",
+   "Harvest": "4-6 weeks after sowing, before bolting",
+   "Pruning": "N/A"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Coriander.",
+   "gallery": [
+    "Whole plant before bolting",
+    "Leaf close-up",
+    "Flower umbel if left to bolt",
+    "Seed heads if left to set seed"
+   ]
+  },
+  "weeklyFact": "Coriander leaf and coriander seed (used whole or ground as a spice) come from exactly the same plant, harvested at different stages.",
+  "weeklyFacts": [
+   "Coriander leaf and coriander seed (used whole or ground as a spice) come from exactly the same plant, harvested at different stages.",
+   "A genetic variation affects whether some people perceive coriander leaf as tasting fresh and citrusy or distinctly soapy \u2014 it's a real, documented taste-perception difference, not just a preference."
+  ],
+  "category": "Herb",
+  "pollinatorFact": "If allowed to bolt and flower, coriander's small flower umbels are genuinely useful for hoverflies and small bees, even though most plants are picked as leaves before reaching this stage."
+ },
+ "GK-CHIL-001": {
+  "id": "GK-CHIL-001",
+  "slug": "chilli",
+  "name": "Chilli Pepper",
+  "latinName": "Capsicum annuum",
+  "variety": "Mixed chilli",
+  "subtitle": "Warmth-loving fruiting plant that rewards a long, hot growing season.",
+  "theme": "#c0392b",
+  "tags": [
+   "Edible",
+   "Full sun",
+   "Warmth loving",
+   "Containers"
+  ],
+  "quickCare": {
+   "Water": "Water consistently; avoid letting compost dry out fully or sit waterlogged",
+   "Light": "Full sun, as much warmth and light as possible",
+   "Feeding": "Weekly high-potash feed once flowering and fruiting starts",
+   "Pruning": "No pruning needed; pinch the growing tip early to encourage a bushier plant"
+  },
+  "notes": "Needs a long, warm season to ripen well \u2014 starting seed early indoors in late winter makes a real difference in cooler climates.",
+  "soil": "Fertile, free-draining soil or compost.",
+  "medium": "Peat-free compost, ideally with added perlite for good drainage in containers.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in warmth as early as January-February for the longest possible season.",
+   "Summer": "Move outside or into a greenhouse once nights are reliably warm; feed weekly once fruiting.",
+   "Autumn": "Bring pots indoors before the first cold nights to keep ripening fruit going as long as possible.",
+   "Winter": "Struggles outdoors; treat as a houseplant/windowsill crop through winter if keeping a plant going."
+  },
+  "problems": [
+   {
+    "name": "Flowers dropping without setting fruit",
+    "fix": "Often low humidity, heat stress, or lack of pollinating insects indoors; mist occasionally and gently shake flowering stems to help self-pollination."
+   },
+   {
+    "name": "Aphids",
+    "fix": "Wash off with water or encourage ladybirds; check the undersides of leaves regularly, as chillies are a common target."
+   }
+  ],
+  "companions": [
+   "Tomato",
+   "Basil",
+   "Marigold"
+  ],
+  "propagation": {
+   "season": "Sow seed indoors in warmth \u2014 bottom heat from a propagator speeds and improves germination significantly.",
+   "methods": "Chilli seed can be slow and uneven to germinate; patience is normal, not a sign of failure.",
+   "tips": "Harden off gradually before moving plants outside for the summer.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Chilli flowers are self-pollinating but still benefit from insect visits or gentle hand pollination, especially in a greenhouse or indoors."
+  },
+  "timeline": {
+   "Seeding": "Jan-Mar indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Jul-Oct, or until first cold nights",
+   "Pruning": "Pinch growing tip early to encourage bushiness"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Chilli Pepper.",
+   "gallery": [
+    "Whole plant showing fruit",
+    "Flower close-up",
+    "Fruit ripening through colour stages",
+    "Harvest of ripe chillies"
+   ]
+  },
+  "weeklyFact": "A chilli's heat is measured in Scoville Heat Units, a scale created in 1912 by pharmacist Wilbur Scoville using a panel of tasters rather than any lab equipment.",
+  "weeklyFacts": [
+   "A chilli's heat is measured in Scoville Heat Units, a scale created in 1912 by pharmacist Wilbur Scoville using a panel of tasters rather than any lab equipment.",
+   "The same chilli plant can produce fruit that ripens from green through to red, yellow or purple depending on variety, all perfectly edible at any stage."
+  ],
+  "category": "Vegetable",
+  "pollinatorFact": "Chilli flowers are self-pollinating but set fruit more reliably with help from visiting insects or a gentle shake to release pollen, especially when grown under cover."
  }
 }

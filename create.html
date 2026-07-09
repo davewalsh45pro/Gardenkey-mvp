@@ -1,12 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create GardenKey Tester Plant</title><style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:760px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e6f3dd,#f8e5bc)}h1{font-size:46px;line-height:1;margin:10px 0}.field{margin:12px 0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;padding:13px;border-radius:16px;border:1px solid #d8cfbe;background:white}textarea{min-height:80px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px;cursor:pointer}.muted{color:#65746a}.small{font-size:13px;color:#65746a}</style></head><body><div class="wrap"><a href="index.html">← GardenKey home</a><section class="hero"><h1>Create a tester plant</h1><p>This does not edit the shared GardenKey library. It creates a draft so Dave can review it in the admin builder and add it as an approved entry.</p></section><section class="card">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create GardenKey Tester Plant</title><style>*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:760px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e6f3dd,#f8e5bc)}h1{font-size:46px;line-height:1;margin:10px 0}.field{margin:12px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:13px;border-radius:16px;border:1px solid #d8cfbe;background:white;min-height:46px}textarea{min-height:80px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px;cursor:pointer}.muted{color:#65746a}.small{font-size:13px;color:#65746a}.suggested{background:#eef3e8;border:1px solid #d7e3cc;border-radius:18px;padding:14px;margin:6px 0 14px}.suggested b{display:block;margin-bottom:6px}.suggested .row{margin:3px 0;font-size:14px}</style></head><body><div class="wrap"><a href="index.html">← GardenKey home</a><section class="hero"><h1>Create a tester plant</h1><p>This does not edit the shared GardenKey library. It creates a draft so Dave can review it in the admin builder and add it as an approved entry.</p></section><section class="card">
 
 <div class="field"><label>GardenKey ID (draft)</label><input id="id" readonly></div>
-<div class="field"><label>What plant is it?</label><input id="name" placeholder="e.g. Gladiolus, Hosta, Dahlia"></div>
+<div class="field"><label>What plant is it?</label><input id="name" placeholder="e.g. Gladiolus, Hosta, Dahlia" oninput="lookupPlant()"></div>
+<div id="suggestedCare"></div>
 <div class="field"><label>Plant group</label><select id="cat"><option>Herbaceous perennial</option><option>Annual</option><option>Bulb</option><option>Corm</option><option>Tuber</option><option>Vegetable</option><option>Herb</option><option>Shrub</option><option>Tree</option><option>Fern</option><option>Succulent</option><option>Houseplant</option><option>Mixed pot / border</option></select></div>
 <div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Bishop of Llandaff' or unknown"></div>
 <div class="field"><label>Where it's growing</label><input id="location" placeholder="e.g. Balcony pot, front border, seed tray"></div>
-<div class="field"><label>Light</label><input id="light" placeholder="e.g. full sun, part shade, shade"></div>
-<div class="field"><label>Watering note</label><input id="water" placeholder="e.g. likes to dry slightly between watering"></div>
+<p class="small" style="margin-top:16px"><b>Your own observations</b> — how you're actually caring for this specific plant, which might differ from general advice above (different pot, microclimate, or just what's worked for you).</p>
+<div class="field"><label>Light it's actually getting</label><input id="light" placeholder="e.g. full sun, part shade, shade"></div>
+<div class="field"><label>How you're watering it</label><input id="water" placeholder="e.g. likes to dry slightly between watering"></div>
 <div class="field"><label>Feeding note (optional)</label><input id="feeding" placeholder="e.g. monthly liquid feed in summer"></div>
 <div class="field"><label>Soil / medium</label><input id="soil" placeholder="e.g. compost and perlite, gritty mix, humus-rich soil"></div>
 <div class="field"><label>Personal notes</label><textarea id="notes" placeholder="e.g. bought in May, planted near violas, not sure if it will overwinter"></textarea></div>
@@ -18,6 +20,24 @@
 
 function makeId(){const n=Date.now().toString().slice(-6);return 'GK-DRAFT-'+n}
 id.value=makeId();
+
+let library = {};
+fetch('plants.json', {cache:'no-store'}).then(r=>r.json()).then(d=>{library=d}).catch(()=>{});
+
+function lookupPlant(){
+  const q = name.value.trim().toLowerCase();
+  const match = q.length > 1 ? Object.values(library).find(p => p.name.toLowerCase() === q) : null;
+  if(!match){ suggestedCare.innerHTML = ''; return; }
+  const c = match.quickCare || {};
+  suggestedCare.innerHTML = `<div class="suggested">
+    <b>Recommended care for ${match.name} (from the GardenKey library)</b>
+    <div class="row">💧 Water: ${c.Water||'—'}</div>
+    <div class="row">☀️ Light: ${c.Light||'—'}</div>
+    <div class="row">🌱 Feeding: ${c.Feeding||'—'}</div>
+    <div class="row">✂️ Pruning: ${c.Pruning||'—'}</div>
+    <p class="small" style="margin:8px 0 0">This is general guidance already in the library — fill in your own notes below with what you're actually doing for this specific plant, which is genuinely useful even if it matches the general advice exactly.</p>
+  </div>`;
+}
 
 function payload(){
   return {

@@ -1,6 +1,15 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Admin</title><style>
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:820px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#dcefd1,#f7e7be)}h1{font-size:42px;line-height:1;margin:10px 0}h2{margin-top:0}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white}.field{margin:12px 0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;padding:12px;border-radius:16px;border:1px solid #d8cfbe;background:white}textarea{min-height:70px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row4{grid-template-columns:repeat(4,1fr)}}.small{font-size:13px;color:#65746a}.list a{display:flex;justify-content:space-between;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin:8px 0;color:inherit;text-decoration:none}pre{background:#12241b;color:#d8f0c9;padding:14px;border-radius:16px;overflow:auto;font-size:12px;max-height:260px}.badge{display:inline-block;background:#e0ead9;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800;margin-left:8px}.status{font-size:13px;font-weight:800;margin:6px 0}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}
-</style></head><body><div class="wrap">
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:820px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#dcefd1,#f7e7be)}h1{font-size:42px;line-height:1;margin:10px 0}h2{margin-top:0}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white}.field{margin:12px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:16px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}textarea{min-height:70px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row4{grid-template-columns:repeat(4,1fr)}}.small{font-size:13px;color:#65746a}.list a{display:flex;justify-content:space-between;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin:8px 0;color:inherit;text-decoration:none}pre{background:#12241b;color:#d8f0c9;padding:14px;border-radius:16px;overflow:auto;font-size:12px;max-height:260px}.badge{display:inline-block;background:#e0ead9;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800;margin-left:8px}.status{font-size:13px;font-weight:800;margin:6px 0}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.gate{max-width:420px;margin:15vh auto;padding:24px;background:#fffaf1;border:1px solid #e2d7c4;border-radius:24px;text-align:center}
+</style></head><body>
+<div id="gateScreen" class="gate">
+  <h2>GardenKey Admin</h2>
+  <p class="small">This area is for Dave only. Enter the passphrase to continue.</p>
+  <input id="gatePass" type="password" placeholder="Passphrase" style="margin:10px 0">
+  <button class="btn" onclick="tryGate()">Enter</button>
+  <p id="gateError" class="status err"></p>
+  <p class="small" style="margin-top:16px">Note: this is a basic deterrent, not real security — anyone who views this page's source code could find the passphrase. It stops casual testers from wandering in, nothing more. Change GATE_PASSPHRASE in the code to something only you know.</p>
+</div>
+<div class="wrap" id="adminContent" style="display:none">
 <a href="index.html">← GardenKey home</a>
 <section class="hero"><h1>Admin builder</h1><p>Trusted editor area — loads the live <code>plants.json</code>, lets you add or review an entry in the correct schema, and exports the updated file to commit back to GitHub. Testers should use <a href="create.html">Create tester plant</a> instead; they cannot edit the shared library from here.</p></section>
 
@@ -44,9 +53,31 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-ser
 <textarea id="draftPaste" placeholder="Paste a create.html draft JSON here, then click the button above" style="display:none;margin-top:8px"></textarea>
 </section>
 
-<section class="card"><h2>3. Export updated plants.json</h2><p class="small">Downloads the full library (existing plants + your additions) as <code>plants.json</code>, ready to commit to the repo.</p><button class="btn" onclick="exportLibrary()">Download plants.json</button><button class="btn secondary" onclick="previewLibrary()">Preview JSON</button><pre id="preview" style="display:none"></pre></section>
+<section class="card"><h2>3. Export updated plants.json</h2>
+<div class="info"><b>Download plants.json</b> saves the full library (everything loaded in step 1, plus anything you've added/changed here) as one file on your device. This is a one-time snapshot, not a live save — you then need to upload that file to the GitHub repo yourself to make it live on the actual site. Nothing here saves automatically to GitHub.</div>
+<p class="small">Downloads the full library (existing plants + your additions) as <code>plants.json</code>, ready to commit to the repo.</p>
+<button class="btn" onclick="exportLibrary()">Download plants.json</button><button class="btn secondary" onclick="previewLibrary()">Preview JSON</button><pre id="preview" style="display:none"></pre></section>
 
 </div><script>
+// Basic deterrent only — change this to something only you know.
+// Anyone who views this page's source can read it, so don't rely on this
+// for anything sensitive; it just keeps casual testers from wandering in.
+const GATE_PASSPHRASE = "gardenkey2026";
+
+function tryGate(){
+  if(gatePass.value === GATE_PASSPHRASE){
+    sessionStorage.setItem('gk_admin_ok', '1');
+    gateScreen.style.display = 'none';
+    adminContent.style.display = 'block';
+  } else {
+    gateError.textContent = 'Incorrect passphrase.';
+  }
+}
+gatePass && gatePass.addEventListener('keydown', e => { if(e.key === 'Enter') tryGate(); });
+if(sessionStorage.getItem('gk_admin_ok') === '1'){
+  gateScreen.style.display = 'none';
+  adminContent.style.display = 'block';
+}
 let library = {};
 
 async function loadLibrary(){
