@@ -1141,7 +1141,6 @@
   "tags": [
    "Spring flowers",
    "Full sun",
-   "Bulb",
    "Containers"
   ],
   "quickCare": {
@@ -1216,7 +1215,6 @@
   "subtitle": "Fast, cheerful annual that tracks the sun and feeds the birds.",
   "theme": "#e8b23a",
   "tags": [
-   "Annual",
    "Full sun",
    "Pollinator",
    "Easy from seed"
@@ -1293,7 +1291,6 @@
   "subtitle": "Bright, reliable bedding annual, often used to companion-plant vegetables.",
   "theme": "#e88f2e",
   "tags": [
-   "Annual",
    "Full sun",
    "Companion plant",
    "Easy from seed"
@@ -1370,7 +1367,6 @@
   "subtitle": "Fast, edible, brilliantly easy \u2014 flowers, leaves and seed pods are all edible.",
   "theme": "#e2622f",
   "tags": [
-   "Annual",
    "Edible flowers",
    "Poor soil ok",
    "Easy from seed"
@@ -1524,7 +1520,6 @@
   "subtitle": "Glossy evergreen shrub with striking late-winter to spring flowers.",
   "theme": "#c14b6a",
   "tags": [
-   "Shrub",
    "Acid soil",
    "Part shade",
    "Evergreen"
@@ -1601,7 +1596,6 @@
   "subtitle": "Bold spring shrub for acidic, woodland-style planting.",
   "theme": "#a4478f",
   "tags": [
-   "Shrub",
    "Acid soil",
    "Part shade",
    "Spring flowers"
@@ -1744,7 +1738,8 @@
   "weeklyFacts": [
    "Crocosmia was originally bred from South African species and has since naturalised so successfully in parts of the UK and Ireland that some varieties are considered near-wild.",
    "Crocosmia corms form in a chain, each year's corm growing on top of the last \u2014 lifting one often reveals several seasons' history."
-  ]
+  ],
+  "commonName": "Montbretia"
  },
  "GK-NEP-001": {
   "id": "GK-NEP-001",
@@ -1755,7 +1750,6 @@
   "subtitle": "Soft, silvery, long-flowering border edging that pollinators love.",
   "theme": "#8b7fc7",
   "tags": [
-   "Perennial",
    "Full sun",
    "Drought tolerant",
    "Pollinator"
@@ -1821,7 +1815,8 @@
   "weeklyFacts": [
    "Nepeta is in the same plant family as true mint, which is part of why bees find it just as irresistible.",
    "The compound that makes cats roll around in catmint, nepetalactone, is being studied by scientists as a possible natural insect repellent."
-  ]
+  ],
+  "commonName": "Catmint"
  },
  "GK-AST-001": {
   "id": "GK-AST-001",
@@ -1832,7 +1827,6 @@
   "subtitle": "Feathery flower plumes for damp, shaded borders.",
   "theme": "#c26b9e",
   "tags": [
-   "Perennial",
    "Shade",
    "Moist soil",
    "Feathery flowers"
@@ -1898,7 +1892,8 @@
   "weeklyFacts": [
    "Astilbe plumes are made up of hundreds of tiny individual flowers, which is why they read as feathery from a distance but detailed up close.",
    "Astilbe plumes hold their shape well when dried, making them a popular choice for dried flower arrangements."
-  ]
+  ],
+  "commonName": "False Goat's Beard"
  },
  "GK-PLI-001": {
   "id": "GK-PLI-001",
@@ -1909,7 +1904,6 @@
   "subtitle": "Elegant, shade-tolerant houseplant that tells you clearly when it's thirsty.",
   "theme": "#3f7a4f",
   "tags": [
-   "Houseplant",
    "Low light",
    "Air-purifying",
    "Easy care"
@@ -1986,7 +1980,6 @@
   "subtitle": "Architectural, near-indestructible houseplant for low-light corners.",
   "theme": "#2f5c4a",
   "tags": [
-   "Houseplant",
    "Low light",
    "Drought tolerant",
    "Very easy"
@@ -2063,7 +2056,6 @@
   "subtitle": "Bold, iconic split-leaf houseplant that gets genuinely large.",
   "theme": "#2e6b3f",
   "tags": [
-   "Houseplant",
    "Bright indirect light",
    "Climbing",
    "Statement plant"
@@ -2140,7 +2132,6 @@
   "subtitle": "Trailing, near-unkillable houseplant, great for beginners and shelves.",
   "theme": "#4a8f3f",
   "tags": [
-   "Houseplant",
    "Low light tolerant",
    "Trailing",
    "Beginner friendly"
@@ -2217,7 +2208,6 @@
   "subtitle": "Fast-growing, forgiving houseplant that produces its own baby plantlets.",
   "theme": "#5a8f3f",
   "tags": [
-   "Houseplant",
    "Low light tolerant",
    "Easy propagation",
    "Pet consideration"
@@ -2294,7 +2284,6 @@
   "subtitle": "Sun-loving succulent with genuinely useful sap, if you can avoid overwatering it.",
   "theme": "#5a9463",
   "tags": [
-   "Succulent",
    "Full sun",
    "Drought tolerant",
    "Useful sap"
@@ -2371,7 +2360,6 @@
   "subtitle": "Glossy, extremely low-maintenance houseplant for low light and forgetful waterers.",
   "theme": "#2c5c3a",
   "tags": [
-   "Houseplant",
    "Low light",
    "Drought tolerant",
    "Very easy"
@@ -2448,7 +2436,6 @@
   "subtitle": "Elegant flowering houseplant, grown in bark rather than soil.",
   "theme": "#c4569e",
   "tags": [
-   "Houseplant",
    "Bright indirect light",
    "Special compost",
    "Reblooms"
@@ -2525,7 +2512,6 @@
   "subtitle": "Classic rosette-shaped succulent, ideal for sunny windowsills and mixed planters.",
   "theme": "#7fa876",
   "tags": [
-   "Succulent",
    "Full sun",
    "Drought tolerant",
    "Rosette shape"
@@ -2602,7 +2588,6 @@
   "subtitle": "Tough, trailing or upright succulent, useful for pots, borders and green roofs.",
   "theme": "#7d9e5a",
   "tags": [
-   "Succulent",
    "Full sun",
    "Very drought tolerant",
    "Ground cover or trailing"
@@ -2679,7 +2664,6 @@
   "subtitle": "Small, patterned succulent that tolerates lower light better than most.",
   "theme": "#5f8f6a",
   "tags": [
-   "Succulent",
    "Bright indirect light",
    "Compact",
    "Low light tolerant for a succulent"
@@ -2756,7 +2740,6 @@
   "subtitle": "Chunky, tree-like succulent that can live for decades with minimal fuss.",
   "theme": "#4f8f5a",
   "tags": [
-   "Succulent",
    "Full sun",
    "Drought tolerant",
    "Long-lived"
@@ -2833,7 +2816,6 @@
   "subtitle": "Striking architectural succulent with rosettes held on visible stems.",
   "theme": "#5a6b4f",
   "tags": [
-   "Succulent",
    "Full sun",
    "Unusual growth cycle",
    "Architectural"
@@ -3295,7 +3277,6 @@
   "subtitle": "Fragrant kitchen herb that rewards regular picking with bushier growth.",
   "theme": "#3f7a3f",
   "tags": [
-   "Herb",
    "Edible",
    "Warmth loving",
    "Pinch regularly"
@@ -3372,7 +3353,6 @@
   "subtitle": "Vigorous, fast-spreading herb \u2014 best kept contained in its own pot.",
   "theme": "#3f8f5f",
   "tags": [
-   "Herb",
    "Edible",
    "Very vigorous",
    "Best in containers"
@@ -3449,7 +3429,6 @@
   "subtitle": "Woody, drought-tolerant Mediterranean herb, useful year-round.",
   "theme": "#5c6b4a",
   "tags": [
-   "Herb",
    "Edible",
    "Full sun",
    "Drought tolerant",
@@ -3527,7 +3506,6 @@
   "subtitle": "Low, drought-tolerant herb that doubles as excellent ground cover for bees.",
   "theme": "#7a8f5a",
   "tags": [
-   "Herb",
    "Edible",
    "Full sun",
    "Drought tolerant",
@@ -3605,7 +3583,6 @@
   "subtitle": "Soft, silvery-leaved herb with strong flavour and good winter structure.",
   "theme": "#7a8f6a",
   "tags": [
-   "Herb",
    "Edible",
    "Full sun",
    "Evergreen",
@@ -3683,7 +3660,6 @@
   "subtitle": "Tall spires of tubular flowers, brilliant for bees and woodland-edge borders.",
   "theme": "#8b5a9e",
   "tags": [
-   "Biennial",
    "Part shade",
    "Cottage garden",
    "Bee friendly",
@@ -3749,7 +3725,7 @@
    "Foxglove's Latin name Digitalis means 'finger-like,' describing how easily a flower slips over a fingertip.",
    "The heart medication digoxin was originally derived from foxglove, discovered after a folk remedy for 'dropsy' turned out to have real pharmacological effects."
   ],
-  "category": "Perennial",
+  "category": "Biennial",
   "pollinatorFact": "Foxglove's tubular flowers are shaped almost perfectly for bumblebees, which climb right inside to reach the nectar and pollen."
  },
  "GK-GER-001": {
@@ -3761,7 +3737,6 @@
   "subtitle": "Reliable, long-flowering ground cover for borders \u2014 not to be confused with pelargoniums.",
   "theme": "#a866b0",
   "tags": [
-   "Perennial",
    "Sun to part shade",
    "Ground cover",
    "Long flowering"
@@ -3838,7 +3813,6 @@
   "subtitle": "Reliable evergreen shrub with winter flowers and berries for birds.",
   "theme": "#6a7a4a",
   "tags": [
-   "Shrub",
    "Evergreen",
    "Winter flowers",
    "Bird friendly"
@@ -3915,7 +3889,6 @@
   "subtitle": "Classic clipped evergreen for hedging, edging and topiary.",
   "theme": "#3f5c3a",
   "tags": [
-   "Shrub",
    "Evergreen",
    "Hedging",
    "Topiary",
@@ -4225,7 +4198,6 @@
   "subtitle": "Easy, edible, clump-forming herb with pretty purple pollinator-friendly flowers.",
   "theme": "#9b5aa0",
   "tags": [
-   "Herb",
    "Edible",
    "Full sun",
    "Pollinator",
@@ -4303,7 +4275,6 @@
   "subtitle": "Fast-growing, quick-to-bolt herb best sown often in small batches.",
   "theme": "#4a7a3f",
   "tags": [
-   "Herb",
    "Edible",
    "Bolts quickly",
    "Sow little and often"
@@ -4447,5 +4418,1318 @@
   ],
   "category": "Vegetable",
   "pollinatorFact": "Chilli flowers are self-pollinating but set fruit more reliably with help from visiting insects or a gentle shake to release pollen, especially when grown under cover."
+ },
+ "GK-COS-001": {
+  "id": "GK-COS-001",
+  "slug": "cosmos",
+  "name": "Cosmos",
+  "latinName": "Cosmos bipinnatus",
+  "variety": "Mixed cosmos",
+  "subtitle": "Feathery-leaved annual with masses of open, daisy-like flowers all summer.",
+  "theme": "#d9678f",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Cut flowers",
+   "Easy from seed"
+  ],
+  "quickCare": {
+   "Water": "Water regularly while young; more drought-tolerant once established",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding \u2014 too rich a soil gives lots of leaf, fewer flowers",
+   "Pruning": "Deadhead regularly to keep flowers coming all summer"
+  },
+  "notes": "One of the most reliable, high-value annuals for effort involved \u2014 sow once and it flowers non-stop until frost if deadheaded.",
+  "soil": "Average to poor, free-draining soil.",
+  "medium": "Peat-free compost; avoid rich, heavily improved soil.",
+  "seasonalActions": {
+   "Spring": "Sow direct or start indoors for an earlier display.",
+   "Summer": "Deadhead weekly; stake tall varieties if exposed to wind.",
+   "Autumn": "Continues flowering until the first hard frost.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Improve airflow between plants and avoid overhead watering."
+   },
+   {
+    "name": "Floppy growth in rich soil",
+    "fix": "Move future sowings to leaner ground; avoid feeding."
+   }
+  ],
+  "companions": [
+   "Sunflower",
+   "Marigold",
+   "Runner Bean"
+  ],
+  "propagation": {
+   "season": "Sow direct after frost, or indoors 4-6 weeks earlier for an early start.",
+   "methods": "Self-seeds readily in a mild garden if a few flowers are left to set seed.",
+   "tips": "One of the easiest cut-flower annuals to grow from seed.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Open, single flowers are excellent for bees and hoverflies, and cosmos is a genuine mainstay of wildlife-friendly cutting gardens."
+  },
+  "timeline": {
+   "Seeding": "Apr-May",
+   "Flowering": "Jun-Oct",
+   "Harvest": "Cut flowers Jun-Oct",
+   "Pruning": "Deadhead continuously through summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Cosmos.",
+   "gallery": [
+    "Whole plant showing feathery foliage",
+    "Flower close-up",
+    "Border planting",
+    "Seed heads if left to set seed"
+   ]
+  },
+  "weeklyFact": "Cosmos flowers are open and simple in shape specifically because they're bred for easy pollinator access, not despite it.",
+  "weeklyFacts": [
+   "Cosmos flowers are open and simple in shape specifically because they're bred for easy pollinator access, not despite it.",
+   "The name Cosmos comes from the Greek for 'ordered, harmonious' \u2014 a nod to the neat, symmetrical arrangement of the petals."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Cosmos's open, single flowers are one of the most reliable and heavily used annuals for supporting bees and hoverflies through the whole summer."
+ },
+ "GK-ZIN-001": {
+  "id": "GK-ZIN-001",
+  "slug": "zinnia",
+  "name": "Zinnia",
+  "latinName": "Zinnia elegans",
+  "variety": "Mixed zinnia",
+  "subtitle": "Bold, long-lasting, brilliantly colourful cut flowers from a very easy annual.",
+  "theme": "#c0392b",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Cut flowers",
+   "Pollinator"
+  ],
+  "quickCare": {
+   "Water": "Water at the base; avoid wetting foliage, which encourages mildew",
+   "Light": "Full sun",
+   "Feeding": "Light feed if growth is poor; not a hungry plant",
+   "Pruning": "Deadhead regularly and pinch young plants to encourage branching"
+  },
+  "notes": "Water at the base, not overhead \u2014 zinnia foliage is notably prone to powdery mildew if kept wet.",
+  "soil": "Fertile, free-draining soil.",
+  "medium": "Peat-free compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Sow after frost risk passes, or start indoors for an early display.",
+   "Summer": "Deadhead weekly and water at the base through summer.",
+   "Autumn": "Continues flowering until the first frost.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew",
+    "fix": "The main zinnia problem; water at the base, space plants for airflow and remove badly affected leaves."
+   },
+   {
+    "name": "Slugs on young seedlings",
+    "fix": "Protect with barriers until plants are established and less palatable."
+   }
+  ],
+  "companions": [
+   "Sunflower",
+   "Cosmos",
+   "Marigold"
+  ],
+  "propagation": {
+   "season": "Sow direct after frost, or indoors a few weeks earlier for a head start.",
+   "methods": "Fast and reliable from seed, with large easy-to-handle seeds.",
+   "tips": "A good first-sowing plant for children or absolute beginners.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Zinnia's bright, long-lasting flowers are a genuine magnet for butterflies as well as bees."
+  },
+  "timeline": {
+   "Seeding": "Apr-May",
+   "Flowering": "Jun-Oct",
+   "Harvest": "Cut flowers Jun-Oct",
+   "Pruning": "Deadhead continuously; pinch when young to bush out"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Zinnia.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower close-up",
+    "Cutting garden row",
+    "Butterflies visiting if captured"
+   ]
+  },
+  "weeklyFact": "Zinnias were carried on the International Space Station in 2016 as part of a NASA experiment into growing flowering plants in microgravity.",
+  "weeklyFacts": [
+   "Zinnias were carried on the International Space Station in 2016 as part of a NASA experiment into growing flowering plants in microgravity.",
+   "Zinnia flowers can last well over a week in a vase, making them one of the longest-lasting cut flowers of any common annual."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Zinnia's bright, long-lasting flowers are particularly attractive to butterflies as well as bees, making it a strong choice for a pollinator-focused cutting patch."
+ },
+ "GK-CAL-001": {
+  "id": "GK-CAL-001",
+  "slug": "calendula",
+  "name": "Calendula",
+  "latinName": "Calendula officinalis",
+  "variety": "Pot marigold",
+  "subtitle": "Cheerful, edible-flowered annual that self-seeds reliably year after year.",
+  "theme": "#e8951f",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Edible flowers",
+   "Self-seeds"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; fairly drought-tolerant once settled",
+   "Light": "Full sun to light shade",
+   "Feeding": "Little to no feeding needed",
+   "Pruning": "Deadhead regularly to prolong flowering and prevent excessive self-seeding"
+  },
+  "notes": "Not the same plant as French/African marigold (Tagetes) despite the shared common name \u2014 calendula petals are genuinely edible and used in salads.",
+  "soil": "Any reasonable, free-draining soil.",
+  "medium": "Peat-free compost, not fussy about richness.",
+  "seasonalActions": {
+   "Spring": "Sow direct; earliest sowings often flower within weeks.",
+   "Summer": "Deadhead regularly; continues flowering strongly.",
+   "Autumn": "Self-seeds readily \u2014 let a few seed heads mature if you want volunteers next year.",
+   "Winter": "Often survives mild winters and flowers again the following spring."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Improve airflow and avoid overhead watering in humid weather."
+   },
+   {
+    "name": "Aphids",
+    "fix": "Wash off with water or encourage ladybirds; rarely serious."
+   }
+  ],
+  "companions": [
+   "Tomato",
+   "Courgette",
+   "Cabbage"
+  ],
+  "propagation": {
+   "season": "Sow direct from spring through summer for successive flowering.",
+   "methods": "Self-seeds so readily that once established, you may rarely need to sow again.",
+   "tips": "One of the most forgiving annuals in this entire library.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An excellent, long-flowering nectar source for bees and hoverflies, often still flowering into early winter in mild years."
+  },
+  "timeline": {
+   "Seeding": "Mar-Aug",
+   "Flowering": "May-Nov, often into winter in mild years",
+   "Harvest": "Edible petals through flowering season",
+   "Pruning": "Deadhead continuously"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Calendula.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower close-up",
+    "Self-sown seedlings if present",
+    "Seed heads (distinctive curled seeds)"
+   ]
+  },
+  "weeklyFact": "Calendula seeds are curled into a distinctive claw shape, unlike almost any other common garden annual seed.",
+  "weeklyFacts": [
+   "Calendula seeds are curled into a distinctive claw shape, unlike almost any other common garden annual seed.",
+   "The petals have a long history of use in traditional skin salves, and calendula cream is still a common pharmacy item today."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Calendula is a genuinely reliable, long-flowering nectar source for bees and hoverflies, often still going strong later into the year than most other annuals."
+ },
+ "GK-SWP-001": {
+  "id": "GK-SWP-001",
+  "slug": "sweet-pea",
+  "name": "Sweet Pea",
+  "latinName": "Lathyrus odoratus",
+  "variety": "Climbing sweet pea",
+  "subtitle": "Fragrant, prolific climbing annual \u2014 the classic cut flower for a cottage garden.",
+  "theme": "#a85a9e",
+  "tags": [
+   "Annual",
+   "Climber",
+   "Cut flowers",
+   "Fragrant",
+   "Full sun"
+  ],
+  "quickCare": {
+   "Water": "Water deeply and regularly, especially once flowering \u2014 drying out stops flower production fast",
+   "Light": "Full sun, with some shelter from strong wind",
+   "Feeding": "Balanced feed at planting; switch to potash-rich feed once flowering starts",
+   "Pruning": "Pick flowers constantly \u2014 the single most important 'pruning' task, since seed pods forming will stop new flowers"
+  },
+  "notes": "Pick bouquets relentlessly \u2014 a sweet pea that's allowed to set seed pods will shut down flower production almost immediately.",
+  "soil": "Fertile, moisture-retentive soil, deeply prepared with organic matter.",
+  "medium": "Peat-free compost enriched with garden compost for large, deep containers.",
+  "seasonalActions": {
+   "Spring": "Sow or plant out young plants against sturdy support; pinch tips to encourage branching.",
+   "Summer": "Water deeply, feed regularly and pick flowers constantly.",
+   "Autumn": "Clear spent plants once flowering finishes for the year.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Flowers stopping suddenly",
+    "fix": "Almost always seed pods left to form; pick every flower you see, even ones you don't want, to keep production going."
+   },
+   {
+    "name": "Powdery mildew late in the season",
+    "fix": "Water at the base and improve airflow between plants."
+   }
+  ],
+  "companions": [
+   "Runner Bean",
+   "Rose",
+   "Clematis"
+  ],
+  "propagation": {
+   "season": "Sow indoors in autumn or late winter for the strongest plants, or direct after frost for a simpler start.",
+   "methods": "Soaking or nicking seed coats can speed up slow germination.",
+   "tips": "Deep root trainers or toilet-roll tubes give sweet peas the long root run they prefer.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "A superb bee plant \u2014 the fragrant flowers are specifically shaped to suit long-tongued bumblebees, and picking constantly keeps the display (and pollinator visits) going for months."
+  },
+  "timeline": {
+   "Seeding": "Oct-Nov or Feb-Mar",
+   "Flowering": "Jun-Sep with constant picking",
+   "Harvest": "Cut flowers Jun-Sep",
+   "Pruning": "Pick continuously; deadhead any missed pods"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Sweet Pea.",
+   "gallery": [
+    "Whole climbing display on support",
+    "Flower close-up",
+    "Seedlings or young plants",
+    "Cut bouquet"
+   ]
+  },
+  "weeklyFact": "Sweet pea seeds and pods are toxic if eaten in quantity, despite looking similar to edible garden peas \u2014 worth knowing since they're grown right alongside food crops.",
+  "weeklyFacts": [
+   "Sweet pea seeds and pods are toxic if eaten in quantity, despite looking similar to edible garden peas \u2014 worth knowing since they're grown right alongside food crops.",
+   "The intense sweet pea fragrance was one of the main traits Victorian plant breeders selected for, alongside flower size and colour range."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Sweet pea's fragrant flowers are shaped for long-tongued bumblebees, and constant picking (which the plant needs anyway) keeps the flowers, and the bee visits, going for months."
+ },
+ "GK-PET-001": {
+  "id": "GK-PET-001",
+  "slug": "petunia",
+  "name": "Petunia",
+  "latinName": "Petunia \u00d7 hybrida",
+  "variety": "Trailing petunia",
+  "subtitle": "Non-stop flowering bedding and basket plant for a long summer display.",
+  "theme": "#c14b8f",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Containers",
+   "Hanging baskets"
+  ],
+  "quickCare": {
+   "Water": "Water regularly, especially in hanging baskets which dry out fast",
+   "Light": "Full sun for the best flowering",
+   "Feeding": "Regular liquid feed through summer \u2014 hungry plants for a long display",
+   "Pruning": "Deadhead spent flowers and trim leggy growth to encourage branching"
+  },
+  "notes": "One of the hungriest, thirstiest common bedding plants \u2014 a weekly feed through summer makes a genuinely visible difference.",
+  "soil": "Fertile, free-draining soil or compost.",
+  "medium": "Peat-free compost, ideally with a slow-release fertiliser mixed in at planting for baskets and containers.",
+  "seasonalActions": {
+   "Spring": "Plant out after frost risk has passed.",
+   "Summer": "Water and feed regularly; trim back leggy growth mid-summer if needed.",
+   "Autumn": "Continues flowering until the first frost.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Leggy, sparse growth by midsummer",
+    "fix": "Trim back hard by a third \u2014 it recovers quickly and rewards with fresh, bushier growth."
+   },
+   {
+    "name": "Grey mould in wet weather",
+    "fix": "Remove spent flowers and improve airflow between plants."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Marigold",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Named varieties are usually grown from cuttings rather than seed, since seed-grown plants don't always come true.",
+   "methods": "Softwood cuttings root reasonably well in a free-draining mix.",
+   "tips": "Most home growers simply buy young plants rather than propagating, since petunia seed is extremely fine and fiddly.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Simple varieties offer reasonable access for bees and moths, though many modern frilly, very double petunias offer little accessible pollen."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 usually bought as young plants",
+   "Flowering": "Jun-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Trim back hard mid-summer if leggy"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Petunia.",
+   "gallery": [
+    "Whole basket or container in flower",
+    "Flower close-up",
+    "Trailing habit",
+    "Newly trimmed regrowth"
+   ]
+  },
+  "weeklyFact": "Petunia's wild ancestors from South America are night-scented and moth-pollinated, a trait mostly bred out of modern brightly coloured daytime varieties.",
+  "weeklyFacts": [
+   "Petunia's wild ancestors from South America are night-scented and moth-pollinated, a trait mostly bred out of modern brightly coloured daytime varieties.",
+   "Petunia seed is so fine that a single gram can contain over 10,000 seeds \u2014 one reason most gardeners buy young plants instead of sowing."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Simpler, single-flowered petunia varieties offer reasonable access for bees and night-flying moths, though many modern very frilly doubles offer little real pollen access."
+ },
+ "GK-LOB-001": {
+  "id": "GK-LOB-001",
+  "slug": "lobelia",
+  "name": "Lobelia",
+  "latinName": "Lobelia erinus",
+  "variety": "Trailing lobelia",
+  "subtitle": "Fine, delicate trailing annual, classic for edging hanging baskets in vivid blue.",
+  "theme": "#3f5ec7",
+  "tags": [
+   "Annual",
+   "Part shade to sun",
+   "Containers",
+   "Trailing"
+  ],
+  "quickCare": {
+   "Water": "Water consistently \u2014 small root system dries out fast, especially in baskets",
+   "Light": "Full sun to part shade; tolerates more shade than most bedding plants",
+   "Feeding": "Light regular feed through summer",
+   "Pruning": "Trim back hard after first flush for a strong second flowering"
+  },
+  "notes": "Trim back hard by half partway through summer if flowering slows \u2014 it recovers and reflowers reliably from a hard cut.",
+  "soil": "Moisture-retentive, fertile soil or compost.",
+  "medium": "Peat-free compost; keep consistently moist, more so than many drought-tolerant bedding options.",
+  "seasonalActions": {
+   "Spring": "Plant out after frost risk has passed.",
+   "Summer": "Water consistently; trim back hard mid-season if flowering slows.",
+   "Autumn": "Continues flowering until cooler weather.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Flowering stopping in hot, dry weather",
+    "fix": "Usually drying out; water more consistently and trim back for a fresh flush once conditions cool slightly."
+   },
+   {
+    "name": "Root rot in waterlogged compost",
+    "fix": "Ensure good drainage even while keeping consistently moist \u2014 avoid compost that stays sodden."
+   }
+  ],
+  "companions": [
+   "Petunia",
+   "Marigold",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Usually grown from seed, which is extremely fine and slow to germinate \u2014 sow on the surface, don't bury.",
+   "methods": "Most home growers buy young plug plants rather than raising from seed.",
+   "tips": "Named trailing varieties are sometimes propagated from cuttings for consistency.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Small tubular flowers are visited by bees, particularly smaller species able to access the compact flower shape."
+  },
+  "timeline": {
+   "Seeding": "Feb-Mar indoors, or buy young plants",
+   "Flowering": "Jun-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Trim back hard mid-season for a second flush"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Lobelia.",
+   "gallery": [
+    "Whole basket showing trailing habit",
+    "Flower close-up",
+    "Edging a border or container",
+    "Newly trimmed regrowth"
+   ]
+  },
+  "weeklyFact": "Lobelia seed is so tiny it's often mixed with sand before sowing just to spread it evenly.",
+  "weeklyFacts": [
+   "Lobelia seed is so tiny it's often mixed with sand before sowing just to spread it evenly.",
+   "The genus Lobelia is named after Flemish botanist Matthias de l'Obel, physician to England's King James I."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Lobelia's small tubular flowers are visited by bees, especially smaller species well suited to the compact flower size."
+ },
+ "GK-ALY-001": {
+  "id": "GK-ALY-001",
+  "slug": "alyssum",
+  "name": "Sweet Alyssum",
+  "latinName": "Lobularia maritima",
+  "variety": "Sweet alyssum",
+  "subtitle": "Low, fragrant, honey-scented edging annual that self-seeds and reflowers readily.",
+  "theme": "#e8e3d0",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Edging",
+   "Fragrant",
+   "Self-seeds"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water while young",
+   "Light": "Full sun to light shade",
+   "Feeding": "Little to no feeding needed",
+   "Pruning": "Trim back after first flush for a strong, fragrant second flowering"
+  },
+  "notes": "Genuinely one of the best low-effort edging plants \u2014 self-seeds reliably and often flowers again from volunteers with no work at all.",
+  "soil": "Any reasonable, free-draining soil.",
+  "medium": "Peat-free compost; not fussy.",
+  "seasonalActions": {
+   "Spring": "Sow direct; germinates and flowers quickly.",
+   "Summer": "Trim back after the first flush for a fresh, fragrant second bloom.",
+   "Autumn": "Often continues flowering into autumn from a mid-summer trim.",
+   "Winter": "Self-sown seedlings may overwinter in mild gardens."
+  },
+  "problems": [
+   {
+    "name": "Flowering slowing in hot weather",
+    "fix": "Trim back hard; it responds with fresh growth and renewed flowering."
+   },
+   {
+    "name": "Flea beetle on young growth",
+    "fix": "Usually cosmetic on this species; rarely serious enough to need action."
+   }
+  ],
+  "companions": [
+   "Carrot",
+   "Cabbage",
+   "Lettuce"
+  ],
+  "propagation": {
+   "season": "Sow direct \u2014 very easy and fast from seed.",
+   "methods": "Self-seeds so readily that many gardens keep a patch going for years without resowing.",
+   "tips": "One of the simplest annuals in this library to grow and share.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "A genuine pollinator powerhouse for its tiny size \u2014 alyssum's honey-scented flowers are extremely popular with hoverflies and small bees, and are sometimes deliberately used as a companion 'beneficial insect' plant near vegetable crops."
+  },
+  "timeline": {
+   "Seeding": "Mar-Jul",
+   "Flowering": "May-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Trim back after first flush for a second bloom"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Sweet Alyssum.",
+   "gallery": [
+    "Whole plant as edging",
+    "Flower close-up",
+    "Self-sown seedlings if present",
+    "Bees or hoverflies visiting if captured"
+   ]
+  },
+  "weeklyFact": "Sweet alyssum's honey-like scent is strong enough to be noticeable from several feet away on a warm day, despite the tiny individual flowers.",
+  "weeklyFacts": [
+   "Sweet alyssum's honey-like scent is strong enough to be noticeable from several feet away on a warm day, despite the tiny individual flowers.",
+   "Alyssum is frequently sown deliberately alongside vegetable crops specifically to draw in hoverflies, whose larvae are voracious aphid predators."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Alyssum punches well above its size for pollinators \u2014 its honey-scented flowers are a strong draw for hoverflies and small bees, which is why it's often sown deliberately near vegetable crops."
+ },
+ "GK-SNAP-001": {
+  "id": "GK-SNAP-001",
+  "slug": "snapdragon",
+  "name": "Snapdragon",
+  "latinName": "Antirrhinum majus",
+  "variety": "Mixed snapdragon",
+  "subtitle": "Tall spires of jaw-shaped flowers, a cut-flower classic that self-seeds in mild gardens.",
+  "theme": "#d94f4f",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Cut flowers",
+   "Cottage garden"
+  ],
+  "quickCare": {
+   "Water": "Water regularly while establishing; reasonably drought-tolerant once settled",
+   "Light": "Full sun",
+   "Feeding": "Light feed at planting; potash feed once flowering for cut varieties",
+   "Pruning": "Pinch young plants to encourage branching; deadhead spikes as they fade"
+  },
+  "notes": "Squeeze a snapdragon flower gently from the sides \u2014 the 'jaws' opening and closing is where the name comes from, and it's a nice thing to show curious children.",
+  "soil": "Fertile, free-draining soil.",
+  "medium": "Peat-free compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in late winter for the strongest cut-flower stems, or plant out young plants after frost.",
+   "Summer": "Pinch young plants to encourage branching; deadhead as spikes fade.",
+   "Autumn": "Often reflowers from a second flush if cut back after the first.",
+   "Winter": "Sometimes survives mild winters as a short-lived perennial, though usually grown as an annual."
+  },
+  "problems": [
+   {
+    "name": "Rust (orange pustules on leaves)",
+    "fix": "Remove affected foliage promptly, improve airflow and avoid overhead watering \u2014 can spread quickly in humid conditions."
+   },
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Water at the base and space plants for good airflow."
+   }
+  ],
+  "companions": [
+   "Cosmos",
+   "Sweet Pea",
+   "Marigold"
+  ],
+  "propagation": {
+   "season": "Sow indoors in late winter \u2014 seed is fine and needs light to germinate, so don't bury it.",
+   "methods": "Named varieties are usually grown from seed rather than cuttings.",
+   "tips": "A slower starter than many annuals, but reliable once underway.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Snapdragon's closed 'jaw' flowers need a bee heavy enough to pry them open, which is exactly the mechanism that gives the plant its name."
+  },
+  "timeline": {
+   "Seeding": "Jan-Mar indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Cut flowers Jun-Sep",
+   "Pruning": "Pinch when young; deadhead spent spikes"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Snapdragon.",
+   "gallery": [
+    "Whole spike in flower",
+    "Flower close-up showing the jaw shape",
+    "Cutting garden row",
+    "Seed heads if left to set seed"
+   ]
+  },
+  "weeklyFact": "A snapdragon flower's hinged 'mouth' only opens under the weight of a bee landing on it \u2014 lighter insects usually can't force it open at all.",
+  "weeklyFacts": [
+   "A snapdragon flower's hinged 'mouth' only opens under the weight of a bee landing on it \u2014 lighter insects usually can't force it open at all.",
+   "Dried snapdragon seed pods split open into a shape that eerily resembles a tiny skull, which has made them a minor internet curiosity."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Snapdragon flowers are specifically adapted to require a heavy enough bee, usually a bumblebee, to force the hinged petals open and reach the nectar inside."
+ },
+ "GK-VBN-001": {
+  "id": "GK-VBN-001",
+  "slug": "verbena",
+  "name": "Verbena",
+  "latinName": "Verbena bonariensis",
+  "variety": "Tall verbena",
+  "subtitle": "Airy, see-through perennial (often grown as an annual) that towers over a border on wiry stems.",
+  "theme": "#9d5aa8",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Pollinator",
+   "Airy structure"
+  ],
+  "quickCare": {
+   "Water": "Drought-tolerant once established; water while young",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding needed",
+   "Pruning": "Cut back in spring; deadhead through summer if tidiness matters"
+  },
+  "notes": "Its see-through, airy habit means it can be planted right at the front of a border without blocking the view of what's behind it.",
+  "soil": "Free-draining soil; tolerates poor, dry conditions well.",
+  "medium": "Peat-free compost with added grit for containers.",
+  "seasonalActions": {
+   "Spring": "Cut back old growth to fresh shoots at the base.",
+   "Summer": "Flowers continuously; deadhead if wanted, though not essential.",
+   "Autumn": "Often self-seeds; leave some seed heads for birds and volunteers.",
+   "Winter": "May survive as a short-lived perennial in mild, well-drained gardens; often grown as an annual elsewhere."
+  },
+  "problems": [
+   {
+    "name": "Winter losses in wet, heavy soil",
+    "fix": "Poor drainage is the main killer, not cold; improve drainage or treat as an annual in heavy clay gardens."
+   },
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Improve airflow; rarely serious enough to threaten the plant."
+   }
+  ],
+  "companions": [
+   "Salvia",
+   "Nepeta",
+   "Sunflower"
+  ],
+  "propagation": {
+   "season": "Self-seeds readily \u2014 often the easiest 'propagation' method is simply to let it seed around.",
+   "methods": "Softwood cuttings in late spring root reasonably well for guaranteed reliable stock.",
+   "tips": "Sow fresh seed in warmth for a more controlled start.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "One of the standout butterfly and bee plants in this library \u2014 tall verbena is a genuine magnet for a huge range of pollinators over a very long season."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr indoors, or self-sown",
+   "Flowering": "Jun-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Cut back to base in spring"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Verbena.",
+   "gallery": [
+    "Whole plant showing airy habit",
+    "Flower cluster close-up",
+    "Border planting from a distance",
+    "Butterflies or bees visiting if captured"
+   ]
+  },
+  "weeklyFact": "Verbena bonariensis is native to South America but has naturalised so successfully in some mild UK and Irish gardens that it self-seeds almost like a native wildflower.",
+  "weeklyFacts": [
+   "Verbena bonariensis is native to South America but has naturalised so successfully in some mild UK and Irish gardens that it self-seeds almost like a native wildflower.",
+   "Its long, bare stems topped with small flower clusters were deliberately bred and popularised by garden designers specifically for the 'see-through' effect it gives a border."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Tall verbena is one of the standout pollinator plants in a typical border, drawing in a genuinely wide range of bees, butterflies and hoverflies over a very long flowering season."
+ },
+ "GK-CLEO-001": {
+  "id": "GK-CLEO-001",
+  "slug": "cleome",
+  "name": "Cleome",
+  "latinName": "Cleome hassleriana",
+  "variety": "Spider flower",
+  "subtitle": "Tall, dramatic, slightly spiky annual with striking spidery flowers.",
+  "theme": "#b060a8",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Tall structure",
+   "Cut flowers"
+  ],
+  "quickCare": {
+   "Water": "Water regularly, especially in dry spells \u2014 a thirsty plant for its size",
+   "Light": "Full sun",
+   "Feeding": "Light feed at planting; avoid excess, which favours leaf over flower",
+   "Pruning": "Deadhead spent flower spikes to prolong flowering; wear gloves, as stems can be slightly sticky and spiny"
+  },
+  "notes": "Handle with care \u2014 the stems have small spines and a slightly sticky, resinous feel that some people find irritating to skin.",
+  "soil": "Fertile, free-draining soil.",
+  "medium": "Peat-free compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in warmth, or direct after frost risk passes.",
+   "Summer": "Water regularly and deadhead to keep flowering going.",
+   "Autumn": "Continues until the first frost; collect seed pods if wanted.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Skin irritation from handling",
+    "fix": "Wear gloves when deadheading or cutting \u2014 the stems are mildly spiny and sticky."
+   },
+   {
+    "name": "Aphids on flower buds",
+    "fix": "Wash off with water or encourage ladybirds."
+   }
+  ],
+  "companions": [
+   "Sunflower",
+   "Cosmos",
+   "Zinnia"
+  ],
+  "propagation": {
+   "season": "Sow indoors in warmth 6-8 weeks before the last frost for the strongest plants.",
+   "methods": "Seed needs light to germinate, so sow on the surface rather than burying it.",
+   "tips": "Self-seeds in some mild gardens if a few pods are left to mature.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Cleome's long, exposed stamens and evening fragrance make it particularly popular with moths as well as bees during the day."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr indoors",
+   "Flowering": "Jun-Sep",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead through summer to prolong flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Cleome.",
+   "gallery": [
+    "Whole plant showing height and structure",
+    "Flower close-up showing spidery stamens",
+    "Seed pods if left to mature",
+    "Moths or bees visiting if captured"
+   ]
+  },
+  "weeklyFact": "Cleome flowers release more fragrance in the evening, an adaptation to attract night-flying moths alongside daytime bee visitors.",
+  "weeklyFacts": [
+   "Cleome flowers release more fragrance in the evening, an adaptation to attract night-flying moths alongside daytime bee visitors.",
+   "The common name 'spider flower' comes from the unusually long, thin stamens that radiate out from each bloom like spindly legs."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Cleome's long exposed stamens and evening fragrance make it attractive to both daytime bees and night-flying moths, giving it a longer pollinator window than many border annuals."
+ },
+ "GK-AGE-001": {
+  "id": "GK-AGE-001",
+  "slug": "ageratum",
+  "name": "Ageratum",
+  "latinName": "Ageratum houstonianum",
+  "variety": "Floss flower",
+  "subtitle": "Compact, fluffy-flowered edging annual in an unusually true powder blue.",
+  "theme": "#7a7ec7",
+  "tags": [
+   "Annual",
+   "Full sun to part shade",
+   "Edging",
+   "Long flowering"
+  ],
+  "quickCare": {
+   "Water": "Water regularly; doesn't like to dry out completely",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light feed through summer for continuous flowering",
+   "Pruning": "Deadhead spent flower clusters to prolong the display"
+  },
+  "notes": "One of relatively few common bedding annuals in a genuinely true blue, rather than purple-blue \u2014 useful for colour-scheme planning.",
+  "soil": "Fertile, moisture-retentive soil.",
+  "medium": "Peat-free compost, kept reasonably moist.",
+  "seasonalActions": {
+   "Spring": "Plant out after frost risk has passed.",
+   "Summer": "Water consistently and deadhead through summer.",
+   "Autumn": "Continues flowering until the first frost.",
+   "Winter": "N/A \u2014 annual, finished for the year."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew in humid weather",
+    "fix": "Improve airflow between plants and avoid overhead watering."
+   },
+   {
+    "name": "Leggy growth in too much shade",
+    "fix": "Move to a sunnier spot for compact, floriferous growth."
+   }
+  ],
+  "companions": [
+   "Petunia",
+   "Lobelia",
+   "Marigold"
+  ],
+  "propagation": {
+   "season": "Usually grown from seed sown indoors in warmth in early spring.",
+   "methods": "Seed needs light to germinate \u2014 sow on the surface, don't bury.",
+   "tips": "Cuttings are possible but seed is the more common, reliable method.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "The fluffy, tubular flower clusters are popular with butterflies and small bees able to access the tightly packed flower heads."
+  },
+  "timeline": {
+   "Seeding": "Feb-Mar indoors",
+   "Flowering": "Jun-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead spent clusters through summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Ageratum.",
+   "gallery": [
+    "Whole plant showing flower clusters",
+    "Flower close-up",
+    "Edging in a border",
+    "Butterflies visiting if captured"
+   ]
+  },
+  "weeklyFact": "Ageratum's fluffy flower texture comes from unusually long, thread-like petals rather than the flat petals most flowers have.",
+  "weeklyFacts": [
+   "Ageratum's fluffy flower texture comes from unusually long, thread-like petals rather than the flat petals most flowers have.",
+   "The genus name Ageratum comes from Greek for 'un-aging,' referring to how long the flower colour holds without fading."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Ageratum's fluffy flower clusters are popular with butterflies and small bees, which can access the tightly packed individual flowers more easily than larger, showier blooms."
+ },
+ "GK-STO-001": {
+  "id": "GK-STO-001",
+  "slug": "stock",
+  "name": "Stock",
+  "latinName": "Matthiola incana",
+  "variety": "Ten-week stock",
+  "subtitle": "Old-fashioned, intensely fragrant cottage garden annual, especially scented at dusk.",
+  "theme": "#c07ab0",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Fragrant",
+   "Cottage garden"
+  ],
+  "quickCare": {
+   "Water": "Water regularly while establishing; avoid letting it dry out during flowering",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light feed at planting",
+   "Pruning": "Deadhead spent flower spikes to prolong the display"
+  },
+  "notes": "Plant near a path, door or seating area \u2014 the fragrance is genuinely one of the best reasons to grow this rather than a purely visual one.",
+  "soil": "Fertile, free-draining soil.",
+  "medium": "Peat-free compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Sow indoors in early spring, or direct once soil has warmed.",
+   "Summer": "Deadhead spikes as they fade to prolong flowering.",
+   "Autumn": "May continue flowering into autumn in mild weather.",
+   "Winter": "N/A \u2014 annual, finished for the year, though some varieties can be sown for a spring display too."
+  },
+  "problems": [
+   {
+    "name": "Clubroot in acidic, poorly drained soil",
+    "fix": "Improve drainage and avoid very acidic soil; rotate planting areas if this recurs."
+   },
+   {
+    "name": "Aphids on flower spikes",
+    "fix": "Wash off with water or encourage ladybirds."
+   }
+  ],
+  "companions": [
+   "Sweet Pea",
+   "Rose",
+   "Lavender"
+  ],
+  "propagation": {
+   "season": "Sow indoors in early spring for a summer display, or in late summer for overwintering and spring flowering in mild areas.",
+   "methods": "Seed needs light to germinate \u2014 sow on the surface.",
+   "tips": "Named double-flowered forms are usually grown from seed selected to produce a high proportion of doubles.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Strongly evening-scented, and popular with moths at dusk as well as bees and butterflies during the day."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr, or Aug for overwintering",
+   "Flowering": "Jun-Aug (summer sowing) or Apr-May (autumn sowing)",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead spikes as they fade"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Stock.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower spike close-up",
+    "Evening photo if capturing the scent-release period",
+    "Seed pods if left to mature"
+   ]
+  },
+  "weeklyFact": "Stock's fragrance intensifies noticeably in the evening, an adaptation to attract night-flying moths when few visual cues are left to guide them.",
+  "weeklyFacts": [
+   "Stock's fragrance intensifies noticeably in the evening, an adaptation to attract night-flying moths when few visual cues are left to guide them.",
+   "Some stock varieties are bred to reliably produce a high percentage of fully double flowers, prized for cutting despite being sterile and offering less pollinator value than single forms."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Stock's strong evening fragrance is a genuine draw for moths after dark, alongside daytime visits from bees and butterflies to the more open, single-flowered varieties."
+ },
+ "GK-CANT-001": {
+  "id": "GK-CANT-001",
+  "slug": "cornflower",
+  "name": "Cornflower",
+  "latinName": "Centaurea cyanus",
+  "variety": "Blue cornflower",
+  "subtitle": "Wildflower-meadow annual in vivid true blue, beloved by bees.",
+  "theme": "#2f5ec7",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Wildflower",
+   "Cut flowers",
+   "Self-seeds"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun",
+   "Feeding": "Little to no feeding needed \u2014 thrives in poor soil",
+   "Pruning": "Deadhead regularly to prolong flowering and control self-seeding"
+  },
+  "notes": "A genuine former wildflower, once so common in British and Irish cornfields it inspired its name \u2014 now largely confined to gardens due to modern farming.",
+  "soil": "Poor to average, free-draining soil \u2014 avoid rich, fertile ground.",
+  "medium": "Peat-free compost; not fussy, thrives on relative neglect.",
+  "seasonalActions": {
+   "Spring": "Sow direct in poor soil for the best display.",
+   "Summer": "Deadhead regularly; continues flowering strongly.",
+   "Autumn": "Self-seeds readily \u2014 leave some seed heads for birds and volunteers.",
+   "Winter": "Autumn-sown plants may overwinter as small rosettes in mild areas for earlier summer flowering."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew late season",
+    "fix": "Improve airflow; rarely serious enough to threaten the display."
+   },
+   {
+    "name": "Flopping in rich soil or too much shade",
+    "fix": "Move future sowings to poorer soil in full sun for sturdier growth."
+   }
+  ],
+  "companions": [
+   "Poppy",
+   "Sunflower",
+   "Calendula"
+  ],
+  "propagation": {
+   "season": "Sow direct \u2014 genuinely one of the easiest wildflower-style annuals to establish from seed.",
+   "methods": "Self-seeds so readily that a single good year can supply seed for several more.",
+   "tips": "Autumn sowing in mild areas often gives stronger, earlier-flowering plants than spring sowing.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An outstanding bee plant, and specifically valuable to some solitary bee species that favour its open flower structure."
+  },
+  "timeline": {
+   "Seeding": "Mar-May or Sep for overwintering",
+   "Flowering": "Jun-Sep",
+   "Harvest": "Cut flowers Jun-Aug",
+   "Pruning": "Deadhead regularly through summer"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Cornflower.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower close-up",
+    "Meadow-style planting",
+    "Seed heads for saving seed"
+   ]
+  },
+  "weeklyFact": "Cornflower was once so common in European grain fields that it's named directly for growing among corn (cereal crops) \u2014 modern herbicides have made truly wild cornflower rare.",
+  "weeklyFacts": [
+   "Cornflower was once so common in European grain fields that it's named directly for growing among corn (cereal crops) \u2014 modern herbicides have made truly wild cornflower rare.",
+   "The vivid true blue of cornflower petals is unusually stable and doesn't fade quickly, which is why dried cornflower petals are often used in tea blends and potpourri."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Cornflower is an outstanding bee plant, and its open flower structure is specifically valuable to a range of solitary bee species alongside honeybees and bumblebees."
+ },
+ "GK-POP-001": {
+  "id": "GK-POP-001",
+  "slug": "poppy",
+  "name": "Poppy",
+  "latinName": "Papaver rhoeas",
+  "variety": "Field poppy",
+  "subtitle": "Delicate, papery-petalled wildflower annual, quick and easy from seed.",
+  "theme": "#c0392b",
+  "tags": [
+   "Annual",
+   "Full sun",
+   "Wildflower",
+   "Self-seeds"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun",
+   "Feeding": "No feeding needed \u2014 thrives in poor soil",
+   "Pruning": "No deadheading required, though it prolongs flowering slightly; leave some seed heads to self-seed"
+  },
+  "notes": "Each individual poppy flower lasts only a day or two, but a well-established patch keeps producing new ones continuously through summer.",
+  "soil": "Poor, free-draining soil \u2014 famously thrives in disturbed, low-fertility ground.",
+  "medium": "Peat-free compost is unnecessary richness for this plant; garden soil is usually fine.",
+  "seasonalActions": {
+   "Spring": "Sow direct \u2014 seed needs light and disturbed soil to germinate well, mimicking its natural habitat.",
+   "Summer": "Flowers continuously through summer with minimal input.",
+   "Autumn": "Leave seed heads to scatter for next year's display.",
+   "Winter": "Self-sown seedlings may appear as small rosettes over winter."
+  },
+  "problems": [
+   {
+    "name": "Poor germination",
+    "fix": "Usually seed sown too deep or into undisturbed soil; rake the surface and sow on top, barely covering."
+   },
+   {
+    "name": "Flopping after rain",
+    "fix": "Normal for the delicate petals; new flowers open continuously to replace them."
+   }
+  ],
+  "companions": [
+   "Cornflower",
+   "Sunflower",
+   "Calendula"
+  ],
+  "propagation": {
+   "season": "Sow direct on raked, disturbed soil \u2014 genuinely one of the simplest annuals to grow from seed.",
+   "methods": "Self-seeds prolifically once established; often needs no resowing after the first year.",
+   "tips": "Seed remains viable in soil for years, which is why poppies famously reappear after ground is disturbed.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Poppy pollen and open flower structure make it a strong draw for bees, and its long historical association with disturbed farmland made it one of the most recognisable bee-friendly wildflowers in Europe."
+  },
+  "timeline": {
+   "Seeding": "Mar-May or Sep for overwintering",
+   "Flowering": "Jun-Aug",
+   "Harvest": "N/A",
+   "Pruning": "No pruning needed; leave seed heads to scatter"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Poppy.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower close-up showing papery petals",
+    "Meadow-style planting",
+    "Seed heads (distinctive pepper-pot shape)"
+   ]
+  },
+  "weeklyFact": "Field poppy seeds can remain dormant but viable in undisturbed soil for decades, which is exactly why poppies famously bloomed across churned World War One battlefields.",
+  "weeklyFacts": [
+   "Field poppy seeds can remain dormant but viable in undisturbed soil for decades, which is exactly why poppies famously bloomed across churned World War One battlefields.",
+   "The poppy's seed pod releases seed through small pores at the top, shaking out like a pepper pot when the stem sways in the wind."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Poppy's open flower structure and abundant pollen make it a genuinely strong draw for bees, and its long association with disturbed farmland ground made it one of Europe's most recognisable pollinator wildflowers."
+ },
+ "GK-PAN-001": {
+  "id": "GK-PAN-001",
+  "slug": "pansy",
+  "name": "Pansy",
+  "latinName": "Viola \u00d7 wittrockiana",
+  "variety": "Winter-flowering pansy",
+  "subtitle": "Cheerful, cold-tolerant bedding annual that flowers through the coldest months.",
+  "theme": "#7a4fa8",
+  "tags": [
+   "Annual",
+   "Sun to part shade",
+   "Winter flowering",
+   "Containers"
+  ],
+  "quickCare": {
+   "Water": "Water regularly; more so in containers, less needed in cold, wet winter weather",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light feed through the growing season; not needed in the coldest months",
+   "Pruning": "Deadhead spent flowers regularly to keep the display going"
+  },
+  "notes": "One of very few bedding plants that genuinely flowers through winter \u2014 a good choice for keeping a pot or border colourful when little else is blooming.",
+  "soil": "Fertile, moisture-retentive, free-draining soil.",
+  "medium": "Peat-free compost, kept reasonably moist but not waterlogged.",
+  "seasonalActions": {
+   "Spring": "Spring-sown plants come into flower; deadhead regularly.",
+   "Summer": "Summer heat can cause a lull in very hot spells; trim back if leggy.",
+   "Autumn": "Autumn plantings begin their main winter-flowering display.",
+   "Winter": "Continues flowering through mild spells right through winter."
+  },
+  "problems": [
+   {
+    "name": "Aphids on new growth",
+    "fix": "Wash off with water or encourage ladybirds; check regularly as pansies are a common target."
+   },
+   {
+    "name": "Powdery mildew in humid summer weather",
+    "fix": "Improve airflow between plants and avoid overhead watering."
+   }
+  ],
+  "companions": [
+   "Tulip",
+   "Sweet Alyssum",
+   "Snapdragon"
+  ],
+  "propagation": {
+   "season": "Sow seed in trays in summer for a winter-flowering display, or spring for summer flowering.",
+   "methods": "Seed needs darkness to germinate \u2014 unlike many bedding plants, cover it lightly rather than leaving it exposed to light.",
+   "tips": "Most gardeners buy young plants in autumn for a simpler start to a winter display.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Flowers open even in cool weather, offering a rare nectar source for any pollinators active on mild winter days."
+  },
+  "timeline": {
+   "Seeding": "Jun-Jul for winter flowering, or Feb-Mar for summer",
+   "Flowering": "Sep-May, through mild winter spells",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead regularly through the flowering season"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Pansy.",
+   "gallery": [
+    "Whole plant/container in flower",
+    "Flower close-up showing the distinctive 'face' pattern",
+    "Winter display in frost or light snow",
+    "Spring flush of new flowers"
+   ]
+  },
+  "weeklyFact": "Pansy flowers have a distinctive 'face' marking that comes from patterns of ultraviolet-reflecting cells invisible to humans but clearly visible to bees, guiding them to the nectar.",
+  "weeklyFacts": [
+   "Pansy flowers have a distinctive 'face' marking that comes from patterns of ultraviolet-reflecting cells invisible to humans but clearly visible to bees, guiding them to the nectar.",
+   "Unlike most bedding annuals, pansies can survive light frost and will keep producing flowers through mild spells all winter long."
+  ],
+  "category": "Annual",
+  "pollinatorFact": "Pansies are one of the few common bedding plants still flowering through mild winter spells, offering a valuable nectar source on any day pollinators are active when little else is blooming."
+ },
+ "GK-PIE-001": {
+  "id": "GK-PIE-001",
+  "slug": "pieris-little-heath",
+  "name": "Pieris 'Little Heath'",
+  "latinName": "Pieris japonica",
+  "variety": "'Little Heath'",
+  "subtitle": "Compact evergreen shrub with pink-tinged new growth and small spring flowers.",
+  "theme": "#7a9e6a",
+  "tags": [
+   "Shrub",
+   "Evergreen",
+   "Acid soil",
+   "Compact",
+   "Variegated foliage"
+  ],
+  "quickCare": {
+   "Water": "Water well, especially in pots \u2014 dislikes drying out, particularly while new growth is emerging",
+   "Light": "Bright, part shade; avoid harsh midday sun and cold drying winds, which can scorch new growth",
+   "Feeding": "Ericaceous feed in spring",
+   "Pruning": "Trim lightly after flowering to shape; avoid hard pruning into old wood"
+  },
+  "notes": "The named variety 'Little Heath' is valued specifically for its compact size and cream-edged foliage that flushes pink-red when new \u2014 a genuinely different look from the plain species.",
+  "soil": "Acidic, humus-rich, moisture-retentive but free-draining soil.",
+  "medium": "Ericaceous peat-free compost, essential for pot-grown specimens.",
+  "seasonalActions": {
+   "Spring": "New growth flushes bright pink-red \u2014 protect from late frost, which can damage this tender new foliage.",
+   "Summer": "Water consistently, especially in containers.",
+   "Autumn": "Settle into cooler weather; watch for any leaf scorch from summer heat.",
+   "Winter": "Evergreen; protect pots from waterlogging and wrap in exposed, very cold spots."
+  },
+  "problems": [
+   {
+    "name": "Leaf scorch on new growth",
+    "fix": "New pink-red foliage is tender and can be damaged by late frost or strong wind; provide shelter in exposed spots."
+   },
+   {
+    "name": "Lace bug",
+    "fix": "Small pale mottling on leaves from sap-sucking insects; usually cosmetic, though persistent infestations can be treated with a suitable insecticidal soap."
+   }
+  ],
+  "companions": [
+   "Camellia",
+   "Rhododendron",
+   "Japanese Maple"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root reasonably well in a gritty, ericaceous mix.",
+   "methods": "Layering a low branch is a slower but reliable alternative.",
+   "tips": "Being a named cultivar, cuttings (not seed) are the way to keep the same compact, variegated form.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Small bell-shaped spring flowers, similar in shape to its heather-family relatives, are visited by early-season bees."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Mar-Apr",
+   "Harvest": "N/A",
+   "Pruning": "Trim lightly after flowering, avoiding old wood"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Pieris 'Little Heath'.",
+   "gallery": [
+    "Whole shrub showing compact habit",
+    "New pink-red growth close-up",
+    "Flower close-up in spring",
+    "Variegated leaf detail"
+   ]
+  },
+  "weeklyFact": "Pieris is in the same plant family as rhododendrons and blueberries \u2014 all lovers of acidic soil.",
+  "weeklyFacts": [
+   "Pieris is in the same plant family as rhododendrons and blueberries \u2014 all lovers of acidic soil.",
+   "'Little Heath' was specifically bred and selected for its dwarf habit, making it useful in smaller gardens and containers where the full-sized species would be too large."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Pieris's small bell-shaped spring flowers are similar in structure to its heather-family relatives and provide a useful early-season nectar source for bees."
+ },
+ "GK-TRA-001": {
+  "id": "GK-TRA-001",
+  "slug": "tradescantia-purple-heart",
+  "name": "Tradescantia 'Purple Heart'",
+  "latinName": "Tradescantia pallida",
+  "variety": "'Purple Heart'",
+  "subtitle": "Trailing houseplant with vivid deep-purple foliage, easy and fast-growing.",
+  "theme": "#6a3f8f",
+  "tags": [
+   "Houseplant",
+   "Trailing",
+   "Easy propagation",
+   "Colourful foliage"
+  ],
+  "quickCare": {
+   "Water": "Water when the top of the compost is dry; more drought-tolerant than most trailing houseplants",
+   "Light": "Bright light, some direct sun for the deepest purple colour \u2014 too little light fades the colour towards green",
+   "Feeding": "Light feed in the growing season",
+   "Pruning": "Trim leggy stems to encourage bushier growth; pinch tips regularly"
+  },
+  "notes": "Colour intensity is genuinely light-dependent \u2014 a plant kept in low light will noticeably green up compared to one in bright, sunny conditions.",
+  "soil": "N/A \u2014 grown in potting compost, or outdoors in mild climates as ground cover.",
+  "medium": "Peat-free houseplant compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Resume feeding as growth picks up.",
+   "Summer": "Water more often; trim leggy stems to keep it compact.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water sparingly; can survive as a houseplant year-round with reduced care."
+  },
+  "problems": [
+   {
+    "name": "Leggy, sparse growth",
+    "fix": "Trim back hard \u2014 it regrows quickly and bushier from a firm pinch or cut."
+   },
+   {
+    "name": "Fading to green in low light",
+    "fix": "Move to a brighter spot with some direct sun to restore the deep purple colour."
+   }
+  ],
+  "companions": [
+   "Pothos",
+   "Spider Plant",
+   "Peace Lily"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root extremely easily in water within about a week \u2014 one of the fastest, most reliable houseplant propagations going.",
+   "methods": "Simply place a cut piece with a node into water or moist compost.",
+   "tips": "A genuinely great 'give a cutting to a friend' plant, since it roots so readily.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Small three-petaled pink-purple flowers occasionally appear and can attract pollinators where grown outdoors in warm climates."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Occasional small flowers, mainly in bright conditions",
+   "Harvest": "N/A",
+   "Pruning": "Trim and pinch leggy stems as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Tradescantia 'Purple Heart'.",
+   "gallery": [
+    "Whole trailing plant showing purple colour",
+    "Leaf close-up",
+    "Cutting rooting in water",
+    "Flower if it appears"
+   ]
+  },
+  "weeklyFact": "Tradescantia pallida's deep purple pigment is the same class of compound (anthocyanin) responsible for purple cabbage and red autumn leaves \u2014 it's a genuine sun-protection pigment, not just decoration.",
+  "weeklyFacts": [
+   "Tradescantia pallida's deep purple pigment is the same class of compound (anthocyanin) responsible for purple cabbage and red autumn leaves \u2014 it's a genuine sun-protection pigment, not just decoration.",
+   "'Purple Heart' roots so readily from cuttings that some gardeners use it as a fast, disposable trailing filler for summer containers, replacing it each year rather than overwintering it."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Tradescantia's small flowers occasionally attract pollinators when grown outdoors in warm climates, though indoors it's grown almost entirely for its striking purple foliage."
  }
 }

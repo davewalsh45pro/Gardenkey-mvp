@@ -302,3 +302,64 @@ GitHub yourself for it to go live. Quick recap of all three, everywhere they app
 - **Save to this browser** — keeps data on this device/browser only.
 - **Export JSON / Download** — downloads a file, for backup or moving between devices.
 - **Import JSON** — loads a previously exported file back in.
+
+## Round 6 — V17
+
+**Pruning icon back to scissors** — the secateurs SVG from last round rendered too
+small and unclear at icon size; reverted to the scissors emoji.
+
+**Darker headers.** Water/Light/Feeding/Pruning and Spring/Summer/Autumn/Winter
+labels were a pale grey that was hard to read against the cream background — now a
+solid dark green matching the rest of the page's text.
+
+**"Best timing" → "Best time"** in the Propagation section.
+
+**Weekly fact note reworded** to "These facts rotate weekly — check back next week
+for more."
+
+**17 more plants — 74 total now.** 15 annuals (Cosmos, Zinnia, Calendula, Sweet Pea,
+Petunia, Lobelia, Sweet Alyssum, Snapdragon, Verbena bonariensis, Cleome, Ageratum,
+Stock, Cornflower, Poppy, Pansy) plus two named cultivars: Pieris 'Little Heath' and
+Tradescantia 'Purple Heart'. The two cultivars got their own IDs (`GK-PIE-001`,
+`GK-TRA-001`) rather than folding into a generic species entry, consistent with the
+ID scheme from last round — a named cultivar gets its own entry when its care or
+appearance is genuinely distinct from the base species, which both of these are.
+
+**Home screen tiles no longer turn purple after visiting.** That was the browser's
+default `:visited` link colour showing through — added `a, a:visited { color: inherit
+}` across every page, not just `index.html`, since the same issue could show up
+anywhere a styled tile or card is also a link.
+
+**Common names added** where the display name is more scientific than familiar:
+Nepeta → Catmint, Crocosmia → Montbretia, Astilbe → False Goat's Beard. Shows in the
+plant page heading and the library list, and is now included in name search too.
+Flag any others you spot and I'll add them — I didn't try to guess at all 74.
+
+**Succulent and Vegetable icons redesigned.** The old succulent icon (two overlapping
+teardrops) and vegetable icon (a circle with a leaf) didn't read clearly at a glance.
+Succulent is now a six-point rosette shape; Vegetable is now a root-with-leafy-top
+shape (carrot-like), both closer to what people actually picture for those categories.
+
+**Removed duplicate words from tags.** Many entries had their own category name
+repeated as the first tag (e.g. Thyme showing "Herb" in both the category line and
+again as the first tag chip) — stripped any tag that exactly duplicated a plant's
+category, across all 74 entries.
+
+**Added a Biennial category.** Foxglove was tagged "Biennial" but categorised as
+"Perennial" — fixed the category, and gave Biennial its own icon (a two-year growth
+spiral) rather than falling back to the generic Perennial one.
+
+**"Succulent planter" renamed to "Your Bed, Border & Pot Tracker."** The page heading
+is now a fixed product name with the new intro copy you asked for. The pot's own name
+still updates the page — that behaviour is intentional and useful, so I kept it, but
+it now shows as a "Currently editing: [name]" line under the fixed heading instead of
+replacing it outright, and there's a note directly under the Pot Name field explaining
+that it drives this. Hopefully that's the balance you were after; say if you'd rather
+it fully replace the heading again.
+
+**Pot fields are examples only now, not pre-filled data.** The succulent planter
+starter data (Echeveria, Sedum, dormant tulip bulbs) previously loaded as real,
+already-typed values the first time you opened `?id=GK-POT-SUC-001`. That's gone —
+every field starts genuinely blank, with placeholder text (the pale example hint that
+disappears the moment you click in and type) doing the guidance work instead. The
+empty plant list now shows an example format as muted hint text rather than real rows.
