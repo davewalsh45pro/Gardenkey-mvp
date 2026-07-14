@@ -89,7 +89,7 @@ function render(p, allPlants){
   app.innerHTML = `
   <section class="hero${hasPhoto?' hasPhoto':''}">
     ${hasPhoto ? '' : `<div class="heroArt">${gkIconSvg(p.category)}</div>`}
-    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.17</span><span class="pill id">${p.id}</span></div>
+    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.18</span><span class="pill id">${p.id}</span></div>
     <div><div class="latin">${p.latinName||''}${p.variety?' · '+p.variety:''}</div><h1>${p.name}${p.commonName?` <span style="font-size:0.5em;font-weight:600">(${p.commonName})</span>`:''}</h1><div class="sub">${p.subtitle||''}</div></div>
   </section>
 

@@ -5731,5 +5731,1174 @@
   ],
   "category": "Houseplant",
   "pollinatorFact": "Tradescantia's small flowers occasionally attract pollinators when grown outdoors in warm climates, though indoors it's grown almost entirely for its striking purple foliage."
+ },
+ "GK-DAF-001": {
+  "id": "GK-DAF-001",
+  "slug": "daffodil",
+  "name": "Daffodil",
+  "latinName": "Narcissus",
+  "variety": "Mixed daffodil",
+  "subtitle": "The classic reliable spring bulb \u2014 plant once, enjoy for decades.",
+  "theme": "#e8b23a",
+  "tags": [
+   "Spring flowers",
+   "Full sun",
+   "Bulb",
+   "Naturalises"
+  ],
+  "quickCare": {
+   "Water": "Water at planting, then rely on rainfall \u2014 avoid summer watering while dormant",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light high-potash feed as leaves emerge, if flowering declines",
+   "Pruning": "Deadhead after flowering; never cut or tie foliage down early"
+  },
+  "notes": "Deer- and squirrel-resistant thanks to a natural toxin, which is part of why daffodils are such a reliable, low-drama bulb choice.",
+  "soil": "Any reasonable, free-draining soil.",
+  "medium": "Peat-free compost with added grit for containers.",
+  "seasonalActions": {
+   "Spring": "Flowers open; deadhead as they fade, but leave foliage standing.",
+   "Summer": "Foliage dies back naturally \u2014 this is when the bulb recharges for next year.",
+   "Autumn": "Plant new bulbs from September, deep enough to avoid frost heave.",
+   "Winter": "Bulbs are dormant underground; no care needed."
+  },
+  "problems": [
+   {
+    "name": "Narcissus bulb fly",
+    "fix": "Larvae hollow out bulbs; lift and discard any soft, hollow bulbs found when dividing clumps."
+   },
+   {
+    "name": "Poor flowering after a few years ('blindness')",
+    "fix": "Usually overcrowding or foliage cut too early; divide congested clumps and always let leaves die back naturally."
+   }
+  ],
+  "companions": [
+   "Tulip",
+   "Hyacinth",
+   "Crocus"
+  ],
+  "propagation": {
+   "season": "Bulbs naturally multiply and can be lifted and divided every few years once clumps become congested.",
+   "methods": "Divide just after foliage has died back, replanting offsets immediately.",
+   "tips": "The easiest and most common way most gardeners ever propagate daffodils.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "An important early-season nectar source for bees emerging in spring when few other flowers are available yet."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Sep-Nov",
+   "Flowering": "Feb-Apr",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead after flowering; never cut foliage early"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Daffodil.",
+   "gallery": [
+    "Flower close-up",
+    "Naturalised drift in a border or lawn",
+    "Emerging shoots",
+    "Bulbs before planting"
+   ]
+  },
+  "weeklyFact": "Daffodils contain a natural toxin called lycorine, which is exactly why deer, squirrels and rabbits generally leave them alone.",
+  "weeklyFacts": [
+   "Daffodils contain a natural toxin called lycorine, which is exactly why deer, squirrels and rabbits generally leave them alone.",
+   "A single daffodil bulb, left undisturbed, can naturalise into a large flowering clump over just a few years without any help."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Daffodils are one of the most important early-spring nectar sources for bees just emerging from winter, when very little else is in flower."
+ },
+ "GK-SNO-001": {
+  "id": "GK-SNO-001",
+  "slug": "snowdrop",
+  "name": "Snowdrop",
+  "latinName": "Galanthus nivalis",
+  "variety": "Common snowdrop",
+  "subtitle": "The very first bulb of the gardening year, often flowering through snow.",
+  "theme": "#8fa896",
+  "tags": [
+   "Winter flowers",
+   "Part shade",
+   "Bulb",
+   "Naturalises",
+   "Woodland"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise relies on natural winter and spring rainfall",
+   "Light": "Part shade, ideally under deciduous trees or shrubs",
+   "Feeding": "No feeding needed in reasonable soil",
+   "Pruning": "Deadhead not necessary; leave foliage to die back naturally after flowering"
+  },
+  "notes": "Best planted 'in the green' (as growing plants just after flowering) rather than as dry bulbs, which establish far less reliably.",
+  "soil": "Moist, humus-rich soil.",
+  "medium": "Peat-free compost with added leaf mould for containers.",
+  "seasonalActions": {
+   "Spring": "Flowers finish; foliage continues photosynthesising to recharge the bulb.",
+   "Summer": "Foliage dies back completely \u2014 this is normal, not a problem.",
+   "Autumn": "Dormant underground.",
+   "Winter": "Flowers emerge, sometimes through light snow, giving the plant its name."
+  },
+  "problems": [
+   {
+    "name": "Grey mould in wet weather",
+    "fix": "Usually not serious; improve airflow in very congested clumps if it recurs."
+   },
+   {
+    "name": "Slow to establish from dry bulbs",
+    "fix": "Plant 'in the green' (as leafy plants, just after flowering) instead for much better establishment."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Hosta",
+   "Hellebore"
+  ],
+  "propagation": {
+   "season": "Divide congested clumps 'in the green,' just after flowering finishes.",
+   "methods": "Replant divisions immediately \u2014 snowdrop bulbs dislike drying out.",
+   "tips": "One of the few bulbs best propagated as growing plants rather than dry bulbs.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "An important very-early nectar source for any bees or other insects active during mild spells in the depths of winter."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from bulbs, best divided in the green",
+   "Flowering": "Jan-Mar",
+   "Harvest": "N/A",
+   "Pruning": "No pruning needed; let foliage die back naturally"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Snowdrop.",
+   "gallery": [
+    "Flower close-up, ideally with snow or frost",
+    "Naturalised drift under trees",
+    "Emerging shoots",
+    "Foliage before it dies back"
+   ]
+  },
+  "weeklyFact": "Snowdrops produce a small amount of natural antifreeze-like compound in their cell sap, part of how they manage to flower through frost and snow.",
+  "weeklyFacts": [
+   "Snowdrops produce a small amount of natural antifreeze-like compound in their cell sap, part of how they manage to flower through frost and snow.",
+   "Some rare snowdrop varieties ('galanthophile' collector plants) have sold at auction for hundreds of pounds for a single bulb."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Snowdrops are a genuinely valuable very-early nectar source for any bees or other pollinators active on mild days in the depths of winter, when almost nothing else is flowering."
+ },
+ "GK-ALL-001": {
+  "id": "GK-ALL-001",
+  "slug": "allium",
+  "name": "Ornamental Allium",
+  "latinName": "Allium hollandicum",
+  "variety": "Purple Sensation type",
+  "subtitle": "Striking spherical purple flowerheads on tall bare stems, beloved by bees.",
+  "theme": "#8f5aa8",
+  "tags": [
+   "Bulb",
+   "Full sun",
+   "Pollinator",
+   "Architectural",
+   "Cut flowers"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise reasonably drought-tolerant once established",
+   "Light": "Full sun",
+   "Feeding": "Light feed at planting; not a hungry plant",
+   "Pruning": "No pruning; leave seed heads standing for structure through summer and autumn"
+  },
+  "notes": "The dried seed heads are as ornamental as the flowers \u2014 leave them standing rather than cutting back for extra weeks of garden interest.",
+  "soil": "Free-draining soil; dislikes waterlogging, especially in winter.",
+  "medium": "Peat-free compost with added grit for containers.",
+  "seasonalActions": {
+   "Spring": "Flower spikes emerge and open into spherical flowerheads.",
+   "Summer": "Flowers fade to attractive dried seed heads; leave standing.",
+   "Autumn": "Foliage (often untidy by now) dies back; bulbs are dormant.",
+   "Winter": "Bulbs are fully dormant underground; no care needed."
+  },
+  "problems": [
+   {
+    "name": "Foliage dying back untidily before flowering finishes",
+    "fix": "Normal for this genus; plant later-emerging perennials nearby to disguise the fading leaves."
+   },
+   {
+    "name": "Bulb rot in waterlogged soil",
+    "fix": "Improve drainage significantly, especially over winter dormancy."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Nepeta",
+   "Salvia"
+  ],
+  "propagation": {
+   "season": "Bulbs naturally produce small offset bulbs that can be lifted and divided every few years.",
+   "methods": "Divide once foliage has died back completely.",
+   "tips": "Simple and reliable, though slower-multiplying than daffodils.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An outstanding bee plant \u2014 the spherical flowerhead is made of dozens of small individual flowers, each a landing pad for a different visit."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Sep-Nov",
+   "Flowering": "May-Jun",
+   "Harvest": "N/A",
+   "Pruning": "Leave seed heads standing after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Ornamental Allium.",
+   "gallery": [
+    "Flowerhead close-up",
+    "Whole plant showing height in a border",
+    "Dried seed head",
+    "Bees visiting if captured"
+   ]
+  },
+  "weeklyFact": "An allium flowerhead is actually a cluster of dozens of small star-shaped flowers packed into a single sphere, not one large bloom.",
+  "weeklyFacts": [
+   "An allium flowerhead is actually a cluster of dozens of small star-shaped flowers packed into a single sphere, not one large bloom.",
+   "Ornamental allium is a close relative of onions, garlic and chives, all in the same genus, though grown purely for its flowers rather than to eat."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Ornamental allium's spherical flowerheads are made up of dozens of individual small flowers, making a single plant capable of hosting many bee visits in one flowering."
+ },
+ "GK-HYA-001": {
+  "id": "GK-HYA-001",
+  "slug": "hyacinth",
+  "name": "Hyacinth",
+  "latinName": "Hyacinthus orientalis",
+  "variety": "Mixed hyacinth",
+  "subtitle": "Intensely fragrant spring bulb, equally at home in a border or an indoor bowl.",
+  "theme": "#7a5aa8",
+  "tags": [
+   "Bulb",
+   "Full sun",
+   "Fragrant",
+   "Spring flowers"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; if grown indoors in a bowl, keep compost just moist, never waterlogged",
+   "Light": "Full sun outdoors; bright light if grown indoors",
+   "Feeding": "Light feed after flowering if planning to keep the bulb for next year",
+   "Pruning": "Deadhead after flowering; leave foliage to die back naturally"
+  },
+  "notes": "Indoor 'forced' hyacinth bulbs are usually spent after one indoor display \u2014 plant them out in the garden afterwards rather than discarding, where they can recover and flower again in future years.",
+  "soil": "Free-draining soil for outdoor planting.",
+  "medium": "Bulb fibre or free-draining compost for indoor bowls; peat-free compost with grit for outdoor containers.",
+  "seasonalActions": {
+   "Spring": "Flowers open with strong fragrance; deadhead as they fade.",
+   "Summer": "Foliage dies back naturally after flowering.",
+   "Autumn": "Plant new bulbs from September for next spring.",
+   "Winter": "Bulbs are dormant; indoor 'forced' bulbs need a cold, dark period first if starting from scratch."
+  },
+  "problems": [
+   {
+    "name": "Bulb rot in waterlogged compost",
+    "fix": "Ensure sharp drainage, especially for bulbs grown in bowls without drainage holes."
+   },
+   {
+    "name": "Flopping flower spikes",
+    "fix": "Common in forced indoor bulbs grown too warm too fast; keep cooler and provide some support if needed."
+   }
+  ],
+  "companions": [
+   "Tulip",
+   "Daffodil",
+   "Crocus"
+  ],
+  "propagation": {
+   "season": "Bulbs produce small offsets over time, though multiplication is slower than daffodils.",
+   "methods": "Divide congested clumps once foliage has died back.",
+   "tips": "Most gardeners simply buy fresh bulbs each year rather than relying on division.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Strongly fragrant flowers are a good early-season draw for bees on mild spring days."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Sep-Nov, or pre-chilled for indoor forcing",
+   "Flowering": "Mar-Apr outdoors, earlier if forced indoors",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Hyacinth.",
+   "gallery": [
+    "Flower spike close-up",
+    "Whole plant in a border or bowl",
+    "Bulb before planting",
+    "Fragrant flower in close detail"
+   ]
+  },
+  "weeklyFact": "A hyacinth's intense fragrance comes from an unusually high concentration of scent compounds packed into a relatively small flower spike.",
+  "weeklyFacts": [
+   "A hyacinth's intense fragrance comes from an unusually high concentration of scent compounds packed into a relatively small flower spike.",
+   "'Forced' hyacinth bulbs sold for indoor winter displays have been deliberately tricked with a cold treatment to flower months ahead of their natural outdoor schedule."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Hyacinth's strongly fragrant flowers are a useful early-season nectar source for bees active on mild spring days, alongside daffodils and crocus."
+ },
+ "GK-CRC-001": {
+  "id": "GK-CRC-001",
+  "slug": "crocus",
+  "name": "Crocus",
+  "latinName": "Crocus vernus",
+  "variety": "Mixed crocus",
+  "subtitle": "Tiny, brilliant, among the very first flowers of the gardening year.",
+  "theme": "#7a5ec2",
+  "tags": [
+   "Bulb",
+   "Full sun",
+   "Very early flowers",
+   "Naturalises",
+   "Lawn friendly"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise relies on natural rainfall",
+   "Light": "Full sun \u2014 flowers close on dull days and open again in sunshine",
+   "Feeding": "No feeding needed in reasonable soil",
+   "Pruning": "No pruning; if naturalising in a lawn, don't mow until foliage has died back naturally"
+  },
+  "notes": "Genuinely one of the best bulbs for naturalising in grass \u2014 corms multiply readily and the foliage dies back early enough to allow normal mowing to resume.",
+  "soil": "Free-draining soil.",
+  "medium": "Peat-free compost with added grit for containers.",
+  "seasonalActions": {
+   "Spring": "Flowers open in sunshine, often among the first colour of the year.",
+   "Summer": "Foliage dies back; safe to resume mowing over naturalised patches.",
+   "Autumn": "Plant new corms from September.",
+   "Winter": "Corms are fully dormant underground."
+  },
+  "problems": [
+   {
+    "name": "Squirrels and mice digging up corms",
+    "fix": "Cover freshly planted areas with mesh until shoots appear, especially in gardens with a known problem."
+   },
+   {
+    "name": "Corm rot in waterlogged soil",
+    "fix": "Improve drainage; crocus dislikes sitting wet, especially over summer dormancy."
+   }
+  ],
+  "companions": [
+   "Daffodil",
+   "Snowdrop",
+   "Hyacinth"
+  ],
+  "propagation": {
+   "season": "Corms naturally produce small cormlets that can be lifted and divided every few years.",
+   "methods": "Divide once foliage has died back completely.",
+   "tips": "One of the easiest bulbs to naturalise and spread with minimal effort.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An essential very-early nectar and pollen source \u2014 crocus flowers are often the first significant food available to bees emerging from winter hibernation."
+  },
+  "timeline": {
+   "Seeding": "Plant corms Sep-Oct",
+   "Flowering": "Feb-Mar, sometimes earlier in mild years",
+   "Harvest": "N/A",
+   "Pruning": "Don't mow naturalised patches until foliage dies back"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Crocus.",
+   "gallery": [
+    "Flower close-up in sunshine",
+    "Naturalised drift in grass",
+    "Corms before planting",
+    "Bees visiting if captured"
+   ]
+  },
+  "weeklyFact": "Crocus flowers physically close up on cloudy days and at night, only opening fully in direct sunlight \u2014 a response to temperature as much as light.",
+  "weeklyFacts": [
+   "Crocus flowers physically close up on cloudy days and at night, only opening fully in direct sunlight \u2014 a response to temperature as much as light.",
+   "Saffron, one of the world's most expensive spices, comes from the stigmas of a specific autumn-flowering crocus species, Crocus sativus."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Crocus is one of the most important very-early pollen and nectar sources of the whole year, often providing the first significant meal for bees just emerging from winter hibernation."
+ },
+ "GK-BLU-001": {
+  "id": "GK-BLU-001",
+  "slug": "bluebell",
+  "name": "Bluebell",
+  "latinName": "Hyacinthoides non-scripta",
+  "variety": "English bluebell",
+  "subtitle": "Native woodland bulb that carpets shaded ground in vivid blue every spring.",
+  "theme": "#4a5ec7",
+  "tags": [
+   "Bulb",
+   "Shade",
+   "Woodland",
+   "Native wildflower",
+   "Naturalises"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise relies on natural rainfall in its shaded woodland setting",
+   "Light": "Part to full shade, ideally under deciduous trees",
+   "Feeding": "No feeding needed in reasonable woodland-style soil",
+   "Pruning": "No pruning; let foliage die back naturally, which feeds the bulb for next year"
+  },
+  "notes": "Only plant true native English bluebells (Hyacinthoides non-scripta), not the more vigorous Spanish bluebell, which hybridises with and threatens native populations in the wild.",
+  "soil": "Moist, humus-rich woodland soil.",
+  "medium": "Peat-free compost with added leaf mould for any container growing, though this species prefers open ground.",
+  "seasonalActions": {
+   "Spring": "Flowers open in a vivid blue carpet under bare or newly leafing trees.",
+   "Summer": "Foliage dies back completely as tree canopy closes overhead.",
+   "Autumn": "Dormant underground beneath fallen leaves.",
+   "Winter": "Fully dormant; the leaf litter above acts as natural winter protection."
+  },
+  "problems": [
+   {
+    "name": "Slow to establish from dry bulbs",
+    "fix": "Plant 'in the green' (as leafy plants, just after flowering) for much better establishment, similar to snowdrops."
+   },
+   {
+    "name": "Hybridisation with Spanish bluebell",
+    "fix": "Avoid planting Spanish or hybrid bluebells nearby if preserving native English bluebell character matters to you."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Hosta",
+   "Foxglove"
+  ],
+  "propagation": {
+   "season": "Divide congested clumps 'in the green,' just after flowering, similar to snowdrops.",
+   "methods": "Very slow to establish from seed \u2014 division of existing clumps is far more practical.",
+   "tips": "Best left undisturbed once established; a mature bluebell wood can take years to develop.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "An important spring nectar source for woodland bees and other early pollinators, especially in shaded areas with fewer alternative flowers available."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 best divided in the green after flowering",
+   "Flowering": "Apr-May",
+   "Harvest": "N/A",
+   "Pruning": "No pruning; let foliage die back naturally"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Bluebell.",
+   "gallery": [
+    "Carpet of flowers in woodland setting",
+    "Flower spike close-up",
+    "Foliage before flowering",
+    "Woodland scene with bluebells and trees"
+   ]
+  },
+  "weeklyFact": "English bluebell woods are considered a strong indicator of ancient woodland, since the plant spreads and establishes extremely slowly over many decades.",
+  "weeklyFacts": [
+   "English bluebell woods are considered a strong indicator of ancient woodland, since the plant spreads and establishes extremely slowly over many decades.",
+   "Around half of the world's bluebells are found in the UK, making native bluebell woods a genuinely significant part of British woodland ecology."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Bluebells are an important spring nectar source in shaded woodland settings, where early-flying bees have relatively few other flower choices available before the tree canopy closes overhead."
+ },
+ "GK-HEB-001": {
+  "id": "GK-HEB-001",
+  "slug": "hebe",
+  "name": "Hebe",
+  "latinName": "Hebe",
+  "variety": "Mixed hebe",
+  "subtitle": "Neat, reliable evergreen shrub with small flower spikes over a long season.",
+  "theme": "#5a7a6a",
+  "tags": [
+   "Shrub",
+   "Evergreen",
+   "Full sun",
+   "Low maintenance",
+   "Coastal tolerant"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun to light shade",
+   "Feeding": "Light spring feed if growth is poor; not a hungry plant",
+   "Pruning": "Light trim after flowering to keep a neat shape; avoid cutting into old bare wood"
+  },
+  "notes": "Genuinely good for coastal or exposed gardens \u2014 many hebe varieties tolerate salt-laden wind better than most other flowering evergreens.",
+  "soil": "Free-draining soil.",
+  "medium": "Peat-free compost with reasonable drainage for pots.",
+  "seasonalActions": {
+   "Spring": "Trim lightly to shape once the risk of hard frost has passed.",
+   "Summer": "Flowers over a long season on many varieties; deadhead if tidiness matters.",
+   "Autumn": "Light trim if needed; avoid cutting late enough to trigger tender new growth before winter.",
+   "Winter": "Some varieties are more frost-tender than others; check the specific variety's hardiness."
+  },
+  "problems": [
+   {
+    "name": "Leaf spot in humid weather",
+    "fix": "Remove affected leaves and improve airflow between plants."
+   },
+   {
+    "name": "Frost damage on tender varieties",
+    "fix": "Choose hardier varieties in colder gardens, or provide winter protection for borderline-hardy types."
+   }
+  ],
+  "companions": [
+   "Lavender",
+   "Salvia",
+   "Nepeta"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root readily in a gritty mix \u2014 one of the easier shrubs to propagate this way.",
+   "methods": "Softwood cuttings in late spring are also a reliable option.",
+   "tips": "A good beginner shrub-propagation project thanks to a high success rate.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Long flowering spikes on many varieties are popular with bees and butterflies over an extended summer season."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Jun-Oct depending on variety",
+   "Harvest": "N/A",
+   "Pruning": "Light trim after flowering, avoiding old wood"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Hebe.",
+   "gallery": [
+    "Whole shrub showing form",
+    "Flower spike close-up",
+    "Foliage detail",
+    "Newly trimmed shape"
+   ]
+  },
+  "weeklyFact": "Hebe is named after the Greek goddess of youth, reflecting its evergreen, ever-fresh appearance.",
+  "weeklyFacts": [
+   "Hebe is named after the Greek goddess of youth, reflecting its evergreen, ever-fresh appearance.",
+   "Nearly all hebe species originate from New Zealand, making it one of relatively few widely grown garden shrubs from that specific region."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Hebe's long flowering spikes, especially on smaller-flowered varieties, are popular with bees and butterflies over an unusually extended summer season."
+ },
+ "GK-WEI-001": {
+  "id": "GK-WEI-001",
+  "slug": "weigela",
+  "name": "Weigela",
+  "latinName": "Weigela florida",
+  "variety": "Mixed weigela",
+  "subtitle": "Arching deciduous shrub smothered in trumpet flowers in late spring.",
+  "theme": "#c2607a",
+  "tags": [
+   "Shrub",
+   "Deciduous",
+   "Full sun",
+   "Spring flowers"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun to light shade for the best flowering",
+   "Feeding": "Light spring feed if growth or flowering is poor",
+   "Pruning": "Prune immediately after flowering, removing a proportion of old stems at the base to renew the shrub"
+  },
+  "notes": "Prune right after flowering, not in winter \u2014 winter pruning removes the flower buds that formed the previous summer, losing that year's display.",
+  "soil": "Fertile, well-drained soil.",
+  "medium": "Peat-free compost with added organic matter for pots.",
+  "seasonalActions": {
+   "Spring": "Flowers open in a mass of trumpet-shaped blooms.",
+   "Summer": "Prune immediately after flowering finishes, removing some old stems at the base.",
+   "Autumn": "New growth from summer pruning matures and sets next year's flower buds.",
+   "Winter": "Deciduous and dormant; fully hardy in most gardens."
+  },
+  "problems": [
+   {
+    "name": "Aphids on new growth",
+    "fix": "Wash off with water or encourage ladybirds; rarely serious."
+   },
+   {
+    "name": "No flowers",
+    "fix": "Almost always pruned at the wrong time (winter, removing flower buds) \u2014 always prune right after flowering instead."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Hydrangea",
+   "Viburnum"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in early summer root reasonably well.",
+   "methods": "Semi-ripe cuttings in late summer are a slightly slower but reliable alternative.",
+   "tips": "A moderately easy shrub to propagate from cuttings with basic rooting hormone and a gritty mix.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Tubular flowers are well suited to bees, particularly bumblebees able to access the trumpet shape."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "May-Jun",
+   "Harvest": "N/A",
+   "Pruning": "Prune immediately after flowering, not in winter"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Weigela.",
+   "gallery": [
+    "Whole shrub in flower",
+    "Flower close-up showing trumpet shape",
+    "Arching branch structure",
+    "Newly pruned shrub after flowering"
+   ]
+  },
+  "weeklyFact": "Weigela was named after German scientist Christian Ehrenfried von Weigel, and is a genus of around 10 species originally from East Asia.",
+  "weeklyFacts": [
+   "Weigela was named after German scientist Christian Ehrenfried von Weigel, and is a genus of around 10 species originally from East Asia.",
+   "Because weigela sets its flower buds on the previous year's growth, pruning timing genuinely determines whether you get a full flower display or almost none."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Weigela's tubular spring flowers are well suited to bumblebees, which are heavy and strong enough to access the trumpet shape efficiently."
+ },
+ "GK-FOR-001": {
+  "id": "GK-FOR-001",
+  "slug": "forsythia",
+  "name": "Forsythia",
+  "latinName": "Forsythia \u00d7 intermedia",
+  "variety": "Mixed forsythia",
+  "subtitle": "Vivid yellow flowers smother bare branches right at the start of spring.",
+  "theme": "#e8c22f",
+  "tags": [
+   "Shrub",
+   "Deciduous",
+   "Full sun",
+   "Early spring flowers",
+   "Hedging"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun to light shade for the best flowering",
+   "Feeding": "Light spring feed after flowering if growth is poor",
+   "Pruning": "Prune immediately after flowering; can be cut back hard as it regrows vigorously"
+  },
+  "notes": "One of the most reliable 'first sign of spring' shrubs \u2014 flowers appear on bare wood before the leaves even emerge.",
+  "soil": "Any reasonable, well-drained soil.",
+  "medium": "Peat-free compost with added organic matter for pots.",
+  "seasonalActions": {
+   "Spring": "Vivid yellow flowers open on bare branches before leaves appear.",
+   "Summer": "Prune immediately after flowering finishes to shape and renew growth.",
+   "Autumn": "New growth from the spring prune matures and sets next year's flower buds.",
+   "Winter": "Deciduous and dormant; fully hardy and undemanding."
+  },
+  "problems": [
+   {
+    "name": "No flowers",
+    "fix": "Almost always pruned at the wrong time (winter, removing flower buds) \u2014 always prune right after flowering instead."
+   },
+   {
+    "name": "Overly vigorous, congested growth",
+    "fix": "Responds well to hard renovation pruning right after flowering if it's outgrown its space."
+   }
+  ],
+  "companions": [
+   "Viburnum",
+   "Hebe",
+   "Camellia"
+  ],
+  "propagation": {
+   "season": "Hardwood cuttings in autumn or winter root very reliably, even for beginners.",
+   "methods": "Softwood cuttings in early summer are also an option.",
+   "tips": "One of the easiest shrubs in this library to propagate from cuttings.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Early flowers provide a useful nectar source for the first bees active in early spring, though the tubular shape limits access for some smaller insects."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Mar-Apr, before leaves emerge",
+   "Harvest": "N/A",
+   "Pruning": "Prune hard immediately after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Forsythia.",
+   "gallery": [
+    "Whole shrub covered in flowers",
+    "Flower close-up on bare branch",
+    "Hedge or border planting",
+    "Newly pruned shrub after flowering"
+   ]
+  },
+  "weeklyFact": "Forsythia flowers open before the leaves specifically to maximise visibility to early pollinators against a still-bare landscape.",
+  "weeklyFacts": [
+   "Forsythia flowers open before the leaves specifically to maximise visibility to early pollinators against a still-bare landscape.",
+   "Forsythia is one of the most reliable shrubs for hardwood cuttings \u2014 a cut stem pushed straight into open ground in winter will often root with no special treatment at all."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Forsythia's early flowers are a useful nectar source for the first bees becoming active in early spring, at a time when relatively few other shrubs are yet in bloom."
+ },
+ "GK-LIL-001": {
+  "id": "GK-LIL-001",
+  "slug": "lilac",
+  "name": "Lilac",
+  "latinName": "Syringa vulgaris",
+  "variety": "Common lilac",
+  "subtitle": "Deliciously fragrant spring shrub, a cottage garden classic for generations.",
+  "theme": "#a866c2",
+  "tags": [
+   "Shrub",
+   "Deciduous",
+   "Full sun",
+   "Fragrant",
+   "Spring flowers"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun for the best flowering \u2014 shade significantly reduces bloom",
+   "Feeding": "Light spring feed if flowering is poor",
+   "Pruning": "Deadhead spent flower panicles; prune immediately after flowering if size needs controlling"
+  },
+  "notes": "Needs a genuinely sunny spot to flower well \u2014 a lilac struggling in shade is one of the most common 'why won't it flower' questions, and the fix is almost always more light.",
+  "soil": "Fertile, well-drained, slightly alkaline soil.",
+  "medium": "Peat-free compost with added organic matter for pots, though lilac generally prefers open ground long-term.",
+  "seasonalActions": {
+   "Spring": "Flower panicles open with strong, classic fragrance.",
+   "Summer": "Deadhead spent flowers; prune immediately after if reshaping is needed.",
+   "Autumn": "New growth sets next year's flower buds.",
+   "Winter": "Deciduous and fully hardy; needs no winter protection."
+  },
+  "problems": [
+   {
+    "name": "Poor or no flowering",
+    "fix": "Almost always insufficient sun; move to a sunnier spot or manage overhanging shade if possible."
+   },
+   {
+    "name": "Powdery mildew on leaves in late summer",
+    "fix": "Usually cosmetic by that point in the season; improve airflow for future years."
+   }
+  ],
+  "companions": [
+   "Rose",
+   "Weigela",
+   "Peony"
+  ],
+  "propagation": {
+   "season": "Softwood cuttings in early summer can be tricky to root but are worth attempting for named varieties.",
+   "methods": "Suckers (shoots from the base) can sometimes be removed with roots attached and potted separately.",
+   "tips": "Grafted named varieties are usually bought as young plants rather than propagated at home.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Fragrant flower panicles are a good nectar source for bees and butterflies during their relatively brief but intense flowering period."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "May-Jun",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead after flowering; prune immediately after if needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Lilac.",
+   "gallery": [
+    "Whole shrub in flower",
+    "Flower panicle close-up",
+    "Fragrant flower detail",
+    "Newly pruned shrub after flowering"
+   ]
+  },
+  "weeklyFact": "Lilac's intense fragrance has made it one of the most commonly referenced flowers in perfumery, despite being notoriously difficult to extract true lilac scent from directly.",
+  "weeklyFacts": [
+   "Lilac's intense fragrance has made it one of the most commonly referenced flowers in perfumery, despite being notoriously difficult to extract true lilac scent from directly.",
+   "A well-sited lilac can live and flower reliably for well over 50 years with minimal care beyond a sunny spot and the occasional post-flowering tidy."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Lilac's fragrant flower panicles are a strong short-term draw for bees and butterflies during its relatively brief but intense spring flowering window."
+ },
+ "GK-CHO-001": {
+  "id": "GK-CHO-001",
+  "slug": "choisya",
+  "name": "Choisya",
+  "latinName": "Choisya ternata",
+  "variety": "Mexican orange blossom",
+  "subtitle": "Glossy evergreen shrub with fragrant white flowers, often blooming twice a year.",
+  "theme": "#4a7a3f",
+  "tags": [
+   "Shrub",
+   "Evergreen",
+   "Full sun to part shade",
+   "Fragrant",
+   "Low maintenance"
+  ],
+  "quickCare": {
+   "Water": "Water while establishing; drought-tolerant once settled",
+   "Light": "Full sun to part shade",
+   "Feeding": "Light spring feed if growth is poor; not a hungry plant",
+   "Pruning": "Trim to shape after the main spring flush; avoid hard pruning into old bare wood"
+  },
+  "notes": "One of the most reliably low-maintenance evergreen shrubs available \u2014 glossy year-round foliage plus two flowering flushes for very little work.",
+  "soil": "Any reasonable, well-drained soil.",
+  "medium": "Peat-free compost with added organic matter for pots.",
+  "seasonalActions": {
+   "Spring": "Main flush of fragrant white flowers opens.",
+   "Summer": "Trim lightly to shape after the spring flush finishes.",
+   "Autumn": "A second, lighter flush of flowers often appears.",
+   "Winter": "Evergreen and generally hardy, though very hard frost can damage foliage in exposed spots."
+  },
+  "problems": [
+   {
+    "name": "Frost damage to foliage in exposed sites",
+    "fix": "Choose a sheltered spot in colder gardens, or accept some winter leaf browning, which usually recovers."
+   },
+   {
+    "name": "Leaf drop after transplanting",
+    "fix": "Normal transplant shock; keep well watered while it re-establishes."
+   }
+  ],
+  "companions": [
+   "Camellia",
+   "Rhododendron",
+   "Hebe"
+  ],
+  "propagation": {
+   "season": "Semi-ripe cuttings in summer root reasonably reliably in a gritty mix.",
+   "methods": "A moderately easy shrub to propagate, though patience is needed as growth is fairly slow.",
+   "tips": "Layering a low branch is a slower but very reliable alternative method.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Fragrant flowers are popular with bees, and the double flowering habit (spring plus a lighter second flush) extends the useful nectar window."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young plants",
+   "Flowering": "Apr-May, often with a second flush in autumn",
+   "Harvest": "N/A",
+   "Pruning": "Trim after the main spring flush, avoiding old wood"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Choisya.",
+   "gallery": [
+    "Whole shrub showing glossy foliage",
+    "Flower close-up",
+    "Second autumn flush if it occurs",
+    "Newly trimmed shape"
+   ]
+  },
+  "weeklyFact": "Choisya's common name, Mexican orange blossom, comes from both its native range and a citrus-like fragrance in the flowers, despite being unrelated to true oranges.",
+  "weeklyFacts": [
+   "Choisya's common name, Mexican orange blossom, comes from both its native range and a citrus-like fragrance in the flowers, despite being unrelated to true oranges.",
+   "Its glossy, aromatic leaves release a distinct scent when crushed, a trait shared with several other plants in its wider family."
+  ],
+  "category": "Shrub",
+  "pollinatorFact": "Choisya's fragrant flowers, often appearing in two flushes across the year, provide a useful and unusually extended nectar window for bees."
+ },
+ "GK-BIR-001": {
+  "id": "GK-BIR-001",
+  "slug": "silver-birch",
+  "name": "Silver Birch",
+  "latinName": "Betula pendula",
+  "variety": "Common silver birch",
+  "subtitle": "Elegant, fast-growing native tree with striking white bark and light, airy canopy.",
+  "theme": "#8a9e8a",
+  "tags": [
+   "Tree",
+   "Full sun",
+   "Native",
+   "Fast growing",
+   "Wildlife friendly"
+  ],
+  "quickCare": {
+   "Water": "Water well for the first two years while establishing; established trees rely on natural rainfall",
+   "Light": "Full sun to part shade",
+   "Feeding": "No feeding usually needed once established in reasonable soil",
+   "Pruning": "Prune only when fully dormant in mid-to-late winter \u2014 birch 'bleeds' sap heavily if cut in spring"
+  },
+  "notes": "Never prune birch in spring or summer \u2014 cut stems bleed sap dramatically at that time of year; always prune in deep winter dormancy instead.",
+  "soil": "Adaptable to most soils, though prefers slightly acidic, well-drained ground.",
+  "medium": "Not typically grown in containers long-term; young trees can start in large pots before planting out.",
+  "seasonalActions": {
+   "Spring": "Catkins appear before leaves fully unfurl.",
+   "Summer": "Full leaf canopy provides light, dappled shade.",
+   "Autumn": "Leaves turn a clear yellow before falling \u2014 a genuine autumn highlight.",
+   "Winter": "Bare white bark is most visible and striking, especially against dark winter skies."
+  },
+  "problems": [
+   {
+    "name": "Bracket fungi on mature or stressed trees",
+    "fix": "A sign of internal decay in older trees; consult an arborist if structural safety is a concern."
+   },
+   {
+    "name": "Aphid honeydew dripping from canopy",
+    "fix": "Common and mostly cosmetic; supports a healthy food chain of aphid predators beneath the tree."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Bluebell",
+   "Hosta"
+  ],
+  "propagation": {
+   "season": "Grown from seed, which needs a cold period (stratification) to germinate well.",
+   "methods": "Named ornamental varieties are usually grafted rather than grown from seed.",
+   "tips": "Most gardeners buy young trees rather than growing birch from seed at home.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Catkins are wind-pollinated rather than insect-pollinated, but birch trees support an exceptionally large number of insect species that in turn feed birds and other wildlife."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 usually bought as young trees",
+   "Flowering": "Catkins Mar-Apr, wind-pollinated",
+   "Harvest": "N/A",
+   "Pruning": "Prune only in deep winter dormancy"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Silver Birch.",
+   "gallery": [
+    "Whole tree showing white bark and canopy shape",
+    "Bark close-up",
+    "Autumn leaf colour",
+    "Catkins in spring"
+   ]
+  },
+  "weeklyFact": "Silver birch bark naturally peels in thin white papery layers, a genuine adaptation that helps the tree shed lichen and moss and reflect excess sunlight.",
+  "weeklyFacts": [
+   "Silver birch bark naturally peels in thin white papery layers, a genuine adaptation that helps the tree shed lichen and moss and reflect excess sunlight.",
+   "A mature birch canopy is thought to support several hundred species of insect, more than almost any other native tree except oak."
+  ],
+  "category": "Tree",
+  "pollinatorFact": "Birch catkins are wind-pollinated rather than relying on insects, but the tree as a whole is an exceptionally important host for hundreds of insect species that feed birds and other wildlife through the food chain."
+ },
+ "GK-APP-001": {
+  "id": "GK-APP-001",
+  "slug": "apple-tree",
+  "name": "Apple Tree",
+  "latinName": "Malus domestica",
+  "variety": "Dessert apple",
+  "subtitle": "Classic fruiting tree \u2014 needs a pollination partner and a bit of yearly pruning, but rewards for decades.",
+  "theme": "#8fa855",
+  "tags": [
+   "Tree",
+   "Fruit",
+   "Full sun",
+   "Needs pollination partner"
+  ],
+  "quickCare": {
+   "Water": "Water well in the first couple of years and during dry spells while fruit is swelling",
+   "Light": "Full sun for the best fruit production",
+   "Feeding": "Balanced feed in spring; mulch with well-rotted organic matter",
+   "Pruning": "Prune while dormant in winter for most varieties, removing crossing, dead or crowded branches"
+  },
+  "notes": "Most apple varieties need a different, compatible variety flowering at the same time nearby for good pollination and fruit set \u2014 check your variety's pollination group before assuming a single tree will crop well alone.",
+  "soil": "Fertile, well-drained soil.",
+  "medium": "Not typically container-grown long-term except on very dwarfing rootstocks in large pots.",
+  "seasonalActions": {
+   "Spring": "Blossom opens; a late frost at this stage can damage the crop for the year.",
+   "Summer": "Thin developing fruit if very heavy for larger, better-quality apples; water in dry spells.",
+   "Autumn": "Harvest as fruit ripens; varieties differ widely in timing.",
+   "Winter": "Prune while fully dormant, avoiding periods of hard frost."
+  },
+  "problems": [
+   {
+    "name": "Apple scab",
+    "fix": "Dark scabby patches on leaves and fruit; rake up and dispose of fallen leaves in autumn to reduce next year's spores."
+   },
+   {
+    "name": "Codling moth",
+    "fix": "Maggots inside the fruit core; pheromone traps and good orchard hygiene help reduce numbers over a few seasons."
+   },
+   {
+    "name": "Poor fruit set",
+    "fix": "Usually a pollination partner issue or late frost damage to blossom; check pollination group compatibility."
+   }
+  ],
+  "companions": [
+   "Chives",
+   "Marigold",
+   "Nasturtium"
+  ],
+  "propagation": {
+   "season": "Grafting onto a specific rootstock is the standard method, since apples don't come true from seed and rootstock choice controls eventual tree size.",
+   "methods": "Most gardeners buy a grafted young tree rather than attempting to graft at home.",
+   "tips": "Seed-grown apples are a fun experiment but will produce an unpredictable, usually inferior fruit compared to the parent.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "Apple blossom is a major early-to-mid spring nectar source, and good pollination directly determines the size of the eventual harvest."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from grafted young trees",
+   "Flowering": "Apr-May",
+   "Harvest": "Aug-Oct depending on variety",
+   "Pruning": "Prune while dormant in winter"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Apple Tree.",
+   "gallery": [
+    "Whole tree in blossom",
+    "Blossom close-up",
+    "Ripening fruit on the branch",
+    "Winter pruned framework"
+   ]
+  },
+  "weeklyFact": "A single well-established apple tree, if well pollinated, can produce well over 100kg of fruit in a good year, depending on variety and rootstock.",
+  "weeklyFacts": [
+   "A single well-established apple tree, if well pollinated, can produce well over 100kg of fruit in a good year, depending on variety and rootstock.",
+   "Apples genuinely don't come true from seed \u2014 planting a pip from a shop-bought apple will grow into a real apple tree, but almost certainly not one that produces fruit anything like the parent."
+  ],
+  "category": "Tree",
+  "pollinatorFact": "Apple blossom is a major spring nectar and pollen source for bees, and the tree is entirely dependent on good insect pollination from a compatible partner variety for a worthwhile fruit harvest."
+ },
+ "GK-MAG-001": {
+  "id": "GK-MAG-001",
+  "slug": "magnolia",
+  "name": "Magnolia",
+  "latinName": "Magnolia \u00d7 soulangeana",
+  "variety": "Saucer magnolia",
+  "subtitle": "Dramatic, large goblet-shaped spring flowers on an ancient, primitive flowering tree.",
+  "theme": "#c26ba0",
+  "tags": [
+   "Tree",
+   "Full sun to part shade",
+   "Spring flowers",
+   "Ancient plant family"
+  ],
+  "quickCare": {
+   "Water": "Water well, especially newly planted trees and those in pots \u2014 dislikes drying out",
+   "Light": "Full sun to part shade, sheltered from strong wind and late frost",
+   "Feeding": "Light spring feed with an ericaceous or balanced fertiliser",
+   "Pruning": "Minimal pruning needed; if required, do it right after flowering to avoid removing next year's buds"
+  },
+  "notes": "Flower buds are famously vulnerable to a late frost after a mild spell \u2014 a sheltered spot away from early morning sun (which thaws frozen buds too fast) can save a whole season's display.",
+  "soil": "Fertile, humus-rich, moisture-retentive but well-drained soil, ideally slightly acidic.",
+  "medium": "Ericaceous peat-free compost for pot-grown young specimens.",
+  "seasonalActions": {
+   "Spring": "Large goblet-shaped flowers open, often before leaves \u2014 extremely vulnerable to late frost at this stage.",
+   "Summer": "Full leaf canopy develops after flowering finishes.",
+   "Autumn": "Leaves may show some autumn colour depending on variety.",
+   "Winter": "Fully dormant; protect young or pot-grown specimens' root zones from hard freezing."
+  },
+  "problems": [
+   {
+    "name": "Frost damage to flower buds",
+    "fix": "The most common magnolia disappointment; choose a sheltered site away from early morning sun to reduce the risk."
+   },
+   {
+    "name": "Slow to establish",
+    "fix": "Normal for the first couple of years; magnolias are worth the patience once established."
+   }
+  ],
+  "companions": [
+   "Camellia",
+   "Rhododendron",
+   "Japanese Maple"
+  ],
+  "propagation": {
+   "season": "Layering a low branch into the soil is the most reliable amateur method, though it can take a year or more to root.",
+   "methods": "Semi-ripe cuttings are possible but can be slow and inconsistent to root.",
+   "tips": "Most gardeners buy an established young tree rather than propagating magnolia at home.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Magnolia is pollinated primarily by beetles rather than bees, an evolutionary holdover from before bees existed, though some bee visits still occur."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 grown from young trees",
+   "Flowering": "Mar-Apr, often before leaves emerge",
+   "Harvest": "N/A",
+   "Pruning": "Minimal; if needed, prune right after flowering"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Magnolia.",
+   "gallery": [
+    "Whole tree in flower",
+    "Flower close-up showing goblet shape",
+    "Leaf canopy in summer",
+    "Bare winter branch structure with buds"
+   ]
+  },
+  "weeklyFact": "Magnolias are one of the most ancient flowering plant genera alive today, evolving before bees existed \u2014 their tough, simple flower structure is specifically adapted to survive being pollinated by beetles.",
+  "weeklyFacts": [
+   "Magnolias are one of the most ancient flowering plant genera alive today, evolving before bees existed \u2014 their tough, simple flower structure is specifically adapted to survive being pollinated by beetles.",
+   "Because magnolia flowers evolved for beetle pollination, they lack true nectar, offering pollen and a protein-rich flower structure as the reward instead."
+  ],
+  "category": "Tree",
+  "pollinatorFact": "Magnolia is pollinated primarily by beetles, an evolutionary trait from before bees existed on Earth, though its flowers still receive occasional visits from bees drawn to the abundant pollen."
+ },
+ "GK-ROW-001": {
+  "id": "GK-ROW-001",
+  "slug": "rowan",
+  "name": "Rowan",
+  "latinName": "Sorbus aucuparia",
+  "variety": "Mountain ash",
+  "subtitle": "Hardy native tree with white spring blossom and vivid orange-red autumn berries for birds.",
+  "theme": "#c0602f",
+  "tags": [
+   "Tree",
+   "Full sun to part shade",
+   "Native",
+   "Wildlife friendly",
+   "Berries"
+  ],
+  "quickCare": {
+   "Water": "Water well for the first couple of years while establishing; established trees are drought-tolerant",
+   "Light": "Full sun to part shade",
+   "Feeding": "No feeding usually needed once established",
+   "Pruning": "Prune while dormant in winter if shaping is needed; naturally forms a neat shape with little intervention"
+  },
+  "notes": "One of the best small-to-medium native trees for wildlife value \u2014 blossom for pollinators in spring, then a heavy crop of berries that birds strip within days in autumn.",
+  "soil": "Adaptable to most soils, including poor and exposed sites.",
+  "medium": "Not typically container-grown long-term; young trees can start in large pots before planting out.",
+  "seasonalActions": {
+   "Spring": "Clusters of white blossom open.",
+   "Summer": "Berries begin to form and ripen through late summer.",
+   "Autumn": "Berries turn vivid orange-red and are quickly stripped by birds.",
+   "Winter": "Bare branch structure; fully hardy and undemanding."
+  },
+  "problems": [
+   {
+    "name": "Fireblight",
+    "fix": "Can affect blossom and young shoots, causing a scorched appearance; prune out and destroy affected wood promptly, disinfecting tools between cuts."
+   },
+   {
+    "name": "Rowan sawfly",
+    "fix": "Caterpillar-like larvae can strip leaves in some years; usually not serious enough to threaten an established tree."
+   }
+  ],
+  "companions": [
+   "Foxglove",
+   "Bluebell",
+   "Fern"
+  ],
+  "propagation": {
+   "season": "Autumn, using stratified seed, or buy a young grafted/seed-grown tree",
+   "methods": "Grown from seed, which needs a cold period (stratification) to break dormancy.",
+   "tips": "Berries are sometimes fed to birds and the seed germinates naturally from droppings, which is roughly how it spreads in the wild.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Blossom is a useful spring nectar source for bees and other insects, and the berries that follow are an important autumn food source for garden birds."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 usually bought as young trees, or grown from stratified seed",
+   "Flowering": "May-Jun",
+   "Harvest": "Berries Aug-Oct, quickly taken by birds",
+   "Pruning": "Prune while dormant in winter if needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Rowan.",
+   "gallery": [
+    "Whole tree in blossom",
+    "Blossom close-up",
+    "Berry cluster in autumn colour",
+    "Birds feeding on berries if captured"
+   ]
+  },
+  "weeklyFact": "Rowan was traditionally planted near houses in parts of Britain and Ireland in the belief it offered protection from evil \u2014 a folklore tradition still visible in old cottage garden plantings today.",
+  "weeklyFacts": [
+   "Rowan was traditionally planted near houses in parts of Britain and Ireland in the belief it offered protection from evil \u2014 a folklore tradition still visible in old cottage garden plantings today.",
+   "A single rowan tree's autumn berry crop can be completely stripped by a flock of birds, such as fieldfares or waxwings, within just a day or two."
+  ],
+  "category": "Tree",
+  "pollinatorFact": "Rowan's spring blossom is a useful nectar source for bees, and its heavy autumn berry crop is one of the most important native food sources for garden birds heading into winter."
  }
 }

@@ -363,3 +363,35 @@ already-typed values the first time you opened `?id=GK-POT-SUC-001`. That's gone
 every field starts genuinely blank, with placeholder text (the pale example hint that
 disappears the moment you click in and type) doing the guidance work instead. The
 empty plant list now shows an example format as muted hint text rather than real rows.
+
+## Round 7 — V18
+
+**Underline under the home-screen picture** — fixed. Added an explicit
+`text-decoration:none` on the icon and its container (`.plant, .plant *`), plus
+`display:block` on the SVG itself, since inline SVGs can pick up a baseline-related
+line artifact inside a link even when the parent has `text-decoration:none`.
+
+**Long plant names overflowing their box** — the list row was a flex container where
+the text side had no `min-width:0`, so flexbox let long unbroken text push past the
+card edge instead of wrapping. Fixed with `min-width:0` and `overflow-wrap:break-word`
+on the name.
+
+**Removed "(Optional)"** after Feeding note in `create.html`.
+
+**Fixed the keyboard-dismissing bug in Plant Name (pot.html).** Found it: every
+keystroke in that field was re-rendering the entire plant list (to keep the
+library-match icon live), which destroys and recreates the input mid-type — that's
+what was closing the keyboard. Now it only re-renders (to update the match icon/link)
+when you leave the field, not on every character, so typing stays uninterrupted.
+
+**Removed the Pot Name example placeholder** — that field now starts genuinely empty
+with no hint text, per your note.
+
+**"Remove" button no longer sits on the card border.** It was floated with no
+clearance from the container edge. Rewrote that row as a proper flex layout with
+spacing, which fixes the overlap structurally rather than just nudging it with margin.
+
+**15 more plants — 89 total now.** 6 bulbs (Daffodil, Snowdrop, Ornamental Allium,
+Hyacinth, Crocus, Bluebell), 5 shrubs (Hebe, Weigela, Forsythia, Lilac, Choisya), 4
+trees (Silver Birch, Apple Tree, Magnolia, Rowan). Same standard as every batch so
+far — full plant-specific data throughout, no filler.
