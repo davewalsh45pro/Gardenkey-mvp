@@ -155,7 +155,16 @@ function fillFromDraft(){
     draftPaste.dataset.wired = '1';
     draftPaste.addEventListener('change', () => {
       try{
-        const d = JSON.parse(draftPaste.value);
+        // Emailed drafts are now human-readable text with the raw JSON appended
+        // at the end after a "Raw data for admin.html" marker. Pull that out if
+        // present; otherwise assume the whole pasted text is JSON (e.g. from the
+        // tester's "Copy draft" button instead of the email).
+        let raw = draftPaste.value;
+        const marker = raw.indexOf('Raw data for admin.html');
+        if(marker !== -1){
+          raw = raw.slice(raw.indexOf('{', marker));
+        }
+        const d = JSON.parse(raw);
         document.getElementById('id').value = (d.id||'').startsWith('GK-DRAFT') ? '' : (d.id||'');
         document.getElementById('name').value = d.name||'';
         document.getElementById('category').value = d.category||'';
@@ -167,7 +176,7 @@ function fillFromDraft(){
         document.getElementById('notes').value = d.notes||'';
         if(d.quickCare){document.getElementById('cFeeding').value=d.quickCare.Feeding||'';document.getElementById('cPruning').value=d.quickCare.Pruning||'';}
         alert('Prefilled from draft. Review every field — tester drafts are notes, not finished profiles.');
-      }catch(e){ alert('That did not parse as JSON.'); }
+      }catch(e){ alert('That did not parse as JSON — paste either the whole email (the JSON block at the bottom is enough) or the "Copy draft" text.'); }
     });
   }
 }

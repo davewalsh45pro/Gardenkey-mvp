@@ -395,3 +395,55 @@ spacing, which fixes the overlap structurally rather than just nudging it with m
 Hyacinth, Crocus, Bluebell), 5 shrubs (Hebe, Weigela, Forsythia, Lilac, Choisya), 4
 trees (Silver Birch, Apple Tree, Magnolia, Rowan). Same standard as every batch so
 far — full plant-specific data throughout, no filler.
+
+## Round 8 — V19
+
+**"Companion ideas" → "Companion plant ideas."**
+
+**The underline bug, actually fixed this time.** Previous rounds patched the plant-list
+thumbnails, but the real cause was the *top grid tiles* on the home screen (Plant
+library, Pot tracker, Seedling mode, Quick guide) — those `<a class="card">` links
+never had `text-decoration:none` set at all, so the browser's default underline was
+rendering under every line of text inside them, including the emoji, which is exactly
+the "line under the picture" you were seeing. Added it now, plus a defensive
+`.card *{text-decoration:none}` so nothing inside can bring it back.
+
+**Pot Tracker heading simplified.** Removed the dynamic "Currently editing: [name]"
+subtitle and the "this becomes the heading" helper text — the heading is now always
+just "Your Bed, Border & Pot Tracker," full stop. Saving still works exactly as
+before (Pot Name was always being saved correctly under the hood; the confusion was
+about the heading text, not the save itself).
+
+**"Saved on this device" now shows Pot Name, not Pot ID, in a column.** Each saved pot
+now stores its name alongside its ID, and the list renders one per line instead of a
+row of pills. Pots saved before this update will show their ID until you save them
+again (there was no name stored against them yet to display) — nothing is lost, just
+a one-time relabel next time you hit Save.
+
+**"Annual" (and other category words) showing twice — root cause found.** The
+tag-deduplication fix from a few rounds ago only ran once, against the data at the
+time. Every plant added in the two batches since (30 plants total) never got that
+pass applied, so they still had their own category name duplicated as a tag. Re-ran
+the dedup across the full, current library — this needs to become something I do at
+the end of every batch that adds plants, not a one-off fix, so I'll keep doing that
+going forward.
+
+**`create.html`'s Plant Group dropdown**: added plain "Perennial" and "Biennial",
+removed "Mixed pot / border" (a tester creating a single plant draft doesn't need a
+whole-container category — that's what the Pot Tracker is for).
+
+**Tester draft email is now human-readable.** It previously sent a raw JSON dump,
+which is unreadable at a glance. It now sends a plain-language summary (plant name,
+group, variety, location, then a clearly labelled "tester's own observations"
+section) with the raw JSON kept at the bottom under a marker, purely so `admin.html`'s
+"paste draft" box can still find and parse it automatically — updated that parser to
+look for the marker and extract the JSON from underneath it, so both the readable
+email and the plain "Copy draft" button still work with it.
+
+**Added the line you asked for** after "add it as an approved entry": "Dave will then
+let you know once it's been added to the database."
+
+**15 more plants — 104 total now.** 5 perennials (Peony, Delphinium, Lupin, Phlox,
+Rudbeckia), 5 shrubs (Potentilla, Spiraea, Cotoneaster, Deutzia, Escallonia), 5 trees
+(Amelanchier, Crab Apple, Holly, Flowering Cherry, Yew) — full detail throughout, no
+filler, tag-deduped along with everything else in this round.
