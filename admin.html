@@ -18,35 +18,35 @@
 <section class="card"><h2>2. Add / edit a plant</h2>
 <div class="row2"><div class="field"><label>GardenKey ID</label><input id="id" placeholder="e.g. GK-HOS-001"></div><div class="field"><label>Category</label><input id="category" placeholder="e.g. Herbaceous perennial"></div></div>
 <div class="row2"><div class="field"><label>Name</label><input id="name" placeholder="e.g. Hosta"></div><div class="field"><label>Latin name</label><input id="latinName" placeholder="e.g. Hosta sieboldiana"></div></div>
-<div class="row2"><div class="field"><label>Variety</label><input id="variety" placeholder="optional"></div><div class="field"><label>Theme colour (hex)</label><input id="theme" placeholder="#78a874"></div></div>
-<div class="field"><label>Subtitle</label><input id="subtitle" placeholder="one-line description shown under the name"></div>
-<div class="field"><label>Tags (comma separated)</label><input id="tags" placeholder="Shade, Slug-prone, Foliage"></div>
+<div class="row2"><div class="field"><label>Variety</label><input id="variety" placeholder="e.g. 'Hidcote' (leave blank if not applicable)"></div><div class="field"><label>Theme colour (hex)</label><input id="theme" placeholder="e.g. #78a874"></div></div>
+<div class="field"><label>Subtitle</label><input id="subtitle" placeholder="e.g. A shade-loving favourite for damp borders"></div>
+<div class="field"><label>Tags (comma separated)</label><input id="tags" placeholder="e.g. Shade, Slug-prone, Foliage"></div>
 
 <h3>Quick care</h3>
-<div class="row4"><div class="field"><label>Water</label><input id="cWater"></div><div class="field"><label>Light</label><input id="cLight"></div><div class="field"><label>Feeding</label><input id="cFeeding"></div><div class="field"><label>Pruning</label><input id="cPruning"></div></div>
+<div class="row4"><div class="field"><label>Water</label><input id="cWater" placeholder="e.g. Water when top of soil is dry"></div><div class="field"><label>Light</label><input id="cLight" placeholder="e.g. Full sun to part shade"></div><div class="field"><label>Feeding</label><input id="cFeeding" placeholder="e.g. Light monthly feed in summer"></div><div class="field"><label>Pruning</label><input id="cPruning" placeholder="e.g. Trim after flowering"></div></div>
 
-<div class="row2"><div class="field"><label>Soil</label><input id="soil"></div><div class="field"><label>Suggested medium/mix</label><input id="medium"></div></div>
-<div class="field"><label>Notes</label><textarea id="notes"></textarea></div>
+<div class="row2"><div class="field"><label>Soil</label><input id="soil" placeholder="e.g. Moist, humus-rich, well-drained soil"></div><div class="field"><label>Suggested medium/mix</label><input id="medium" placeholder="e.g. Peat-free compost with added leaf mould"></div></div>
+<div class="field"><label>Notes</label><textarea id="notes" placeholder="e.g. Keep sheltered from strong wind while establishing"></textarea></div>
 
 <h3>Seasonal jobs</h3>
-<div class="row4"><div class="field"><label>Spring</label><textarea id="sSpring"></textarea></div><div class="field"><label>Summer</label><textarea id="sSummer"></textarea></div><div class="field"><label>Autumn</label><textarea id="sAutumn"></textarea></div><div class="field"><label>Winter</label><textarea id="sWinter"></textarea></div></div>
+<div class="row4"><div class="field"><label>Spring</label><textarea id="sSpring" placeholder="e.g. New growth emerges; feed lightly"></textarea></div><div class="field"><label>Summer</label><textarea id="sSummer" placeholder="e.g. Water in dry spells; deadhead regularly"></textarea></div><div class="field"><label>Autumn</label><textarea id="sAutumn" placeholder="e.g. Cut back once foliage dies down"></textarea></div><div class="field"><label>Winter</label><textarea id="sWinter" placeholder="e.g. Dormant; no care needed"></textarea></div></div>
 
 <h3>Propagation</h3>
-<div class="row2"><div class="field"><label>Best timing</label><input id="pSeason"></div><div class="field"><label>Methods</label><input id="pMethods"></div></div>
-<div class="field"><label>Tips</label><input id="pTips"></div>
+<div class="row2"><div class="field"><label>Best time</label><input id="pSeason" placeholder="e.g. Late summer for semi-ripe cuttings"></div><div class="field"><label>Methods</label><input id="pMethods" placeholder="e.g. Semi-ripe cuttings in a gritty mix"></div></div>
+<div class="field"><label>Tips</label><input id="pTips" placeholder="e.g. Avoid overly humid sealed conditions"></div>
 
 <h3>Pollinator</h3>
-<div class="row2"><div class="field"><label>Score (1–5)</label><input id="polScore" type="number" min="1" max="5"></div><div class="field"><label>Note</label><input id="polValue"></div></div>
+<div class="row2"><div class="field"><label>Score (1–5)</label><input id="polScore" type="number" min="1" max="5" placeholder="e.g. 4"></div><div class="field"><label>Note</label><input id="polValue" placeholder="e.g. Good nectar source for bees and hoverflies"></div></div>
 
 <h3>Photo plan</h3>
 <div class="row2"><div class="field"><label>Hero caption</label><input id="photoHero" placeholder="e.g. Full plant in flower"></div><div class="field"><label>Hero image URL (optional)</label><input id="heroImage" placeholder="leave blank to use the colour theme"></div></div>
-<div class="field"><label>Gallery captions (comma separated)</label><input id="photoGallery" placeholder="Flower close-up, Leaf detail, Winter appearance"></div>
+<div class="field"><label>Gallery captions (comma separated)</label><input id="photoGallery" placeholder="e.g. Flower close-up, Leaf detail, Winter appearance"></div>
 
 <h3>Companions & problems</h3>
-<div class="field"><label>Companion plant names (comma separated — matched automatically to other library entries)</label><input id="companions" placeholder="Fern, Hydrangea"></div>
-<div class="field"><label>Problems (one per line, format: Name: fix)</label><textarea id="problems" placeholder="Slugs: use copper tape or beer traps, not usually fatal"></textarea></div>
+<div class="field"><label>Companion plant names (comma separated — matched automatically to other library entries)</label><input id="companions" placeholder="e.g. Fern, Hydrangea"></div>
+<div class="field"><label>Problems (one per line, format: Name: fix)</label><textarea id="problems" placeholder="e.g. Slugs: use copper tape or beer traps, not usually fatal"></textarea></div>
 
-<div class="field"><label>Weekly fact</label><textarea id="weeklyFact"></textarea></div>
+<div class="field"><label>Weekly fact</label><textarea id="weeklyFact" placeholder="e.g. A genuinely interesting, plant-specific fact — not a generic filler line"></textarea></div>
 
 <button class="btn" onclick="addToLibrary()">Add / update in loaded library</button>
 <button class="btn secondary" onclick="fillFromDraft()">Paste a tester draft JSON to prefill →</button>

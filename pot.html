@@ -7,8 +7,8 @@
 
 <section class="card">
 <div class="row2"><div class="field"><label>Pot ID</label><input id="potId" placeholder="e.g. GK-POT-SUC-001"></div><div class="field"><label>Pot name</label><input id="potName"></div></div>
-<button class="btn" onclick="loadPot()">Load</button><button class="btn secondary" onclick="newPot()">New pot</button>
-<span id="loadStatus" class="status"></span>
+<button class="btn" onclick="loadPot()">Load</button><button class="btn secondary" onclick="newPot('GK-POT-','pot')">New pot</button><button class="btn secondary" onclick="newPot('GK-BED-','bed/border')">New bed/border</button>
+<div id="loadStatus" class="status" style="display:block;margin-top:8px"></div>
 <div class="saved" id="savedList"></div>
 </section>
 
@@ -96,11 +96,11 @@ function renderPlantRows(){
     const link = match ? `<a href="plant.html?id=${match.id}" class="small">Open library profile →</a>` : '<span class="small">Not matched to library — check spelling or add via admin.html</span>';
     return `<div class="plantRow">
       <div class="row3">
-        <div class="field"><label>Plant name</label><input value="${r.name}" oninput="plantRows[${i}].name=this.value" onblur="renderPlantRows()"></div>
-        <div class="field"><label>Position in pot</label><input value="${r.position}" oninput="plantRows[${i}].position=this.value"></div>
+        <div class="field"><label>Plant name</label><input value="${r.name}" oninput="plantRows[${i}].name=this.value" onblur="renderPlantRows()" placeholder="e.g. Echeveria"></div>
+        <div class="field"><label>Position in pot</label><input value="${r.position}" oninput="plantRows[${i}].position=this.value" placeholder="e.g. Centre, trailing edge"></div>
         <div class="field"><label>Status</label><select onchange="plantRows[${i}].status=this.value">${['Thriving','Settling in','Struggling','Dormant','Removed'].map(s=>`<option ${r.status===s?'selected':''}>${s}</option>`).join('')}</select></div>
       </div>
-      <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value">${r.notes}</textarea></div>
+      <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value" placeholder="e.g. Planted spring, doing well so far">${r.notes}</textarea></div>
       <div class="rowFoot">
         <div class="rowFootInfo"><div class="thumb" style="background:${match?match.theme:'#8dbb87'}">${icon}</div> ${link}</div>
         <button class="btn danger" onclick="removePlantRow(${i})">Remove</button>
@@ -133,7 +133,7 @@ function loadPot(){
     const raw = localStorage.getItem(potKey(id));
     if(raw){
       fillPot(JSON.parse(raw));
-      loadStatus.textContent = 'Loaded ' + id + ' from this device.';
+      loadStatus.textContent = 'Currently loaded below: ' + id;
       loadStatus.className = 'status ok';
     } else {
       fillPot({id, name:'', location:'', size:'', material:'', drainage:'', soilMix:'', topDressing:'', watering:'', currentStatus:'', seasonalNotes:'', plants:[]});
@@ -146,11 +146,11 @@ function loadPot(){
   }
 }
 
-function newPot(){
-  const suggested = 'GK-POT-' + Date.now().toString().slice(-6);
+function newPot(prefix, label){
+  const suggested = (prefix || 'GK-POT-') + Date.now().toString().slice(-6);
   setVal('potId', suggested);
   fillPot({id:suggested, name:'', location:'', size:'', material:'', drainage:'', soilMix:'', topDressing:'', watering:'', currentStatus:'', seasonalNotes:'', plants:[]});
-  loadStatus.textContent = 'Started a new blank pot profile — fill it in and save.';
+  loadStatus.textContent = 'Started a new blank ' + (label || 'pot') + ' profile — fill it in and save.';
   loadStatus.className = 'status';
 }
 
@@ -159,7 +159,7 @@ function savePot(){
   if(!p.id){ alert('Pot ID is required before saving.'); return; }
   localStorage.setItem(potKey(p.id), JSON.stringify(p));
   addToIndex(p.id, p.name);
-  loadStatus.textContent = 'Saved ' + (p.name || p.id) + ' to this browser.';
+  loadStatus.textContent = 'Currently loaded below: ' + (p.name || p.id) + ' (saved)';
   loadStatus.className = 'status ok';
 }
 

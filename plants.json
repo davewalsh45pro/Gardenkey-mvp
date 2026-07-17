@@ -8017,5 +8017,1146 @@
   ],
   "category": "Tree",
   "pollinatorFact": "Yew is wind-pollinated and offers almost no direct nectar value to pollinators, but the red arils produced on female plants in autumn are an important food source for birds, and dense yew growth provides valuable year-round shelter."
+ },
+ "GK-DAH2-001": {
+  "id": "GK-DAH2-001",
+  "slug": "dahlia-tuber",
+  "name": "Dahlia (from tuber)",
+  "latinName": "Dahlia",
+  "variety": "Border dahlia, tuber-grown",
+  "subtitle": "Same border favourite as the existing Dahlia entry, catalogued here specifically as a tuber for propagation tracking.",
+  "theme": "#c23b72",
+  "tags": [
+   "Full sun",
+   "Lift tubers",
+   "Cut flowers"
+  ],
+  "quickCare": {
+   "Water": "Water well once established, especially as buds form",
+   "Light": "Full sun",
+   "Feeding": "Weekly high-potash feed once flowering",
+   "Pruning": "Deadhead constantly; stake before top-heavy with flower"
+  },
+  "notes": "If you're tracking this as a tuber going into a pot or seed tray rather than a mature plant already in the ground, this entry (rather than the main Dahlia one) is the better match.",
+  "soil": "Fertile, well-drained soil enriched with organic matter.",
+  "medium": "Peat-free compost with added grit for starting tubers under cover.",
+  "seasonalActions": {
+   "Spring": "Pot up tubers under cover from March; plant out after last frost.",
+   "Summer": "Water, feed and stake as growth continues.",
+   "Autumn": "Lift after first frost blackens foliage, or mulch heavily in mild areas.",
+   "Winter": "Store lifted tubers frost-free and just barely moist."
+  },
+  "problems": [
+   {
+    "name": "Slugs on young shoots",
+    "fix": "Protect emerging growth with barriers or torchlight removal."
+   },
+   {
+    "name": "Tuber rot in storage",
+    "fix": "Store somewhere cool, dark and just barely moist; discard any soft tubers before storing the rest."
+   }
+  ],
+  "companions": [
+   "Canna",
+   "Salvia",
+   "Cosmos"
+  ],
+  "propagation": {
+   "season": "Divide dormant tubers in spring, ensuring each division has a piece of old stem base with at least one eye.",
+   "methods": "Basal cuttings from sprouted tubers in early spring multiply stock fastest.",
+   "tips": "Label divisions carefully \u2014 dahlia tubers look near-identical once separated from the parent clump.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 3,
+   "value": "Open-centred dahlias are far better for bees than very double forms."
+  },
+  "timeline": {
+   "Seeding": "Feb-Apr, potted up as tubers",
+   "Flowering": "Jul-Oct",
+   "Harvest": "Cut flowers Jul-Oct",
+   "Pruning": "Lift tubers after first frost"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Dahlia (from tuber).",
+   "gallery": [
+    "Tuber before planting, showing eyes",
+    "Newly potted tuber with first shoots",
+    "Whole plant in flower",
+    "Lifted tuber clump at end of season"
+   ]
+  },
+  "weeklyFact": "A dahlia tuber isn't a true bulb or root, but a swollen underground stem structure storing energy for the following year's growth.",
+  "weeklyFacts": [
+   "A dahlia tuber isn't a true bulb or root, but a swollen underground stem structure storing energy for the following year's growth.",
+   "A single dahlia tuber clump can be divided into a dozen or more new plants over a few years if the divisions are done carefully."
+  ],
+  "category": "Tuber",
+  "pollinatorFact": "Open, single-flowered dahlias are far more useful to bees than the fully double 'dinner-plate' forms, which can hide the pollen almost completely."
+ },
+ "GK-FRI-001": {
+  "id": "GK-FRI-001",
+  "slug": "fritillary",
+  "name": "Snake's Head Fritillary",
+  "latinName": "Fritillaria meleagris",
+  "variety": "Chequered fritillary",
+  "subtitle": "Delicate, chequerboard-patterned bulb for damp meadows and border edges.",
+  "theme": "#8a5aa8",
+  "tags": [
+   "Part shade",
+   "Naturalises",
+   "Damp soil tolerant"
+  ],
+  "quickCare": {
+   "Water": "Keep moist, especially in spring \u2014 dislikes drying out during active growth",
+   "Light": "Full sun to part shade",
+   "Feeding": "No feeding needed in reasonable soil",
+   "Pruning": "No pruning; let foliage die back naturally after flowering"
+  },
+  "notes": "Genuinely unusual among bulbs for tolerating damp, even boggy ground \u2014 most bulbs rot in wet soil, but this one is naturally a damp meadow plant.",
+  "soil": "Moist, humus-rich soil; tolerates heavier, damper ground than most bulbs.",
+  "medium": "Peat-free compost kept consistently moist for containers.",
+  "seasonalActions": {
+   "Spring": "Distinctive chequered bell flowers open, nodding on thin stems.",
+   "Summer": "Foliage dies back after flowering \u2014 allow it to yellow naturally.",
+   "Autumn": "Bulbs are dormant; keep soil from drying out completely.",
+   "Winter": "Fully dormant; naturally suited to damp winter ground."
+  },
+  "problems": [
+   {
+    "name": "Bulb rot in very dry, free-draining soil",
+    "fix": "Counter-intuitively, this bulb prefers damper ground than most \u2014 avoid overly sharp drainage."
+   },
+   {
+    "name": "Slugs on emerging shoots",
+    "fix": "Protect with barriers or torchlight removal in early spring."
+   }
+  ],
+  "companions": [
+   "Bluebell",
+   "Fern",
+   "Hosta"
+  ],
+  "propagation": {
+   "season": "Bulbs produce small offsets that can be lifted and divided once foliage has died back.",
+   "methods": "Self-seeds in favourable damp conditions, though seed-grown plants take several years to flower.",
+   "tips": "Best left undisturbed once established, as it can be slow to recover from division.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "An early, distinctive nectar source for bees, with a nodding flower shape that suits certain bee species particularly well."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Sep-Oct",
+   "Flowering": "Apr",
+   "Harvest": "N/A",
+   "Pruning": "No pruning; let foliage die back naturally"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Snake's Head Fritillary.",
+   "gallery": [
+    "Flower close-up showing chequered pattern",
+    "Whole plant in a damp border or meadow setting",
+    "Foliage before flowering",
+    "Naturalised drift if established"
+   ]
+  },
+  "weeklyFact": "The chequerboard pattern on fritillary petals is a genuinely rare pigmentation pattern in the plant world, caused by a structural arrangement of pigment cells rather than a simple colour blend.",
+  "weeklyFacts": [
+   "The chequerboard pattern on fritillary petals is a genuinely rare pigmentation pattern in the plant world, caused by a structural arrangement of pigment cells rather than a simple colour blend.",
+   "Snake's head fritillary is a UK native wildflower, historically found in damp hay meadows, though wild populations have declined significantly with changes in land use."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Fritillary's nodding, bell-shaped flowers provide an early and somewhat unusual nectar source, well suited to bees able to approach and work the flower from below."
+ },
+ "GK-CAM2-001": {
+  "id": "GK-CAM2-001",
+  "slug": "camassia",
+  "name": "Camassia",
+  "latinName": "Camassia leichtlinii",
+  "variety": "Great camas",
+  "subtitle": "Tall spikes of vivid blue star-shaped flowers, excellent for naturalising in grass.",
+  "theme": "#3f5ec7",
+  "tags": [
+   "Full sun to part shade",
+   "Naturalises",
+   "Lawn friendly"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise tolerates a range of moisture levels, including damper soil than many bulbs",
+   "Light": "Full sun to part shade",
+   "Feeding": "No feeding needed in reasonable soil",
+   "Pruning": "No pruning; if naturalising in grass, don't mow until foliage has died back"
+  },
+  "notes": "An excellent, underused alternative to bluebells for naturalising in a damp lawn or meadow area, with the bonus of being later-flowering and extending the bulb season.",
+  "soil": "Moist, humus-rich soil; tolerates heavier ground than most bulbs.",
+  "medium": "Peat-free compost with added organic matter for containers.",
+  "seasonalActions": {
+   "Spring": "Tall flower spikes open in a vivid blue haze.",
+   "Summer": "Foliage dies back; safe to resume mowing over naturalised patches.",
+   "Autumn": "Plant new bulbs from September.",
+   "Winter": "Bulbs are fully dormant underground."
+  },
+  "problems": [
+   {
+    "name": "Bulb rot in very free-draining, dry soil",
+    "fix": "Prefers damper ground than many bulbs; avoid overly sharp, dry conditions."
+   },
+   {
+    "name": "Slow to establish",
+    "fix": "Give it a season or two to settle in before judging the display \u2014 camassia often improves markedly in its second year."
+   }
+  ],
+  "companions": [
+   "Bluebell",
+   "Fritillary",
+   "Allium"
+  ],
+  "propagation": {
+   "season": "Bulbs produce small offsets that can be lifted and divided once foliage has died back.",
+   "methods": "Self-seeds in favourable conditions, though seed-grown plants take several years to flower.",
+   "tips": "Best left undisturbed for the first couple of years to establish well.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 5,
+   "value": "An outstanding bee plant \u2014 tall, densely flowered spikes offer an unusually large amount of accessible nectar and pollen for a spring bulb."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Sep-Nov",
+   "Flowering": "May-Jun",
+   "Harvest": "N/A",
+   "Pruning": "Don't mow naturalised patches until foliage dies back"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Camassia.",
+   "gallery": [
+    "Flower spike close-up",
+    "Naturalised drift in grass or border",
+    "Whole plant showing height",
+    "Foliage before flowering"
+   ]
+  },
+  "weeklyFact": "Camassia bulbs were a genuine food source for some Indigenous peoples of the Pacific Northwest, traditionally roasted and eaten much like a sweet, mild onion.",
+  "weeklyFacts": [
+   "Camassia bulbs were a genuine food source for some Indigenous peoples of the Pacific Northwest, traditionally roasted and eaten much like a sweet, mild onion.",
+   "Camassia flowers later than most spring bulbs, helping extend the naturalised bulb season by several weeks into early summer."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Camassia is an outstanding bee plant for its size \u2014 the tall, densely packed flower spikes offer an unusually large amount of accessible nectar and pollen for a spring-flowering bulb."
+ },
+ "GK-NER-001": {
+  "id": "GK-NER-001",
+  "slug": "nerine",
+  "name": "Nerine",
+  "latinName": "Nerine bowdenii",
+  "variety": "Autumn nerine",
+  "subtitle": "Vivid pink spider-like flowers that appear in autumn, often before or without leaves.",
+  "theme": "#d94f8f",
+  "tags": [
+   "Full sun",
+   "Autumn flowers",
+   "Sheltered spot"
+  ],
+  "quickCare": {
+   "Water": "Water while in leaf through spring and summer; keep drier once dormant",
+   "Light": "Full sun, ideally against a warm, sheltered wall",
+   "Feeding": "Light feed while in leaf, spring to summer",
+   "Pruning": "No pruning; remove old dead foliage once it withers"
+  },
+  "notes": "Plant with the bulb 'neck' at or just above soil level, and against a warm south-facing wall in cooler gardens \u2014 nerine flowers best when the bulb gets a proper summer baking.",
+  "soil": "Free-draining soil; dislikes being disturbed once settled.",
+  "medium": "Peat-free compost with added grit; a tight-fitting pot (nerines flower better when slightly pot-bound) if grown in containers.",
+  "seasonalActions": {
+   "Spring": "Foliage grows on from where it left off, or begins fresh after winter dormancy.",
+   "Summer": "Leaves continue growing, storing energy for the fantastic autumn display ahead.",
+   "Autumn": "Flower spikes emerge, often dramatically, sometimes with little to no leaf visible.",
+   "Winter": "Foliage may persist in mild gardens; leaves die back in colder ones."
+  },
+  "problems": [
+   {
+    "name": "No flowers",
+    "fix": "Usually insufficient summer sun/heat to 'bake' the bulb, or the bulb was disturbed or planted too deep; ensure a warm, sheltered spot and shallow planting."
+   },
+   {
+    "name": "Bulb rot in heavy, wet soil",
+    "fix": "Improve drainage significantly; nerine strongly dislikes sitting wet, especially in winter."
+   }
+  ],
+  "companions": [
+   "Sedum",
+   "Salvia",
+   "Aster"
+  ],
+  "propagation": {
+   "season": "Bulbs produce small offsets that can be lifted and divided once dormant, though nerine dislikes disturbance and can sulk for a season after division.",
+   "methods": "Best left undisturbed for several years to form a strong, floriferous clump.",
+   "tips": "Most gardeners buy established bulbs rather than growing nerine from seed, which is very slow to reach flowering size.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "A valuable late-season nectar source for bees at a time of year when few other bulbs are in flower."
+  },
+  "timeline": {
+   "Seeding": "Plant bulbs Jul-Aug, ideally undisturbed for years after",
+   "Flowering": "Sep-Nov, a genuine autumn highlight",
+   "Harvest": "N/A",
+   "Pruning": "Remove old foliage once it withers"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Nerine.",
+   "gallery": [
+    "Flower spike close-up",
+    "Whole clump in flower, often with little foliage visible",
+    "Foliage earlier in the year",
+    "Sheltered wall planting for context"
+   ]
+  },
+  "weeklyFact": "Nerine bowdenii is one of relatively few bulbs that flowers reliably in autumn, filling a genuine gap in the bulb calendar between summer and the first snowdrops of winter.",
+  "weeklyFacts": [
+   "Nerine bowdenii is one of relatively few bulbs that flowers reliably in autumn, filling a genuine gap in the bulb calendar between summer and the first snowdrops of winter.",
+   "Nerine flowers so much better when left undisturbed and slightly pot-bound that deliberately restricting its roots is a genuine, recommended cultivation technique."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Nerine's autumn flowers are a valuable late-season nectar source for bees, flowering at a time when very few other bulbs are in bloom to compete for pollinator attention."
+ },
+ "GK-ANE-001": {
+  "id": "GK-ANE-001",
+  "slug": "anemone",
+  "name": "Anemone",
+  "latinName": "Anemone blanda",
+  "variety": "Windflower",
+  "subtitle": "Low, daisy-like spring flowers that carpet ground under trees and shrubs.",
+  "theme": "#5a7ec7",
+  "tags": [
+   "Part shade",
+   "Naturalises",
+   "Woodland",
+   "Low growing"
+  ],
+  "quickCare": {
+   "Water": "Water at planting; otherwise relies on natural spring rainfall",
+   "Light": "Part shade, ideally under deciduous trees or shrubs",
+   "Feeding": "No feeding needed in reasonable soil",
+   "Pruning": "No pruning; let foliage die back naturally after flowering"
+  },
+  "notes": "Soak the small knobbly tubers overnight before planting \u2014 they're notoriously slow to take up water otherwise and can sit dormant for a frustratingly long time without this step.",
+  "soil": "Humus-rich, moisture-retentive soil.",
+  "medium": "Peat-free compost with added leaf mould for containers.",
+  "seasonalActions": {
+   "Spring": "Low, daisy-like flowers open in a carpet, closing at night and in dull weather.",
+   "Summer": "Foliage dies back after flowering.",
+   "Autumn": "Dormant underground beneath leaf litter.",
+   "Winter": "Fully dormant; the leaf litter above acts as natural winter protection."
+  },
+  "problems": [
+   {
+    "name": "Slow or patchy establishment",
+    "fix": "Almost always from planting dry, unsoaked tubers; soak overnight before planting for much better results."
+   },
+   {
+    "name": "Slugs on emerging shoots",
+    "fix": "Protect with barriers or torchlight removal in early spring."
+   }
+  ],
+  "companions": [
+   "Bluebell",
+   "Snowdrop",
+   "Fern"
+  ],
+  "propagation": {
+   "season": "Divide congested clumps once foliage has died back, though this species spreads well on its own once established.",
+   "methods": "Self-seeds readily in favourable woodland conditions.",
+   "tips": "Soaking tubers before planting is the single biggest factor in successful establishment, more so than propagation method.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 4,
+   "value": "Open, daisy-like flowers give bees and other early-season insects easy access to pollen on mild spring days."
+  },
+  "timeline": {
+   "Seeding": "Plant tubers Sep-Oct, soaked overnight first",
+   "Flowering": "Mar-Apr",
+   "Harvest": "N/A",
+   "Pruning": "No pruning; let foliage die back naturally"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Anemone.",
+   "gallery": [
+    "Carpet of flowers under trees or shrubs",
+    "Flower close-up",
+    "Tubers before planting",
+    "Naturalised drift if established"
+   ]
+  },
+  "weeklyFact": "Anemone flowers close up at night and in overcast weather, only opening fully in direct sunlight \u2014 giving rise to the common name 'windflower' for how responsive they are to conditions.",
+  "weeklyFacts": [
+   "Anemone flowers close up at night and in overcast weather, only opening fully in direct sunlight \u2014 giving rise to the common name 'windflower' for how responsive they are to conditions.",
+   "The knobbly tubers look completely dead and lifeless when dry, which is part of why soaking them before planting makes such a dramatic difference to how quickly they establish."
+  ],
+  "category": "Bulb",
+  "pollinatorFact": "Anemone's simple, open flowers give bees and other early-season pollinators easy access to pollen on mild spring days, when relatively few other woodland-floor flowers are available."
+ },
+ "GK-KAL-002": {
+  "id": "GK-KAL-002",
+  "slug": "kalanchoe",
+  "name": "Kalanchoe",
+  "latinName": "Kalanchoe blossfeldiana",
+  "variety": "Flowering kalanchoe",
+  "subtitle": "Compact, long-flowering succulent houseplant with clusters of bright, tiny blooms.",
+  "theme": "#d9678f",
+  "tags": [
+   "Bright indirect light",
+   "Long flowering",
+   "Compact"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully between waterings",
+   "Light": "Bright light, some direct sun for the best flowering",
+   "Feeding": "Light feed during the growing season, reduced once flowering finishes",
+   "Pruning": "Deadhead spent flower clusters; trim leggy stems after flowering to keep it compact"
+  },
+  "notes": "Kalanchoe needs a period of long, uninterrupted darkness (naturally occurring in autumn/winter) to trigger flower buds \u2014 bright artificial light at night nearby can delay or prevent reflowering.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding as growth and flowering pick up.",
+   "Summer": "Water more often but always allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows; flower buds may begin forming as days shorten.",
+   "Winter": "Main flowering season for many plants, given the naturally longer nights."
+  },
+  "problems": [
+   {
+    "name": "No reflowering",
+    "fix": "Usually not enough uninterrupted darkness at night; keep away from artificial light in the evening during autumn to encourage new buds."
+   },
+   {
+    "name": "Root rot",
+    "fix": "From overwatering or poor drainage; repot into a grittier mix and reduce watering."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Jade Plant",
+   "Aloe Vera"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root readily after the cut end has callused for a day or two.",
+   "methods": "Leaf cuttings can also root, though less reliably than stem cuttings.",
+   "tips": "One of the easier flowering succulents to propagate and share.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "Grown mainly as an ornamental flowering houseplant; occasional outdoor flowering in warm climates can attract some pollinators."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Can flower for weeks at a time, often winter into spring",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead and trim after flowering to keep compact"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Kalanchoe.",
+   "gallery": [
+    "Whole plant in flower",
+    "Flower cluster close-up",
+    "Leaf/rosette detail",
+    "Newly trimmed compact regrowth"
+   ]
+  },
+  "weeklyFact": "Kalanchoe is a 'short-day' plant, meaning it sets flower buds in response to long nights rather than warm temperatures \u2014 commercial growers manipulate darkness, not heat, to schedule its flowering for sale.",
+  "weeklyFacts": [
+   "Kalanchoe is a 'short-day' plant, meaning it sets flower buds in response to long nights rather than warm temperatures \u2014 commercial growers manipulate darkness, not heat, to schedule its flowering for sale.",
+   "Kalanchoe is named after Kalanchoe ceratophylla, a species described from a Chinese name for the genus recorded by 18th-century botanists."
+  ],
+  "category": "Succulent",
+  "pollinatorFact": "Kalanchoe is grown mainly indoors and has limited typical pollinator access; where grown outdoors in warm climates its small clustered flowers can attract some visiting insects."
+ },
+ "GK-LIT-001": {
+  "id": "GK-LIT-001",
+  "slug": "lithops",
+  "name": "Living Stones",
+  "latinName": "Lithops",
+  "variety": "Mixed lithops",
+  "subtitle": "Extraordinary succulents that mimic pebbles, needing very careful, infrequent watering.",
+  "theme": "#a89468",
+  "tags": [
+   "Full sun",
+   "Very drought tolerant",
+   "Unusual"
+  ],
+  "quickCare": {
+   "Water": "Water very sparingly and only at specific times of year \u2014 overwatering is by far the most common way to lose this plant",
+   "Light": "Full sun, as much bright light as possible",
+   "Feeding": "No feeding needed; a genuinely undemanding plant once its watering rhythm is understood",
+   "Pruning": "No pruning needed; the plant naturally sheds and replaces its 'leaves' each year"
+  },
+  "notes": "The single most important thing to know: do NOT water during the plant's dormant resting phase or while it's splitting into new leaves, even if it looks shrivelled \u2014 this is normal and watering at the wrong time is the most common cause of death.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Very free-draining mineral/cactus mix with minimal organic content and plenty of grit or sand.",
+  "seasonalActions": {
+   "Spring": "Old leaf pair shrivels as a new pair emerges from within \u2014 do not water heavily during this transition.",
+   "Summer": "Water very lightly, only once the new leaf pair is fully formed and the old one has fully dried up.",
+   "Autumn": "A more typical light watering period, still allowing full drying between.",
+   "Winter": "Fully dormant and resting; do not water at all during this period, regardless of appearance."
+  },
+  "problems": [
+   {
+    "name": "Splitting/bursting from overwatering during dormancy",
+    "fix": "The most common lithops death; research the specific watering calendar for this genus rather than treating it like a typical succulent."
+   },
+   {
+    "name": "Stretching, losing its pebble-like compact shape",
+    "fix": "Insufficient light; move to the brightest possible spot, ideally with direct sun."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Haworthia",
+   "Sedum"
+  ],
+  "propagation": {
+   "season": "Seed is the traditional method but is slow, taking years to reach a mature size.",
+   "methods": "Established clumps can occasionally be divided at natural separation points.",
+   "tips": "Most owners buy an established plant rather than attempting propagation, given how slow and specialised it is.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Flowers open in autumn and can attract some pollinators outdoors in their native South African habitat, though this is rarely relevant for an indoor-grown plant."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 very slow from seed",
+   "Flowering": "Autumn, a single daisy-like flower per head",
+   "Harvest": "N/A",
+   "Pruning": "None; leaves are naturally shed and replaced annually"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Living Stones.",
+   "gallery": [
+    "Whole plant showing pebble-like camouflage",
+    "Close-up of the split between old and new leaf pairs",
+    "Flower if it appears in autumn",
+    "Comparison photo showing size against a coin or ruler for scale"
+   ]
+  },
+  "weeklyFact": "Lithops evolved their pebble-like appearance specifically to avoid being eaten by animals in their native semi-desert habitat, blending in almost perfectly with surrounding stones.",
+  "weeklyFacts": [
+   "Lithops evolved their pebble-like appearance specifically to avoid being eaten by animals in their native semi-desert habitat, blending in almost perfectly with surrounding stones.",
+   "Each lithops plant only ever has one pair of leaves at a time \u2014 the old pair is fully absorbed and replaced by a new pair from within, once a year."
+  ],
+  "category": "Succulent",
+  "pollinatorFact": "Lithops flowers, when they appear in autumn, can attract pollinators in their native South African habitat, though for most indoor-grown plants this is rarely observed."
+ },
+ "GK-STA-001": {
+  "id": "GK-STA-001",
+  "slug": "string-of-pearls",
+  "name": "String of Pearls",
+  "latinName": "Curio rowleyanus",
+  "variety": "Trailing string of pearls",
+  "subtitle": "Distinctive trailing succulent with round, bead-like leaves, striking in a hanging pot.",
+  "theme": "#7a9e6a",
+  "tags": [
+   "Bright indirect light",
+   "Trailing",
+   "Drought tolerant"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully between waterings; the round leaves store water, so err on the side of underwatering",
+   "Light": "Bright indirect light, some direct sun for the healthiest growth",
+   "Feeding": "Light feed once or twice in the growing season",
+   "Pruning": "Trim trailing stems to control length; remove any shrivelled or dead sections"
+  },
+  "notes": "The individual round 'pearls' are genuinely water-storage organs, similar in function to the paddles on other succulents just in a very different shape \u2014 treat watering the same as any drought-tolerant succulent.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light watering as light levels increase.",
+   "Summer": "Water more often but always allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Shrivelled, deflated 'pearls'",
+    "fix": "Sign of underwatering, though this species tolerates it well; water thoroughly and it usually plumps back up."
+   },
+   {
+    "name": "Mushy, translucent pearls",
+    "fix": "Overwatering; reduce frequency significantly and check the pot has good drainage."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "Jade Plant",
+   "Aloe Vera"
+  ],
+  "propagation": {
+   "season": "Stem cuttings root very easily \u2014 lay a trimmed strand across gritty compost and it will root along its length within a few weeks.",
+   "methods": "One of the easiest succulents in this library to propagate.",
+   "tips": "A popular cutting to share, since a single healthy plant can produce many trimmed lengths.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown almost entirely indoors as an ornamental trailing succulent, with minimal typical pollinator relevance."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional small white, faintly cinnamon-scented flowers",
+   "Harvest": "N/A",
+   "Pruning": "Trim trailing stems to control length as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of String of Pearls.",
+   "gallery": [
+    "Whole trailing plant in a hanging pot",
+    "Close-up of the round pearl-like leaves",
+    "Cutting rooting along a length of stem",
+    "Flower if it appears"
+   ]
+  },
+  "weeklyFact": "The round, pea-like leaves of string of pearls are a genuine water-storage adaptation, evolved to minimise surface area exposed to hot, dry air in its native South African habitat.",
+  "weeklyFacts": [
+   "The round, pea-like leaves of string of pearls are a genuine water-storage adaptation, evolved to minimise surface area exposed to hot, dry air in its native South African habitat.",
+   "A trailing strand of string of pearls can grow to well over a metre long in good conditions, cascading dramatically from a hanging pot or high shelf."
+  ],
+  "category": "Succulent",
+  "pollinatorFact": "String of pearls is grown almost entirely indoors and has limited typical pollinator access; its occasional small flowers have a faint cinnamon scent but are rarely a significant nectar source in a home setting."
+ },
+ "GK-BUR-001": {
+  "id": "GK-BUR-001",
+  "slug": "burros-tail",
+  "name": "Burro's Tail",
+  "latinName": "Sedum morganianum",
+  "variety": "Donkey's tail",
+  "subtitle": "Dramatic trailing succulent with tightly packed, plump blue-green leaves.",
+  "theme": "#7fa876",
+  "tags": [
+   "Bright indirect light",
+   "Trailing",
+   "Very fragile"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully between waterings",
+   "Light": "Bright light, some direct sun for the best colour and compact growth",
+   "Feeding": "Light feed once or twice in the growing season",
+   "Pruning": "Avoid handling the trailing stems more than necessary; trim only where genuinely needed"
+  },
+  "notes": "The leaves detach extremely easily at the slightest touch \u2014 position it somewhere it won't be brushed against often, and avoid moving or repotting it more than necessary.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light watering as light levels increase.",
+   "Summer": "Water more often but always allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Leaves dropping at the slightest touch",
+    "fix": "Completely normal for this species; handle as little as possible and choose a stable, undisturbed spot."
+   },
+   {
+    "name": "Shrivelled leaves",
+    "fix": "Sign of underwatering; water thoroughly, though this species tolerates dry spells better than overwatering."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "String of Pearls",
+   "Jade Plant"
+  ],
+  "propagation": {
+   "season": "Fallen or gently removed leaves will often root on their own if simply left on top of gritty compost.",
+   "methods": "Stem cuttings also root readily, handled as little as possible.",
+   "tips": "One of the easiest succulents to propagate almost by accident, given how easily leaves detach and root where they fall.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown almost entirely indoors as an ornamental trailing succulent, with minimal typical pollinator relevance."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional small pink-red star-shaped flowers on mature plants",
+   "Harvest": "N/A",
+   "Pruning": "Avoid unnecessary handling; trim only where needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Burro's Tail.",
+   "gallery": [
+    "Whole trailing plant showing plump leaves",
+    "Close-up of leaf texture and colour",
+    "A dropped leaf beginning to root",
+    "Flower if it appears on a mature plant"
+   ]
+  },
+  "weeklyFact": "Burro's tail leaves are covered in a fine powdery coating called farina, which helps reflect intense sun and reduce water loss in its native hot, dry habitat \u2014 try not to rub it off when handling.",
+  "weeklyFacts": [
+   "Burro's tail leaves are covered in a fine powdery coating called farina, which helps reflect intense sun and reduce water loss in its native hot, dry habitat \u2014 try not to rub it off when handling.",
+   "A well-grown, undisturbed burro's tail can take several years to develop its full dramatic trailing length, since growth is naturally slow and handling damage resets progress."
+  ],
+  "category": "Succulent",
+  "pollinatorFact": "Burro's tail is grown almost entirely indoors and has limited typical pollinator access; its occasional small star-shaped flowers are a minor feature rather than a significant nectar source."
+ },
+ "GK-CAL2-001": {
+  "id": "GK-CAL2-001",
+  "slug": "calathea",
+  "name": "Calathea",
+  "latinName": "Calathea orbifolia",
+  "variety": "Round-leaf calathea",
+  "subtitle": "Striking patterned foliage houseplant that folds its leaves up at night.",
+  "theme": "#3f7a5f",
+  "tags": [
+   "Bright indirect light",
+   "High humidity",
+   "Patterned foliage"
+  ],
+  "quickCare": {
+   "Water": "Keep consistently moist, ideally with rainwater or filtered water \u2014 sensitive to tap water minerals and chlorine",
+   "Light": "Bright indirect light; direct sun fades and scorches the patterned leaves",
+   "Feeding": "Light feed in the growing season, reduced in winter",
+   "Pruning": "Remove any damaged or fully browned leaves at the base"
+  },
+  "notes": "Genuinely humidity-loving \u2014 a dry centrally-heated room is the most common reason this plant struggles, and a pebble tray or humidifier makes a real difference.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with added bark and perlite for an airy, moisture-retentive mix.",
+  "seasonalActions": {
+   "Spring": "Resume regular feeding as growth picks up.",
+   "Summer": "Water consistently and maintain humidity through the warmest, driest part of the year.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water slightly less; keep away from cold draughts and radiators."
+  },
+  "problems": [
+   {
+    "name": "Crispy brown leaf edges",
+    "fix": "Usually low humidity or tap water minerals; increase humidity and switch to rainwater or filtered water if possible."
+   },
+   {
+    "name": "Curling leaves",
+    "fix": "Often underwatering or low humidity combined; check both before assuming just one cause."
+   }
+  ],
+  "companions": [
+   "Peace Lily",
+   "Fern",
+   "Peperomia"
+  ],
+  "propagation": {
+   "season": "Division of an established clump at repotting time is the most reliable method.",
+   "methods": "Each division needs a healthy piece of root system attached.",
+   "tips": "Not typically grown from cuttings, unlike many trailing houseplants.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown entirely indoors and has no access to outdoor pollinators; its rarely-seen flowers are a curiosity rather than a nectar source."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Rarely flowers indoors",
+   "Harvest": "N/A",
+   "Pruning": "Remove damaged leaves at the base as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Calathea.",
+   "gallery": [
+    "Whole plant showing leaf pattern",
+    "Close-up of leaf markings",
+    "New unfurling leaf",
+    "Leaves folded up at night if captured"
+   ]
+  },
+  "weeklyFact": "Calathea leaves visibly rise and fold together at night and lower again during the day, a movement called nyctinasty that's thought to help the plant shed rainwater and track available light in its native rainforest floor habitat.",
+  "weeklyFacts": [
+   "Calathea leaves visibly rise and fold together at night and lower again during the day, a movement called nyctinasty that's thought to help the plant shed rainwater and track available light in its native rainforest floor habitat.",
+   "Calathea is closely related to prayer plants (Maranta), sharing the same nightly leaf-folding movement and similarly precise humidity preferences."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Calathea is grown entirely indoors and has no access to outdoor pollinators; its value is purely ornamental, prized for its patterned foliage and distinctive daily leaf movement."
+ },
+ "GK-PHIL-001": {
+  "id": "GK-PHIL-001",
+  "slug": "philodendron",
+  "name": "Philodendron",
+  "latinName": "Philodendron hederaceum",
+  "variety": "Heartleaf philodendron",
+  "subtitle": "Easy, trailing, heart-leaved houseplant, a forgiving classic for beginners.",
+  "theme": "#3f7a3f",
+  "tags": [
+   "Low light tolerant",
+   "Trailing",
+   "Beginner friendly"
+  ],
+  "quickCare": {
+   "Water": "Water when the top of the compost is dry; tolerates occasional missed waterings well",
+   "Light": "Tolerates low light but grows faster and fuller in bright indirect light",
+   "Feeding": "Light monthly feed in the growing season",
+   "Pruning": "Trim trailing stems to control length; pinch tips to encourage bushier growth"
+  },
+  "notes": "Very easily confused with pothos in shops \u2014 philodendron leaves have a smooth, unmarked heart shape and a slightly softer texture, while pothos leaves are usually thicker and often marbled.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Resume feeding as growth picks up.",
+   "Summer": "Water slightly more often; trim trailing stems as needed.",
+   "Autumn": "Reduce feeding.",
+   "Winter": "Water sparingly; growth slows noticeably indoors over winter."
+  },
+  "problems": [
+   {
+    "name": "Yellowing lower leaves",
+    "fix": "Most often overwatering; let the compost dry out more between waterings."
+   },
+   {
+    "name": "Leggy growth with few leaves",
+    "fix": "Usually too little light; move closer to a bright window and trim to encourage bushier regrowth."
+   }
+  ],
+  "companions": [
+   "Pothos",
+   "Monstera",
+   "Peace Lily"
+  ],
+  "propagation": {
+   "season": "Stem cuttings with a node root very easily in a glass of water within a couple of weeks.",
+   "methods": "Once rooted, pot up several cuttings together for a fuller-looking plant.",
+   "tips": "One of the easiest and most reliable houseplants to propagate and share.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors and has no access to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Rarely flowers indoors",
+   "Harvest": "N/A",
+   "Pruning": "Trim trailing stems as needed to control shape"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Philodendron.",
+   "gallery": [
+    "Whole trailing plant",
+    "Leaf close-up showing heart shape",
+    "Cutting rooting in water",
+    "Newly potted cutting"
+   ]
+  },
+  "weeklyFact": "Philodendron is one of the most tolerant common houseplants for low light, genuinely able to survive (though not thrive) in spots too dim for most other foliage plants.",
+  "weeklyFacts": [
+   "Philodendron is one of the most tolerant common houseplants for low light, genuinely able to survive (though not thrive) in spots too dim for most other foliage plants.",
+   "The name Philodendron comes from Greek for tree-loving, describing how many species climb trees in their native rainforest habitat using aerial roots."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Philodendron is grown indoors and has no access to outdoor pollinators; its value is purely ornamental, and it's a popular beginner plant thanks to its tolerance of low light and irregular care."
+ },
+ "GK-DRA-001": {
+  "id": "GK-DRA-001",
+  "slug": "dracaena",
+  "name": "Dracaena",
+  "latinName": "Dracaena fragrans",
+  "variety": "Corn plant",
+  "subtitle": "Architectural, upright houseplant with strappy leaves, tolerant of considerable neglect.",
+  "theme": "#2f5c3a",
+  "tags": [
+   "Low light tolerant",
+   "Architectural",
+   "Very easy"
+  ],
+  "quickCare": {
+   "Water": "Water when the top few centimetres of compost are dry; sensitive to fluoride in tap water, which can cause brown leaf tips",
+   "Light": "Tolerates low light but grows better in bright indirect light",
+   "Feeding": "Light feed in the growing season only",
+   "Pruning": "Remove any yellowing or browned lower leaves at the base"
+  },
+  "notes": "Sensitive to fluoride and chlorine in tap water, which shows up as brown leaf tips \u2014 switching to rainwater or letting tap water stand overnight before use often clears this up.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with reasonable drainage.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding as growth picks up.",
+   "Summer": "Water slightly more often in warm conditions.",
+   "Autumn": "Reduce feeding.",
+   "Winter": "Water sparingly; growth slows noticeably indoors over winter."
+  },
+  "problems": [
+   {
+    "name": "Brown leaf tips",
+    "fix": "Usually tap water minerals or fluoride sensitivity; switch to rainwater or filtered water."
+   },
+   {
+    "name": "Toxic to cats and dogs if chewed",
+    "fix": "Keep out of reach of pets that like to chew houseplant leaves, or choose a pet-safe alternative if this is a concern."
+   }
+  ],
+  "companions": [
+   "Snake Plant",
+   "ZZ Plant",
+   "Spider Plant"
+  ],
+  "propagation": {
+   "season": "Stem cuttings ('canes') root reasonably well in water or moist compost.",
+   "methods": "Air layering is possible on a mature cane for a larger specimen.",
+   "tips": "A moderately easy houseplant to propagate, though slower than trailing varieties like pothos.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors and has no access to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Occasionally flowers indoors with a strong, sweet night-time scent, though uncommon",
+   "Harvest": "N/A",
+   "Pruning": "Remove yellowing lower leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Dracaena.",
+   "gallery": [
+    "Whole plant showing upright architectural form",
+    "Leaf close-up",
+    "New central shoot emerging",
+    "Flower spike if it appears, rare indoors"
+   ]
+  },
+  "weeklyFact": "Despite the common name 'corn plant,' Dracaena fragrans is unrelated to actual corn \u2014 the name comes from its strappy, corn-leaf-like foliage rather than any botanical relationship.",
+  "weeklyFacts": [
+   "Despite the common name 'corn plant,' Dracaena fragrans is unrelated to actual corn \u2014 the name comes from its strappy, corn-leaf-like foliage rather than any botanical relationship.",
+   "Dracaena fragrans is sometimes called mass cane in the houseplant trade, since young plants are often sold as several cut canes potted together."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Dracaena is grown indoors and has no access to outdoor pollinators; on the rare occasion it flowers indoors, the intensely sweet night-time fragrance hints at its natural moth-pollination strategy in the wild."
+ },
+ "GK-BEG-001": {
+  "id": "GK-BEG-001",
+  "slug": "begonia",
+  "name": "Begonia",
+  "latinName": "Begonia rex",
+  "variety": "Rex begonia",
+  "subtitle": "Dramatically patterned foliage houseplant, grown for leaves rather than flowers.",
+  "theme": "#a8455a",
+  "tags": [
+   "Bright indirect light",
+   "Patterned foliage",
+   "High humidity"
+  ],
+  "quickCare": {
+   "Water": "Keep lightly moist; avoid getting water on the leaves, which can cause spotting",
+   "Light": "Bright indirect light; direct sun scorches the patterned leaves",
+   "Feeding": "Light feed in the growing season",
+   "Pruning": "Remove any damaged or fully faded leaves at the base"
+  },
+  "notes": "Grown almost entirely for its extraordinary leaf patterns and colours rather than its small, relatively insignificant flowers \u2014 don't be disappointed if it rarely blooms indoors.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with added perlite for good drainage and airflow around the roots.",
+  "seasonalActions": {
+   "Spring": "Resume light feeding as growth picks up.",
+   "Summer": "Water consistently but avoid wetting the leaves; increase humidity in hot, dry spells.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water more sparingly; keep away from cold draughts."
+  },
+  "problems": [
+   {
+    "name": "Powdery mildew",
+    "fix": "More likely in still, humid air with poor airflow; space away from other plants and avoid wetting leaves when watering."
+   },
+   {
+    "name": "Leaf spotting",
+    "fix": "Usually from water sitting on the leaves; water at the base of the plant instead."
+   }
+  ],
+  "companions": [
+   "Fern",
+   "Calathea",
+   "Peace Lily"
+  ],
+  "propagation": {
+   "season": "Leaf cuttings are the classic propagation method \u2014 a leaf laid flat with cuts across major veins can produce multiple new plantlets.",
+   "methods": "Rhizome division is also possible for rhizomatous types.",
+   "tips": "A genuinely fun, rewarding propagation project once you've seen how reliably a single leaf can multiply.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors primarily for foliage; its small flowers offer limited access for typical indoor pollinator activity."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Small flowers occasionally appear but are a minor feature",
+   "Harvest": "N/A",
+   "Pruning": "Remove damaged leaves at the base as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Begonia.",
+   "gallery": [
+    "Whole plant showing leaf pattern",
+    "Close-up of leaf colour and texture",
+    "Leaf cutting propagation in progress",
+    "New plantlets forming on a leaf cutting"
+   ]
+  },
+  "weeklyFact": "Rex begonia leaves can be propagated from a single leaf laid flat on moist compost with cuts made across the main veins \u2014 each cut can sprout an entirely new baby plant, a genuinely striking thing to watch happen.",
+  "weeklyFacts": [
+   "Rex begonia leaves can be propagated from a single leaf laid flat on moist compost with cuts made across the main veins \u2014 each cut can sprout an entirely new baby plant, a genuinely striking thing to watch happen.",
+   "There are over 2,000 recognised begonia species, ranging from tiny groundcover types to large shrub-like forms, though rex begonias are grown almost entirely for their leaves."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Rex begonia is grown almost entirely indoors for its foliage; its infrequent, small flowers offer limited pollinator relevance in a typical home setting."
+ },
+ "GK-CRAS-001": {
+  "id": "GK-CRAS-001",
+  "slug": "string-of-hearts",
+  "name": "String of Hearts",
+  "latinName": "Ceropegia woodii",
+  "variety": "Rosary vine",
+  "subtitle": "Delicate trailing succulent vine with heart-shaped, marbled leaves on thread-thin stems.",
+  "theme": "#8a5a9e",
+  "tags": [
+   "Bright indirect light",
+   "Trailing",
+   "Drought tolerant"
+  ],
+  "quickCare": {
+   "Water": "Water thoroughly then let compost dry out fully between waterings; grows from a small tuber that stores water",
+   "Light": "Bright indirect light, some direct sun for the best leaf colour",
+   "Feeding": "Light feed once or twice in the growing season",
+   "Pruning": "Trim trailing stems if extremely long; small aerial tubers can be left in place or removed and potted"
+  },
+  "notes": "Often produces small bead-like aerial tubers along its trailing stems \u2014 these are a genuine, easy propagation shortcut, not a sign of a problem.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "seasonalActions": {
+   "Spring": "Resume light watering as light levels increase.",
+   "Summer": "Water more often but always allow full drying between waterings.",
+   "Autumn": "Reduce watering as growth slows.",
+   "Winter": "Water very sparingly \u2014 once a month or less."
+  },
+  "problems": [
+   {
+    "name": "Leaf drop",
+    "fix": "Usually overwatering or a sudden change in conditions; reduce watering frequency and keep conditions stable."
+   },
+   {
+    "name": "Faded leaf colour",
+    "fix": "Often too little light; move to a brighter spot with some direct sun for the best marbled colour."
+   }
+  ],
+  "companions": [
+   "Echeveria",
+   "String of Pearls",
+   "Jade Plant"
+  ],
+  "propagation": {
+   "season": "Small aerial tubers that form along the stems can be potted directly, often already partly rooted.",
+   "methods": "Stem cuttings with a node also root readily in water or moist compost.",
+   "tips": "One of the easiest and most novel houseplants to propagate, thanks to the self-forming tubers.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown almost entirely indoors as an ornamental trailing succulent, with minimal typical pollinator relevance."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 succulent",
+   "Flowering": "Occasional small pink-purple tubular flowers",
+   "Harvest": "N/A",
+   "Pruning": "Trim trailing stems if very long"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of String of Hearts.",
+   "gallery": [
+    "Whole trailing plant showing heart-shaped leaves",
+    "Close-up of leaf marbling",
+    "Aerial tuber along a stem",
+    "Flower if it appears"
+   ]
+  },
+  "weeklyFact": "String of hearts grows from an underground tuber and also forms small aerial tubers along its stems \u2014 a genuine backup water-and-energy store that makes it remarkably drought-tolerant for such a delicate-looking plant.",
+  "weeklyFacts": [
+   "String of hearts grows from an underground tuber and also forms small aerial tubers along its stems \u2014 a genuine backup water-and-energy store that makes it remarkably drought-tolerant for such a delicate-looking plant.",
+   "Its unusual tubular flowers are specifically shaped to temporarily trap small flies, which pick up pollen before the flower releases them to visit another bloom \u2014 a pollination strategy called a 'flower trap.'"
+  ],
+  "category": "Succulent",
+  "pollinatorFact": "String of hearts is grown almost entirely indoors and has limited typical pollinator access; its unusual tubular flowers use a temporary insect-trapping strategy to achieve pollination in their native habitat."
+ },
+ "GK-FIC-001": {
+  "id": "GK-FIC-001",
+  "slug": "fiddle-leaf-fig",
+  "name": "Fiddle Leaf Fig",
+  "latinName": "Ficus lyrata",
+  "variety": "Fiddle leaf fig",
+  "subtitle": "Statement houseplant with huge glossy violin-shaped leaves \u2014 striking but genuinely fussy.",
+  "theme": "#2f6b3f",
+  "tags": [
+   "Bright indirect light",
+   "Statement plant",
+   "Sensitive to change"
+  ],
+  "quickCare": {
+   "Water": "Water when the top few centimetres of compost are dry; consistency matters more than quantity for this species",
+   "Light": "Bright indirect light; some gentle direct morning sun is fine, but avoid harsh afternoon sun and low light alike",
+   "Feeding": "Light feed in the growing season",
+   "Pruning": "Wipe dust off the large leaves regularly; remove any damaged leaves at the base"
+  },
+  "notes": "Genuinely dislikes change \u2014 a fiddle leaf fig moved to a new spot, repotted, or exposed to a sudden temperature swing will often drop leaves in protest before settling down again over the following weeks.",
+  "soil": "N/A \u2014 grown in potting compost.",
+  "medium": "Peat-free houseplant compost with added bark and perlite for good drainage and airflow.",
+  "seasonalActions": {
+   "Spring": "Resume regular feeding as growth picks up.",
+   "Summer": "Water consistently; this is the main growing season for new leaves.",
+   "Autumn": "Reduce feeding as growth slows.",
+   "Winter": "Water more sparingly and keep well away from cold draughts and heating vents."
+  },
+  "problems": [
+   {
+    "name": "Brown spots on leaves",
+    "fix": "Usually overwatering or inconsistent watering; let the top of the compost dry out properly between waterings."
+   },
+   {
+    "name": "Leaf drop after moving or repotting",
+    "fix": "Normal transplant/relocation stress; keep conditions otherwise stable and it typically recovers over several weeks."
+   }
+  ],
+  "companions": [
+   "Monstera",
+   "Pothos",
+   "Snake Plant"
+  ],
+  "propagation": {
+   "season": "Stem or single-leaf cuttings with a node can root in water, though it's slower and less reliable than many other houseplants.",
+   "methods": "Air layering on a mature stem is a more reliable method for a larger specimen.",
+   "tips": "Most owners buy an established young plant rather than propagating fiddle leaf fig at home, given how fussy it can be to root.",
+   "tracker": "Propagation tracker coming soon \u2014 for now, add dates, method and result in your notes."
+  },
+  "pollinator": {
+   "score": 1,
+   "value": "Grown indoors and has no access to outdoor pollinators \u2014 value here is purely ornamental."
+  },
+  "timeline": {
+   "Seeding": "N/A \u2014 houseplant",
+   "Flowering": "Does not typically flower indoors",
+   "Harvest": "N/A",
+   "Pruning": "Wipe leaves regularly; remove damaged leaves as needed"
+  },
+  "photoPlan": {
+   "hero": "Clear whole-plant photo of Fiddle Leaf Fig.",
+   "gallery": [
+    "Whole plant showing statement leaf size",
+    "Close-up of a single leaf's shape and veining",
+    "New leaf unfurling",
+    "Leaf-wiping/cleaning routine if illustrating care"
+   ]
+  },
+  "weeklyFact": "In the wild, Ficus lyrata can grow into a substantial forest tree over 12 metres tall, a considerable contrast to the single-stemmed potted specimens usually seen indoors.",
+  "weeklyFacts": [
+   "In the wild, Ficus lyrata can grow into a substantial forest tree over 12 metres tall, a considerable contrast to the single-stemmed potted specimens usually seen indoors.",
+   "Fiddle leaf fig became one of the most fashionable houseplants of the 2010s, largely thanks to its dramatic sculptural leaves photographing so well in interior design."
+  ],
+  "category": "Houseplant",
+  "pollinatorFact": "Fiddle leaf fig is grown indoors and has no access to outdoor pollinators; its value is purely ornamental, prized for its dramatic large leaves despite a reputation for being fussy about change."
  }
 }

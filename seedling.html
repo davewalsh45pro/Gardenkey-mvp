@@ -24,8 +24,8 @@
 </section>
 
 </div><script>
-const STATUSES = ['Sown','Germinated','Pricked out','Hardening off','Transplanted','Failed'];
-const STATUS_COLOR = {Sown:'#e0dccf',Germinated:'#d7ecc9',"Pricked out":'#cfe4f5',"Hardening off":'#f5e3c0',Transplanted:'#c9e8d6',Failed:'#f3cfc4'};
+const STATUSES = ['Sown','Fresh Cutting','Division','Basal Cutting','Germinated','Pricked out','Hardening off','Transplanted','Failed'];
+const STATUS_COLOR = {Sown:'#e0dccf',"Fresh Cutting":'#e5d9c7',Division:'#dde0c9',"Basal Cutting":'#e0e0c7',Germinated:'#d7ecc9',"Pricked out":'#cfe4f5',"Hardening off":'#f5e3c0',Transplanted:'#c9e8d6',Failed:'#f3cfc4'};
 let trays = [];
 
 function newTrayId(){ return 'TRAY-' + Date.now().toString().slice(-5); }
@@ -41,8 +41,8 @@ function render(){
     <div class="tray">
       <span class="statusBadge" style="background:${STATUS_COLOR[t.status]||'#eee'}">${t.status}</span>
       <div class="row4">
-        <div class="field"><label>Tray / batch name</label><input value="${t.name}" oninput="trays[${i}].name=this.value"></div>
-        <div class="field"><label>Plant / variety</label><input value="${t.variety}" oninput="trays[${i}].variety=this.value"></div>
+        <div class="field"><label>Tray / batch name</label><input value="${t.name}" oninput="trays[${i}].name=this.value" placeholder="e.g. Windowsill tray 1"></div>
+        <div class="field"><label>Plant / variety</label><input value="${t.variety}" oninput="trays[${i}].variety=this.value" placeholder="e.g. Sweet pea, Cosmos"></div>
         <div class="field"><label>Quantity</label><input value="${t.quantity}" oninput="trays[${i}].quantity=this.value" placeholder="e.g. 24 cells"></div>
         <div class="field"><label>Status</label><select onchange="trays[${i}].status=this.value; render()">${STATUSES.map(s=>`<option ${t.status===s?'selected':''}>${s}</option>`).join('')}</select></div>
       </div>
@@ -52,7 +52,7 @@ function render(){
         <div class="field"><label>Transplant date</label><input type="date" value="${t.transplant}" oninput="trays[${i}].transplant=this.value"></div>
         <div class="field"><label>Tray ID</label><input class="trayIdField" value="${t.id}" oninput="trays[${i}].id=this.value"></div>
       </div>
-      <div class="field"><label>Notes</label><textarea oninput="trays[${i}].notes=this.value">${t.notes}</textarea></div>
+      <div class="field"><label>Notes</label><textarea oninput="trays[${i}].notes=this.value" placeholder="e.g. Damping off on 2 seedlings, moved to a brighter spot">${t.notes}</textarea></div>
       <button class="btn danger" onclick="removeTray(${i})">Remove</button>
     </div>`).join('') || '<p class="small">No trays yet — add your first batch above.</p>';
 }

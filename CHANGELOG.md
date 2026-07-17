@@ -447,3 +447,55 @@ let you know once it's been added to the database."
 Rudbeckia), 5 shrubs (Potentilla, Spiraea, Cotoneaster, Deutzia, Escallonia), 5 trees
 (Amelanchier, Crab Apple, Holly, Flowering Cherry, Yew) — full detail throughout, no
 filler, tag-deduped along with everything else in this round.
+# GardenKey V21.1 — overall updates
+
+This is the general-purpose update: bug fixes, polish, and library growth. It does
+**not** include the new personal "My Garden" plant-tracking feature — that's a
+separate, bigger piece shipped as V21.2, which builds directly on top of this version.
+You can deploy this on its own and everything will work exactly as before, just fixed
+and expanded.
+
+## Seedling / nursery mode
+Added three more status options to match how propagation actually happens, not just
+seed-grown trays: **Fresh Cutting**, **Division**, **Basal Cutting**, sitting alongside
+Sown near the top of the list, each with its own status badge colour.
+
+## Site-wide "e.g." placeholder convention
+Went through every input field across every page and made sure example text
+consistently starts with "e.g." and disappears the moment you click in and type (this
+is native placeholder-text behaviour, so it was already true wherever placeholders
+existed — the gap was pages missing a placeholder at all). Fixed in:
+- `admin.html` — every field in the plant builder now has a real example (Variety,
+  Theme colour, Subtitle, Tags, Quick care, Soil, Seasonal jobs, Propagation, Pollinator
+  score/note, Gallery captions, Companions, Problems, Weekly fact). Previously about
+  half of these were just empty boxes with no guidance at all.
+- `seedling.html` — Tray/batch name, Plant/variety and Notes now have examples.
+- `pot.html` — Plant name, Position in pot and Notes (within "Plants in this pot") now
+  have examples. Pot Name itself is deliberately left without a placeholder, per your
+  earlier instruction to remove that one specifically.
+- Also fixed the leftover "Best timing" label in `admin.html`'s form to match the
+  "Best time" wording already used on the live plant pages.
+
+## `create.html`
+Plant Group dropdown is now in alphabetical order.
+
+## `pot.html`
+- The "Loaded [id] from this device" message is now "Currently loaded below: [name]",
+  on its own line rather than squeezed next to the buttons.
+- Added a second button, **New bed/border**, alongside New pot — same blank-profile
+  behaviour, but generates a `GK-BED-` prefixed ID and uses "bed/border" in its status
+  messages instead of "pot", so the two are distinguishable in your saved list and
+  exports.
+
+## Plant library — 15 more plants, 119 total now
+5 bulbs (a second Dahlia-from-tuber entry for propagation tracking, Snake's Head
+Fritillary, Camassia, Nerine, Anemone), 5 succulents (Kalanchoe, Living Stones,
+String of Pearls, Burro's Tail, String of Hearts), 5 houseplants (Calathea,
+Philodendron, Dracaena, Rex Begonia, Fiddle Leaf Fig). Same standard as every batch —
+full plant-specific detail, tag-deduplicated against the rest of the library.
+
+Note: the second Dahlia entry (`GK-DAH2-001`, "Dahlia (from tuber)") is deliberate,
+not a duplicate — it exists so a tuber going into a pot or tray can be tracked
+distinctly from the mature in-ground plant at `GK-DAH-001`, following the same
+"separate ID when the situation is genuinely different" rule as the named cultivars
+from a couple of rounds ago.
