@@ -499,3 +499,72 @@ not a duplicate — it exists so a tuber going into a pot or tray can be tracked
 distinctly from the mature in-ground plant at `GK-DAH-001`, following the same
 "separate ID when the situation is genuinely different" rule as the named cultivars
 from a couple of rounds ago.
+
+## Round 9 — V21.2: My Garden (personal plant tracking)
+
+Builds directly on top of V21.1 — includes everything from that version plus this new
+feature. Deploy this instead of V21.1 once you're ready to test personal plant
+tracking; don't need to deploy both.
+
+### The model, per your review
+This follows the structure you laid out, with the two adjustments we agreed:
+privacy/browser-only storage stays as-is for now (revisit later if it becomes a real
+limitation), and personal photos are now real, stored images rather than another
+placeholder-and-caption checklist — more on that below.
+
+- **`plant.html`** (`GK-LAV-001` etc.) stays exactly what it was: curated, read-only
+  reference information. Nothing new here changes how the species pages work.
+- **`myplant.html`** (`USR-...` IDs) is the new personal record — one specific plant
+  you own. Nickname, linked species, variety, source, date acquired, location, last
+  repotted/divided, flowering history, health observations, propagation history, and
+  photos. Someone can own three different lavenders in three different spots and each
+  gets its own record, all linking back to the same `GK-LAV-001` guide.
+- **`myplants.html`** is the new "My Plants" library — every personal record on this
+  device, searchable by nickname, each showing its linked species (or "not yet linked"
+  if the name didn't match anything) and its first photo if it has one.
+
+### How the two-way linking works
+- On `myplant.html`, type the plant's name in "Based on" and it matches against the
+  live library the same way companion plants already do elsewhere in the app — no new
+  UI pattern to learn. A match shows the species card with a link to its care guide.
+- On `plant.html`, every species page now has a **My Garden** card: if you already
+  have linked personal plants, it lists them; either way there's an "+ Add to My
+  Garden" button. This creates the record immediately with the species name prefilled
+  and takes you straight to it — no form to fill in before it exists, matching how
+  "New pot" already works.
+
+### Home screen restructured
+Split into **Plant Library** (Browse plants, Quick guide — curated, read-only) and
+**My Garden** (My Plants, My Pots & Borders, My Seedlings — personal, editable),
+matching the structure from your proposal.
+
+### `pot.html` — one small integration
+Each plant row in a pot/border profile now has a "Track as a full My Plants record →"
+link, so a quick inline entry (fine for "there's some trailing sedum, not worth its
+own record") can be promoted to a full record when it's worth the detail — optional,
+not mandatory, per the plan.
+
+### On personal photos — this was the trigger to revisit image hosting, as agreed
+Rather than add a paid or third-party image hosting service at pilot stage, photos on
+`myplant.html` are captured directly from the device, automatically resized down
+(max 800px) and compressed client-side, then stored as part of the record — same
+browser-only storage as everything else here, no new account or service for you to
+set up. This is a genuine, working photo feature (take a photo, see it on the page),
+not another placeholder checklist. The honest tradeoff: photos live in the JSON record
+itself, so **Export files for a plant with several photos will be noticeably larger**
+than the text-only exports elsewhere in the app. Worth knowing before encouraging
+testers to add many high-detail photos to one record. The species-page photo question
+(real photos for the shared library) is unchanged and still tracked in
+`PHOTO_WANTLIST.md` — that's a different problem (photos need to be visible to
+everyone, not just one device) and still needs a real hosting decision later.
+
+### Data model, for reference
+```
+gk_myplant_index          → [{id, nickname, plantLibraryId}, ...]
+gk_myplant_<id>            → {id, nickname, plantLibraryId, libraryName, variety,
+                               source, dateAcquired, location, lastRepotted,
+                               lastDivided, floweringHistory, healthObservations,
+                               propagationHistory, photos: [{caption, dataUrl}]}
+```
+`plantLibraryId` is resolved automatically from the typed species name at save time —
+there's no manual ID entry needed anywhere in this flow.

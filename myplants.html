@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Plants — GardenKey</title><style>
+:root{--green:#123c2d}*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:var(--green)}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:var(--green);text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:42px;line-height:1;margin:10px 0}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 18px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.search{width:100%;font-size:16px;padding:14px;border-radius:16px;border:1px solid #cfc7b9;margin:10px 0}.plant{display:flex;gap:12px;align-items:center;margin:10px 0;padding:12px;border-radius:20px;background:#fff;border:1px solid #eadfca;text-decoration:none;color:inherit}.plant,.plant *{text-decoration:none}.thumb{width:56px;height:56px;border-radius:16px;background:#8dbb87;flex:none;display:flex;align-items:center;justify-content:center;overflow:hidden}.thumb svg{width:70%;height:70%;display:block}.thumb img{width:100%;height:100%;object-fit:cover}.plant>div:last-child{flex:1;min-width:0}.plant b{overflow-wrap:break-word;word-break:break-word}.muted{color:#65746a}.small{font-size:13px;color:#65746a}.state{padding:30px 14px;text-align:center;color:#65746a}
+</style></head><body><script src="icons.js"></script><div class="wrap">
+<div class="top"><a href="index.html">← GardenKey home</a></div>
+
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plants</h1><p>Every specific plant you own, each with its own history and photos, linked back to the general GardenKey guide for its type. Saved to this browser only.</p>
+<button class="btn" onclick="addPlant()">+ Add a plant</button>
+</section>
+
+<section class="card">
+<input class="search" id="search" placeholder="Search your plants by nickname…">
+<div id="list"><p class="state">Loading…</p></div>
+</section>
+
+</div><script>
+let library = {};
+let records = [];
+
+async function load(){
+  try{
+    const res = await fetch('plants.json', {cache:'no-store'});
+    library = await res.json();
+  }catch(e){ /* optional */ }
+
+  try{
+    const idx = JSON.parse(localStorage.getItem('gk_myplant_index')) || [];
+    records = idx.map(e => {
+      const raw = localStorage.getItem('gk_myplant_' + e.id);
+      let full = null;
+      try{ full = raw ? JSON.parse(raw) : null; }catch(err){}
+      return {...e, full};
+    });
+  }catch(e){ records = []; }
+
+  render();
+}
+
+function addPlant(){
+  location.href = 'myplant.html?new=1';
+}
+
+function render(){
+  const q = (search.value||'').trim().toLowerCase();
+  const rows = records.filter(r => (r.nickname||'').toLowerCase().includes(q));
+  list.innerHTML = rows.map(r => {
+    const species = r.plantLibraryId ? library[r.plantLibraryId] : null;
+    const photo = r.full && r.full.photos && r.full.photos[0];
+    const thumbInner = photo ? `<img src="${photo.dataUrl}">` : (species ? gkIconSvg(species.category) : gkIconSvg(''));
+    const sub = species ? species.name + (r.full && r.full.variety ? ` '${r.full.variety}'` : '') : 'Not linked to a library plant yet';
+    const loc = r.full && r.full.location ? ' · ' + r.full.location : '';
+    return `<a class="plant" href="myplant.html?id=${r.id}">
+      <div class="thumb" style="${species && !photo ? 'background:'+species.theme : ''}">${thumbInner}</div>
+      <div><b>${r.nickname || r.id}</b><div class="muted">${sub}${loc}</div></div>
+    </a>`;
+  }).join('') || (records.length
+    ? '<p class="state">No plants match that search.</p>'
+    : '<p class="state">No plants added yet. Tap "+ Add a plant" above, or "Add to My Garden" on any plant profile.</p>');
+}
+
+search.oninput = render;
+load();
+</script></body></html>

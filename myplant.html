@@ -1,0 +1,262 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Plant — GardenKey</title><style>
+*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
+.linkBox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin-top:8px}.linkBox .thumb{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.linkBox .thumb svg{width:65%;height:65%}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin:10px 0}.photo{position:relative;border-radius:16px;overflow:hidden;background:#eee;aspect-ratio:1}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo button{position:absolute;top:4px;right:4px;background:#0008;color:white;border:0;border-radius:999px;width:24px;height:24px;font-size:14px;cursor:pointer}.photo .cap{position:absolute;bottom:0;left:0;right:0;background:#0007;color:white;font-size:10px;padding:3px 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+</style></head><body><script src="icons.js"></script><div class="wrap">
+<div class="top"><a href="index.html">← GardenKey home</a><a href="myplants.html">My Plants</a></div>
+
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+
+<section class="card">
+<div class="row2"><div class="field"><label>Record ID</label><input id="myId" placeholder="e.g. USR-DAW-00027"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
+<button class="btn" onclick="loadRecord()">Load</button><button class="btn secondary" onclick="newRecord()">New plant record</button>
+<div id="loadStatus" class="status" style="margin-top:8px"></div>
+<div class="saved" id="savedList"></div>
+</section>
+
+<section class="card">
+<h2>Based on</h2>
+<div class="field"><label>GardenKey plant this is based on</label><input id="libraryName" placeholder="e.g. Lavender" oninput="lookupLibrary()"></div>
+<div id="libraryMatch"></div>
+</section>
+
+<section class="card">
+<h2>Details</h2>
+<div class="row3"><div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Hidcote'"></div><div class="field"><label>Source</label><input id="source" placeholder="e.g. Bought, gift, propagated"></div><div class="field"><label>Date acquired</label><input id="dateAcquired" type="date"></div></div>
+<div class="field"><label>Location</label><input id="location" placeholder="e.g. Balcony planter, front border"></div>
+</section>
+
+<section class="card">
+<h2>History & observations</h2>
+<div class="row2"><div class="field"><label>Last repotted</label><input id="lastRepotted" type="date"></div><div class="field"><label>Last divided</label><input id="lastDivided" type="date"></div></div>
+<div class="field"><label>Flowering history</label><textarea id="floweringHistory" placeholder="e.g. First flowered July 2026, again in September after deadheading"></textarea></div>
+<div class="field"><label>Health observations</label><textarea id="healthObservations" placeholder="e.g. A few yellow leaves in June, resolved after easing off watering"></textarea></div>
+<div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div>
+</section>
+
+<section class="card">
+<h2>Photos</h2>
+<p class="small">Photos are stored on this device only, resized automatically to keep things fast. Add a caption so it's clear what each one shows.</p>
+<div class="gallery" id="gallery"></div>
+<div class="field"><label>Caption for next photo</label><input id="nextCaption" placeholder="e.g. First flower, July 2026"></div>
+<label class="btn secondary" style="cursor:pointer">+ Add photo<input type="file" id="photoFile" accept="image/*" style="display:none" onchange="addPhoto(event)"></label>
+</section>
+
+<section class="card">
+<h2>Save & share</h2>
+<div class="info">
+<b>Save to this browser</b> keeps this record only on this device/browser, so it's here next time you open the page.
+<b style="margin-top:8px">Export JSON</b> downloads a file of this record — use it as a backup, or to move it to another device. Photos are included in the file, so it can get large.
+<b style="margin-top:8px">Import JSON</b> loads a previously exported file back in.
+</div>
+<button class="btn" onclick="saveRecord()">Save to this browser</button>
+<button class="btn secondary" onclick="exportRecord()">Export JSON</button>
+<label class="btn secondary" style="cursor:pointer">Import JSON<input type="file" id="importFile" accept="application/json" style="display:none" onchange="importRecord(event)"></label>
+<button class="btn danger" onclick="deleteRecord()" style="float:right">Delete this record</button>
+</section>
+
+</div><script>
+let library = {};
+let photos = [];
+
+async function loadLibrary(){
+  try{
+    const res = await fetch('plants.json', {cache:'no-store'});
+    library = await res.json();
+  }catch(e){ /* library optional for basic use */ }
+}
+
+function val(id){ return document.getElementById(id).value; }
+function setVal(id, v){ document.getElementById(id).value = v || ''; }
+
+function keyFor(id){ return 'gk_myplant_' + id; }
+function indexKey(){ return 'gk_myplant_index'; }
+
+function getIndex(){
+  try{ return JSON.parse(localStorage.getItem(indexKey())) || []; }catch(e){ return []; }
+}
+function addToIndex(id, nickname, plantLibraryId){
+  const idx = getIndex();
+  const existing = idx.find(e => e.id === id);
+  if(existing){ existing.nickname = nickname; existing.plantLibraryId = plantLibraryId; }
+  else{ idx.push({id, nickname, plantLibraryId}); }
+  localStorage.setItem(indexKey(), JSON.stringify(idx));
+  renderSavedList();
+}
+function removeFromIndex(id){
+  const idx = getIndex().filter(e => e.id !== id);
+  localStorage.setItem(indexKey(), JSON.stringify(idx));
+  renderSavedList();
+}
+function renderSavedList(){
+  const idx = getIndex();
+  savedList.innerHTML = idx.length
+    ? '<span class="small">Saved on this device:</span>' + idx.map(e=>`<a href="?id=${e.id}">${e.nickname || e.id}</a>`).join('')
+    : '<span class="small">No plant records saved on this device yet.</span>';
+}
+
+function lookupLibrary(){
+  const q = val('libraryName').trim().toLowerCase();
+  const match = q.length > 1 ? Object.values(library).find(p => p.name.toLowerCase() === q) : null;
+  if(!match){
+    libraryMatch.innerHTML = q.length > 1 ? '<p class="small">Not matched to a GardenKey plant yet — check spelling, or this might not be in the library.</p>' : '';
+    return;
+  }
+  libraryMatch.innerHTML = `<div class="linkBox"><div class="thumb" style="background:${match.theme||'#8dbb87'}">${gkIconSvg(match.category)}</div><div><b>${match.name}</b><div class="small">${match.latinName||''}</div></div><a href="plant.html?id=${match.id}" class="small" style="margin-left:auto">View care guide →</a></div>`;
+}
+
+function findLibraryMatch(){
+  const q = val('libraryName').trim().toLowerCase();
+  const match = Object.values(library).find(p => p.name.toLowerCase() === q);
+  return match ? match.id : '';
+}
+
+function renderGallery(){
+  gallery.innerHTML = photos.map((p,i) =>
+    `<div class="photo"><img src="${p.dataUrl}"><button onclick="removePhoto(${i})">✕</button>${p.caption?`<div class="cap">${p.caption}</div>`:''}</div>`
+  ).join('');
+}
+
+function addPhoto(evt){
+  const file = evt.target.files[0];
+  if(!file) return;
+  const img = new Image();
+  const reader = new FileReader();
+  reader.onload = () => {
+    img.onload = () => {
+      const maxDim = 800;
+      let w = img.width, h = img.height;
+      if(w > h && w > maxDim){ h = h * maxDim / w; w = maxDim; }
+      else if(h > maxDim){ w = w * maxDim / h; h = maxDim; }
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
+      photos.push({caption: val('nextCaption'), dataUrl});
+      setVal('nextCaption', '');
+      photoFile.value = '';
+      renderGallery();
+    };
+    img.src = reader.result;
+  };
+  reader.readAsDataURL(file);
+}
+function removePhoto(i){ photos.splice(i,1); renderGallery(); }
+
+function collectRecord(){
+  return {
+    id: val('myId'), nickname: val('nickname'), plantLibraryId: findLibraryMatch(), libraryName: val('libraryName'),
+    variety: val('variety'), source: val('source'), dateAcquired: val('dateAcquired'), location: val('location'),
+    lastRepotted: val('lastRepotted'), lastDivided: val('lastDivided'),
+    floweringHistory: val('floweringHistory'), healthObservations: val('healthObservations'), propagationHistory: val('propagationHistory'),
+    photos
+  };
+}
+function fillRecord(r){
+  setVal('myId', r.id); setVal('nickname', r.nickname); setVal('libraryName', r.libraryName || '');
+  setVal('variety', r.variety); setVal('source', r.source); setVal('dateAcquired', r.dateAcquired); setVal('location', r.location);
+  setVal('lastRepotted', r.lastRepotted); setVal('lastDivided', r.lastDivided);
+  setVal('floweringHistory', r.floweringHistory); setVal('healthObservations', r.healthObservations); setVal('propagationHistory', r.propagationHistory);
+  photos = r.photos || [];
+  renderGallery();
+  lookupLibrary();
+}
+
+function blankRecord(id){
+  return {id, nickname:'', libraryName:'', plantLibraryId:'', variety:'', source:'', dateAcquired:'', location:'', lastRepotted:'', lastDivided:'', floweringHistory:'', healthObservations:'', propagationHistory:'', photos:[]};
+}
+
+function loadRecord(){
+  const id = val('myId').trim();
+  if(!id){ alert('Enter a Record ID first.'); return; }
+  try{
+    const raw = localStorage.getItem(keyFor(id));
+    if(raw){
+      fillRecord(JSON.parse(raw));
+      loadStatus.textContent = 'Currently loaded below: ' + id;
+      loadStatus.className = 'status ok';
+    } else {
+      fillRecord(blankRecord(id));
+      loadStatus.textContent = 'No saved record for ' + id + ' yet — fields below are empty with example placeholder text only.';
+      loadStatus.className = 'status';
+    }
+  }catch(e){
+    loadStatus.textContent = 'Could not load that record.';
+    loadStatus.className = 'status err';
+  }
+}
+
+function newRecord(prefillName, prefillLibraryId){
+  const suggested = 'USR-' + Date.now().toString().slice(-8);
+  setVal('myId', suggested);
+  const r = blankRecord(suggested);
+  if(prefillName){ r.nickname = prefillName; r.libraryName = prefillName; }
+  fillRecord(r);
+  loadStatus.textContent = 'Started a new blank plant record — fill it in and save.';
+  loadStatus.className = 'status';
+}
+
+function saveRecord(){
+  const r = collectRecord();
+  if(!r.id){ alert('Record ID is required before saving.'); return; }
+  if(!r.nickname){ alert('Give it a nickname before saving, so you can find it again.'); return; }
+  localStorage.setItem(keyFor(r.id), JSON.stringify(r));
+  addToIndex(r.id, r.nickname, r.plantLibraryId);
+  loadStatus.textContent = 'Currently loaded below: ' + r.nickname + ' (saved)';
+  loadStatus.className = 'status ok';
+}
+
+function deleteRecord(){
+  const id = val('myId').trim();
+  if(!id){ return; }
+  if(!confirm('Delete this plant record from this device? This cannot be undone unless you have an exported backup.')) return;
+  localStorage.removeItem(keyFor(id));
+  removeFromIndex(id);
+  newRecord();
+  loadStatus.textContent = 'Record deleted.';
+  loadStatus.className = 'status';
+}
+
+function exportRecord(){
+  const r = collectRecord();
+  const blob = new Blob([JSON.stringify(r, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (r.nickname || r.id || 'myplant').replace(/[^a-z0-9]+/gi,'-') + '.json';
+  a.click();
+}
+
+function importRecord(evt){
+  const file = evt.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const r = JSON.parse(reader.result);
+      fillRecord(r);
+      loadStatus.textContent = 'Imported ' + (r.nickname||'record') + ' — review and click Save to keep it on this device.';
+      loadStatus.className = 'status ok';
+    }catch(e){ alert('That file did not parse as valid JSON.'); }
+  };
+  reader.readAsText(file);
+}
+
+// init
+const params = new URLSearchParams(location.search);
+const qid = params.get('id');
+loadLibrary().then(() => {
+  if(qid){
+    setVal('myId', qid);
+    loadRecord();
+  } else if(params.get('new') === '1'){
+    newRecord(params.get('nickname') || '', params.get('plantLibraryId') || '');
+    if(params.get('plantLibraryId')){
+      // Save immediately so it shows up in "My Garden" right away (quick-create, no form gate).
+      saveRecord();
+    }
+  } else {
+    newRecord();
+  }
+});
+renderSavedList();
+</script></body></html>

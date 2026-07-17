@@ -37,6 +37,16 @@ function currentWeeklyFact(p){
   return facts[week % facts.length];
 }
 
+function getMyPlantsForSpecies(speciesId){
+  try{
+    const idx = JSON.parse(localStorage.getItem('gk_myplant_index')) || [];
+    return idx.filter(e => e.plantLibraryId === speciesId);
+  }catch(e){ return []; }
+}
+function addToMyGarden(speciesId, speciesName){
+  location.href = 'myplant.html?new=1&plantLibraryId=' + encodeURIComponent(speciesId) + '&nickname=' + encodeURIComponent(speciesName);
+}
+
 function findCompanionId(nameOrId, allPlants){
   if(allPlants[nameOrId]) return nameOrId;
   const hit = Object.values(allPlants).find(pl => pl.name === nameOrId);
@@ -86,14 +96,25 @@ function render(p, allPlants){
 
   const prop = p.propagation || {};
 
+  const myPlants = getMyPlantsForSpecies(p.id);
+  const myGardenHtml = myPlants.length
+    ? myPlants.map(r => `<a href="myplant.html?id=${r.id}"><div class="thumb" style="--c:${p.theme||'#8dbb87'}">${gkIconSvg(p.category)}</div><b>${r.nickname||r.id}</b><div class="small">${r.plantLibraryId ? '' : 'Not yet linked'}</div></a>`).join('')
+    : '';
+
   app.innerHTML = `
   <section class="hero${hasPhoto?' hasPhoto':''}">
     ${hasPhoto ? '' : `<div class="heroArt">${gkIconSvg(p.category)}</div>`}
-    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.21.1</span><span class="pill id">${p.id}</span></div>
+    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.21.2</span><span class="pill id">${p.id}</span></div>
     <div><div class="latin">${p.latinName||''}${p.variety?' · '+p.variety:''}</div><h1>${p.name}${p.commonName?` <span style="font-size:0.5em;font-weight:600">(${p.commonName})</span>`:''}</h1><div class="sub">${p.subtitle||''}</div></div>
   </section>
 
   <div class="chips">${(p.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('')}</div>
+
+  <section class="card">
+    <h2>My Garden</h2>
+    ${myPlants.length ? `<p class="muted">You have ${myPlants.length} ${myPlants.length===1?'plant':'plants'} of this type recorded.</p><div class="mini">${myGardenHtml}</div>` : `<p class="muted">Track a specific plant of this type that you own — its own history, notes and photos, linked back to this guide.</p>`}
+    <a class="btn" href="#" onclick="addToMyGarden('${p.id}','${p.name.replace(/'/g,"\\'")}'); return false;">+ Add to My Garden</a>
+  </section>
 
   <section class="card care">${careHtml || '<p class="muted">No care summary yet.</p>'}</section>
 
