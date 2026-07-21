@@ -1,3 +1,21 @@
+# GardenKey V22 — audit, personal-photo workflow and library expansion
+
+## Implemented
+- Audited the complete V21 package and retained the rich single-source `plants.json` architecture.
+- Confirmed soil, suggested mix, propagation, pollinator information, photo plans and weekly facts existed across all V21 library entries and were rendered on plant profiles.
+- Added 15 new plants: five corms, five ferns and five herbs. Library total is now 134.
+- Made My Plant record IDs automatic and read-only.
+- Fixed species links when a personal plant is quick-created from a general plant guide.
+- Fixed the loaded-record status to show the plant nickname rather than the record ID.
+- Made every “Plant photos to capture” item actionable. It now opens the relevant personal plant record with the requested caption prefilled; when several matching plants exist, the user chooses one.
+- Enhanced the same-species “My Garden” list on each general plant page with personal thumbnails and location/variety details.
+- Updated visible pilot labels to V0.22.
+
+## Compatibility
+Existing V21 browser records continue to use the same localStorage keys and data format.
+
+---
+
 # GardenKey V15 — data architecture fix
 
 ## What was wrong

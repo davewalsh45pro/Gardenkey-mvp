@@ -8,8 +8,8 @@
 <section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
-<div class="row2"><div class="field"><label>Record ID</label><input id="myId" placeholder="e.g. USR-DAW-00027"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
-<button class="btn" onclick="loadRecord()">Load</button><button class="btn secondary" onclick="newRecord()">New plant record</button>
+<div class="row2"><div class="field"><label>Record ID (automatic)</label><input id="myId" readonly aria-readonly="true" title="GardenKey creates this ID automatically"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
+<button class="btn secondary" onclick="newRecord()">New plant record</button>
 <div id="loadStatus" class="status" style="margin-top:8px"></div>
 <div class="saved" id="savedList"></div>
 </section>
@@ -34,7 +34,7 @@
 <div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div>
 </section>
 
-<section class="card">
+<section class="card" id="photos">
 <h2>Photos</h2>
 <p class="small">Photos are stored on this device only, resized automatically to keep things fast. Add a caption so it's clear what each one shows.</p>
 <div class="gallery" id="gallery"></div>
@@ -58,6 +58,7 @@
 </div><script>
 let library = {};
 let photos = [];
+let linkedLibraryId = '';
 
 async function loadLibrary(){
   try{
@@ -99,16 +100,18 @@ function lookupLibrary(){
   const q = val('libraryName').trim().toLowerCase();
   const match = q.length > 1 ? Object.values(library).find(p => p.name.toLowerCase() === q) : null;
   if(!match){
+    linkedLibraryId = '';
     libraryMatch.innerHTML = q.length > 1 ? '<p class="small">Not matched to a GardenKey plant yet — check spelling, or this might not be in the library.</p>' : '';
     return;
   }
+  linkedLibraryId = match.id;
   libraryMatch.innerHTML = `<div class="linkBox"><div class="thumb" style="background:${match.theme||'#8dbb87'}">${gkIconSvg(match.category)}</div><div><b>${match.name}</b><div class="small">${match.latinName||''}</div></div><a href="plant.html?id=${match.id}" class="small" style="margin-left:auto">View care guide →</a></div>`;
 }
 
 function findLibraryMatch(){
   const q = val('libraryName').trim().toLowerCase();
   const match = Object.values(library).find(p => p.name.toLowerCase() === q);
-  return match ? match.id : '';
+  return match ? match.id : linkedLibraryId;
 }
 
 function renderGallery(){
@@ -145,7 +148,7 @@ function removePhoto(i){ photos.splice(i,1); renderGallery(); }
 
 function collectRecord(){
   return {
-    id: val('myId'), nickname: val('nickname'), plantLibraryId: findLibraryMatch(), libraryName: val('libraryName'),
+    id: val('myId'), nickname: val('nickname'), plantLibraryId: linkedLibraryId || findLibraryMatch(), libraryName: val('libraryName'),
     variety: val('variety'), source: val('source'), dateAcquired: val('dateAcquired'), location: val('location'),
     lastRepotted: val('lastRepotted'), lastDivided: val('lastDivided'),
     floweringHistory: val('floweringHistory'), healthObservations: val('healthObservations'), propagationHistory: val('propagationHistory'),
@@ -153,6 +156,7 @@ function collectRecord(){
   };
 }
 function fillRecord(r){
+  linkedLibraryId = r.plantLibraryId || '';
   setVal('myId', r.id); setVal('nickname', r.nickname); setVal('libraryName', r.libraryName || '');
   setVal('variety', r.variety); setVal('source', r.source); setVal('dateAcquired', r.dateAcquired); setVal('location', r.location);
   setVal('lastRepotted', r.lastRepotted); setVal('lastDivided', r.lastDivided);
@@ -172,8 +176,9 @@ function loadRecord(){
   try{
     const raw = localStorage.getItem(keyFor(id));
     if(raw){
-      fillRecord(JSON.parse(raw));
-      loadStatus.textContent = 'Currently loaded below: ' + id;
+      const loaded = JSON.parse(raw);
+      fillRecord(loaded);
+      loadStatus.textContent = 'Currently loaded below: ' + (loaded.nickname || loaded.id);
       loadStatus.className = 'status ok';
     } else {
       fillRecord(blankRecord(id));
@@ -191,6 +196,7 @@ function newRecord(prefillName, prefillLibraryId){
   setVal('myId', suggested);
   const r = blankRecord(suggested);
   if(prefillName){ r.nickname = prefillName; r.libraryName = prefillName; }
+  if(prefillLibraryId && library[prefillLibraryId]){ r.plantLibraryId = prefillLibraryId; r.libraryName = library[prefillLibraryId].name; }
   fillRecord(r);
   loadStatus.textContent = 'Started a new blank plant record — fill it in and save.';
   loadStatus.className = 'status';
@@ -244,6 +250,7 @@ function importRecord(evt){
 // init
 const params = new URLSearchParams(location.search);
 const qid = params.get('id');
+const requestedCaption = params.get('caption') || '';
 loadLibrary().then(() => {
   if(qid){
     setVal('myId', qid);
@@ -257,6 +264,7 @@ loadLibrary().then(() => {
   } else {
     newRecord();
   }
+  if(requestedCaption){ setVal('nextCaption', requestedCaption); location.hash = 'photos'; }
 });
 renderSavedList();
 </script></body></html>

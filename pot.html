@@ -103,10 +103,7 @@ function renderPlantRows(){
       <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value" placeholder="e.g. Planted spring, doing well so far">${r.notes}</textarea></div>
       <div class="rowFoot">
         <div class="rowFootInfo"><div class="thumb" style="background:${match?match.theme:'#8dbb87'}">${icon}</div> ${link}</div>
-        <div>
-          <a href="myplant.html?new=1&nickname=${encodeURIComponent(r.name||'')}" class="small" style="margin-right:10px">Track as a full My Plants record →</a>
-          <button class="btn danger" onclick="removePlantRow(${i})">Remove</button>
-        </div>
+        <button class="btn danger" onclick="removePlantRow(${i})">Remove</button>
       </div>
     </div>`;
   }).join('') || '<p class="small">No plants added yet — e.g. "Echeveria" (centre, thriving), "Sedum" (trailing edge), "Tulip bulbs" (hidden beneath, dormant). Click "+ Add plant" below to start.</p>';
