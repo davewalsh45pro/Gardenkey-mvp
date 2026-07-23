@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Plant — GardenKey</title><style>
-*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
+*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px;resize:vertical}.readonly{background:#f1eee6;color:#52635a}.sectionSave{margin-top:12px;border-top:1px solid #eadfca;padding-top:10px}.potAddGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:520px){.potAddGrid{grid-template-columns:1fr}}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
 .linkBox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin-top:8px}.linkBox .thumb{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.linkBox .thumb svg{width:65%;height:65%}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin:10px 0}.photo{position:relative;border-radius:16px;overflow:hidden;background:#eee;aspect-ratio:1}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo button{position:absolute;top:4px;right:4px;background:#0008;color:white;border:0;border-radius:999px;width:24px;height:24px;font-size:14px;cursor:pointer}.photo .cap{position:absolute;bottom:0;left:0;right:0;background:#0007;color:white;font-size:10px;padding:3px 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 </style></head><body><script src="icons.js"></script><div class="wrap">
@@ -8,7 +8,7 @@
 <section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
-<div class="row2"><div class="field"><label>Record ID (automatic)</label><input id="myId" readonly aria-readonly="true" title="GardenKey creates this ID automatically"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
+<div class="row2"><div class="field"><label>Record ID</label><input id="myId" class="readonly" readonly aria-readonly="true" title="GardenKey creates this ID"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
 <button class="btn secondary" onclick="newRecord()">New plant record</button>
 <div id="loadStatus" class="status" style="margin-top:8px"></div>
 <div class="saved" id="savedList"></div>
@@ -17,13 +17,13 @@
 <section class="card">
 <h2>Based on</h2>
 <div class="field"><label>GardenKey plant this is based on</label><input id="libraryName" placeholder="e.g. Lavender" oninput="lookupLibrary()"></div>
-<div id="libraryMatch"></div>
+<div id="libraryMatch"></div><div class="sectionSave"><button class="btn" onclick="saveRecord()">Save plant</button></div>
 </section>
 
 <section class="card">
 <h2>Details</h2>
 <div class="row3"><div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Hidcote'"></div><div class="field"><label>Source</label><input id="source" placeholder="e.g. Bought, gift, propagated"></div><div class="field"><label>Date acquired</label><input id="dateAcquired" type="date"></div></div>
-<div class="field"><label>Location</label><input id="location" placeholder="e.g. Balcony planter, front border"></div>
+<div class="field"><label>Location</label><input id="location" placeholder="e.g. Balcony planter, front border"></div><div class="sectionSave"><button class="btn" onclick="saveRecord()">Save plant</button></div>
 </section>
 
 <section class="card">
@@ -31,7 +31,7 @@
 <div class="row2"><div class="field"><label>Last repotted</label><input id="lastRepotted" type="date"></div><div class="field"><label>Last divided</label><input id="lastDivided" type="date"></div></div>
 <div class="field"><label>Flowering history</label><textarea id="floweringHistory" placeholder="e.g. First flowered July 2026, again in September after deadheading"></textarea></div>
 <div class="field"><label>Health observations</label><textarea id="healthObservations" placeholder="e.g. A few yellow leaves in June, resolved after easing off watering"></textarea></div>
-<div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div>
+<div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div><div class="sectionSave"><button class="btn" onclick="saveRecord()">Save plant</button></div>
 </section>
 
 <section class="card" id="photos">
@@ -39,7 +39,15 @@
 <p class="small">Photos are stored on this device only, resized automatically to keep things fast. Add a caption so it's clear what each one shows.</p>
 <div class="gallery" id="gallery"></div>
 <div class="field"><label>Caption for next photo</label><input id="nextCaption" placeholder="e.g. First flower, July 2026"></div>
-<label class="btn secondary" style="cursor:pointer">+ Add photo<input type="file" id="photoFile" accept="image/*" style="display:none" onchange="addPhoto(event)"></label>
+<label class="btn secondary" style="cursor:pointer">+ Add photo<input type="file" id="photoFile" accept="image/*" style="display:none" onchange="addPhoto(event)"></label><div class="sectionSave"><button class="btn" onclick="saveRecord()">Save plant</button></div>
+</section>
+
+<section class="card">
+<h2>Add to a pot or border</h2>
+<p class="small">Place this plant directly into any pot or border already saved on this device.</p>
+<div class="potAddGrid"><div class="field"><label>Choose pot / border</label><select id="potTarget"></select></div><div class="field"><label>Position</label><input id="potPosition" placeholder="e.g. Centre, back-left, beneath bulbs"></div></div>
+<div class="field"><label>Status in pot</label><select id="potStatus"><option>Thriving</option><option>Settling in</option><option>Struggling</option><option>Dormant</option><option>Removed</option></select></div>
+<button class="btn" onclick="addToSelectedPot()">+ Add this plant to pot</button><div id="potAddStatus" class="status"></div>
 </section>
 
 <section class="card">
@@ -83,6 +91,7 @@ function addToIndex(id, nickname, plantLibraryId){
   else{ idx.push({id, nickname, plantLibraryId}); }
   localStorage.setItem(indexKey(), JSON.stringify(idx));
   renderSavedList();
+renderPotChoices();
 }
 function removeFromIndex(id){
   const idx = getIndex().filter(e => e.id !== id);
@@ -96,21 +105,54 @@ function renderSavedList(){
     : '<span class="small">No plant records saved on this device yet.</span>';
 }
 
+
+function normalisePlantText(value){
+  return (value || '').toLowerCase()
+    .replace(/[’']/g,'')
+    .replace(/[^a-z0-9]+/g,' ')
+    .replace(/\s+/g,' ')
+    .trim();
+}
+function plantAliases(p){
+  return [p.name, p.commonName, ...(p.commonNames||[]), p.latinName, p.variety, p.slug]
+    .filter(Boolean).map(normalisePlantText).filter(Boolean);
+}
+function matchLibraryPlant(value, collection){
+  const q = normalisePlantText(value);
+  if(q.length < 2) return null;
+  const rows = Array.isArray(collection) ? collection : Object.values(collection || {});
+  let best = null, bestScore = 0;
+  rows.forEach(p => {
+    plantAliases(p).forEach(alias => {
+      let score = 0;
+      if(q === alias) score = 1000 + alias.length;
+      else if(q.startsWith(alias + ' ')) score = 800 + alias.length;
+      else if(alias.startsWith(q + ' ') && q.length >= 4) score = 650 + q.length;
+      else if((' '+q+' ').includes(' '+alias+' ') && alias.length >= 4) score = 500 + alias.length;
+      const genus = normalisePlantText((p.latinName||'').split(/\s+/)[0]);
+      if(genus && q.startsWith(genus + ' ')) score = Math.max(score, 700 + genus.length);
+      if(score > bestScore){ best = p; bestScore = score; }
+    });
+  });
+  return best;
+}
+function displayPlantName(p){ return p ? p.name + (p.commonName ? ' (' + p.commonName + ')' : '') : ''; }
+
 function lookupLibrary(){
   const q = val('libraryName').trim().toLowerCase();
-  const match = q.length > 1 ? Object.values(library).find(p => p.name.toLowerCase() === q) : null;
+  const match = q.length > 1 ? matchLibraryPlant(val('libraryName'), library) : null;
   if(!match){
     linkedLibraryId = '';
     libraryMatch.innerHTML = q.length > 1 ? '<p class="small">Not matched to a GardenKey plant yet — check spelling, or this might not be in the library.</p>' : '';
     return;
   }
   linkedLibraryId = match.id;
-  libraryMatch.innerHTML = `<div class="linkBox"><div class="thumb" style="background:${match.theme||'#8dbb87'}">${gkIconSvg(match.category)}</div><div><b>${match.name}</b><div class="small">${match.latinName||''}</div></div><a href="plant.html?id=${match.id}" class="small" style="margin-left:auto">View care guide →</a></div>`;
+  libraryMatch.innerHTML = `<div class="linkBox"><div class="thumb" style="background:${match.theme||'#8dbb87'}">${gkIconSvg(match.category)}</div><div><b>${displayPlantName(match)}</b><div class="small">${match.latinName||''}</div></div><a href="plant.html?id=${match.id}" class="small" style="margin-left:auto">View care guide →</a></div>`;
 }
 
 function findLibraryMatch(){
   const q = val('libraryName').trim().toLowerCase();
-  const match = Object.values(library).find(p => p.name.toLowerCase() === q);
+  const match = matchLibraryPlant(val('libraryName'), library);
   return match ? match.id : linkedLibraryId;
 }
 
@@ -247,6 +289,48 @@ function importRecord(evt){
   reader.readAsText(file);
 }
 
+
+function getPotIndex(){
+  try{
+    const raw = JSON.parse(localStorage.getItem('gk_pot_index')) || [];
+    return raw.map(e => typeof e === 'string' ? {id:e,name:''} : e);
+  }catch(e){ return []; }
+}
+function renderPotChoices(){
+  const idx = getPotIndex();
+  if(!idx.length){
+    potTarget.innerHTML = '<option value="">No saved pots or borders yet</option>';
+    return;
+  }
+  potTarget.innerHTML = idx.map(e => {
+    let name = e.name;
+    if(!name){
+      try{ const saved = JSON.parse(localStorage.getItem('gk_pot_'+e.id)||'null'); name = saved && saved.name; }catch(err){}
+    }
+    return `<option value="${e.id}">${name || e.id}</option>`;
+  }).join('');
+}
+function addToSelectedPot(){
+  const potId = val('potTarget');
+  if(!potId){ potAddStatus.textContent='Create and save a pot or border first.'; potAddStatus.className='status err'; return; }
+  const r = collectRecord();
+  const plantName = r.libraryName || r.nickname;
+  if(!plantName){ alert('Add a plant name or nickname first.'); return; }
+  try{
+    const raw = localStorage.getItem('gk_pot_'+potId);
+    if(!raw){ throw new Error('Pot not found'); }
+    const pot = JSON.parse(raw);
+    pot.plants = pot.plants || [];
+    const duplicate = pot.plants.some(x => x.myPlantId === r.id);
+    if(!duplicate){
+      pot.plants.push({name:plantName, plantLibraryId:r.plantLibraryId||findLibraryMatch(), myPlantId:r.id, position:val('potPosition'), status:val('potStatus')||'Thriving', notes:r.nickname && r.nickname!==plantName ? 'Personal record: '+r.nickname : ''});
+      localStorage.setItem('gk_pot_'+potId, JSON.stringify(pot));
+    }
+    potAddStatus.textContent = duplicate ? 'This plant is already in that pot.' : 'Added to ' + (pot.name || pot.id) + '. Remember to save this plant record too.';
+    potAddStatus.className='status ok';
+  }catch(e){ potAddStatus.textContent='Could not update that pot or border.'; potAddStatus.className='status err'; }
+}
+
 // init
 const params = new URLSearchParams(location.search);
 const qid = params.get('id');
@@ -267,4 +351,5 @@ loadLibrary().then(() => {
   if(requestedCaption){ setVal('nextCaption', requestedCaption); location.hash = 'photos'; }
 });
 renderSavedList();
+renderPotChoices();
 </script></body></html>

@@ -74,6 +74,21 @@ function findCompanionId(nameOrId, allPlants){
   return hit ? hit.id : null;
 }
 
+
+function addSpeciesToPot(speciesId, speciesName){
+  let idx=[]; try{ idx=JSON.parse(localStorage.getItem('gk_pot_index'))||[]; }catch(e){}
+  idx=idx.map(e=>typeof e==='string'?{id:e,name:''}:e);
+  if(!idx.length){ if(confirm('No saved pot or border exists yet. Open the pot tracker to create one?')) location.href='pot.html'; return; }
+  const labels=idx.map((e,i)=>`${i+1}. ${e.name||e.id}`).join('\n');
+  const answer=prompt('Add '+speciesName+' to which pot or border?\n\n'+labels+'\n\nEnter the number:','1');
+  const chosen=idx[(parseInt(answer,10)||0)-1]; if(!chosen) return;
+  try{
+    const key='gk_pot_'+chosen.id; const pot=JSON.parse(localStorage.getItem(key)||'null'); if(!pot) throw new Error();
+    pot.plants=pot.plants||[]; pot.plants.push({name:speciesName,plantLibraryId:speciesId,position:'',status:'Settling in',notes:''});
+    localStorage.setItem(key,JSON.stringify(pot)); alert(speciesName+' added to '+(pot.name||pot.id)+'.');
+  }catch(e){ alert('That saved pot could not be opened.'); }
+}
+
 function render(p, allPlants){
   document.documentElement.style.setProperty('--accent', p.theme || '#78a874');
   const hasPhoto = !!p.heroImage;
@@ -125,7 +140,7 @@ function render(p, allPlants){
   app.innerHTML = `
   <section class="hero${hasPhoto?' hasPhoto':''}">
     ${hasPhoto ? '' : `<div class="heroArt">${gkIconSvg(p.category)}</div>`}
-    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.22</span><span class="pill id">${p.id}</span></div>
+    <div><span class="pill">GardenKey</span><span class="pill">PILOT V0.23</span><span class="pill id">${p.id}</span></div>
     <div><div class="latin">${p.latinName||''}${p.variety?' · '+p.variety:''}</div><h1>${p.name}${p.commonName?` <span style="font-size:0.5em;font-weight:600">(${p.commonName})</span>`:''}</h1><div class="sub">${p.subtitle||''}</div></div>
   </section>
 
@@ -134,7 +149,7 @@ function render(p, allPlants){
   <section class="card">
     <h2>My Garden</h2>
     ${myPlants.length ? `<p class="muted">You have ${myPlants.length} ${myPlants.length===1?'plant':'plants'} of this type recorded.</p><div class="mini">${myGardenHtml}</div>` : `<p class="muted">Track a specific plant of this type that you own — its own history, notes and photos, linked back to this guide.</p>`}
-    <a class="btn" href="#" onclick="addToMyGarden('${p.id}','${p.name.replace(/'/g,"\\'")}'); return false;">+ Add to My Garden</a>
+    <a class="btn" href="#" onclick="addToMyGarden('${p.id}','${p.name.replace(/'/g,"\\'")}'); return false;">+ Add to My Garden</a><a class="btn secondary" href="#" onclick="addSpeciesToPot('${p.id}','${p.name.replace(/'/g,"\\'")}'); return false;">+ Add to pot / border</a>
   </section>
 
   <section class="card care">${careHtml || '<p class="muted">No care summary yet.</p>'}</section>

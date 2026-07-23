@@ -1,3 +1,20 @@
+# GardenKey V23 — field alignment, pot linking and tolerant plant matching
+
+## Changes
+- Shortened **Record ID (automatic)** to **Record ID** and aligned the two top fields on mobile. IDs remain generated and read-only.
+- Added **Save plant / Save pot / Save entry** actions at the end of editable sections and individual pot/seedling entries.
+- Added an **Add to a pot or border** section to My Plant, plus a direct **Add to pot / border** action on general plant guides.
+- Changed Pot **Soil mix** to an auto-growing text area so the complete mix stays visible.
+- Repaired pot status labels so **Currently loaded below** shows the pot name, not its internal ID. Existing old index entries are repaired from their saved profiles where possible.
+- Replaced exact-name-only matching with tolerant matching across canonical name, common name, Latin name, variety and genus. Entries such as “Canna musafolia” now match the general Canna record while still preserving the entered cultivar/species wording.
+- Added curated common-name aliases to the library and displayed them beside canonical names in the library and plant guide.
+- Updated pilot labels to V0.23.
+
+## Commercial note
+The prototype still exposes the whole library because it is a validation tool. A commercial release should not make each NFC key a separate paywall. The stronger model is free browsing plus limits or paid value around owned-plant records, cloud backup, multi-device sync, advanced pot histories and physical GardenKey packs.
+
+---
+
 # GardenKey V22 — audit, personal-photo workflow and library expansion
 
 ## Implemented
