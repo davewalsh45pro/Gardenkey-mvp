@@ -10381,5 +10381,98 @@
    "Crushing the leaves releases a strong fresh lemon scent."
   ],
   "commonName": "Balm Mint"
+ },
+ "GK-ACI-001": {
+  "id": "GK-ACI-001",
+  "slug": "acidanthera",
+  "name": "Acidanthera",
+  "commonName": "Abyssinian Gladiolus",
+  "latinName": "Gladiolus murielae",
+  "variety": "White-flowered species",
+  "subtitle": "Elegant, fragrant white flowers with dark centres in late summer.",
+  "theme": "#7f9f72",
+  "category": "Corm",
+  "aliases": [
+   "Acidanthera murielae",
+   "Gladiolus callianthus",
+   "Peacock orchid",
+   "Abyssinian gladiolus"
+  ],
+  "tags": [
+   "Fragrant flowers",
+   "Full sun",
+   "Corm",
+   "Late summer"
+  ],
+  "quickCare": {
+   "Water": "Water regularly while actively growing; reduce after foliage dies back",
+   "Light": "Full sun in a warm, sheltered position",
+   "Feeding": "Balanced liquid feed every few weeks during active growth",
+   "Pruning": "Deadhead flowers; leave foliage until it yellows naturally"
+  },
+  "notes": "Plant corms after frost risk in free-draining soil. In colder or wetter gardens, lift and store the corms frost-free once the foliage dies back.",
+  "soil": "Fertile, humus-rich and well-drained soil.",
+  "medium": "Peat-free multipurpose compost with added grit or perlite for drainage in containers.",
+  "seasonalActions": {
+   "Spring": "Plant corms after frost risk, usually 8–10 cm deep in a warm position.",
+   "Summer": "Water during dry spells, feed in active growth and support tall stems if exposed.",
+   "Autumn": "Allow foliage to yellow before lifting corms where winter wet or frost is a risk.",
+   "Winter": "Store lifted corms dry and frost-free; keep planted pots sheltered from prolonged wet."
+  },
+  "problems": [
+   {
+    "name": "No flowers",
+    "fix": "Often caused by insufficient warmth, light or growing time. Use full sun and start corms under cover in cool areas."
+   },
+   {
+    "name": "Corm rot",
+    "fix": "Avoid waterlogged compost and store lifted corms dry with good airflow."
+   },
+   {
+    "name": "Slugs and snails",
+    "fix": "Protect emerging shoots, particularly when growth first appears."
+   }
+  ],
+  "companions": [
+   "Dahlia",
+   "Canna",
+   "Salvia",
+   "Verbena"
+  ],
+  "propagation": {
+   "season": "Divide offsets when corms are lifted or before replanting in spring.",
+   "methods": "Separate healthy cormlets from the parent corm and grow them on individually.",
+   "tips": "Small cormlets may take more than one season to reach flowering size.",
+   "tracker": "Record division date, number of cormlets and the first flowering year."
+  },
+  "pollinator": {
+   "score": 2,
+   "value": "The fragrant flowers may attract night-flying insects, although the plant is primarily ornamental."
+  },
+  "pollinatorFact": "Its evening fragrance is associated with attracting night-active pollinators.",
+  "timeline": {
+   "Seeding": "Usually grown from corms",
+   "Flowering": "Aug-Oct",
+   "Harvest": "N/A",
+   "Pruning": "Deadhead; remove foliage only after yellowing"
+  },
+  "photoPlan": {
+   "hero": "Whole plant in flower, showing the tall stems and white blooms.",
+   "gallery": [
+    "Flower close-up showing dark centre",
+    "Sword-shaped foliage",
+    "Corms and offsets at lifting time",
+    "Whole plant before flowering"
+   ]
+  },
+  "weeklyFact": "Although still widely sold as Acidanthera, the accepted botanical placement is within the genus Gladiolus.",
+  "weeklyFacts": [
+   "Although still widely sold as Acidanthera, the accepted botanical placement is within the genus Gladiolus.",
+   "The flowers are especially valued for their fragrance later in the day."
+  ],
+  "companionLinks": {
+   "Dahlia": "GK-DAH-001",
+   "Canna": "GK-CAN-001"
+  }
  }
 }
