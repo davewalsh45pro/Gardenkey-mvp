@@ -1,3 +1,10 @@
+# GardenKey V26 — tester-ready cleanup
+
+- Separated the personal Aeonium tester submission from the shared Aeonium library guide.
+- Added an optional personal-draft import route linked to the general plant entry.
+- Removed repeated section-level and row-level save buttons; retained a single clear save action per editable page.
+- Updated pilot labels and completed a final pre-tester audit.
+
 # GardenKey V25
 
 ## Changes

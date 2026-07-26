@@ -3,7 +3,7 @@
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a><a href="create.html">Create tester plant</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · V25</span><h1>Your Border Tracker</h1><p>Track each bed or border as one connected record — every plant in it, its position, and what disappears or returns through the seasons. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · V26</span><h1>Your Border Tracker</h1><p>Track each bed or border as one connected record — every plant in it, its position, and what disappears or returns through the seasons. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
 <div class="row2"><div class="field"><label>Border ID</label><input id="potId" class="readonly" readonly aria-readonly="true" placeholder="e.g. GK-POT-SUC-001"></div><div class="field"><label>Border name</label><input id="potName"></div></div>
@@ -18,14 +18,14 @@
 <div class="row3"><div class="field"><label>Drainage / exposure</label><input id="drainage" placeholder="e.g. 3 holes, crocks added"></div><div class="field"><label>Soil mix</label><textarea id="soilMix" class="autoGrow" rows="2" oninput="autoGrow(this)" placeholder="e.g. Cactus/succulent mix + grit"></textarea></div><div class="field"><label>Mulch / top dressing</label><input id="topDressing" placeholder="e.g. Slate chippings"></div></div>
 <div class="field"><label>Watering setup</label><input id="watering" placeholder="e.g. Hand watered weekly, no irrigation"></div>
 <div class="field"><label>Current status</label><textarea id="currentStatus" placeholder="e.g. All plants settled in well since April planting"></textarea></div>
-<div class="field"><label>Seasonal notes</label><textarea id="seasonalNotes" placeholder="e.g. Move under cover before first frost"></textarea></div><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div>
+<div class="field"><label>Seasonal notes</label><textarea id="seasonalNotes" placeholder="e.g. Move under cover before first frost"></textarea></div>
 </section>
 
 <section class="card">
 <h2>Plants in this border</h2>
 <p class="small">Add every plant, bulb, or hidden dormant thing in the bed or border — this is what makes a border profile more useful than a single plant tag.</p>
 <div id="plantList"></div>
-<button class="btn secondary" onclick="addPlantRow()">+ Add plant</button><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div>
+<button class="btn secondary" onclick="addPlantRow()">+ Add plant</button>
 </section>
 
 <section class="card">
@@ -140,7 +140,7 @@ function renderPlantRows(){
       <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value" placeholder="e.g. Planted spring, doing well so far">${r.notes}</textarea></div>
       <div class="rowFoot">
         <div class="rowFootInfo"><div class="thumb" style="background:${match?match.theme:'#8dbb87'}">${icon}</div> ${link}</div>
-        <div><button class="btn" onclick="savePot()">Save entry</button><button class="btn danger" onclick="removePlantRow(${i})">Remove</button></div>
+        <div><button class="btn danger" onclick="removePlantRow(${i})">Remove</button></div>
       </div>
     </div>`;
   }).join('') || '<p class="small">No plants added yet — e.g. "Echeveria" (centre, thriving), "Sedum" (trailing edge), "Tulip bulbs" (hidden beneath, dormant). Click "+ Add plant" below to start.</p>';
