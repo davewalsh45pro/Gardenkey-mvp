@@ -2823,78 +2823,86 @@
   "id": "GK-AEO-001",
   "slug": "aeonium",
   "name": "Aeonium",
-  "latinName": "Aeonium",
-  "variety": "Rosette aeonium",
-  "subtitle": "Striking architectural succulent with rosettes held on visible stems.",
-  "theme": "#5a6b4f",
+  "latinName": "Aeonium arboreum",
+  "variety": "Tree aeonium",
+  "subtitle": "Architectural succulent rosettes that enjoy sun, sharp drainage and winter protection.",
+  "theme": "#6f8a3d",
+  "category": "Succulent",
+  "commonNames": [
+   "Tree Houseleek"
+  ],
   "tags": [
+   "Succulent",
    "Full sun",
-   "Unusual growth cycle",
-   "Architectural"
+   "Free-draining",
+   "Frost tender"
   ],
   "quickCare": {
-   "Water": "Water moderately in winter growth period; reduce sharply in its summer semi-dormancy",
-   "Light": "Full sun for the best colour and compact rosettes",
-   "Feeding": "Light feed during active winter growth only",
-   "Pruning": "Remove dead lower leaves; trim leggy stems to encourage branching"
+   "Water": "Water sparingly; allow the mix to dry well between watering",
+   "Light": "Bright light to full sun, with protection from severe midday scorch",
+   "Feeding": "Light cactus feed once or twice during active growth",
+   "Pruning": "Remove spent flower stems and leggy or damaged growth"
   },
-  "notes": "Unusual among succulents — aeonium actively grows in cooler months and rests in high summer heat, the opposite of many other succulents.",
-  "soil": "N/A — grown in potting compost.",
-  "medium": "Free-draining cactus/succulent compost with added grit.",
+  "notes": "Tester observation: growing in full sun until about 2:30pm, watered very lightly only in hot weather, fed rarely, and originally received from Brian in Offington. Aeoniums often grow most actively in cooler months and may slow or partially close their rosettes in summer heat. Protect from hard frost.",
+  "soil": "Very free-draining, gritty soil. Avoid a dense mix that stays wet around the roots.",
+  "medium": "Peat-free cactus or succulent compost with generous horticultural grit and perlite. The tester uses a very gritty compost with perlite.",
   "seasonalActions": {
-   "Spring": "Growth is slowing as temperatures rise — ease off watering.",
-   "Summer": "Semi-dormant in hot weather; water sparingly.",
-   "Autumn": "Growth resumes as temperatures cool — increase watering gradually.",
-   "Winter": "Main active growing season; water moderately and feed lightly."
+   "Spring": "Resume light watering as growth becomes active; check for leggy stems and repot if crowded.",
+   "Summer": "Water very sparingly in hot weather and watch for temporary summer dormancy or tightened rosettes.",
+   "Autumn": "Growth often strengthens as temperatures cool; increase watering slightly while still allowing drainage.",
+   "Winter": "Keep bright and frost-free. Water modestly during active growth but never leave sitting wet."
   },
   "problems": [
    {
-    "name": "Leaf drop in high summer heat",
-    "fix": "Often normal semi-dormancy; reduce watering rather than increasing it."
+    "name": "Stem or root rot",
+    "fix": "Usually caused by cold, wet compost. Remove affected tissue, allow cuts to callus and restart in a drier mix."
    },
    {
-    "name": "Leggy stems reaching for light",
-    "fix": "Move to a brighter spot; leggy stems can be cut and re-rooted to restart the rosette."
+    "name": "Mealybugs",
+    "fix": "Check rosette centres and leaf joints; remove early infestations with a cotton bud and suitable treatment."
+   },
+   {
+    "name": "Leaf drop or closed rosettes",
+    "fix": "Can be a response to summer heat or drought. Check the stem is firm before increasing water."
    }
   ],
   "companions": [
    "Echeveria",
    "Sedum",
-   "Jade Plant"
+   "Sempervivum",
+   "Aloe Vera"
   ],
   "propagation": {
-   "season": "Stem cuttings root well — let the cut end callus for a couple of days before placing on gritty compost.",
-   "methods": "Offsets at the base of some varieties can be removed and potted.",
-   "tips": "Best propagated during its active winter growth period.",
-   "tracker": "Propagation tracker coming soon — for now, add dates, method and result in your notes."
+   "season": "Spring or early autumn, when the plant is actively growing.",
+   "methods": "Take stem cuttings below a rosette, allow the cut end to callus, then insert into a gritty mix.",
+   "tips": "Keep newly planted cuttings barely moist until roots form; too much water is the main risk.",
+   "tracker": "Track cutting date, callusing time, rooting and first new growth."
   },
   "pollinator": {
-   "score": 1,
-   "value": "Grown mainly as an ornamental architectural succulent, with limited typical indoor pollinator relevance."
+   "score": 3,
+   "value": "Mature plants can produce tall sprays of small flowers that attract bees and other insects."
   },
+  "pollinatorFact": "Aeonium flower sprays can offer useful nectar, although a flowering rosette usually dies after blooming.",
   "timeline": {
-   "Seeding": "N/A — succulent",
-   "Flowering": "Occasional yellow flower cluster from mature rosettes",
+   "Seeding": "Rarely used at home",
+   "Flowering": "Late winter to spring on mature rosettes",
    "Harvest": "N/A",
-   "Pruning": "Trim leggy stems to encourage branching, any time of year"
+   "Pruning": "After flowering or when stems become leggy"
   },
   "photoPlan": {
-   "hero": "Clear whole-plant photo of Aeonium.",
+   "hero": "Whole Aeonium showing its branching rosettes.",
    "gallery": [
-    "Whole plant showing rosette on stem",
-    "Rosette close-up from above",
-    "Stem cutting propagation",
-    "Flower cluster if it appears"
+    "Close-up of the central rosette",
+    "Stem and branching habit",
+    "Summer resting appearance",
+    "Flower spike if it develops"
    ]
   },
-  "weeklyFact": "Aeonium runs on an unusual seasonal clock compared to most succulents — actively growing in cool winter months and resting through summer heat.",
-  "category": "Succulent",
-  "pollinatorFact": "Aeonium's occasional yellow flower clusters can attract bees where grown outdoors in mild climates; indoors it's grown mainly for its architectural rosette form.",
+  "weeklyFact": "Aeoniums can look most lively in the cooler part of the year and partially rest during hot, dry summer weather.",
   "weeklyFacts": [
-   "Aeonium runs on an unusual seasonal clock compared to most succulents — actively growing in cool winter months and resting through summer heat.",
-   "Aeonium rosettes close up tightly in summer heat and open flat again once cooler weather returns."
-  ],
-  "commonName": "Tree Houseleek"
+   "Aeoniums can look most lively in the cooler part of the year and partially rest during hot, dry summer weather.",
+   "Each Aeonium rosette is monocarpic: once it flowers, that rosette dies, while unflowered branches can continue growing."
+  ]
  },
  "GK-TOM-001": {
   "id": "GK-TOM-001",
@@ -10381,98 +10389,5 @@
    "Crushing the leaves releases a strong fresh lemon scent."
   ],
   "commonName": "Balm Mint"
- },
- "GK-ACI-001": {
-  "id": "GK-ACI-001",
-  "slug": "acidanthera",
-  "name": "Acidanthera",
-  "commonName": "Abyssinian Gladiolus",
-  "latinName": "Gladiolus murielae",
-  "variety": "White-flowered species",
-  "subtitle": "Elegant, fragrant white flowers with dark centres in late summer.",
-  "theme": "#7f9f72",
-  "category": "Corm",
-  "aliases": [
-   "Acidanthera murielae",
-   "Gladiolus callianthus",
-   "Peacock orchid",
-   "Abyssinian gladiolus"
-  ],
-  "tags": [
-   "Fragrant flowers",
-   "Full sun",
-   "Corm",
-   "Late summer"
-  ],
-  "quickCare": {
-   "Water": "Water regularly while actively growing; reduce after foliage dies back",
-   "Light": "Full sun in a warm, sheltered position",
-   "Feeding": "Balanced liquid feed every few weeks during active growth",
-   "Pruning": "Deadhead flowers; leave foliage until it yellows naturally"
-  },
-  "notes": "Plant corms after frost risk in free-draining soil. In colder or wetter gardens, lift and store the corms frost-free once the foliage dies back.",
-  "soil": "Fertile, humus-rich and well-drained soil.",
-  "medium": "Peat-free multipurpose compost with added grit or perlite for drainage in containers.",
-  "seasonalActions": {
-   "Spring": "Plant corms after frost risk, usually 8–10 cm deep in a warm position.",
-   "Summer": "Water during dry spells, feed in active growth and support tall stems if exposed.",
-   "Autumn": "Allow foliage to yellow before lifting corms where winter wet or frost is a risk.",
-   "Winter": "Store lifted corms dry and frost-free; keep planted pots sheltered from prolonged wet."
-  },
-  "problems": [
-   {
-    "name": "No flowers",
-    "fix": "Often caused by insufficient warmth, light or growing time. Use full sun and start corms under cover in cool areas."
-   },
-   {
-    "name": "Corm rot",
-    "fix": "Avoid waterlogged compost and store lifted corms dry with good airflow."
-   },
-   {
-    "name": "Slugs and snails",
-    "fix": "Protect emerging shoots, particularly when growth first appears."
-   }
-  ],
-  "companions": [
-   "Dahlia",
-   "Canna",
-   "Salvia",
-   "Verbena"
-  ],
-  "propagation": {
-   "season": "Divide offsets when corms are lifted or before replanting in spring.",
-   "methods": "Separate healthy cormlets from the parent corm and grow them on individually.",
-   "tips": "Small cormlets may take more than one season to reach flowering size.",
-   "tracker": "Record division date, number of cormlets and the first flowering year."
-  },
-  "pollinator": {
-   "score": 2,
-   "value": "The fragrant flowers may attract night-flying insects, although the plant is primarily ornamental."
-  },
-  "pollinatorFact": "Its evening fragrance is associated with attracting night-active pollinators.",
-  "timeline": {
-   "Seeding": "Usually grown from corms",
-   "Flowering": "Aug-Oct",
-   "Harvest": "N/A",
-   "Pruning": "Deadhead; remove foliage only after yellowing"
-  },
-  "photoPlan": {
-   "hero": "Whole plant in flower, showing the tall stems and white blooms.",
-   "gallery": [
-    "Flower close-up showing dark centre",
-    "Sword-shaped foliage",
-    "Corms and offsets at lifting time",
-    "Whole plant before flowering"
-   ]
-  },
-  "weeklyFact": "Although still widely sold as Acidanthera, the accepted botanical placement is within the genus Gladiolus.",
-  "weeklyFacts": [
-   "Although still widely sold as Acidanthera, the accepted botanical placement is within the genus Gladiolus.",
-   "The flowers are especially valued for their fragrance later in the day."
-  ],
-  "companionLinks": {
-   "Dahlia": "GK-DAH-001",
-   "Canna": "GK-CAN-001"
-  }
  }
 }

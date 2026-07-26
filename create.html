@@ -4,7 +4,7 @@
 <div class="field"><label>What plant is it?</label><input id="name" placeholder="e.g. Gladiolus, Hosta, Dahlia" oninput="lookupPlant()"></div>
 <div id="suggestedCare"></div>
 <div class="field"><label>Plant group</label><select id="cat"><option>Annual</option><option>Biennial</option><option>Bulb</option><option>Corm</option><option>Fern</option><option>Herb</option><option>Herbaceous perennial</option><option>Houseplant</option><option>Perennial</option><option>Shrub</option><option>Succulent</option><option>Tree</option><option>Tuber</option><option>Vegetable</option></select></div>
-<div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Bishop of Llandaff' or unknown"></div>
+<div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="Enter the plant name above for a relevant example"></div>
 <div class="field"><label>Where it's growing</label><input id="location" placeholder="e.g. Balcony pot, front border, seed tray"></div>
 <p class="small" style="margin-top:16px"><b>Your own observations</b> — how you're actually caring for this specific plant, which might differ from general advice above (different pot, microclimate, or just what's worked for you).</p>
 <div class="field"><label>Light it's actually getting</label><input id="light" placeholder="e.g. full sun, part shade, shade"></div>
@@ -22,11 +22,19 @@ function makeId(){const n=Date.now().toString().slice(-6);return 'GK-DRAFT-'+n}
 id.value=makeId();
 
 let library = {};
+const CULTIVAR_EXAMPLES = {
+  aeonium: "'Zwartkop'", lavender: "'Hidcote'", dahlia: "'Bishop of Llandaff'", hosta: "'Blue Mouse Ears'", rose: "'Gertrude Jekyll'", canna: "'Tropicanna'", hydrangea: "'Endless Summer'", clematis: "'Nelly Moser'", camellia: "'Donation'", crocosmia: "'Lucifer'", echeveria: "'Perle von Nürnberg'", sedum: "'Autumn Joy'", rosemary: "'Miss Jessopp’s Upright'", thyme: "'Silver Queen'", mint: "'Chocolate'", basil: "'Genovese'"
+};
+function norm(v){return (v||'').toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function aliases(p){return [p.name,p.commonName,...(p.commonNames||[]),p.latinName,p.slug].filter(Boolean).map(norm)}
+function findPlant(q){const n=norm(q); return Object.values(library).find(p=>aliases(p).some(a=>n===a||n.startsWith(a+' ')||a.startsWith(n+' '))) || null}
+function cultivarExample(p,q){const key=norm((p&&p.name)||q); const example=CULTIVAR_EXAMPLES[key] || (p&&p.variety && !/type|mixed|hybrid|plant|general/i.test(p.variety) ? p.variety : 'a named cultivar'); return `e.g. ${example} or unknown`;}
 fetch('plants.json', {cache:'no-store'}).then(r=>r.json()).then(d=>{library=d}).catch(()=>{});
 
 function lookupPlant(){
   const q = name.value.trim().toLowerCase();
-  const match = q.length > 1 ? Object.values(library).find(p => p.name.toLowerCase() === q) : null;
+  const match = q.length > 1 ? findPlant(q) : null;
+  variety.placeholder = cultivarExample(match, q);
   if(!match){ suggestedCare.innerHTML = ''; return; }
   const c = match.quickCare || {};
   suggestedCare.innerHTML = `<div class="suggested">
