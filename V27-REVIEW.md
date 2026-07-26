@@ -20,3 +20,8 @@ After deployment, open either:
 - or `myplants.html?imports=1` and tap **Brian's Aeonium**.
 
 The record is saved only on the device that imports it. This is required because GitHub Pages cannot identify Dave's browser or write directly into its local storage during deployment.
+
+## Corrected deployment package
+- All visible pilot labels now read `PILOT V0.27`.
+- The downloadable ZIP is packaged with website files at archive root, so GitHub root files can be replaced directly.
+- Brian's Aeonium remains a personal draft and must be imported once on the intended browser using `myplant.html?draft=GK-DRAFT-009436`.
