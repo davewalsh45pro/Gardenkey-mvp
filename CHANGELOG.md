@@ -1,10 +1,14 @@
-# GardenKey V26 — tester-ready cleanup
 
-- Separated the personal Aeonium tester submission from the shared Aeonium library guide.
-- Added an optional personal-draft import route linked to the general plant entry.
-- Removed repeated section-level and row-level save buttons; retained a single clear save action per editable page.
-- Updated pilot labels and completed a final pre-tester audit.
+## V27 tester identity update
 
+- Added a fixed tester registry for Elaine Fitzmaurice, Christine Orford, Eimear Cremen, Emer Harte, Karen Foley, Troy Hopkins, Dili and Kelly.
+- Added personalised `create.html?tester=...` starter links.
+- Tester name and ID are now included in every emailed/copied draft.
+- Tester identity is stored on the device and retained in approved My Plant records.
+- Approved draft imports reject a draft assigned to a different identified tester.
+- The hidden import queue filters drafts to the tester identified on that device.
+- Added `TESTER-SETUP.md` containing all eight links and the pilot workflow.
+- Restored `admin.html`, which had accidentally become a zero-byte file in V26/V27.
 # GardenKey V25
 
 ## Changes
@@ -621,3 +625,11 @@ gk_myplant_<id>            → {id, nickname, plantLibraryId, libraryName, varie
 ```
 `plantLibraryId` is resolved automatically from the typed species name at save time —
 there's no manual ID entry needed anywhere in this flow.
+
+
+## V27
+- Fixed the non-functional personal-draft import route.
+- Added stable, duplicate-safe tester record imports.
+- Added personal growing-condition fields to saved My Plant records.
+- Added hidden owner import queue at `myplants.html?imports=1`.
+- Removed repeated section save buttons.

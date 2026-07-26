@@ -17,8 +17,8 @@
 <b style="margin-top:8px">Export JSON</b> downloads a file of all your trays — use it as a backup, or to move them to another device.
 <b style="margin-top:8px">Import JSON</b> loads a previously exported file back in (e.g. one made on another device, or one someone else sent you).
 </div>
-<button class="btn secondary" onclick="exportAll()">Export JSON</button>
 <button class="btn" onclick="saveAll()">Save to this browser</button>
+<button class="btn secondary" onclick="exportAll()">Export JSON</button>
 <label class="btn secondary" style="cursor:pointer">Import JSON<input type="file" id="importFile" accept="application/json" style="display:none" onchange="importAll(event)"></label>
 <div id="saveNote" class="savenote"></div>
 </section>
@@ -53,10 +53,11 @@ function render(){
         <div class="field"><label>Tray ID</label><input class="trayIdField readonly" value="${t.id}" readonly aria-readonly="true"></div>
       </div>
       <div class="field"><label>Notes</label><textarea oninput="trays[${i}].notes=this.value" placeholder="e.g. Damping off on 2 seedlings, moved to a brighter spot">${t.notes}</textarea></div>
-      <div class="rowActions"><button class="btn danger" onclick="removeTray(${i})">Remove</button></div>
+      <div class="rowActions"><button class="btn" onclick="saveTray(${i})">Save this entry</button><button class="btn danger" onclick="removeTray(${i})">Remove</button></div>
     </div>`).join('') || '<p class="small">No trays yet — add your first batch above.</p>';
 }
 
+function saveTray(i){ saveAll(); saveNote.textContent = 'Saved ' + (trays[i].name || trays[i].id) + ' to this browser.'; }
 
 function saveAll(){
   localStorage.setItem('gk_seedlings', JSON.stringify(trays));

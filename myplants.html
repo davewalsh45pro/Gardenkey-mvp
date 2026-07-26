@@ -3,8 +3,14 @@
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plants</h1><p>Every specific plant you own, each with its own history and photos, linked back to the general GardenKey guide for its type. Saved to this browser only.</p>
+<section class="hero"><div id="testerBanner" class="small" style="font-weight:900;margin-bottom:8px"></div><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey</span><h1>My Plants</h1><p>Every specific plant you own, each with its own history and photos, linked back to the general GardenKey guide for its type. Saved to this browser only.</p>
 <button class="btn" onclick="addPlant()">+ Add a plant</button>
+</section>
+
+<section class="card" id="testerDrafts" style="display:none">
+<h2>Tester plants ready to add</h2>
+<p class="small">These are approved personal tester records waiting to be saved on this device. They stay separate from the shared plant library.</p>
+<div id="draftList"><p class="state">Loading drafts…</p></div>
 </section>
 
 <section class="card">
@@ -16,7 +22,14 @@
 let library = {};
 let records = [];
 
+function showTester(){
+  const name=localStorage.getItem('gk_tester_name')||'';
+  const id=localStorage.getItem('gk_tester_id')||'';
+  testerBanner.textContent=(name||id)?`Tester: ${name||'GardenKey tester'}${id?' · '+id:''}`:'';
+}
+
 async function load(){
+  showTester();
   try{
     const res = await fetch('plants.json', {cache:'no-store'});
     library = await res.json();
@@ -47,16 +60,37 @@ function render(){
     const photo = r.full && r.full.photos && r.full.photos[0];
     const thumbInner = photo ? `<img src="${photo.dataUrl}">` : (species ? gkIconSvg(species.category) : gkIconSvg(''));
     const sub = species ? species.name + (r.full && r.full.variety ? ` '${r.full.variety}'` : '') : 'Not linked to a library plant yet';
+    const owner = r.full && (r.full.testerName || r.full.testerId) ? ` · ${r.full.testerName || r.full.testerId}` : '';
     const loc = r.full && r.full.location ? ' · ' + r.full.location : '';
     return `<a class="plant" href="myplant.html?id=${r.id}">
       <div class="thumb" style="${species && !photo ? 'background:'+species.theme : ''}">${thumbInner}</div>
-      <div><b>${r.nickname || r.id}</b><div class="muted">${sub}${loc}</div></div>
+      <div><b>${r.nickname || r.id}</b><div class="muted">${sub}${loc}${owner}</div></div>
     </a>`;
   }).join('') || (records.length
     ? '<p class="state">No plants match that search.</p>'
     : '<p class="state">No plants added yet. Tap "+ Add a plant" above, or "Add to My Garden" on any plant profile.</p>');
 }
 
+async function loadDrafts(){
+  const params = new URLSearchParams(location.search);
+  if(params.get('draft')){
+    location.replace('myplant.html?draft=' + encodeURIComponent(params.get('draft')));
+    return;
+  }
+  if(params.get('imports') !== '1') return;
+  testerDrafts.style.display = 'block';
+  try{
+    const res = await fetch('personal-drafts.json', {cache:'no-store'});
+    const drafts = await res.json();
+    const testerId=localStorage.getItem('gk_tester_id')||'';
+    const rows = Object.entries(drafts).filter(([id,d]) => !d.testerId || !testerId || d.testerId===testerId);
+    draftList.innerHTML = rows.length ? rows.map(([id,d]) => {
+      const species = library[d.plantLibraryId];
+      return `<a class="plant" href="myplant.html?draft=${encodeURIComponent(id)}"><div class="thumb" style="${species?'background:'+species.theme:''}">${species?gkIconSvg(species.category):gkIconSvg('')}</div><div><b>${d.nickname||id}</b><div class="muted">${species?species.name:'Unlinked species'}${d.testerName?' · '+d.testerName:''} · Tap to add to My Plants</div></div></a>`;
+    }).join('') : '<p class="state">No tester drafts waiting.</p>';
+  }catch(e){ draftList.innerHTML='<p class="state">Could not load tester drafts.</p>'; }
+}
+
 search.oninput = render;
-load();
+load().then(loadDrafts);
 </script></body></html>
