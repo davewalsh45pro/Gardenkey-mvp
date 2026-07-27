@@ -13,5 +13,41 @@
     "notes": "Received from Brian in Offington.",
     "category": "Succulent",
     "recordId": "USR-00009436"
+  },
+  "GK-DRAFT-ELA001": {
+    "sourceDraftId": "GK-DRAFT-ELA001",
+    "testerId": "TST-ELAINE-001",
+    "testerName": "Elaine Fitzmaurice",
+    "recordId": "USR-ELA-0001",
+    "plantLibraryId": "",
+    "libraryName": "Tetrapanax papyrifer 'Rex'",
+    "nickname": "Elaine's Tetrapanax Rex",
+    "variety": "'Rex'",
+    "source": "",
+    "location": "Large pot in the garden",
+    "light": "South-east facing position",
+    "water": "",
+    "feeding": "",
+    "soil": "",
+    "notes": "Tetrapanax papyrifer 'Rex' growing in a large pot in a south-east facing position in the garden.",
+    "category": "Shrub"
+  },
+  "GK-DRAFT-EIM001": {
+    "sourceDraftId": "GK-DRAFT-EIM001",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0001",
+    "plantLibraryId": "GK-HYD-001",
+    "libraryName": "Hydrangea",
+    "nickname": "Eimear's Hydrangea Limelight",
+    "variety": "'Limelight'",
+    "source": "",
+    "location": "Mid north-east facing border",
+    "light": "North-east facing position",
+    "water": "",
+    "feeding": "",
+    "soil": "",
+    "notes": "Hydrangea 'Limelight' growing midway along a north-east facing border.",
+    "category": "Shrub"
   }
 }

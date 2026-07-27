@@ -3,7 +3,7 @@
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a><a href="create.html">Create tester plant</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · V25</span><h1>Your Pot Tracker</h1><p>Track each pot or mixed container as one connected record — every plant in it, its position, and how it changes over time. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V0.28</span><h1>Your Pot Tracker</h1><p>Track each pot or mixed container as one connected record — every plant in it, its position, and how it changes over time. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
 <div class="row2"><div class="field"><label>Pot ID</label><input id="potId" class="readonly" readonly aria-readonly="true" placeholder="e.g. GK-POT-SUC-001"></div><div class="field"><label>Pot name</label><input id="potName"></div></div>
@@ -234,10 +234,20 @@ function importPot(evt){
   reader.readAsText(file);
 }
 
-// init
-const qid = new URLSearchParams(location.search).get('id') || 'GK-POT-SUC-001';
-setVal('potId', qid);
+// init — open a clean unsaved pot unless an explicit saved ID is requested.
+const params = new URLSearchParams(location.search);
+const qid = params.get('id') || '';
 repairPotIndexNames();
-loadLibraryNames().then(loadPot);
+loadLibraryNames().then(() => {
+  if(qid){
+    setVal('potId', qid);
+    loadPot();
+  } else {
+    newPot('GK-POT-','pot');
+    loadStatus.textContent = getIndex().length
+      ? 'Started a new blank pot. Your previously saved pots remain listed above on this device.'
+      : 'Welcome — no pots are saved on this device yet. Start with this blank pot, give it a name, then save it.';
+  }
+});
 renderSavedList();
 </script></body></html>
