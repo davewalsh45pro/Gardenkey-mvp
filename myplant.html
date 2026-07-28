@@ -126,6 +126,10 @@ function indexKey(){ return 'gk_myplant_index'; }
 function getIndex(){
   try{ return JSON.parse(localStorage.getItem(indexKey())) || []; }catch(e){ return []; }
 }
+function setIndex(items){
+  localStorage.setItem(indexKey(), JSON.stringify(items || []));
+  renderSavedList();
+}
 function addToIndex(id, nickname, plantLibraryId){
   const idx = getIndex();
   const existing = idx.find(e => e.id === id);
@@ -379,53 +383,47 @@ function addToCollection(type){
 
 async function importTesterDraft(draftId){
   try{
-    const res = await fetch('personal-drafts.json', {cache:'no-store'});
+    const res = await fetch('personal-drafts.json?v=2911', {cache:'no-store'});
     if(!res.ok) throw new Error('Draft file unavailable');
     const drafts = await res.json();
     const d = drafts[draftId];
     if(!d) throw new Error('Draft not found');
-    const device = deviceTester();
-    // A personalised NFC link is authoritative. This also lets the pilot owner
-    // test several testers' tags on one phone without carrying over the last tester.
-    if(d.testerId || d.testerName){
-      localStorage.setItem('gk_tester_id', d.testerId || '');
-      localStorage.setItem('gk_tester_name', d.testerName || '');
-    }
 
+    // The personalised draft link is authoritative for tester identity.
+    localStorage.setItem('gk_tester_id', d.testerId || '');
+    localStorage.setItem('gk_tester_name', d.testerName || '');
+
+    const expectedRecordId = d.recordId || ('USR-' + draftId.replace(/[^0-9]/g,'').slice(-8).padStart(8,'0'));
     const idx = getIndex();
     const existing = idx.find(e => {
+      if(e.id === expectedRecordId) return true;
       try{
         const saved = JSON.parse(localStorage.getItem(keyFor(e.id)) || 'null');
         return saved && saved.sourceDraftId === draftId;
       }catch(err){ return false; }
     });
+
     if(existing){
-      // Repair the owner on records imported by an earlier build. The draft link is
-      // authoritative, but existing gardening notes and photos must be preserved.
-      try{
-        const savedKey = keyFor(existing.id);
-        const saved = JSON.parse(localStorage.getItem(savedKey) || 'null');
-        if(saved){
-          saved.testerId = d.testerId || '';
-          saved.testerName = d.testerName || '';
-          saved.sourceDraftId = draftId;
-          localStorage.setItem(savedKey, JSON.stringify(saved));
-          const repairedIndex = getIndex().map(item => item.id === existing.id
-            ? {...item, testerId:saved.testerId, testerName:saved.testerName}
-            : item);
-          setIndex(repairedIndex);
-        }
-      }catch(err){ console.warn('Could not repair existing tester ownership', err); }
-      location.replace('myplant.html?id=' + encodeURIComponent(existing.id));
+      const savedKey = keyFor(existing.id);
+      const saved = JSON.parse(localStorage.getItem(savedKey) || '{}');
+      saved.id = existing.id;
+      saved.sourceDraftId = draftId;
+      saved.testerId = d.testerId || '';
+      saved.testerName = d.testerName || '';
+      // Keep the user's notes/photos, but repair draft-owned identity fields.
+      if(d.nickname) saved.nickname = d.nickname;
+      if(d.plantLibraryId) saved.plantLibraryId = d.plantLibraryId;
+      localStorage.setItem(savedKey, JSON.stringify(saved));
+      addToIndex(saved.id, saved.nickname || saved.id, saved.plantLibraryId || '');
+      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=2911');
       return;
     }
 
-    const recordId = d.recordId || ('USR-' + draftId.replace(/[^0-9]/g,'').slice(-8).padStart(8,'0'));
     const species = library[d.plantLibraryId] || null;
-    const r = blankRecord(recordId);
+    const r = blankRecord(expectedRecordId);
     r.sourceDraftId = draftId;
-    r.testerId = (d.testerId || d.testerName) ? (d.testerId || '') : (deviceTester().testerId || '');
-    r.testerName = (d.testerId || d.testerName) ? (d.testerName || '') : (deviceTester().testerName || '');
+    r.testerId = d.testerId || '';
+    r.testerName = d.testerName || '';
     r.nickname = d.nickname || (species ? species.name : 'Tester plant');
     r.plantLibraryId = d.plantLibraryId || '';
     r.libraryName = species ? species.name : (d.libraryName || '');
@@ -442,7 +440,7 @@ async function importTesterDraft(draftId){
     loadStatus.textContent = 'Imported tester draft: ' + r.nickname + ' (saved)';
     loadStatus.className = 'status ok';
     showImportWelcome(r.testerName, r.nickname);
-    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(recordId));
+    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=2911');
   }catch(e){
     loadStatus.textContent = 'Could not import tester draft. ' + e.message;
     loadStatus.className = 'status err';
