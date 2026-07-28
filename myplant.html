@@ -400,6 +400,22 @@ async function importTesterDraft(draftId){
       }catch(err){ return false; }
     });
     if(existing){
+      // Repair the owner on records imported by an earlier build. The draft link is
+      // authoritative, but existing gardening notes and photos must be preserved.
+      try{
+        const savedKey = keyFor(existing.id);
+        const saved = JSON.parse(localStorage.getItem(savedKey) || 'null');
+        if(saved){
+          saved.testerId = d.testerId || '';
+          saved.testerName = d.testerName || '';
+          saved.sourceDraftId = draftId;
+          localStorage.setItem(savedKey, JSON.stringify(saved));
+          const repairedIndex = getIndex().map(item => item.id === existing.id
+            ? {...item, testerId:saved.testerId, testerName:saved.testerName}
+            : item);
+          setIndex(repairedIndex);
+        }
+      }catch(err){ console.warn('Could not repair existing tester ownership', err); }
       location.replace('myplant.html?id=' + encodeURIComponent(existing.id));
       return;
     }
