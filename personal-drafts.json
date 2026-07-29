@@ -52,11 +52,11 @@
   },
   "GK-DRAFT-ANN001": {
     "sourceDraftId": "GK-DRAFT-ANN001",
-    "testerName": "Ann Campbell",
+    "testerName": "Anne",
     "recordId": "USR-ANN-0001",
     "plantLibraryId": "",
     "libraryName": "Abutilon vitifolium",
-    "nickname": "Ann's Abutilon",
+    "nickname": "Anne's Abutilon",
     "variety": "",
     "source": "Sucker taken from Janet Jeffrey's tree",
     "location": "Small tree in a south-west facing border",
@@ -65,8 +65,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Raised from a sucker taken from Janet Jeffrey's Abutilon vitifolium. Janet's tree has darker blue flowers, while this plant's flowers are quite pale despite being propagated from a sucker rather than seed. It bloomed beautifully in spring during wet conditions but is currently unhappy.",
-    "category": "Shrub",
-    "testerId": "TST-ANN-009"
+    "category": "Shrub"
   },
   "GK-DRAFT-CHR001": {
     "sourceDraftId": "GK-DRAFT-CHR001",
@@ -83,8 +82,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Hydrangea 'Runaway Bride' growing in a densely planted north-facing border. The position is quite shady because it sits in the shadow of the house.",
-    "category": "Shrub",
-    "testerId": "TST-CHRISTINE-002"
+    "category": "Shrub"
   },
   "GK-DRAFT-CHR002": {
     "sourceDraftId": "GK-DRAFT-CHR002",
@@ -101,8 +99,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Rosa 'Albrighton Rambler' planted against a pergola in a north-facing position. It receives some direct sun because the position is not completely overshadowed.",
-    "category": "Climbing rose",
-    "testerId": "TST-CHRISTINE-002"
+    "category": "Climbing rose"
   },
   "GK-DRAFT-KAR001": {
     "sourceDraftId": "GK-DRAFT-KAR001",
@@ -119,8 +116,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Large Pseudopanax crassifolius transplanted twice after suffering from wind rock and canopy interference. Currently receiving extra care while re-establishing.",
-    "category": "Tree",
-    "testerId": "TST-KAREN-005"
+    "category": "Tree"
   },
   "GK-DRAFT-KAR002": {
     "sourceDraftId": "GK-DRAFT-KAR002",
@@ -137,8 +133,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Mixed nursery bed containing propagated plants from last year including Hydrangeas and Sedums awaiting planting out when soil moisture improves.",
-    "category": "Nursery Bed",
-    "testerId": "TST-KAREN-005"
+    "category": "Nursery Bed"
   },
   "GK-DRAFT-KAR003": {
     "sourceDraftId": "GK-DRAFT-KAR003",
@@ -155,7 +150,42 @@
     "feeding": "",
     "soil": "",
     "notes": "Mixed propagation area containing trays and pots including Acacia pravissima seedlings and other young plants being grown on for future planting and plant sales.",
-    "category": "Propagation",
-    "testerId": "TST-KAREN-005"
+    "category": "Propagation"
+  },
+  "GK-DRAFT-TRO001": {
+    "sourceDraftId": "GK-DRAFT-TRO001",
+    "testerId": "TST-TROY-006",
+    "testerName": "Troy Hopkins",
+    "recordId": "USR-TRO-0001",
+    "plantLibraryId": "",
+    "libraryName": "Pittosporum daphniphylloides",
+    "nickname": "Troy's Pittosporum",
+    "variety": "",
+    "source": "Planted 25 May 2026",
+    "location": "Dry soil in semi-shade",
+    "light": "Semi-shade",
+    "water": "",
+    "feeding": "",
+    "soil": "Dry soil",
+    "notes": "Positioned in dry soil in semi-shade. Planted on 25 May 2026. Seems happy enough.",
+    "category": "Shrub"
+  },
+  "GK-DRAFT-TRO002": {
+    "sourceDraftId": "GK-DRAFT-TRO002",
+    "testerId": "TST-TROY-006",
+    "testerName": "Troy Hopkins",
+    "recordId": "USR-TRO-0002",
+    "plantLibraryId": "",
+    "libraryName": "Hydrangea aspera 'Bellevue'",
+    "nickname": "Troy's Hydrangea Bellevue",
+    "variety": "'Bellevue'",
+    "source": "Planted April 2024",
+    "location": "Close to a large lime tree",
+    "light": "Semi-shade",
+    "water": "",
+    "feeding": "",
+    "soil": "Dry soil",
+    "notes": "Planted in April 2024 close to a large lime tree in dry soil in semi-shade. Not performing well and may need to be moved.",
+    "category": "Shrub"
   }
 }
