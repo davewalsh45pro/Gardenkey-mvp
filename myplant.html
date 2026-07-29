@@ -1,14 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Plant — GardenKey</title><style>
-*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.identityRow{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}@media(max-width:430px){.identityRow{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px;resize:vertical}.readonly{background:#f1eee6;color:#52635a}.sectionSave{margin-top:12px;border-top:1px solid #eadfca;padding-top:10px}.potAddGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:520px){.potAddGrid{grid-template-columns:1fr}}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
+*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.identityRow{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.identityRow{grid-template-columns:1fr}.identityRow textarea{min-height:62px}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px;resize:vertical}.readonly{background:#f1eee6;color:#52635a}.nicknameField{min-height:58px;resize:vertical;overflow-wrap:anywhere;white-space:pre-wrap}.sectionSave{margin-top:12px;border-top:1px solid #eadfca;padding-top:10px}.potAddGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:520px){.potAddGrid{grid-template-columns:1fr}}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
 .welcomeImport{background:linear-gradient(135deg,#e6f3dd,#f8e5bc);border:1px solid #d7e3cc;border-radius:22px;padding:16px;margin:14px 0}.welcomeImport h2{margin:0 0 6px}.welcomeImport p{margin:4px 0}.linkBox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin-top:8px}.linkBox .thumb{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.linkBox .thumb svg{width:65%;height:65%}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin:10px 0}.photo{position:relative;border-radius:16px;overflow:hidden;background:#eee;aspect-ratio:1}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo button{position:absolute;top:4px;right:4px;background:#0008;color:white;border:0;border-radius:999px;width:24px;height:24px;font-size:14px;cursor:pointer}.photo .cap{position:absolute;bottom:0;left:0;right:0;background:#0007;color:white;font-size:10px;padding:3px 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a><a href="myplants.html">My Plants</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V29.1</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V29.2</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
-<div class="row2 identityRow"><div class="field"><label>Record ID</label><input id="myId" class="readonly" readonly aria-readonly="true" title="GardenKey creates this ID"></div><div class="field"><label>Nickname</label><input id="nickname" placeholder="e.g. Balcony Lavender"></div></div>
+<div class="row2 identityRow"><div class="field"><label>Record ID</label><input id="myId" class="readonly" readonly aria-readonly="true" title="GardenKey creates this ID"></div><div class="field"><label>Nickname</label><textarea id="nickname" class="nicknameField" rows="2" placeholder="e.g. Balcony Lavender" oninput="autoGrowNickname(this)"></textarea></div></div>
 <div id="testerOwner" class="info" style="display:none"><b>Tester</b><span id="testerOwnerText"></span></div>
 <button class="btn secondary" onclick="newRecord()">New plant record</button>
 <div id="loadStatus" class="status" style="margin-top:8px"></div>
@@ -102,13 +102,22 @@ function renderTesterOwner(){
 function showImportWelcome(name, plantName){
   const existing=document.getElementById('importWelcome');
   if(existing) existing.remove();
+  if(!name && !plantName) return;
   const box=document.createElement('section');
   box.id='importWelcome';
   box.className='welcomeImport';
-  box.innerHTML=`<h2>Welcome ${name || 'to GardenKey'}!</h2><p>Your personal record for <b>${plantName || 'this plant'}</b> is ready and has been saved in My Plants on this device.</p><p class="small">Add notes or photos below, then use Save to this browser whenever you make changes.</p>`;
+  const h=document.createElement('h2');
+  h.textContent='Welcome '+(name || 'to GardenKey')+'!';
+  const p=document.createElement('p');
+  p.append('Your personal record for ');
+  const b=document.createElement('b'); b.textContent=plantName || 'this plant'; p.append(b);
+  p.append(' is ready and has been saved in My Plants on this device.');
+  const hint=document.createElement('p'); hint.className='small'; hint.textContent='Add notes or photos below, then use Save to this browser whenever you make changes.';
+  box.append(h,p,hint);
   const hero=document.querySelector('.hero');
   hero.insertAdjacentElement('afterend', box);
 }
+function autoGrowNickname(el){ el.style.height='auto'; el.style.height=Math.max(58,el.scrollHeight)+'px'; }
 
 async function loadLibrary(){
   try{
@@ -247,8 +256,10 @@ function collectRecord(){
 function fillRecord(r){
   linkedLibraryId = r.plantLibraryId || '';
   setVal('myId', r.id); setVal('nickname', r.nickname); setVal('libraryName', r.libraryName || '');
+  autoGrowNickname(document.getElementById('nickname'));
   setVal('variety', r.variety); setVal('source', r.source); setVal('dateAcquired', r.dateAcquired); setVal('location', r.location);
   setVal('actualLight', r.actualLight || r.light || ''); setVal('personalWater', r.personalWater || r.water || ''); setVal('personalFeeding', r.personalFeeding || r.feeding || ''); setVal('personalSoil', r.personalSoil || r.soil || ''); setVal('personalNotes', r.personalNotes || r.notes || ''); window.currentSourceDraftId = r.sourceDraftId || ''; currentTesterId = r.testerId || deviceTester().testerId || ''; currentTesterName = r.testerName || deviceTester().testerName || ''; renderTesterOwner();
+  if(r.sourceDraftId && (currentTesterName || r.nickname)) showImportWelcome(currentTesterName, r.nickname); else showImportWelcome('', '');
   setVal('lastRepotted', r.lastRepotted); setVal('lastDivided', r.lastDivided);
   setVal('floweringHistory', r.floweringHistory); setVal('healthObservations', r.healthObservations); setVal('propagationHistory', r.propagationHistory);
   photos = r.photos || [];
@@ -383,7 +394,7 @@ function addToCollection(type){
 
 async function importTesterDraft(draftId){
   try{
-    const res = await fetch('personal-drafts.json?v=2911', {cache:'no-store'});
+    const res = await fetch('personal-drafts.json?v=2920', {cache:'no-store'});
     if(!res.ok) throw new Error('Draft file unavailable');
     const drafts = await res.json();
     const d = drafts[draftId];
@@ -410,12 +421,16 @@ async function importTesterDraft(draftId){
       saved.sourceDraftId = draftId;
       saved.testerId = d.testerId || '';
       saved.testerName = d.testerName || '';
-      // Keep the user's notes/photos, but repair draft-owned identity fields.
-      if(d.nickname) saved.nickname = d.nickname;
-      if(d.plantLibraryId) saved.plantLibraryId = d.plantLibraryId;
+      // Preserve tester-added observations/photos while repairing all fields owned by the master draft.
+      ['nickname','plantLibraryId','libraryName','variety','source','location'].forEach(k=>{ if(d[k] !== undefined) saved[k]=d[k]; });
+      if(d.light !== undefined) saved.actualLight=d.light;
+      if(d.water !== undefined) saved.personalWater=d.water;
+      if(d.feeding !== undefined) saved.personalFeeding=d.feeding;
+      if(d.soil !== undefined) saved.personalSoil=d.soil;
+      if(d.notes !== undefined && !saved.personalNotes) saved.personalNotes=d.notes;
       localStorage.setItem(savedKey, JSON.stringify(saved));
       addToIndex(saved.id, saved.nickname || saved.id, saved.plantLibraryId || '');
-      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=2911');
+      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=2920');
       return;
     }
 
@@ -440,7 +455,7 @@ async function importTesterDraft(draftId){
     loadStatus.textContent = 'Imported tester draft: ' + r.nickname + ' (saved)';
     loadStatus.className = 'status ok';
     showImportWelcome(r.testerName, r.nickname);
-    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=2911');
+    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=2920');
   }catch(e){
     loadStatus.textContent = 'Could not import tester draft. ' + e.message;
     loadStatus.className = 'status err';

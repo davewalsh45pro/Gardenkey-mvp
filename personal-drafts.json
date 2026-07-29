@@ -133,7 +133,9 @@
     "feeding": "",
     "soil": "",
     "notes": "Mixed nursery bed containing propagated plants from last year including Hydrangeas and Sedums awaiting planting out when soil moisture improves.",
-    "category": "Nursery Bed"
+    "category": "Nursery Bed",
+    "pageType": "border",
+    "collectionId": "GK-BED-KAR-0002"
   },
   "GK-DRAFT-KAR003": {
     "sourceDraftId": "GK-DRAFT-KAR003",
@@ -150,7 +152,9 @@
     "feeding": "",
     "soil": "",
     "notes": "Mixed propagation area containing trays and pots including Acacia pravissima seedlings and other young plants being grown on for future planting and plant sales.",
-    "category": "Propagation"
+    "category": "Propagation",
+    "pageType": "seedling",
+    "collectionId": "GK-SEED-KAR-0003"
   },
   "GK-DRAFT-TRO001": {
     "sourceDraftId": "GK-DRAFT-TRO001",

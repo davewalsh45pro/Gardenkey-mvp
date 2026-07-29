@@ -3,7 +3,7 @@
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a><a href="create.html">Create tester plant</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V29.1</span><h1>Your Border Tracker</h1><p>Track each bed or border as one connected record — every plant in it, its position, and what disappears or returns through the seasons. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V29.2</span><h1>Your Border Tracker</h1><p>Track each bed or border as one connected record — every plant in it, its position, and what disappears or returns through the seasons. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
 <div class="row2"><div class="field"><label>Border ID</label><input id="potId" class="readonly" readonly aria-readonly="true" placeholder="e.g. GK-BED-NORTH-001"></div><div class="field"><label>Border name</label><input id="potName"></div></div>
@@ -234,12 +234,36 @@ function importPot(evt){
   reader.readAsText(file);
 }
 
+
+async function importBorderDraft(draftId){
+  try{
+    const res=await fetch('personal-drafts.json?v=2920',{cache:'no-store'});
+    if(!res.ok) throw new Error('Draft file unavailable');
+    const drafts=await res.json(); const d=drafts[draftId];
+    if(!d) throw new Error('Draft not found');
+    const id=d.collectionId || d.recordId || ('GK-BED-'+Date.now().toString().slice(-6));
+    let existing=null; try{ existing=JSON.parse(localStorage.getItem(potKey(id))||'null'); }catch(e){}
+    const profile=existing || {id,name:'',location:'',size:'',material:'',drainage:'',soilMix:'',topDressing:'',watering:'',currentStatus:'',seasonalNotes:'',plants:[]};
+    profile.id=id; profile.name=d.nickname || d.libraryName || 'Nursery Bed';
+    profile.location=d.location || profile.location || '';
+    profile.soilMix=d.soil || profile.soilMix || '';
+    profile.watering=d.water || profile.watering || '';
+    profile.currentStatus=d.notes || profile.currentStatus || '';
+    profile.sourceDraftId=draftId; profile.testerId=d.testerId||''; profile.testerName=d.testerName||'';
+    localStorage.setItem(potKey(id),JSON.stringify(profile)); addToIndex(id,profile.name); fillPot(profile);
+    loadStatus.textContent='Welcome '+(d.testerName||'')+' — '+profile.name+' is ready and saved on this device.'; loadStatus.className='status ok';
+    history.replaceState(null,'','border.html?id='+encodeURIComponent(id)+'&v=2920');
+  }catch(e){ loadStatus.textContent='Could not import nursery-bed draft. '+e.message; loadStatus.className='status err'; }
+}
+
 // init — open a clean unsaved border unless an explicit saved ID is requested.
 const params = new URLSearchParams(location.search);
 const qid = params.get('id') || '';
 repairPotIndexNames();
 loadLibraryNames().then(() => {
-  if(qid){
+  if(params.get('draft')){
+    importBorderDraft(params.get('draft'));
+  } else if(qid){
     setVal('potId', qid);
     loadPot();
   } else {
