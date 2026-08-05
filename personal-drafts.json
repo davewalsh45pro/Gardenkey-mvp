@@ -191,5 +191,23 @@
     "soil": "Dry soil",
     "notes": "Planted in April 2024 close to a large lime tree in dry soil in semi-shade. Not performing well and may need to be moved.",
     "category": "Shrub"
+  },
+  "GK-DRAFT-483118": {
+    "sourceDraftId": "GK-DRAFT-483118",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0002",
+    "plantLibraryId": "GK-PAR-001",
+    "libraryName": "Parahebe",
+    "nickname": "Eimear's Parahebe Avalanche",
+    "variety": "'Avalanche'",
+    "source": "Five planted in autumn 2025",
+    "location": "",
+    "light": "Full sun",
+    "water": "Every few days in dry weather",
+    "feeding": "",
+    "soil": "Ground may be too dry and sandy",
+    "notes": "Five planted in autumn 2025. Four are not doing well. The ground may be too dry and sandy. If they have not recovered, move them in autumn 2026.",
+    "category": "Shrub"
   }
 }
