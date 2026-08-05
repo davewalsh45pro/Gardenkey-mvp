@@ -10389,5 +10389,85 @@
       "Crushing the leaves releases a strong fresh lemon scent."
     ],
     "commonName": "Balm Mint"
+  },  "GK-PAR-001": {
+    "id": "GK-PAR-001",
+    "slug": "parahebe",
+    "name": "Parahebe",
+    "commonName": "Fiordland parahebe",
+    "latinName": "Veronica catarractae",
+    "variety": "General species profile",
+    "subtitle": "A compact evergreen shrub with small flowers and glossy foliage.",
+    "theme": "#719b78",
+    "tags": [
+      "Evergreen",
+      "Full sun",
+      "Well-drained soil",
+      "Shelter"
+    ],
+    "quickCare": {
+      "Water": "Water while establishing and during prolonged dry spells; avoid waterlogging",
+      "Light": "Full sun to partial shade",
+      "Feeding": "Light balanced feed in spring if needed",
+      "Pruning": "Trim lightly after flowering and remove damaged growth"
+    },
+    "notes": "Some plants formerly sold as Parahebe are now classified botanically within Veronica.",
+    "soil": "Moist but well-drained soil, sheltered from cold drying winds.",
+    "medium": "Peat-free compost with added grit for container drainage.",
+    "seasonalActions": {
+      "Spring": "Remove winter damage and feed lightly if growth is weak.",
+      "Summer": "Water during prolonged dry spells and deadhead if desired.",
+      "Autumn": "Avoid hard pruning; check drainage before winter.",
+      "Winter": "Protect from cold drying winds and prolonged waterlogging."
+    },
+    "problems": [
+      {
+        "name": "Drought stress",
+        "fix": "Water deeply during prolonged dry weather, especially while establishing."
+      },
+      {
+        "name": "Poor drainage",
+        "fix": "Improve drainage or move to a raised, freer-draining position."
+      }
+    ],
+    "companions": [
+      "Hebes",
+      "Lavender",
+      "Alpines"
+    ],
+    "propagation": {
+      "season": "Summer",
+      "methods": "Take semi-ripe cuttings.",
+      "tips": "Use a free-draining propagation mix and keep evenly moist.",
+      "tracker": "Record cutting date, rooting result and potting-on date."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "Small flowers can attract bees and other insects."
+    },
+    "timeline": {
+      "Seeding": "Not commonly grown from seed",
+      "Flowering": "Summer to early autumn",
+      "Harvest": "N/A",
+      "Pruning": "Light trim after flowering"
+    },
+    "photoPlan": {
+      "hero": "Whole plant showing compact habit.",
+      "gallery": [
+        "Flower close-up",
+        "Foliage detail",
+        "Winter appearance",
+        "Growth habit"
+      ]
+    },
+    "weeklyFact": "Parahebe is still widely used as a garden name even though many species are now placed within Veronica.",
+    "category": "Shrub",
+    "commonNames": [
+      "Parahebe",
+      "Fiordland parahebe"
+    ],
+    "aliases": [
+      "Parahebe catarractae",
+      "Veronica catarractae"
+    ]
   }
 }
