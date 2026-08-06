@@ -1,23 +1,14 @@
-# GardenKey PILOT V29.3 upload
+# Upload GardenKey PILOT V30.0.0
 
-Upload every file in this folder to the repository root and choose **Replace** for matching filenames.
+This ZIP is a complete replacement repository.
 
-Files replaced:
-- index.html
-- create.html
-- myplant.html
-- border.html
-- pot.html
-- seedling.html
-- personal-drafts.json
+1. Extract the ZIP.
+2. In the GitHub repository root, remove old live files that are not present in this package.
+3. Upload every file and folder from this package to the repository root.
+4. Replace matching files.
+5. Commit with: `Reset GardenKey to PILOT V30.0.0 golden source`.
+6. Wait for GitHub Pages to deploy.
+7. Open the homepage with `?v=30000`.
 
-Files added:
-- CHANGELOG-V29.3.md
-- plants-V29.3-addition.json
-
-IMPORTANT:
-`plants-V29.3-addition.json` contains the new shared Parahebe record. It is not a replacement for the existing `plants.json`.
-
-To make Parahebe appear in the shared site-wide plant library, copy the `GK-PAR-001` object from this file into the existing root `plants.json` before its final closing brace.
-
-All other repository files remain unchanged.
+Expected homepage label: `PILOT V30.0.0`.
+Expected plant-page label: `PILOT V30.0.0`.

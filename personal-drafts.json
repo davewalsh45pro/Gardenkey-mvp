@@ -52,7 +52,7 @@
   },
   "GK-DRAFT-ANN001": {
     "sourceDraftId": "GK-DRAFT-ANN001",
-    "testerName": "Ann Campbell",
+    "testerName": "Anne",
     "recordId": "USR-ANN-0001",
     "plantLibraryId": "",
     "libraryName": "Abutilon vitifolium",
@@ -65,8 +65,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Raised from a sucker taken from Janet Jeffrey's Abutilon vitifolium. Janet's tree has darker blue flowers, while this plant's flowers are quite pale despite being propagated from a sucker rather than seed. It bloomed beautifully in spring during wet conditions but is currently unhappy.",
-    "category": "Shrub",
-    "testerId": "TST-ANN-009"
+    "category": "Shrub"
   },
   "GK-DRAFT-CHR001": {
     "sourceDraftId": "GK-DRAFT-CHR001",
@@ -83,8 +82,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Hydrangea 'Runaway Bride' growing in a densely planted north-facing border. The position is quite shady because it sits in the shadow of the house.",
-    "category": "Shrub",
-    "testerId": "TST-CHRISTINE-002"
+    "category": "Shrub"
   },
   "GK-DRAFT-CHR002": {
     "sourceDraftId": "GK-DRAFT-CHR002",
@@ -101,8 +99,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Rosa 'Albrighton Rambler' planted against a pergola in a north-facing position. It receives some direct sun because the position is not completely overshadowed.",
-    "category": "Climbing rose",
-    "testerId": "TST-CHRISTINE-002"
+    "category": "Climbing rose"
   },
   "GK-DRAFT-KAR001": {
     "sourceDraftId": "GK-DRAFT-KAR001",
@@ -119,8 +116,7 @@
     "feeding": "",
     "soil": "",
     "notes": "Large Pseudopanax crassifolius transplanted twice after suffering from wind rock and canopy interference. Currently receiving extra care while re-establishing.",
-    "category": "Tree",
-    "testerId": "TST-KAREN-005"
+    "category": "Tree"
   },
   "GK-DRAFT-KAR002": {
     "sourceDraftId": "GK-DRAFT-KAR002",
@@ -139,8 +135,7 @@
     "notes": "Mixed nursery bed containing propagated plants from last year including Hydrangeas and Sedums awaiting planting out when soil moisture improves.",
     "category": "Nursery Bed",
     "pageType": "border",
-    "collectionId": "GK-BED-KAR-0002",
-    "testerId": "TST-KAREN-005"
+    "collectionId": "GK-BED-KAR-0002"
   },
   "GK-DRAFT-KAR003": {
     "sourceDraftId": "GK-DRAFT-KAR003",
@@ -159,8 +154,7 @@
     "notes": "Mixed propagation area containing trays and pots including Acacia pravissima seedlings and other young plants being grown on for future planting and plant sales.",
     "category": "Propagation",
     "pageType": "seedling",
-    "collectionId": "GK-SEED-KAR-0003",
-    "testerId": "TST-KAREN-005"
+    "collectionId": "GK-SEED-KAR-0003"
   },
   "GK-DRAFT-TRO001": {
     "sourceDraftId": "GK-DRAFT-TRO001",
