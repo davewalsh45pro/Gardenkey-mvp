@@ -10163,78 +10163,83 @@
   },
   "GK-PAR-001": {
     "id": "GK-PAR-001",
-    "slug": "parsley",
-    "name": "Parsley",
-    "latinName": "Petroselinum crispum",
-    "variety": "Flat-leaf parsley",
-    "subtitle": "Biennial culinary herb for pots, beds and windowsills.",
-    "theme": "#43894c",
-    "category": "Herb",
+    "slug": "parahebe",
+    "name": "Parahebe",
+    "commonName": "Fiordland parahebe",
+    "latinName": "Veronica catarractae",
+    "variety": "General species profile",
+    "subtitle": "A compact evergreen shrub with small flowers and glossy foliage.",
+    "theme": "#719b78",
     "tags": [
-      "Edible",
-      "Biennial",
-      "Part shade",
-      "Container"
+      "Evergreen",
+      "Full sun",
+      "Well-drained soil",
+      "Shelter"
     ],
     "quickCare": {
-      "Water": "Keep evenly moist",
-      "Light": "Sun to part shade",
-      "Feeding": "Light balanced feed in containers",
-      "Pruning": "Harvest outer stems from the base"
+      "Water": "Water while establishing and during prolonged dry spells; avoid waterlogging",
+      "Light": "Full sun to partial shade",
+      "Feeding": "Light balanced feed in spring if needed",
+      "Pruning": "Trim lightly after flowering and remove damaged growth"
     },
-    "notes": "Parsley germination can be slow and uneven; patience matters.",
-    "soil": "Moist, fertile, well-drained soil.",
-    "medium": "Peat-free multipurpose compost.",
+    "notes": "Some plants formerly sold as Parahebe are now classified botanically within Veronica.",
+    "soil": "Moist but well-drained soil, sheltered from cold drying winds.",
+    "medium": "Peat-free compost with added grit for container drainage.",
     "seasonalActions": {
-      "Spring": "Sow seed and harvest established overwintered plants.",
-      "Summer": "Water and harvest regularly.",
-      "Autumn": "Allow selected second-year plants to flower for insects or seed.",
-      "Winter": "Protect pots in severe cold; second-year plants may flower."
+      "Spring": "Remove winter damage and feed lightly if growth is weak.",
+      "Summer": "Water during prolonged dry spells and deadhead if desired.",
+      "Autumn": "Avoid hard pruning; check drainage before winter.",
+      "Winter": "Protect from cold drying winds and prolonged waterlogging."
     },
     "problems": [
       {
-        "name": "Slow germination",
-        "fix": "Use fresh seed, keep moist and allow 3–4 weeks."
+        "name": "Drought stress",
+        "fix": "Water deeply during prolonged dry weather, especially while establishing."
       },
       {
-        "name": "Yellow leaves",
-        "fix": "Check drainage, feeding and root crowding."
+        "name": "Poor drainage",
+        "fix": "Improve drainage or move to a raised, freer-draining position."
       }
     ],
     "companions": [
-      "Chives",
-      "Basil",
-      "Lettuce"
+      "Hebes",
+      "Lavender",
+      "Alpines"
     ],
     "propagation": {
-      "season": "Sow seed from spring; plants are biennial.",
-      "methods": "Sow shallowly and keep consistently moist.",
-      "tips": "Soaking seed overnight may help, but steady moisture is more important.",
-      "tracker": "Record planting, emergence, division and flowering in the propagation tracker."
+      "season": "Summer",
+      "methods": "Take semi-ripe cuttings.",
+      "tips": "Use a free-draining propagation mix and keep evenly moist.",
+      "tracker": "Record cutting date, rooting result and potting-on date."
     },
     "pollinator": {
-      "score": 4,
-      "value": "Second-year umbels attract hoverflies and small bees."
+      "score": 3,
+      "value": "Small flowers can attract bees and other insects."
     },
-    "pollinatorFact": "Second-year umbels attract hoverflies and small bees.",
     "timeline": {
-      "Sowing": "Spring",
-      "Harvest": "Spring-autumn",
-      "Flowering": "Summer",
-      "Pruning": "As noted"
+      "Seeding": "Not commonly grown from seed",
+      "Flowering": "Summer to early autumn",
+      "Harvest": "N/A",
+      "Pruning": "Light trim after flowering"
     },
     "photoPlan": {
-      "hero": "Whole leafy plant",
+      "hero": "Whole plant showing compact habit.",
       "gallery": [
-        "Leaf detail",
-        "Second-year flower umbel",
-        "Seed head"
+        "Flower close-up",
+        "Foliage detail",
+        "Winter appearance",
+        "Growth habit"
       ]
     },
-    "weeklyFact": "Parsley is naturally biennial: leaves first, flowers usually in the second year.",
-    "weeklyFacts": [
-      "Parsley is naturally biennial: leaves first, flowers usually in the second year.",
-      "Flat-leaf parsley generally has a stronger flavour than curly parsley."
+    "weeklyFact": "Parahebe is still widely used as a garden name even though many species are now placed within Veronica.",
+    "category": "Shrub",
+    "commonNames": [
+      "Parahebe",
+      "Fiordland parahebe"
+    ],
+    "aliases": [
+      "Parahebe catarractae",
+      "Veronica catarractae"
     ]
   },
   "GK-TAR-001": {
@@ -10389,85 +10394,5 @@
       "Crushing the leaves releases a strong fresh lemon scent."
     ],
     "commonName": "Balm Mint"
-  },  "GK-PAR-001": {
-    "id": "GK-PAR-001",
-    "slug": "parahebe",
-    "name": "Parahebe",
-    "commonName": "Fiordland parahebe",
-    "latinName": "Veronica catarractae",
-    "variety": "General species profile",
-    "subtitle": "A compact evergreen shrub with small flowers and glossy foliage.",
-    "theme": "#719b78",
-    "tags": [
-      "Evergreen",
-      "Full sun",
-      "Well-drained soil",
-      "Shelter"
-    ],
-    "quickCare": {
-      "Water": "Water while establishing and during prolonged dry spells; avoid waterlogging",
-      "Light": "Full sun to partial shade",
-      "Feeding": "Light balanced feed in spring if needed",
-      "Pruning": "Trim lightly after flowering and remove damaged growth"
-    },
-    "notes": "Some plants formerly sold as Parahebe are now classified botanically within Veronica.",
-    "soil": "Moist but well-drained soil, sheltered from cold drying winds.",
-    "medium": "Peat-free compost with added grit for container drainage.",
-    "seasonalActions": {
-      "Spring": "Remove winter damage and feed lightly if growth is weak.",
-      "Summer": "Water during prolonged dry spells and deadhead if desired.",
-      "Autumn": "Avoid hard pruning; check drainage before winter.",
-      "Winter": "Protect from cold drying winds and prolonged waterlogging."
-    },
-    "problems": [
-      {
-        "name": "Drought stress",
-        "fix": "Water deeply during prolonged dry weather, especially while establishing."
-      },
-      {
-        "name": "Poor drainage",
-        "fix": "Improve drainage or move to a raised, freer-draining position."
-      }
-    ],
-    "companions": [
-      "Hebes",
-      "Lavender",
-      "Alpines"
-    ],
-    "propagation": {
-      "season": "Summer",
-      "methods": "Take semi-ripe cuttings.",
-      "tips": "Use a free-draining propagation mix and keep evenly moist.",
-      "tracker": "Record cutting date, rooting result and potting-on date."
-    },
-    "pollinator": {
-      "score": 3,
-      "value": "Small flowers can attract bees and other insects."
-    },
-    "timeline": {
-      "Seeding": "Not commonly grown from seed",
-      "Flowering": "Summer to early autumn",
-      "Harvest": "N/A",
-      "Pruning": "Light trim after flowering"
-    },
-    "photoPlan": {
-      "hero": "Whole plant showing compact habit.",
-      "gallery": [
-        "Flower close-up",
-        "Foliage detail",
-        "Winter appearance",
-        "Growth habit"
-      ]
-    },
-    "weeklyFact": "Parahebe is still widely used as a garden name even though many species are now placed within Veronica.",
-    "category": "Shrub",
-    "commonNames": [
-      "Parahebe",
-      "Fiordland parahebe"
-    ],
-    "aliases": [
-      "Parahebe catarractae",
-      "Veronica catarractae"
-    ]
   }
 }
