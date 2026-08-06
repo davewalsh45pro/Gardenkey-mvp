@@ -1,19 +1,19 @@
 # GardenKey Changelog
 
+## PILOT V30.0.1 — Tester workflow reliability
+
+- Persisted tester identity after the first personalised visit.
+- Carried tester IDs automatically into Create Tester Plant and My Plants links.
+- Added a visible “Submitting as” identity banner before a tester fills the form.
+- Added local backup and submission history for tester plant drafts.
+- Replaced misleading send behaviour with clear “email prepared — press Send” messaging.
+- Added reopen, copy and “I pressed Send” controls for saved submissions.
+- Made approved tester-specific plants appear automatically in My Plants when not yet imported.
+- Kept tester drafts strictly filtered by tester ID.
+- Updated all live build labels and cache references to V30.0.1.
+
 ## PILOT V30.0.0 — Golden Source
 
-### Corrected
-- Replaced the hard-coded `PILOT V0.28` label in `plant.html`.
-- Standardised all live page labels to `PILOT V30.0.0`.
-- Standardised draft cache-busting references to `v=30000`.
-
-### Consolidated
-- Confirmed Parahebe (`GK-PAR-001`) is contained directly in `plants.json`.
-- Confirmed Eimear Cremen's Parahebe 'Avalanche' record remains tester-specific and linked through `plantLibraryId`.
-- Confirmed the tester submission form requires a plant/species name.
-
-### Repository cleanup
-- Removed obsolete static plant pages and their unused stylesheet.
-- Removed duplicate and incremental plant JSON files from the production source.
-- Preserved historical notes under `docs/archive/`.
-- Established this package as the golden source for all future releases.
+- Established the complete audited repository baseline.
+- Consolidated Parahebe into the shared plant library.
+- Preserved personal observations in tester-specific records.

@@ -3,9 +3,9 @@
 .welcomeImport{background:linear-gradient(135deg,#e6f3dd,#f8e5bc);border:1px solid #d7e3cc;border-radius:22px;padding:16px;margin:14px 0}.welcomeImport h2{margin:0 0 6px}.welcomeImport p{margin:4px 0}.linkBox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin-top:8px}.linkBox .thumb{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.linkBox .thumb svg{width:65%;height:65%}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin:10px 0}.photo{position:relative;border-radius:16px;overflow:hidden;background:#eee;aspect-ratio:1}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo button{position:absolute;top:4px;right:4px;background:#0008;color:white;border:0;border-radius:999px;width:24px;height:24px;font-size:14px;cursor:pointer}.photo .cap{position:absolute;bottom:0;left:0;right:0;background:#0007;color:white;font-size:10px;padding:3px 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 </style></head><body><script src="icons.js"></script><div class="wrap">
-<div class="top"><a href="index.html">← GardenKey home</a><a href="myplants.html">My Plants</a></div>
+<div class="top"><a id="homeLink" href="index.html">← GardenKey home</a><a id="myPlantsLink" href="myplants.html">My Plants</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V30.0.0</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V30.0.1</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
 <div class="row2 identityRow"><div class="field"><label>Record ID</label><input id="myId" class="readonly" readonly aria-readonly="true" title="GardenKey creates this ID"></div><div class="field"><label>Nickname</label><textarea id="nickname" class="nicknameField" rows="2" placeholder="e.g. Balcony Lavender" oninput="autoGrowNickname(this)"></textarea></div></div>
@@ -90,7 +90,8 @@ let currentTesterName = '';
 function deviceTester(){
   return {testerId:localStorage.getItem('gk_tester_id')||'', testerName:localStorage.getItem('gk_tester_name')||''};
 }
-function renderTesterOwner(){
+function updateTesterLinks(){const t=deviceTester();if(t.testerId){homeLink.href='index.html?tester='+encodeURIComponent(t.testerId);myPlantsLink.href='myplants.html?tester='+encodeURIComponent(t.testerId);}}
+function renderTesterOwner(){updateTesterLinks();
   const box=document.getElementById('testerOwner');
   const text=document.getElementById('testerOwnerText');
   if(currentTesterId || currentTesterName){
@@ -394,7 +395,7 @@ function addToCollection(type){
 
 async function importTesterDraft(draftId){
   try{
-    const res = await fetch('personal-drafts.json?v=300000', {cache:'no-store'});
+    const res = await fetch('personal-drafts.json?v=30001', {cache:'no-store'});
     if(!res.ok) throw new Error('Draft file unavailable');
     const drafts = await res.json();
     const d = drafts[draftId];
@@ -430,7 +431,7 @@ async function importTesterDraft(draftId){
       if(d.notes !== undefined && !saved.personalNotes) saved.personalNotes=d.notes;
       localStorage.setItem(savedKey, JSON.stringify(saved));
       addToIndex(saved.id, saved.nickname || saved.id, saved.plantLibraryId || '');
-      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=300000');
+      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=30001');
       return;
     }
 
@@ -455,7 +456,7 @@ async function importTesterDraft(draftId){
     loadStatus.textContent = 'Imported tester draft: ' + r.nickname + ' (saved)';
     loadStatus.className = 'status ok';
     showImportWelcome(r.testerName, r.nickname);
-    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=300000');
+    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=30001');
   }catch(e){
     loadStatus.textContent = 'Could not import tester draft. ' + e.message;
     loadStatus.className = 'status err';

@@ -1,17 +1,8 @@
 # GardenKey Golden Source
 
-**Authoritative baseline:** PILOT V30.0.0  
-**Established:** 6 August 2026
+**Current authoritative baseline:** PILOT V30.0.1  
+**Previous baseline:** PILOT V30.0.0
 
-This repository is the single source of truth for all future GardenKey pilot updates.
+All future releases must be built from this complete repository. Generic plant profiles belong in `plants.json`; tester-specific records belong in `personal-drafts.json` and are linked by `plantLibraryId`.
 
-## Required release process
-1. Begin with the complete latest golden-source repository.
-2. Add shared species information directly to `plants.json`.
-3. Add tester-specific records to `personal-drafts.json`.
-4. Link personal records to shared records through `plantLibraryId`.
-5. Update every visible build label and cache-busting value.
-6. Validate all JSON and local page dependencies.
-7. issue one complete GitHub-ready replacement ZIP.
-
-No incremental plant-addition JSON file should be required in future releases.
+Tester identity is persisted locally after one personalised visit and reused across the tester workflow.

@@ -1,14 +1,15 @@
-# Upload GardenKey PILOT V30.0.0
+# Upload GardenKey PILOT V30.0.1
 
-This ZIP is a complete replacement repository.
+1. Extract this ZIP.
+2. Upload every file and folder to the repository root, replacing matching files.
+3. Keep the complete `docs` folder.
+4. Commit with: `Deploy GardenKey PILOT V30.0.1 tester workflow fixes`.
+5. Wait for **pages build and deployment** to show a green tick.
+6. Open: `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30001`.
 
-1. Extract the ZIP.
-2. In the GitHub repository root, remove old live files that are not present in this package.
-3. Upload every file and folder from this package to the repository root.
-4. Replace matching files.
-5. Commit with: `Reset GardenKey to PILOT V30.0.0 golden source`.
-6. Wait for GitHub Pages to deploy.
-7. Open the homepage with `?v=30000`.
-
-Expected homepage label: `PILOT V30.0.0`.
-Expected plant-page label: `PILOT V30.0.0`.
+Verification:
+- Homepage and plant pages show `PILOT V30.0.1`.
+- A tester's original personalised homepage stores their identity.
+- Create Tester Plant shows `Submitting as <tester name>`.
+- My Plants automatically lists approved tester drafts not yet imported.
+- Email action clearly says the tester must still press Send.
