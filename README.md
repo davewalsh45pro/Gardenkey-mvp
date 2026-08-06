@@ -4,7 +4,7 @@ This repository is the clean production baseline for the GardenKey pilot.
 
 ## Live application
 The active HTML, JavaScript and JSON files are held in the repository root so GitHub Pages can serve them directly.
-
+ 
 ## Data separation
 - `plants.json` contains shared, browsable plant information.
 - `personal-drafts.json` contains tester-specific plant records.
