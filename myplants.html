@@ -25,7 +25,7 @@ let records = [];
 async function establishTester(){
   const params=new URLSearchParams(location.search);
   const requested=params.get('tester')||localStorage.getItem('gk_tester_id')||'';
-  if(requested){try{const res=await fetch('testers.json?v=30002',{cache:'no-store'});const testers=await res.json();const t=testers[requested];if(t){localStorage.setItem('gk_tester_id',t.testerId);localStorage.setItem('gk_tester_name',t.testerName);homeLink.href='index.html?tester='+encodeURIComponent(t.testerId);createLink.href='create.html?tester='+encodeURIComponent(t.testerId);history.replaceState(null,'','myplants.html?tester='+encodeURIComponent(t.testerId)+'&v=30002');}}catch(e){}}
+  if(requested){try{const res=await fetch('testers.json?v=30003',{cache:'no-store'});const testers=await res.json();const t=testers[requested];if(t){localStorage.setItem('gk_tester_id',t.testerId);localStorage.setItem('gk_tester_name',t.testerName);homeLink.href='index.html?tester='+encodeURIComponent(t.testerId);createLink.href='create.html?tester='+encodeURIComponent(t.testerId);history.replaceState(null,'','myplants.html?tester='+encodeURIComponent(t.testerId)+'&v=30003');}}catch(e){}}
 }
 function showTester(){
   const name=localStorage.getItem('gk_tester_name')||'';

@@ -1,6 +1,6 @@
 # GardenKey Changelog
 
-## PILOT V30.0.2 — Tester workflow reliability
+## PILOT V30.0.3 — Tester workflow reliability
 
 - Persisted tester identity after the first personalised visit.
 - Carried tester IDs automatically into Create Tester Plant and My Plants links.
@@ -10,7 +10,7 @@
 - Added reopen, copy and “I pressed Send” controls for saved submissions.
 - Made approved tester-specific plants appear automatically in My Plants when not yet imported.
 - Kept tester drafts strictly filtered by tester ID.
-- Updated all live build labels and cache references to V30.0.2.
+- Updated all live build labels and cache references to V30.0.3.
 
 ## PILOT V30.0.0 — Golden Source
 

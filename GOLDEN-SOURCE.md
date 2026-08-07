@@ -1,4 +1,4 @@
-# GardenKey PILOT V30.0.2 — Golden Source
+# GardenKey PILOT V30.0.3 — Golden Source
 
 This package is the authoritative GardenKey source after the Android tester-email hand-off fix.
 

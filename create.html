@@ -15,13 +15,13 @@
 <p class="small"><b>When you tap Email draft to Dave:</b> GardenKey saves a backup first, then asks your phone to open its email app. You still need to press Send there.</p><button class="btn" onclick="sendDraft()">Email draft to Dave</button>
 <button class="btn" onclick="copyDraft()">Copy draft</button><div id="emailNotice" class="notice" style="display:none"></div><div class="submissionBox"><b>Submission history on this device</b><p class="small">GardenKey saves a local backup before opening your email app. “Email prepared” does not mean it was delivered until you press Send in the email app.</p><div id="submissionHistory"></div></div>
 </section></div><script>
+const $=id=>document.getElementById(id);
+function el(id){return $(id)}
 function makeId(){return 'GK-DRAFT-'+Date.now().toString().slice(-6)}
 el('id').value=makeId();
 let library={};
 let currentTester={testerId:'',testerName:''};
 const SUB_KEY='gk_tester_submissions';
-const $=id=>document.getElementById(id);
-function el(id){return $(id)}
 function getSubs(){try{return JSON.parse(localStorage.getItem(SUB_KEY))||[]}catch(e){return[]}}
 function saveSubs(rows){localStorage.setItem(SUB_KEY,JSON.stringify(rows));renderSubs()}
 function submissionRecord(status='saved'){const p=payload();return{...p,status,updatedAt:new Date().toISOString()}}
@@ -30,13 +30,13 @@ async function loadTester(){
  const params=new URLSearchParams(location.search);
  const code=params.get('tester')||localStorage.getItem('gk_tester_id')||'';
  try{
-  const res=await fetch('testers.json?v=30002',{cache:'no-store'});if(!res.ok)throw new Error();
+  const res=await fetch('testers.json?v=30003',{cache:'no-store'});if(!res.ok)throw new Error();
   const testers=await res.json();
   if(code&&testers[code]){
    currentTester=testers[code];
    localStorage.setItem('gk_tester_id',currentTester.testerId);localStorage.setItem('gk_tester_name',currentTester.testerName);
    el('testerIdentity').className='testerBox';el('testerIdentity').innerHTML=`<b>Submitting as ${currentTester.testerName}</b><span>Tester ID: ${currentTester.testerId} · Saved on this device for future plants.</span>`;
-   history.replaceState(null,'','create.html?tester='+encodeURIComponent(currentTester.testerId)+'&v=30002');return;
+   history.replaceState(null,'','create.html?tester='+encodeURIComponent(currentTester.testerId)+'&v=30003');return;
   }
  }catch(e){}
  el('testerIdentity').className='testerWarn';el('testerIdentity').innerHTML='<b>Tester identity is not set.</b><br>Please return to your original personalised GardenKey homepage once. GardenKey will then remember you on this device for future plants.';
@@ -45,7 +45,7 @@ loadTester();renderSubs();
 function norm(v){return(v||'').toLowerCase().replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
 function aliases(p){return[p.name,p.commonName,...(p.commonNames||[]),p.latinName,p.slug,...(p.aliases||[])].filter(Boolean).map(norm)}
 function findPlant(q){const n=norm(q);return Object.values(library).find(p=>aliases(p).some(a=>n===a||n.startsWith(a+' ')||a.startsWith(n+' ')))||null}
-fetch('plants.json?v=30002',{cache:'no-store'}).then(r=>r.json()).then(d=>{library=d}).catch(()=>{});
+fetch('plants.json?v=30003',{cache:'no-store'}).then(r=>r.json()).then(d=>{library=d}).catch(()=>{});
 function lookupPlant(){const q=el('name').value.trim();const match=q.length>1?findPlant(q):null;if(!match){el('suggestedCare').innerHTML='';return;}const c=match.quickCare||{};el('suggestedCare').innerHTML=`<div class="suggested"><b>Recommended care for ${match.name} (from the GardenKey library)</b><div class="row">💧 Water: ${c.Water||'—'}</div><div class="row">☀️ Light: ${c.Light||'—'}</div><div class="row">🌱 Feeding: ${c.Feeding||'—'}</div><div class="row">✂️ Pruning: ${c.Pruning||'—'}</div></div>`;}
 function validate(){if(!currentTester.testerId){el('testerIdentity').scrollIntoView({behavior:'smooth'});alert('GardenKey does not know which tester is using this device yet. Please reopen your original personalised homepage once.');return false;}if(!el('name').value.trim()){el('name').focus();alert('Please enter the plant name or species.');return false;}return true;}
 function payload(){return{id:el('id').value,testerId:currentTester.testerId,testerName:currentTester.testerName,name:el('name').value.trim(),category:el('cat').value,variety:el('variety').value.trim(),location:el('location').value.trim(),soil:el('soil').value.trim(),notes:el('notes').value.trim(),quickCare:{Water:el('water').value.trim(),Light:el('light').value.trim(),Feeding:el('feeding').value.trim()}}}
