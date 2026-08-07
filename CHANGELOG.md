@@ -1,5 +1,13 @@
 # GardenKey Changelog
 
+## PILOT V30.0.4 — Cordyline tester record
+- Added Eimear Cremen draft `GK-DRAFT-234231` / personal record `USR-EIM-0003`.
+- Added shared `GK-COR-001` Cordyline / *Cordyline australis* profile.
+- Linked Eimear’s cultivar ‘Red Star’ and her own location/care observations only to `TST-EIMEAR-003`.
+- Preserved Eimear’s existing Hydrangea ‘Limelight’ and Parahebe ‘Avalanche’ personal records.
+- Preserved V30.0.3 tester identity persistence and working email-draft handoff.
+- Rebuilt as a complete golden-source repository including data JSON, icons and archived documentation.
+
 ## PILOT V30.0.3 — Tester workflow reliability
 
 - Persisted tester identity after the first personalised visit.

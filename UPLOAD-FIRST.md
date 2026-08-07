@@ -1,23 +1,10 @@
-# GardenKey PILOT V29.3 upload
+# Upload GardenKey PILOT V30.0.4
 
-Upload every file in this folder to the repository root and choose **Replace** for matching filenames.
+1. Extract the ZIP.
+2. Upload **all files and folders** to the repository root, including `docs/`.
+3. Replace matching files.
+4. Commit as: `Deploy GardenKey PILOT V30.0.4 - Eimear Cordyline`
+5. Wait for GitHub Pages to show a green deployment before testing.
+6. Open `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30004`.
 
-Files replaced:
-- index.html
-- create.html
-- myplant.html
-- border.html
-- pot.html
-- seedling.html
-- personal-drafts.json
-
-Files added:
-- CHANGELOG-V29.3.md
-- plants-V29.3-addition.json
-
-IMPORTANT:
-`plants-V29.3-addition.json` contains the new shared Parahebe record. It is not a replacement for the existing `plants.json`.
-
-To make Parahebe appear in the shared site-wide plant library, copy the `GK-PAR-001` object from this file into the existing root `plants.json` before its final closing brace.
-
-All other repository files remain unchanged.
+Eimear should retain tester identity `TST-EIMEAR-003`. In **My Plants**, her approved records not already saved on the device should appear under **Tester plants ready to add**, including Parahebe ‘Avalanche’ and Cordyline ‘Red Star’.

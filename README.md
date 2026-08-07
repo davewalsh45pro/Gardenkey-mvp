@@ -1,5 +1,5 @@
-# GardenKey historical archive
+# GardenKey PILOT V30.0.4
 
-These files are retained for development history only. They are not part of the live V30.0.0 application.
+Current golden-source pilot release.
 
-The authoritative source begins with the repository root files and `GOLDEN-SOURCE.md`.
+V30.0.4 preserves the V30.0.3 tester-identity and email workflow fixes and adds Eimear Cremen's Cordyline australis ‘Red Star’ tester record linked to the shared Cordyline library profile.

@@ -209,5 +209,23 @@
     "soil": "Ground may be too dry and sandy",
     "notes": "Five planted in autumn 2025. Four are not doing well. The ground may be too dry and sandy. If they have not recovered, move them in autumn 2026.",
     "category": "Shrub"
+  },
+  "GK-DRAFT-234231": {
+    "sourceDraftId": "GK-DRAFT-234231",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0003",
+    "plantLibraryId": "GK-COR-001",
+    "libraryName": "Cordyline",
+    "nickname": "Eimear's Cordyline Red Star",
+    "variety": "'Red Star'",
+    "source": "",
+    "location": "Kitchen shrubbery - 2 plants",
+    "light": "Both partial shade",
+    "water": "Drought tolerant",
+    "feeding": "None required",
+    "soil": "Garden soil well drained",
+    "notes": "Thrives on neglect. Dead leaves have to be pulled off regularly.",
+    "category": "Shrub"
   }
 }

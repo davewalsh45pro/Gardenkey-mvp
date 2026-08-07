@@ -10394,5 +10394,92 @@
       "Crushing the leaves releases a strong fresh lemon scent."
     ],
     "commonName": "Balm Mint"
+  },
+  "GK-COR-001": {
+    "id": "GK-COR-001",
+    "slug": "cordyline-australis",
+    "name": "Cordyline",
+    "commonName": "Cabbage palm",
+    "commonNames": [
+      "Cordyline",
+      "Cabbage palm"
+    ],
+    "latinName": "Cordyline australis",
+    "variety": "General species profile",
+    "subtitle": "An architectural evergreen with long, strap-like leaves and a palm-like habit as it matures.",
+    "theme": "#7d5d55",
+    "tags": [
+      "Evergreen",
+      "Architectural",
+      "Full sun / partial shade",
+      "Well-drained soil",
+      "Drought tolerant once established"
+    ],
+    "quickCare": {
+      "Water": "Water regularly while establishing; established border plants are drought tolerant",
+      "Light": "Full sun to partial shade in a sheltered position",
+      "Feeding": "Generally low-maintenance; feed container plants during the growing season",
+      "Pruning": "No routine pruning required; pull away old dead leaves as needed"
+    },
+    "notes": "Cordyline australis is an evergreen New Zealand species often grown for its bold architectural foliage. Coloured cultivars can be more vulnerable to winter damage than the green species.",
+    "soil": "Moist but well-drained or well-drained soil; avoid prolonged cold, wet conditions.",
+    "medium": "For long-term containers, use a free-draining peat-free loam-based compost with added grit.",
+    "seasonalActions": {
+      "Spring": "Remove winter-damaged foliage and resume watering newly planted or container-grown plants.",
+      "Summer": "Water newly planted specimens regularly; established border plants usually cope well with dry periods.",
+      "Autumn": "Reduce watering as growth slows and check that drainage is good before winter.",
+      "Winter": "Protect young or coloured-leaved plants in colder or exposed locations and avoid water sitting in the crown."
+    },
+    "problems": [
+      {
+        "name": "Winter damage",
+        "fix": "Move containers to shelter or protect young and coloured-leaved plants during cold spells."
+      },
+      {
+        "name": "Cold, wet conditions",
+        "fix": "Improve drainage and avoid prolonged winter saturation around the roots and growing point."
+      },
+      {
+        "name": "Old lower leaves",
+        "fix": "Pull away dead leaves from the base when they loosen naturally."
+      }
+    ],
+    "companions": [
+      "Cannas",
+      "Phormiums",
+      "Grasses",
+      "Mediterranean planting"
+    ],
+    "propagation": {
+      "season": "Spring",
+      "methods": "Remove well-rooted suckers; the species can also be raised from seed.",
+      "tips": "Pot rooted suckers into a free-draining mix and establish them under shelter before planting out.",
+      "tracker": "Record sucker removal date, rooting status and planting-out date."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "Mature plants can produce fragrant summer flowers visited by insects."
+    },
+    "timeline": {
+      "Seeding": "Spring where grown from seed",
+      "Flowering": "Summer on mature plants",
+      "Harvest": "N/A",
+      "Pruning": "No routine pruning; remove dead leaves as needed"
+    },
+    "photoPlan": {
+      "hero": "Whole plant showing the architectural habit.",
+      "gallery": [
+        "Foliage detail",
+        "Base and trunk",
+        "Winter condition",
+        "Mature flowering plant"
+      ]
+    },
+    "weeklyFact": "Cordyline australis is not a true palm; it belongs to the asparagus family, Asparagaceae.",
+    "category": "Shrub",
+    "aliases": [
+      "Cordyline australis",
+      "cabbage palm"
+    ]
   }
 }
