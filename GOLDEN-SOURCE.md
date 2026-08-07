@@ -1,8 +1,10 @@
-# GardenKey Golden Source
+# GardenKey PILOT V30.0.2 — Golden Source
 
-**Current authoritative baseline:** PILOT V30.0.1  
-**Previous baseline:** PILOT V30.0.0
+This package is the authoritative GardenKey source after the Android tester-email hand-off fix.
 
-All future releases must be built from this complete repository. Generic plant profiles belong in `plants.json`; tester-specific records belong in `personal-drafts.json` and are linked by `plantLibraryId`.
-
-Tester identity is persisted locally after one personalised visit and reused across the tester workflow.
+Build rules:
+- Future releases must start from this complete package.
+- Shared plant knowledge lives in `plants.json`.
+- Tester-specific approved records live in `personal-drafts.json`.
+- Tester identity is persisted locally and carried into tester-aware pages.
+- Tester submissions are backed up locally before email hand-off.
