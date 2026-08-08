@@ -1,6 +1,13 @@
 # GardenKey Changelog
 
-## PILOT V30.0.4 — Cordyline tester record
+## PILOT V30.0.5 — Troy Rudbeckia tester record
+- Added Troy Hopkins submission `GK-DRAFT-513924` as `USR-TRO-0003`.
+- Linked the personal record to existing shared profile `GK-RUD-001` (Rudbeckia).
+- Preserved cultivar `Sunburst Solar` and Troy's location, light, watering, feeding, soil and purchase notes as personal observations.
+- No shared Rudbeckia care guidance was overwritten by tester-specific observations.
+
+
+## PILOT V30.0.5 — Cordyline tester record
 - Added Eimear Cremen draft `GK-DRAFT-234231` / personal record `USR-EIM-0003`.
 - Added shared `GK-COR-001` Cordyline / *Cordyline australis* profile.
 - Linked Eimear’s cultivar ‘Red Star’ and her own location/care observations only to `TST-EIMEAR-003`.

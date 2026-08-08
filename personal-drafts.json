@@ -227,5 +227,23 @@
     "soil": "Garden soil well drained",
     "notes": "Thrives on neglect. Dead leaves have to be pulled off regularly.",
     "category": "Shrub"
+  },
+  "GK-DRAFT-513924": {
+    "sourceDraftId": "GK-DRAFT-513924",
+    "testerId": "TST-TROY-006",
+    "testerName": "Troy Hopkins",
+    "recordId": "USR-TRO-0003",
+    "plantLibraryId": "GK-RUD-001",
+    "libraryName": "Rudbeckia",
+    "nickname": "Troy's Rudbeckia Sunburst Solar",
+    "variety": "'Sunburst Solar'",
+    "source": "Bought Newlands Garden Centre 29 July 2026 for €10",
+    "location": "Pot at gable end of house",
+    "light": "6 hours sunshine",
+    "water": "Every 3 days or every day in hot weather",
+    "feeding": "Tomato feed every 7 to 10 days",
+    "soil": "Compost, grit and perlite",
+    "notes": "Bought Newlands Garden Centre Wednesday 29 July 2026 for €10.",
+    "category": "Perennial"
   }
 }

@@ -1,5 +1,5 @@
-# GardenKey PILOT V30.0.4
+# GardenKey PILOT V30.0.5
 
 Current golden-source pilot release.
 
-V30.0.4 preserves the V30.0.3 tester-identity and email workflow fixes and adds Eimear Cremen's Cordyline australis ‘Red Star’ tester record linked to the shared Cordyline library profile.
+V30.0.5 preserves the V30.0.4 tester workflow and adds Troy Hopkins' Rudbeckia ‘Sunburst Solar’ personal tester record, linked to the existing shared Rudbeckia profile.
