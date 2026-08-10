@@ -10481,5 +10481,182 @@
       "Cordyline australis",
       "cabbage palm"
     ]
+  },
+  "GK-MAT-001": {
+    "id": "GK-MAT-001",
+    "slug": "matteuccia-struthiopteris",
+    "name": "Shuttlecock Fern",
+    "commonName": "Ostrich fern",
+    "commonNames": [
+      "Shuttlecock fern",
+      "Ostrich fern",
+      "Ostrich-feather fern"
+    ],
+    "latinName": "Matteuccia struthiopteris",
+    "variety": "General species profile",
+    "subtitle": "A bold deciduous fern forming upright shuttlecock-shaped rosettes of bright green fronds.",
+    "theme": "#4f7d58",
+    "tags": [
+      "Fern",
+      "Full / partial shade",
+      "Moist but well-drained",
+      "Deciduous",
+      "Spreading"
+    ],
+    "quickCare": {
+      "Water": "Keep consistently moist, especially during dry spells",
+      "Light": "Full shade to partial shade",
+      "Feeding": "Usually little feeding needed in fertile soil; mulch with organic matter",
+      "Pruning": "Remove dead or damaged fronds as needed"
+    },
+    "notes": "Matteuccia struthiopteris is a deciduous, stoloniferous fern that can form colonies of upright rosettes. It is best suited to cool, moist, shaded positions and can spread where conditions suit it.",
+    "soil": "Moist but well-drained soil; acid to neutral conditions are suitable.",
+    "medium": "For containers, use a moisture-retentive peat-free mix with good drainage and avoid allowing it to dry out for long periods.",
+    "seasonalActions": {
+      "Spring": "New croziers emerge; divide established clumps if propagation or control is needed.",
+      "Summer": "Maintain moisture during dry weather, particularly in exposed or free-draining sites.",
+      "Autumn": "Allow fronds to yellow naturally; add organic mulch if the soil dries readily.",
+      "Winter": "Dormant; remove collapsed or damaged fronds when tidy-up is needed."
+    },
+    "problems": [
+      {
+        "name": "Drying or scorched fronds",
+        "fix": "Increase soil moisture and ensure the plant is protected from strong sun and drying winds."
+      },
+      {
+        "name": "Spreading beyond its space",
+        "fix": "Lift unwanted runners or divide the clump in spring."
+      }
+    ],
+    "companions": [
+      "Hosta",
+      "Hellebore",
+      "Astilbe",
+      "Hydrangea"
+    ],
+    "propagation": {
+      "season": "Spring",
+      "methods": "Divide established clumps in spring; spores can also be sown when ripe.",
+      "tips": "Keep new divisions moist while they re-establish.",
+      "tracker": "Record division date, source clump and establishment progress."
+    },
+    "pollinator": {
+      "score": 1,
+      "value": "Primarily a foliage and habitat plant rather than a nectar source."
+    },
+    "timeline": {
+      "Seeding": "Spores when ripe",
+      "Flowering": "No flowers",
+      "Harvest": "N/A",
+      "Pruning": "Remove dead fronds as needed"
+    },
+    "photoPlan": {
+      "hero": "Whole shuttlecock-shaped clump in shade.",
+      "gallery": [
+        "Emerging croziers",
+        "Mature fronds",
+        "Fertile fronds",
+        "Autumn dieback"
+      ]
+    },
+    "weeklyFact": "The common name “shuttlecock fern” comes from the upright ring of fronds that forms around the crown.",
+    "category": "Fern",
+    "aliases": [
+      "Matteuccia struthiopteris",
+      "shuttlecock fern",
+      "ostrich fern",
+      "ostrich-feather fern"
+    ]
+  },
+  "GK-HEL-001": {
+    "id": "GK-HEL-001",
+    "slug": "helleborus-orientalis",
+    "name": "Hellebore",
+    "commonName": "Lenten rose",
+    "commonNames": [
+      "Hellebore",
+      "Lenten rose",
+      "Oriental hellebore"
+    ],
+    "latinName": "Helleborus orientalis",
+    "variety": "General species profile",
+    "subtitle": "A hardy clump-forming perennial with leathery foliage and nodding flowers from late winter into spring.",
+    "theme": "#6f7450",
+    "tags": [
+      "Perennial",
+      "Winter / spring flowers",
+      "Partial shade",
+      "Moist but well-drained",
+      "Evergreen foliage"
+    ],
+    "quickCare": {
+      "Water": "Keep evenly moist while establishing and during prolonged dry periods",
+      "Light": "Full sun to partial or light dappled shade",
+      "Feeding": "Mulch annually with organic matter; extra feeding is usually modest",
+      "Pruning": "Remove old leaves and faded flower stems as needed"
+    },
+    "notes": "Helleborus orientalis is a hardy, clump-forming perennial grown for nodding late-winter and spring flowers. It prefers fertile, humus-rich soil that retains moisture while still draining well.",
+    "soil": "Fertile, moisture-retentive, humus-rich but well-drained soil, preferably neutral to alkaline.",
+    "medium": "For containers, use a moisture-retentive but free-draining peat-free compost and avoid prolonged waterlogging.",
+    "seasonalActions": {
+      "Spring": "Enjoy flowering, remove old damaged foliage and faded flower stems, and divide established clumps if required.",
+      "Summer": "Water during prolonged dry spells and keep newly planted specimens from drying out.",
+      "Autumn": "Mulch with leaf mould, chipped bark or other organic matter.",
+      "Winter": "Remove old leaves where needed to display flowers and reduce leaf-spot carryover."
+    },
+    "problems": [
+      {
+        "name": "Hellebore leaf spot",
+        "fix": "Remove affected old foliage and improve hygiene around the clump."
+      },
+      {
+        "name": "Dry soil and weak growth",
+        "fix": "Add organic matter and water during prolonged dry spells while keeping drainage good."
+      },
+      {
+        "name": "Aphids or snails",
+        "fix": "Inspect new growth and flowers and manage pests early if damage becomes significant."
+      }
+    ],
+    "companions": [
+      "Snowdrops",
+      "Ferns",
+      "Heuchera",
+      "Pulmonaria"
+    ],
+    "propagation": {
+      "season": "Early spring or autumn, depending on method",
+      "methods": "Divide established clumps; hellebores may also be raised from seed.",
+      "tips": "Water divisions well until established and avoid repeatedly disturbing settled plants.",
+      "tracker": "Record division or seed source, date and flowering characteristics of offspring."
+    },
+    "pollinator": {
+      "score": 4,
+      "value": "Winter and early-spring flowers can provide valuable nectar for early bumblebees and other pollinators."
+    },
+    "timeline": {
+      "Seeding": "Seed can be collected after flowering",
+      "Flowering": "Late winter to early spring",
+      "Harvest": "N/A",
+      "Pruning": "Old leaves in late winter / early spring"
+    },
+    "photoPlan": {
+      "hero": "Flowering clump showing nodding blooms and foliage.",
+      "gallery": [
+        "Flower close-up",
+        "Whole clump",
+        "Emerging flower buds",
+        "Leaf condition through winter"
+      ]
+    },
+    "weeklyFact": "Hellebores flower when relatively few other garden plants are in bloom, making them especially useful for early-season interest.",
+    "category": "Perennial",
+    "pollinatorFact": "Hellebores can be an important early nectar source when bumblebees begin foraging in late winter and spring.",
+    "aliases": [
+      "Helleborus orientalis",
+      "hellebore",
+      "Lenten rose",
+      "Oriental hellebore"
+    ]
   }
 }

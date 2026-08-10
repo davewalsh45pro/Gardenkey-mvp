@@ -1,7 +1,13 @@
 # GardenKey Golden Source
 
-**Current baseline: PILOT V30.0.5**
+**Current baseline: PILOT V30.0.6**
 
-This ZIP is the complete repository source for subsequent GardenKey pilot updates. Build future releases from this package rather than from incremental upload packs.
+This complete repository is the recovery baseline for GardenKey. Future releases should be built from this source rather than reconstructed from partial patches.
 
-Data rule: shared plant knowledge belongs in `plants.json`; tester-specific plants and observations belong in `personal-drafts.json` and are linked by `plantLibraryId`.
+## V30.0.6 additions
+- `GK-MAT-001` — shared Matteuccia struthiopteris / shuttlecock fern profile.
+- `GK-HEL-001` — shared Helleborus orientalis / Lenten rose profile.
+- `GK-DRAFT-179783` / `USR-EIM-0004` — Eimear's shuttlecock fern record.
+- `GK-DRAFT-807163` / `USR-EIM-0005` — Eimear's Hellebore orientalis record.
+
+Tester observations remain personal data and do not overwrite the shared species-care profiles.

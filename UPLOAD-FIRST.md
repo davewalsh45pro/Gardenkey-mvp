@@ -1,10 +1,9 @@
-# Upload GardenKey PILOT V30.0.5
+# Upload GardenKey PILOT V30.0.6
 
-1. Extract the ZIP.
-2. Upload **all files and folders** to the repository root, including `docs/`.
-3. Replace matching files.
-4. Commit as: `Deploy GardenKey PILOT V30.0.5 - Troy Rudbeckia`
-5. Wait for GitHub Pages to show a green deployment before testing.
-6. Open `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30004`.
-
-Eimear should retain tester identity `TST-EIMEAR-003`. In **My Plants**, her approved records not already saved on the device should appear under **Tester plants ready to add**, including Parahebe ‘Avalanche’ and Cordyline ‘Red Star’.
+## Mobile update
+1. Upload/replace the **root files** from this package in the GitHub repository.
+2. You may leave the existing `docs/` folder untouched for this release; its contents have not changed.
+3. Commit as: `Deploy GardenKey PILOT V30.0.6 - Eimear fern and hellebore`
+4. Wait for GitHub Pages `pages build and deployment` to show a green tick.
+5. Open `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30006`.
+6. On Eimear's recognised device, open My Plants and confirm the new shuttlecock fern and hellebore records are offered/visible alongside her existing records.

@@ -1,5 +1,7 @@
-# GardenKey PILOT V30.0.5
+# GardenKey PILOT V30.0.6
 
-Current golden-source pilot release.
+This repository is the current clean production baseline for the GardenKey pilot.
 
-V30.0.5 preserves the V30.0.4 tester workflow and adds Troy Hopkins' Rudbeckia ‘Sunburst Solar’ personal tester record, linked to the existing shared Rudbeckia profile.
+V30.0.6 preserves the validated tester identity and email-submission workflow and adds two new Eimear Cremen personal records: Matteuccia struthiopteris (shuttlecock/ostrich fern) and Helleborus orientalis (Lenten rose). Both are linked to new shared GardenKey species profiles while Eimear's own growing conditions and observations remain private to her tester records.
+
+The `docs/` folder is retained as part of the full Golden Source backup but does not need to be re-uploaded on releases where its contents have not changed.

@@ -245,5 +245,41 @@
     "soil": "Compost, grit and perlite",
     "notes": "Bought Newlands Garden Centre Wednesday 29 July 2026 for €10.",
     "category": "Perennial"
+  },
+  "GK-DRAFT-179783": {
+    "sourceDraftId": "GK-DRAFT-179783",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0004",
+    "plantLibraryId": "GK-MAT-001",
+    "libraryName": "Shuttlecock Fern",
+    "nickname": "Eimear's Shuttlecock Fern",
+    "variety": "",
+    "source": "Three bare roots planted March 2025",
+    "location": "Shady Border",
+    "light": "Full shade",
+    "water": "During dry spell every 2nd day",
+    "feeding": "None",
+    "soil": "Dry free draining soil",
+    "notes": "3 bare roots planted March 2025, 2 thriving, 1 very slow.",
+    "category": "Fern"
+  },
+  "GK-DRAFT-807163": {
+    "sourceDraftId": "GK-DRAFT-807163",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0005",
+    "plantLibraryId": "GK-HEL-001",
+    "libraryName": "Hellebore",
+    "nickname": "Eimear's Hellebore Orientalis",
+    "variety": "",
+    "source": "Three planted from Bláithín's cuttings",
+    "location": "Shady border",
+    "light": "Full shade",
+    "water": "Every few days in summer",
+    "feeding": "Monthly",
+    "soil": "Very dry",
+    "notes": "3 planted from Bláithín's cuttings.",
+    "category": "Perennial"
   }
 }
