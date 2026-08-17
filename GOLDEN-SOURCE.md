@@ -1,12 +1,13 @@
 # GardenKey Golden Source
 
-**Current baseline: PILOT V30.0.10**
+**Current baseline: PILOT V30.0.11**
 
-This complete repository is the recovery baseline for GardenKey. Future releases should be built from this source rather than reconstructed from partial patches.
+This package is the complete recovery baseline for the current GardenKey pilot.
 
-## V30.0.10 additions
-- `GK-DRAFT-743308` / `USR-EIM-0006` — Eimear's Cosmos ‘Cosmonaut’ personal record.
-- Linked to existing shared `GK-COS-001` Cosmos profile; shared care guidance remains separate from tester observations.
-- Shared plant photo checklist moved to immediately above Feedback, with clearer explanation that photos belong to personal plant records.
+## V30.0.11 additions
+- per-prompt personal photo capture and captured-state checklist
+- resilient feedback workflow with local recovery history
+- central `version.js` release/cache configuration
 
-Tester observations remain personal data and do not overwrite shared species-care profiles.
+## Release discipline
+For future V30.0.x releases, update `version.js` once for the release label/cache token and use `gkVersion()` / `gkCache()` throughout active pages. Do not add hard-coded release numbers back into individual HTML files.

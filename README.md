@@ -1,10 +1,15 @@
-# GardenKey PILOT V30.0.10
+# GardenKey PILOT V30.0.11
 
-V30.0.10 improves photo capture: homepage photo prompts now lead into the gardener’s personal plant record, while personal photo suggestions display in a two-column vertical grid with no horizontal scrolling.
-This repository is the current clean production baseline for the GardenKey pilot.
+V30.0.11 is a stability-and-UX release built on the validated V30 tester workflow.
 
-V30.0.10 preserves the validated tester identity/email workflow, adds Eimear Cremen's Cosmos ‘Cosmonaut’ personal record linked to the existing shared Cosmos profile, and repositions the general plant photo checklist near the end of the shared information flow.
+## What changed
+- Personal photo suggestions now work as a real checklist: each prompt has its own Add photo button and can show ✓ Captured.
+- A final Other photo card keeps free-form photo capture available.
+- Feedback now uses a resilient local-backup → email hand-off workflow with copy/reopen/history recovery options.
+- `version.js` is now the single source of truth for the live PILOT version label and cache token. Future release bumps should be made there rather than editing version strings across multiple pages.
 
-Photos themselves remain part of each gardener's personal plant record in browser storage; moving the checklist does not delete or relocate existing photos.
+## Data safety
+V30.0.11 does not migrate or rename existing personal plant localStorage keys, record IDs, tester records, or photo arrays. Existing saved personal details and photos remain in their established browser records.
 
-The `docs/` folder is retained as part of the full Golden Source backup but does not need to be re-uploaded on releases where its contents have not changed.
+## Deployment
+Upload the root files from this release to the GitHub repository root. The historical `docs/` archive does not need to be re-uploaded for this release.

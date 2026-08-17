@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Feedback</title>
+<style>*{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:760px;margin:auto;padding:16px}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e6f3dd,#f8e5bc)}h1{font-size:44px;line-height:1;margin:10px 0}.pill{background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px}.field{margin:12px 0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px;margin-bottom:6px}input,textarea{width:100%;font:inherit;font-size:15px;padding:13px;border-radius:16px;border:1px solid #d8cfbe;background:white;min-height:46px}textarea{min-height:130px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:900;margin:5px 4px;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.small{font-size:13px;color:#65746a}.testerBox{background:#123c2d;color:white;border-radius:18px;padding:14px;margin:0 0 18px}.testerBox b{display:block;font-size:18px}.testerBox span{font-size:13px;opacity:.86}.notice{background:#fff1d6;border:1px solid #e7c36e;border-radius:16px;padding:12px;margin:12px 0;line-height:1.45}.history{background:#f3eee2;border:1px solid #ddd0b8;border-radius:20px;padding:14px;margin-top:18px}.item{background:white;border:1px solid #e4dac8;border-radius:16px;padding:12px;margin:9px 0}.item b{display:block}.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.mini{border:1px solid #d8cfbe;background:white;border-radius:999px;padding:8px 11px;font-weight:800;cursor:pointer}.sent{color:#2f7a4f;font-weight:900}.pending{color:#8a6411;font-weight:900}</style><script src="version.js"></script></head><body><div class="wrap">
+<a href="index.html">← GardenKey home</a>
+<section class="hero"><span class="pill">GardenKey · PILOT <span data-gk-version></span></span><h1>Send feedback</h1><p>Spot something wrong, confusing or worth improving? GardenKey will save a local backup before opening your email app.</p></section>
+<section class="card"><div id="testerBox"></div><div class="field"><label>Feedback about</label><input id="context" readonly></div><div class="field"><label>Your feedback</label><textarea id="message" placeholder="Tell Dave what worked, what didn't, or what you'd change."></textarea></div><button class="btn" onclick="prepareEmail()">Email feedback to Dave</button><button class="btn secondary" onclick="copyFeedback()">Copy feedback</button><div id="notice" class="notice" style="display:none"></div><div class="history"><b>Feedback history on this device</b><p class="small">“Email prepared” means GardenKey opened your email app. Delivery is only complete after you press Send there.</p><div id="history"></div></div></section>
+</div><script>
+const FEEDBACK_KEY='gk_feedback_submissions';
+const $=id=>document.getElementById(id);
+const params=new URLSearchParams(location.search);
+let testerId=params.get('tester')||localStorage.getItem('gk_tester_id')||'';
+let testerName=localStorage.getItem('gk_tester_name')||'';
+const subjectContext=params.get('context')||params.get('name')||'GardenKey';
+$('context').value=subjectContext;
+async function establishTester(){
+  if(!testerId){ renderTester(); return; }
+  try{const r=await fetch(gkCache('testers.json'),{cache:'no-store'});const all=await r.json();const t=all[testerId];if(t){testerId=t.testerId;testerName=t.testerName;localStorage.setItem('gk_tester_id',testerId);localStorage.setItem('gk_tester_name',testerName);}}catch(e){}
+  renderTester();
+}
+function renderTester(){
+  $('testerBox').innerHTML=testerId?`<div class="testerBox"><b>Feedback from ${testerName||'GardenKey tester'}</b><span>Tester ID: ${testerId}</span></div>`:'<p class="small">No tester identity is saved on this device. You can still send feedback.</p>';
+}
+function getRows(){try{return JSON.parse(localStorage.getItem(FEEDBACK_KEY)||'[]')}catch(e){return[]}}
+function saveRows(rows){localStorage.setItem(FEEDBACK_KEY,JSON.stringify(rows))}
+function makeRecord(status){return{id:'GK-FEEDBACK-'+Date.now().toString().slice(-8),testerId,testerName,context:$('context').value.trim()||'GardenKey',message:$('message').value.trim(),status,updatedAt:new Date().toISOString()}}
+function validate(){if(!$('message').value.trim()){alert('Please enter your feedback first.');return false}return true}
+function addRecord(status){const rec=makeRecord(status),rows=getRows();rows.unshift(rec);saveRows(rows.slice(0,20));renderHistory();return rec}
+function body(rec){return `GardenKey feedback\n\nFrom: ${rec.testerName||'Not identified'}${rec.testerId?'\nTester ID: '+rec.testerId:''}\nAbout: ${rec.context}\n\nFeedback:\n${rec.message}\n\n---\nGardenKey PILOT ${gkVersion()}\nFeedback ID: ${rec.id}`}
+function href(rec){return 'mailto:davewalsh45pro@gmail.com?subject='+encodeURIComponent('GardenKey feedback - '+rec.context)+'&body='+encodeURIComponent(body(rec))}
+function show(text){$('notice').style.display='block';$('notice').innerHTML=text}
+function prepareEmail(){if(!validate())return;const rec=addRecord('email-prepared');show('<b>Your feedback is backed up on this device.</b><br>Opening your email app now. Please press <b>Send</b> there. If it does not open, use Reopen email or Copy details below.');location.href=href(rec)}
+async function copyFeedback(){if(!validate())return;const rec=addRecord('copied');try{await navigator.clipboard.writeText(body(rec));show('<b>Feedback copied and backed up.</b><br>Paste it into an email or message to Dave.')}catch(e){show('<b>Your feedback is backed up, but copying was blocked.</b><br>Use Reopen email in Feedback history instead.')}}
+function reopen(id){const r=getRows().find(x=>x.id===id);if(r)location.href=href(r)}
+async function copyStored(id){const r=getRows().find(x=>x.id===id);if(!r)return;try{await navigator.clipboard.writeText(body(r));show('<b>Saved feedback copied.</b>')}catch(e){show('<b>Copying was blocked by this browser.</b>')}}
+function markSent(id){const rows=getRows(),r=rows.find(x=>x.id===id);if(r){r.status='sent-by-tester';r.updatedAt=new Date().toISOString();saveRows(rows);renderHistory()}}
+function renderHistory(){const rows=getRows().filter(r=>!testerId||!r.testerId||r.testerId===testerId);$('history').innerHTML=rows.length?rows.map(r=>`<div class="item"><b>${r.context}</b><span class="${r.status==='sent-by-tester'?'sent':'pending'}">${r.status==='sent-by-tester'?'Marked sent':'Email not confirmed sent'}</span><div class="small">${new Date(r.updatedAt).toLocaleString()} · ${r.id}</div><div class="actions"><button class="mini" onclick="reopen('${r.id}')">Reopen email</button><button class="mini" onclick="copyStored('${r.id}')">Copy details</button><button class="mini" onclick="markSent('${r.id}')">I pressed Send</button></div></div>`).join(''):'<p class="small">No saved feedback on this device yet.</p>'}
+establishTester();renderHistory();
+</script></body></html>

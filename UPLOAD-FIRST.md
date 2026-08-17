@@ -1,18 +1,19 @@
-# GardenKey PILOT V30.0.10 upload
+# GardenKey PILOT V30.0.11 upload
 
-For this release, upload/replace the **root files only**. The `docs`/archive material does not need to be re-uploaded if it is already present in GitHub.
+## Mobile GitHub upload
+Upload/replace the **root files** from this ZIP in the repository root.
 
-Most important changed files:
-- `index.html`
-- `myplant.html`
-- version/supporting root files included in this Golden Source package
+Two files are new and must be included:
+- `version.js`
+- `feedback.html`
 
-After GitHub Pages is green, open:
+The historical `docs/` folder is unchanged and does **not** need to be uploaded again.
 
-`https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30010`
+After GitHub Pages finishes successfully, test:
+1. Homepage version displays V30.0.11.
+2. A personal plant photo prompt opens photo selection directly from its own Add photo button.
+3. An existing personal plant still contains its saved details/photos.
+4. Homepage feedback opens the new feedback page; prepare an email and confirm the local feedback-history recovery options appear.
 
-Post-deployment checks:
-1. Homepage photo cards show **+ Add photo**.
-2. Tapping one opens an existing matching personal plant, or creates a linked personal record if none exists.
-3. My Plant photo suggestions show two cards per row and continue vertically with no sideways scrolling.
-4. Existing personal observations and previously saved photos remain present.
+Cache-busted homepage:
+`https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30011`

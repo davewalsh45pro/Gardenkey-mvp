@@ -1,5 +1,13 @@
 # GardenKey Changelog
 
+## PILOT V30.0.11 — Photo checklist, resilient feedback, single-source versioning
+- Personal-plant photo prompts now each have their own **+ Add photo** action; the single bottom Add photo control was removed.
+- Suggested photo prompts remain in a two-column vertical grid and now show **✓ Captured** when a matching prompted photo already exists. An **Other photo** card preserves free-form photo capture.
+- Added `feedback.html` with the same resilient pattern used by tester-plant submissions: local backup before email hand-off, copy fallback, submission history, reopen email, and tester-side “I pressed Send” marking.
+- Homepage and generic plant feedback actions now route through the resilient feedback workflow.
+- Added `version.js` as the single source for the active release label and cache token. Active HTML pages no longer contain hard-coded V30.0.x labels/cache numbers.
+- No personal record IDs, localStorage record keys, tester observations, or existing photo arrays were migrated or changed.
+
 ## PILOT V30.0.10 — Photo capture UX
 
 - Added **+ Add photo** actions to the homepage weekly photo prompts.
