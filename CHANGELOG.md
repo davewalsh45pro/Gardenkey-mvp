@@ -1,13 +1,22 @@
 # GardenKey Changelog
 
-## PILOT V30.0.9 — Homepage content restoration
+## PILOT V30.0.10 — Photo capture UX
+
+- Added **+ Add photo** actions to the homepage weekly photo prompts.
+- Homepage photo actions now open the matching personal plant record; if none exists, GardenKey creates a linked personal record first so photos remain personal rather than being stored on the shared species profile.
+- If more than one matching personal plant exists, GardenKey sends the gardener to My Plants to choose the correct individual plant.
+- Replaced horizontal scrolling photo prompts in My Plant with a two-column vertical grid so all suggestions are visible by scrolling normally down the page.
+- Personal-record storage keys, IDs, observations and existing `photos` arrays are unchanged.
+- Bumped live build/cache references to V30.0.10 / `v=30010`.
+
+## PILOT V30.0.10 — Homepage content restoration
 - Restored a richer homepage flow using existing `plants.json` data: seasonal jobs, propagation ideas, pollinator spotlight, photo prompts and rotating weekly facts.
 - Moved My Garden / personal areas to immediately above Feedback.
 - Confirmed V30.0.6 and V30.0.7 had the same slim homepage; this restores content lost earlier in the V30 cleanup rather than reverting the V30.0.7 plant-profile photo-placement change.
 - No personal plant records or saved browser photos are changed.
 
 
-## PILOT V30.0.9 — Eimear Cosmos + plant-photo flow
+## PILOT V30.0.10 — Eimear Cosmos + plant-photo flow
 
 - Added Eimear Cremen submission `GK-DRAFT-743308` as personal record `USR-EIM-0006`.
 - Linked `Cosmos 'Cosmonaut'` to the existing shared `GK-COS-001` Cosmos profile; no duplicate shared plant was created.
@@ -15,9 +24,9 @@
 - Moved the shared-profile “Plant photos to capture” checklist to the end of the general plant-information flow, immediately above Feedback.
 - Clarified that photo prompts open the gardener's personal plant record and do not alter the shared GardenKey guide.
 - Existing personal photos remain stored with their `myplant.html` browser records and are unaffected by the section move.
-- Bumped live build/cache references to V30.0.9 / `v=30009`.
+- Bumped live build/cache references to V30.0.10 / `v=30010`.
 
-## PILOT V30.0.9 — Eimear fern + hellebore tester records
+## PILOT V30.0.10 — Eimear fern + hellebore tester records
 
 - Added shared `GK-MAT-001` profile for *Matteuccia struthiopteris* (shuttlecock / ostrich fern).
 - Added shared `GK-HEL-001` profile for *Helleborus orientalis* (Lenten rose).
@@ -25,7 +34,7 @@
 - Added `GK-DRAFT-807163` / `USR-EIM-0005` for Eimear's three Helleborus orientalis plants from Bláithín.
 - Preserved Eimear's own light, watering, feeding, soil and notes separately from the shared GardenKey care information.
 - Normalised taxonomy: Matteuccia is stored under category `Fern`; Helleborus spelling is corrected and `orientalis` is treated as the species name rather than a cultivar.
-- Bumped live build/cache references to V30.0.9 / `v=30009`.
+- Bumped live build/cache references to V30.0.10 / `v=30010`.
 
 ## PILOT V30.0.5 — Troy Rudbeckia tester record
 - Added Troy Hopkins submission `GK-DRAFT-513924` as `USR-TRO-0003`.
