@@ -281,5 +281,23 @@
     "soil": "Very dry",
     "notes": "3 planted from Bláithín's cuttings.",
     "category": "Perennial"
+  },
+  "GK-DRAFT-743308": {
+    "sourceDraftId": "GK-DRAFT-743308",
+    "testerId": "TST-EIMEAR-003",
+    "testerName": "Eimear Cremen",
+    "recordId": "USR-EIM-0006",
+    "plantLibraryId": "GK-COS-001",
+    "libraryName": "Cosmos",
+    "nickname": "Eimear's Cosmos Cosmonaut",
+    "variety": "'Cosmonaut'",
+    "source": "",
+    "location": "Pot Deck",
+    "light": "Full sun",
+    "water": "Every 2nd day",
+    "feeding": "Feed added when planted",
+    "soil": "Compost & grit",
+    "notes": "",
+    "category": "Annual"
   }
 }

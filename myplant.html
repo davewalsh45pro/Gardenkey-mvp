@@ -5,7 +5,7 @@
 </style></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a id="homeLink" href="index.html">← GardenKey home</a><a id="myPlantsLink" href="myplants.html">My Plants</a></div>
 
-<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V30.0.6</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
+<section class="hero"><span class="pill" style="background:white;border:1px solid #0001;font-weight:900;padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:8px">GardenKey · PILOT V30.0.7</span><h1>My Plant</h1><p>A personal record for one specific plant you own — linked back to the general GardenKey guide for its type, but with its own history, notes and photos. Saved to this browser only; use Export to keep a backup or share it.</p></section>
 
 <section class="card">
 <div class="row2 identityRow"><div class="field"><label>Record ID</label><input id="myId" class="readonly" readonly aria-readonly="true" title="GardenKey creates this ID"></div><div class="field"><label>Nickname</label><textarea id="nickname" class="nicknameField" rows="2" placeholder="e.g. Balcony Lavender" oninput="autoGrowNickname(this)"></textarea></div></div>
@@ -395,7 +395,7 @@ function addToCollection(type){
 
 async function importTesterDraft(draftId){
   try{
-    const res = await fetch('personal-drafts.json?v=30006', {cache:'no-store'});
+    const res = await fetch('personal-drafts.json?v=30007', {cache:'no-store'});
     if(!res.ok) throw new Error('Draft file unavailable');
     const drafts = await res.json();
     const d = drafts[draftId];
@@ -431,7 +431,7 @@ async function importTesterDraft(draftId){
       if(d.notes !== undefined && !saved.personalNotes) saved.personalNotes=d.notes;
       localStorage.setItem(savedKey, JSON.stringify(saved));
       addToIndex(saved.id, saved.nickname || saved.id, saved.plantLibraryId || '');
-      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=30006');
+      location.replace('myplant.html?id=' + encodeURIComponent(saved.id) + '&v=30007');
       return;
     }
 
@@ -456,7 +456,7 @@ async function importTesterDraft(draftId){
     loadStatus.textContent = 'Imported tester draft: ' + r.nickname + ' (saved)';
     loadStatus.className = 'status ok';
     showImportWelcome(r.testerName, r.nickname);
-    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=30006');
+    history.replaceState(null, '', 'myplant.html?id=' + encodeURIComponent(expectedRecordId) + '&v=30007');
   }catch(e){
     loadStatus.textContent = 'Could not import tester draft. ' + e.message;
     loadStatus.className = 'status err';

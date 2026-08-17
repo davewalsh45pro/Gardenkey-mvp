@@ -144,7 +144,7 @@ function render(p, allPlants){
   app.innerHTML = `
   <section class="hero${hasPhoto?' hasPhoto':''}">
     ${hasPhoto ? '' : `<div class="heroArt">${gkIconSvg(p.category)}</div>`}
-    <div><span class="pill">GardenKey</span><span class="pill">PILOT V30.0.6</span><span class="pill id">${p.id}</span></div>
+    <div><span class="pill">GardenKey</span><span class="pill">PILOT V30.0.7</span><span class="pill id">${p.id}</span></div>
     <div><div class="latin">${p.latinName||''}${p.variety?' · '+p.variety:''}</div><h1>${p.name}${p.commonName?` <span style="font-size:0.5em;font-weight:600">(${p.commonName})</span>`:''}</h1><div class="sub">${p.subtitle||''}</div></div>
   </section>
 
@@ -160,8 +160,6 @@ function render(p, allPlants){
 
   ${seasonHtml ? `<section class="card"><h2>Jobs by season</h2><div class="seasons">${seasonHtml}</div></section>` : ''}
 
-  <section class="card"><h2>Plant photos to capture</h2><p class="muted">A gentle checklist for building a useful record over time.</p><div class="gallery">${galleryHtml}</div></section>
-
   <section class="card"><p><b>Notes:</b> ${p.notes||'—'}</p><p><b>Soil:</b> ${p.soil||'—'}</p><p><b>Suggested mix:</b> ${p.medium||'—'}</p></section>
 
   <section class="card"><h2>Propagation</h2><p>${prop.methods||'—'}</p>${prop.season?`<p class="small"><b>Best time:</b> ${prop.season}</p>`:''}${prop.tips?`<p class="small"><b>Tip:</b> ${prop.tips}</p>`:''}<a class="btn" href="seedling.html">Open propagation / seedling tracker</a></section>
@@ -173,6 +171,8 @@ function render(p, allPlants){
   <section class="card"><h2>Companion plant ideas</h2><div class="mini">${companionHtml || '<p class="muted">None logged yet.</p>'}</div></section>
 
   <section class="card"><h2>Weekly fact</h2><p>${currentWeeklyFact(p)}</p>${(p.weeklyFacts && p.weeklyFacts.length > 1) ? '<p class="small">These facts rotate weekly — check back next week for more.</p>' : ''}</section>
+
+  <section class="card"><h2>Plant photos to capture</h2><p class="muted">A gentle checklist for building a useful personal record over time. Tap a suggested shot to open your own plant record; photos are saved there on this device and do not change the shared GardenKey guide.</p><div class="gallery">${galleryHtml}</div></section>
 
   <section class="card"><h2>Feedback</h2><p>Spot something wrong or have a better tip?</p><a class="btn" href="mailto:davewalsh45pro@gmail.com?subject=GardenKey%20feedback%20-%20${encodeURIComponent(p.name)}">Send feedback</a></section>
   `;

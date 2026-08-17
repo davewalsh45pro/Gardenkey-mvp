@@ -1,6 +1,16 @@
 # GardenKey Changelog
 
-## PILOT V30.0.6 — Eimear fern + hellebore tester records
+## PILOT V30.0.7 — Eimear Cosmos + plant-photo flow
+
+- Added Eimear Cremen submission `GK-DRAFT-743308` as personal record `USR-EIM-0006`.
+- Linked `Cosmos 'Cosmonaut'` to the existing shared `GK-COS-001` Cosmos profile; no duplicate shared plant was created.
+- Preserved Eimear's location, light, watering, feeding and soil as tester-specific observations only.
+- Moved the shared-profile “Plant photos to capture” checklist to the end of the general plant-information flow, immediately above Feedback.
+- Clarified that photo prompts open the gardener's personal plant record and do not alter the shared GardenKey guide.
+- Existing personal photos remain stored with their `myplant.html` browser records and are unaffected by the section move.
+- Bumped live build/cache references to V30.0.7 / `v=30007`.
+
+## PILOT V30.0.7 — Eimear fern + hellebore tester records
 
 - Added shared `GK-MAT-001` profile for *Matteuccia struthiopteris* (shuttlecock / ostrich fern).
 - Added shared `GK-HEL-001` profile for *Helleborus orientalis* (Lenten rose).
@@ -8,16 +18,16 @@
 - Added `GK-DRAFT-807163` / `USR-EIM-0005` for Eimear's three Helleborus orientalis plants from Bláithín.
 - Preserved Eimear's own light, watering, feeding, soil and notes separately from the shared GardenKey care information.
 - Normalised taxonomy: Matteuccia is stored under category `Fern`; Helleborus spelling is corrected and `orientalis` is treated as the species name rather than a cultivar.
-- Bumped live build/cache references to V30.0.6 / `v=30006`.
+- Bumped live build/cache references to V30.0.7 / `v=30007`.
 
-## PILOT V30.0.6 — Troy Rudbeckia tester record
+## PILOT V30.0.5 — Troy Rudbeckia tester record
 - Added Troy Hopkins submission `GK-DRAFT-513924` as `USR-TRO-0003`.
 - Linked the personal record to existing shared profile `GK-RUD-001` (Rudbeckia).
 - Preserved cultivar `Sunburst Solar` and Troy's location, light, watering, feeding, soil and purchase notes as personal observations.
 - No shared Rudbeckia care guidance was overwritten by tester-specific observations.
 
 
-## PILOT V30.0.6 — Cordyline tester record
+## PILOT V30.0.4 — Cordyline tester record
 - Added Eimear Cremen draft `GK-DRAFT-234231` / personal record `USR-EIM-0003`.
 - Added shared `GK-COR-001` Cordyline / *Cordyline australis* profile.
 - Linked Eimear’s cultivar ‘Red Star’ and her own location/care observations only to `TST-EIMEAR-003`.
