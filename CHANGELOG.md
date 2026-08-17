@@ -1,5 +1,13 @@
 # GardenKey Changelog
 
+## PILOT V30.0.12 — Eimear shade-border tester records
+- Added three unique Eimear Cremen tester submissions: Heuchera 'Forever Purple' (`GK-DRAFT-289457` / `USR-EIM-0007`), Brunnera 'Alexander's Great' (`GK-DRAFT-997201` / `USR-EIM-0008`) and Hosta (unknown cultivar) (`GK-DRAFT-159768` / `USR-EIM-0009`).
+- Added shared `GK-HEU-001` Heuchera and `GK-BRU-001` Brunnera profiles; the Hosta record links to existing `GK-HOS-001`.
+- Preserved tester-entered observation wording exactly in the personal records, including spelling in soil/medium fields.
+- Submission #4 supplied for this update was an exact duplicate of `GK-DRAFT-289457`, so it was not inserted twice.
+- No existing personal record IDs, tester records, localStorage keys, photo arrays or prior library entries were overwritten or migrated.
+- Bumped the single-source release configuration to V30.0.12 / `30012`.
+
 ## PILOT V30.0.11 — Photo checklist, resilient feedback, single-source versioning
 - Personal-plant photo prompts now each have their own **+ Add photo** action; the single bottom Add photo control was removed.
 - Suggested photo prompts remain in a two-column vertical grid and now show **✓ Captured** when a matching prompted photo already exists. An **Other photo** card preserves free-form photo capture.

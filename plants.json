@@ -10658,5 +10658,176 @@
       "Lenten rose",
       "Oriental hellebore"
     ]
+  },
+  "GK-HEU-001": {
+    "id": "GK-HEU-001",
+    "slug": "heuchera",
+    "name": "Heuchera",
+    "commonName": "Coral bells",
+    "commonNames": [
+      "Heuchera",
+      "Coral bells",
+      "Alumroot"
+    ],
+    "latinName": "Heuchera",
+    "variety": "General species profile",
+    "subtitle": "Evergreen to semi-evergreen foliage perennial for pots and borders, with airy flower spikes in summer.",
+    "theme": "#76506f",
+    "tags": [
+      "Perennial",
+      "Foliage",
+      "Part shade",
+      "Well-drained soil",
+      "Container friendly"
+    ],
+    "quickCare": {
+      "Water": "Water while establishing and during prolonged dry spells; avoid persistent waterlogging",
+      "Light": "Part shade is ideal; many cultivars tolerate sun if soil stays moist",
+      "Feeding": "Mulch or apply a light balanced feed in spring",
+      "Pruning": "Remove tired leaves and spent flower stems as needed"
+    },
+    "notes": "Heucheras are grown mainly for colourful foliage and work well as edging plants or in containers. Good drainage is especially important in winter.",
+    "soil": "Fertile, humus-rich, well-drained soil; avoid ground that stays waterlogged in winter.",
+    "medium": "For pots, use a free-draining peat-free compost and keep the crown at or just above soil level.",
+    "seasonalActions": {
+      "Spring": "Remove damaged winter foliage, mulch lightly and divide congested clumps if needed.",
+      "Summer": "Water during dry periods and remove spent flower stems if a tidier plant is wanted.",
+      "Autumn": "Check that the crown has not become buried; divide or replant if clumps have lifted.",
+      "Winter": "Avoid prolonged waterlogging and remove only badly damaged foliage."
+    },
+    "problems": [
+      {
+        "name": "Vine weevil in containers",
+        "fix": "Check roots and compost if plants collapse unexpectedly; replace infested compost and manage larvae."
+      },
+      {
+        "name": "Crown rot / winter loss",
+        "fix": "Improve drainage and avoid burying the crown too deeply."
+      }
+    ],
+    "companions": [
+      "Hosta",
+      "Hellebore",
+      "Fern",
+      "Brunnera"
+    ],
+    "propagation": {
+      "season": "Spring or early autumn",
+      "methods": "Divide established clumps, keeping several healthy shoots and roots on each division.",
+      "tips": "Replant divisions promptly and water until established.",
+      "tracker": "Record division source, date, cultivar and establishment progress."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "The small summer flowers can provide nectar for bees and other visiting insects."
+    },
+    "timeline": {
+      "Seeding": "Usually propagated by division for named cultivars",
+      "Flowering": "Late spring to summer",
+      "Harvest": "N/A",
+      "Pruning": "Tidy foliage and flower stems as needed"
+    },
+    "photoPlan": {
+      "hero": "Clear whole-plant photo showing foliage colour and habit.",
+      "gallery": [
+        "Leaf colour and texture close-up",
+        "Flower spikes",
+        "Whole clump in its planting position",
+        "Winter foliage condition"
+      ]
+    },
+    "weeklyFact": "Heucheras are often chosen for foliage rather than flowers, so a named cultivar can stay visually distinctive for much of the year.",
+    "category": "Perennial",
+    "pollinatorFact": "Heuchera flower spikes are modest compared with the foliage, but their small blooms can still attract bees.",
+    "aliases": [
+      "heuchera",
+      "coral bells",
+      "alumroot"
+    ]
+  },
+  "GK-BRU-001": {
+    "id": "GK-BRU-001",
+    "slug": "brunnera-macrophylla",
+    "name": "Brunnera",
+    "commonName": "Siberian bugloss",
+    "commonNames": [
+      "Brunnera",
+      "Siberian bugloss"
+    ],
+    "latinName": "Brunnera macrophylla",
+    "variety": "General species profile",
+    "subtitle": "A shade-loving perennial with heart-shaped leaves and sprays of small blue spring flowers.",
+    "theme": "#6f8f9d",
+    "tags": [
+      "Perennial",
+      "Shade",
+      "Spring flowers",
+      "Foliage",
+      "Moist but well-drained"
+    ],
+    "quickCare": {
+      "Water": "Keep evenly moist while establishing and water in prolonged dry spells",
+      "Light": "Partial shade to full shade; avoid hot, drying sun",
+      "Feeding": "Mulch with organic matter in spring; little extra feeding is usually needed",
+      "Pruning": "Remove damaged leaves and cut spent flower stems or tired foliage as needed"
+    },
+    "notes": "Brunnera is valued for spring flowers and broad foliage in shady borders. Variegated cultivars such as Alexander's Great are especially useful for brightening shade.",
+    "soil": "Humus-rich, moisture-retentive but well-drained soil that does not dry out for long periods.",
+    "medium": "For pots, use a moisture-retentive peat-free compost with good drainage and keep it from drying completely.",
+    "seasonalActions": {
+      "Spring": "Enjoy the blue flowers, mulch around the plant and remove damaged older leaves.",
+      "Summer": "Water during dry periods; trim tired leaves if needed to encourage fresh growth.",
+      "Autumn": "Allow healthy foliage to persist until it declines; mulch lightly if soil is dry.",
+      "Winter": "Mostly dormant or reduced; tidy dead foliage and avoid waterlogged ground."
+    },
+    "problems": [
+      {
+        "name": "Leaf scorch / browning",
+        "fix": "Increase moisture and provide more shade if leaves crisp in hot or dry conditions."
+      },
+      {
+        "name": "Slug or snail damage",
+        "fix": "Protect fresh spring growth if damage becomes significant."
+      }
+    ],
+    "companions": [
+      "Hosta",
+      "Heuchera",
+      "Hellebore",
+      "Fern"
+    ],
+    "propagation": {
+      "season": "Spring or early autumn",
+      "methods": "Divide established clumps, keeping healthy roots and shoots with each piece.",
+      "tips": "Named cultivars are best propagated vegetatively to retain their characteristics.",
+      "tracker": "Record division source, date, cultivar and establishment progress."
+    },
+    "pollinator": {
+      "score": 3,
+      "value": "The small blue spring flowers are visited by bees and other early-season insects."
+    },
+    "timeline": {
+      "Seeding": "Usually divided for named cultivars",
+      "Flowering": "Spring",
+      "Harvest": "N/A",
+      "Pruning": "Tidy damaged foliage as needed"
+    },
+    "photoPlan": {
+      "hero": "Whole Brunnera clump showing foliage and spring flowers.",
+      "gallery": [
+        "Blue flower sprays",
+        "Leaf pattern close-up",
+        "Whole plant in shade",
+        "Late-season foliage condition"
+      ]
+    },
+    "weeklyFact": "Brunnera flowers resemble forget-me-nots, but the plant is a long-lived shade perennial rather than a short-lived bedding plant.",
+    "category": "Perennial",
+    "pollinatorFact": "Its spring flowers can provide forage for insects active early in the gardening year.",
+    "aliases": [
+      "brunnera",
+      "brunnera macrophylla",
+      "siberian bugloss"
+    ]
   }
 }
