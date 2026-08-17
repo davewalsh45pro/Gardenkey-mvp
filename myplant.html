@@ -2,6 +2,8 @@
 *{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#f0dcc2,#f7ecd4)}h1{font-size:38px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.identityRow{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.identityRow{grid-template-columns:1fr}.identityRow textarea{min-height:62px}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px;resize:vertical}.readonly{background:#f1eee6;color:#52635a}.nicknameField{min-height:58px;resize:vertical;overflow-wrap:anywhere;white-space:pre-wrap}.sectionSave{margin-top:12px;border-top:1px solid #eadfca;padding-top:10px}.potAddGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:520px){.potAddGrid{grid-template-columns:1fr}}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0;display:block}.status.ok{color:#2f7a4f}.status.err{color:#b0432e}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
 .welcomeImport{background:linear-gradient(135deg,#e6f3dd,#f8e5bc);border:1px solid #d7e3cc;border-radius:22px;padding:16px;margin:14px 0}.welcomeImport h2{margin:0 0 6px}.welcomeImport p{margin:4px 0}.linkBox{display:flex;align-items:center;gap:10px;background:white;border:1px solid #e6dccb;border-radius:16px;padding:12px;margin-top:8px}.linkBox .thumb{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.linkBox .thumb svg{width:65%;height:65%}
 .photoPrompts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:10px 0 14px}.photoPrompt{min-width:0;background:#eef3e8;border:1px solid #d7e3cc;border-radius:14px;padding:12px;color:#123c2d;overflow-wrap:anywhere;display:flex;flex-direction:column;gap:8px}.photoPrompt b{display:block}.photoPromptText{flex:1}.photoPrompt .miniPhotoBtn{align-self:flex-start;border:1px solid #c8d9bf;background:white;border-radius:999px;padding:8px 11px;font:inherit;font-size:12px;font-weight:900;color:#123c2d;cursor:pointer}.photoPrompt .captured{font-size:12px;font-weight:900;color:#2f7a4f}.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;margin:10px 0}.photo{position:relative;border-radius:16px;overflow:hidden;background:#eee;aspect-ratio:1}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo button{position:absolute;top:4px;right:4px;background:#0008;color:white;border:0;border-radius:999px;width:24px;height:24px;font-size:14px;cursor:pointer}.photo .cap{position:absolute;bottom:0;left:0;right:0;background:#0007;color:white;font-size:10px;padding:3px 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);z-index:9999;background:#123c2d;color:white;border-radius:999px;padding:13px 20px;font-weight:900;box-shadow:0 8px 24px #0003;opacity:0;pointer-events:none;transition:.18s ease}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.toast.err{background:#a83e2d}.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.sectionHead h2{margin:0}.collapseBtn{border:1px solid #d8cfbe;background:white;color:#123c2d;border-radius:999px;padding:7px 11px;font:inherit;font-size:12px;font-weight:900;cursor:pointer;white-space:nowrap}.sectionBody[hidden]{display:none}.dirtyHint{font-size:12px;color:#8a6411;font-weight:800;margin-top:6px}
 </style><script src="version.js"></script></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a id="homeLink" href="index.html">← GardenKey home</a><a id="myPlantsLink" href="myplants.html">My Plants</a></div>
 
@@ -15,57 +17,46 @@
 <div class="saved" id="savedList"></div>
 </section>
 
-<section class="card">
-<h2>Based on</h2>
+<section class="card" data-collapsible data-open="true"><div class="sectionHead"><h2>Based on</h2><button class="collapseBtn" type="button">Hide</button></div><div class="sectionBody">
 <div class="field"><label>GardenKey plant this is based on</label><input id="libraryName" placeholder="e.g. Lavender" oninput="lookupLibrary()"></div>
-<div id="libraryMatch"></div>
+<div id="libraryMatch"></div></div>
 </section>
 
-<section class="card">
-<h2>Details</h2>
+<section class="card" data-collapsible data-open="true"><div class="sectionHead"><h2>Details</h2><button class="collapseBtn" type="button">Hide</button></div><div class="sectionBody">
 <div class="row3"><div class="field"><label>Variety / cultivar</label><input id="variety" placeholder="e.g. 'Hidcote'"></div><div class="field"><label>Source</label><input id="source" placeholder="e.g. Bought, gift, propagated"></div><div class="field"><label>Date acquired</label><input id="dateAcquired" type="date"></div></div>
-<div class="field"><label>Location</label><input id="location" placeholder="e.g. Balcony planter, front border"></div>
+<div class="field"><label>Location</label><input id="location" placeholder="e.g. Balcony planter, front border"></div></div>
 </section>
 
-<section class="card">
-<h2>Your growing conditions</h2>
-<p class="small">These notes describe this specific plant, not the general GardenKey species guide.</p>
-<div class="row3"><div class="field"><label>Actual light</label><input id="actualLight" placeholder="e.g. Full sun until 2:30pm"></div><div class="field"><label>Watering routine</label><input id="personalWater" placeholder="e.g. Very lightly in hot weather"></div><div class="field"><label>Feeding routine</label><input id="personalFeeding" placeholder="e.g. Rarely"></div></div>
+<section class="card" data-collapsible data-open="true"><div class="sectionHead"><h2>Your growing conditions</h2><button class="collapseBtn" type="button">Hide</button></div><div class="sectionBody">
+<div class="row3"><div class="field"><label>Actual light</label><input id="actualLight" placeholder="e.g. Full sun until 2:30pm"></div><div class="field"><label>Watering routine</label><input id="personalWater" placeholder="e.g. Very lightly in hot weather"></div><div class="field"><label>Feeding routine</label><input id="personalFeeding" placeholder="e.g. Rarely"></div><div class="field"><label>Pruning routine</label><input id="personalPruning" placeholder="e.g. Prune after flowering, Chelsea chop in May"></div></div>
 <div class="field"><label>Soil / medium used</label><textarea id="personalSoil" placeholder="e.g. Very gritty compost with perlite"></textarea></div>
-<div class="field"><label>Personal notes</label><textarea id="personalNotes" placeholder="e.g. Where it came from, how it has performed, or anything unique to this plant"></textarea></div>
+<div class="field"><label>Personal notes</label><textarea id="personalNotes" placeholder="e.g. Where it came from, how it has performed, or anything unique to this plant"></textarea></div></div>
 </section>
 
-<section class="card">
-<h2>History & observations</h2>
+<section class="card" data-collapsible data-open="false"><div class="sectionHead"><h2>History & observations</h2><button class="collapseBtn" type="button">Show</button></div><div class="sectionBody" hidden>
 <div class="row2"><div class="field"><label>Last repotted</label><input id="lastRepotted" type="date"></div><div class="field"><label>Last divided</label><input id="lastDivided" type="date"></div></div>
 <div class="field"><label>Flowering history</label><textarea id="floweringHistory" placeholder="e.g. First flowered July 2026, again in September after deadheading"></textarea></div>
 <div class="field"><label>Health observations</label><textarea id="healthObservations" placeholder="e.g. A few yellow leaves in June, resolved after easing off watering"></textarea></div>
-<div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div>
+<div class="field"><label>Propagation history</label><textarea id="propagationHistory" placeholder="e.g. Took 3 cuttings in August, 2 rooted successfully"></textarea></div></div>
 </section>
 
-<section class="card" id="photos">
-<h2>Photos</h2>
-<p class="small">Photos are stored on this device only and resized automatically to keep things fast. Suggested shots are captioned automatically; use Other photo for anything else worth remembering.</p>
+<section class="card" id="photos" data-collapsible data-open="false"><div class="sectionHead"><h2>Photos</h2><button class="collapseBtn" type="button">Show</button></div><div class="sectionBody" hidden>
 <div id="photoPromptWrap" style="display:none"><div class="small"><b>Suggested photos for this plant</b> — add a photo directly from any prompt below.</div><div class="photoPrompts" id="photoPrompts"></div></div>
 <div class="gallery" id="gallery"></div>
 <input id="nextCaption" type="hidden">
-<input type="file" id="photoFile" accept="image/*" style="display:none" onchange="addPhoto(event)">
+<input type="file" id="photoFile" accept="image/*" style="display:none" onchange="addPhoto(event)"></div>
 </section>
 
-<section class="card">
-<h2>Add to a pot</h2>
-<p class="small">Place this plant directly into a pot already saved on this device.</p>
+<section class="card" data-collapsible data-open="false"><div class="sectionHead"><h2>Add to a pot</h2><button class="collapseBtn" type="button">Show</button></div><div class="sectionBody" hidden>
 <div class="potAddGrid"><div class="field"><label>Choose pot</label><select id="potTarget"></select></div><div class="field"><label>Position</label><input id="potPosition" placeholder="e.g. Centre, trailing edge, beneath bulbs"></div></div>
 <div class="field"><label>Status in pot</label><select id="potStatus"><option>Thriving</option><option>Settling in</option><option>Struggling</option><option>Dormant</option><option>Removed</option></select></div>
-<button class="btn" onclick="addToCollection('pot')">+ Add this plant to pot</button><div id="potAddStatus" class="status"></div>
+<button class="btn" onclick="addToCollection('pot')">+ Add this plant to pot</button><div id="potAddStatus" class="status"></div></div>
 </section>
 
-<section class="card">
-<h2>Add to a border</h2>
-<p class="small">Place this plant directly into a bed or border already saved on this device.</p>
+<section class="card" data-collapsible data-open="false"><div class="sectionHead"><h2>Add to a border</h2><button class="collapseBtn" type="button">Show</button></div><div class="sectionBody" hidden>
 <div class="potAddGrid"><div class="field"><label>Choose border</label><select id="borderTarget"></select></div><div class="field"><label>Position</label><input id="borderPosition" placeholder="e.g. Front-left, middle, beside path"></div></div>
 <div class="field"><label>Status in border</label><select id="borderStatus"><option>Thriving</option><option>Settling in</option><option>Struggling</option><option>Dormant</option><option>Removed</option></select></div>
-<button class="btn" onclick="addToCollection('border')">+ Add this plant to border</button><div id="borderAddStatus" class="status"></div>
+<button class="btn" onclick="addToCollection('border')">+ Add this plant to border</button><div id="borderAddStatus" class="status"></div></div>
 </section>
 
 <section class="card">
@@ -81,12 +72,40 @@
 <button class="btn danger" onclick="deleteRecord()" style="float:right">Delete this record</button>
 </section>
 
-</div><script>
+</div><div id="saveToast" class="toast" role="status" aria-live="polite"></div><script>
 let library = {};
 let photos = [];
 let linkedLibraryId = '';
 let currentTesterId = '';
 let currentTesterName = '';
+let isDirty = false;
+let suppressDirty = false;
+let toastTimer = null;
+
+
+function showToast(message,isError=false){
+  const t=document.getElementById('saveToast'); if(!t) return;
+  clearTimeout(toastTimer); t.textContent=message; t.className='toast show'+(isError?' err':'');
+  toastTimer=setTimeout(()=>{t.className='toast';},2600);
+}
+function markDirty(){ if(!suppressDirty) isDirty=true; }
+function markClean(){ isDirty=false; }
+function initDirtyTracking(){
+  document.addEventListener('input',e=>{if(e.target.matches('input:not([readonly]),textarea,select')) markDirty();});
+  document.addEventListener('change',e=>{if(e.target.matches('input:not([readonly]),textarea,select')) markDirty();});
+  document.addEventListener('click',e=>{
+    const a=e.target.closest('a[href]'); if(!a||!isDirty||a.getAttribute('href')==='#') return;
+    if(!confirm('You have unsaved changes. Leave without saving?')) e.preventDefault();
+  },true);
+  window.addEventListener('beforeunload',e=>{if(isDirty){e.preventDefault();e.returnValue='';}});
+}
+function initCollapsibles(){
+  document.querySelectorAll('[data-collapsible]').forEach(card=>{
+    const btn=card.querySelector('.collapseBtn'), body=card.querySelector('.sectionBody'); if(!btn||!body)return;
+    const set=open=>{body.hidden=!open;btn.textContent=open?'Hide':'Show';btn.setAttribute('aria-expanded',String(open));};
+    set(card.dataset.open!=='false'); btn.addEventListener('click',()=>set(body.hidden));
+  });
+}
 
 function deviceTester(){
   return {testerId:localStorage.getItem('gk_tester_id')||'', testerName:localStorage.getItem('gk_tester_name')||''};
@@ -268,6 +287,7 @@ function addPhoto(evt){
       canvas.getContext('2d').drawImage(img, 0, 0, w, h);
       const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
       photos.push({caption: val('nextCaption'), dataUrl});
+      markDirty();
       setVal('nextCaption', '');
       photoFile.value = '';
       renderGallery();
@@ -277,34 +297,37 @@ function addPhoto(evt){
   };
   reader.readAsDataURL(file);
 }
-function removePhoto(i){ photos.splice(i,1); renderGallery(); renderPhotoPrompts(); }
+function removePhoto(i){ photos.splice(i,1); markDirty(); renderGallery(); renderPhotoPrompts(); }
 
 function collectRecord(){
   return {
     id: val('myId'), nickname: val('nickname'), plantLibraryId: linkedLibraryId || findLibraryMatch(), libraryName: val('libraryName'),
     variety: val('variety'), source: val('source'), dateAcquired: val('dateAcquired'), location: val('location'),
-    actualLight: val('actualLight'), personalWater: val('personalWater'), personalFeeding: val('personalFeeding'), personalSoil: val('personalSoil'), personalNotes: val('personalNotes'), sourceDraftId: window.currentSourceDraftId || '', testerId: currentTesterId || '', testerName: currentTesterName || '',
+    actualLight: val('actualLight'), personalWater: val('personalWater'), personalFeeding: val('personalFeeding'), personalPruning: val('personalPruning'), personalSoil: val('personalSoil'), personalNotes: val('personalNotes'), sourceDraftId: window.currentSourceDraftId || '', testerId: currentTesterId || '', testerName: currentTesterName || '',
     lastRepotted: val('lastRepotted'), lastDivided: val('lastDivided'),
     floweringHistory: val('floweringHistory'), healthObservations: val('healthObservations'), propagationHistory: val('propagationHistory'),
     photos
   };
 }
 function fillRecord(r){
+  suppressDirty=true;
   linkedLibraryId = r.plantLibraryId || '';
   setVal('myId', r.id); setVal('nickname', r.nickname); setVal('libraryName', r.libraryName || '');
   autoGrowNickname(document.getElementById('nickname'));
   setVal('variety', r.variety); setVal('source', r.source); setVal('dateAcquired', r.dateAcquired); setVal('location', r.location);
-  setVal('actualLight', r.actualLight || r.light || ''); setVal('personalWater', r.personalWater || r.water || ''); setVal('personalFeeding', r.personalFeeding || r.feeding || ''); setVal('personalSoil', r.personalSoil || r.soil || ''); setVal('personalNotes', r.personalNotes || r.notes || ''); window.currentSourceDraftId = r.sourceDraftId || ''; currentTesterId = r.testerId || deviceTester().testerId || ''; currentTesterName = r.testerName || deviceTester().testerName || ''; renderTesterOwner();
+  setVal('actualLight', r.actualLight || r.light || ''); setVal('personalWater', r.personalWater || r.water || ''); setVal('personalFeeding', r.personalFeeding || r.feeding || ''); setVal('personalPruning', r.personalPruning || ''); setVal('personalSoil', r.personalSoil || r.soil || ''); setVal('personalNotes', r.personalNotes || r.notes || ''); window.currentSourceDraftId = r.sourceDraftId || ''; currentTesterId = r.testerId || deviceTester().testerId || ''; currentTesterName = r.testerName || deviceTester().testerName || ''; renderTesterOwner();
   if(r.sourceDraftId && (currentTesterName || r.nickname)) showImportWelcome(currentTesterName, r.nickname); else showImportWelcome('', '');
   setVal('lastRepotted', r.lastRepotted); setVal('lastDivided', r.lastDivided);
   setVal('floweringHistory', r.floweringHistory); setVal('healthObservations', r.healthObservations); setVal('propagationHistory', r.propagationHistory);
   photos = r.photos || [];
   renderGallery();
   lookupLibrary();
+  suppressDirty=false;
+  markClean();
 }
 
 function blankRecord(id){
-  const t=deviceTester(); return {id, nickname:'', libraryName:'', plantLibraryId:'', variety:'', source:'', dateAcquired:'', location:'', actualLight:'', personalWater:'', personalFeeding:'', personalSoil:'', personalNotes:'', sourceDraftId:'', testerId:t.testerId, testerName:t.testerName, lastRepotted:'', lastDivided:'', floweringHistory:'', healthObservations:'', propagationHistory:'', photos:[]};
+  const t=deviceTester(); return {id, nickname:'', libraryName:'', plantLibraryId:'', variety:'', source:'', dateAcquired:'', location:'', actualLight:'', personalWater:'', personalFeeding:'', personalPruning:'', personalSoil:'', personalNotes:'', sourceDraftId:'', testerId:t.testerId, testerName:t.testerName, lastRepotted:'', lastDivided:'', floweringHistory:'', healthObservations:'', propagationHistory:'', photos:[]};
 }
 
 function loadRecord(){
@@ -341,12 +364,19 @@ function newRecord(prefillName, prefillLibraryId){
 
 function saveRecord(){
   const r = collectRecord();
-  if(!r.id){ alert('Record ID is required before saving.'); return; }
-  if(!r.nickname){ alert('Give it a nickname before saving, so you can find it again.'); return; }
-  localStorage.setItem(keyFor(r.id), JSON.stringify(r));
-  addToIndex(r.id, r.nickname, r.plantLibraryId);
-  loadStatus.textContent = 'Currently loaded below: ' + r.nickname + ' (saved)';
-  loadStatus.className = 'status ok';
+  if(!r.id){ alert('Record ID is required before saving.'); return false; }
+  if(!r.nickname){ alert('Give it a nickname before saving, so you can find it again.'); return false; }
+  try{
+    localStorage.setItem(keyFor(r.id), JSON.stringify(r));
+    addToIndex(r.id, r.nickname, r.plantLibraryId);
+    loadStatus.textContent = 'Currently loaded below: ' + r.nickname + ' (saved)';
+    loadStatus.className = 'status ok';
+    markClean(); showToast('✓ Plant saved');
+    return true;
+  }catch(e){
+    loadStatus.textContent='Could not save this plant on this device.'; loadStatus.className='status err';
+    showToast('Save failed — please try again',true); return false;
+  }
 }
 
 function deleteRecord(){
@@ -356,6 +386,7 @@ function deleteRecord(){
   localStorage.removeItem(keyFor(id));
   removeFromIndex(id);
   newRecord();
+  markClean(); showToast('Plant record deleted');
   loadStatus.textContent = 'Record deleted.';
   loadStatus.className = 'status';
 }
@@ -377,6 +408,7 @@ function importRecord(evt){
     try{
       const r = JSON.parse(reader.result);
       fillRecord(r);
+      markDirty();
       loadStatus.textContent = 'Imported ' + (r.nickname||'record') + ' — review and click Save to keep it on this device.';
       loadStatus.className = 'status ok';
     }catch(e){ alert('That file did not parse as valid JSON.'); }
@@ -497,6 +529,9 @@ async function importTesterDraft(draftId){
     loadStatus.className = 'status err';
   }
 }
+
+initDirtyTracking();
+initCollapsibles();
 
 // init
 const params = new URLSearchParams(location.search);

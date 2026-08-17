@@ -1,38 +1,28 @@
-# GardenKey PILOT V30.0.13 upload
+# GardenKey PILOT V30.0.13 — GitHub upload
 
-## Mobile GitHub upload
-Upload/replace the **root files listed below** in the repository root. Do not upload the ZIP itself or a containing GardenKey folder.
+Upload/replace the files from the V30.0.13 GitHub-upload ZIP in the **repository root**. Do not upload the ZIP itself or a containing folder.
 
-The historical `docs/` folder is included in the Golden Source ZIP for recovery completeness but is unchanged and does **not** need to be uploaded again.
+The historical `docs/` folder is unchanged and does not need to be uploaded.
 
-### Materially changed live files
+## Critical changed live files
 - `myplant.html`
 - `border.html`
+- `plant.html`
 - `version.js`
 
-### Release documentation changed
-- `CHANGELOG.md`
-- `README.md`
-- `GOLDEN-SOURCE.md`
-- `UPLOAD-FIRST.md`
-- `REGRESSION-V30.0.13.md`
-- `TESTER-FEEDBACK-MASTER-LOG.md`
-- `SHA256SUMS.txt`
+The deployment ZIP also includes the complete current root baseline so it can be uploaded as one controlled replacement set.
 
-## After GitHub Pages finishes successfully
+## Post-deployment checks
 1. Homepage displays V30.0.13.
-2. Open an existing My Plant record with photos/details and confirm everything is still present.
-3. Enter a Pruning routine, save, reopen the record and confirm it persists.
-4. Change a field without saving, then try to navigate away and confirm an unsaved-changes warning appears.
-5. Save and confirm the prominent **Saved** message appears.
-6. Collapse and reopen major My Plant sections; confirm data remains unchanged.
-7. Open an existing Border, edit and save it, and confirm the prominent **Saved** message appears.
-8. Change a Border field without saving, navigate away and confirm the warning appears.
-9. Confirm Eimear's existing Hydrangea, Parahebe, Cordyline, Shuttlecock Fern, Hellebore, Cosmos, Heuchera, Brunnera and Hosta records remain available.
-10. Confirm tester feedback and Create Tester Plant email hand-offs still work as before.
+2. My Plant shows **Pruning routine**.
+3. Save a My Plant record and see **✓ Plant saved** near the bottom of the screen.
+4. Edit without saving, then tap GardenKey home; a leave-without-saving confirmation appears.
+5. My Plant sections have Show/Hide controls.
+6. Save a Border and see **✓ Border saved**.
+7. Edit a Border without saving and try to leave; confirmation appears.
+8. Border sections have Show/Hide controls.
+9. Existing personal records/photos and existing borders still open unchanged.
+10. From a general plant profile, **+ Add to pot / border** offers pot vs border and then the saved collection chooser.
 
 Cache-busted homepage:
 `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30013`
-
-Suggested commit message:
-`Deploy GardenKey PILOT V30.0.13 tester feedback UX`

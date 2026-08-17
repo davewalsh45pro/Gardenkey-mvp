@@ -1,5 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GardenKey Border Tracker</title><style>
 *{box-sizing:border-box}a,a:visited,a:active{color:inherit}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f7f1e5;color:#123c2d}.wrap{max-width:780px;margin:auto;padding:16px}.top{display:flex;justify-content:space-between;margin-bottom:10px}.top a{font-weight:900;color:#123c2d;text-decoration:none}.hero,.card{background:#fffaf1;border:1px solid #e2d7c4;border-radius:28px;padding:20px;margin:14px 0;box-shadow:0 5px 18px #0001}.hero{background:linear-gradient(135deg,#e8d9c2,#f4e9d2)}h1{font-size:40px;line-height:1;margin:10px 0}h2{margin-top:0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row3{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:600px){.row3{grid-template-columns:repeat(3,1fr)}}.field{margin:10px 0;min-width:0}label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.07em;font-size:12px;margin-bottom:5px}input,textarea,select{width:100%;font:inherit;font-size:15px;padding:12px;border-radius:14px;border:1px solid #d8cfbe;background:white;min-height:46px;-webkit-appearance:none;appearance:none}select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23123c2d'><path d='M5 7l5 6 5-6z'/></svg>");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px}input[type=date]{padding-right:8px}textarea{min-height:60px;resize:vertical}.autoGrow{overflow:hidden;resize:none}.readonly{background:#f1eee6;color:#52635a}.sectionSave{margin-top:12px;border-top:1px solid #eadfca;padding-top:10px}.info{background:#eef3e8;border:1px solid #d7e3cc;border-radius:16px;padding:14px;font-size:14px;line-height:1.5;margin:10px 0}.info b{display:block;margin-bottom:2px}.btn{display:inline-block;background:#d9a63a;color:#222;border:0;border-radius:999px;padding:12px 17px;text-decoration:none;font-weight:900;margin:5px 4px 0 0;cursor:pointer}.btn.secondary{background:white;border:1px solid #d8cfbe}.btn.danger{background:#e2704f;color:white;font-size:13px;padding:7px 12px}.plantRow{background:white;border:1px solid #e6dccb;border-radius:18px;padding:12px;margin:10px 0}.plantRow .row3{margin-bottom:4px}.rowFoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}.rowFootInfo{display:flex;align-items:center;gap:8px;min-width:0}.thumb{width:44px;height:44px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;background:#8dbb87;flex:none}.thumb svg{width:65%;height:65%}.small{font-size:13px;color:#65746a}.status{font-size:13px;font-weight:800;margin:6px 0}.status.ok{color:#2f7a4f}.pillbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.saved{display:flex;flex-direction:column;gap:6px;margin-top:8px}.saved a{display:block;background:white;border:1px solid #e0d6c2;border-radius:14px;padding:10px 14px;font-size:14px;text-decoration:none;color:inherit}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);z-index:9999;background:#123c2d;color:white;border-radius:999px;padding:13px 20px;font-weight:900;box-shadow:0 8px 24px #0003;opacity:0;pointer-events:none;transition:.18s ease}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.toast.err{background:#a83e2d}.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.sectionHead h2{margin:0}.collapseBtn{border:1px solid #d8cfbe;background:white;color:#123c2d;border-radius:999px;padding:7px 11px;font:inherit;font-size:12px;font-weight:900;cursor:pointer}.sectionBody[hidden]{display:none}
 </style><script src="version.js"></script></head><body><script src="icons.js"></script><div class="wrap">
 <div class="top"><a href="index.html">← GardenKey home</a><a href="create.html">Create tester plant</a></div>
 
@@ -12,24 +14,20 @@
 <div class="saved" id="savedList"></div>
 </section>
 
-<section class="card">
-<h2>Border details</h2>
+<section class="card" data-collapsible data-open="true"><div class="sectionHead"><h2>Border details</h2><button class="collapseBtn" type="button">Hide</button></div><div class="sectionBody">
 <div class="row3"><div class="field"><label>Location</label><input id="location" placeholder="e.g. Front step, west border"></div><div class="field"><label>Border size</label><input id="size" placeholder="e.g. 40cm diameter"></div><div class="field"><label>Edge / structure</label><input id="material" placeholder="e.g. Glazed ceramic"></div></div>
 <div class="row3"><div class="field"><label>Drainage / exposure</label><input id="drainage" placeholder="e.g. 3 holes, crocks added"></div><div class="field"><label>Soil mix</label><textarea id="soilMix" class="autoGrow" rows="2" oninput="autoGrow(this)" placeholder="e.g. Cactus/succulent mix + grit"></textarea></div><div class="field"><label>Mulch / top dressing</label><input id="topDressing" placeholder="e.g. Slate chippings"></div></div>
 <div class="field"><label>Watering setup</label><input id="watering" placeholder="e.g. Hand watered weekly, no irrigation"></div>
 <div class="field"><label>Current status</label><textarea id="currentStatus" placeholder="e.g. All plants settled in well since April planting"></textarea></div>
-<div class="field"><label>Seasonal notes</label><textarea id="seasonalNotes" placeholder="e.g. Move under cover before first frost"></textarea></div><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div>
+<div class="field"><label>Seasonal notes</label><textarea id="seasonalNotes" placeholder="e.g. Move under cover before first frost"></textarea></div><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div></div>
 </section>
 
-<section class="card">
-<h2>Plants in this border</h2>
-<p class="small">Add every plant, bulb, or hidden dormant thing in the bed or border — this is what makes a border profile more useful than a single plant tag.</p>
+<section class="card" data-collapsible data-open="true"><div class="sectionHead"><h2>Plants in this border</h2><button class="collapseBtn" type="button">Hide</button></div><div class="sectionBody">
 <div id="plantList"></div>
-<button class="btn secondary" onclick="addPlantRow()">+ Add plant</button><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div>
+<button class="btn secondary" onclick="addPlantRow()">+ Add plant</button><div class="sectionSave"><button class="btn" onclick="savePot()">Save border</button></div></div>
 </section>
 
-<section class="card">
-<h2>Save & share</h2>
+<section class="card" data-collapsible data-open="false"><div class="sectionHead"><h2>Save & share</h2><button class="collapseBtn" type="button">Show</button></div><div class="sectionBody" hidden>
 <div class="info">
 <b>Save to this browser</b> keeps this profile only on this device/browser, so it's here next time you open the page.
 <b style="margin-top:8px">Export JSON</b> downloads a file of this profile — use it as a backup, or to move the profile to another device.
@@ -37,13 +35,27 @@
 </div>
 <button class="btn" onclick="savePot()">Save to this browser</button>
 <button class="btn secondary" onclick="exportPot()">Export JSON</button>
-<label class="btn secondary" style="cursor:pointer">Import JSON<input type="file" id="importFile" accept="application/json" style="display:none" onchange="importPot(event)"></label>
+<label class="btn secondary" style="cursor:pointer">Import JSON<input type="file" id="importFile" accept="application/json" style="display:none" onchange="importPot(event)"></label></div>
 </section>
 
-</div><script>
+</div><div id="saveToast" class="toast" role="status" aria-live="polite"></div><script>
 let libraryByName = {};
 let plantRows = [];
 let libraryPlants = [];
+let isDirty=false;
+let suppressDirty=false;
+let toastTimer=null;
+
+
+function showToast(message,isError=false){const t=document.getElementById('saveToast');if(!t)return;clearTimeout(toastTimer);t.textContent=message;t.className='toast show'+(isError?' err':'');toastTimer=setTimeout(()=>t.className='toast',2600);}
+function markDirty(){if(!suppressDirty)isDirty=true;} function markClean(){isDirty=false;}
+function initDirtyTracking(){
+ document.addEventListener('input',e=>{if(e.target.matches('input:not([readonly]),textarea,select'))markDirty();});
+ document.addEventListener('change',e=>{if(e.target.matches('input:not([readonly]),textarea,select'))markDirty();});
+ document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||!isDirty||a.getAttribute('href')==='#')return;if(!confirm('You have unsaved changes. Leave without saving?'))e.preventDefault();},true);
+ window.addEventListener('beforeunload',e=>{if(isDirty){e.preventDefault();e.returnValue='';}});
+}
+function initCollapsibles(){document.querySelectorAll('[data-collapsible]').forEach(card=>{const btn=card.querySelector('.collapseBtn'),body=card.querySelector('.sectionBody');if(!btn||!body)return;const set=open=>{body.hidden=!open;btn.textContent=open?'Hide':'Show';btn.setAttribute('aria-expanded',String(open));};set(card.dataset.open!=='false');btn.addEventListener('click',()=>set(body.hidden));});}
 
 function normalisePlantText(value){
   return (value || '').toLowerCase()
@@ -118,12 +130,16 @@ function renderSavedList(){
 function addPlantRow(data){
   const row = data || {name:'', plantLibraryId:'', myPlantId:'', position:'', status:'Thriving', notes:''};
   plantRows.push(row);
+  markDirty();
   renderPlantRows();
   setTimeout(growTextareas,0);
 }
 function removePlantRow(i){
   plantRows.splice(i,1);
+  markDirty();
   renderPlantRows();
+  suppressDirty=false;
+  markClean();
 }
 function renderPlantRows(){
   plantList.innerHTML = plantRows.map((r,i) => {
@@ -133,11 +149,11 @@ function renderPlantRows(){
     const link = match ? `<a href="plant.html?id=${match.id}" class="small">${displayPlantName(match)} · Open care guide →</a>` : '<span class="small">Not matched to library — check spelling or add via admin.html</span>';
     return `<div class="plantRow">
       <div class="row3">
-        <div class="field"><label>Plant name</label><input value="${r.name}" oninput="plantRows[${i}].name=this.value" onblur="renderPlantRows()" placeholder="e.g. Echeveria"></div>
-        <div class="field"><label>Position in border</label><input value="${r.position}" oninput="plantRows[${i}].position=this.value" placeholder="e.g. Centre, trailing edge"></div>
-        <div class="field"><label>Status</label><select onchange="plantRows[${i}].status=this.value">${['Thriving','Settling in','Struggling','Dormant','Removed'].map(s=>`<option ${r.status===s?'selected':''}>${s}</option>`).join('')}</select></div>
+        <div class="field"><label>Plant name</label><input value="${r.name}" oninput="plantRows[${i}].name=this.value;markDirty()" onblur="renderPlantRows()" placeholder="e.g. Echeveria"></div>
+        <div class="field"><label>Position in border</label><input value="${r.position}" oninput="plantRows[${i}].position=this.value;markDirty()" placeholder="e.g. Centre, trailing edge"></div>
+        <div class="field"><label>Status</label><select onchange="plantRows[${i}].status=this.value;markDirty()">${['Thriving','Settling in','Struggling','Dormant','Removed'].map(s=>`<option ${r.status===s?'selected':''}>${s}</option>`).join('')}</select></div>
       </div>
-      <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value" placeholder="e.g. Planted spring, doing well so far">${r.notes}</textarea></div>
+      <div class="field"><label>Notes</label><textarea oninput="plantRows[${i}].notes=this.value;markDirty()" placeholder="e.g. Planted spring, doing well so far">${r.notes}</textarea></div>
       <div class="rowFoot">
         <div class="rowFootInfo"><div class="thumb" style="background:${match?match.theme:'#8dbb87'}">${icon}</div> ${link}</div>
         <div><button class="btn" onclick="savePot()">Save entry</button><button class="btn danger" onclick="removePlantRow(${i})">Remove</button></div>
@@ -164,6 +180,7 @@ function collectPot(){
   };
 }
 function fillPot(p){
+  suppressDirty=true;
   setVal('potId', p.id); setVal('potName', p.name); setVal('location', p.location); setVal('size', p.size);
   setVal('material', p.material); setVal('drainage', p.drainage); setVal('soilMix', p.soilMix);
   setVal('topDressing', p.topDressing); setVal('watering', p.watering); setVal('currentStatus', p.currentStatus);
@@ -203,11 +220,14 @@ function newPot(prefix, label){
 
 function savePot(){
   const p = collectPot();
-  if(!p.id){ alert('Pot ID is required before saving.'); return; }
-  localStorage.setItem(potKey(p.id), JSON.stringify(p));
-  addToIndex(p.id, p.name);
-  loadStatus.textContent = 'Currently loaded below: ' + (p.name || p.id) + ' (saved)';
-  loadStatus.className = 'status ok';
+  if(!p.id){ alert('Border ID is required before saving.'); return false; }
+  try{
+    localStorage.setItem(potKey(p.id), JSON.stringify(p));
+    addToIndex(p.id, p.name);
+    loadStatus.textContent = 'Currently loaded below: ' + (p.name || p.id) + ' (saved)';
+    loadStatus.className = 'status ok';
+    markClean(); showToast('✓ Border saved'); return true;
+  }catch(e){loadStatus.textContent='Could not save this border on this device.';loadStatus.className='status err';showToast('Save failed — please try again',true);return false;}
 }
 
 function exportPot(){
@@ -227,6 +247,7 @@ function importPot(evt){
     try{
       const p = JSON.parse(reader.result);
       fillPot(p);
+      markDirty();
       loadStatus.textContent = 'Imported ' + (p.id||'profile') + ' — review and click Save to keep it on this device.';
       loadStatus.className = 'status ok';
     }catch(e){ alert('That file did not parse as valid JSON.'); }
@@ -255,6 +276,9 @@ async function importBorderDraft(draftId){
     history.replaceState(null,'','border.html?id='+encodeURIComponent(id)+'&v='+GK_RELEASE.cache);
   }catch(e){ loadStatus.textContent='Could not import nursery-bed draft. '+e.message; loadStatus.className='status err'; }
 }
+
+initDirtyTracking();
+initCollapsibles();
 
 // init — open a clean unsaved border unless an explicit saved ID is requested.
 const params = new URLSearchParams(location.search);

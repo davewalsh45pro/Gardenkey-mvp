@@ -1,22 +1,16 @@
 # GardenKey PILOT V30.0.13
 
-V30.0.13 is a focused tester-feedback UX release built on the validated V30.0.12 Golden Source.
+V30.0.13 is a tester-feedback UX release built directly on the V30.0.12 data baseline.
 
 ## What changed
-- My Plant and Border now show a prominent saved confirmation after a successful save.
-- My Plant and Border warn before leaving with unsaved changes.
-- My Plant has a personal **Pruning routine** field alongside watering and feeding routines.
-- Major My Plant and Border sections can be collapsed/expanded to reduce mobile scrolling.
-- `version.js` remains the single source of truth for the live PILOT version label and cache token.
-
-## Deliberately deferred
-Christine's Border → My Plants flow and plant/border-specific to-do system are recorded as separate feature builds rather than being rushed into this pilot patch.
+- Clear save toasts and save-error feedback in My Plant and Border.
+- Unsaved-change warnings before leaving edited My Plant/Border records.
+- Personal Pruning routine field in My Plant.
+- Collapsible My Plant and Border sections to reduce scrolling.
+- Fixed general plant-profile Add to pot / border action.
 
 ## Data safety
-V30.0.13 does not migrate or rename existing personal-plant localStorage keys, record IDs, tester records or photo arrays. Existing records that do not yet contain `personalPruning` simply show a blank pruning field until the gardener chooses to save one.
-
-## Golden Source
-The complete package includes the active repository root and the unchanged 20-file historical `docs/archive` set.
+No existing localStorage key names, record IDs, tester records, photos, `plants.json`, `personal-drafts.json`, `testers.json` or `user-plants.json` are migrated or renamed. Old records simply load the new pruning field as blank until the gardener uses it.
 
 ## Deployment
-For the smallest safe live update, upload only the materially changed root files listed in `UPLOAD-FIRST.md`. The historical `docs/` archive is unchanged and does not need to be re-uploaded.
+Upload/replace the root files from the GitHub-upload ZIP. The historical `docs/` archive is unchanged.
