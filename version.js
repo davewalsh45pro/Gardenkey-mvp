@@ -1,8 +1,8 @@
 // GardenKey single-source release configuration.
 // Change this file only when creating a new PILOT release.
 window.GK_RELEASE = Object.freeze({
-  label: 'V30.0.12',
-  cache: '30012'
+  label: 'V30.0.13',
+  cache: '30013'
 });
 window.gkVersion = function(){ return window.GK_RELEASE.label; };
 window.gkCache = function(url){

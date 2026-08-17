@@ -1,15 +1,22 @@
-# GardenKey PILOT V30.0.12
+# GardenKey PILOT V30.0.13
 
-V30.0.12 is a data-only tester-record release built on the validated V30.0.11 workflow.
+V30.0.13 is a focused tester-feedback UX release built on the validated V30.0.12 Golden Source.
 
 ## What changed
-- Added Eimear's Heuchera 'Forever Purple', Brunnera 'Alexander's Great' and Hosta personal records.
-- Added general Heuchera and Brunnera library profiles; Hosta reuses the existing shared Hosta profile.
-- The fourth supplied item was an exact duplicate of the Heuchera draft ID and was safely de-duplicated.
+- My Plant and Border now show a prominent saved confirmation after a successful save.
+- My Plant and Border warn before leaving with unsaved changes.
+- My Plant has a personal **Pruning routine** field alongside watering and feeding routines.
+- Major My Plant and Border sections can be collapsed/expanded to reduce mobile scrolling.
 - `version.js` remains the single source of truth for the live PILOT version label and cache token.
 
+## Deliberately deferred
+Christine's Border → My Plants flow and plant/border-specific to-do system are recorded as separate feature builds rather than being rushed into this pilot patch.
+
 ## Data safety
-V30.0.12 does not migrate or rename existing personal plant localStorage keys, record IDs, tester records or photo arrays. Existing saved personal details and photos remain in their established browser records. Tester-entered observations in the new records are preserved as supplied.
+V30.0.13 does not migrate or rename existing personal-plant localStorage keys, record IDs, tester records or photo arrays. Existing records that do not yet contain `personalPruning` simply show a blank pruning field until the gardener chooses to save one.
+
+## Golden Source
+The complete package includes the active repository root and the unchanged 20-file historical `docs/archive` set.
 
 ## Deployment
-Upload the root files from this release to the GitHub repository root. The historical `docs/` archive does not need to be re-uploaded for this release.
+For the smallest safe live update, upload only the materially changed root files listed in `UPLOAD-FIRST.md`. The historical `docs/` archive is unchanged and does not need to be re-uploaded.

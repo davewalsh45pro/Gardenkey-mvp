@@ -1,5 +1,15 @@
 # GardenKey Changelog
 
+## PILOT V30.0.13 — Christine tester-feedback UX update
+- Added prominent saved confirmations to My Plant and Border so successful saves are visible from anywhere on the page.
+- Added unsaved-change protection to My Plant and Border before navigating away.
+- Added a personal `Pruning routine` field beside watering and feeding routines; existing records load it blank without migration.
+- Added collapse/expand controls to major My Plant and Border sections to reduce scrolling on phones.
+- Preserved all existing personal-record IDs, localStorage key names, tester records, plant-library data and photo arrays.
+- Added tester-wording rule for future data updates: correct obvious spelling mistakes only; otherwise preserve the tester's own words, phrases and sentences.
+- Historical `docs/archive` contents are unchanged from V30.0.12 and retained in the complete Golden Source package.
+- Bumped the single-source release configuration to V30.0.13 / `30013`.
+
 ## PILOT V30.0.12 — Eimear shade-border tester records
 - Added three unique Eimear Cremen tester submissions: Heuchera 'Forever Purple' (`GK-DRAFT-289457` / `USR-EIM-0007`), Brunnera 'Alexander's Great' (`GK-DRAFT-997201` / `USR-EIM-0008`) and Hosta (unknown cultivar) (`GK-DRAFT-159768` / `USR-EIM-0009`).
 - Added shared `GK-HEU-001` Heuchera and `GK-BRU-001` Brunnera profiles; the Hosta record links to existing `GK-HOS-001`.
