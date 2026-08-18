@@ -93,12 +93,6 @@ function addSpeciesToCollection(type, speciesId, speciesName){
   }catch(e){ alert(`That saved ${type} could not be opened.`); }
 }
 
-
-function addSpeciesToPot(speciesId, speciesName){
-  const type = confirm('Add to a border? Tap OK for border, or Cancel for a pot.') ? 'border' : 'pot';
-  addSpeciesToCollection(type, speciesId, speciesName);
-}
-
 function render(p, allPlants){
   document.documentElement.style.setProperty('--accent', p.theme || '#78a874');
   const hasPhoto = !!p.heroImage;

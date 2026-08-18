@@ -353,5 +353,23 @@
     "soil": "In pot in birder",
     "notes": "",
     "category": "Perennial"
+  },
+  "GK-DRAFT-869468": {
+    "sourceDraftId": "GK-DRAFT-869468",
+    "testerId": "TST-ELAINE-001",
+    "testerName": "Elaine Fitzmaurice",
+    "recordId": "USR-ELA-0002",
+    "plantLibraryId": "GK-PAR-001",
+    "libraryName": "Parahebe",
+    "nickname": "Elaine's Parahebe Avalanche",
+    "variety": "'Avalanche'",
+    "source": "",
+    "location": "Large pot on patio",
+    "light": "Full sun",
+    "water": "Twice weekly",
+    "feeding": "Occasionally",
+    "soil": "Compost/ Hort. Sand",
+    "notes": "",
+    "category": "Shrub"
   }
 }

@@ -1,28 +1,30 @@
-# GardenKey PILOT V30.0.13 — GitHub upload
+# GardenKey PILOT V30.0.13 upload
 
-Upload/replace the files from the V30.0.13 GitHub-upload ZIP in the **repository root**. Do not upload the ZIP itself or a containing folder.
+## Mobile GitHub upload
+Upload/replace the **root files** from this ZIP in the repository root.
 
-The historical `docs/` folder is unchanged and does not need to be uploaded.
+No historical documentation/archive folder needs to be uploaded for this release.
 
-## Critical changed live files
-- `myplant.html`
-- `border.html`
-- `plant.html`
+For the smallest safe V30.0.13 update, the materially changed root files are:
+- `personal-drafts.json`
 - `version.js`
+- `CHANGELOG.md`
+- `README.md`
+- `GOLDEN-SOURCE.md`
+- `UPLOAD-FIRST.md`
+- `SHA256SUMS.txt`
 
-The deployment ZIP also includes the complete current root baseline so it can be uploaded as one controlled replacement set.
+`plants.json` is intentionally unchanged because Elaine's Parahebe links to the existing shared `GK-PAR-001` profile.
 
-## Post-deployment checks
-1. Homepage displays V30.0.13.
-2. My Plant shows **Pruning routine**.
-3. Save a My Plant record and see **✓ Plant saved** near the bottom of the screen.
-4. Edit without saving, then tap GardenKey home; a leave-without-saving confirmation appears.
-5. My Plant sections have Show/Hide controls.
-6. Save a Border and see **✓ Border saved**.
-7. Edit a Border without saving and try to leave; confirmation appears.
-8. Border sections have Show/Hide controls.
-9. Existing personal records/photos and existing borders still open unchanged.
-10. From a general plant profile, **+ Add to pot / border** offers pot vs border and then the saved collection chooser.
+After GitHub Pages finishes successfully, test:
+1. Homepage version displays V30.0.13.
+2. Elaine opens her personalised homepage and sees `Welcome back, Elaine Fitzmaurice` / `TST-ELAINE-001`.
+3. Elaine's My Plants contains her existing Tetrapanax record and the new Parahebe 'Avalanche' record.
+4. Opening the Parahebe personal record shows Elaine's own: Large pot on patio; Full sun; Twice weekly; Occasionally; Compost/ Hort. Sand.
+5. The generic Parahebe profile remains shared/general and does not display Elaine's personal observations.
 
 Cache-busted homepage:
 `https://davewalsh45pro.github.io/Gardenkey-mvp/?v=30013`
+
+Elaine personalised homepage:
+`https://davewalsh45pro.github.io/Gardenkey-mvp/?tester=TST-ELAINE-001&v=30013`

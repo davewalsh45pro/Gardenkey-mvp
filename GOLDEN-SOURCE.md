@@ -1,16 +1,14 @@
 # GardenKey Golden Source
 
-**Current baseline: PILOT V30.0.13 (corrected tester-feedback build)**
+**Current baseline: PILOT V30.0.13**
 
 This package is the complete recovery baseline for the current GardenKey pilot.
 
-## V30.0.13 additions
-- clear save toasts and save failure messages
-- unsaved-change protection in My Plant and Border
-- backward-compatible personal pruning routine
-- collapsible My Plant and Border sections
-- repaired general plant Add to pot / border action
-- no migration or overwrite of existing tester records, photos or storage keys
+## V30.0.13 addition
+- Elaine Fitzmaurice Parahebe 'Avalanche' personal record `GK-DRAFT-869468` / `USR-ELA-0002`
+- linked to existing shared `GK-PAR-001` Parahebe profile
+- no new shared plant profile required
+- no migration or overwrite of any existing personal records, tester identities or photos
 
 ## Release discipline
-`version.js` remains the single source for the active release label/cache token. Historical `docs/archive` files are retained unchanged and are not part of the live application.
+For future V30.0.x releases, update `version.js` once for the release label/cache token and use `gkVersion()` / `gkCache()` throughout active pages. Do not add hard-coded release numbers back into individual HTML files.
